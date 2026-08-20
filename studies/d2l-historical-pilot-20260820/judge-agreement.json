@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "dimensions": {
+    "alias_identity": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 0.983333,
+      "mean_pairwise_cohen_kappa": 0.0,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 60,
+          "agreement": 0.983333,
+          "cohen_kappa": 0.0,
+          "confusion": {
+            "pass->fail": 1,
+            "pass->pass": 59
+          }
+        }
+      ]
+    },
+    "assertion_grounding": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 1.0,
+      "mean_pairwise_cohen_kappa": 1.0,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 60,
+          "agreement": 1.0,
+          "cohen_kappa": 1.0,
+          "confusion": {
+            "fail->fail": 4,
+            "pass->pass": 56
+          }
+        }
+      ]
+    },
+    "book_qa": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 1.0,
+      "mean_pairwise_cohen_kappa": 1.0,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 7,
+          "agreement": 1.0,
+          "cohen_kappa": 1.0,
+          "confusion": {
+            "fail->fail": 5,
+            "pass->pass": 2
+          }
+        }
+      ]
+    },
+    "entity_admission": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 1.0,
+      "mean_pairwise_cohen_kappa": 1.0,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 60,
+          "agreement": 1.0,
+          "cohen_kappa": 1.0,
+          "confusion": {
+            "pass->pass": 60
+          }
+        }
+      ]
+    },
+    "entity_definition_grounding": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 0.95,
+      "mean_pairwise_cohen_kappa": 0.886364,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 60,
+          "agreement": 0.95,
+          "cohen_kappa": 0.886364,
+          "confusion": {
+            "fail->fail": 18,
+            "pass->fail": 3,
+            "pass->pass": 39
+          }
+        }
+      ]
+    },
+    "entity_typing": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 0.966667,
+      "mean_pairwise_cohen_kappa": 0.888889,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 60,
+          "agreement": 0.966667,
+          "cohen_kappa": 0.888889,
+          "confusion": {
+            "fail->fail": 10,
+            "pass->fail": 2,
+            "pass->pass": 48
+          }
+        }
+      ]
+    },
+    "fact_recovery": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 1.0,
+      "mean_pairwise_cohen_kappa": 1.0,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 8,
+          "agreement": 1.0,
+          "cohen_kappa": 1.0,
+          "confusion": {
+            "fail->fail": 5,
+            "pass->pass": 3
+          }
+        }
+      ]
+    },
+    "identity_split": {
+      "judge_count": 2,
+      "pair_count": 1,
+      "mean_pairwise_agreement": 1.0,
+      "mean_pairwise_cohen_kappa": 1.0,
+      "pairs": [
+        {
+          "left_judge": "codex-source-grounded-repeat-v1",
+          "right_judge": "codex-source-grounded-self-eval-v1",
+          "shared_tasks": 16,
+          "agreement": 1.0,
+          "cohen_kappa": 1.0,
+          "confusion": {
+            "fail->fail": 1,
+            "pass->pass": 15
+          }
+        }
+      ]
+    }
+  }
+}

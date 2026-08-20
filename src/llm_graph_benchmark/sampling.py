@@ -14,6 +14,13 @@ class SampleOutput:
     key: tuple[dict[str, Any], ...]
 
 
+ENTITY_DIMENSIONS = (
+    "entity_admission",
+    "entity_typing",
+    "entity_definition_grounding",
+)
+
+
 def _task_id(seed: int, submission_hash: str, kind: str, document_id: str, item_id: str) -> str:
     raw = f"{seed}|{submission_hash}|{kind}|{document_id}|{item_id}".encode()
     return "t_" + hashlib.sha256(raw).hexdigest()[:20]
@@ -47,8 +54,11 @@ def create_blind_sample(
         ):
             document_id = str(document["document_id"])
             entities = {str(item["id"]): item for item in document.get("entities", [])}
+            selected_entities = _choose(
+                document.get("entities", []), entities_per_document, rng
+            )
             selected = (
-                ("entity_admission", _choose(document.get("entities", []), entities_per_document, rng)),
+                *((kind, selected_entities) for kind in ENTITY_DIMENSIONS),
                 (
                     "assertion_grounding",
                     _choose(document.get("assertions", []), assertions_per_document, rng),
@@ -68,7 +78,7 @@ def create_blind_sample(
                         }
                         for ref in refs
                     ]
-                    if kind == "entity_admission":
+                    if kind in ENTITY_DIMENSIONS:
                         content = {
                             "name": item["name"],
                             "definition": item["definition"],

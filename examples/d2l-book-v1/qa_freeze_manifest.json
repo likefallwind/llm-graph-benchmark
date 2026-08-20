@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "freeze_id": "d2l-zh-book-qa-v1",
+  "created_at": "2026-08-20",
+  "document_id": "d2l-zh-official",
+  "source_version": "e6b18ccea71451a55fcd861d7b96fddf2587b09a",
+  "source_content_sha256": "9b57a1cead18be493ddbf26a62d09031a85c3a7261306648c1a5c2fc93a68e76",
+  "qa_probes_file": "qa_probes.jsonl",
+  "qa_probes_sha256": "c44e0bd4db6571c17e5e6210c67fa73ac67f7750a4c6986407c9052db8ca637d",
+  "count": 24,
+  "position_bands": {
+    "foundations": 6,
+    "core_architectures": 6,
+    "attention_optimization_systems": 6,
+    "vision_language": 6
+  },
+  "curation": {
+    "graph_blind": true,
+    "human_adjudicated": false,
+    "method": "AI-assisted manual source reading in Codex; no external model API call"
+  }
+}

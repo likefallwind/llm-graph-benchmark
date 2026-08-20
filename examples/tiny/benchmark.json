@@ -4,5 +4,6 @@
   "title": "Synthetic tiny book benchmark",
   "documents_file": "documents.jsonl",
   "fact_probes_file": "fact_probes.jsonl",
+  "qa_probes_file": "qa_probes.jsonl",
   "rubric_file": "rubric.json"
 }

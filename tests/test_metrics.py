@@ -10,6 +10,10 @@ def test_metrics_capture_graph_structure(submission_path):
     assert result["summary"]["assertion_count"] == 1
     assert result["summary"]["isolated_entity_rate"] == 0.0
     assert result["documents"][0]["largest_component_ratio"] == 1.0
+    assert result["summary"]["entities_per_second"] == 2.0
+    assert result["summary"]["assertions_per_second"] == 1.0
+    assert result["summary"]["cost_per_100_assertions_usd"] == 10.0
+    assert result["summary"]["identity"]["ambiguous_surface_group_count"] == 0
 
 
 def test_metrics_count_isolated_entity(submission_path, submission_payload):

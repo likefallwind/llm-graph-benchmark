@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "expected_task_count": 7,
+  "adjudicated_task_count": 7,
+  "unjudged_task_count": 0,
+  "tie_count": 0,
+  "systems": {
+    "llm-knowledge-graph-exact27": {
+      "book_qa": {
+        "expected": 1,
+        "judged": 1,
+        "unjudged": 0,
+        "pass": 0,
+        "fail": 1,
+        "uncertain": 0,
+        "decided": 1,
+        "pass_rate": 0.0,
+        "pass_rate_95ci": [
+          0.0,
+          0.793451
+        ]
+      }
+    },
+    "llm-knowledge-graph-fresh200": {
+      "book_qa": {
+        "expected": 6,
+        "judged": 6,
+        "unjudged": 0,
+        "pass": 2,
+        "fail": 4,
+        "uncertain": 0,
+        "decided": 6,
+        "pass_rate": 0.333333,
+        "pass_rate_95ci": [
+          0.096771,
+          0.700007
+        ]
+      }
+    }
+  },
+  "strata": {
+    "llm-knowledge-graph-exact27": {
+      "book_qa": {
+        "position_band": {
+          "foundations": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          }
+        },
+        "question_type": {
+          "list": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          }
+        }
+      }
+    },
+    "llm-knowledge-graph-fresh200": {
+      "book_qa": {
+        "position_band": {
+          "foundations": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 2,
+            "fail": 4,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.333333,
+            "pass_rate_95ci": [
+              0.096771,
+              0.700007
+            ]
+          }
+        },
+        "question_type": {
+          "comparison": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.206549,
+              1.0
+            ]
+          },
+          "conditional": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "definition": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "list": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "mechanism": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.206549,
+              1.0
+            ]
+          },
+          "rationale": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          }
+        }
+      }
+    }
+  }
+}

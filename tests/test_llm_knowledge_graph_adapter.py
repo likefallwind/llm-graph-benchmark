@@ -165,6 +165,52 @@ def test_adapter_emits_valid_neutral_contract(adapter_inputs, tmp_path):
     assert submission.payload["documents"][0]["assertions"][0]["scope"] == ""
 
 
+def test_adapter_filters_optional_qa_probes_to_scope(adapter_inputs, tmp_path):
+    database, probes = adapter_inputs
+    qa_probes = tmp_path / "qa.jsonl"
+    qa_probes.write_text(
+        "\n".join(
+            [
+                json.dumps(
+                    {
+                        "qa_id": "q1",
+                        "document_id": "doc-1",
+                        "question": "What relates to Beta?",
+                        "reference_answer": "Alpha.",
+                        "evidence_unit_ids": ["u1"],
+                    }
+                ),
+                json.dumps(
+                    {
+                        "qa_id": "q2",
+                        "document_id": "doc-1",
+                        "question": "Out of scope?",
+                        "reference_answer": "Unknown.",
+                        "evidence_unit_ids": ["u999"],
+                    }
+                ),
+            ]
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    output = tmp_path / "qa-output"
+    report = adapt_sqlite(
+        database,
+        output,
+        benchmark_id="test-v1",
+        system_id="system-a",
+        system_name="System A",
+        system_version="1",
+        fact_probes_path=probes,
+        qa_probes_path=qa_probes,
+        filter_probes_to_scope=True,
+    )
+    benchmark = BenchmarkBundle.load(output / "benchmark.json")
+    assert [probe["qa_id"] for probe in benchmark.qa_probes] == ["q1"]
+    assert report["output_counts"]["qa_probes"] == 1
+
+
 def test_adapter_rejects_unsupported_schema(adapter_inputs, tmp_path):
     _, probes = adapter_inputs
     database = tmp_path / "old.db"

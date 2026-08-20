@@ -7,14 +7,18 @@ from pathlib import Path
 from typing import Any
 
 from .adapters.llm_knowledge_graph import adapt_sqlite
+from .agreement import judge_agreement
 from .aggregation import aggregate_judgments
 from .bundle import BenchmarkBundle, SubmissionBundle
+from .identity import create_identity_tasks
 from .io import read_json, read_jsonl, write_json, write_jsonl
 from .metrics import submission_metrics
 from .probes import create_fact_probe_tasks
+from .qa import create_qa_tasks
 from .report import markdown_report
-from .retrieval import retrieve_fact_probes
+from .retrieval import retrieve_fact_probes, retrieve_qa_probes
 from .sampling import create_blind_sample
+from .stability import compare_submissions
 from .validation import validate_benchmark, validate_submission
 
 
@@ -43,6 +47,15 @@ def _parser() -> argparse.ArgumentParser:
     sample.add_argument("--tasks-out", required=True)
     sample.add_argument("--key-out", required=True)
 
+    identity = commands.add_parser("identity-tasks")
+    identity.add_argument("--benchmark", required=True)
+    identity.add_argument("--submission", action="append", required=True)
+    identity.add_argument("--aliases-per-document", type=int, default=30)
+    identity.add_argument("--collision-pairs-per-document", type=int, default=30)
+    identity.add_argument("--seed", type=int, default=0)
+    identity.add_argument("--tasks-out", required=True)
+    identity.add_argument("--key-out", required=True)
+
     probes = commands.add_parser("probe-tasks")
     probes.add_argument("--benchmark", required=True)
     probes.add_argument("--submission", action="append", required=True)
@@ -60,15 +73,43 @@ def _parser() -> argparse.ArgumentParser:
     retrieve.add_argument("--b", type=float, default=0.75)
     retrieve.add_argument("--out", required=True)
 
+    retrieve_qa = commands.add_parser("retrieve-qa-lexical")
+    retrieve_qa.add_argument("--benchmark", required=True)
+    retrieve_qa.add_argument("--submission", action="append", required=True)
+    retrieve_qa.add_argument("--top-k", type=int, default=10)
+    retrieve_qa.add_argument("--k1", type=float, default=1.2)
+    retrieve_qa.add_argument("--b", type=float, default=0.75)
+    retrieve_qa.add_argument("--out", required=True)
+
+    qa_tasks = commands.add_parser("qa-tasks")
+    qa_tasks.add_argument("--benchmark", required=True)
+    qa_tasks.add_argument("--submission", action="append", required=True)
+    qa_tasks.add_argument("--retrieval-results", required=True)
+    qa_tasks.add_argument("--seed", type=int, default=0)
+    qa_tasks.add_argument("--tasks-out", required=True)
+    qa_tasks.add_argument("--key-out", required=True)
+
     metrics = commands.add_parser("metrics")
     metrics.add_argument("submission")
     metrics.add_argument("--benchmark", required=True)
     metrics.add_argument("--out")
 
+    stability = commands.add_parser("compare-stability")
+    stability.add_argument("--reference", required=True)
+    stability.add_argument("--candidate", required=True)
+    stability.add_argument("--reference-benchmark")
+    stability.add_argument("--document-id", required=True)
+    stability.add_argument("--out")
+
     aggregate = commands.add_parser("aggregate")
     aggregate.add_argument("--key", required=True)
     aggregate.add_argument("--judgments", required=True)
     aggregate.add_argument("--out")
+
+    agreement = commands.add_parser("agreement")
+    agreement.add_argument("--key", required=True)
+    agreement.add_argument("--judgments", required=True)
+    agreement.add_argument("--out")
 
     report = commands.add_parser("report")
     report.add_argument("--metrics", action="append", required=True)
@@ -83,6 +124,7 @@ def _parser() -> argparse.ArgumentParser:
     adapt.add_argument("--system-name", required=True)
     adapt.add_argument("--system-version", required=True)
     adapt.add_argument("--fact-probes", required=True)
+    adapt.add_argument("--qa-probes")
     adapt.add_argument("--source-id", type=int)
     adapt.add_argument("--allow-incomplete", action="store_true")
     adapt.add_argument("--filter-probes-to-scope", action="store_true")
@@ -168,6 +210,29 @@ def main(argv: list[str] | None = None) -> int:
             write_jsonl(args.key_out, output.key)
             _print({"tasks": len(output.tasks), "tasks_out": args.tasks_out, "key_out": args.key_out})
             return 0
+        if args.command == "identity-tasks":
+            benchmark = BenchmarkBundle.load(args.benchmark)
+            if not validate_benchmark(benchmark).ok:
+                raise ValueError("benchmark is invalid; run validate-benchmark for details")
+            submissions = []
+            for path in args.submission:
+                submission = SubmissionBundle.load(path)
+                result = validate_submission(submission, benchmark)
+                if not result.ok:
+                    raise ValueError(f"invalid submission {path}: {result.as_dict()}")
+                submissions.append(submission)
+            _require_unique_systems(submissions)
+            output = create_identity_tasks(
+                benchmark,
+                submissions,
+                aliases_per_document=args.aliases_per_document,
+                collision_pairs_per_document=args.collision_pairs_per_document,
+                seed=args.seed,
+            )
+            write_jsonl(args.tasks_out, output.tasks)
+            write_jsonl(args.key_out, output.key)
+            _print({"tasks": len(output.tasks), "tasks_out": args.tasks_out, "key_out": args.key_out})
+            return 0
         if args.command == "retrieve-lexical":
             benchmark = BenchmarkBundle.load(args.benchmark)
             if not validate_benchmark(benchmark).ok:
@@ -190,6 +255,43 @@ def main(argv: list[str] | None = None) -> int:
             write_jsonl(args.out, rows)
             _print({"rows": len(rows), "output": args.out})
             return 0
+        if args.command in {"retrieve-qa-lexical", "qa-tasks"}:
+            benchmark = BenchmarkBundle.load(args.benchmark)
+            if not validate_benchmark(benchmark).ok:
+                raise ValueError("benchmark is invalid; run validate-benchmark for details")
+            if not benchmark.qa_probes:
+                raise ValueError("benchmark has no QA probes")
+            submissions = []
+            for path in args.submission:
+                submission = SubmissionBundle.load(path)
+                result = validate_submission(submission, benchmark)
+                if not result.ok:
+                    raise ValueError(f"invalid submission {path}: {result.as_dict()}")
+                submissions.append(submission)
+            _require_unique_systems(submissions)
+            if args.command == "retrieve-qa-lexical":
+                rows = retrieve_qa_probes(
+                    benchmark,
+                    submissions,
+                    top_k=args.top_k,
+                    k1=args.k1,
+                    b=args.b,
+                )
+                write_jsonl(args.out, rows)
+                _print({"rows": len(rows), "output": args.out})
+            else:
+                output = create_qa_tasks(
+                    benchmark,
+                    submissions,
+                    read_jsonl(args.retrieval_results),
+                    seed=args.seed,
+                )
+                write_jsonl(args.tasks_out, output.tasks)
+                write_jsonl(args.key_out, output.key)
+                _print(
+                    {"tasks": len(output.tasks), "tasks_out": args.tasks_out, "key_out": args.key_out}
+                )
+            return 0
         if args.command == "metrics":
             _, submission = _valid_pair(args.benchmark, args.submission)
             result = submission_metrics(submission)
@@ -198,8 +300,33 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 _print(result)
             return 0
+        if args.command == "compare-stability":
+            overlap_unit_ids = None
+            if args.reference_benchmark:
+                benchmark = BenchmarkBundle.load(args.reference_benchmark)
+                overlap_unit_ids = set(
+                    benchmark.unit_by_document.get(args.document_id, {})
+                )
+            result = compare_submissions(
+                SubmissionBundle.load(args.reference),
+                SubmissionBundle.load(args.candidate),
+                document_id=args.document_id,
+                overlap_unit_ids=overlap_unit_ids,
+            )
+            if args.out:
+                write_json(args.out, result)
+            else:
+                _print(result)
+            return 0
         if args.command == "aggregate":
             result = aggregate_judgments(read_jsonl(args.key), read_jsonl(args.judgments))
+            if args.out:
+                write_json(args.out, result)
+            else:
+                _print(result)
+            return 0
+        if args.command == "agreement":
+            result = judge_agreement(read_jsonl(args.key), read_jsonl(args.judgments))
             if args.out:
                 write_json(args.out, result)
             else:
@@ -222,6 +349,7 @@ def main(argv: list[str] | None = None) -> int:
                 system_name=args.system_name,
                 system_version=args.system_version,
                 fact_probes_path=args.fact_probes,
+                qa_probes_path=args.qa_probes,
                 source_id=args.source_id,
                 allow_incomplete=args.allow_incomplete,
                 filter_probes_to_scope=args.filter_probes_to_scope,

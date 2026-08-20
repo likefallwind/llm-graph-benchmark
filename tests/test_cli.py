@@ -18,10 +18,71 @@ def test_cli_end_to_end(benchmark_dir, submission_path, tmp_path):
     probe_tasks = tmp_path / "out" / "probe-tasks.jsonl"
     probe_key = tmp_path / "out" / "probe-key.jsonl"
     retrieval = tmp_path / "out" / "retrieval.jsonl"
+    identity_tasks = tmp_path / "out" / "identity-tasks.jsonl"
+    identity_key = tmp_path / "out" / "identity-key.jsonl"
+    qa_retrieval = tmp_path / "out" / "qa-retrieval.jsonl"
+    qa_tasks = tmp_path / "out" / "qa-tasks.jsonl"
+    qa_key = tmp_path / "out" / "qa-key.jsonl"
+    stability = tmp_path / "out" / "stability.json"
+    agreement = tmp_path / "out" / "agreement.json"
 
     assert main(["validate-benchmark", str(benchmark)]) == 0
     assert main(
         ["validate-submission", str(submission_path), "--benchmark", str(benchmark)]
+    ) == 0
+    assert main(
+        [
+            "identity-tasks",
+            "--benchmark",
+            str(benchmark),
+            "--submission",
+            str(submission_path),
+            "--tasks-out",
+            str(identity_tasks),
+            "--key-out",
+            str(identity_key),
+        ]
+    ) == 0
+    assert main(
+        [
+            "retrieve-qa-lexical",
+            "--benchmark",
+            str(benchmark),
+            "--submission",
+            str(submission_path),
+            "--out",
+            str(qa_retrieval),
+        ]
+    ) == 0
+    assert main(
+        [
+            "qa-tasks",
+            "--benchmark",
+            str(benchmark),
+            "--submission",
+            str(submission_path),
+            "--retrieval-results",
+            str(qa_retrieval),
+            "--tasks-out",
+            str(qa_tasks),
+            "--key-out",
+            str(qa_key),
+        ]
+    ) == 0
+    assert main(
+        [
+            "compare-stability",
+            "--reference",
+            str(submission_path),
+            "--candidate",
+            str(submission_path),
+            "--reference-benchmark",
+            str(benchmark),
+            "--document-id",
+            "doc-1",
+            "--out",
+            str(stability),
+        ]
     ) == 0
     assert main(
         [
@@ -85,6 +146,9 @@ def test_cli_end_to_end(benchmark_dir, submission_path, tmp_path):
     )
     assert main(
         ["aggregate", "--key", str(key), "--judgments", str(judgments_path), "--out", str(judged)]
+    ) == 0
+    assert main(
+        ["agreement", "--key", str(key), "--judgments", str(judgments_path), "--out", str(agreement)]
     ) == 0
     assert main(
         ["report", "--metrics", str(metrics), "--judged", str(judged), "--out", str(report)]

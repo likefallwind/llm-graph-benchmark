@@ -38,3 +38,20 @@ def test_d2l_fact_probe_freeze_is_balanced_and_pinned():
         assert probe["statement"].strip()
         assert probe["evidence_unit_ids"]
         assert all(re.fullmatch(r"P\d{6}", unit_id) for unit_id in probe["evidence_unit_ids"])
+
+
+def test_d2l_qa_freeze_is_balanced_and_pinned():
+    manifest = json.loads(
+        (FREEZE_DIR / "qa_freeze_manifest.json").read_text(encoding="utf-8")
+    )
+    probe_path = FREEZE_DIR / manifest["qa_probes_file"]
+    probes = [json.loads(line) for line in probe_path.read_text(encoding="utf-8").splitlines()]
+    assert hashlib.sha256(probe_path.read_bytes()).hexdigest() == manifest[
+        "qa_probes_sha256"
+    ]
+    assert len(probes) == manifest["count"] == 24
+    assert Counter(probe["metadata"]["position_band"] for probe in probes) == Counter(
+        manifest["position_bands"]
+    )
+    assert len({probe["qa_id"] for probe in probes}) == len(probes)
+    assert all(probe["question"] and probe["reference_answer"] for probe in probes)

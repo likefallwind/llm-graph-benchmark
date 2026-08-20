@@ -122,3 +122,39 @@ def retrieve_fact_probes(
                 }
             )
     return tuple(rows)
+
+
+def retrieve_qa_probes(
+    benchmark: BenchmarkBundle,
+    submissions: Iterable[SubmissionBundle],
+    *,
+    top_k: int = 10,
+    k1: float = 1.2,
+    b: float = 0.75,
+) -> tuple[dict[str, Any], ...]:
+    """Retrieve graph assertions for frozen book-QA questions without source text."""
+
+    rows: list[dict[str, Any]] = []
+    for submission in sorted(submissions, key=lambda item: item.system_id):
+        documents = {
+            str(item["document_id"]): item
+            for item in submission.payload.get("documents", [])
+        }
+        for probe in sorted(benchmark.qa_probes, key=lambda item: str(item["qa_id"])):
+            document_id = str(probe["document_id"])
+            rows.append(
+                {
+                    "system_id": submission.system_id,
+                    "qa_id": str(probe["qa_id"]),
+                    "retriever": RETRIEVER_ID,
+                    "assertion_ids": _rank(
+                        str(probe["question"]),
+                        documents[document_id],
+                        top_k=top_k,
+                        k1=k1,
+                        b=b,
+                    ),
+                    "retriever_params": {"top_k": top_k, "k1": k1, "b": b},
+                }
+            )
+    return tuple(rows)

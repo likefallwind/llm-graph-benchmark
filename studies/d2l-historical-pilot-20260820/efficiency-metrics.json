@@ -1,0 +1,32 @@
+{
+  "llm-knowledge-graph-exact27": {
+    "source_database_hash": "sha256:3539037ba9f0170465d1b968cdf59dd5b00436814296492e359015785c7116da",
+    "observed_start": "2026-08-15 08:29:17",
+    "observed_end": "2026-08-15 10:39:03",
+    "observed_wall_span_seconds": 7786.0,
+    "observed_wall_span_hours": 2.162778,
+    "done_chunks": 27,
+    "chunks_per_observed_hour": 12.483946,
+    "entities_per_observed_hour": 61.032623,
+    "assertions_per_observed_hour": 35.139995,
+    "active_runtime": null,
+    "tokens": null,
+    "cost_usd": null,
+    "limitation": "Observed wall span includes pauses/backoff; active runtime, tokens and cost were not stored."
+  },
+  "llm-knowledge-graph-fresh200": {
+    "source_database_hash": "sha256:2cabbb08de57e049a0f3df1c877a5760fcc2bbc7cc1c7b7e2a2090333b6fb588",
+    "observed_start": "2026-08-15 13:03:53",
+    "observed_end": "2026-08-17 09:41:14",
+    "observed_wall_span_seconds": 160641.0,
+    "observed_wall_span_hours": 44.6225,
+    "done_chunks": 200,
+    "chunks_per_observed_hour": 4.482044,
+    "entities_per_observed_hour": 13.513362,
+    "assertions_per_observed_hour": 14.006387,
+    "active_runtime": null,
+    "tokens": null,
+    "cost_usd": null,
+    "limitation": "Observed wall span includes pauses/backoff; active runtime, tokens and cost were not stored."
+  }
+}

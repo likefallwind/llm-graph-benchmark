@@ -1,0 +1,7 @@
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选不能列出四个核心组件。", "task_id": "t_9cceb9c24281f66860bb"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "pass", "reason": "候选足以回答 GPU、自动微分与 CPU 限制。", "task_id": "t_118b6ccde728370b8155"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选未回答正负权重的单调方向。", "task_id": "t_1371f902d235cb250048"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选没有给出四个核心组件。", "task_id": "t_46f36420095a7127ee31"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "只说明回归预测数值，未给出一般定义。", "task_id": "t_5777c1ba24886797b4f3"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "缺少 MNIST 过于简单这一理由。", "task_id": "t_63cb22f107653337cf25"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "pass", "reason": "计算图来源信息与反向传播足以回答机制。", "task_id": "t_dab7d7c68cfd8ca20417"}

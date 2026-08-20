@@ -27,8 +27,11 @@ def test_blind_sample_is_reproducible_and_hides_system(
     assert all("system_id" not in task for task in first.tasks)
     assert {item["kind"] for item in first.tasks} == {
         "entity_admission",
+        "entity_typing",
+        "entity_definition_grounding",
         "assertion_grounding",
     }
+    assert len(first.tasks) == 4
 
 
 def test_blind_sample_rejects_negative_limit(benchmark_dir, submission_path):

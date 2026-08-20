@@ -1,0 +1,19 @@
+{
+  "assertion_endpoint_pair_jaccard": 0.123967,
+  "assertion_reference_retention": 0.078947,
+  "assertion_triplet_jaccard": 0.043165,
+  "candidate_system_id": "llm-knowledge-graph-fresh200",
+  "counts": {
+    "candidate_assertions": 71,
+    "candidate_entities": 136,
+    "reference_assertions": 76,
+    "reference_entities": 132
+  },
+  "document_id": "d2l-zh-official",
+  "entity_canonical_name_jaccard": 0.346734,
+  "entity_reference_retention": 0.522727,
+  "entity_surface_vocabulary_jaccard": 0.401288,
+  "overlap_unit_count": 164,
+  "reference_system_id": "llm-knowledge-graph-exact27",
+  "schema_version": "1.0"
+}

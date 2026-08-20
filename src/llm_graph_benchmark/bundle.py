@@ -25,6 +25,7 @@ class BenchmarkBundle:
     manifest: dict[str, Any]
     documents: tuple[dict[str, Any], ...]
     fact_probes: tuple[dict[str, Any], ...]
+    qa_probes: tuple[dict[str, Any], ...]
     rubric: dict[str, Any]
 
     @property
@@ -66,10 +67,15 @@ class BenchmarkBundle:
         documents = tuple(read_jsonl(relative_file("documents_file")))
         probes_path = relative_file("fact_probes_file")
         fact_probes = tuple(read_jsonl(probes_path))
+        qa_probes_value = manifest.get("qa_probes_file")
+        if qa_probes_value is None:
+            qa_probes: tuple[dict[str, Any], ...] = ()
+        else:
+            qa_probes = tuple(read_jsonl(relative_file("qa_probes_file")))
         rubric = read_json(relative_file("rubric_file"))
         if not isinstance(rubric, dict):
             raise ValueError("rubric must be a JSON object")
-        return cls(manifest_path, manifest, documents, fact_probes, rubric)
+        return cls(manifest_path, manifest, documents, fact_probes, qa_probes, rubric)
 
 
 @dataclass(frozen=True)

@@ -14,6 +14,7 @@ def benchmark_dir(tmp_path: Path) -> Path:
         "title": "Test benchmark",
         "documents_file": "documents.jsonl",
         "fact_probes_file": "fact_probes.jsonl",
+        "qa_probes_file": "qa_probes.jsonl",
         "rubric_file": "rubric.json",
     }
     document = {
@@ -30,10 +31,20 @@ def benchmark_dir(tmp_path: Path) -> Path:
         "statement": "Alpha relates to beta.",
         "evidence_unit_ids": ["u1"],
     }
+    qa_probe = {
+        "qa_id": "q1",
+        "document_id": "doc-1",
+        "question": "What relates to beta?",
+        "reference_answer": "Alpha relates to beta.",
+        "evidence_unit_ids": ["u1"],
+    }
     rubric = {"dimensions": [{"id": "entity_admission", "question": "Valid?"}]}
     (tmp_path / "benchmark.json").write_text(json.dumps(manifest), encoding="utf-8")
     (tmp_path / "documents.jsonl").write_text(json.dumps(document) + "\n", encoding="utf-8")
     (tmp_path / "fact_probes.jsonl").write_text(json.dumps(probe) + "\n", encoding="utf-8")
+    (tmp_path / "qa_probes.jsonl").write_text(
+        json.dumps(qa_probe) + "\n", encoding="utf-8"
+    )
     (tmp_path / "rubric.json").write_text(json.dumps(rubric), encoding="utf-8")
     return tmp_path
 

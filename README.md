@@ -35,6 +35,7 @@ method C RDF graph ───┘
 benchmark.json       # benchmark ID 和相对文件路径
 documents.jsonl      # 文档及可引用的 text/image/table 单元
 fact_probes.jsonl    # 从原文侧构造的覆盖率探针
+qa_probes.jsonl      # 可选：冻结的 Book QA 问题与参考答案
 rubric.json          # 冻结的评价维度与标签定义
 ```
 
@@ -97,6 +98,24 @@ llm-graph-benchmark probe-tasks \
   --retrieval-results examples/tiny/retrieval_results.jsonl \
   --tasks-out outputs/probe-tasks.jsonl \
   --key-out outputs/probe-task-key.jsonl
+
+llm-graph-benchmark identity-tasks \
+  --benchmark examples/tiny/benchmark.json \
+  --submission examples/tiny/submissions/example.json \
+  --tasks-out outputs/identity-tasks.jsonl \
+  --key-out outputs/identity-task-key.jsonl
+
+llm-graph-benchmark retrieve-qa-lexical \
+  --benchmark examples/tiny/benchmark.json \
+  --submission examples/tiny/submissions/example.json \
+  --out outputs/qa-retrieval.jsonl
+
+llm-graph-benchmark qa-tasks \
+  --benchmark examples/tiny/benchmark.json \
+  --submission examples/tiny/submissions/example.json \
+  --retrieval-results outputs/qa-retrieval.jsonl \
+  --tasks-out outputs/qa-tasks.jsonl \
+  --key-out outputs/qa-task-key.jsonl
 
 llm-graph-benchmark metrics \
   examples/tiny/submissions/example.json \
@@ -164,8 +183,8 @@ pytest --cov=llm_graph_benchmark
 ## 真实案例
 
 - [D2L 历史图谱快照评测（2026-08-20 pilot）](studies/d2l-historical-pilot-20260820/REPORT.md)：
-  对 27/200 chunk 两份只读 SQLite 快照完成结构指标、Entity/Assertion 盲样本和冻结事实探针
-  评测；同时保存判断、聚合结果、输入哈希与可复现构建脚本。
+  对 27/200 chunk 两份只读 SQLite 快照完成 Entity 准入/类型/定义、Assertion、事实恢复、
+  身份解析、Book QA、结构、稳定性、效率和裁判一致性评测，并保存判断、输入哈希与重建脚本。
 
 ## `llm-knowledge-graph` SQLite 适配器
 
@@ -179,7 +198,8 @@ llm-graph-benchmark adapt-llmkg-sqlite \
   --system-id llm-knowledge-graph \
   --system-name "LLM Knowledge Graph" \
   --system-version snapshot-name \
-  --fact-probes examples/d2l-pilot/fact_probes.jsonl
+  --fact-probes examples/d2l-pilot/fact_probes.jsonl \
+  --qa-probes examples/d2l-book-v1/qa_probes.jsonl
 ```
 
 适配器不导入原项目，也不写 SQLite。它导出已处理范围内的 Source Passage 作为可引用单元，最终

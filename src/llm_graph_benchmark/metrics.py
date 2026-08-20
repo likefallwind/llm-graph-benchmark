@@ -5,6 +5,7 @@ from collections import Counter
 from typing import Any
 
 from .bundle import SubmissionBundle
+from .identity import document_identity_metrics
 
 
 def _ratio(numerator: int, denominator: int) -> float:
@@ -13,6 +14,14 @@ def _ratio(numerator: int, denominator: int) -> float:
 
 def _surface_key(value: str) -> str:
     return re.sub(r"[^\w]+", "", value.casefold(), flags=re.UNICODE)
+
+
+def _per(
+    numerator: int | float | None, denominator: int | float | None
+) -> float | None:
+    if numerator is None or denominator is None or denominator <= 0:
+        return None
+    return round(numerator / denominator, 6)
 
 
 def submission_metrics(submission: SubmissionBundle) -> dict[str, Any]:
@@ -63,6 +72,7 @@ def submission_metrics(submission: SubmissionBundle) -> dict[str, Any]:
             "component_count": len(components),
             "largest_component_ratio": _ratio(max(components, default=0), len(entities)),
             "surface_duplicate_group_count": duplicate_groups,
+            "identity": document_identity_metrics(document),
         }
         per_document.append(metric)
         for key in (
@@ -73,10 +83,28 @@ def submission_metrics(submission: SubmissionBundle) -> dict[str, Any]:
             "surface_duplicate_group_count",
         ):
             totals[key] += int(metric[key])
+        for key in (
+            "alias_count",
+            "nontrivial_alias_count",
+            "entities_with_aliases",
+            "ambiguous_surface_group_count",
+            "entities_in_ambiguous_surface_groups",
+        ):
+            totals[f"identity_{key}"] += int(metric["identity"][key])
         totals["entity_with_evidence"] += entity_evidence
         totals["assertion_with_evidence"] += assertion_evidence
     entity_total = totals["entity_count"]
     assertion_total = totals["assertion_count"]
+    elapsed_seconds = runtime.get("elapsed_seconds")
+    cost_usd = runtime.get("cost_usd")
+    input_tokens = runtime.get("input_tokens")
+    output_tokens = runtime.get("output_tokens")
+    total_tokens = (
+        input_tokens + output_tokens
+        if isinstance(input_tokens, (int, float))
+        and isinstance(output_tokens, (int, float))
+        else None
+    )
     return {
         "schema_version": "1.0",
         "system_id": submission.system_id,
@@ -92,10 +120,39 @@ def submission_metrics(submission: SubmissionBundle) -> dict[str, Any]:
             ),
             "isolated_entity_rate": _ratio(totals["isolated_entity_count"], entity_total),
             "surface_duplicate_group_count": totals["surface_duplicate_group_count"],
-            "elapsed_seconds": runtime.get("elapsed_seconds"),
-            "cost_usd": runtime.get("cost_usd"),
-            "input_tokens": runtime.get("input_tokens"),
-            "output_tokens": runtime.get("output_tokens"),
+            "identity": {
+                "alias_count": totals["identity_alias_count"],
+                "nontrivial_alias_count": totals["identity_nontrivial_alias_count"],
+                "entities_with_aliases": totals["identity_entities_with_aliases"],
+                "ambiguous_surface_group_count": totals[
+                    "identity_ambiguous_surface_group_count"
+                ],
+                "entities_in_ambiguous_surface_groups": totals[
+                    "identity_entities_in_ambiguous_surface_groups"
+                ],
+                "ambiguous_surface_rate": _ratio(
+                    totals["identity_entities_in_ambiguous_surface_groups"],
+                    entity_total,
+                ),
+            },
+            "elapsed_seconds": elapsed_seconds,
+            "cost_usd": cost_usd,
+            "input_tokens": input_tokens,
+            "output_tokens": output_tokens,
+            "entities_per_second": _per(entity_total, elapsed_seconds),
+            "assertions_per_second": _per(assertion_total, elapsed_seconds),
+            "tokens_per_entity": _per(total_tokens, entity_total),
+            "tokens_per_assertion": _per(total_tokens, assertion_total),
+            "cost_per_100_entities_usd": (
+                _per(cost_usd * 100, entity_total)
+                if isinstance(cost_usd, (int, float))
+                else None
+            ),
+            "cost_per_100_assertions_usd": (
+                _per(cost_usd * 100, assertion_total)
+                if isinstance(cost_usd, (int, float))
+                else None
+            ),
         },
         "documents": per_document,
     }

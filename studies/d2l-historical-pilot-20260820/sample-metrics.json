@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
-  "expected_task_count": 120,
-  "adjudicated_task_count": 120,
+  "expected_task_count": 240,
+  "adjudicated_task_count": 240,
   "unjudged_task_count": 0,
   "tie_count": 0,
   "systems": {
@@ -33,6 +33,34 @@
           0.886487,
           1.0
         ]
+      },
+      "entity_definition_grounding": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 16,
+        "fail": 14,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.533333,
+        "pass_rate_95ci": [
+          0.361423,
+          0.697676
+        ]
+      },
+      "entity_typing": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 25,
+        "fail": 5,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.833333,
+        "pass_rate_95ci": [
+          0.664356,
+          0.926635
+        ]
       }
     },
     "llm-knowledge-graph-fresh200": {
@@ -62,6 +90,34 @@
         "pass_rate_95ci": [
           0.886487,
           1.0
+        ]
+      },
+      "entity_definition_grounding": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 23,
+        "fail": 7,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.766667,
+        "pass_rate_95ci": [
+          0.590717,
+          0.882076
+        ]
+      },
+      "entity_typing": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 23,
+        "fail": 7,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.766667,
+        "pass_rate_95ci": [
+          0.590717,
+          0.882076
         ]
       }
     }

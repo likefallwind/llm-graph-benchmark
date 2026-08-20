@@ -6,12 +6,32 @@
       "question": "Is this a stable, referable and substantive knowledge entity grounded in the supplied source evidence?"
     },
     {
+      "id": "entity_typing",
+      "question": "Are all submitted types semantically compatible with the entity and source context?"
+    },
+    {
+      "id": "entity_definition_grounding",
+      "question": "Is the complete definition supported by the supplied evidence?"
+    },
+    {
       "id": "assertion_grounding",
       "question": "Does the source support the complete directed assertion, including polarity and restrictive scope?"
     },
     {
       "id": "fact_recovery",
       "question": "Can the submitted graph recover this source-side fact without adding unsupported content?"
+    },
+    {
+      "id": "alias_identity",
+      "question": "Is the alias genuinely coreferential with the entity?"
+    },
+    {
+      "id": "identity_split",
+      "question": "Is it correct to keep the two entities separate despite a shared surface?"
+    },
+    {
+      "id": "book_qa",
+      "question": "Are the graph assertions sufficient to answer the book question?"
     }
   ]
 }

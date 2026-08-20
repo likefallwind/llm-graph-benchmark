@@ -26,6 +26,20 @@ DEFAULT_RUBRIC = {
             ),
         },
         {
+            "id": "entity_typing",
+            "question": (
+                "Are all submitted entity types semantically compatible with the entity "
+                "and its supplied source context?"
+            ),
+        },
+        {
+            "id": "entity_definition_grounding",
+            "question": (
+                "Is the submitted entity definition fully supported by the supplied source "
+                "evidence without material unsupported additions?"
+            ),
+        },
+        {
             "id": "assertion_grounding",
             "question": (
                 "Does the source support the complete directed assertion, "
@@ -37,6 +51,27 @@ DEFAULT_RUBRIC = {
             "question": (
                 "Can the submitted graph recover this source-side fact without "
                 "adding unsupported content?"
+            ),
+        },
+        {
+            "id": "alias_identity",
+            "question": (
+                "Is the submitted alias genuinely coreferential with this entity rather than "
+                "a related, broader, narrower, or context-local expression?"
+            ),
+        },
+        {
+            "id": "identity_split",
+            "question": (
+                "Given their definitions and evidence, is it correct to keep these two entities "
+                "separate despite a shared surface form?"
+            ),
+        },
+        {
+            "id": "book_qa",
+            "question": (
+                "Do the retrieved graph assertions contain enough correct information to answer "
+                "the book question completely?"
             ),
         },
     ],
@@ -432,6 +467,7 @@ def adapt_sqlite(
     system_name: str,
     system_version: str,
     fact_probes_path: str | Path,
+    qa_probes_path: str | Path | None = None,
     source_id: int | None = None,
     allow_incomplete: bool = False,
     filter_probes_to_scope: bool = False,
@@ -506,6 +542,29 @@ def adapt_sqlite(
     ]
     if not probes:
         raise ValueError("no fact probes remain inside processed scope")
+    all_qa_probes = read_jsonl(qa_probes_path) if qa_probes_path else []
+    out_of_scope_qa_probes = [
+        probe
+        for probe in all_qa_probes
+        if any(
+            str(unit_id) not in scoped_passage_ids
+            for unit_id in probe.get("evidence_unit_ids", [])
+        )
+    ]
+    if out_of_scope_qa_probes and not filter_probes_to_scope:
+        qa_ids = [str(probe.get("qa_id", "")) for probe in out_of_scope_qa_probes]
+        raise ValueError(
+            "QA probes reference passages outside processed scope: "
+            f"{qa_ids[:5]}"
+        )
+    excluded_qa_ids = {
+        str(probe.get("qa_id", "")) for probe in out_of_scope_qa_probes
+    }
+    qa_probes = [
+        probe
+        for probe in all_qa_probes
+        if str(probe.get("qa_id", "")) not in excluded_qa_ids
+    ]
     manifest = {
         "schema_version": "1.0",
         "benchmark_id": benchmark_id,
@@ -538,6 +597,15 @@ def adapt_sqlite(
             },
         },
     }
+    if qa_probes_path:
+        manifest["qa_probes_file"] = "qa_probes.jsonl"
+        manifest["metadata"]["qa_probe_scope"] = {
+            "input_count": len(all_qa_probes),
+            "included_count": len(qa_probes),
+            "excluded_count": len(out_of_scope_qa_probes),
+            "excluded_qa_ids": sorted(excluded_qa_ids),
+            "filter_enabled": filter_probes_to_scope,
+        }
     submission = {
         "schema_version": "1.0",
         "benchmark_id": benchmark_id,
@@ -559,6 +627,8 @@ def adapt_sqlite(
     write_json(output / "benchmark.json", manifest)
     write_jsonl(output / "documents.jsonl", [document])
     write_jsonl(output / "fact_probes.jsonl", probes)
+    if qa_probes_path:
+        write_jsonl(output / "qa_probes.jsonl", qa_probes)
     write_json(output / "rubric.json", DEFAULT_RUBRIC)
     write_json(output / "submission.json", submission)
 
@@ -577,6 +647,7 @@ def adapt_sqlite(
             "documents": 1,
             "source_units": len(document["units"]),
             "fact_probes": len(probes),
+            "qa_probes": len(qa_probes),
             "entities": len(submission_document["entities"]),
             "assertions": len(submission_document["assertions"]),
         },

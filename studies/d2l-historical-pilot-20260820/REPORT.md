@@ -1,57 +1,74 @@
-# D2L 历史图谱快照评测（pilot）
+# D2L 历史图谱快照完整评测（pilot）
 
 ## 结论
 
-两份历史快照表现出相似的模式：抽出的 Entity 基本都值得进入图谱，Assertion 的原文
-支撑率也很高；当前最明显的短板是**事实完整恢复**，而不是“图里多数内容是错的”。
+本轮覆盖 Entity 准入、类型、定义、Assertion、事实完整性、身份解析、Book QA、结构、跨运行
+稳定性、效率和裁判一致性，不再只是三个指标。
 
-| 快照 | 已处理 chunk | Entity admission | Assertion grounding | Fact recovery（当前覆盖范围） |
-|---|---:|---:|---:|---:|
-| exact27 | 27 | 30/30 (100.0%; 95% CI 88.6%–100.0%) | 27/30 (90.0%; 95% CI 74.4%–96.5%) | 0/1 (0.0%; 95% CI 0.0%–79.3%) |
-| fresh200 | 200 | 30/30 (100.0%; 95% CI 88.6%–100.0%) | 29/30 (96.7%; 95% CI 83.3%–99.4%) | 3/7 (42.9%; 95% CI 15.8%–75.0%) |
+| 语义维度 | exact27 | fresh200 |
+|---|---:|---:|
+| Entity admission | 30/30 (100.0%; 88.6%–100.0%) | 30/30 (100.0%; 88.6%–100.0%) |
+| Entity typing | 25/30 (83.3%; 66.4%–92.7%) | 23/30 (76.7%; 59.1%–88.2%) |
+| Entity definition grounding | 16/30 (53.3%; 36.1%–69.8%) | 23/30 (76.7%; 59.1%–88.2%) |
+| Assertion grounding | 27/30 (90.0%; 74.4%–96.5%) | 29/30 (96.7%; 83.3%–99.4%) |
+| Alias identity | 30/30 (100.0%; 88.6%–100.0%) | 29/30 (96.7%; 83.3%–99.4%) |
+| Identity split correctness | 2/2 (100.0%; 34.2%–100.0%) | 13/14 (92.9%; 68.5%–98.7%) |
+| Fact recovery（当前覆盖范围） | 0/1 (0.0%; 0.0%–79.3%) | 3/7 (42.9%; 15.8%–75.0%) |
+| Book QA（当前覆盖范围） | 0/1 (0.0%; 0.0%–79.3%) | 2/6 (33.3%; 9.7%–70.0%) |
 
-`exact27` 只覆盖 48 条冻结探针中的 1 条，`fresh200` 只覆盖 7 条，因此两者的 fact recovery
-分母不同，**不能把 0/1 与 3/7 当作严格的系统间排名**。它们只能评价各快照已处理范围。
+最强项是 Entity admission 与 Assertion grounding；主要弱项是定义证据化、事实完整恢复和 Book QA。
+内部 checker 提升了单条精确性，但没有解决遗漏、组合事实和定义外加知识。
 
-## 结构与规模
+`exact27` 仅覆盖 48 条 fact probes 中 1 条和 24 道 QA 中 1 道；`fresh200` 分别覆盖 7 条和
+6 道。分母不同，不能把 completeness/QA 当作两系统排名。
 
-| 快照 | Entity | Assertion | Entity evidence | Assertion evidence | 孤立 Entity 比例 | 表面重复组 |
+## 身份与结构
+
+| 快照 | Entity | Assertion | 孤立率 | 模糊表面词组 | 涉及 Entity | 表面重复组 |
 |---|---:|---:|---:|---:|---:|---:|
-| exact27 | 132 | 76 | 100% | 100% | 40.9% | 0 |
-| fresh200 | 603 | 625 | 100% | 100% | 33.0% | 1 |
+| exact27 | 132 | 76 | 40.9% | 2 | 4 | 0 |
+| fresh200 | 603 | 625 | 33.0% | 12 | 25 | 1 |
 
-规模不是质量分数。fresh200 从 27 增长到 200 个 chunk 后，Entity/Assertion 数量显著增长，
-证据覆盖仍为 100%，盲样本 Assertion grounding 没有随规模下降。
+典型身份错误包括把特定 `DataLoader` 当作通用跨框架数据迭代器别名，以及把定义相同的随机梯度
+下降/小批量随机梯度下降拆成两个实体。同名但应分开的 Torch/PyTorch、数学 Variable/tf.Variable、
+求导/概率 sum rule 等则被正确保留。
 
-## 主要错误
+## 跨运行稳定性
 
-- exact27 的 Assertion 错误包括：从符号表构造出不存在的“记法采用”关系，以及把“代码散见于博客
-  和 GitHub”过度投射成 GitHub 分别托管 LeNet、AlexNet。
-- fresh200 的 Assertion 错误是关系方向失真：原文的 `P(A)` 表示事件 A 的概率，不等于“概率以
-  随机事件为记号”。
-- fresh200 的 4 个 fact recovery 失败分别是：四个机器学习核心组件只恢复了一部分、线性模型的
-  正负权重单调方向缺失、MNIST“过于简单”的选择理由缺失、回归的一般定义缺失。
-- Entity admission 并不等于类型准确率。盲样本中可见 LaTeX/GitHub、TensorFlow Variable、
-  对称矩阵等对象带有可疑的额外类型；这应在下一版增加独立 `entity_typing` 指标，不能事后混入
-  已冻结的 admission 尺度。
+以 exact27 的 164 个 Source Passage 为共同范围：Entity 规范名 Jaccard
+为 34.7%，reference retention 为 52.3%；
+名称+别名词表 Jaccard 为 40.1%。完整 Assertion 三元组
+Jaccard 为 4.3%，reference retention 为 7.9%，
+只看有向端点对 Jaccard 为 12.4%。
 
-## 协议
+精确性虽高，但不同运行抽取对象与关系表达仍不稳定；正式对比必须冻结模型、prompt、chunk 和随机参数。
 
-- 输入：同一本 D2L 中文版，源文本 SHA-256
-  `9b57a1cead18be493ddbf26a62d09031a85c3a7261306648c1a5c2fc93a68e76`。
-- 精确性侧：每个快照以 seed `20260820` 固定抽取 30 个 Entity 和 30 个 Assertion，系统身份
-  不出现在公开任务中；本次 120/120 均已裁判。
-- 完整性侧：使用独立从原文冻结的 48 条分层 fact probes；只在快照已处理 passage 范围内出题。
-- 检索：统一使用 `char-ngram-bm25-v1(top_k=10,k1=1.2,b=0.75)`，只索引图谱 Assertion 的
-  subject、predicate、object、text、scope，不读取原文 passage 或 evidence。
-- 内部 LLM checker 是被评系统的一部分；上述盲评是统一的外部结果裁判，没有重复调用抽取 API。
+## 效率与成本
 
-## 可信度边界
+| 快照 | observed wall span | chunk/hour | Entity/hour | Assertion/hour | Token/成本 |
+|---|---:|---:|---:|---:|---:|
+| exact27 | 2.16 h | 12.48 | 61.03 | 35.14 | unavailable |
+| fresh200 | 44.62 h | 4.48 | 13.51 | 14.01 | unavailable |
 
-这是**同一强模型完成策展与裁判的自评 pilot**，没有独立人类校准，不能宣称人工金标准。
-Wilson 区间已报告，但小样本 fact recovery 区间很宽。两份数据库也只是书籍前 27/200 个 chunk 的
-历史快照，不是全书最终分数。事实恢复分数同时受图谱和统一检索器影响；后续应在人类校准小样本上
-验证检索器，并加入其他提取系统后再做正式横向比较。
+SQLite 时间戳只能恢复包含暂停和退避的 observed wall span，不能冒充 active runtime。历史库未保存
+token/cost，因此明确记为 unavailable；框架已支持后续提交这些字段及单位产出成本。
 
-本轮结果足以验证 benchmark 可以端到端评价真实历史图谱，也给出明确诊断：优先提升跨 Assertion
-组合、条件/理由保留和一般定义覆盖；不应只继续优化单条 Assertion 的证据支撑率。
+## 裁判一致性与可信度
+
+本轮全部 331 个任务都进行了同一 Codex 的第二次反序复核，并保存 pairwise agreement
+和 Cohen's kappa。边界分歧集中在宽泛类型、常识性定义补充和框架专用别名。这只能说明同模型重复
+稳定性，不是独立模型或人工校准。
+
+没有人工标签，human calibration 明确为 `unavailable-no-human-labels`，没有伪造分数。正式论文只需
+从失败、分歧和随机通过项抽少量样本校准，不需要标完整本书。
+
+## 主要诊断
+
+- 类型：通用对象被错标为 data/deep-learning-model/computing-operation，或带不兼容附加类型。
+- 定义：从符号表、代码调用或一句提及扩写出原文未支持的机制和背景知识。
+- Assertion：从集合性表述投射到具体对象、关系方向失真、从符号邻接构造伪关系。
+- 完整性/QA：组合组件不全、关键条件或原因缺失、一般定义只恢复成特例。
+- 稳定性：同一输入范围两次运行的规范名和完整三元组重合度偏低。
+
+优化优先级应是：定义证据约束 > 组合事实与条件保留 > Entity 类型清理 > 跨运行规范化；
+而不是继续只提高已经很高的单条 Assertion 支撑率。

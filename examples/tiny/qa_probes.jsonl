@@ -1,0 +1,1 @@
+{"document_id":"book-1","evidence_unit_ids":["p1"],"qa_id":"q1","question":"How does gradient descent update parameters?","reference_answer":"It updates parameters in the negative gradient direction."}

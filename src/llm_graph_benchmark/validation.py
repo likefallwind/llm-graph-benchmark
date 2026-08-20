@@ -147,6 +147,33 @@ def validate_benchmark(bundle: BenchmarkBundle) -> ValidationResult:
         issues.append(
             ValidationIssue("fact_probes", "empty_probes", "requires at least one fact probe")
         )
+    _unique_ids(issues, bundle.qa_probes, "qa_probes", "qa_id")
+    for index, probe in enumerate(bundle.qa_probes):
+        if not isinstance(probe, dict):
+            continue
+        document_id = _string(
+            issues, probe.get("document_id"), f"qa_probes[{index}].document_id"
+        )
+        _string(issues, probe.get("question"), f"qa_probes[{index}].question")
+        _string(
+            issues, probe.get("reference_answer"), f"qa_probes[{index}].reference_answer"
+        )
+        if document_id and document_id not in document_ids:
+            issues.append(
+                ValidationIssue(f"qa_probes[{index}].document_id", "unknown_document", document_id)
+            )
+        refs = _list(
+            issues, probe.get("evidence_unit_ids"), f"qa_probes[{index}].evidence_unit_ids"
+        )
+        for ref_index, unit_id in enumerate(refs):
+            if unit_id not in units.get(document_id, set()):
+                issues.append(
+                    ValidationIssue(
+                        f"qa_probes[{index}].evidence_unit_ids[{ref_index}]",
+                        "unknown_unit",
+                        str(unit_id),
+                    )
+                )
     dimensions = bundle.rubric.get("dimensions")
     if not isinstance(dimensions, list) or not dimensions:
         issues.append(

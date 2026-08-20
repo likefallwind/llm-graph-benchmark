@@ -22,6 +22,8 @@ Results from the two tracks must not be mixed in one ranking.
 Blindly sample submitted objects and judge narrow questions against cited source evidence:
 
 - `entity_admission`: stable, referable, substantive, and grounded;
+- `entity_typing`: every submitted type is compatible with the entity and context;
+- `entity_definition_grounding`: the definition adds no material unsupported content;
 - `assertion_grounding`: full directed claim is supported;
 - restrictive scope and polarity are preserved as part of assertion grounding.
 
@@ -36,6 +38,18 @@ a recall-like fact-recovery measure without requiring a complete gold graph.
 
 Report retrieval failures separately when possible. A semantic retriever should be validated on a
 small human-labelled slice before it is used for headline results.
+
+### Identity, utility, stability and efficiency
+
+- Judge sampled `alias_identity` assignments and collision-derived `identity_split` pairs;
+- report ambiguous normalized surface groups as diagnostics, not automatic errors;
+- use frozen `book_qa` questions to test whether retrieved graph assertions can answer the book;
+- compare repeated runs on exactly the same source-unit scope using Entity and Assertion overlap;
+- report elapsed time, tokens, cost and unit-output rates; missing historical telemetry is
+  `unavailable`, never zero.
+
+Book QA and fact recovery may share source facts, so they must be reported separately and must not
+be added as statistically independent evidence.
 
 ## Human calibration
 
@@ -55,8 +69,8 @@ evaluator, not to annotate an entire book graph.
 
 ## Recommended paper table
 
-| System | Entity admission | Assertion grounding | Fact recovery | Identity errors | Book QA | Cost |
-|---|---:|---:|---:|---:|---:|---:|
+| System | Entity admission | Typing | Definition | Assertion | Fact recovery | Identity | Book QA | Stability | Cost |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 
 Structure metrics, error slices, checker ablations and judge calibration belong in separate tables
 or appendices so that high graph density cannot hide low semantic quality.
