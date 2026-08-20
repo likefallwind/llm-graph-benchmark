@@ -195,3 +195,41 @@ def test_adapter_rejects_incomplete_progress(adapter_inputs, tmp_path):
             system_version="1",
             fact_probes_path=probes,
         )
+
+
+def test_adapter_filters_fact_probes_to_processed_scope(adapter_inputs, tmp_path):
+    database, probes = adapter_inputs
+    with probes.open("a", encoding="utf-8") as handle:
+        handle.write(
+            json.dumps(
+                {
+                    "probe_id": "p2",
+                    "document_id": "doc-1",
+                    "statement": "An out-of-scope fact.",
+                    "evidence_unit_ids": ["u999"],
+                }
+            )
+            + "\n"
+        )
+
+    output = tmp_path / "output"
+    report = adapt_sqlite(
+        database,
+        output,
+        benchmark_id="test-v1",
+        system_id="system-a",
+        system_name="System A",
+        system_version="1",
+        fact_probes_path=probes,
+        filter_probes_to_scope=True,
+    )
+
+    benchmark = BenchmarkBundle.load(output / "benchmark.json")
+    assert [probe["probe_id"] for probe in benchmark.fact_probes] == ["p1"]
+    assert report["fact_probe_scope"] == {
+        "input_count": 2,
+        "included_count": 1,
+        "excluded_count": 1,
+        "excluded_probe_ids": ["p2"],
+        "filter_enabled": True,
+    }

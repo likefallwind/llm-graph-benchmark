@@ -123,6 +123,8 @@ llm-graph-benchmark report \
 
 允许的标签是 `pass`、`fail`、`uncertain`。同一任务可由多个模型或人重复评价。
 聚合结果会同时报告 expected、judged 和 unjudged；缺失裁判不会被静默排除。
+若 fact probe 带有 `metadata` 分层字段，私有 task key 会保留这些字段，`aggregate` 会额外
+按复杂度、位置、章节等维度分别报告结果；公开盲评任务不暴露这些分层标签。
 
 完整性评估不会默认把整张图塞给裁判。`probe-tasks` 接受冻结的 retrieval results，把每个
 source-side fact probe 与同一检索器为各系统召回的候选 Assertion 组合成盲测任务。检索器
@@ -169,5 +171,8 @@ Passage 重建 chunk，只把 `source_progress=done` 的 chunk 所覆盖的 Pass
 评估范围和重建得到的整书 chunk 数会写入 manifest，避免用 partial graph 对比 full-book
 输入。如果历史实验使用了不同参数，必须在适配时显式传入。
 
-`examples/d2l-pilot/fact_probes.jsonl` 只有一条人工核对的接口探针，仅用于验证工作流，不是
-论文级完整性评价集。
+完整冻结集位于 `examples/d2l-book-v1/fact_probes.jsonl`。对只处理了书籍前部的历史快照，
+可显式传入 `--filter-probes-to-scope`；适配报告会记录输入、保留和排除的探针数及被排除的
+ID。默认仍采用严格模式，任何越界探针都会使适配失败。
+
+`examples/d2l-pilot/fact_probes.jsonl` 只有一条接口探针，仅用于验证工作流。

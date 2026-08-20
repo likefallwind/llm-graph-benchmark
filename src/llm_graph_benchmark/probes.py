@@ -142,6 +142,11 @@ def create_fact_probe_tasks(
                     "kind": "fact_recovery",
                     "item_id": probe_id,
                     "retriever": row["retriever"],
+                    "strata": (
+                        dict(probe["metadata"])
+                        if isinstance(probe.get("metadata"), dict)
+                        else {}
+                    ),
                 }
             )
     paired = sorted(zip(tasks, keys), key=lambda pair: pair[0]["task_id"])

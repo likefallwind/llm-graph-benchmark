@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "freeze_id": "d2l-zh-facts-v1",
+  "created_at": "2026-08-20",
+  "curation": {
+    "graph_blind": true,
+    "human_adjudicated": false,
+    "method": "AI-assisted manual source reading in Codex; no external model API call"
+  },
+  "document": {
+    "document_id": "d2l-zh-official",
+    "name": "动手学深度学习（D2L 中文版）",
+    "source_version": "e6b18ccea71451a55fcd861d7b96fddf2587b09a",
+    "source_content_sha256": "9b57a1cead18be493ddbf26a62d09031a85c3a7261306648c1a5c2fc93a68e76",
+    "language": "zh",
+    "uri": "https://github.com/d2l-ai/d2l-zh"
+  },
+  "fact_probes_file": "fact_probes.jsonl",
+  "fact_probes_sha256": "04c42870ce32b4d45698475dea194a50e00361b5740888e08c4bfee48aa42a2b",
+  "counts": {
+    "total": 48,
+    "by_position_band": {
+      "foundations": 12,
+      "core_architectures": 12,
+      "attention_optimization_systems": 12,
+      "vision_language": 12
+    },
+    "by_complexity": {
+      "atomic": 16,
+      "compositional": 16,
+      "scoped": 16
+    }
+  }
+}

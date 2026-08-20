@@ -434,6 +434,7 @@ def adapt_sqlite(
     fact_probes_path: str | Path,
     source_id: int | None = None,
     allow_incomplete: bool = False,
+    filter_probes_to_scope: bool = False,
     chunk_chars: int = 8000,
     overlap_chars: int = 500,
 ) -> dict[str, Any]:
@@ -480,7 +481,31 @@ def adapt_sqlite(
     finally:
         conn.close()
 
-    probes = read_jsonl(fact_probes_path)
+    all_probes = read_jsonl(fact_probes_path)
+    out_of_scope_probes = [
+        probe
+        for probe in all_probes
+        if any(
+            str(unit_id) not in scoped_passage_ids
+            for unit_id in probe.get("evidence_unit_ids", [])
+        )
+    ]
+    if out_of_scope_probes and not filter_probes_to_scope:
+        probe_ids = [str(probe.get("probe_id", "")) for probe in out_of_scope_probes]
+        raise ValueError(
+            "fact probes reference passages outside processed scope: "
+            f"{probe_ids[:5]}"
+        )
+    excluded_probe_ids = {
+        str(probe.get("probe_id", "")) for probe in out_of_scope_probes
+    }
+    probes = [
+        probe
+        for probe in all_probes
+        if str(probe.get("probe_id", "")) not in excluded_probe_ids
+    ]
+    if not probes:
+        raise ValueError("no fact probes remain inside processed scope")
     manifest = {
         "schema_version": "1.0",
         "benchmark_id": benchmark_id,
@@ -503,6 +528,13 @@ def adapt_sqlite(
                 "overlap_chars": overlap_chars,
                 "scoped_passage_count": len(scoped_passage_ids),
                 "reconstructed_book_chunk_count": reconstructed_chunk_count,
+            },
+            "fact_probe_scope": {
+                "input_count": len(all_probes),
+                "included_count": len(probes),
+                "excluded_count": len(out_of_scope_probes),
+                "excluded_probe_ids": sorted(excluded_probe_ids),
+                "filter_enabled": filter_probes_to_scope,
             },
         },
     }
@@ -548,6 +580,7 @@ def adapt_sqlite(
             "entities": len(submission_document["entities"]),
             "assertions": len(submission_document["assertions"]),
         },
+        "fact_probe_scope": manifest["metadata"]["fact_probe_scope"],
         "integrity": integrity,
     }
     write_json(output / "adapter-report.json", report)

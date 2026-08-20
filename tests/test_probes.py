@@ -29,6 +29,7 @@ def test_fact_probe_task_is_blind_and_contains_candidates(
     assert output.tasks[0]["content"]["candidate_graph_assertions"][0]["subject"] == "Alpha"
     assert "system_id" not in output.tasks[0]
     assert output.key[0]["retriever"] == "test-retriever-v1"
+    assert output.key[0]["strata"] == {}
 
 
 def test_fact_probe_task_rejects_unknown_candidate(

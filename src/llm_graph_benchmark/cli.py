@@ -76,6 +76,7 @@ def _parser() -> argparse.ArgumentParser:
     adapt.add_argument("--fact-probes", required=True)
     adapt.add_argument("--source-id", type=int)
     adapt.add_argument("--allow-incomplete", action="store_true")
+    adapt.add_argument("--filter-probes-to-scope", action="store_true")
     adapt.add_argument("--chunk-chars", type=int, default=8000)
     adapt.add_argument("--overlap-chars", type=int, default=500)
     return parser
@@ -192,6 +193,7 @@ def main(argv: list[str] | None = None) -> int:
                 fact_probes_path=args.fact_probes,
                 source_id=args.source_id,
                 allow_incomplete=args.allow_incomplete,
+                filter_probes_to_scope=args.filter_probes_to_scope,
                 chunk_chars=args.chunk_chars,
                 overlap_chars=args.overlap_chars,
             )

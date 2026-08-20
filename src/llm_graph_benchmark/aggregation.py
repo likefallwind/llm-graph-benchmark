@@ -18,6 +18,33 @@ def _wilson(successes: int, total: int, z: float = 1.959963984540054) -> list[fl
     return [round(max(0.0, center - margin), 6), round(min(1.0, center + margin), 6)]
 
 
+def _score(expected: int, counts: Counter[str]) -> dict[str, Any]:
+    decided = counts["pass"] + counts["fail"]
+    judged = decided + counts["uncertain"]
+    return {
+        "expected": expected,
+        "judged": judged,
+        "unjudged": expected - judged,
+        "pass": counts["pass"],
+        "fail": counts["fail"],
+        "uncertain": counts["uncertain"],
+        "decided": decided,
+        "pass_rate": round(counts["pass"] / decided, 6) if decided else None,
+        "pass_rate_95ci": _wilson(counts["pass"], decided),
+    }
+
+
+def _strata(row: dict[str, Any]) -> list[tuple[str, str]]:
+    raw = row.get("strata", {})
+    if not isinstance(raw, dict):
+        return []
+    return sorted(
+        (str(dimension), str(value))
+        for dimension, value in raw.items()
+        if isinstance(value, (str, int, float, bool)) and str(value).strip()
+    )
+
+
 def aggregate_judgments(
     key_rows: Iterable[dict[str, Any]], judgments: Iterable[dict[str, Any]]
 ) -> dict[str, Any]:
@@ -47,6 +74,7 @@ def aggregate_judgments(
         (str(row["system_id"]), str(row["kind"])) for row in key_list
     )
     grouped: dict[tuple[str, str], Counter[str]] = defaultdict(Counter)
+    majorities: dict[str, str] = {}
     adjudicated = 0
     ties = 0
     for task_id, labels in votes.items():
@@ -59,24 +87,34 @@ def aggregate_judgments(
             majority = best[0][0]
         row = key[task_id]
         grouped[(str(row["system_id"]), str(row["kind"]))][majority] += 1
+        majorities[task_id] = majority
         adjudicated += 1
 
     systems: dict[str, dict[str, Any]] = defaultdict(dict)
     for system_id, kind in sorted(expected):
         counts = grouped[(system_id, kind)]
-        decided = counts["pass"] + counts["fail"]
-        judged = counts["pass"] + counts["fail"] + counts["uncertain"]
-        systems[system_id][kind] = {
-            "expected": expected[(system_id, kind)],
-            "judged": judged,
-            "unjudged": expected[(system_id, kind)] - judged,
-            "pass": counts["pass"],
-            "fail": counts["fail"],
-            "uncertain": counts["uncertain"],
-            "decided": decided,
-            "pass_rate": round(counts["pass"] / decided, 6) if decided else None,
-            "pass_rate_95ci": _wilson(counts["pass"], decided),
-        }
+        systems[system_id][kind] = _score(expected[(system_id, kind)], counts)
+
+    stratum_expected: Counter[tuple[str, str, str, str]] = Counter()
+    stratum_grouped: dict[tuple[str, str, str, str], Counter[str]] = defaultdict(Counter)
+    for row in key_list:
+        prefix = (str(row["system_id"]), str(row["kind"]))
+        for dimension, value in _strata(row):
+            stratum_expected[(*prefix, dimension, value)] += 1
+    for task_id, majority in majorities.items():
+        row = key[task_id]
+        prefix = (str(row["system_id"]), str(row["kind"]))
+        for dimension, value in _strata(row):
+            stratum_grouped[(*prefix, dimension, value)][majority] += 1
+
+    stratified: dict[str, dict[str, dict[str, dict[str, Any]]]] = defaultdict(
+        lambda: defaultdict(lambda: defaultdict(dict))
+    )
+    for system_id, kind, dimension, value in sorted(stratum_expected):
+        group = (system_id, kind, dimension, value)
+        stratified[system_id][kind][dimension][value] = _score(
+            stratum_expected[group], stratum_grouped[group]
+        )
     return {
         "schema_version": "1.0",
         "expected_task_count": len(key_list),
@@ -84,4 +122,14 @@ def aggregate_judgments(
         "unjudged_task_count": len(key_list) - adjudicated,
         "tie_count": ties,
         "systems": dict(systems),
+        "strata": {
+            system_id: {
+                kind: {
+                    dimension: dict(values)
+                    for dimension, values in dimensions.items()
+                }
+                for kind, dimensions in kinds.items()
+            }
+            for system_id, kinds in stratified.items()
+        },
     }
