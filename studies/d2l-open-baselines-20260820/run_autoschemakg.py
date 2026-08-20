@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import re
 import subprocess
 import time
 from pathlib import Path
@@ -23,6 +25,23 @@ class OllamaGenerationConfig(GenerationConfig):
         if body is NOT_GIVEN:
             body = {}
         return {**body, "think": False}
+
+
+def load_api_key(*, env_name: str | None, env_file: Path | None, key_name: str) -> str | None:
+    value = os.environ.get(env_name, "") if env_name else ""
+    if not value and env_file:
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            stripped = line.strip()
+            if stripped and not stripped.startswith("#") and "=" in stripped:
+                name, candidate = stripped.split("=", 1)
+                if name.strip() == key_name:
+                    value = candidate.strip().strip("'\"")
+                    break
+    return value.split(",", 1)[0].strip() or None
+
+
+def default_system_id(model: str) -> str:
+    return "autoschemakg-" + re.sub(r"[^a-z0-9]+", "-", model.lower()).strip("-")
 
 
 def read_jsonl(path: Path) -> list[dict]:
@@ -47,6 +66,11 @@ def main() -> None:
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--model", default="qwen3:8b")
     parser.add_argument("--base-url", default="http://127.0.0.1:11434/v1")
+    parser.add_argument("--api-key-env")
+    parser.add_argument("--api-key-file", type=Path)
+    parser.add_argument("--api-key-name", default="GATEWAY_KEYS")
+    parser.add_argument("--system-id")
+    parser.add_argument("--disable-thinking", action="store_true")
     parser.add_argument("--max-tokens", type=int, default=4096)
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
@@ -61,13 +85,19 @@ def main() -> None:
     raw_dir.mkdir(parents=True, exist_ok=True)
     upstream_dir.mkdir(parents=True, exist_ok=True)
 
-    client = OpenAI(base_url=args.base_url, api_key="ollama-local")
+    api_key = load_api_key(
+        env_name=args.api_key_env,
+        env_file=args.api_key_file,
+        key_name=args.api_key_name,
+    ) or "ollama-local"
+    client = OpenAI(base_url=args.base_url, api_key=api_key)
+    generation_config_class = OllamaGenerationConfig if args.disable_thinking else GenerationConfig
     generator = LLMGenerator(
         client,
         model_name=args.model,
         backend="custom",
         max_workers=1,
-        default_config=OllamaGenerationConfig(
+        default_config=generation_config_class(
             max_tokens=args.max_tokens,
             temperature=0.0,
             do_sample=False,
@@ -184,17 +214,19 @@ def main() -> None:
         entity_records=entity_records,
         benchmark_id=args.benchmark_id,
         document_id=args.document_id,
-        system_id="autoschemakg-qwen3-8b-local",
+        system_id=args.system_id or default_system_id(args.model),
         system_name="AutoSchemaKG extraction stage",
         system_version=f"0.0.5+{commit[:12]}",
-        runtime={"elapsed_seconds": elapsed, "cost_usd": 0.0},
+        runtime={"elapsed_seconds": elapsed},
         metadata={
             "upstream_repository": "https://github.com/HKUST-KnowComp/AutoSchemaKG",
             "upstream_commit": commit,
             "model": args.model,
             "language": "zh-CN",
             "temperature": 0.0,
-            "thinking_disabled": True,
+            "api_base": args.base_url,
+            "thinking_disabled": args.disable_thinking,
+            "credential_source": "runtime environment or untracked env file",
             "scope": "official entity/event extraction stage; schema conceptualization excluded",
             "provenance_granularity": "frozen source chunk",
             "event_entity_relation": "official converter predicate: is participated by",

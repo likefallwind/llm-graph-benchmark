@@ -11,8 +11,10 @@ This study compares public document-to-graph implementations on exactly the same
 | EDC (EMNLP 2024) | `clear-nus/edc` | compatibility audit; relation-only canonicalization and legacy stack |
 
 All upstream repositories live under `/home/likefallwind/code/llm-graph-baselines`.
-Commit hashes are recorded in run artifacts. No D2L text is sent to an external
-API: local Ollama models are used.
+Commit hashes are recorded in run artifacts. The formal LLM track uses the
+user-authorized local API Gateway with `deepseek-v4-flash`; only the frozen
+27-chunk study corpus is submitted. Gateway credentials remain outside this
+repository.
 
 Fairness rules: freeze input first, retain raw outputs and provenance, do not
 synthesize missing definitions/types/aliases, report deterministic rejection of
@@ -20,10 +22,10 @@ invalid triples, and use the same benchmark dimensions for every submission.
 
 ## Runnable baselines
 
-- `run_kggen_exact27.sh`: KGGen with local `qwen3:8b`, followed by its released
+- `run_kggen_exact27.sh`: KGGen with Gateway `deepseek-v4-flash`, followed by its released
   SemHash deduplication.
 - `run_autoschemakg_exact27.sh`: AutoSchemaKG's three Chinese extraction stages
-  with local `qwen3:8b`. Schema conceptualization is deliberately reported as
+  with the same Gateway model. Schema conceptualization is deliberately reported as
   out of scope for this extraction-stage comparison.
 - `run_graphrag_fast_exact27.sh`: GraphRAG Fast through graph finalization. Its
   released `regex_english` extractor is preserved, so Chinese applicability is
@@ -32,5 +34,6 @@ invalid triples, and use the same benchmark dimensions for every submission.
 Each LLM runner writes one durable raw result per frozen source chunk and can be
 resumed. `evaluate_submission.py` validates a normalized submission and creates
 structural, blind quality, identity, fact-recovery, and book-QA artifacts.
-`run_after_kggen.sh` serializes the two local-Qwen jobs so their runtime and
-failures are not confounded by GPU/model-server contention.
+`run_after_kggen.sh` serializes the two LLM jobs so their runtime and failures
+are not confounded by simultaneous Gateway traffic. The partial Qwen3 8B smoke
+run is retained for auditability and excluded from the formal comparison.

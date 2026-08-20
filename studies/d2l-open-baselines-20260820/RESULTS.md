@@ -22,11 +22,21 @@ The sole assertion is a correctly evidenced `Image`/`PIL` co-occurrence, so its
 book; four sampled entities were invalid command/link/passage-ID artifacts, and
 all entities lacked definitions and semantic types.
 
-## Running
+## Excluded smoke run
 
-- KGGen, local `qwen3:8b`, exact 27-chunk scope.
-- AutoSchemaKG extraction stage, local `qwen3:8b`, queued to start only after
-  KGGen succeeds so the two methods do not contend for one Ollama model runner.
+The initial local KGGen `qwen3:8b` run was manually stopped after the model was
+judged too weak for a persuasive comparison. Its partial raw artifacts are
+retained for auditability but excluded from every headline comparison. No
+AutoSchemaKG Qwen run was started.
+
+## Formal LLM track
+
+- Model: API Gateway `deepseek-v4-flash` for both KGGen and AutoSchemaKG.
+- Scope: the same immutable 27 chunks and 164 source passages.
+- Execution: sequential, to avoid cross-method contention and make the Gateway
+  usage delta attributable to one method at a time.
+- Credentials: loaded at runtime from the Gateway's untracked `.env`; no key is
+  copied into this repository or run metadata.
 
 The final comparison will add the same structural, blind entity/assertion,
 identity, frozen fact-recovery, and Book-QA outputs for both LLM baselines.

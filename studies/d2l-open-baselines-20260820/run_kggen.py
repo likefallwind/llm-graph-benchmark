@@ -2,6 +2,8 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import re
 import subprocess
 import time
 from collections import defaultdict
@@ -24,6 +26,23 @@ def write_json(path: Path, value: object) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def load_api_key(*, env_name: str | None, env_file: Path | None, key_name: str) -> str | None:
+    value = os.environ.get(env_name, "") if env_name else ""
+    if not value and env_file:
+        for line in env_file.read_text(encoding="utf-8").splitlines():
+            stripped = line.strip()
+            if stripped and not stripped.startswith("#") and "=" in stripped:
+                name, candidate = stripped.split("=", 1)
+                if name.strip() == key_name:
+                    value = candidate.strip().strip("'\"")
+                    break
+    return value.split(",", 1)[0].strip() or None
+
+
+def default_system_id(model: str) -> str:
+    return "kggen-" + re.sub(r"[^a-z0-9]+", "-", model.lower()).strip("-")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--corpus", type=Path, required=True)
@@ -32,6 +51,12 @@ def main() -> None:
     parser.add_argument("--kggen-repo", type=Path, required=True)
     parser.add_argument("--out-dir", type=Path, required=True)
     parser.add_argument("--model", default="ollama_chat/qwen3:8b")
+    parser.add_argument("--api-base")
+    parser.add_argument("--api-key-env")
+    parser.add_argument("--api-key-file", type=Path)
+    parser.add_argument("--api-key-name", default="GATEWAY_KEYS")
+    parser.add_argument("--system-id")
+    parser.add_argument("--disable-thinking", action="store_true")
     parser.add_argument("--max-tokens", type=int, default=4096)
     parser.add_argument("--limit", type=int)
     args = parser.parse_args()
@@ -42,14 +67,32 @@ def main() -> None:
     raw_dir = args.out_dir / "chunks"
     raw_dir.mkdir(parents=True, exist_ok=True)
 
-    kg = KGGen(model=args.model, max_tokens=args.max_tokens, temperature=0.0, disable_cache=True)
-    kg.lm = dspy.LM(
-        model=args.model,
-        temperature=0.0,
-        max_tokens=args.max_tokens,
-        cache=False,
-        extra_body={"think": False},
+    api_key = load_api_key(
+        env_name=args.api_key_env,
+        env_file=args.api_key_file,
+        key_name=args.api_key_name,
     )
+    kg = KGGen(
+        model=args.model,
+        api_key=api_key,
+        api_base=args.api_base,
+        max_tokens=args.max_tokens,
+        temperature=0.0,
+        disable_cache=True,
+    )
+    lm_options = {
+        "model": args.model,
+        "api_key": api_key,
+        "api_base": args.api_base,
+        "temperature": 0.0,
+        "max_tokens": args.max_tokens,
+        "cache": False,
+        # The gateway implements chat/completions, not the OpenAI Responses API.
+        "model_type": "chat",
+    }
+    if args.disable_thinking:
+        lm_options["extra_body"] = {"think": False}
+    kg.lm = dspy.LM(**lm_options)
 
     started = time.time()
     failures = []
@@ -137,10 +180,10 @@ def main() -> None:
         entity_records=entity_records,
         benchmark_id=args.benchmark_id,
         document_id=args.document_id,
-        system_id="kggen-qwen3-8b-local",
+        system_id=args.system_id or default_system_id(args.model),
         system_name="KGGen",
         system_version=f"0.4.0+{commit[:12]}",
-        runtime={"elapsed_seconds": elapsed, "cost_usd": 0.0},
+        runtime={"elapsed_seconds": elapsed},
         metadata={
             "upstream_repository": "https://github.com/stair-lab/kg-gen",
             "upstream_commit": commit,
@@ -149,7 +192,9 @@ def main() -> None:
             "deduplication_method": "semhash",
             "semhash_similarity_threshold": 0.95,
             "provenance_granularity": "source chunk; shared endpoint provenance after changed dedup triples",
-            "thinking_disabled": True,
+            "api_base": args.api_base,
+            "thinking_disabled": args.disable_thinking,
+            "credential_source": "runtime environment or untracked env file",
         },
     )
     write_json(args.out_dir / "submission.json", submission)

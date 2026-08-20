@@ -3,17 +3,25 @@ set -uo pipefail
 
 study_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 repo_dir="$(cd "$study_dir/../.." && pwd)"
-run_dir="$study_dir/runs/autoschemakg-qwen3-8b-exact27"
+run_dir="$study_dir/runs/autoschemakg-deepseek-v4-flash-exact27"
 run_log="$run_dir/run.log"
 run_started="$run_dir/.started"
 run_finished="$run_dir/.finished"
 run_exit="$run_dir/.exit"
 autoschema_repo="/home/likefallwind/code/llm-graph-baselines/autoschemakg"
 python_bin="/home/likefallwind/code/llm-graph-baselines/kg-gen/.venv/bin/python"
+gateway_repo=/home/likefallwind/code/apigateway
+gateway_port=18111
+gateway_base="http://127.0.0.1:${gateway_port}/v1"
+gateway_pid=""
 run_rc=130
 
 record_exit() {
   raw_status=$?
+  if [[ -n "$gateway_pid" ]] && kill -0 "$gateway_pid" 2>/dev/null; then
+    kill -TERM "$gateway_pid" 2>/dev/null || true
+    wait "$gateway_pid" 2>/dev/null || true
+  fi
   if [[ "$run_rc" -eq 130 ]]; then
     run_rc=$raw_status
   fi
@@ -28,6 +36,32 @@ if [[ -e "$run_started" || -e "$run_finished" || -e "$run_exit" ]]; then
 fi
 date -Is > "$run_started"
 
+(
+  cd "$gateway_repo" || exit 96
+  exec env HOST=127.0.0.1 PORT="$gateway_port" \
+    UV_CACHE_DIR="$run_dir/cache/uv" \
+    STATS_FILE="$run_dir/gateway-usage-live.json" \
+    uv run python -m app
+) >> "$run_dir/gateway.log" 2>&1 &
+gateway_pid=$!
+for _ in $(seq 1 60); do
+  if curl -fsS "http://127.0.0.1:${gateway_port}/healthz" >/dev/null 2>&1; then
+    break
+  fi
+  if ! kill -0 "$gateway_pid" 2>/dev/null; then
+    echo "dedicated gateway exited during startup" >> "$run_log"
+    exit 96
+  fi
+  sleep 0.5
+done
+if ! curl -fsS "http://127.0.0.1:${gateway_port}/healthz" >/dev/null 2>&1; then
+  echo "dedicated gateway did not become healthy" >> "$run_log"
+  exit 96
+fi
+
+XDG_CACHE_HOME="$run_dir/cache" \
+HF_HOME="$run_dir/cache/huggingface" \
+HF_DATASETS_CACHE="$run_dir/cache/huggingface/datasets" \
 PYTHONPATH="$autoschema_repo:$repo_dir/src" "$python_bin" -u \
   "$study_dir/run_autoschemakg.py" \
   --corpus "$study_dir/corpus/chunks.jsonl" \
@@ -35,10 +69,24 @@ PYTHONPATH="$autoschema_repo:$repo_dir/src" "$python_bin" -u \
   --document-id d2l-zh-official \
   --autoschemakg-repo "$autoschema_repo" \
   --out-dir "$run_dir" \
-  --model qwen3:8b \
-  --max-tokens 4096 >> "$run_log" 2>&1
+  --model deepseek-v4-flash \
+  --base-url "$gateway_base" \
+  --api-key-file /home/likefallwind/code/apigateway/.env \
+  --api-key-name GATEWAY_KEYS \
+  --system-id autoschemakg-deepseek-v4-flash \
+  --max-tokens 8192 >> "$run_log" 2>&1
 run_rc=$?
 
+if [[ "$run_rc" -eq 0 ]]; then
+  PYTHONPATH="$repo_dir/src" "$python_bin" \
+    "$study_dir/capture_gateway_usage.py" \
+    --base-url "$gateway_base" \
+    --api-key-file /home/likefallwind/code/apigateway/.env \
+    --api-key-name GATEWAY_KEYS \
+    --submission "$run_dir/submission.json" \
+    --out "$run_dir/gateway-usage.json" >> "$run_log" 2>&1
+  run_rc=$?
+fi
 if [[ "$run_rc" -eq 0 ]]; then
   PYTHONPATH="$repo_dir/src" "$python_bin" \
     "$study_dir/evaluate_submission.py" \

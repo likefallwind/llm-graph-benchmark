@@ -2,10 +2,10 @@
 set -uo pipefail
 
 study_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-kggen_dir="$study_dir/runs/kggen-qwen3-8b-exact27"
+kggen_dir="$study_dir/runs/kggen-deepseek-v4-flash-exact27"
 queue_log="$study_dir/runs/sequential-queue.log"
 
-printf '%s waiting_for=kggen\n' "$(date -Is)" >> "$queue_log"
+printf '%s model=deepseek-v4-flash waiting_for=kggen\n' "$(date -Is)" >> "$queue_log"
 while [[ ! -e "$kggen_dir/.exit" ]]; do
   sleep 30
 done
