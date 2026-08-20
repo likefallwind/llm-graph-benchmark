@@ -32,3 +32,5 @@ invalid triples, and use the same benchmark dimensions for every submission.
 Each LLM runner writes one durable raw result per frozen source chunk and can be
 resumed. `evaluate_submission.py` validates a normalized submission and creates
 structural, blind quality, identity, fact-recovery, and book-QA artifacts.
+`run_after_kggen.sh` serializes the two local-Qwen jobs so their runtime and
+failures are not confounded by GPU/model-server contention.
