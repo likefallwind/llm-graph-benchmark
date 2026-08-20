@@ -1,0 +1,1 @@
+{"document_id": "d2l-zh-official", "evidence_unit_ids": ["P000156"], "metadata": {"position_band": "foundations", "question_type": "list"}, "qa_id": "d2l-qa-v1-q001", "question": "一个机器学习问题通常包含哪四个核心组件？", "reference_answer": "数据、模型、量化模型有效性的目标函数，以及调整参数以优化目标函数的算法。"}

@@ -1,0 +1,41 @@
+{
+  "dimensions": [
+    {
+      "id": "entity_admission",
+      "question": "Is this a stable, referable and substantive knowledge entity grounded in the supplied source evidence?"
+    },
+    {
+      "id": "entity_typing",
+      "question": "Are all submitted entity types semantically compatible with the entity and its supplied source context?"
+    },
+    {
+      "id": "entity_definition_grounding",
+      "question": "Is the submitted entity definition fully supported by the supplied source evidence without material unsupported additions?"
+    },
+    {
+      "id": "assertion_grounding",
+      "question": "Does the source support the complete directed assertion, including polarity and restrictive scope?"
+    },
+    {
+      "id": "fact_recovery",
+      "question": "Can the submitted graph recover this source-side fact without adding unsupported content?"
+    },
+    {
+      "id": "alias_identity",
+      "question": "Is the submitted alias genuinely coreferential with this entity rather than a related, broader, narrower, or context-local expression?"
+    },
+    {
+      "id": "identity_split",
+      "question": "Given their definitions and evidence, is it correct to keep these two entities separate despite a shared surface form?"
+    },
+    {
+      "id": "book_qa",
+      "question": "Do the retrieved graph assertions contain enough correct information to answer the book question completely?"
+    }
+  ],
+  "labels": [
+    "pass",
+    "fail",
+    "uncertain"
+  ]
+}

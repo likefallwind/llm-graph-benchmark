@@ -1,0 +1,1 @@
+{"document_id": "d2l-zh-official", "evidence_unit_ids": ["P000156"], "importance": "core", "metadata": {"chapter": "引言", "complexity": "compositional", "position_band": "foundations"}, "probe_id": "d2l-v1-f001", "statement": "机器学习问题的四个核心组件是数据、模型、量化模型有效性的目标函数，以及调整参数以优化目标函数的算法。"}
