@@ -161,6 +161,12 @@ pytest --cov=llm_graph_benchmark
 
 `examples/tiny` 是完全合成的小型端到端样例，不包含真实书籍内容。
 
+## 真实案例
+
+- [D2L 历史图谱快照评测（2026-08-20 pilot）](studies/d2l-historical-pilot-20260820/REPORT.md)：
+  对 27/200 chunk 两份只读 SQLite 快照完成结构指标、Entity/Assertion 盲样本和冻结事实探针
+  评测；同时保存判断、聚合结果、输入哈希与可复现构建脚本。
+
 ## `llm-knowledge-graph` SQLite 适配器
 
 schema 10 的静态数据库快照可以只读转换为本仓库的中立契约：

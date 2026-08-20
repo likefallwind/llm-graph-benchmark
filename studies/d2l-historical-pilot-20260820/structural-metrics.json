@@ -1,0 +1,68 @@
+{
+  "llm-knowledge-graph-exact27": {
+    "documents": [
+      {
+        "assertion_count": 76,
+        "assertion_evidence_coverage": 1.0,
+        "component_count": 64,
+        "document_id": "d2l-zh-official",
+        "entity_count": 132,
+        "entity_evidence_coverage": 1.0,
+        "isolated_entity_count": 54,
+        "largest_component_ratio": 0.409091,
+        "surface_duplicate_group_count": 0,
+        "unique_predicate_count": 68
+      }
+    ],
+    "schema_version": "1.0",
+    "submission_hash": "sha256:3af2556f053fe5c071c79d8667322863593e25b9ca897ff7275b3f6af979f43e",
+    "summary": {
+      "assertion_count": 76,
+      "assertion_evidence_coverage": 1.0,
+      "cost_usd": null,
+      "document_count": 1,
+      "elapsed_seconds": null,
+      "entity_count": 132,
+      "entity_evidence_coverage": 1.0,
+      "input_tokens": null,
+      "isolated_entity_rate": 0.409091,
+      "output_tokens": null,
+      "surface_duplicate_group_count": 0,
+      "unique_predicate_count_sum": 68
+    },
+    "system_id": "llm-knowledge-graph-exact27"
+  },
+  "llm-knowledge-graph-fresh200": {
+    "documents": [
+      {
+        "assertion_count": 625,
+        "assertion_evidence_coverage": 1.0,
+        "component_count": 217,
+        "document_id": "d2l-zh-official",
+        "entity_count": 603,
+        "entity_evidence_coverage": 1.0,
+        "isolated_entity_count": 199,
+        "largest_component_ratio": 0.600332,
+        "surface_duplicate_group_count": 1,
+        "unique_predicate_count": 267
+      }
+    ],
+    "schema_version": "1.0",
+    "submission_hash": "sha256:3c3d4f5dedea00d4848274f958c071ddbb00c5709f2a838365641be3ad6d0406",
+    "summary": {
+      "assertion_count": 625,
+      "assertion_evidence_coverage": 1.0,
+      "cost_usd": null,
+      "document_count": 1,
+      "elapsed_seconds": null,
+      "entity_count": 603,
+      "entity_evidence_coverage": 1.0,
+      "input_tokens": null,
+      "isolated_entity_rate": 0.330017,
+      "output_tokens": null,
+      "surface_duplicate_group_count": 1,
+      "unique_predicate_count_sum": 267
+    },
+    "system_id": "llm-knowledge-graph-fresh200"
+  }
+}

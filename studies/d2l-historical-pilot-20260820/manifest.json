@@ -1,0 +1,31 @@
+{
+  "schema_version": "1.0",
+  "study_id": "d2l-historical-pilot-20260820",
+  "judge_id": "codex-source-grounded-self-eval-v1",
+  "sample_seed": 20260820,
+  "sample_per_system": {
+    "entity_admission": 30,
+    "assertion_grounding": 30
+  },
+  "retriever": "char-ngram-bm25-v1(top_k=10,k1=1.2,b=0.75)",
+  "fact_probe_set": "d2l-zh-facts-v1",
+  "fact_probe_set_sha256": "sha256:04c42870ce32b4d45698475dea194a50e00361b5740888e08c4bfee48aa42a2b",
+  "inputs": {
+    "llm-knowledge-graph-exact27/sample/tasks.jsonl": "sha256:20f093606c496b19db519041a917a59711bb975032f3954c8457d164176722cb",
+    "llm-knowledge-graph-exact27/sample/task-key.jsonl": "sha256:637553fdac32d24666919daf252aea3d3a4985657214486899e25ac66e45140f",
+    "llm-knowledge-graph-exact27/sample/submission.json": "sha256:e49eaf9857430b726be3bfa1f2028f4b634cc8a989e6faad2d929b0bfbdf3483",
+    "llm-knowledge-graph-exact27/sample/metrics.json": "sha256:254f202bb2667b046cd210dd23ef45d183d603dcc5f4bfb9cbdd397eee378329",
+    "llm-knowledge-graph-fresh200/sample/tasks.jsonl": "sha256:0eba0a6cb16344814b1d87071a90c9e96db8c8e50981c3c3e2dae0a0f34607d9",
+    "llm-knowledge-graph-fresh200/sample/task-key.jsonl": "sha256:cc557ab3808817816ec84f03f7860f276b155de8a41285d09f5dbc81ffa53e47",
+    "llm-knowledge-graph-fresh200/sample/submission.json": "sha256:7fb1e55725006a9c513733999510c5911482019b48f1a78359312327b3a18bd6",
+    "llm-knowledge-graph-fresh200/sample/metrics.json": "sha256:d2b65965c9068df7846435bb45c409181fef75347160ef7b656bdb7ed172eb11",
+    "llm-knowledge-graph-exact27/fact/probe-tasks-lexical.jsonl": "sha256:af7cfab76a3e0504f8c8af018845d8531170c38a515a735117cb7fcd94c22817",
+    "llm-knowledge-graph-exact27/fact/probe-task-key-lexical.jsonl": "sha256:1c41e3fffa8571ab392d476ba2a141eb19c1b00acf2d039c61c050d980652675",
+    "llm-knowledge-graph-exact27/fact/retrieval-lexical.jsonl": "sha256:3f3c7aa9bf3db684e74e4611d6057dca94365f66f805dfd5db6291b3782a1ea3",
+    "llm-knowledge-graph-exact27/fact/submission.json": "sha256:e2665508a3c3b5bbca4f30e5784595de7d9e5600e43e5b7dc804142b623e6503",
+    "llm-knowledge-graph-fresh200/fact/probe-tasks-lexical.jsonl": "sha256:088b4d6c1aa54eb6adc25d4acb1cd6879323529dde553588cb96a9d1396944e7",
+    "llm-knowledge-graph-fresh200/fact/probe-task-key-lexical.jsonl": "sha256:4b4a2e7e72f040650478bcd1898b8f61ca97d4291bd96defd3939f9440ddf058",
+    "llm-knowledge-graph-fresh200/fact/retrieval-lexical.jsonl": "sha256:d4a10b3c744bffe603b4f987403738d220c337d696f841722882e242e4240f53",
+    "llm-knowledge-graph-fresh200/fact/submission.json": "sha256:af507eca82daa33e6b101a76d047d0f3dae7fc09e0b342705737403d18122f3e"
+  }
+}

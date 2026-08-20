@@ -1,0 +1,8 @@
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选只零散涉及数据、模型、目标函数和优化器，未恢复四者共同构成核心组件的完整事实。", "task_id": "t_49f8fd3935ac6d998e2b"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "pass", "reason": "候选明确恢复框架张量的 GPU/自动微分能力及 NumPy 仅支持 CPU 的对比。", "task_id": "t_27e4039c8e1d85d93471"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选只有一般线性模型关系，未恢复正负权重决定输出单调方向的约束。", "task_id": "t_2a99f2c3b3e14099f683"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "pass", "reason": "候选完整恢复计算图跟踪操作组合并沿图反向传播梯度。", "task_id": "t_628809006750a4a82cbb"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选提到若干角色，但未完整表达数据、模型、目标函数和算法这四个核心组件。", "task_id": "t_887f30a52fc8b43eb293"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选表达 MNIST 被使用且 Fashion-MNIST 更复杂，但缺少 MNIST 作为基准过于简单这一关键原因。", "task_id": "t_8c51a1e7bbf09685a181"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "fail", "reason": "候选只恢复线性回归的线性假设，未恢复回归作为自变量与因变量关系建模方法的一般定义。", "task_id": "t_c538fadce57400d26657"}
+{"confidence": 0.95, "judge_id": "codex-source-grounded-self-eval-v1", "label": "pass", "reason": "候选明确区分回归预测数值与分类预测所属类别。", "task_id": "t_df1bd349eb03a9942aad"}
