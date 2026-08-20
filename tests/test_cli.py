@@ -17,24 +17,25 @@ def test_cli_end_to_end(benchmark_dir, submission_path, tmp_path):
     report = tmp_path / "out" / "report.md"
     probe_tasks = tmp_path / "out" / "probe-tasks.jsonl"
     probe_key = tmp_path / "out" / "probe-key.jsonl"
+    retrieval = tmp_path / "out" / "retrieval.jsonl"
 
     assert main(["validate-benchmark", str(benchmark)]) == 0
     assert main(
         ["validate-submission", str(submission_path), "--benchmark", str(benchmark)]
     ) == 0
-    retrieval = tmp_path / "retrieval.jsonl"
-    retrieval.write_text(
-        json.dumps(
-            {
-                "system_id": "system-a",
-                "probe_id": "p1",
-                "retriever": "test-v1",
-                "assertion_ids": ["a1"],
-            }
-        )
-        + "\n",
-        encoding="utf-8",
-    )
+    assert main(
+        [
+            "retrieve-lexical",
+            "--benchmark",
+            str(benchmark),
+            "--submission",
+            str(submission_path),
+            "--top-k",
+            "1",
+            "--out",
+            str(retrieval),
+        ]
+    ) == 0
     assert main(
         [
             "probe-tasks",

@@ -13,6 +13,7 @@ from .io import read_json, read_jsonl, write_json, write_jsonl
 from .metrics import submission_metrics
 from .probes import create_fact_probe_tasks
 from .report import markdown_report
+from .retrieval import retrieve_fact_probes
 from .sampling import create_blind_sample
 from .validation import validate_benchmark, validate_submission
 
@@ -50,6 +51,14 @@ def _parser() -> argparse.ArgumentParser:
     probes.add_argument("--seed", type=int, default=0)
     probes.add_argument("--tasks-out", required=True)
     probes.add_argument("--key-out", required=True)
+
+    retrieve = commands.add_parser("retrieve-lexical")
+    retrieve.add_argument("--benchmark", required=True)
+    retrieve.add_argument("--submission", action="append", required=True)
+    retrieve.add_argument("--top-k", type=int, default=10)
+    retrieve.add_argument("--k1", type=float, default=1.2)
+    retrieve.add_argument("--b", type=float, default=0.75)
+    retrieve.add_argument("--out", required=True)
 
     metrics = commands.add_parser("metrics")
     metrics.add_argument("submission")
@@ -158,6 +167,28 @@ def main(argv: list[str] | None = None) -> int:
             write_jsonl(args.tasks_out, output.tasks)
             write_jsonl(args.key_out, output.key)
             _print({"tasks": len(output.tasks), "tasks_out": args.tasks_out, "key_out": args.key_out})
+            return 0
+        if args.command == "retrieve-lexical":
+            benchmark = BenchmarkBundle.load(args.benchmark)
+            if not validate_benchmark(benchmark).ok:
+                raise ValueError("benchmark is invalid; run validate-benchmark for details")
+            submissions = []
+            for path in args.submission:
+                submission = SubmissionBundle.load(path)
+                result = validate_submission(submission, benchmark)
+                if not result.ok:
+                    raise ValueError(f"invalid submission {path}: {result.as_dict()}")
+                submissions.append(submission)
+            _require_unique_systems(submissions)
+            rows = retrieve_fact_probes(
+                benchmark,
+                submissions,
+                top_k=args.top_k,
+                k1=args.k1,
+                b=args.b,
+            )
+            write_jsonl(args.out, rows)
+            _print({"rows": len(rows), "output": args.out})
             return 0
         if args.command == "metrics":
             _, submission = _valid_pair(args.benchmark, args.submission)

@@ -137,6 +137,21 @@ retrieval results 每行格式如下：
 {"system_id":"example","probe_id":"f1","retriever":"manual-tiny-v1","assertion_ids":["a1"]}
 ```
 
+仓库内置一个确定性的图谱文本基线，可用于所有系统的统一召回：
+
+```bash
+llm-graph-benchmark retrieve-lexical \
+  --benchmark examples/d2l-book-v1 \
+  --submission outputs/system-a/submission.json \
+  --top-k 10 \
+  --out outputs/retrieval-lexical.jsonl
+```
+
+该基线只索引 Assertion 的 subject、predicate、object、text 和 scope，不读取 source
+passage 或 evidence，避免用原文证据替图谱回答。其默认配置固定为 Unicode 规范化、中文
+单字/双字与拉丁词 token、BM25（`k1=1.2`、`b=0.75`），结果中的 retriever id 会记录
+版本和参数。
+
 ## 开发
 
 ```bash
