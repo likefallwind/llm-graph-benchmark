@@ -1,0 +1,183 @@
+{
+  "adjudicated_task_count": 27,
+  "expected_task_count": 27,
+  "schema_version": "1.0",
+  "strata": {
+    "graphrag-fast-default": {
+      "book_qa": {
+        "position_band": {
+          "foundations": {
+            "decided": 1,
+            "expected": 1,
+            "fail": 1,
+            "judged": 1,
+            "pass": 0,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ],
+            "uncertain": 0,
+            "unjudged": 0
+          }
+        },
+        "question_type": {
+          "list": {
+            "decided": 1,
+            "expected": 1,
+            "fail": 1,
+            "judged": 1,
+            "pass": 0,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ],
+            "uncertain": 0,
+            "unjudged": 0
+          }
+        }
+      },
+      "fact_recovery": {
+        "chapter": {
+          "引言": {
+            "decided": 1,
+            "expected": 1,
+            "fail": 1,
+            "judged": 1,
+            "pass": 0,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ],
+            "uncertain": 0,
+            "unjudged": 0
+          }
+        },
+        "complexity": {
+          "compositional": {
+            "decided": 1,
+            "expected": 1,
+            "fail": 1,
+            "judged": 1,
+            "pass": 0,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ],
+            "uncertain": 0,
+            "unjudged": 0
+          }
+        },
+        "position_band": {
+          "foundations": {
+            "decided": 1,
+            "expected": 1,
+            "fail": 1,
+            "judged": 1,
+            "pass": 0,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ],
+            "uncertain": 0,
+            "unjudged": 0
+          }
+        }
+      }
+    }
+  },
+  "systems": {
+    "graphrag-fast-default": {
+      "assertion_grounding": {
+        "decided": 1,
+        "expected": 1,
+        "fail": 0,
+        "judged": 1,
+        "pass": 1,
+        "pass_rate": 1.0,
+        "pass_rate_95ci": [
+          0.206549,
+          1.0
+        ],
+        "uncertain": 0,
+        "unjudged": 0
+      },
+      "book_qa": {
+        "decided": 1,
+        "expected": 1,
+        "fail": 1,
+        "judged": 1,
+        "pass": 0,
+        "pass_rate": 0.0,
+        "pass_rate_95ci": [
+          0.0,
+          0.793451
+        ],
+        "uncertain": 0,
+        "unjudged": 0
+      },
+      "entity_admission": {
+        "decided": 8,
+        "expected": 8,
+        "fail": 4,
+        "judged": 8,
+        "pass": 4,
+        "pass_rate": 0.5,
+        "pass_rate_95ci": [
+          0.215216,
+          0.784784
+        ],
+        "uncertain": 0,
+        "unjudged": 0
+      },
+      "entity_definition_grounding": {
+        "decided": 8,
+        "expected": 8,
+        "fail": 8,
+        "judged": 8,
+        "pass": 0,
+        "pass_rate": 0.0,
+        "pass_rate_95ci": [
+          0.0,
+          0.324408
+        ],
+        "uncertain": 0,
+        "unjudged": 0
+      },
+      "entity_typing": {
+        "decided": 8,
+        "expected": 8,
+        "fail": 8,
+        "judged": 8,
+        "pass": 0,
+        "pass_rate": 0.0,
+        "pass_rate_95ci": [
+          0.0,
+          0.324408
+        ],
+        "uncertain": 0,
+        "unjudged": 0
+      },
+      "fact_recovery": {
+        "decided": 1,
+        "expected": 1,
+        "fail": 1,
+        "judged": 1,
+        "pass": 0,
+        "pass_rate": 0.0,
+        "pass_rate_95ci": [
+          0.0,
+          0.793451
+        ],
+        "uncertain": 0,
+        "unjudged": 0
+      }
+    }
+  },
+  "tie_count": 0,
+  "unjudged_task_count": 0
+}

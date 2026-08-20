@@ -1,0 +1,27 @@
+{"task_id":"t_0bcea0ade6eb7d6bf91e","judge_id":"codex-evidence-20260820","label":"pass","confidence":0.98,"reason":"CUDA在证据中被明确指称，且是稳定、可引用的技术实体。"}
+{"task_id":"t_122af6ee39cb1f7bd4eb","judge_id":"codex-evidence-20260820","label":"pass","confidence":0.95,"reason":"Alexa在证据中作为具体唤醒词被反复指称，可稳定引用。"}
+{"task_id":"t_12c3602d4b09ca49c22b","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.99,"reason":"该字符串是多条命令词的错误拼接；NOUN PHRASE也不是有意义的实体语义类型。"}
+{"task_id":"t_1b1a30471d3a5416378b","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义，缺失值不能算有证据支持的实体定义。"}
+{"task_id":"t_2601039e79b51c804ac7","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.98,"reason":"NOUN PHRASE是句法标签，不是Alexa的语义实体类型。"}
+{"task_id":"t_2a984935d28e5f00211d","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义。"}
+{"task_id":"t_31a6fb38db3fffe75a88","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.99,"reason":"NOUN PHRASE不是语义类型，且该提交没有提供任何可核验的证据单元。"}
+{"task_id":"t_45428021b34d466560f1","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.97,"reason":"DISCUSSIONS只是多个练习链接的通用显示文本，不是本书知识中的稳定实体。"}
+{"task_id":"t_52d4bce39014403cc0e5","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义。"}
+{"task_id":"t_59461633664e7ab4588f","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"P000是评测器 passage ID 前缀泄漏形成的伪实体，且NOUN PHRASE不是语义类型。"}
+{"task_id":"t_6466d717082b8fce3883","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义。"}
+{"task_id":"t_81ffbdc9be6d3c914406","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义。"}
+{"task_id":"t_8252550327a803c77447","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.98,"reason":"NOUN PHRASE是句法标签，未说明Image作为类或符号的语义类型。"}
+{"task_id":"t_91fc6d5d43f35d3a3ab4","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义。"}
+{"task_id":"t_92bd6d22981372d5d47c","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"P000是源单元标识前缀被英文抽取器误抽出的评测伪实体。"}
+{"task_id":"t_979316236d4707c86542","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.98,"reason":"NOUN PHRASE不是CUDA的语义实体类型。"}
+{"task_id":"t_9b0b3654ccd66f02a94d","judge_id":"codex-evidence-20260820","label":"pass","confidence":0.9,"reason":"Image在给出的代码证据中是可引用的导入类名，属于稳定代码实体。"}
+{"task_id":"t_9d910a5cf963a2e612d8","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.98,"reason":"NOUN PHRASE是句法标签，不是语义实体类型。"}
+{"task_id":"t_a46a31d0eee09f55f758","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法没有输出定义，而且名称本身是命令词错误拼接。"}
+{"task_id":"t_a5f68a8357b836da6408","judge_id":"codex-evidence-20260820","label":"pass","confidence":0.99,"reason":"证据窗口明确包含from PIL import Image，因此两者在同一窗口共现的陈述成立。"}
+{"task_id":"t_bac142f6811e7b8ddf7e","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.98,"reason":"NOUN PHRASE是句法标签，未给出PIL的语义类型。"}
+{"task_id":"t_c4000874bbe7766a3b9c","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"这是多个shell命令和URL片段的拼接，不是稳定的知识实体。"}
+{"task_id":"t_c531dfcce6c9bafab719","judge_id":"codex-evidence-20260820","label":"fail","confidence":0.99,"reason":"SIRI本可成为实体，但该提交没有任何证据，无法满足有证据支撑的准入要求。"}
+{"task_id":"t_d18dd75723e49513781c","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"方法明确没有输出定义。"}
+{"task_id":"t_d5bd93856b61c5368c7c","judge_id":"codex-evidence-20260820","label":"pass","confidence":0.97,"reason":"PIL在代码证据中是明确导入的稳定软件库实体。"}
+{"task_id":"t_fe6a7f39cbc1a39b0c39","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"候选图谱断言为空，无法恢复四个核心组件。"}
+{"task_id":"t_a2a8b381e0477515409b","judge_id":"codex-evidence-20260820","label":"fail","confidence":1.0,"reason":"唯一召回的是Image与PIL共现，完全不足以回答机器学习问题的四个核心组件。"}

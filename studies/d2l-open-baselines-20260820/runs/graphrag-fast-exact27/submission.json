@@ -1,0 +1,269 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "d2l-exact27-pilot-v1",
+  "system": {
+    "id": "graphrag-fast-default",
+    "name": "Microsoft GraphRAG Fast",
+    "version": "3.1.1+7bb23cc7f32f"
+  },
+  "documents": [
+    {
+      "document_id": "d2l-zh-official",
+      "entities": [
+        {
+          "id": "e_91b6615a4aa5d28062d2",
+          "name": "ALEXA",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000144"
+            },
+            {
+              "unit_id": "P000149"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_2e82100e832abd3332c9",
+          "name": "CD D2L-ZH CURL HTTPS",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000103"
+            },
+            {
+              "unit_id": "P000104"
+            },
+            {
+              "unit_id": "P000105"
+            },
+            {
+              "unit_id": "P000106"
+            },
+            {
+              "unit_id": "P000107"
+            },
+            {
+              "unit_id": "P000108"
+            },
+            {
+              "unit_id": "P000109"
+            },
+            {
+              "unit_id": "P000110"
+            },
+            {
+              "unit_id": "P000111"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_dc0da598b78dd5f354fe",
+          "name": "CUDA",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000072"
+            },
+            {
+              "unit_id": "P000073"
+            },
+            {
+              "unit_id": "P000078"
+            },
+            {
+              "unit_id": "P000079"
+            },
+            {
+              "unit_id": "P000080"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_b36ae8562f4b35526e37",
+          "name": "DISCUSSIONS",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000054"
+            },
+            {
+              "unit_id": "P000055"
+            },
+            {
+              "unit_id": "P000056"
+            },
+            {
+              "unit_id": "P000057"
+            },
+            {
+              "unit_id": "P000117"
+            },
+            {
+              "unit_id": "P000119"
+            },
+            {
+              "unit_id": "P000120"
+            },
+            {
+              "unit_id": "P000133"
+            },
+            {
+              "unit_id": "P000134"
+            },
+            {
+              "unit_id": "P000135"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_1f4a3c154d5b398aee3d",
+          "name": "IMAGE",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000038"
+            },
+            {
+              "unit_id": "P000039"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_fbadb8eea11253c14642",
+          "name": "P000",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000068"
+            },
+            {
+              "unit_id": "P000069"
+            },
+            {
+              "unit_id": "P000070"
+            },
+            {
+              "unit_id": "P000092"
+            },
+            {
+              "unit_id": "P000093"
+            },
+            {
+              "unit_id": "P000094"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_b47ab3cbb48008ffde27",
+          "name": "PIL",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [
+            {
+              "unit_id": "P000038"
+            },
+            {
+              "unit_id": "P000039"
+            }
+          ],
+          "metadata": {
+            "definition_available": false
+          }
+        },
+        {
+          "id": "e_3690744aa72fb2513f2e",
+          "name": "SIRI",
+          "definition": "（该方法未输出实体定义）",
+          "types": [
+            "NOUN PHRASE"
+          ],
+          "aliases": [],
+          "evidence": [],
+          "metadata": {
+            "definition_available": false
+          }
+        }
+      ],
+      "assertions": [
+        {
+          "id": "a_6d4ac03f5280a1b1a64d",
+          "subject_id": "e_1f4a3c154d5b398aee3d",
+          "predicate": "co_occurs_with",
+          "object_id": "e_b47ab3cbb48008ffde27",
+          "text": "IMAGE 与 PIL 在同一文本窗口中出现。",
+          "scope": "",
+          "polarity": "positive",
+          "evidence": [
+            {
+              "unit_id": "P000038"
+            },
+            {
+              "unit_id": "P000039"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "runtime": {
+    "elapsed_seconds": 25.51625633239746,
+    "cost_usd": 0.0
+  },
+  "metadata": {
+    "upstream_repository": "https://github.com/microsoft/graphrag",
+    "upstream_commit": "7bb23cc7f32f47cf618a1ae9cca39a6695f434ae",
+    "indexing_method": "fast",
+    "extractor_type": "regex_english",
+    "chunk_size_tokens": 100,
+    "chunk_overlap_tokens": 0,
+    "scope": "official extraction, pruning, and finalization workflows only",
+    "known_applicability_limit": "upstream regex_english extractor is primarily English",
+    "relation_semantics": "co-occurrence in an upstream text window"
+  }
+}

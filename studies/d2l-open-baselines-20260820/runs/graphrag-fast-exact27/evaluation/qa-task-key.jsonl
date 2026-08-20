@@ -1,0 +1,1 @@
+{"document_id": "d2l-zh-official", "item_id": "d2l-qa-v1-q001", "kind": "book_qa", "retriever": "char-ngram-bm25-v1", "strata": {"position_band": "foundations", "question_type": "list"}, "submission_hash": "sha256:c6bfe91f0a7b5ad3b8f2ed1d88504906eb1d9cd2d4674e4c145c66fb2134fbfb", "system_id": "graphrag-fast-default", "task_id": "t_a2a8b381e0477515409b"}

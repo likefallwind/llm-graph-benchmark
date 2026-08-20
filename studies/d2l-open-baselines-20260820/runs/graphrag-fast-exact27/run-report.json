@@ -1,0 +1,18 @@
+{
+  "chunks": 27,
+  "text_units": 168,
+  "entities": 8,
+  "relationships": 1,
+  "elapsed_seconds": 25.516908884048462,
+  "command": [
+    "/home/likefallwind/code/llm-graph-baselines/graphrag/.venv/bin/graphrag",
+    "index",
+    "--root",
+    "/home/likefallwind/code/llm-graph-benchmark/studies/d2l-open-baselines-20260820/runs/graphrag-fast-exact27/project",
+    "--method",
+    "fast",
+    "--skip-validation",
+    "--no-cache"
+  ],
+  "upstream_commit": "7bb23cc7f32f47cf618a1ae9cca39a6695f434ae"
+}

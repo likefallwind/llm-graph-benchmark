@@ -1,0 +1,56 @@
+{
+  "documents": [
+    {
+      "assertion_count": 1,
+      "assertion_evidence_coverage": 1.0,
+      "component_count": 7,
+      "document_id": "d2l-zh-official",
+      "entity_count": 8,
+      "entity_evidence_coverage": 0.875,
+      "identity": {
+        "alias_count": 0,
+        "ambiguous_surface_group_count": 0,
+        "ambiguous_surface_rate": 0.0,
+        "entities_in_ambiguous_surface_groups": 0,
+        "entities_with_aliases": 0,
+        "entity_count": 8,
+        "nontrivial_alias_count": 0
+      },
+      "isolated_entity_count": 6,
+      "largest_component_ratio": 0.25,
+      "surface_duplicate_group_count": 0,
+      "unique_predicate_count": 1
+    }
+  ],
+  "schema_version": "1.0",
+  "submission_hash": "sha256:c6bfe91f0a7b5ad3b8f2ed1d88504906eb1d9cd2d4674e4c145c66fb2134fbfb",
+  "summary": {
+    "assertion_count": 1,
+    "assertion_evidence_coverage": 1.0,
+    "assertions_per_second": 0.039191,
+    "cost_per_100_assertions_usd": 0.0,
+    "cost_per_100_entities_usd": 0.0,
+    "cost_usd": 0.0,
+    "document_count": 1,
+    "elapsed_seconds": 25.51625633239746,
+    "entities_per_second": 0.313526,
+    "entity_count": 8,
+    "entity_evidence_coverage": 0.875,
+    "identity": {
+      "alias_count": 0,
+      "ambiguous_surface_group_count": 0,
+      "ambiguous_surface_rate": 0.0,
+      "entities_in_ambiguous_surface_groups": 0,
+      "entities_with_aliases": 0,
+      "nontrivial_alias_count": 0
+    },
+    "input_tokens": null,
+    "isolated_entity_rate": 0.75,
+    "output_tokens": null,
+    "surface_duplicate_group_count": 0,
+    "tokens_per_assertion": null,
+    "tokens_per_entity": null,
+    "unique_predicate_count_sum": 1
+  },
+  "system_id": "graphrag-fast-default"
+}

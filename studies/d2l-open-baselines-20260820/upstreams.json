@@ -1,0 +1,43 @@
+{
+  "downloaded_at": "2026-08-20",
+  "root": "/home/likefallwind/code/llm-graph-baselines",
+  "repositories": [
+    {
+      "method": "KGGen",
+      "paper_year": 2025,
+      "paper": "https://arxiv.org/abs/2502.09956",
+      "repository": "https://github.com/stair-lab/kg-gen",
+      "commit": "6259b4c71523ceae75dafb4acec2eb833bef8f8e",
+      "local_directory": "kg-gen",
+      "experiment_role": "runnable"
+    },
+    {
+      "method": "AutoSchemaKG",
+      "paper_year": 2025,
+      "paper": "https://arxiv.org/abs/2505.23628",
+      "repository": "https://github.com/HKUST-KnowComp/AutoSchemaKG",
+      "commit": "d0a1666ae6621806faf814504c73678de4e809f2",
+      "local_directory": "autoschemakg",
+      "experiment_role": "runnable extraction-stage baseline"
+    },
+    {
+      "method": "Microsoft GraphRAG",
+      "paper_year": 2024,
+      "paper": "https://arxiv.org/abs/2404.16130",
+      "repository": "https://github.com/microsoft/graphrag",
+      "commit": "7bb23cc7f32f47cf618a1ae9cca39a6695f434ae",
+      "local_directory": "graphrag",
+      "experiment_role": "runnable Fast/NLP baseline"
+    },
+    {
+      "method": "EDC",
+      "paper_year": 2024,
+      "paper": "https://aclanthology.org/2024.emnlp-main.548/",
+      "repository": "https://github.com/clear-nus/edc",
+      "commit": "02aad17e2fc1e9845c84746b384e7fd3160edc1a",
+      "local_directory": "edc",
+      "experiment_role": "compatibility audit only",
+      "exclusion_reason": "The released pipeline canonicalizes relations but explicitly leaves entity/coreference canonicalization and long-document chunking to external preprocessing; its legacy environment is not method-equivalent to the runnable book extractors."
+    }
+  ]
+}

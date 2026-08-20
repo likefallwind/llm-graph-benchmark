@@ -54,6 +54,14 @@ def main() -> None:
     qa = create_qa_tasks(benchmark, [submission], qa_retrieval, seed=args.seed)
     write_jsonl(args.out_dir / "qa-tasks.jsonl", qa.tasks)
     write_jsonl(args.out_dir / "qa-task-key.jsonl", qa.key)
+    write_jsonl(
+        args.out_dir / "all-tasks.jsonl",
+        [*sample.tasks, *identity.tasks, *fact.tasks, *qa.tasks],
+    )
+    write_jsonl(
+        args.out_dir / "all-task-key.jsonl",
+        [*sample.key, *identity.key, *fact.key, *qa.key],
+    )
     print(json.dumps({"sample_tasks": len(sample.tasks), "identity_tasks": len(identity.tasks), "fact_tasks": len(fact.tasks), "qa_tasks": len(qa.tasks)}, ensure_ascii=False))
 
 

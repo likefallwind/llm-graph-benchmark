@@ -1,0 +1,1 @@
+{"document_id": "d2l-zh-official", "item_id": "d2l-v1-f001", "kind": "fact_recovery", "retriever": "char-ngram-bm25-v1", "strata": {"chapter": "引言", "complexity": "compositional", "position_band": "foundations"}, "submission_hash": "sha256:c6bfe91f0a7b5ad3b8f2ed1d88504906eb1d9cd2d4674e4c145c66fb2134fbfb", "system_id": "graphrag-fast-default", "task_id": "t_fe6a7f39cbc1a39b0c39"}

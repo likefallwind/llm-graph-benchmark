@@ -1,0 +1,1 @@
+{"assertion_ids": ["a_6d4ac03f5280a1b1a64d"], "qa_id": "d2l-qa-v1-q001", "retriever": "char-ngram-bm25-v1", "retriever_params": {"b": 0.75, "k1": 1.2, "top_k": 10}, "system_id": "graphrag-fast-default"}
