@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
+from .adapters.llm_knowledge_graph import adapt_sqlite
 from .aggregation import aggregate_judgments
 from .bundle import BenchmarkBundle, SubmissionBundle
 from .io import read_json, read_jsonl, write_json, write_jsonl
@@ -64,6 +65,19 @@ def _parser() -> argparse.ArgumentParser:
     report.add_argument("--metrics", action="append", required=True)
     report.add_argument("--judged")
     report.add_argument("--out", required=True)
+
+    adapt = commands.add_parser("adapt-llmkg-sqlite")
+    adapt.add_argument("--db", required=True)
+    adapt.add_argument("--out-dir", required=True)
+    adapt.add_argument("--benchmark-id", required=True)
+    adapt.add_argument("--system-id", required=True)
+    adapt.add_argument("--system-name", required=True)
+    adapt.add_argument("--system-version", required=True)
+    adapt.add_argument("--fact-probes", required=True)
+    adapt.add_argument("--source-id", type=int)
+    adapt.add_argument("--allow-incomplete", action="store_true")
+    adapt.add_argument("--chunk-chars", type=int, default=8000)
+    adapt.add_argument("--overlap-chars", type=int, default=500)
     return parser
 
 
@@ -166,6 +180,22 @@ def main(argv: list[str] | None = None) -> int:
             output.parent.mkdir(parents=True, exist_ok=True)
             output.write_text(markdown_report(metric_payloads, judged), encoding="utf-8")
             _print({"output": str(output)})
+            return 0
+        if args.command == "adapt-llmkg-sqlite":
+            result = adapt_sqlite(
+                args.db,
+                args.out_dir,
+                benchmark_id=args.benchmark_id,
+                system_id=args.system_id,
+                system_name=args.system_name,
+                system_version=args.system_version,
+                fact_probes_path=args.fact_probes,
+                source_id=args.source_id,
+                allow_incomplete=args.allow_incomplete,
+                chunk_chars=args.chunk_chars,
+                overlap_chars=args.overlap_chars,
+            )
+            _print(result)
             return 0
     except (OSError, ValueError, json.JSONDecodeError) as exc:
         print(f"error: {exc}", file=sys.stderr)

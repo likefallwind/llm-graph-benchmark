@@ -143,3 +143,31 @@ pytest --cov=llm_graph_benchmark
 ```
 
 `examples/tiny` 是完全合成的小型端到端样例，不包含真实书籍内容。
+
+## `llm-knowledge-graph` SQLite 适配器
+
+schema 10 的静态数据库快照可以只读转换为本仓库的中立契约：
+
+```bash
+llm-graph-benchmark adapt-llmkg-sqlite \
+  --db /path/to/snapshot.db \
+  --out-dir outputs/d2l-pilot \
+  --benchmark-id d2l-pilot-v1 \
+  --system-id llm-knowledge-graph \
+  --system-name "LLM Knowledge Graph" \
+  --system-version snapshot-name \
+  --fact-probes examples/d2l-pilot/fact_probes.jsonl
+```
+
+适配器不导入原项目，也不写 SQLite。它导出已处理范围内的 Source Passage 作为可引用单元，最终
+Entity/Assertion 作为 submission，并把 source progress、未裁判与未落实 Observation、
+模型及 prompt 版本放进 `adapter-report.json`。默认拒绝包含 failed/running progress 的
+数据库；`--allow-incomplete` 只应用于明确标记的诊断试验。
+
+适配器按声明的 `--chunk-chars`（默认 8000）和 `--overlap-chars`（默认 500）从持久化
+Passage 重建 chunk，只把 `source_progress=done` 的 chunk 所覆盖的 Passage 放入 benchmark。
+评估范围和重建得到的整书 chunk 数会写入 manifest，避免用 partial graph 对比 full-book
+输入。如果历史实验使用了不同参数，必须在适配时显式传入。
+
+`examples/d2l-pilot/fact_probes.jsonl` 只有一条人工核对的接口探针，仅用于验证工作流，不是
+论文级完整性评价集。
