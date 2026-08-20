@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-graph-benchmark"
+version = "0.1.0"
+description = "Method-neutral, low-annotation evaluation for document-to-knowledge-graph systems"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{name = "LLM Graph Benchmark contributors"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5"]
+
+[project.scripts]
+llm-graph-benchmark = "llm_graph_benchmark.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-q", "--strict-markers"]
+markers = [
+  "integration: end-to-end command-line tests",
+]
+
+[tool.coverage.run]
+source = ["llm_graph_benchmark"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

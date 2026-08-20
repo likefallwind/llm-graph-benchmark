@@ -1,0 +1,17 @@
+{
+  "labels": ["pass", "fail", "uncertain"],
+  "dimensions": [
+    {
+      "id": "entity_admission",
+      "question": "Is this a stable, referable and substantive knowledge entity grounded in the supplied source evidence?"
+    },
+    {
+      "id": "assertion_grounding",
+      "question": "Does the source support the complete directed assertion, including polarity and restrictive scope?"
+    },
+    {
+      "id": "fact_recovery",
+      "question": "Can the submitted graph recover this source-side fact without adding unsupported content?"
+    }
+  ]
+}

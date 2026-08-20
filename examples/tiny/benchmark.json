@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "tiny-book-v1",
+  "title": "Synthetic tiny book benchmark",
+  "documents_file": "documents.jsonl",
+  "fact_probes_file": "fact_probes.jsonl",
+  "rubric_file": "rubric.json"
+}
