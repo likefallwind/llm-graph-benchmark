@@ -1,0 +1,701 @@
+{
+  "schema_version": "1.0",
+  "expected_task_count": 252,
+  "adjudicated_task_count": 252,
+  "unjudged_task_count": 0,
+  "tie_count": 0,
+  "systems": {
+    "llm-knowledge-graph-full1105-vnext": {
+      "alias_identity": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 28,
+        "fail": 2,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.933333,
+        "pass_rate_95ci": [
+          0.786765,
+          0.981523
+        ]
+      },
+      "assertion_grounding": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 29,
+        "fail": 1,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.966667,
+        "pass_rate_95ci": [
+          0.833296,
+          0.994091
+        ]
+      },
+      "book_qa": {
+        "expected": 24,
+        "judged": 24,
+        "unjudged": 0,
+        "pass": 12,
+        "fail": 12,
+        "uncertain": 0,
+        "decided": 24,
+        "pass_rate": 0.5,
+        "pass_rate_95ci": [
+          0.314274,
+          0.685726
+        ]
+      },
+      "entity_admission": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 30,
+        "fail": 0,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 1.0,
+        "pass_rate_95ci": [
+          0.886487,
+          1.0
+        ]
+      },
+      "entity_definition_grounding": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 27,
+        "fail": 3,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.9,
+        "pass_rate_95ci": [
+          0.743789,
+          0.9654
+        ]
+      },
+      "entity_typing": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 25,
+        "fail": 5,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.833333,
+        "pass_rate_95ci": [
+          0.664356,
+          0.926635
+        ]
+      },
+      "fact_recovery": {
+        "expected": 48,
+        "judged": 48,
+        "unjudged": 0,
+        "pass": 36,
+        "fail": 12,
+        "uncertain": 0,
+        "decided": 48,
+        "pass_rate": 0.75,
+        "pass_rate_95ci": [
+          0.612156,
+          0.850794
+        ]
+      },
+      "identity_split": {
+        "expected": 30,
+        "judged": 30,
+        "unjudged": 0,
+        "pass": 28,
+        "fail": 2,
+        "uncertain": 0,
+        "decided": 30,
+        "pass_rate": 0.933333,
+        "pass_rate_95ci": [
+          0.786765,
+          0.981523
+        ]
+      }
+    }
+  },
+  "strata": {
+    "llm-knowledge-graph-full1105-vnext": {
+      "book_qa": {
+        "position_band": {
+          "attention_optimization_systems": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 5,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.833333,
+            "pass_rate_95ci": [
+              0.436497,
+              0.969947
+            ]
+          },
+          "core_architectures": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 3,
+            "fail": 3,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.5,
+            "pass_rate_95ci": [
+              0.187616,
+              0.812384
+            ]
+          },
+          "foundations": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 5,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.166667,
+            "pass_rate_95ci": [
+              0.030053,
+              0.563503
+            ]
+          },
+          "vision_language": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 3,
+            "fail": 3,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.5,
+            "pass_rate_95ci": [
+              0.187616,
+              0.812384
+            ]
+          }
+        },
+        "question_type": {
+          "architecture": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.206549,
+              1.0
+            ]
+          },
+          "calculation": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "comparison": {
+            "expected": 3,
+            "judged": 3,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 2,
+            "uncertain": 0,
+            "decided": 3,
+            "pass_rate": 0.333333,
+            "pass_rate_95ci": [
+              0.061492,
+              0.79234
+            ]
+          },
+          "conditional": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.206549,
+              1.0
+            ]
+          },
+          "definition": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "distinction": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 2,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.34238,
+              1.0
+            ]
+          },
+          "effects": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.206549,
+              1.0
+            ]
+          },
+          "limitation": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "list": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "mechanism": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 5,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.833333,
+            "pass_rate_95ci": [
+              0.436497,
+              0.969947
+            ]
+          },
+          "procedure": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "rationale": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 2,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.65762
+            ]
+          },
+          "sequence": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 0.5,
+            "pass_rate_95ci": [
+              0.094531,
+              0.905469
+            ]
+          },
+          "tradeoff": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          }
+        }
+      },
+      "fact_recovery": {
+        "chapter": {
+          "优化算法": {
+            "expected": 5,
+            "judged": 5,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 4,
+            "uncertain": 0,
+            "decided": 5,
+            "pass_rate": 0.2,
+            "pass_rate_95ci": [
+              0.036224,
+              0.624465
+            ]
+          },
+          "卷积神经网络": {
+            "expected": 3,
+            "judged": 3,
+            "unjudged": 0,
+            "pass": 2,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 3,
+            "pass_rate": 0.666667,
+            "pass_rate_95ci": [
+              0.20766,
+              0.938508
+            ]
+          },
+          "多层感知机": {
+            "expected": 4,
+            "judged": 4,
+            "unjudged": 0,
+            "pass": 3,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 4,
+            "pass_rate": 0.75,
+            "pass_rate_95ci": [
+              0.300642,
+              0.954413
+            ]
+          },
+          "引言": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 0,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 0.0,
+            "pass_rate_95ci": [
+              0.0,
+              0.793451
+            ]
+          },
+          "循环神经网络": {
+            "expected": 4,
+            "judged": 4,
+            "unjudged": 0,
+            "pass": 3,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 4,
+            "pass_rate": 0.75,
+            "pass_rate_95ci": [
+              0.300642,
+              0.954413
+            ]
+          },
+          "注意力机制": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 5,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 0.833333,
+            "pass_rate_95ci": [
+              0.436497,
+              0.969947
+            ]
+          },
+          "深度学习计算": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 0.5,
+            "pass_rate_95ci": [
+              0.094531,
+              0.905469
+            ]
+          },
+          "现代卷积神经网络": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 2,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.34238,
+              1.0
+            ]
+          },
+          "现代循环神经网络": {
+            "expected": 3,
+            "judged": 3,
+            "unjudged": 0,
+            "pass": 3,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 3,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.438503,
+              1.0
+            ]
+          },
+          "线性神经网络": {
+            "expected": 3,
+            "judged": 3,
+            "unjudged": 0,
+            "pass": 2,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 3,
+            "pass_rate": 0.666667,
+            "pass_rate_95ci": [
+              0.20766,
+              0.938508
+            ]
+          },
+          "自然语言处理：应用": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 0.5,
+            "pass_rate_95ci": [
+              0.094531,
+              0.905469
+            ]
+          },
+          "自然语言处理：预训练": {
+            "expected": 4,
+            "judged": 4,
+            "unjudged": 0,
+            "pass": 4,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 4,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.510109,
+              1.0
+            ]
+          },
+          "计算性能": {
+            "expected": 1,
+            "judged": 1,
+            "unjudged": 0,
+            "pass": 1,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 1,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.206549,
+              1.0
+            ]
+          },
+          "计算机视觉": {
+            "expected": 6,
+            "judged": 6,
+            "unjudged": 0,
+            "pass": 6,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 6,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.609666,
+              1.0
+            ]
+          },
+          "预备知识": {
+            "expected": 2,
+            "judged": 2,
+            "unjudged": 0,
+            "pass": 2,
+            "fail": 0,
+            "uncertain": 0,
+            "decided": 2,
+            "pass_rate": 1.0,
+            "pass_rate_95ci": [
+              0.34238,
+              1.0
+            ]
+          }
+        },
+        "complexity": {
+          "atomic": {
+            "expected": 16,
+            "judged": 16,
+            "unjudged": 0,
+            "pass": 14,
+            "fail": 2,
+            "uncertain": 0,
+            "decided": 16,
+            "pass_rate": 0.875,
+            "pass_rate_95ci": [
+              0.639772,
+              0.965023
+            ]
+          },
+          "compositional": {
+            "expected": 16,
+            "judged": 16,
+            "unjudged": 0,
+            "pass": 9,
+            "fail": 7,
+            "uncertain": 0,
+            "decided": 16,
+            "pass_rate": 0.5625,
+            "pass_rate_95ci": [
+              0.331786,
+              0.769013
+            ]
+          },
+          "scoped": {
+            "expected": 16,
+            "judged": 16,
+            "unjudged": 0,
+            "pass": 13,
+            "fail": 3,
+            "uncertain": 0,
+            "decided": 16,
+            "pass_rate": 0.8125,
+            "pass_rate_95ci": [
+              0.569911,
+              0.934084
+            ]
+          }
+        },
+        "position_band": {
+          "attention_optimization_systems": {
+            "expected": 12,
+            "judged": 12,
+            "unjudged": 0,
+            "pass": 7,
+            "fail": 5,
+            "uncertain": 0,
+            "decided": 12,
+            "pass_rate": 0.583333,
+            "pass_rate_95ci": [
+              0.319511,
+              0.80674
+            ]
+          },
+          "core_architectures": {
+            "expected": 12,
+            "judged": 12,
+            "unjudged": 0,
+            "pass": 10,
+            "fail": 2,
+            "uncertain": 0,
+            "decided": 12,
+            "pass_rate": 0.833333,
+            "pass_rate_95ci": [
+              0.551969,
+              0.953035
+            ]
+          },
+          "foundations": {
+            "expected": 12,
+            "judged": 12,
+            "unjudged": 0,
+            "pass": 8,
+            "fail": 4,
+            "uncertain": 0,
+            "decided": 12,
+            "pass_rate": 0.666667,
+            "pass_rate_95ci": [
+              0.390622,
+              0.86188
+            ]
+          },
+          "vision_language": {
+            "expected": 12,
+            "judged": 12,
+            "unjudged": 0,
+            "pass": 11,
+            "fail": 1,
+            "uncertain": 0,
+            "decided": 12,
+            "pass_rate": 0.916667,
+            "pass_rate_95ci": [
+              0.64612,
+              0.985135
+            ]
+          }
+        }
+      }
+    }
+  }
+}

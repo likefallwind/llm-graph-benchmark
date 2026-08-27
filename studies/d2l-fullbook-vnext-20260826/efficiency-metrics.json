@@ -1,0 +1,12 @@
+{
+  "first_done_update": "2026-08-17 12:04:02",
+  "last_done_update": "2026-08-25 10:53:21",
+  "observed_wall_span_seconds": 686959.0,
+  "observed_wall_span_hours": 190.821944,
+  "done_chunks": 1105,
+  "active_runtime": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "cost_usd": null,
+  "limitation": "The timestamp span includes retries, pauses and backoff; it is not active runtime."
+}

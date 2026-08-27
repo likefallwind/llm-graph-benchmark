@@ -182,6 +182,9 @@ pytest --cov=llm_graph_benchmark
 
 ## 真实案例
 
+- [D2L 全书 vNext 图谱评测（2026-08-26）](studies/d2l-fullbook-vnext-20260826/REPORT.md)：
+  对 1105/1105 chunk 的 schema 10 只读 SQLite 图谱完成 252 项来源证据盲评，覆盖 Entity、
+  Assertion、身份解析、48 条冻结事实、24 道 Book QA、结构完整性与运行血缘。
 - [D2L 历史图谱快照评测（2026-08-20 pilot）](studies/d2l-historical-pilot-20260820/REPORT.md)：
   对 27/200 chunk 两份只读 SQLite 快照完成 Entity 准入/类型/定义、Assertion、事实恢复、
   身份解析、Book QA、结构、稳定性、效率和裁判一致性评测，并保存判断、输入哈希与重建脚本。

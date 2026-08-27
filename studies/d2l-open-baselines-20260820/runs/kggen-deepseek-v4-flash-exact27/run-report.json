@@ -1,0 +1,12 @@
+{
+  "requested_chunks": 27,
+  "completed_chunks": 27,
+  "failed_chunks": 0,
+  "wall_seconds_this_invocation": 0.5477955341339111,
+  "recorded_chunk_seconds": 11478.327563762665,
+  "raw_entities": 849,
+  "raw_triples": 1089,
+  "final_entities": 493,
+  "final_triples": 825,
+  "failures": []
+}

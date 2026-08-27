@@ -1,0 +1,56 @@
+{
+  "documents": [
+    {
+      "assertion_count": 3309,
+      "assertion_evidence_coverage": 1.0,
+      "component_count": 762,
+      "document_id": "d2l-zh-official",
+      "entity_count": 2140,
+      "entity_evidence_coverage": 1.0,
+      "identity": {
+        "alias_count": 4542,
+        "ambiguous_surface_group_count": 75,
+        "ambiguous_surface_rate": 0.064019,
+        "entities_in_ambiguous_surface_groups": 137,
+        "entities_with_aliases": 2111,
+        "entity_count": 2140,
+        "nontrivial_alias_count": 2879
+      },
+      "isolated_entity_count": 700,
+      "largest_component_ratio": 0.601402,
+      "surface_duplicate_group_count": 0,
+      "unique_predicate_count": 919
+    }
+  ],
+  "schema_version": "1.0",
+  "submission_hash": "sha256:404257446aa6044008f2c6e6f5d4215cb2fe21a82252555b9c46ef1d2befbc9d",
+  "summary": {
+    "assertion_count": 3309,
+    "assertion_evidence_coverage": 1.0,
+    "assertions_per_second": null,
+    "cost_per_100_assertions_usd": null,
+    "cost_per_100_entities_usd": null,
+    "cost_usd": null,
+    "document_count": 1,
+    "elapsed_seconds": null,
+    "entities_per_second": null,
+    "entity_count": 2140,
+    "entity_evidence_coverage": 1.0,
+    "identity": {
+      "alias_count": 4542,
+      "ambiguous_surface_group_count": 75,
+      "ambiguous_surface_rate": 0.064019,
+      "entities_in_ambiguous_surface_groups": 137,
+      "entities_with_aliases": 2111,
+      "nontrivial_alias_count": 2879
+    },
+    "input_tokens": null,
+    "isolated_entity_rate": 0.327103,
+    "output_tokens": null,
+    "surface_duplicate_group_count": 0,
+    "tokens_per_assertion": null,
+    "tokens_per_entity": null,
+    "unique_predicate_count_sum": 919
+  },
+  "system_id": "llm-knowledge-graph-full1105-vnext"
+}

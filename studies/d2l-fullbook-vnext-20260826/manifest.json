@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "study_id": "d2l-fullbook-vnext-20260826",
+  "system_id": "llm-knowledge-graph-full1105-vnext",
+  "primary_judge": "codex-source-grounded-fullbook-v1",
+  "judge_scope": "single source-grounded Codex pass over every generated task",
+  "independent_judge_calibration": "unavailable",
+  "human_calibration": "unavailable-no-human-labels",
+  "sample_seed": 20260820,
+  "sample": {
+    "entity_admission": 30,
+    "entity_typing": 30,
+    "entity_definition_grounding": 30,
+    "assertion_grounding": 30,
+    "alias_identity": 30,
+    "identity_split": 30,
+    "fact_recovery": 48,
+    "book_qa": 24
+  },
+  "retriever": "char-ngram-bm25-v1(top_k=10,k1=1.2,b=0.75)",
+  "source_database": "/home/likefallwind/code/llm-knowledge-graph/tmp/d2l-full1105-c6-20260817-193600.db",
+  "source_database_hash": "sha256:15817a2c938cefbaf029a39bcd19314b1bb98bf685ff903e30a8d38dfd809665",
+  "source_revision": "1aed294b7b5dbb6c1e779d000d2fdb2b1ace21d4",
+  "worktree_patch_sha256": "sha256:23ce929894845b64cbf32e7a84047ded51dacdffaab704cf0238f90f25326123",
+  "input_hashes": {
+    "submission": "sha256:19f6bdac52e7acaf8b2ce6578806e4540eada233704e43913cd8a6ce7ffb3b8d",
+    "all_tasks": "sha256:2a6edb369b2931373008be3786c95539c18a5c04c0eb66e5ea135e843cc173f6",
+    "all_task_key": "sha256:bab48f5e0b2f56f7fede779cd1767f1f681d3727627187644e24f9638608207d",
+    "fact_probes": "sha256:04c42870ce32b4d45698475dea194a50e00361b5740888e08c4bfee48aa42a2b",
+    "qa_probes": "sha256:c44e0bd4db6571c17e5e6210c67fa73ac67f7750a4c6986407c9052db8ca637d"
+  }
+}

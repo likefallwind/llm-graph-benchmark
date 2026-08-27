@@ -1,0 +1,77 @@
+{
+  "adapter": "llm-knowledge-graph-sqlite-1",
+  "benchmark_id": "d2l-fullbook-v1",
+  "benchmark_validation": {
+    "issues": [],
+    "ok": true
+  },
+  "database": "/home/likefallwind/code/llm-knowledge-graph/tmp/d2l-full1105-c6-20260817-193600.db",
+  "fact_probe_scope": {
+    "excluded_count": 0,
+    "excluded_probe_ids": [],
+    "filter_enabled": false,
+    "included_count": 48,
+    "input_count": 48
+  },
+  "integrity": {
+    "claim_observations": {
+      "blocked": 2,
+      "contradicts": 6,
+      "insufficient": 1008,
+      "materialized": 3279,
+      "observations": 4862,
+      "pending_endpoint": 17,
+      "pending_judgment": 535,
+      "supported_unmaterialized": 34,
+      "supports": 3313
+    },
+    "counts": {
+      "assertions": 3309,
+      "claim_observations": 4862,
+      "claims": 3139,
+      "entities": 2140,
+      "entity_observations": 7289,
+      "evidence": 11161,
+      "source_passages": 9034,
+      "sources": 1
+    },
+    "entity_observations": {
+      "new_count": 1975,
+      "observations": 7289,
+      "same_count": 5314,
+      "uncertain_count": 0,
+      "unresolved": 0
+    },
+    "models": [
+      "MiniMax-M3"
+    ],
+    "progress": {
+      "counts": {
+        "done": 1105
+      },
+      "max_chunk": 1104,
+      "min_chunk": 0,
+      "total": 1105
+    },
+    "prompt_versions": [
+      "canonical-assertion-judge-5-scoped-projection",
+      "entity-identity-ontology-13-alias-scope-inheritance",
+      "open-entities-section-6-tool-boundary+open-relations-assertion-4-recall-protection"
+    ],
+    "quick_check": "ok",
+    "schema_version": "10"
+  },
+  "output_counts": {
+    "assertions": 3309,
+    "documents": 1,
+    "entities": 2140,
+    "fact_probes": 48,
+    "qa_probes": 24,
+    "source_units": 9034
+  },
+  "submission_validation": {
+    "issues": [],
+    "ok": true
+  },
+  "system_id": "llm-knowledge-graph-full1105-vnext"
+}
