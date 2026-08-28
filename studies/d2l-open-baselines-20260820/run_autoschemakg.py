@@ -73,11 +73,23 @@ def main() -> None:
     parser.add_argument("--disable-thinking", action="store_true")
     parser.add_argument("--max-tokens", type=int, default=4096)
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--offset", type=int, default=0)
+    parser.add_argument("--shards", type=int, default=1)
+    parser.add_argument("--shard-index", type=int, default=0)
+    parser.add_argument("--assemble-only", action="store_true")
+    parser.add_argument("--no-assemble", action="store_true")
     args = parser.parse_args()
 
     chunks = read_jsonl(args.corpus)
+    chunks = chunks[args.offset :]
     if args.limit is not None:
         chunks = chunks[: args.limit]
+    # Shard workers extract disjoint chunks but share one raw directory, so any
+    # worker order still yields the same per-chunk artifacts.
+    if args.assemble_only:
+        chunks = []
+    elif args.shards > 1:
+        chunks = chunks[args.shard_index :: args.shards]
     input_dir = args.out_dir / "input"
     raw_dir = args.out_dir / "chunks"
     upstream_dir = args.out_dir / "upstream"
@@ -166,6 +178,17 @@ def main() -> None:
             failures.append(result)
         write_json(raw_path, result)
         print(f"[{position}/{len(chunks)}] chunk={index} status={result['status']}", flush=True)
+
+    if args.no_assemble:
+        write_json(args.out_dir / f"shard-report-{args.shard_index:02d}.json", {
+            "shard_index": args.shard_index,
+            "shards": args.shards,
+            "requested_chunks": len(chunks),
+            "failed_chunks": len(failures),
+            "wall_seconds_this_invocation": time.time() - started,
+            "failures": failures,
+        })
+        return
 
     rows = [json.loads(path.read_text(encoding="utf-8")) for path in sorted(raw_dir.glob("chunk-*.json"))]
     triples: list[dict] = []
