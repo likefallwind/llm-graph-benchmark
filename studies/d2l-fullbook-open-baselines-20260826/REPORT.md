@@ -1,5 +1,11 @@
 # D2L 全书图谱：四方对比（llm-knowledge-graph / KGGen / GraphRAG Fast）
 
+> **本报告的 `assertion_grounding` 与 `fact_recovery` 两行已被 v3 取代。**
+> v3（2026-08-27）把断言判定拆成 grounding / projection / scope 三轴、样本量提到 200 条/系统，
+> 并按 CaRB 拆分口径重判 fact_recovery——后者证明 v2 的口径严重低估了大图（KGGen `exact`
+> 从 6.3% 修正到 79.2%）。请以 [REPORT-v3.md](REPORT-v3.md) 为准。本报告其余维度
+> （entity_admission / typing / definition / identity / book_qa）与结构、效率数据仍然有效。
+
 评测日期 2026-08-26。四份提交跑在同一份语料（`source_content_hash`
 `sha256:9b57a1ce…`，1105 个 chunk）、同一份 benchmark（`d2l-fullbook-v1`，48 条冻结事实 +
 24 道 Book QA）、同一个检索器（`char-ngram-bm25-v1`，top_k=10）。
