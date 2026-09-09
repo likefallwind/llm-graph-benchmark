@@ -43,19 +43,23 @@ def markdown_report(
                 "",
                 "## Blind judgments",
                 "",
-                "`uncertain` 和投票平局不进入 pass rate 分母。",
+                "Pass/all 以全部预定样本为分母，反映已确认通过的比例；缺失或调用错误不等于语义错误。",
+                "Pass/decided 仅使用 pass+fail，排除 uncertain；需同时阅读判定覆盖率与任务完成状态。",
+                "Wilson 区间仅描述已明确判定样本的抽样不确定性，不涵盖裁判偏差或跨材料泛化。",
                 "",
-                "| System | Dimension | Pass | Fail | Uncertain | Unjudged | Pass rate | 95% CI |",
-                "|---|---|---:|---:|---:|---:|---:|---:|",
+                "| System | Dimension | Pass | Fail | Uncertain | Error | Unjudged | Pass/all | Pass/decided | Decided CI | Judgment coverage | Status |",
+                "|---|---|---:|---:|---:|---:|---:|---:|---:|---|---:|---|",
             ]
         )
         for system_id, dimensions in sorted(judged_systems.items()):
             for kind, result in sorted(dimensions.items()):
                 interval = result["pass_rate_95ci"]
+                interval_text = f"[{interval[0]:.3f}, {interval[1]:.3f}]" if interval else "—"
                 lines.append(
                     f"| {system_id} | {kind} | {result['pass']} | {result['fail']} | "
-                    f"{result['uncertain']} | {result['unjudged']} | {_display(result['pass_rate'])} | "
-                    f"[{interval[0]:.3f}, {interval[1]:.3f}] |"
+                    f"{result['uncertain']} | {result.get('error', 0)} | {result['unjudged']} | "
+                    f"{_display(result.get('pass_rate_all'))} | {_display(result['pass_rate'])} | "
+                    f"{interval_text} | {_display(result.get('judgment_coverage'))} | {result.get('status', 'legacy')} |"
                 )
     lines.append("")
     return "\n".join(lines)

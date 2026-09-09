@@ -76,6 +76,10 @@ rubric.json          # 冻结的评价维度与标签定义
 
 ## 使用
 
+新一轮构图质量评测使用[版本化质量协议](docs/QUALITY_PROTOCOL.md)：联合断言质量、严格
+事实恢复与核心覆盖分开生成盲评任务；同时报告全样本通过率、判定覆盖率和调用错误，并
+支持同裁判、同探针的配对比较。新评分需要新判断，不能继承旧 `covered` 标签。
+
 ```bash
 python -m pip install -e '.[dev]'
 
@@ -140,8 +144,10 @@ llm-graph-benchmark report \
 {"task_id":"t_...","judge_id":"judge-a","label":"pass","confidence":0.9,"reason":"..."}
 ```
 
-允许的标签是 `pass`、`fail`、`uncertain`。同一任务可由多个模型或人重复评价。
+语义标签是 `pass`、`fail`、`uncertain`；调用或解析失败可记录 `error`，不当作语义投票。
+同一任务可由不同模型或人评价，同一 judge_id 的重复任务须先显式整理重试记录。
 聚合结果会同时报告 expected、judged 和 unjudged；缺失裁判不会被静默排除。
+新版还报告 error、全样本通过率与判定覆盖率；旧 pass_rate 字段保留原 decided 分母。
 若 fact probe 带有 `metadata` 分层字段，私有 task key 会保留这些字段，`aggregate` 会额外
 按复杂度、位置、章节等维度分别报告结果；公开盲评任务不暴露这些分层标签。
 
@@ -220,3 +226,10 @@ Passage 重建 chunk，只把 `source_progress=done` 的 chunk 所覆盖的 Pass
 ID。默认仍采用严格模式，任何越界探针都会使适配失败。
 
 `examples/d2l-pilot/fact_probes.jsonl` 只有一条接口探针，仅用于验证工作流。
+
+单条提取质量的新版协议与裁判验证边界见 [质量协议 v2](docs/QUALITY_PROTOCOL_V2.md)。
+`quality-tasks --version v2` 区分断言正确性与来源信息覆盖，旧版默认及已有结果保持不变。
+
+当前 v2.2 协议及版本记录见 [QUALITY_PROTOCOL_V22.md](docs/QUALITY_PROTOCOL_V22.md)，复跑工具见 [study](studies/d2l-quality-v22-20260908/README.md)。
+
+2026-09-09 已完成 1000 条单条质量评分，结果与局限见 [v2.2 最终报告](studies/d2l-quality-v22-20260908/RESULTS.md)。其中 1 条使用保留原始响应的本地引号转义恢复。

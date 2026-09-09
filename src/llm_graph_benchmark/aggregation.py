@@ -5,12 +5,12 @@ from collections import Counter, defaultdict
 from typing import Any, Iterable
 
 
-ALLOWED_LABELS = {"pass", "fail", "uncertain"}
+ALLOWED_LABELS = {"pass", "fail", "uncertain", "error"}
 
 
-def _wilson(successes: int, total: int, z: float = 1.959963984540054) -> list[float]:
+def _wilson(successes: int, total: int, z: float = 1.959963984540054) -> list[float] | None:
     if total == 0:
-        return [0.0, 0.0]
+        return None
     p = successes / total
     denominator = 1 + z * z / total
     center = (p + z * z / (2 * total)) / denominator
@@ -24,13 +24,18 @@ def _score(expected: int, counts: Counter[str]) -> dict[str, Any]:
     return {
         "expected": expected,
         "judged": judged,
-        "unjudged": expected - judged,
+        "unjudged": expected - judged - counts["error"],
+        "error": counts["error"],
         "pass": counts["pass"],
         "fail": counts["fail"],
         "uncertain": counts["uncertain"],
         "decided": decided,
         "pass_rate": round(counts["pass"] / decided, 6) if decided else None,
         "pass_rate_95ci": _wilson(counts["pass"], decided),
+        "pass_rate_all": round(counts["pass"] / expected, 6) if expected else None,
+        "judgment_coverage": round(judged / expected, 6) if expected else None,
+        "decision_coverage": round(decided / expected, 6) if expected else None,
+        "status": "complete" if judged == expected else "incomplete",
     }
 
 
@@ -52,6 +57,11 @@ def aggregate_judgments(
     key = {str(row["task_id"]): row for row in key_list}
     if len(key) != len(key_list):
         raise ValueError("task key contains duplicate task_id")
+    versions: dict[str, set[str | None]] = defaultdict(set)
+    for row in key_list:
+        versions[str(row["kind"])].add(row.get("rubric_sha256"))
+    if any(len(values) > 1 for values in versions.values()):
+        raise ValueError("cannot aggregate different rubric versions under the same kind")
     votes: dict[str, list[str]] = defaultdict(list)
     seen_judges: set[tuple[str, str]] = set()
     for index, judgment in enumerate(judgments):
@@ -78,7 +88,8 @@ def aggregate_judgments(
     adjudicated = 0
     ties = 0
     for task_id, labels in votes.items():
-        counts = Counter(labels)
+        # A failed call is not a semantic vote. Keep error-only tasks visible.
+        counts = Counter(label for label in labels if label != "error") or Counter({"error": 1})
         best = counts.most_common()
         if len(best) > 1 and best[0][1] == best[1][1]:
             majority = "uncertain"
@@ -88,7 +99,7 @@ def aggregate_judgments(
         row = key[task_id]
         grouped[(str(row["system_id"]), str(row["kind"]))][majority] += 1
         majorities[task_id] = majority
-        adjudicated += 1
+        adjudicated += majority != "error"
 
     systems: dict[str, dict[str, Any]] = defaultdict(dict)
     for system_id, kind in sorted(expected):
@@ -119,7 +130,9 @@ def aggregate_judgments(
         "schema_version": "1.0",
         "expected_task_count": len(key_list),
         "adjudicated_task_count": adjudicated,
-        "unjudged_task_count": len(key_list) - adjudicated,
+        "unjudged_task_count": len(key_list) - len(majorities),
+        "error_task_count": sum(label == "error" for label in majorities.values()),
+        "error_judgment_count": sum(labels.count("error") for labels in votes.values()),
         "tie_count": ties,
         "systems": dict(systems),
         "strata": {

@@ -1,5 +1,9 @@
 # Evaluation protocol
 
+The [versioned quality protocol](QUALITY_PROTOCOL.md) specifies joint assertion quality,
+strict versus core fact recovery, transparent denominators and paired comparisons.
+Legacy study results keep their original semantics; new tasks require fresh judgments.
+
 ## Claims this benchmark supports
 
 The protocol is designed to support a bounded claim: one document-to-KG system produces a more

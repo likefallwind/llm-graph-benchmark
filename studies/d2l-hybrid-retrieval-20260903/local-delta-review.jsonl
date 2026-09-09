@@ -1,0 +1,4 @@
+{"baseline_covered":"uncertain","confidence":0.9,"probe_id":"d2l-v1-f035","reason":"E5新增候选明确补入Adam的学习率控制、动量、按坐标重缩放和历史梯度统计；结合原BM25候选，核心汇总命题已覆盖。","reviewer":"codex-local-source-grounded-hybrid-v1","task_id":"t_eeddf05fa0834182a204","union_covered":"yes"}
+{"baseline_covered":"no","confidence":0.95,"probe_id":"d2l-v1-f004","reason":"新增候选只说明回归输出数值、线性回归计算和自变量示例，仍未表达自变量与因变量之间的关系建模。","reviewer":"codex-local-source-grounded-hybrid-v1","task_id":"t_f8de37c35de937312555","union_covered":"no"}
+{"baseline_covered":"no","confidence":0.95,"probe_id":"d2l-v1-f033","reason":"新增候选描述小批量SGD性质，但仍未表达完整批量、单样本与小批量三者在数据效率和向量化之间的折中。","reviewer":"codex-local-source-grounded-hybrid-v1","task_id":"t_8b9cb0148317accc1bae","union_covered":"no"}
+{"baseline_covered":"no","confidence":0.95,"probe_id":"d2l-v1-f014","reason":"新增候选没有无填充、步幅1条件下的输出形状公式，无法补足原BM25候选的缺口。","reviewer":"codex-local-source-grounded-hybrid-v1","task_id":"t_36b327710d3b81dec561","union_covered":"no"}

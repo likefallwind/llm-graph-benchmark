@@ -1,0 +1,296 @@
+{
+  "status": "complete",
+  "version": "v2.2",
+  "summary": {
+    "status": "complete",
+    "total": 1000,
+    "scored": 1000,
+    "errors": 0,
+    "missing": 0,
+    "usage_including_retries": {
+      "total_tokens": 9430916,
+      "total_characters": 0,
+      "prompt_tokens": 8331568,
+      "completion_tokens": 1099348
+    },
+    "model": "MiniMax-M3",
+    "endpoint": "https://api.minimaxi.com/v1/text/chatcompletion_v2",
+    "workers": 4,
+    "judge_id": "minimax-m3-official-quality-v22-t0-8192",
+    "updated_at": 1788937992.351107,
+    "local_syntax_recoveries": 1
+  },
+  "raw_runner_summary": {
+    "status": "incomplete",
+    "total": 1000,
+    "scored": 999,
+    "errors": 1,
+    "missing": 0,
+    "usage_including_retries": {
+      "total_tokens": 9430916,
+      "total_characters": 0,
+      "prompt_tokens": 8331568,
+      "completion_tokens": 1099348
+    },
+    "model": "MiniMax-M3",
+    "endpoint": "https://api.minimaxi.com/v1/text/chatcompletion_v2",
+    "workers": 4,
+    "judge_id": "minimax-m3-official-quality-v22-t0-8192",
+    "updated_at": 1788937992.351107
+  },
+  "method_metrics": {
+    "autoschemakg-minimax-m3-semantic": {
+      "assertion_quality_v2_2": {
+        "expected": 200,
+        "judged": 200,
+        "unjudged": 0,
+        "error": 0,
+        "pass": 177,
+        "fail": 22,
+        "uncertain": 1,
+        "decided": 199,
+        "pass_rate": 0.889447,
+        "pass_rate_95ci": [
+          0.838293,
+          0.925851
+        ],
+        "pass_rate_all": 0.885,
+        "judgment_coverage": 1.0,
+        "decision_coverage": 0.995,
+        "status": "complete"
+      }
+    },
+    "graphrag-fast-default": {
+      "assertion_quality_v2_2": {
+        "expected": 200,
+        "judged": 200,
+        "unjudged": 0,
+        "error": 0,
+        "pass": 86,
+        "fail": 79,
+        "uncertain": 35,
+        "decided": 165,
+        "pass_rate": 0.521212,
+        "pass_rate_95ci": [
+          0.445377,
+          0.596082
+        ],
+        "pass_rate_all": 0.43,
+        "judgment_coverage": 1.0,
+        "decision_coverage": 0.825,
+        "status": "complete"
+      }
+    },
+    "kggen-minimax-m3-exactdedup": {
+      "assertion_quality_v2_2": {
+        "expected": 200,
+        "judged": 200,
+        "unjudged": 0,
+        "error": 0,
+        "pass": 146,
+        "fail": 54,
+        "uncertain": 0,
+        "decided": 200,
+        "pass_rate": 0.73,
+        "pass_rate_95ci": [
+          0.664566,
+          0.786766
+        ],
+        "pass_rate_all": 0.73,
+        "judgment_coverage": 1.0,
+        "decision_coverage": 1.0,
+        "status": "complete"
+      }
+    },
+    "kggen-minimax-m3-official": {
+      "assertion_quality_v2_2": {
+        "expected": 200,
+        "judged": 200,
+        "unjudged": 0,
+        "error": 0,
+        "pass": 39,
+        "fail": 160,
+        "uncertain": 1,
+        "decided": 199,
+        "pass_rate": 0.19598,
+        "pass_rate_95ci": [
+          0.146808,
+          0.256667
+        ],
+        "pass_rate_all": 0.195,
+        "judgment_coverage": 1.0,
+        "decision_coverage": 0.995,
+        "status": "complete"
+      }
+    },
+    "llm-knowledge-graph-full1105-vnext": {
+      "assertion_quality_v2_2": {
+        "expected": 200,
+        "judged": 200,
+        "unjudged": 0,
+        "error": 0,
+        "pass": 191,
+        "fail": 9,
+        "uncertain": 0,
+        "decided": 200,
+        "pass_rate": 0.955,
+        "pass_rate_95ci": [
+          0.916703,
+          0.976147
+        ],
+        "pass_rate_all": 0.955,
+        "judgment_coverage": 1.0,
+        "decision_coverage": 1.0,
+        "status": "complete"
+      }
+    }
+  },
+  "axes": {
+    "graphrag-fast-default": {
+      "edge_label": {
+        "fail": 79,
+        "pass": 86,
+        "uncertain": 35
+      },
+      "description_label": {
+        "fail": 79,
+        "pass": 86,
+        "uncertain": 35
+      },
+      "condition_label": {
+        "fail": 62,
+        "pass": 104,
+        "uncertain": 34
+      }
+    },
+    "autoschemakg-minimax-m3-semantic": {
+      "edge_label": {
+        "pass": 182,
+        "fail": 17,
+        "uncertain": 1
+      },
+      "description_label": {
+        "pass": 185,
+        "fail": 14,
+        "uncertain": 1
+      },
+      "condition_label": {
+        "pass": 187,
+        "fail": 13
+      }
+    },
+    "kggen-minimax-m3-official": {
+      "edge_label": {
+        "fail": 158,
+        "pass": 41,
+        "uncertain": 1
+      },
+      "description_label": {
+        "fail": 157,
+        "pass": 42,
+        "uncertain": 1
+      },
+      "condition_label": {
+        "fail": 135,
+        "pass": 63,
+        "uncertain": 2
+      }
+    },
+    "kggen-minimax-m3-exactdedup": {
+      "edge_label": {
+        "pass": 148,
+        "fail": 51,
+        "uncertain": 1
+      },
+      "description_label": {
+        "pass": 152,
+        "fail": 48
+      },
+      "condition_label": {
+        "pass": 158,
+        "fail": 42
+      }
+    },
+    "llm-knowledge-graph-full1105-vnext": {
+      "edge_label": {
+        "pass": 192,
+        "fail": 8
+      },
+      "description_label": {
+        "pass": 197,
+        "fail": 3
+      },
+      "condition_label": {
+        "pass": 198,
+        "fail": 2
+      }
+    }
+  },
+  "returned_models": {
+    "MiniMax-M3": 1000
+  },
+  "evidence_stats": {
+    "autoschemakg-minimax-m3-semantic": {
+      "samples": 200,
+      "without_evidence": 0,
+      "source_chars_p50": 1130,
+      "source_chars_p90": 4290,
+      "source_chars_max": 7744
+    },
+    "graphrag-fast-default": {
+      "samples": 200,
+      "without_evidence": 34,
+      "source_chars_p50": 627,
+      "source_chars_p90": 1900,
+      "source_chars_max": 8313
+    },
+    "kggen-minimax-m3-exactdedup": {
+      "samples": 200,
+      "without_evidence": 0,
+      "source_chars_p50": 1789,
+      "source_chars_p90": 6100,
+      "source_chars_max": 17731
+    },
+    "kggen-minimax-m3-official": {
+      "samples": 200,
+      "without_evidence": 0,
+      "source_chars_p50": 3637,
+      "source_chars_p90": 53986,
+      "source_chars_max": 363823
+    },
+    "llm-knowledge-graph-full1105-vnext": {
+      "samples": 200,
+      "without_evidence": 0,
+      "source_chars_p50": 201,
+      "source_chars_p90": 359,
+      "source_chars_max": 1116
+    }
+  },
+  "output_truth": "Complete same-model descriptive comparison; not a human-calibrated estimate of absolute accuracy, not proof of SOTA.",
+  "lineage_sha256": {
+    "outputs/d2l-quality-v22-full-m3-c4-20260908-125935/judgments.jsonl": "01f421a8b2572ba356116415fc10b3d28c3989035e2d15c877143aa5018004bb",
+    "outputs/d2l-quality-v22-full-m3-c4-20260908-125935/tasks.jsonl": "a4e8142718a7b7b21773c36c51667fd36980304c1fb3253a1d948ed34388068c",
+    "outputs/d2l-quality-v22-full-m3-c4-20260908-125935/key.jsonl": "b60f3173df325668b3adc475ceca7dd57d3c36d26efa26e928d40b7f9428cb68",
+    "outputs/d2l-quality-v22-20260908/manifest.json": "0c3b9da4654e78ffcac8f931dcc0a81c421daf57d86aa3a7e7fe7203a04fc9f0",
+    "outputs/d2l-quality-v22-20260908/codex-blind-review.jsonl": "9bb19bdd434659f3e6eb94b0397b20fa405b67cbdd4d0072e101fc17bb20a441"
+  },
+  "review": {
+    "count": 25,
+    "matched": 23,
+    "agreement": 0.92,
+    "transitions": {
+      "fail->fail": 5,
+      "pass->pass": 16,
+      "uncertain->uncertain": 2,
+      "fail->pass": 2
+    },
+    "minimax_pass_codex_fail": 2,
+    "minimax_fail_codex_pass": 0,
+    "interpretation": "Relative disagreement with Codex, not true error rates. Same-corpus small panel, protocol author as reviewer, not independent human gold."
+  },
+  "artifacts": {
+    "local_full_analysis": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-quality-v22-results-20260908/analysis.json",
+    "report": "RESULTS.md",
+    "syntax_recovery": "syntax-recovery.json"
+  }
+}

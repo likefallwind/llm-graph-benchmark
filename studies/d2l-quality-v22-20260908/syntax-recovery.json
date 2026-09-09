@@ -1,0 +1,36 @@
+{
+  "policy": "terminal-reason-quotes-v1",
+  "recoveries": [
+    {
+      "task_id": "q_af955625597b9e7eff14fe02",
+      "policy": "terminal-reason-quotes-v1",
+      "inserted_escape_characters": 2,
+      "original_attempt": 1,
+      "response_file": "responses/q_af955625597b9e7eff14fe02-001.json",
+      "response_sha256": "ea5baddcb23737cd9dda160cc0abf4193a2ffc99cd855c39974826536999497c",
+      "corrected_content_sha256": "69df67b106d2c67d67bb4012eedf168d658fe68b0a902148082560a5e946934d",
+      "selection": "first chronologically recoverable response; no semantic label selection"
+    }
+  ],
+  "original_run_summary": {
+    "status": "incomplete",
+    "total": 1000,
+    "scored": 999,
+    "errors": 1,
+    "missing": 0,
+    "usage_including_retries": {
+      "total_tokens": 9430916,
+      "total_characters": 0,
+      "prompt_tokens": 8331568,
+      "completion_tokens": 1099348
+    },
+    "model": "MiniMax-M3",
+    "endpoint": "https://api.minimaxi.com/v1/text/chatcompletion_v2",
+    "workers": 4,
+    "judge_id": "minimax-m3-official-quality-v22-t0-8192",
+    "updated_at": 1788937992.351107
+  },
+  "original_run_unmodified": true,
+  "parser_sha256": "6b47ce440c35ce14895b246415a56a84d0e01c01636710837956c1b0fe3848af",
+  "analysis_script_sha256": "587c8b0c48eeaba0a4f71f39c500c8b67ec34660238ed7f5bd5dd2bf88339bc3"
+}

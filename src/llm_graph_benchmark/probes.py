@@ -142,6 +142,7 @@ def create_fact_probe_tasks(
                     "kind": "fact_recovery",
                     "item_id": probe_id,
                     "retriever": row["retriever"],
+                    "retriever_params": dict(row.get("retriever_params", {})),
                     "strata": (
                         dict(probe["metadata"])
                         if isinstance(probe.get("metadata"), dict)

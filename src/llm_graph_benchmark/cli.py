@@ -10,11 +10,13 @@ from .adapters.llm_knowledge_graph import adapt_sqlite
 from .agreement import judge_agreement
 from .aggregation import aggregate_judgments
 from .bundle import BenchmarkBundle, SubmissionBundle
+from .comparison import compare_paired
 from .identity import create_identity_tasks
 from .io import read_json, read_jsonl, write_json, write_jsonl
 from .metrics import submission_metrics
 from .probes import create_fact_probe_tasks
 from .qa import create_qa_tasks
+from .quality import prepare_quality_tasks
 from .report import markdown_report
 from .retrieval import retrieve_fact_probes, retrieve_qa_probes
 from .sampling import create_blind_sample
@@ -110,6 +112,22 @@ def _parser() -> argparse.ArgumentParser:
     agreement.add_argument("--key", required=True)
     agreement.add_argument("--judgments", required=True)
     agreement.add_argument("--out")
+
+    quality = commands.add_parser("quality-tasks", help="Prepare versioned blind judgments locally; no API calls")
+    quality.add_argument("--version", choices=("v1", "v2", "v2.1", "v2.2"), default="v1")
+    quality.add_argument("--tasks", required=True)
+    quality.add_argument("--key", required=True)
+    quality.add_argument("--tasks-out", required=True)
+    quality.add_argument("--key-out", required=True)
+
+    paired = commands.add_parser("compare-paired")
+    paired.add_argument("--key", required=True)
+    paired.add_argument("--judgments", required=True)
+    paired.add_argument("--left", required=True)
+    paired.add_argument("--right", required=True)
+    paired.add_argument("--kind", default="fact_recovery_strict_v1")
+    paired.add_argument("--judge-id", required=True)
+    paired.add_argument("--out")
 
     report = commands.add_parser("report")
     report.add_argument("--metrics", action="append", required=True)
@@ -325,6 +343,26 @@ def main(argv: list[str] | None = None) -> int:
             else:
                 _print(result)
             return 0
+        if args.command == "quality-tasks":
+            input_paths = {Path(args.tasks).resolve(), Path(args.key).resolve()}
+            output_paths = {Path(args.tasks_out).resolve(), Path(args.key_out).resolve()}
+            if len(output_paths) != 2 or input_paths & output_paths:
+                raise ValueError("use distinct output paths; never overwrite frozen input tasks")
+            if any(path.exists() for path in output_paths):
+                raise ValueError("quality output already exists; choose a new output directory")
+            output = prepare_quality_tasks(read_jsonl(args.tasks), read_jsonl(args.key), version=args.version)
+            write_jsonl(args.tasks_out, output.tasks)
+            write_jsonl(args.key_out, output.key)
+            _print({"status": "prepared-not-judged", "tasks": len(output.tasks)})
+            return 0
+        if args.command == "compare-paired":
+            result = compare_paired(read_jsonl(args.key), read_jsonl(args.judgments),
+                                    left=args.left, right=args.right, kind=args.kind, judge_id=args.judge_id)
+            if args.out:
+                write_json(args.out, result)
+            else:
+                _print(result)
+            return 0 if result["status"] == "complete" else 1
         if args.command == "agreement":
             result = judge_agreement(read_jsonl(args.key), read_jsonl(args.judgments))
             if args.out:
