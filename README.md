@@ -74,6 +74,12 @@ rubric.json          # 冻结的评价维度与标签定义
 证据单元支持 `text`、`image`、`table` 和 `mixed` modality；图片/扫描教材可以在
 `location` 中保存页码和 bbox，而无需改变 submission 契约。
 
+## 基线配置修正（2026-09-09）
+
+[修正实验说明](studies/d2l-baseline-correction-20260909/README.md)记录 KGGen 官方 LLM 归一、
+AutoSchemaKG 完整概念化和 GraphRAG 中文 LLM 图构建的配置与运行方式。旧结果保留；
+新全书结果以独立运行目录的校验、评分和完成标记为准。
+
 ## 使用
 
 新一轮构图质量评测使用[版本化质量协议](docs/QUALITY_PROTOCOL.md)：联合断言质量、严格
