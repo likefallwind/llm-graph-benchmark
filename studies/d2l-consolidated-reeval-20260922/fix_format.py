@@ -1,0 +1,4 @@
+from pathlib import Path
+p=Path('/home/likefallwind/code/llm-graph-benchmark/studies/d2l-consolidated-reeval-20260922/evaluate.py');s=p.read_text();s=s.replace('import argparse,copy,fcntl,hashlib,json,sys,time,shutil','import argparse,copy,fcntl,hashlib,json,sys,time,shutil,re')
+s=s.replace("v,repair=ledger.decode_ledger(response['choices'][0]['message']['content'])", "raw=response['choices'][0]['message']['content'].strip()\n raw=re.sub(r'^```(?:json)?\\s*|\\s*```$', '', raw)\n v,repair=ledger.decode_ledger(raw)\n if isinstance(v,dict) and isinstance(v.get('target_copy'),str):\n  try:decoded=json.loads(v['target_copy'])\n  except (ValueError,TypeError):decoded=None\n  if isinstance(decoded,dict) and decoded==t['payload']['target']:\n   v['target_copy']=decoded;repair='+'.join(x for x in [repair,'decoded_json_target_copy'] if x)")
+p.write_text(s)

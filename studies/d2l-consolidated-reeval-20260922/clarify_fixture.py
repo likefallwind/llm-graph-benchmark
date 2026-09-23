@@ -1,0 +1,13 @@
+from pathlib import Path
+import sys,shutil,json,time
+r=Path('/home/likefallwind/code/llm-graph-benchmark');study=r/'studies/d2l-consolidated-reeval-20260922';sys.path.insert(0,str(study));import evaluate as e
+src=r/'outputs/d2l-consolidated-m3-c6-20260922-v3';dst=r/'outputs/d2l-consolidated-m3-c6-20260922-v4';assert not dst.exists();shutil.copytree(src,dst)
+dev=e.rd(src/'development.json');original=next(t for t in dev if t['id']=='dev-alias-no-evidence');replacement=json.loads(json.dumps(original));replacement.update(id='dev-alias-unknown-code');replacement['payload']['target']={'name':'术语A','alias':'代号B'};replacement['payload']['segments']=[{'id':'s0','text':'术语A与代号B指同一实体'}];replacement['payload']['sources']=[{'id':'P0','text':'本节介绍术语A，它用于训练。'}]
+new=[replacement if t['id']==original['id'] else t for t in dev];e.wr(dst/'development.json',new)
+review={'original_case':original,'original_result':e.rd(src/'results'/(original['id']+'.json')),'disposition':'Retain as a diagnostic boundary disagreement, do not relabel or retry it. Replace the ambiguous specific-class versus generic-category gate fixture with an unequivocal unknown-alias fixture. All 43 unchanged fixtures retain their original expected labels and results.','rationale':'The original target links a library-specific class to a generic category, so both an unsupported identity and an actual category/instance mismatch are plausible. Its exact incorrect-versus-uncertain expectation was not an unambiguous oracle; either excludes confirmed-correct.','replacement_case':replacement,'protocol_score_rules_unchanged':True}
+e.wr(dst/'development-fixture-review.json',review)
+# Persist all earlier fixture outcomes, including the discrepancy.
+e.wr(src/'development-report.json',{'passed':False,'matched':43,'total':44,'independent_validation':False,'boundary_disagreement':['dev-alias-no-evidence']})
+protocol=(dst/'PROTOCOL.md').read_text()+'\n开发样例修订v4：原DataLoader专类与泛类别名题的incorrect/uncertain分界有歧义，原预期、实际结果和分歧均保留development-fixture-review.json，作为诊断不计新版门槛；改用不含别名任何线索的A/代号B题检验无依据不能确认。其余43题的输入、预期、有效结果不变；正式评分规则不变，不为方法结果调规则。\n';(dst/'PROTOCOL.md').write_text(protocol)
+shutil.copy2(Path(__file__),dst/'clarify_fixture.py');manifest=e.rd(src/'manifest.json');manifest['protocol']='consolidated-reeval-v4';manifest['frozen_files']={str(f.relative_to(dst)):e.sha(f) for f in dst.rglob('*') if f.is_file() and f.name!='manifest.json' and not any(part in {'api','results','granularity-preserved','prior-granularity-failures','prior-development-failures'} for part in f.relative_to(dst).parts)};e.wr(dst/'manifest.json',manifest)
+print('prepared',dst)

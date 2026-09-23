@@ -19,24 +19,8 @@ def markdown_report(
     lines = [
         "# LLM Graph Benchmark Report",
         "",
-        "结构规模不是质量分数；Entity 与 Assertion 的裁判结果分别报告。",
-        "",
-        "| System | Entities | Assertions | Entity evidence | Assertion evidence | Isolated rate | Cost (USD) |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        "优先报告盲评结果；Entity 与 Assertion 的裁判结果分别报告，结构规模不是质量分数。",
     ]
-    for payload in sorted(metrics, key=lambda item: str(item.get("system_id", ""))):
-        summary = payload["summary"]
-        lines.append(
-            "| {system} | {entities} | {assertions} | {entity_ev} | {assertion_ev} | {isolated} | {cost} |".format(
-                system=payload["system_id"],
-                entities=summary["entity_count"],
-                assertions=summary["assertion_count"],
-                entity_ev=_display(summary["entity_evidence_coverage"]),
-                assertion_ev=_display(summary["assertion_evidence_coverage"]),
-                isolated=_display(summary["isolated_entity_rate"]),
-                cost=_display(summary.get("cost_usd")),
-            )
-        )
     if judged_systems:
         lines.extend(
             [
@@ -61,5 +45,31 @@ def markdown_report(
                     f"{_display(result.get('pass_rate_all'))} | {_display(result['pass_rate'])} | "
                     f"{interval_text} | {_display(result.get('judgment_coverage'))} | {result.get('status', 'legacy')} |"
                 )
+    else:
+        lines.extend(["", "未提供盲评结果；以下结构统计不能用于判断抽取正确性。"])
+    lines.extend(
+        [
+            "",
+            "## Structure, citation presence, and cost",
+            "",
+            "引用存在率仅表示 Entity 或 Assertion 是否附有 evidence，不代表引用内容正确或足以支持该条目。",
+            "",
+            "| System | Entities | Assertions | Entity citation presence | Assertion citation presence | Isolated rate | Cost (USD) |",
+            "|---|---:|---:|---:|---:|---:|---:|",
+        ]
+    )
+    for payload in sorted(metrics, key=lambda item: str(item.get("system_id", ""))):
+        summary = payload["summary"]
+        lines.append(
+            "| {system} | {entities} | {assertions} | {entity_ev} | {assertion_ev} | {isolated} | {cost} |".format(
+                system=payload["system_id"],
+                entities=summary["entity_count"],
+                assertions=summary["assertion_count"],
+                entity_ev=_display(summary["entity_evidence_coverage"]),
+                assertion_ev=_display(summary["assertion_evidence_coverage"]),
+                isolated=_display(summary["isolated_entity_rate"]),
+                cost=_display(summary.get("cost_usd")),
+            )
+        )
     lines.append("")
     return "\n".join(lines)

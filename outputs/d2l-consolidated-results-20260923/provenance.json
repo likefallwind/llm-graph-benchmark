@@ -1,0 +1,18 @@
+{
+  "historical": {
+    "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-final-comparison-20260922/data.json",
+    "sha256": "24db1901a49c330c7b38639321c2b3001a1f78dc6029993b8d1d576b6b8a64b2"
+  },
+  "entity100": {
+    "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-entity100-m3-c6-20260923/summary.json",
+    "sha256": "adbc38fe8f3f37dfd2bcf63f501bc2673cc26515c17d3455b3c517dad826b503"
+  },
+  "coverage": {
+    "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-three-metrics-repaired-m3-c6-20260922/summary.json",
+    "sha256": "43dd7688130a0c66efff29e3c92899e776103b44a9ad8be655cc68b6db578044"
+  },
+  "identity_qa": {
+    "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-baseline-original-rubric-m3-c6-20260922/summary.json",
+    "sha256": "dd85661b611b1f5bada1eaabf0efff3a39d1f30d6887b51932d7edefc200ef5d"
+  }
+}
