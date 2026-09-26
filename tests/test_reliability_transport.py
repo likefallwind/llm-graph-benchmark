@@ -17,9 +17,10 @@ TRANSPORT = Path(__file__).resolve().parents[1] / "studies/d2l-reliability-20260
 SECRET = "fake-test-credential-never-write-this"
 
 
-@pytest.fixture
-def transport(monkeypatch):
-    spec = importlib.util.spec_from_file_location("reliability_test_transport", TRANSPORT)
+@pytest.fixture(params=["study", "workflow"])
+def transport(monkeypatch, request):
+    path = TRANSPORT if request.param == "study" else TRANSPORT.parents[2] / "src/llm_graph_benchmark/workflow/transport.py"
+    spec = importlib.util.spec_from_file_location("reliability_test_transport", path)
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     monkeypatch.setenv("MINIMAX_API_KEY", SECRET)
@@ -135,13 +136,14 @@ def test_quota_error_stops_other_clients_and_preserves_first_reason(transport, m
     calls, _ = fake_opener(monkeypatch, transport, [response(base_resp={"status_code": 2067})])
     slots = tmp_path / "request-slots"
     one = transport.Client(tmp_path / "one", slots)
-    two = transport.Client(tmp_path / "two", slots)
+    is_workflow = "workflow" in transport.__file__
+    two = transport.Client(tmp_path / ("one" if is_workflow else "two"), slots)
     with pytest.raises(transport.TerminalProviderError, match="2067"):
         one.complete("A")
     with pytest.raises(transport.TerminalProviderError, match="Shared run"):
         two.complete("B")
     assert len(calls) == 1
-    assert "2067" in transport.read(slots / "terminal-error.json")["error"]
+    assert "2067" in transport.read((tmp_path / "one" if is_workflow else slots) / "terminal-error.json")["error"]
 
 
 @pytest.mark.parametrize("code", [1026, 1027])

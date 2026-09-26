@@ -1,0 +1,8 @@
+{
+  "task_id": "t_69d7dd6b42c79942200edbfc",
+  "task_hash": "sha256:c3296b5731666847be5605f466c957c0caa21c5d240d70cb8b446851d1e04631",
+  "started_at": 1790216593.9762166,
+  "status": "failed",
+  "error_type": "RuntimeError",
+  "finished_at": 1790216625.1875825
+}

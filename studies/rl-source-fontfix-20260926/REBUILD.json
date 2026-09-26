@@ -1,0 +1,8346 @@
+{
+ "units": 2920,
+ "methods": {
+  "heading_kept": 178,
+  "unchanged": 1058,
+  "fontfix_span": 1644,
+  "fontfix_patch": 29,
+  "heading_ff": 11
+ },
+ "cmap_fixes": [
+  {
+   "font": "03",
+   "glyph": "alpha",
+   "old": "",
+   "new": "α",
+   "fonts": 2
+  },
+  {
+   "font": "03",
+   "glyph": "beta",
+   "old": "",
+   "new": "β",
+   "fonts": 2
+  },
+  {
+   "font": "03",
+   "glyph": "eta",
+   "old": "",
+   "new": "η",
+   "fonts": 2
+  },
+  {
+   "font": "03",
+   "glyph": "gamma",
+   "old": "",
+   "new": "γ",
+   "fonts": 2
+  },
+  {
+   "font": "03",
+   "glyph": "pi",
+   "old": "",
+   "new": "π",
+   "fonts": 2
+  },
+  {
+   "font": "03",
+   "glyph": "tau",
+   "old": "",
+   "new": "τ",
+   "fonts": 2
+  },
+  {
+   "font": "03",
+   "glyph": "uni03BC",
+   "old": "",
+   "new": "μ",
+   "fonts": 2
+  },
+  {
+   "font": "20",
+   "glyph": "minute",
+   "old": "",
+   "new": "′",
+   "fonts": 2
+  },
+  {
+   "font": "21",
+   "glyph": "arrowright",
+   "old": "",
+   "new": "→",
+   "fonts": 2
+  },
+  {
+   "font": "22",
+   "glyph": "minus",
+   "old": "",
+   "new": "−",
+   "fonts": 2
+  },
+  {
+   "font": "22",
+   "glyph": "proportional",
+   "old": "",
+   "new": "∝",
+   "fonts": 2
+  },
+  {
+   "font": "AdvP4C4E74",
+   "glyph": "Thorn",
+   "old": "",
+   "new": "Þ",
+   "fonts": 2
+  },
+  {
+   "font": "AdvP4C4E74",
+   "glyph": "eth",
+   "old": "",
+   "new": "ð",
+   "fonts": 2
+  },
+  {
+   "font": "CMBSY7",
+   "glyph": "asteriskmath",
+   "old": "⇤",
+   "new": "∗",
+   "fonts": 1
+  },
+  {
+   "font": "CMBX10",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMBX12",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMBX12",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 1
+  },
+  {
+   "font": "CMBX9",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracehtipdownleft",
+   "old": "z",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracehtipdownright",
+   "old": "{",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracehtipupleft",
+   "old": "|",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracehtipupright",
+   "old": "}",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "braceleftbig",
+   "old": "\u0000",
+   "new": "{",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "braceleftbigg",
+   "old": "⇢",
+   "new": "{",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "braceleftbt",
+   "old": ":",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "braceleftmid",
+   "old": "<",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracelefttp",
+   "old": "8",
+   "new": "{",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracerightbig",
+   "old": " ",
+   "new": "}",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracerightbigg",
+   "old": "\u0000",
+   "new": "}",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracerightbt",
+   "old": ";",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracerightmid",
+   "old": "=",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracerighttp",
+   "old": "9",
+   "new": "}",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketleftBig",
+   "old": "h",
+   "new": "[",
+   "fonts": 3
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketleftBigg",
+   "old": "\"",
+   "new": "[",
+   "fonts": 3
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketleftbig",
+   "old": "⇥",
+   "new": "[",
+   "fonts": 3
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketleftbigg",
+   "old": "",
+   "new": "[",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketleftbt",
+   "old": "4",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketlefttp",
+   "old": "2",
+   "new": "[",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketrightBig",
+   "old": "i",
+   "new": "]",
+   "fonts": 3
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketrightBigg",
+   "old": "#",
+   "new": "]",
+   "fonts": 3
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketrightbig",
+   "old": "⇤",
+   "new": "]",
+   "fonts": 3
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketrightbigg",
+   "old": "\u0000",
+   "new": "]",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketrightbt",
+   "old": "5",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "bracketrighttp",
+   "old": "3",
+   "new": "]",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "hatwide",
+   "old": "b",
+   "new": "ˆ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "hatwidest",
+   "old": "d",
+   "new": "ˆ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenleftBig",
+   "old": "⇣",
+   "new": "(",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenleftBigg",
+   "old": " ",
+   "new": "(",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenleftbig",
+   "old": "\u0000",
+   "new": "(",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenleftbigg",
+   "old": "✓",
+   "new": "(",
+   "fonts": 2
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenleftbt",
+   "old": "@",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenlefttp",
+   "old": "0",
+   "new": "(",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenrightBig",
+   "old": "⌘",
+   "new": ")",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenrightBigg",
+   "old": "!",
+   "new": ")",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenrightbig",
+   "old": "\u0000",
+   "new": ")",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenrightbigg",
+   "old": "◆",
+   "new": ")",
+   "fonts": 2
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenrightbt",
+   "old": "A",
+   "new": " ",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "parenrighttp",
+   "old": "1",
+   "new": ")",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "productdisplay",
+   "old": "Y",
+   "new": "∏",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "producttext",
+   "old": "Q",
+   "new": "∏",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "radicalBig",
+   "old": "q",
+   "new": "√",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "radicalBigg",
+   "old": "s",
+   "new": "√",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "radicalbig",
+   "old": "p",
+   "new": "√",
+   "fonts": 11
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "summationdisplay",
+   "old": "X",
+   "new": "∑",
+   "fonts": 7
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "summationtext",
+   "old": "P",
+   "new": "∑",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "tildewide",
+   "old": "e",
+   "new": "˜",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "vextenddouble",
+   "old": "\u0000",
+   "new": "‖",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX10",
+   "glyph": "vextendsingle",
+   "old": "\u0000",
+   "new": "|",
+   "fonts": 2
+  },
+  {
+   "font": "CMEX7",
+   "glyph": "summationtext",
+   "old": "P",
+   "new": "∑",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX8",
+   "glyph": "bracketleftbig",
+   "old": "⇥",
+   "new": "[",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX8",
+   "glyph": "bracketrightbig",
+   "old": "⇤",
+   "new": "]",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX8",
+   "glyph": "vextendsingle",
+   "old": "\u0000",
+   "new": "|",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX9",
+   "glyph": "producttext",
+   "old": "Q",
+   "new": "∏",
+   "fonts": 1
+  },
+  {
+   "font": "CMEX9",
+   "glyph": "summationtext",
+   "old": "P",
+   "new": "∑",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "alpha",
+   "old": "↵",
+   "new": "α",
+   "fonts": 26
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "beta",
+   "old": "\u0000",
+   "new": "β",
+   "fonts": 3
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "delta",
+   "old": "\u0000",
+   "new": "δ",
+   "fonts": 5
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "epsilon",
+   "old": "\"",
+   "new": "ε",
+   "fonts": 10
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "epsilon1",
+   "old": "\u0000",
+   "new": "ε",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "eta",
+   "old": "⌘",
+   "new": "η",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "gamma",
+   "old": "\u0000",
+   "new": "γ",
+   "fonts": 10
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "kappa",
+   "old": "",
+   "new": "κ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "lambda",
+   "old": "\u0000",
+   "new": "λ",
+   "fonts": 32
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "omega",
+   "old": "!",
+   "new": "ω",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "partialdiff",
+   "old": "@",
+   "new": "∂",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "phi",
+   "old": "\u0000",
+   "new": "φ",
+   "fonts": 9
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "pi",
+   "old": "⇡",
+   "new": "π",
+   "fonts": 25
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "rho",
+   "old": "⇢",
+   "new": "ρ",
+   "fonts": 3
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "sigma",
+   "old": "\u0000",
+   "new": "σ",
+   "fonts": 8
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "tau",
+   "old": "⌧",
+   "new": "τ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 9
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "xi",
+   "old": "\u0000",
+   "new": "ξ",
+   "fonts": 5
+  },
+  {
+   "font": "CMMI12",
+   "glyph": "alpha",
+   "old": "\u0000",
+   "new": "α",
+   "fonts": 2
+  },
+  {
+   "font": "CMMI12",
+   "glyph": "gamma",
+   "old": "\u0000",
+   "new": "γ",
+   "fonts": 4
+  },
+  {
+   "font": "CMMI12",
+   "glyph": "lambda",
+   "old": "\u0000",
+   "new": "λ",
+   "fonts": 3
+  },
+  {
+   "font": "CMMI12",
+   "glyph": "pi",
+   "old": "\u0000",
+   "new": "π",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI12",
+   "glyph": "sigma",
+   "old": "\u0000",
+   "new": "σ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI12",
+   "glyph": "theta",
+   "old": "\u0000",
+   "new": "θ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI6",
+   "glyph": "pi",
+   "old": "⇡",
+   "new": "π",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI6",
+   "glyph": "star",
+   "old": "?",
+   "new": "⋆",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI6",
+   "glyph": "tau",
+   "old": "⌧",
+   "new": "τ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI6",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "alpha",
+   "old": "↵",
+   "new": "α",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "beta",
+   "old": "\u0000",
+   "new": "β",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "epsilon",
+   "old": "\"",
+   "new": "ε",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "gamma",
+   "old": "\u0000",
+   "new": "γ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "lambda",
+   "old": "\u0000",
+   "new": "λ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "omega",
+   "old": "!",
+   "new": "ω",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "partialdiff",
+   "old": "@",
+   "new": "∂",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "pi",
+   "old": "⇡",
+   "new": "π",
+   "fonts": 22
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "sigma",
+   "old": "\u0000",
+   "new": "σ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "star",
+   "old": "?",
+   "new": "⋆",
+   "fonts": 2
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "tau",
+   "old": "⌧",
+   "new": "τ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI7",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "alpha",
+   "old": "↵",
+   "new": "α",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "delta",
+   "old": "\u0000",
+   "new": "δ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "epsilon1",
+   "old": "\u0000",
+   "new": "ε",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "gamma",
+   "old": "\u0000",
+   "new": "γ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "lambda",
+   "old": "\u0000",
+   "new": "λ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "pi",
+   "old": "⇡",
+   "new": "π",
+   "fonts": 5
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "rho",
+   "old": "⇢",
+   "new": "ρ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI8",
+   "glyph": "theta",
+   "old": "\u0000",
+   "new": "θ",
+   "fonts": 9
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "alpha",
+   "old": "↵",
+   "new": "α",
+   "fonts": 2
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "beta",
+   "old": "\u0000",
+   "new": "β",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "delta",
+   "old": "\u0000",
+   "new": "δ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "epsilon",
+   "old": "\"",
+   "new": "ε",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "gamma",
+   "old": "\u0000",
+   "new": "γ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "lambda",
+   "old": "\u0000",
+   "new": "λ",
+   "fonts": 2
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "pi",
+   "old": "⇡",
+   "new": "π",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "rho",
+   "old": "⇢",
+   "new": "ρ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "sigma",
+   "old": "\u0000",
+   "new": "σ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "tau",
+   "old": "⌧",
+   "new": "τ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMI9",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMIB10",
+   "glyph": "phi",
+   "old": "\u0000",
+   "new": "φ",
+   "fonts": 1
+  },
+  {
+   "font": "CMMIB10",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 2
+  },
+  {
+   "font": "CMMIB5",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 2
+  },
+  {
+   "font": "CMMIB7",
+   "glyph": "theta",
+   "old": "✓",
+   "new": "θ",
+   "fonts": 2
+  },
+  {
+   "font": "CMR10",
+   "glyph": "Delta",
+   "old": "\u0000",
+   "new": "∆",
+   "fonts": 1
+  },
+  {
+   "font": "CMR10",
+   "glyph": "Omega",
+   "old": "⌦",
+   "new": "Ω",
+   "fonts": 1
+  },
+  {
+   "font": "CMR10",
+   "glyph": "Pi",
+   "old": "⇧",
+   "new": "Π",
+   "fonts": 4
+  },
+  {
+   "font": "CMR10",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 8
+  },
+  {
+   "font": "CMR10",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 2
+  },
+  {
+   "font": "CMR12",
+   "glyph": "ff",
+   "old": "\u0000",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMR12",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 2
+  },
+  {
+   "font": "CMR7",
+   "glyph": "Omega",
+   "old": "⌦",
+   "new": "Ω",
+   "fonts": 1
+  },
+  {
+   "font": "CMR8",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMR8",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 1
+  },
+  {
+   "font": "CMR9",
+   "glyph": "Pi",
+   "old": "⇧",
+   "new": "Π",
+   "fonts": 1
+  },
+  {
+   "font": "CMR9",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMR9",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 1
+  },
+  {
+   "font": "CMR9",
+   "glyph": "ffl",
+   "old": "✏",
+   "new": "ffl",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "angbracketleft",
+   "old": "h",
+   "new": "⟨",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "angbracketright",
+   "old": "i",
+   "new": "⟩",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "approxequal",
+   "old": "⇡",
+   "new": "≈",
+   "fonts": 3
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "arrowdblright",
+   "old": ")",
+   "new": "⇒",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "arrowleft",
+   "old": " ",
+   "new": "←",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "arrowright",
+   "old": "!",
+   "new": "→",
+   "fonts": 4
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "asteriskmath",
+   "old": "⇤",
+   "new": "∗",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "bardbl",
+   "old": "k",
+   "new": "‖",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "element",
+   "old": "2",
+   "new": "∈",
+   "fonts": 4
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "greaterequal",
+   "old": "\u0000",
+   "new": "≥",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "infinity",
+   "old": "1",
+   "new": "∞",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "lessequal",
+   "old": "",
+   "new": "≤",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "lessmuch",
+   "old": "⌧",
+   "new": "≪",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "mapsto",
+   "old": "7",
+   "new": "|",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "minus",
+   "old": "\u0000",
+   "new": "−",
+   "fonts": 34
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "multiply",
+   "old": "⇥",
+   "new": "×",
+   "fonts": 3
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "nabla",
+   "old": "r",
+   "new": "∇",
+   "fonts": 4
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "negationslash",
+   "old": "6",
+   "new": "/",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "propersubset",
+   "old": "⇢",
+   "new": "⊂",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "proportional",
+   "old": "/",
+   "new": "∝",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "radical",
+   "old": "p",
+   "new": "√",
+   "fonts": 3
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "similar",
+   "old": "⇠",
+   "new": "∼",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY10",
+   "glyph": "universal",
+   "old": "\u0000",
+   "new": "∀",
+   "fonts": 3
+  },
+  {
+   "font": "CMSY5",
+   "glyph": "asteriskmath",
+   "old": "⇤",
+   "new": "∗",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY5",
+   "glyph": "minus",
+   "old": "\u0000",
+   "new": "−",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY5",
+   "glyph": "prime",
+   "old": "0",
+   "new": "′",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY6",
+   "glyph": "asteriskmath",
+   "old": "⇤",
+   "new": "∗",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY6",
+   "glyph": "latticetop",
+   "old": ">",
+   "new": "⊤",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY6",
+   "glyph": "minus",
+   "old": "\u0000",
+   "new": "−",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY6",
+   "glyph": "prime",
+   "old": "0",
+   "new": "′",
+   "fonts": 3
+  },
+  {
+   "font": "CMSY6",
+   "glyph": "similar",
+   "old": "⇠",
+   "new": "∼",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "arrowright",
+   "old": "!",
+   "new": "→",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "asteriskmath",
+   "old": "⇤",
+   "new": "∗",
+   "fonts": 28
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "element",
+   "old": "2",
+   "new": "∈",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "infinity",
+   "old": "1",
+   "new": "∞",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "latticetop",
+   "old": ">",
+   "new": "⊤",
+   "fonts": 7
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "minus",
+   "old": "\u0000",
+   "new": "−",
+   "fonts": 22
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "multiply",
+   "old": "⇥",
+   "new": "×",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "nabla",
+   "old": "r",
+   "new": "∇",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "negationslash",
+   "old": "6",
+   "new": "/",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "openbullet",
+   "old": "\u0000",
+   "new": "◦",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY7",
+   "glyph": "prime",
+   "old": "0",
+   "new": "′",
+   "fonts": 17
+  },
+  {
+   "font": "CMSY8",
+   "glyph": "asteriskmath",
+   "old": "\u0000",
+   "new": "∗",
+   "fonts": 6
+  },
+  {
+   "font": "CMSY8",
+   "glyph": "element",
+   "old": "\u0000",
+   "new": "∈",
+   "fonts": 2
+  },
+  {
+   "font": "CMSY8",
+   "glyph": "latticetop",
+   "old": "\u0000",
+   "new": "⊤",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY8",
+   "glyph": "minus",
+   "old": "\u0000",
+   "new": "−",
+   "fonts": 8
+  },
+  {
+   "font": "CMSY8",
+   "glyph": "prime",
+   "old": "\u0000",
+   "new": "′",
+   "fonts": 8
+  },
+  {
+   "font": "CMSY8",
+   "glyph": "similar",
+   "old": "⇠",
+   "new": "∼",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "approxequal",
+   "old": "⇡",
+   "new": "≈",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "arrowleft",
+   "old": " ",
+   "new": "←",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "element",
+   "old": "2",
+   "new": "∈",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "greaterequal",
+   "old": "\u0000",
+   "new": "≥",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "infinity",
+   "old": "1",
+   "new": "∞",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "minus",
+   "old": "\u0000",
+   "new": "−",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "negationslash",
+   "old": "6",
+   "new": "/",
+   "fonts": 1
+  },
+  {
+   "font": "CMSY9",
+   "glyph": "similar",
+   "old": "⇠",
+   "new": "∼",
+   "fonts": 1
+  },
+  {
+   "font": "CMTI10",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMTI10",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 1
+  },
+  {
+   "font": "CMTI9",
+   "glyph": "ff",
+   "old": "↵",
+   "new": "ff",
+   "fonts": 1
+  },
+  {
+   "font": "CMTI9",
+   "glyph": "ffi",
+   "old": "\u0000",
+   "new": "ffi",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol",
+   "glyph": "dotmath",
+   "old": "",
+   "new": "⋅",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol",
+   "glyph": "minus",
+   "old": "",
+   "new": "−",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol",
+   "glyph": "minute",
+   "old": "",
+   "new": "′",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol",
+   "glyph": "partialdiff",
+   "old": "",
+   "new": "∂",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol",
+   "glyph": "proportional",
+   "old": "",
+   "new": "∝",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol",
+   "glyph": "similar",
+   "old": "",
+   "new": "∼",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol-Italic",
+   "glyph": "Delta",
+   "old": "",
+   "new": "∆",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol-Italic",
+   "glyph": "pi",
+   "old": "",
+   "new": "π",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol-Italic",
+   "glyph": "rho",
+   "old": "",
+   "new": "ρ",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol-Italic",
+   "glyph": "sigma",
+   "old": "",
+   "new": "σ",
+   "fonts": 1
+  },
+  {
+   "font": "EuclidSymbol-Italic",
+   "glyph": "theta",
+   "old": "",
+   "new": "θ",
+   "fonts": 1
+  },
+  {
+   "font": "Helvetica",
+   "glyph": "minus",
+   "old": "",
+   "new": "−",
+   "fonts": 7
+  },
+  {
+   "font": "HelveticaNeueLTStd-Roman",
+   "glyph": "f_i",
+   "old": "",
+   "new": "fi",
+   "fonts": 2
+  },
+  {
+   "font": "MSAM10",
+   "glyph": "square",
+   "old": "⇤",
+   "new": "□",
+   "fonts": 1
+  },
+  {
+   "font": "MSAM10",
+   "glyph": "squiggleright",
+   "old": "\u0000",
+   "new": "⇝",
+   "fonts": 4
+  },
+  {
+   "font": "MSBM10",
+   "glyph": "hatwider",
+   "old": "\\",
+   "new": "ˆ",
+   "fonts": 1
+  },
+  {
+   "font": "STIXGeneral-Regular",
+   "glyph": "u1D700",
+   "old": "\u0000",
+   "new": "𝜀",
+   "fonts": 3
+  },
+  {
+   "font": "Symbol",
+   "glyph": "alpha",
+   "old": "",
+   "new": "α",
+   "fonts": 1
+  },
+  {
+   "font": "Symbol",
+   "glyph": "lambda",
+   "old": "",
+   "new": "λ",
+   "fonts": 7
+  },
+  {
+   "font": "SymbolStd",
+   "glyph": "uni2032",
+   "old": "",
+   "new": "′",
+   "fonts": 1
+  },
+  {
+   "font": "SymbolStd",
+   "glyph": "uni23AA",
+   "old": "",
+   "new": "⎪",
+   "fonts": 1
+  }
+ ],
+ "unmapped_glyphs": [
+  {
+   "font": "AdvP4C4E46",
+   "glyph": "C0",
+   "fonts": 2
+  },
+  {
+   "font": "AdvP4C4E46",
+   "glyph": "C1",
+   "fonts": 2
+  },
+  {
+   "font": "AdvP4C4E46",
+   "glyph": "C14",
+   "fonts": 2
+  },
+  {
+   "font": "AdvP4C4E74",
+   "glyph": "C29",
+   "fonts": 2
+  },
+  {
+   "font": "CMMI10",
+   "glyph": "vector",
+   "fonts": 6
+  },
+  {
+   "font": "CMMIB10",
+   "glyph": "vector",
+   "fonts": 1
+  }
+ ],
+ "probe_fixes": {
+  "fact_probes-reviewed.jsonl": [
+   "rl-fact-ch06-1",
+   "rl-fact-ch06-2",
+   "rl-fact-ch06-3"
+  ],
+  "qa_probes-reviewed.jsonl": [
+   "rl-qa-ch06-1"
+  ]
+ },
+ "unit_edits": [
+  {
+   "old": "↵",
+   "new": "ff",
+   "count": 1294
+  },
+  {
+   "old": "⇡",
+   "new": "π",
+   "count": 860
+  },
+  {
+   "old": "",
+   "new": " ",
+   "count": 478
+  },
+  {
+   "old": "0",
+   "new": "′",
+   "count": 437
+  },
+  {
+   "old": "↵",
+   "new": "α",
+   "count": 306
+  },
+  {
+   "old": " ",
+   "new": "−",
+   "count": 303
+  },
+  {
+   "old": " ",
+   "new": "",
+   "count": 256
+  },
+  {
+   "old": "2",
+   "new": "∈",
+   "count": 234
+  },
+  {
+   "old": "✓",
+   "new": "θ",
+   "count": 218
+  },
+  {
+   "old": "",
+   "new": "−",
+   "count": 214
+  },
+  {
+   "old": "⇤",
+   "new": "∗",
+   "count": 213
+  },
+  {
+   "old": "",
+   "new": "γ",
+   "count": 196
+  },
+  {
+   "old": " ",
+   "new": "λ",
+   "count": 185
+  },
+  {
+   "old": "\"",
+   "new": "ε",
+   "count": 173
+  },
+  {
+   "old": "",
+   "new": "  ",
+   "count": 171
+  },
+  {
+   "old": "⌧",
+   "new": "τ",
+   "count": 141
+  },
+  {
+   "old": "X",
+   "new": "∑",
+   "count": 134
+  },
+  {
+   "old": "  ",
+   "new": "",
+   "count": 129
+  },
+  {
+   "old": "",
+   "new": "λ",
+   "count": 129
+  },
+  {
+   "old": ">",
+   "new": "⊤",
+   "count": 114
+  },
+  {
+   "old": "r",
+   "new": "∇",
+   "count": 114
+  },
+  {
+   "old": "⇤",
+   "new": "□",
+   "count": 112
+  },
+  {
+   "old": "",
+   "new": "   ",
+   "count": 109
+  },
+  {
+   "old": "⇢",
+   "new": "ρ",
+   "count": 105
+  },
+  {
+   "old": "",
+   "new": " −",
+   "count": 101
+  },
+  {
+   "old": "",
+   "new": "δ",
+   "count": 97
+  },
+  {
+   "old": "",
+   "new": "− ",
+   "count": 85
+  },
+  {
+   "old": "",
+   "new": "      ",
+   "count": 76
+  },
+  {
+   "old": "",
+   "new": " γ",
+   "count": 72
+  },
+  {
+   "old": "⇥",
+   "new": "×",
+   "count": 69
+  },
+  {
+   "old": "⇡",
+   "new": "≈",
+   "count": 61
+  },
+  {
+   "old": "",
+   "new": "γ ",
+   "count": 57
+  },
+  {
+   "old": "   ",
+   "new": "←",
+   "count": 55
+  },
+  {
+   "old": "",
+   "new": "         ",
+   "count": 51
+  },
+  {
+   "old": "  ",
+   "new": "−",
+   "count": 49
+  },
+  {
+   "old": "",
+   "new": "    ",
+   "count": 49
+  },
+  {
+   "old": "",
+   "new": "≤",
+   "count": 48
+  },
+  {
+   "old": "    ",
+   "new": "←",
+   "count": 46
+  },
+  {
+   "old": "⇥",
+   "new": "[",
+   "count": 46
+  },
+  {
+   "old": "",
+   "new": "       ",
+   "count": 44
+  },
+  {
+   "old": "P",
+   "new": "∑",
+   "count": 42
+  },
+  {
+   "old": "   ",
+   "new": "",
+   "count": 42
+  },
+  {
+   "old": "⇠",
+   "new": "∼",
+   "count": 39
+  },
+  {
+   "old": "h",
+   "new": "[",
+   "count": 38
+  },
+  {
+   "old": "!",
+   "new": "→",
+   "count": 37
+  },
+  {
+   "old": "     ",
+   "new": "−",
+   "count": 31
+  },
+  {
+   "old": "",
+   "new": "←",
+   "count": 31
+  },
+  {
+   "old": "6",
+   "new": "/",
+   "count": 30
+  },
+  {
+   "old": "@",
+   "new": "∂",
+   "count": 30
+  },
+  {
+   "old": "r⇡",
+   "new": "∇π",
+   "count": 30
+  },
+  {
+   "old": "⇤",
+   "new": "]",
+   "count": 27
+  },
+  {
+   "old": "     ",
+   "new": "←",
+   "count": 27
+  },
+  {
+   "old": "    ",
+   "new": "",
+   "count": 27
+  },
+  {
+   "old": "1",
+   "new": "∞",
+   "count": 25
+  },
+  {
+   "old": " ",
+   "new": "σ",
+   "count": 25
+  },
+  {
+   "old": "⇡⇤",
+   "new": "π∗",
+   "count": 24
+  },
+  {
+   "old": "  ",
+   "new": "←",
+   "count": 24
+  },
+  {
+   "old": "",
+   "new": "λ ",
+   "count": 24
+  },
+  {
+   "old": "",
+   "new": " λ",
+   "count": 23
+  },
+  {
+   "old": " ",
+   "new": "γ",
+   "count": 23
+  },
+  {
+   "old": "",
+   "new": " δ",
+   "count": 21
+  },
+  {
+   "old": "  ",
+   "new": "γ",
+   "count": 19
+  },
+  {
+   "old": "↵",
+   "new": "− α",
+   "count": 18
+  },
+  {
+   "old": "",
+   "new": "(",
+   "count": 18
+  },
+  {
+   "old": "    ",
+   "new": "−",
+   "count": 18
+  },
+  {
+   "old": "i",
+   "new": " ]",
+   "count": 18
+  },
+  {
+   "old": "⇡0",
+   "new": "π′",
+   "count": 18
+  },
+  {
+   "old": "!",
+   "new": "−→",
+   "count": 18
+  },
+  {
+   "old": "      ",
+   "new": "",
+   "count": 18
+  },
+  {
+   "old": " ",
+   "new": "←",
+   "count": 17
+  },
+  {
+   "old": "",
+   "new": "−1",
+   "count": 17
+  },
+  {
+   "old": "",
+   "new": "     ",
+   "count": 17
+  },
+  {
+   "old": "⌘",
+   "new": "η",
+   "count": 17
+  },
+  {
+   "old": "7!",
+   "new": "|→",
+   "count": 16
+  },
+  {
+   "old": "",
+   "new": "θ",
+   "count": 16
+  },
+  {
+   "old": "?",
+   "new": "⋆",
+   "count": 16
+  },
+  {
+   "old": "!",
+   "new": "ω",
+   "count": 16
+  },
+  {
+   "old": "⇤",
+   "new": " □",
+   "count": 15
+  },
+  {
+   "old": "     ",
+   "new": "",
+   "count": 15
+  },
+  {
+   "old": "⇣",
+   "new": "(",
+   "count": 15
+  },
+  {
+   "old": "   ",
+   "new": "−",
+   "count": 15
+  },
+  {
+   "old": "",
+   "new": "σ",
+   "count": 15
+  },
+  {
+   "old": "p",
+   "new": "√",
+   "count": 14
+  },
+  {
+   "old": "",
+   "new": "′",
+   "count": 13
+  },
+  {
+   "old": "",
+   "new": " ≥",
+   "count": 13
+  },
+  {
+   "old": " ",
+   "new": "δ",
+   "count": 13
+  },
+  {
+   "old": "i",
+   "new": "]",
+   "count": 12
+  },
+  {
+   "old": "    ",
+   "new": "γ",
+   "count": 12
+  },
+  {
+   "old": "↵ ",
+   "new": "αδ",
+   "count": 12
+  },
+  {
+   "old": "       ",
+   "new": "",
+   "count": 11
+  },
+  {
+   "old": "e⇤",
+   "new": "̃∗",
+   "count": 11
+  },
+  {
+   "old": "⇧",
+   "new": "Π",
+   "count": 11
+  },
+  {
+   "old": "",
+   "new": "δ ",
+   "count": 11
+  },
+  {
+   "old": "↵✓",
+   "new": "αθ",
+   "count": 11
+  },
+  {
+   "old": "",
+   "new": "\n",
+   "count": 10
+  },
+  {
+   "old": "",
+   "new": "≥ ",
+   "count": 10
+  },
+  {
+   "old": "X",
+   "new": " ∑",
+   "count": 10
+  },
+  {
+   "old": "     ",
+   "new": "γ",
+   "count": 10
+  },
+  {
+   "old": "↵⇢",
+   "new": "αρ",
+   "count": 10
+  },
+  {
+   "old": "      ",
+   "new": "−",
+   "count": 10
+  },
+  {
+   "old": "\"",
+   "new": "− ε",
+   "count": 9
+  },
+  {
+   "old": "#",
+   "new": "]",
+   "count": 9
+  },
+  {
+   "old": " ⇡",
+   "new": "π",
+   "count": 9
+  },
+  {
+   "old": "",
+   "new": "          ",
+   "count": 9
+  },
+  {
+   "old": " i",
+   "new": "]",
+   "count": 8
+  },
+  {
+   "old": "\"",
+   "new": "[",
+   "count": 8
+  },
+  {
+   "old": "⇤",
+   "new": " ]",
+   "count": 8
+  },
+  {
+   "old": "✓",
+   "new": "(",
+   "count": 8
+  },
+  {
+   "old": "1",
+   "new": "",
+   "count": 8
+  },
+  {
+   "old": "⌧",
+   "new": "τ ≥",
+   "count": 8
+  },
+  {
+   "old": "      ",
+   "new": "←",
+   "count": 8
+  },
+  {
+   "old": " X",
+   "new": "∑",
+   "count": 8
+  },
+  {
+   "old": "  ",
+   "new": "δ",
+   "count": 8
+  },
+  {
+   "old": "",
+   "new": "φ",
+   "count": 8
+  },
+  {
+   "old": "\n",
+   "new": "",
+   "count": 8
+  },
+  {
+   "old": "⇡✓",
+   "new": "πθ",
+   "count": 8
+  },
+  {
+   "old": "Xh",
+   "new": "∑[",
+   "count": 8
+  },
+  {
+   "old": "",
+   "new": ")",
+   "count": 7
+  },
+  {
+   "old": "        ",
+   "new": "γ",
+   "count": 7
+  },
+  {
+   "old": "",
+   "new": "|",
+   "count": 7
+  },
+  {
+   "old": "",
+   "new": "β",
+   "count": 7
+  },
+  {
+   "old": "       ",
+   "new": "−",
+   "count": 7
+  },
+  {
+   "old": "    1",
+   "new": "←∞",
+   "count": 7
+  },
+  {
+   "old": "⇡",
+   "new": "γπ",
+   "count": 7
+  },
+  {
+   "old": "   ",
+   "new": "γ",
+   "count": 7
+  },
+  {
+   "old": "!1",
+   "new": "→∞",
+   "count": 7
+  },
+  {
+   "old": "k",
+   "new": "‖",
+   "count": 7
+  },
+  {
+   "old": "",
+   "new": "‖",
+   "count": 7
+  },
+  {
+   "old": "  ",
+   "new": "λ",
+   "count": 7
+  },
+  {
+   "old": "         ",
+   "new": "",
+   "count": 6
+  },
+  {
+   "old": "",
+   "new": " |",
+   "count": 6
+  },
+  {
+   "old": "",
+   "new": "∑",
+   "count": 6
+  },
+  {
+   "old": "⇢",
+   "new": " ρ",
+   "count": 6
+  },
+  {
+   "old": "t",
+   "new": "",
+   "count": 6
+  },
+  {
+   "old": "⇤",
+   "new": "",
+   "count": 6
+  },
+  {
+   "old": "i",
+   "new": "  ]",
+   "count": 6
+  },
+  {
+   "old": ">",
+   "new": "",
+   "count": 6
+  },
+  {
+   "old": "",
+   "new": "        ",
+   "count": 6
+  },
+  {
+   "old": "",
+   "new": " β",
+   "count": 6
+  },
+  {
+   "old": "⇡",
+   "new": "πγ",
+   "count": 6
+  },
+  {
+   "old": "2",
+   "new": "λ ∈",
+   "count": 6
+  },
+  {
+   "old": "0",
+   "new": " ′",
+   "count": 6
+  },
+  {
+   "old": "/",
+   "new": "∝",
+   "count": 6
+  },
+  {
+   "old": "⇡!",
+   "new": "πω",
+   "count": 6
+  },
+  {
+   "old": "    ↵",
+   "new": "α",
+   "count": 5
+  },
+  {
+   "old": "  ⇡",
+   "new": "π",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "−γ",
+   "count": 5
+  },
+  {
+   "old": " ",
+   "new": "|",
+   "count": 5
+  },
+  {
+   "old": "        ",
+   "new": "",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "∆",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "[",
+   "count": 5
+  },
+  {
+   "old": "00",
+   "new": "′′",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "−λ",
+   "count": 5
+  },
+  {
+   "old": " ",
+   "new": "≥",
+   "count": 5
+  },
+  {
+   "old": "      ",
+   "new": "γ",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "T",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "−τ",
+   "count": 5
+  },
+  {
+   "old": "⌧ ",
+   "new": "−",
+   "count": 5
+  },
+  {
+   "old": "⌘",
+   "new": ")",
+   "count": 5
+  },
+  {
+   "old": "⇡",
+   "new": " π",
+   "count": 5
+  },
+  {
+   "old": "         ",
+   "new": "−",
+   "count": 5
+  },
+  {
+   "old": "",
+   "new": "1",
+   "count": 5
+  },
+  {
+   "old": " ¯",
+   "new": "δ̄",
+   "count": 5
+  },
+  {
+   "old": "      ",
+   "new": "λ",
+   "count": 5
+  },
+  {
+   "old": "   ",
+   "new": "γλ",
+   "count": 5
+  },
+  {
+   "old": "   ↵",
+   "new": "α",
+   "count": 4
+  },
+  {
+   "old": "⇡",
+   "new": "− π",
+   "count": 4
+  },
+  {
+   "old": "@",
+   "new": " ∂",
+   "count": 4
+  },
+  {
+   "old": "h",
+   "new": " [",
+   "count": 4
+  },
+  {
+   "old": "",
+   "new": "′ ",
+   "count": 4
+  },
+  {
+   "old": "",
+   "new": "]\n",
+   "count": 4
+  },
+  {
+   "old": " ⇡ ",
+   "new": "π",
+   "count": 4
+  },
+  {
+   "old": "⇥",
+   "new": " [",
+   "count": 4
+  },
+  {
+   "old": " 1",
+   "new": "",
+   "count": 4
+  },
+  {
+   "old": "           ",
+   "new": "γ",
+   "count": 4
+  },
+  {
+   "old": " ⇣",
+   "new": "(",
+   "count": 4
+  },
+  {
+   "old": "Y",
+   "new": "∏",
+   "count": 4
+  },
+  {
+   "old": "⌘",
+   "new": " )",
+   "count": 4
+  },
+  {
+   "old": "",
+   "new": "κ",
+   "count": 4
+  },
+  {
+   "old": ")",
+   "new": "⇒",
+   "count": 4
+  },
+  {
+   "old": "  ⇥",
+   "new": "[",
+   "count": 4
+  },
+  {
+   "old": "          ",
+   "new": "γ",
+   "count": 4
+  },
+  {
+   "old": "    X",
+   "new": "∑",
+   "count": 4
+  },
+  {
+   "old": " p",
+   "new": "√",
+   "count": 4
+  },
+  {
+   "old": "⇧ ¯",
+   "new": "Πδ̄",
+   "count": 4
+  },
+  {
+   "old": ">",
+   "new": " ⊤",
+   "count": 4
+  },
+  {
+   "old": "   ",
+   "new": "λ",
+   "count": 4
+  },
+  {
+   "old": "r",
+   "new": "δ ∇",
+   "count": 4
+  },
+  {
+   "old": "✓",
+   "new": "θσ",
+   "count": 4
+  },
+  {
+   "old": "⌦",
+   "new": "Ω",
+   "count": 4
+  },
+  {
+   "old": "⇢",
+   "new": "{",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "𝜀",
+   "count": 3
+  },
+  {
+   "old": "XX",
+   "new": "∑∑",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "β ",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": ".",
+   "count": 3
+  },
+  {
+   "old": "⇤",
+   "new": "  □",
+   "count": 3
+  },
+  {
+   "old": " ",
+   "new": "′",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "the",
+   "count": 3
+  },
+  {
+   "old": " ⇤",
+   "new": "∗",
+   "count": 3
+  },
+  {
+   "old": " P",
+   "new": "∑",
+   "count": 3
+  },
+  {
+   "old": " ",
+   "new": "∆",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "∆ ",
+   "count": 3
+  },
+  {
+   "old": "      0",
+   "new": "′",
+   "count": 3
+  },
+  {
+   "old": " ⇥",
+   "new": "[",
+   "count": 3
+  },
+  {
+   "old": "  ",
+   "new": "⇝",
+   "count": 3
+  },
+  {
+   "old": " ⇤",
+   "new": "□",
+   "count": 3
+  },
+  {
+   "old": "X",
+   "new": "  ∑",
+   "count": 3
+  },
+  {
+   "old": "◆",
+   "new": ")",
+   "count": 3
+  },
+  {
+   "old": ")",
+   "new": "",
+   "count": 3
+  },
+  {
+   "old": "          ",
+   "new": "",
+   "count": 3
+  },
+  {
+   "old": "⇢",
+   "new": "γρ",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "−t−1",
+   "count": 3
+  },
+  {
+   "old": "=",
+   "new": "",
+   "count": 3
+  },
+  {
+   "old": " ",
+   "new": "t",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "    γ",
+   "count": 3
+  },
+  {
+   "old": "⇢",
+   "new": "− ρ",
+   "count": 3
+  },
+  {
+   "old": "  ",
+   "new": "σ",
+   "count": 3
+  },
+  {
+   "old": "⌧",
+   "new": "≪",
+   "count": 3
+  },
+  {
+   "old": " 0",
+   "new": "′",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "=",
+   "count": 3
+  },
+  {
+   "old": "> ",
+   "new": "⊤",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "⊤",
+   "count": 3
+  },
+  {
+   "old": "  X",
+   "new": "∑",
+   "count": 3
+  },
+  {
+   "old": "X⇣",
+   "new": "∑(",
+   "count": 3
+  },
+  {
+   "old": " ",
+   "new": "θ",
+   "count": 3
+  },
+  {
+   "old": " ",
+   "new": "φ",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "∗",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "γλ",
+   "count": 3
+  },
+  {
+   "old": "↵",
+   "new": " αδ",
+   "count": 3
+  },
+  {
+   "old": "↵",
+   "new": "−",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "αγλ",
+   "count": 3
+  },
+  {
+   "old": "",
+   "new": "s",
+   "count": 3
+  },
+  {
+   "old": " !",
+   "new": ")",
+   "count": 3
+  },
+  {
+   "old": "⇢",
+   "new": "λ i ρ",
+   "count": 3
+  },
+  {
+   "old": "i",
+   "new": "γ",
+   "count": 3
+  },
+  {
+   "old": "✓",
+   "new": "λθ",
+   "count": 3
+  },
+  {
+   "old": "    r⇡",
+   "new": "∇π",
+   "count": 3
+  },
+  {
+   "old": "⇡",
+   "new": "−π",
+   "count": 3
+  },
+  {
+   "old": "!",
+   "new": "γ ω",
+   "count": 3
+  },
+  {
+   "old": "⌘",
+   "new": "    )",
+   "count": 2
+  },
+  {
+   "old": "i",
+   "new": "   ]",
+   "count": 2
+  },
+  {
+   "old": "⇤\n",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": " ↵",
+   "new": "α",
+   "count": 2
+  },
+  {
+   "old": "  ",
+   "new": ")",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "∂",
+   "count": 2
+  },
+  {
+   "old": "\n",
+   "new": "[",
+   "count": 2
+  },
+  {
+   "old": "@",
+   "new": "]\n",
+   "count": 2
+  },
+  {
+   "old": "                  ⇤",
+   "new": "]",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "]",
+   "count": 2
+  },
+  {
+   "old": " ↵",
+   "new": "−α",
+   "count": 2
+  },
+  {
+   "old": "                ",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "X\n",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "  i",
+   "new": "]",
+   "count": 2
+  },
+  {
+   "old": "0",
+   "new": "′ |",
+   "count": 2
+  },
+  {
+   "old": "  0",
+   "new": "′",
+   "count": 2
+  },
+  {
+   "old": "   ⇢\n",
+   "new": "{",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "≤ γ",
+   "count": 2
+  },
+  {
+   "old": "      ",
+   "new": "∆←",
+   "count": 2
+  },
+  {
+   "old": " ",
+   "new": "≤",
+   "count": 2
+  },
+  {
+   "old": "    ⇡",
+   "new": "π",
+   "count": 2
+  },
+  {
+   "old": "    \"",
+   "new": "ε",
+   "count": 2
+  },
+  {
+   "old": "\"",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "      ⇡",
+   "new": "π",
+   "count": 2
+  },
+  {
+   "old": "✓",
+   "new": " (",
+   "count": 2
+  },
+  {
+   "old": "    i",
+   "new": "]",
+   "count": 2
+  },
+  {
+   "old": "2",
+   "new": "γ ∈",
+   "count": 2
+  },
+  {
+   "old": "       ",
+   "new": "γ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "+",
+   "count": 2
+  },
+  {
+   "old": "P",
+   "new": " ∑",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "h−t−",
+   "count": 2
+  },
+  {
+   "old": " ⌘",
+   "new": ")",
+   "count": 2
+  },
+  {
+   "old": "h",
+   "new": "γ",
+   "count": 2
+  },
+  {
+   "old": "⇡",
+   "new": "  π",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "2",
+   "count": 2
+  },
+  {
+   "old": "    ⇤",
+   "new": "]",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "S",
+   "count": 2
+  },
+  {
+   "old": "         ",
+   "new": "γ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "δt",
+   "count": 2
+  },
+  {
+   "old": "2                   T   t 1            T   t\n",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "=    t+     t+1 +",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "δT",
+   "count": 2
+  },
+  {
+   "old": "       ",
+   "new": "−t",
+   "count": 2
+  },
+  {
+   "old": "0",
+   "new": " ′ ",
+   "count": 2
+  },
+  {
+   "old": "i",
+   "new": "    ]",
+   "count": 2
+  },
+  {
+   "old": "   ",
+   "new": "t+1",
+   "count": 2
+  },
+  {
+   "old": "t+1",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "ε",
+   "count": 2
+  },
+  {
+   "old": "⇣",
+   "new": " (",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": ")\n",
+   "count": 2
+  },
+  {
+   "old": "⇡",
+   "new": "γ π",
+   "count": 2
+  },
+  {
+   "old": "⇤",
+   "new": "   □",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": " σ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "   ( ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": ")⊤",
+   "count": 2
+  },
+  {
+   "old": "xt+1",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "        ↵",
+   "new": "α",
+   "count": 2
+  },
+  {
+   "old": "  >",
+   "new": "⊤",
+   "count": 2
+  },
+  {
+   "old": "    ",
+   "new": "n",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "π",
+   "count": 2
+  },
+  {
+   "old": "◆",
+   "new": "  )",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "≥",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "̂t",
+   "count": 2
+  },
+  {
+   "old": "  ",
+   "new": "=",
+   "count": 2
+  },
+  {
+   "old": "⌘",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": ")−",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "t−1",
+   "count": 2
+  },
+  {
+   "old": "v>",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "+",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "0    ",
+   "new": "′",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": " βδ",
+   "count": 2
+  },
+  {
+   "old": "↵ r",
+   "new": "αδ∇",
+   "count": 2
+  },
+  {
+   "old": " XX",
+   "new": "∑∑",
+   "count": 2
+  },
+  {
+   "old": "0 ",
+   "new": "′",
+   "count": 2
+  },
+  {
+   "old": "X",
+   "new": "∑  ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": ")−1",
+   "count": 2
+  },
+  {
+   "old": "¯",
+   "new": "δ̄",
+   "count": 2
+  },
+  {
+   "old": "⇧ ¯",
+   "new": "‖Πδ̄",
+   "count": 2
+  },
+  {
+   "old": "     ↵r",
+   "new": "α∇",
+   "count": 2
+  },
+  {
+   "old": "r",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "r ",
+   "new": "∇δ",
+   "count": 2
+  },
+  {
+   "old": "h",
+   "new": "[(",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": ")2",
+   "count": 2
+  },
+  {
+   "old": " ",
+   "new": "ξ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": " φ",
+   "count": 2
+  },
+  {
+   "old": ",",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": " ✓",
+   "new": "θ",
+   "count": 2
+  },
+  {
+   "old": "✓",
+   "new": " θ",
+   "count": 2
+  },
+  {
+   "old": "then",
+   "new": "          ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": " ′",
+   "count": 2
+  },
+  {
+   "old": "¯>",
+   "new": "δ̄w",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "t",
+   "count": 2
+  },
+  {
+   "old": " ⇡",
+   "new": "≈",
+   "count": 2
+  },
+  {
+   "old": "           ",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "←0",
+   "count": 2
+  },
+  {
+   "old": " 0",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "        ",
+   "new": "γλ",
+   "count": 2
+  },
+  {
+   "old": "  ⇤",
+   "new": "□",
+   "count": 2
+  },
+  {
+   "old": "       ",
+   "new": "γλ",
+   "count": 2
+  },
+  {
+   "old": "X",
+   "new": "−t−1",
+   "count": 2
+  },
+  {
+   "old": " ",
+   "new": "−λ",
+   "count": 2
+  },
+  {
+   "old": "   ",
+   "new": "≥",
+   "count": 2
+  },
+  {
+   "old": "    ",
+   "new": "γλ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "← w⊤ x\n",
+   "count": 2
+  },
+  {
+   "old": "          ",
+   "new": "−",
+   "count": 2
+  },
+  {
+   "old": "        ",
+   "new": "−",
+   "count": 2
+  },
+  {
+   "old": "  ",
+   "new": "γλ",
+   "count": 2
+  },
+  {
+   "old": "         ",
+   "new": "γλ",
+   "count": 2
+  },
+  {
+   "old": "s",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "⇣",
+   "new": "  (",
+   "count": 2
+  },
+  {
+   "old": "t ",
+   "new": "λ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "γ i λ i ρi ,",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "λs ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "(∞",
+   "count": 2
+  },
+  {
+   "old": "X",
+   "new": "∞ ∑",
+   "count": 2
+  },
+  {
+   "old": "X",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "Y",
+   "new": "    ∏",
+   "count": 2
+  },
+  {
+   "old": "i",
+   "new": "   γ",
+   "count": 2
+  },
+  {
+   "old": "Y",
+   "new": " ∏",
+   "count": 2
+  },
+  {
+   "old": "a ⇡",
+   "new": "≈",
+   "count": 2
+  },
+  {
+   "old": " a",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "    ",
+   "new": "λ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "                                  (     )",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": " (",
+   "count": 2
+  },
+  {
+   "old": "\\",
+   "new": "ˆ",
+   "count": 2
+  },
+  {
+   "old": "    i",
+   "new": ")]",
+   "count": 2
+  },
+  {
+   "old": "⇤i",
+   "new": "]]",
+   "count": 2
+  },
+  {
+   "old": "        k t 1",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "γ k−t−1 Rk",
+   "count": 2
+  },
+  {
+   "old": "   Rk",
+   "new": "",
+   "count": 2
+  },
+  {
+   "old": "  ✓",
+   "new": "θ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "zθ",
+   "count": 2
+  },
+  {
+   "old": "   ✓",
+   "new": "θ",
+   "count": 2
+  },
+  {
+   "old": "✓",
+   "new": "θ δ",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "w",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "∑\n",
+   "count": 2
+  },
+  {
+   "old": "◆",
+   "new": " )",
+   "count": 2
+  },
+  {
+   "old": "?",
+   "new": "⋆ −",
+   "count": 2
+  },
+  {
+   "old": "h⇡!",
+   "new": "⟨πω",
+   "count": 2
+  },
+  {
+   "old": "!",
+   "new": "γ",
+   "count": 2
+  },
+  {
+   "old": "i",
+   "new": "ω ⟩",
+   "count": 2
+  },
+  {
+   "old": "   !",
+   "new": "ω",
+   "count": 2
+  },
+  {
+   "old": "!2⌦",
+   "new": "ω∈Ω",
+   "count": 2
+  },
+  {
+   "old": "",
+   "new": "•",
+   "count": 1
+  },
+  {
+   "old": "•",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "     !",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": " X1",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "         ",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "\n                                                              !",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                       )\n                  ",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": "               ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ∑",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− ε",
+   "count": 1
+  },
+  {
+   "old": "    \"",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ]\n",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "β",
+   "count": 1
+  },
+  {
+   "old": "s",
+   "new": "√",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "𝜀",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "              (       )(           )",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": "∑(",
+   "count": 1
+  },
+  {
+   "old": " @ ⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": "∑        (",
+   "count": 1
+  },
+  {
+   "old": "          @ ⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": " @",
+   "new": "∂",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "                      (             ) ∂ π",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "                      (        ) ∂ π",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "         (              )",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "  [(        )       (",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "  [(        )(",
+   "count": 1
+  },
+  {
+   "old": "          ⇤",
+   "new": ")]",
+   "count": 1
+  },
+  {
+   "old": "   ⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ")               (               ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "@",
+   "new": "  ∂",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "⊂",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "β",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "β",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "−β",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−β",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "β",
+   "count": 1
+  },
+  {
+   "old": "                     1",
+   "new": "∞",
+   "count": 1
+  },
+  {
+   "old": "                     X",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n      Gt = Rt+1 + γRt+2 + γ 2 Rt+3 + · · · =   γ k Rt+k+1 ,",
+   "count": 1
+  },
+  {
+   "old": "        2                             k\n      Gt = Rt+1 + Rt+2 +                       Rt+3 + · · · =                Rt+k+1 ,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "γ ≤",
+   "count": 1
+  },
+  {
+   "old": "                             2              3",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " γ 2 Rt+3 + γ 3 Rt+4 + · · ·\n",
+   "count": 1
+  },
+  {
+   "old": "Rt+3 +         Rt+4 + · · ·\n",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "                    2",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "               ",
+   "new": "2",
+   "count": 1
+  },
+  {
+   "old": "X\n",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "                 k",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "γk",
+   "count": 1
+  },
+  {
+   "old": " .",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                           K 1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "            ",
+   "new": "K−1",
+   "count": 1
+  },
+  {
+   "old": "X         ",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "γ     Rk ,",
+   "count": 1
+  },
+  {
+   "old": "      Rk ,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\"1",
+   "new": "[∞               |       ]\n",
+   "count": 1
+  },
+  {
+   "old": "#",
+   "new": "                   ∑             |",
+   "count": 1
+  },
+  {
+   "old": "                                 k",
+   "new": "|",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "k",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                |\n                                        ",
+   "count": 1
+  },
+  {
+   "old": "\"1",
+   "new": "[∞              |             ]\n",
+   "count": 1
+  },
+  {
+   "old": "#",
+   "new": "                      ∑              |",
+   "count": 1
+  },
+  {
+   "old": "X\n",
+   "new": "     k",
+   "count": 1
+  },
+  {
+   "old": "                                              k",
+   "new": "|",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "              |\n                                                   ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  of −1.",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                     of 1.",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "tothis\n                          ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "tothis",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                            ′",
+   "count": 1
+  },
+  {
+   "old": "\n                           ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                              We use γ backup\n                                 ",
+   "count": 1
+  },
+  {
+   "old": "We",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "use",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "backup",
+   "new": "            ",
+   "count": 1
+  },
+  {
+   "old": "   (Notethe\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "(Notethe",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "′\n",
+   "count": 1
+  },
+  {
+   "old": "the\n",
+   "new": "  ",
+   "count": 1
+  },
+  {
+   "old": "  that",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "that",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "−∞",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "0",
+   "new": "π ′",
+   "count": 1
+  },
+  {
+   "old": "0 0",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "   ⇤",
+   "new": "∗",
+   "count": 1
+  },
+  {
+   "old": "⇢\n",
+   "new": "{",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                              }\n",
+   "count": 1
+  },
+  {
+   "old": "↵",
+   "new": "             }\n                         α",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "     }\n                         ",
+   "count": 1
+  },
+  {
+   "old": "8",
+   "new": "  {",
+   "count": 1
+  },
+  {
+   "old": "9",
+   "new": "  }",
+   "count": 1
+  },
+  {
+   "old": "<  rs 3(1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "βrs − 3(1 − β",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "β",
+   "count": 1
+  },
+  {
+   "old": " =",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": ":",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                                          ;\n                      ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "β ≤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "| ",
+   "count": 1
+  },
+  {
+   "old": "   P",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "⇥           ⇤\n",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "                           0                   0\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "   −1\n                                                                    ",
+   "count": 1
+  },
+  {
+   "old": "1\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "                             |        ]\n                 = Eπ′ Rt+1 + γRt+2 + γ 2 vπ (St+2 ) | St = s\n                      [",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "       |        ]",
+   "count": 1
+  },
+  {
+   "old": " =",
+   "new": "≤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "Rt+3 + γ 3 ",
+   "count": 1
+  },
+  {
+   "old": "2",
+   "new": "3",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n            ..\n             .",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "      ]",
+   "count": 1
+  },
+  {
+   "old": "3 v⇡ (St+3 ) St = s\n             ..\n              .\n                       ⇥                     2           ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                      ⇤\n                   E⇡0 Rt+1 + Rt+2 +            Rt+3 +      ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "∆←",
+   "count": 1
+  },
+  {
+   "old": " ⇥           ⇤\n",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "                      0                      0\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇡⇥⇤",
+   "new": "π[∗",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "⇝",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ←",
+   "count": 1
+  },
+  {
+   "old": "    X ⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "      \"",
+   "new": "−ε",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "≥ π",
+   "count": 1
+  },
+  {
+   "old": "Xh",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                          X \"",
+   "new": "∑[",
+   "count": 1
+  },
+  {
+   "old": "ih",
+   "new": " ∑ ε",
+   "count": 1
+  },
+  {
+   "old": "i",
+   "new": "                ][              ]",
+   "count": 1
+  },
+  {
+   "old": "XX",
+   "new": "ε ∑∑",
+   "count": 1
+  },
+  {
+   "old": " h",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "XX",
+   "new": " ε ∑∑",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−1\n               ",
+   "count": 1
+  },
+  {
+   "old": "Y1",
+   "new": "∏",
+   "count": 1
+  },
+  {
+   "old": "Q",
+   "new": "∏",
+   "count": 1
+  },
+  {
+   "old": "TY1\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "             .        ⇡(Ak |Sk )p(Sk+1 |Sk , Ak )        ⇡(Ak |Sk )\n     ⇢t:T 1 = Qk=t T ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "   T∏\n              .         π(Ak |Sk )p(Sk+1 |Sk , Ak )       π(Ak |Sk )\n     ρt:T −1 ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "∏k=tT −1\n                                                    =",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                       {",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                 }",
+   "count": 1
+  },
+  {
+   "old": "h",
+   "new": "[(      )2 ]    [",
+   "count": 1
+  },
+  {
+   "old": "  ⇥                    ⇤   ⇥ ⇤",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "                  2",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                    ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ]\n                −1\n               T∏\n",
+   "count": 1
+  },
+  {
+   "old": "            !2 3\n            TY1\n                ⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "4",
+   "new": "    ",
+   "count": 1
+  },
+  {
+   "old": "5",
+   "new": "   ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "≥ 2,",
+   "count": 1
+  },
+  {
+   "old": "  2,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                                      ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "       1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n            +             ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "  X1\n                                 h t 1               T   t ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "h−t−1",
+   "count": 1
+  },
+  {
+   "old": "           ",
+   "new": "−t−1",
+   "count": 1
+  },
+  {
+   "old": "P",
+   "new": "  ∑",
+   "count": 1
+  },
+  {
+   "old": "⌘",
+   "new": "  )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "γ)",
+   "count": 1
+  },
+  {
+   "old": " )",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "     ρ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− γ)",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "    ρ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "[              ]",
+   "count": 1
+  },
+  {
+   "old": "     h    i",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "2                             T   t 1\n      ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "              ⇢",
+   "new": "ρ",
+   "count": 1
+  },
+  {
+   "old": "           ⇢",
+   "new": "ρ",
+   "count": 1
+  },
+  {
+   "old": " ⇥",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "       0\n       ",
+   "new": "←",
+   "count": 1
+  },
+  {
+   "old": "     S",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "t+",
+   "new": "   (",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "             )\n                   = δt + γ",
+   "count": 1
+  },
+  {
+   "old": "2",
+   "new": "             )",
+   "count": 1
+  },
+  {
+   "old": "  t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "γδ",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "2",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "      (             )\n                  = δt + γδt+1 + γ 2 δ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "      (     )\n                  = δt + γδt+1 + γ 2 δ",
+   "count": 1
+  },
+  {
+   "old": " X",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "                              k t\n  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−t δk ",
+   "count": 1
+  },
+  {
+   "old": "               ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\"",
+   "new": "] ε",
+   "count": 1
+  },
+  {
+   "old": "h",
+   "new": "  [",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "t           t    t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "t+1",
+   "new": "                         ",
+   "count": 1
+  },
+  {
+   "old": "\"",
+   "new": "εε",
+   "count": 1
+  },
+  {
+   "old": "h",
+   "new": "[         (",
+   "count": 1
+  },
+  {
+   "old": "               i",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "⌘",
+   "new": "                                       (                          )",
+   "count": 1
+  },
+  {
+   "old": "⌘",
+   "new": "                                          (                          )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "S ←",
+   "count": 1
+  },
+  {
+   "old": "     S0",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "                     2                    T   t 1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "         ",
+   "new": "2",
+   "count": 1
+  },
+  {
+   "old": "         ",
+   "new": "−t−1",
+   "count": 1
+  },
+  {
+   "old": "\n      ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "           |",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "|            |",
+   "count": 1
+  },
+  {
+   "old": "n",
+   "new": " |\n           |                         |            |                    |",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "|,",
+   "count": 1
+  },
+  {
+   "old": ",",
+   "new": " ",
+   "count": 1
+  },
+  {
+   "old": "                 ",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "         ",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  γ",
+   "count": 1
+  },
+  {
+   "old": " X\n                                                  k t",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "k−t",
+   "count": 1
+  },
+  {
+   "old": "Qmin(⌧",
+   "new": "∏     ",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "min(τ",
+   "count": 1
+  },
+  {
+   "old": "⇢⌧",
+   "new": "ρτ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "γ      ",
+   "count": 1
+  },
+  {
+   "old": "   ⇢",
+   "new": "ρ",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "γ ρ",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "σ ",
+   "count": 1
+  },
+  {
+   "old": "  ⇣",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "⌘",
+   "new": "      )",
+   "count": 1
+  },
+  {
+   "old": " ⌘⇣",
+   "new": ")(",
+   "count": 1
+  },
+  {
+   "old": "   ⌘",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "          ⇢\n                       ",
+   "new": "σ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ρ",
+   "count": 1
+  },
+  {
+   "old": "    |S\n                                                  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "|S",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ")           )(             ",
+   "count": 1
+  },
+  {
+   "old": "       ",
+   "new": "σ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− σ",
+   "count": 1
+  },
+  {
+   "old": "   \"",
+   "new": "ε",
+   "count": 1
+  },
+  {
+   "old": "0",
+   "new": "  ′",
+   "count": 1
+  },
+  {
+   "old": "0",
+   "new": "                                  ′",
+   "count": 1
+  },
+  {
+   "old": "q",
+   "new": "√",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−1  ",
+   "count": 1
+  },
+  {
+   "old": "⇡˜",
+   "new": "π̃",
+   "count": 1
+  },
+  {
+   "old": "⇡  ˜ ",
+   "new": "π̃",
+   "count": 1
+  },
+  {
+   "old": "1   h",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "       ↵r",
+   "new": "α∇",
+   "count": 1
+  },
+  {
+   "old": "◆>",
+   "new": ")⊤",
+   "count": 1
+  },
+  {
+   "old": "P",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "   ⌘\n                                                 >",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "h",
+   "new": "[ (",
+   "count": 1
+  },
+  {
+   "old": "                   i",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "                               >",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− γxt+1      ∈ Rd×d",
+   "count": 1
+  },
+  {
+   "old": "         2 Rd⇥d",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": ")⊤",
+   "count": 1
+  },
+  {
+   "old": "            >",
+   "new": ")⊤",
+   "count": 1
+  },
+  {
+   "old": " ◆>",
+   "new": ")⊤",
+   "count": 1
+  },
+  {
+   "old": "            ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "⊤ − γµ⊤",
+   "count": 1
+  },
+  {
+   "old": "  µ>",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "≤",
+   "count": 1
+  },
+  {
+   "old": "         ",
+   "new": "−γ",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "     ",
+   "count": 1
+  },
+  {
+   "old": "                         n 1            n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "n−1",
+   "count": 1
+  },
+  {
+   "old": "xi",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "(s",
+   "new": "   ",
+   "count": 1
+  },
+  {
+   "old": " = cos ⇡ s> ci ,",
+   "new": "\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "xi",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "(s)",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "cos",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "s⊤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ci",
+   "count": 1
+  },
+  {
+   "old": "                                                                                                                                                        ",
+   "new": ",",
+   "count": 1
+  },
+  {
+   "old": "                     ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                                               ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                                                                                    k                                i\n              ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "k",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "i",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "])−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                      )",
+   "count": 1
+  },
+  {
+   "old": "       ✓",
+   "new": "θ",
+   "count": 1
+  },
+  {
+   "old": "  ⇤",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "X\n      bt =    ",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "X\n                                                   bt =",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "b t is always\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "̂t is always",
+   "count": 1
+  },
+  {
+   "old": " b 1b",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "̂−1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "̂",
+   "count": 1
+  },
+  {
+   "old": " b ",
+   "new": "̂",
+   "count": 1
+  },
+  {
+   "old": "   b ",
+   "new": "̂",
+   "count": 1
+  },
+  {
+   "old": "\n               2",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "b ",
+   "new": "̂",
+   "count": 1
+  },
+  {
+   "old": "b",
+   "new": "̂−1\n",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "        t ",
+   "count": 1
+  },
+  {
+   "old": "  b ",
+   "new": "̂",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− γ",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "\n                                        ⊤\n                                         ",
+   "count": 1
+  },
+  {
+   "old": "\n          t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "b ",
+   "new": "Â−",
+   "count": 1
+  },
+  {
+   "old": " xt 1 (xt 1\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "   A                        b ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "xt−1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "(xt−1",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "\n            b ",
+   "new": "̂t−",
+   "count": 1
+  },
+  {
+   "old": "             t 1                      t ",
+   "new": "̂−",
+   "count": 1
+  },
+  {
+   "old": "\n              t 1                        > b   1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " xt ",
+   "new": "̂−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "xt−",
+   "count": 1
+  },
+  {
+   "old": "b0 = ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "̂0",
+   "count": 1
+  },
+  {
+   "old": "     \"",
+   "new": "ε",
+   "count": 1
+  },
+  {
+   "old": "          b ",
+   "new": "̂−",
+   "count": 1
+  },
+  {
+   "old": ",\n                                                                                  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ,",
+   "count": 1
+  },
+  {
+   "old": "   d1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ˆ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ε−1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "I",
+   "count": 1
+  },
+  {
+   "old": "  \" 1I",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n",
+   "new": "̂",
+   "count": 1
+  },
+  {
+   "old": "  b  ",
+   "new": "←",
+   "count": 1
+  },
+  {
+   "old": ">\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "       v      d1 (x",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "v←",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ˆ−1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "(x",
+   "count": 1
+  },
+  {
+   "old": "\n         d\n        A 1        d\n                   A 1    d",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "A",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "x",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "/",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "x\n",
+   "new": "  (",
+   "count": 1
+  },
+  {
+   "old": "b\n        b      b + Rx",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "Aˆ",
+   "count": 1
+  },
+  {
+   "old": "   b\n        w     ",
+   "new": "←",
+   "count": 1
+  },
+  {
+   "old": "d",
+   "new": " ˆ−",
+   "count": 1
+  },
+  {
+   "old": "bb",
+   "new": "− A ˆ",
+   "count": 1
+  },
+  {
+   "old": "0",
+   "new": "           −1 x v⊤ / 1 + v⊤ x",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n         b̂ ← b̂ + Rx\n         w←A     ˆ  −1 b̂\n\n ",
+   "count": 1
+  },
+  {
+   "old": "0",
+   "new": "     ′",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n ",
+   "count": 1
+  },
+  {
+   "old": "n\n      ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇤\"",
+   "new": "]ε",
+   "count": 1
+  },
+  {
+   "old": "                   ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "  h",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "      X",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "   i",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "     ⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "    h",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "   h",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "     i",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "      ⇡ ",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "              ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "X  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "        ⇣",
+   "new": "\n",
+   "count": 1
+  },
+  {
+   "old": "  ⌘\n",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "         .",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "t",
+   "new": "      )\n             .",
+   "count": 1
+  },
+  {
+   "old": "           ",
+   "new": "t",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "s′",
+   "count": 1
+  },
+  {
+   "old": "s0",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "= r(π) + γr(π) + γ ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " J(π)",
+   "count": 1
+  },
+  {
+   "old": "               J(⇡)\n                                     ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "                 3\n           = ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "r(⇡)",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "+               ",
+   "new": "3",
+   "count": 1
+  },
+  {
+   "old": "⇡) +             r(⇡",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "        ",
+   "new": "≥",
+   "count": 1
+  },
+  {
+   "old": "P⌧",
+   "new": "∑τ",
+   "count": 1
+  },
+  {
+   "old": "X1",
+   "new": "∑    ",
+   "count": 1
+  },
+  {
+   "old": "Y",
+   "new": "   ∏",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  δ",
+   "count": 1
+  },
+  {
+   "old": "             ⇡",
+   "new": "γπ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                               (             )\n      ",
+   "count": 1
+  },
+  {
+   "old": " \"",
+   "new": "−ε",
+   "count": 1
+  },
+  {
+   "old": "\"",
+   "new": "    ε",
+   "count": 1
+  },
+  {
+   "old": "⌘",
+   "new": "  ] )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "(          )2    (",
+   "count": 1
+  },
+  {
+   "old": " 2                        ",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": " \"",
+   "new": "ε",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "5\n                                     ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−4",
+   "count": 1
+  },
+  {
+   "old": "54\"",
+   "new": "ε",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "λ ≈",
+   "count": 1
+  },
+  {
+   "old": " ⇡",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "s",
+   "new": " ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                                    s∈",
+   "count": 1
+  },
+  {
+   "old": "⇧B⇡",
+   "new": "            . wTD\n                                                                              ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " − ΠBπ vθ",
+   "count": 1
+  },
+  {
+   "old": ".",
+   "new": " ",
+   "count": 1
+  },
+  {
+   "old": "wTD",
+   "new": "     ",
+   "count": 1
+  },
+  {
+   "old": " ⇡             ⇤            ⇤       ⇤\n",
+   "new": "π",
+   "count": 1
+  },
+  {
+   "old": "                                Be",
+   "new": "∗",
+   "count": 1
+  },
+  {
+   "old": "v\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "PB",
+   "new": "    θV",
+   "count": 1
+  },
+  {
+   "old": "(✓)",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "||",
+   "new": "           ∗",
+   "count": 1
+  },
+  {
+   "old": "VE",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  θ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "      ∗\n                                              Be\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "PBE(θ) = || θ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "1.",
+   "count": 1
+  },
+  {
+   "old": "                   ",
+   "new": "ta",
+   "count": 1
+  },
+  {
+   "old": "  1.   S ta",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " ⇧",
+   "new": "Π",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "2",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "Πv = vw where w = argmin ‖v − vw ‖µ .",
+   "count": 1
+  },
+  {
+   "old": "                                     2\n               ⇧v = vw where w = argmin kv                                vw kµ .",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "∀",
+   "count": 1
+  },
+  {
+   "old": "       1",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "    X D,",
+   "count": 1
+  },
+  {
+   "old": "   X> D,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "0                                           1\n             .   X          X\n      ¯w",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "s) = @     ⇡(a|s)    p(s , r |s, a) [r + vw (s )]A\n                                  0                     0\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ")\n              . ∑           ∑\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                 ′                      ′\n      δ̄w (s) =      π(a|s)    p(s , r |s, a) [r + γvw (s )]   − ",
+   "count": 1
+  },
+  {
+   "old": "¯",
+   "new": "‖δ̄",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "‖",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "[ |",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "[       |",
+   "count": 1
+  },
+  {
+   "old": "          ⇤\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "|",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− αρt δt ∇δt\n",
+   "count": 1
+  },
+  {
+   "old": "↵⇢t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "t",
+   "new": "                  (                             )",
+   "count": 1
+  },
+  {
+   "old": "          r",
+   "new": "γ∇",
+   "count": 1
+  },
+  {
+   "old": "             2\n       = wt     ↵r(Eb[⇢t t ] )\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "= wt − α∇(Eb[ρt δt ] )\n            2\n   ",
+   "count": 1
+  },
+  {
+   "old": " h ⇥",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "ih",
+   "new": "  ][              [",
+   "count": 1
+  },
+  {
+   "old": "              ⇥               ⇤i",
+   "new": "]]",
+   "count": 1
+  },
+  {
+   "old": "                ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "   i\n                                    2",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "   i\n                                            2",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "!",
+   "new": "γ →",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "≈ −",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "policy",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "together",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "completely",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "determine",
+   "count": 1
+  },
+  {
+   "old": "                                      ",
+   "new": "proba",
+   "count": 1
+  },
+  {
+   "old": "        policy together completely determine the proba\n                                                                  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  φ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                                                 φ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ξ",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "φ0",
+   "count": 1
+  },
+  {
+   "old": " it, r=\n                                                                                                                     0",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "itξ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " , r= ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                                                                                                   ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "φ  ",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "ξ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " φ ",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "ξ",
+   "count": 1
+  },
+  {
+   "old": ".  ",
+   "new": "1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "       =k r",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "1,",
+   "count": 1
+  },
+  {
+   "old": " =  , .",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": ".",
+   "new": "          ",
+   "count": 1
+  },
+  {
+   "old": ".\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ". k. ,. φ(S",
+   "count": 1
+  },
+  {
+   "old": "                                                                                                                                                                          ,  ,  R",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "(S",
+   "new": "     , Rkk=",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                                                                                                                              )   = ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " of\n                                                                                                                                                                                                            a  (S",
+   "new": "kφ",
+   "count": 1
+  },
+  {
+   "old": "}.",
+   "new": "       of   ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "     a}.",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                                                                                                                                                  , kφ(S      k",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                                                                                                                                                                   ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                                                                                                                                                                       ",
+   "count": 1
+  },
+  {
+   "old": "              0           0       0         0 0      1 0        1   0         1      k     1     k           k k           k   k        k\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "complete",
+   "count": 1
+  },
+  {
+   "old": "                                                                                            complete\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "the",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " i",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Toisknow\n                                                                                                                                                                                                      ",
+   "new": "he",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "itToisknow",
+   "count": 1
+  },
+  {
+   "old": "✓",
+   "new": "      θ",
+   "count": 1
+  },
+  {
+   "old": "✓",
+   "new": "   θ",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "    ∗∗∗ ∗ ∗",
+   "count": 1
+  },
+  {
+   "old": "     ⇤",
+   "new": "∗∗",
+   "count": 1
+  },
+  {
+   "old": "✓",
+   "new": "    θ",
+   "count": 1
+  },
+  {
+   "old": "✓✓",
+   "new": "θθ",
+   "count": 1
+  },
+  {
+   "old": "✓",
+   "new": "  θ",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "  ∗∗                                                    ∗ ∗ ∗            ∗      ∗ ∗     ∗ ∗\n",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "                                                               ∗                   ∗",
+   "count": 1
+  },
+  {
+   "old": "✓",
+   "new": "  θ ",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                                                      ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                                ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "         ∗",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                                                       another",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                                        another  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                              ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                                                   ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "from",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                                  from\n                                                                                                          ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "a",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "state,",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                                                                                                                 ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "a",
+   "new": "both",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "po",
+   "count": 1
+  },
+  {
+   "old": "tate,",
+   "new": "\n",
+   "count": 1
+  },
+  {
+   "old": "   both pos\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                                                                                                                                                                      ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                                                                                               are",
+   "count": 1
+  },
+  {
+   "old": "are",
+   "new": "         ",
+   "count": 1
+  },
+  {
+   "old": "              can\n                                                                                   ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "can",
+   "count": 1
+  },
+  {
+   "old": "canany\n                                                                                                                ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "canany",
+   "count": 1
+  },
+  {
+   "old": "        We\n                                                                                                         ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "   We     ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "        B  ′\n                                                                                                            ",
+   "count": 1
+  },
+  {
+   "old": "B   ,\n                                                                                                          ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ",",
+   "count": 1
+  },
+  {
+   "old": "must",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "must   second.",
+   "count": 1
+  },
+  {
+   "old": "second.",
+   "new": "                 ",
+   "count": 1
+  },
+  {
+   "old": "\n                                              ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "B",
+   "count": 1
+  },
+  {
+   "old": "B",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                                                    of′ then\n    ",
+   "count": 1
+  },
+  {
+   "old": "of",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " then",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "function\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                                                                vθ =some",
+   "count": 1
+  },
+  {
+   "old": "over\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                                                                                                           functi",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "n\n                                                                                                                 ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " =som",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "r",
+   "count": 1
+  },
+  {
+   "old": "0.",
+   "new": "  ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "     ′",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "′  ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "θ ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "       θ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "      θ",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "‖",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "    ⊤ ⊤\n               ",
+   "count": 1
+  },
+  {
+   "old": "⇧>",
+   "new": "Π",
+   "count": 1
+  },
+  {
+   "old": "w",
+   "new": " ⊤",
+   "count": 1
+  },
+  {
+   "old": "      1",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "X",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "Dδ̄",
+   "count": 1
+  },
+  {
+   "old": "                X> D ¯w",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇧>",
+   "new": "Π⊤",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": ")⊤ ( ⊤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ")−1 ( ⊤",
+   "count": 1
+  },
+  {
+   "old": "        1",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "X Dδ̄w .",
+   "count": 1
+  },
+  {
+   "old": "    X> D ¯w .",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇤>",
+   "new": "]⊤ ( ⊤   )−1 ( ⊤",
+   "count": 1
+  },
+  {
+   "old": "                 1",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": ">  t          (using episodic t )\n                       ⇥                 >",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "               t         (using episodic δt )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                        [                 ⊤\n                                            ]\n ",
+   "count": 1
+  },
+  {
+   "old": "⇤ 1\n     rPBE(w) = 2E ⇢t ( xt+1 xt )x>      t E xt xt",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "⊤ −1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "∇PBE(w) = 2E ρt (γxt+1 − xt )x⊤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "E",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "xt",
+   "count": 1
+  },
+  {
+   "old": "                                     ",
+   "new": "xt",
+   "count": 1
+  },
+  {
+   "old": "⇤ ",
+   "new": "]−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "           (          )",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "βρ",
+   "count": 1
+  },
+  {
+   "old": "    ↵r",
+   "new": "α∇",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "]\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                  ⊤ −",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "⊤  t E xt xt      E[ρt δt xt ]        (from (11.27))\n",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "        2",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "               [                   ] [      ]\n                                               ⊤ −1\n           = wt + αE ρt (xt − γxt+1 )x⊤\n",
+   "count": 1
+  },
+  {
+   "old": "E[⇢t t xt ]        (from (11.27))\n                   2\n                      ⇥                  ⇤ ⇥      ⇤ 1\n            = wt + ↵E ⇢t (xt    xt+1 )x>\n                                       t E xt xt\n                                                >\n                                                    ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " ⇤",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": " [                    ] [        ]\n",
+   "count": 1
+  },
+  {
+   "old": "⇤ ⇥",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                        ⊤ −",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "xt − γxt+1 )x⊤  t E xt ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "   E[ρt δt xt ]\n                      ( [           ]      [           ])    [      ]−1\n              = wt + α E ρt xt x⊤t − γE ρt ",
+   "count": 1
+  },
+  {
+   "old": " )x>t E xt",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "E xt x⊤ t    ",
+   "count": 1
+  },
+  {
+   "old": "   ⇤       ⇥           ⇤     ⇥       ⇤ 1\n              = wt + ↵ E ⇢t xt x>t      E ⇢t xt+1 x>t     E xt x>  t      E[⇢t t xt ]\n                         ⇥     >",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "])",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": " ]",
+   "count": 1
+  },
+  {
+   "old": "  ⇤ ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "[       ]",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "        )\n                                                                ⊤ −",
+   "count": 1
+  },
+  {
+   "old": "⌘\n              ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "\n                                                                >\n                                                                 ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "] )",
+   "count": 1
+  },
+  {
+   "old": "⇡ wt + ↵⇢t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "t xt",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "x>",
+   "new": "(                 ⊤",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  )\n              ≈ wt + αρt δt xt − γxt+1 x",
+   "count": 1
+  },
+  {
+   "old": "p",
+   "new": " √",
+   "count": 1
+  },
+  {
+   "old": "p",
+   "new": "  √",
+   "count": 1
+  },
+  {
+   "old": "!",
+   "new": "β →",
+   "count": 1
+  },
+  {
+   "old": "!",
+   "new": "     β →",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": " |\n                                                                                           ⊤| S",
+   "count": 1
+  },
+  {
+   "old": "⇤⇤",
+   "new": "      ]]",
+   "count": 1
+  },
+  {
+   "old": "S",
+   "new": "   ",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "π       ",
+   "count": 1
+  },
+  {
+   "old": "                    n 1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "λn−1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λ)λ2",
+   "count": 1
+  },
+  {
+   "old": " ) 2",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                                                                     ",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "  TX\n                                ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "            n 1                     ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "     t 1",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "λn−1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λT −t−1 Gt ,",
+   "count": 1
+  },
+  {
+   "old": "              Gt ,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⌧",
+   "new": "τλ",
+   "count": 1
+  },
+  {
+   "old": "       ",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " − γλ",
+   "count": 1
+  },
+  {
+   "old": "       ",
+   "new": "≤",
+   "count": 1
+  },
+  {
+   "old": "            ",
+   "new": "−γ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−γλ\n                                               ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "            .\n      Gλt:h = (1 − λ)   λn−1 Gt:t+n + λh−t−1 Gt:h ,",
+   "count": 1
+  },
+  {
+   "old": "  t 1\n           .                      n 1                h t 1\n      Gt:h = (1       )                 Gt:t+n +             Gt:h ,         ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λ)λ",
+   "count": 1
+  },
+  {
+   "old": "  )",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "(1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "2",
+   "new": "     ",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "       λ",
+   "count": 1
+  },
+  {
+   "old": "X1",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "0",
+   "new": " ",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "                 t 1",
+   "new": ".",
+   "count": 1
+  },
+  {
+   "old": "    .                          n 1                  h t 1\n     ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "        ",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "              ",
+   "new": "λn−1",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "λh−t−1",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "   ]",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                 (                 )",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "−1",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "  ⊤\n                                              ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "            (                )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "← 0",
+   "count": 1
+  },
+  {
+   "old": "  0",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "| V ′ ←",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "     | δ ← R + γV(′ − V",
+   "count": 1
+  },
+  {
+   "old": "0\n     | V        w > x0\n     |        R+ V0 V",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "0\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "               0",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "         ⇤",
+   "new": "]",
+   "count": 1
+  },
+  {
+   "old": "wT = wT       1+↵",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "G",
+   "new": "     (",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "          )\n     ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "= wT −1 + α G − wT⊤−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " −1 −x⊤   T −1 wT −1 + αGxT −1\n",
+   "count": 1
+  },
+  {
+   "old": "       x>\n",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "                               T 1 wT     1    + ↵GxT         1",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "                                 >\n ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "⊤ ",
+   "count": 1
+  },
+  {
+   "old": "     1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                 X",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "|                {z                }\n                  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                  ",
+   "new": "−1",
+   "count": 1
+  },
+  {
+   "old": "1                        |                  {z                  }\n                                                                             ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "             1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                 ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "              ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "t\n",
+   "count": 1
+  },
+  {
+   "old": "t",
+   "new": "         (           )",
+   "count": 1
+  },
+  {
+   "old": "      ↵",
+   "new": "α",
+   "count": 1
+  },
+  {
+   "old": ">\n                        ",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "       ↵",
+   "new": "α",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "γλ",
+   "count": 1
+  },
+  {
+   "old": "                   n 1             n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "       ",
+   "new": "n−1",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "− λ)λ2",
+   "count": 1
+  },
+  {
+   "old": "  ) 2",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "      ",
+   "new": "δ←",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "← 1",
+   "count": 1
+  },
+  {
+   "old": "  1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "that true online     12.11:Figure\n                  TD(λ)\n             Figure                  4. Average\n",
+   "count": 1
+  },
+  {
+   "old": "Figure",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "4.",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Ave",
+   "new": "Summa",
+   "count": 1
+  },
+  {
+   "old": "age",
+   "new": "y         ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                            comparison       ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                Sarsa(λ)         ",
+   "count": 1
+  },
+  {
+   "old": "          ",
+   "new": "algorithms",
+   "count": 1
+  },
+  {
+   "old": "that true online TD(12.11:\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Figure     )      Summary      comparison",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Sarsa(",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "algorithms",
+   "new": "                                                         ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "| Q′ ←",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "     | δ ← R + γQ(′ − Q",
+   "count": 1
+  },
+  {
+   "old": " 0\n     | Q        w > x0\n     |         R + Q0 Q",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "0\n                 0",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "0\n             0",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "  1          k",
+   "new": "∞",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "( k",
+   "count": 1
+  },
+  {
+   "old": "             !",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "     Y",
+   "new": "∏",
+   "count": 1
+  },
+  {
+   "old": " Q1",
+   "new": "∏∞",
+   "count": 1
+  },
+  {
+   "old": "Gt",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Rt+1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " )\n       Gλ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "               λs\n        t = Rt+1 + γ t+1 (1 − λ",
+   "count": 1
+  },
+  {
+   "old": " = Rt+1 + t+1 (1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "a\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λa\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "Rt+1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "t+1",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "(1",
+   "count": 1
+  },
+  {
+   "old": "          ⌘",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": " = Rt+1 + t+1 (1           ",
+   "new": "\n",
+   "count": 1
+  },
+  {
+   "old": "+1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": ")V̄t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "(S",
+   "new": "= R ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "+ γ t+1   (1 − λ    ",
+   "count": 1
+  },
+  {
+   "old": " +",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "t+1 tV̄ (S t+1 ) + λ",
+   "count": 1
+  },
+  {
+   "old": "                             ",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "            s\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "t:h",
+   "new": "λs",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "t:h",
+   "count": 1
+  },
+  {
+   "old": "⇣",
+   "new": "  (               (                                           ))\n         .\n    Gλs\n      t =  ρ t   R t+1 + γ t+1   (1 − λ t+1 )v̂(S t+1 ,w t ) + λ t+1 G λs\n",
+   "count": 1
+  },
+  {
+   "old": "⌘\n         .\n    Gt s = ⇢t Rt+1 + t+1 (1                                    s\n                 ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": ")v̂(St+1 ,wt ) + t+1 Gt+1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "s",
+   "new": "   ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                ",
+   "count": 1
+  },
+  {
+   "old": "Y",
+   "new": "  ∏",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λs\n        ",
+   "count": 1
+  },
+  {
+   "old": "s ⇡",
+   "new": "≈",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " δk",
+   "count": 1
+  },
+  {
+   "old": "                      k           i i ⇢i ,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇤\n                                                                                    s",
+   "new": "□",
+   "count": 1
+  },
+  {
+   "old": "s     ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "    1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Y\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "∏\n",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "∑ ∞   ",
+   "count": 1
+  },
+  {
+   "old": "↵⇢",
+   "new": "    αρ",
+   "count": 1
+  },
+  {
+   "old": "i",
+   "new": "  γ",
+   "count": 1
+  },
+  {
+   "old": "P",
+   "new": "        ∑",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": " ∞",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": " ∑   ",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "λi ρ",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": "∑ ",
+   "count": 1
+  },
+  {
+   "old": "X1",
+   "new": "∑  ",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "ρi",
+   "count": 1
+  },
+  {
+   "old": "X1",
+   "new": " ∑ ",
+   "count": 1
+  },
+  {
+   "old": "Y",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                     ∏",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "λ ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "ρi",
+   "count": 1
+  },
+  {
+   "old": "\n                       |                   {z                   }\n                                         zk     1",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "= ⇢",
+   "new": "z",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−1\n",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "        (                        )\n         = ρ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "γ k λ",
+   "count": 1
+  },
+  {
+   "old": ".",
+   "new": "(                            )",
+   "count": 1
+  },
+  {
+   "old": "                            ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇣",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "                      ⇥",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "                       ⇤⌘\n     .\nGt a = Rt+1 + t+1 (1 t+1 )V̄t (St+1 )+ t+1 ⇢t+1 Gt+1\n                                                   a\n",
+   "new": "[",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ])\n      .\nGλa\n  t  =  R t",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "+γ t+1 (1−λ    )\n                          t+1 t",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "+λ",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "     ρ G λa\n                                             t+1 t+1 t+1 + V̄ t (S t+1 )−ρ ",
+   "count": 1
+  },
+  {
+   "old": "⇥",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "  [ λ",
+   "count": 1
+  },
+  {
+   "old": " ⇤⌘",
+   "new": "])",
+   "count": 1
+  },
+  {
+   "old": "  1",
+   "new": "∞",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λa\n       ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "δk",
+   "count": 1
+  },
+  {
+   "old": "                         k            i i ⇢i ,",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "δt",
+   "count": 1
+  },
+  {
+   "old": "\n       t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "              ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λa           λa\n                               ",
+   "count": 1
+  },
+  {
+   "old": "a",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "⇤\n                                                                                         a",
+   "new": "□",
+   "count": 1
+  },
+  {
+   "old": "t:h",
+   "new": "λa",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "t:h",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λa                          λ\n                                               ",
+   "count": 1
+  },
+  {
+   "old": "  X  ",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                           λ\n",
+   "count": 1
+  },
+  {
+   "old": "hX",
+   "new": "[∑",
+   "count": 1
+  },
+  {
+   "old": "i◆",
+   "new": "])",
+   "count": 1
+  },
+  {
+   "old": "     ✓",
+   "new": "(",
+   "count": 1
+  },
+  {
+   "old": "⌘◆",
+   "new": " ))\n     = Rt+1 + γ t+1 V̄t (St+1 ) + λt+1 π(At+1 |St+1 )                      Gλa",
+   "count": 1
+  },
+  {
+   "old": "     a\n     = R",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "+        t+1        V̄t (St+1 ) +   t+1 ⇡(At+1 |St+1 )             Gt+1  ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "    1",
+   "new": "∞",
+   "count": 1
+  },
+  {
+   "old": "    Y",
+   "new": "∏",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "λa\n          ",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "δk",
+   "count": 1
+  },
+  {
+   "old": "                                     k              ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "t",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "λt π",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "λ",
+   "count": 1
+  },
+  {
+   "old": "      ↵",
+   "new": "αγ",
+   "count": 1
+  },
+  {
+   "old": "s\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "δ",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "β",
+   "count": 1
+  },
+  {
+   "old": "  ↵",
+   "new": "αγ",
+   "count": 1
+  },
+  {
+   "old": "\n t",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": ".\n        δt = Rt+1 + γ t+1 wt⊤ xt+1 − wt⊤ xt\n          ",
+   "count": 1
+  },
+  {
+   "old": ">",
+   "new": "    )              .\n        zt = ρt γ t λt zt−1 + Mt xt ,   with z−1 = 0,",
+   "count": 1
+  },
+  {
+   "old": "= Rt+1 + t+1 wt xt+1",
+   "new": ".\n",
+   "count": 1
+  },
+  {
+   "old": "w",
+   "new": "M",
+   "count": 1
+  },
+  {
+   "old": "x",
+   "new": "= λt It + (1 − λt )F",
+   "count": 1
+  },
+  {
+   "old": "      .\n        z t = ⇢t t t z t 1 + M t x t ,   with z 1 = 0,\n            .\n       Mt = t It + (1       t )Ft\n            .                                 ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "⇢",
+   "new": "ρt−1",
+   "count": 1
+  },
+  {
+   "old": "t 1",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "↵r",
+   "new": "α∇",
+   "count": 1
+  },
+  {
+   "old": "-40\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "𝜀-greedy",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "right\n",
+   "count": 1
+  },
+  {
+   "old": "greedy right",
+   "new": "40\n",
+   "count": 1
+  },
+  {
+   "old": "r ",
+   "new": "∇",
+   "count": 1
+  },
+  {
+   "old": "X⇥",
+   "new": "∑[",
+   "count": 1
+  },
+  {
+   "old": " r⇡",
+   "new": "∇π",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "                   )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                ∑ ∑",
+   "count": 1
+  },
+  {
+   "old": "                           !",
+   "new": "∑",
+   "count": 1
+  },
+  {
+   "old": "                    X X                                  X\n  ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "       r⇡",
+   "new": "∇π",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "[                             ]",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "[                    ]",
+   "count": 1
+  },
+  {
+   "old": "           t\n         ✓    ✓",
+   "new": "θ",
+   "count": 1
+  },
+  {
+   "old": "↵",
+   "new": "αγ t",
+   "count": 1
+  },
+  {
+   "old": "↵✓",
+   "new": "αθ γ",
+   "count": 1
+  },
+  {
+   "old": "kr",
+   "new": "‖∇",
+   "count": 1
+  },
+  {
+   "old": "\n         G0                -40",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n         G0                -40",
+   "count": 1
+  },
+  {
+   "old": "  ⌘ r⇡",
+   "new": "∇π",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "t",
+   "count": 1
+  },
+  {
+   "old": "r⇡",
+   "new": " ) ∇π",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "zw",
+   "count": 1
+  },
+  {
+   "old": " w\n     z      ",
+   "new": "←",
+   "count": 1
+  },
+  {
+   "old": "         ✓ ✓\n        ",
+   "new": "γλθ",
+   "count": 1
+  },
+  {
+   "old": "✓          z",
+   "new": "θ",
+   "count": 1
+  },
+  {
+   "old": "       w      w w",
+   "new": "δ",
+   "count": 1
+  },
+  {
+   "old": "        ",
+   "new": "λw",
+   "count": 1
+  },
+  {
+   "old": "✓      ✓ ✓\n     ",
+   "new": "λθ",
+   "count": 1
+  },
+  {
+   "old": "          z",
+   "new": "θ",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "            ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                              ",
+   "count": 1
+  },
+  {
+   "old": "\"",
+   "new": " [",
+   "count": 1
+  },
+  {
+   "old": "                r",
+   "new": "−∇",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "               ",
+   "count": 1
+  },
+  {
+   "old": "                             r",
+   "new": "∇",
+   "count": 1
+  },
+  {
+   "old": "Xh",
+   "new": " ∑[",
+   "count": 1
+  },
+  {
+   "old": " r",
+   "new": "∇",
+   "count": 1
+  },
+  {
+   "old": "XX",
+   "new": " ∑∑",
+   "count": 1
+  },
+  {
+   "old": "                             |                   {z                     }",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": "∑                            ∑",
+   "count": 1
+  },
+  {
+   "old": "  X                               X\n",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "0  ",
+   "new": "′",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "σ 2π",
+   "count": 1
+  },
+  {
+   "old": "  2⇡",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "2π )           2σ 2\n                                     (",
+   "count": 1
+  },
+  {
+   "old": "     2⇡ ◆           2 2\n                                    ✓\n                                       ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                        ",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": " ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " − ",
+   "count": 1
+  },
+  {
+   "old": "⇡",
+   "new": "π  ",
+   "count": 1
+  },
+  {
+   "old": "                ",
+   "new": "σ",
+   "count": 1
+  },
+  {
+   "old": "     ",
+   "new": "σ",
+   "count": 1
+  },
+  {
+   "old": "1",
+   "new": "    (            )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "      )",
+   "count": 1
+  },
+  {
+   "old": "                                        !\n                        r⇡",
+   "new": "∇π",
+   "count": 1
+  },
+  {
+   "old": "   ⇤",
+   "new": "□",
+   "count": 1
+  },
+  {
+   "old": " ✓",
+   "new": "−θ",
+   "count": 1
+  },
+  {
+   "old": "  ",
+   "new": "∆",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "r δ is the same as ou",
+   "count": 1
+  },
+  {
+   "old": " is ",
+   "new": "\nδ",
+   "count": 1
+  },
+  {
+   "old": "he same as our\n t ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "δt−1",
+   "count": 1
+  },
+  {
+   "old": "                                        t 1                       ",
+   "new": "−",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                 φ    ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                 φ   ",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": "γλθ",
+   "count": 1
+  },
+  {
+   "old": ".",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−θ",
+   "count": 1
+  },
+  {
+   "old": "✓ >",
+   "new": "⊤",
+   "count": 1
+  },
+  {
+   "old": "     ✓",
+   "new": "θ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                                         )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                           (    ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                             )",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " ( ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                         )      ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "α ",
+   "count": 1
+  },
+  {
+   "old": "the\n                                                                 ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "network)\n                                                                    ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "          ",
+   "new": "network)",
+   "count": 1
+  },
+  {
+   "old": "r",
+   "new": " ∇",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "−\n",
+   "count": 1
+  },
+  {
+   "old": "P",
+   "new": "                                   ∑",
+   "count": 1
+  },
+  {
+   "old": " ⌘",
+   "new": "η",
+   "count": 1
+  },
+  {
+   "old": "       Zero.\n                                                                          ",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "    ",
+   "new": "Zero.",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                       θ , with latest weights θ. Shown             here",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "\n                                                                         for",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                             just one",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                                                                       position",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "but",
+   "count": 1
+  },
+  {
+   "old": "✓",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "with",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "latest",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "weights",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "✓.",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "Shown",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "here",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "for",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "just",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "one",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "position",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "but",
+   "new": "                                                                       ",
+   "count": 1
+  },
+  {
+   "old": "⇠",
+   "new": "∼ π",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "π ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " θ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": " π",
+   "count": 1
+  },
+  {
+   "old": "bank angle were",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "bank",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "angle",
+   "count": 1
+  },
+  {
+   "old": "             ",
+   "new": "were",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                                              ◦",
+   "count": 1
+  },
+  {
+   "old": " ",
+   "new": "◦",
+   "count": 1
+  },
+  {
+   "old": "  every",
+   "new": "",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "   ◦ every state–action\n                                    −",
+   "count": 1
+  },
+  {
+   "old": "state–action",
+   "new": "     ◦       ",
+   "count": 1
+  },
+  {
+   "old": "   ",
+   "new": ")",
+   "count": 1
+  },
+  {
+   "old": "   ⌧",
+   "new": "τ",
+   "count": 1
+  },
+  {
+   "old": "\"1",
+   "new": "[∞ ( k",
+   "count": 1
+  },
+  {
+   "old": "k",
+   "new": "     )      |                ]",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                       ∑ ∏                     |\n                  .",
+   "count": 1
+  },
+  {
+   "old": "            !                      #\n                   .   X Y",
+   "new": "|",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "                          |\n                     ",
+   "count": 1
+  },
+  {
+   "old": "  !",
+   "new": "ω",
+   "count": 1
+  },
+  {
+   "old": "⇤",
+   "new": "  ]",
+   "count": 1
+  },
+  {
+   "old": "⌧",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "",
+   "new": "τ −",
+   "count": 1
+  },
+  {
+   "old": "⌧",
+   "new": "τ |",
+   "count": 1
+  },
+  {
+   "old": " !",
+   "new": "ω",
+   "count": 1
+  },
+  {
+   "old": "X",
+   "new": "∑ k",
+   "count": 1
+  },
+  {
+   "old": "    k\n                            ",
+   "new": "γ",
+   "count": 1
+  },
+  {
+   "old": "!",
+   "new": "γω",
+   "count": 1
+  },
+  {
+   "old": "✏",
+   "new": "ffl",
+   "count": 1
+  }
+ ],
+ "document_content_hash": "sha256:85a2c10cb40f366f06863c1f18dd0ab87fc2c2ade29545f7d2def67168c60acd"
+}

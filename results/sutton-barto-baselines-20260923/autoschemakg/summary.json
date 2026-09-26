@@ -1,0 +1,357 @@
+{
+  "protocol": "selected-metrics-v1",
+  "metric_versions": {
+    "assertion_correctness": "assertion-ledger-v2.5",
+    "relation_granularity": "relation-granularity-v1",
+    "entity_correctness": "referent-v1.1",
+    "entity_evidence": "referent-evidence-v1.1",
+    "entity_typing": "type-boundary-v2-label-binding",
+    "entity_description": "description-boundary-v1",
+    "alias_identity": "legacy-rubric-v1",
+    "identity_split": "legacy-rubric-v1",
+    "book_qa": "legacy-rubric-v1",
+    "fact_recovery": "complete-fact-v1"
+  },
+  "model": "MiniMax-M3",
+  "complete": true,
+  "total": 802,
+  "done": 802,
+  "statuses": {
+    "done": 802
+  },
+  "groups": {
+    "autoschemakg-m3-full-en-rl": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "correct": 149,
+          "incorrect": 23,
+          "uncertain": 28
+        },
+        "numerator": 149,
+        "denominator": 200,
+        "rate": 0.745,
+        "partial_rate_judged_only": 0.745,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L3": 167,
+          "L2": 26,
+          "L1": 7
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 123,
+        "correct_l3_coverage": 0.615,
+        "correct_within_l3": 0.7365269461077845,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 99,
+          "incorrect": 1
+        },
+        "numerator": 99,
+        "denominator": 100,
+        "rate": 0.99,
+        "partial_rate_judged_only": 0.99,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 98,
+          "not_supported": 1,
+          "uncertain": 1
+        },
+        "numerator": 98,
+        "denominator": 100,
+        "rate": 0.98,
+        "partial_rate_judged_only": 0.98,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "fail": 41,
+          "uncertain": 25,
+          "pass": 34
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.789174603174603,
+        "partial_rate_judged_only": 0.789174603174603,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "fail": 93,
+          "pass": 549,
+          "uncertain": 56
+        },
+        "finest_supported_type": {
+          "none": 2,
+          "L3": 47,
+          "L2": 49,
+          "L1": 2
+        },
+        "whole_support_rate": 0.34
+      },
+      "entity_description": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": null,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "alias_identity": {
+        "status": "not_applicable",
+        "na_reason": "No eligible nontrivial aliases",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "identity_split": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "fail": 23,
+          "pass": 4,
+          "uncertain": 3
+        },
+        "numerator": 4,
+        "denominator": 30,
+        "rate": 0.13333333333333333,
+        "partial_rate_judged_only": 0.13333333333333333,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.13333333333333333
+      },
+      "book_qa": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 24,
+        "done": 24,
+        "unassessed": 0,
+        "statuses": {
+          "done": 24
+        },
+        "labels": {
+          "fail": 8,
+          "pass": 16
+        },
+        "numerator": 16,
+        "denominator": 24,
+        "rate": 0.6666666666666666,
+        "partial_rate_judged_only": 0.6666666666666666,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.6666666666666666
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "pass": 36,
+          "fail": 12
+        },
+        "numerator": 36,
+        "denominator": 48,
+        "rate": 0.75,
+        "partial_rate_judged_only": 0.75,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.75
+      }
+    }
+  },
+  "structure": {
+    "autoschemakg-m3-full-en-rl": {
+      "entity_count": 29219,
+      "assertion_count": 38783,
+      "quality_assertion_count": 10288,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.0,
+      "largest_component_ratio": 0.7053629487662137,
+      "alias_count": 0,
+      "field_counts": {
+        "types": 29219,
+        "definition": 0,
+        "aliases": 0
+      },
+      "construction": {
+        "input_tokens_million": 17.736773,
+        "output_tokens_million": 9.539398,
+        "total_tokens_million": 27.276171
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 29219,
+          "assertion_count": 38783,
+          "largest_component_ratio": 0.705363,
+          "isolated_entity_count": 0
+        }
+      ]
+    }
+  },
+  "updated_at": 1790230291.9500866,
+  "evaluation_usage": {
+    "request_attempts": 0,
+    "recorded_attempts": 0,
+    "failed_attempts": 0,
+    "skipped_attempts": 0,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "total_tokens": 0,
+    "http_elapsed_seconds": 0,
+    "peak_http": 4,
+    "active_http": 0,
+    "http_attempts_shared": 1072,
+    "abandoned_attempts": 0,
+    "cost_usd": null
+  },
+  "provenance": {
+    "input_hashes": {
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/workflow.json": "b4006aba64b5f4bfbeb1432073c305f05fcc345225b340f87c5d3fe258d0f26e",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/source/frozen-benchmark/benchmark.json": "a4664adbf981c4dc4a271f8d90bc0fc82254a06cf96d1c3d6879d8b9e0e668d6",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/source/frozen-benchmark/documents.jsonl": "e58db837c06442667caaced84fd9eb36142a19e3ff960b9fb041822cec883568",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/source/frozen-benchmark/fact_probes-reviewed.jsonl": "01aa1f473c740877722598fe4ef3862c07308e0bce3003bbbfdf644db8abe051",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/source/frozen-benchmark/qa_probes-reviewed.jsonl": "11704989850d9a7c9221613dcf822053d702074da983cad8a8ea55138fc7563f",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/source/frozen-benchmark/rubric.json": "f8400875711a7549b99fcf0e5ea717a571b18148b576ae6036c98b9467a7dbc2",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/workflow-quality-submission.json": "8435d37162277e4710e27eb0d7d95fff75272a34075c9135a3191200abbe72d6",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/workflow-full-submission.json": "2d6a7c2a5956709e3ad009b5b578edbf315d35e7287e04259ac0ab97a17d4d71",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/construction-usage.json": "a89ff9290a6c8d6fc4c1e9d99b237d51e235558f0a12c3e0681df0116910e0a1"
+    },
+    "benchmark_hash": "sha256:3d0fb5aba25ef2629d725a173a4653bd22fb13283bbbc96622383d32b8cf5274",
+    "code_hashes": {
+      "bundle.py": "3ef185a031e838c3b8167a9a8325580c54e06c9d1e723ef178078b32bdf99983",
+      "io.py": "b86bbd1b85fbeb5b06015a5ee2a771c5c48bee96df81fd00452c733232c8a64d",
+      "identity.py": "21d44e261efa1fd1f2aac34f6109bd41907144eb4375ec72684d1be6c75bd226",
+      "metrics.py": "14cbb7c639ef572a4f68992616acf5c0a71b002112112af52738c7ee85279bc2",
+      "qa.py": "1ead76073e8ea4d36667883b7851d443eaf6ff69d934d81ddd611af11369faa7",
+      "retrieval.py": "6244e98d43f9e24d93ced83389079f4c42d65eb377b59107367b810df698eed1",
+      "validation.py": "8c03990ba73375d1bcdd1e80828d22b111de4b06449874c7f46282463561e62c",
+      "workflow/__init__.py": "91b5604e4e50a3a3c963c0672c552d79d436ff09b8da79c5b50affe0acf07a02",
+      "workflow/alignment.py": "8da12de9fb974cc42279dd3f5b4059ea434a0fd608d47af75f7868b4c2406541",
+      "workflow/engine.py": "73baa6cf86967ce0869e73442d33d39e60a8e7535593f38ce2c63736d95857c8",
+      "workflow/granularity.py": "b765841f2505cff8478a186c917371cb0d316020e22cdde886ba53685d3248e8",
+      "workflow/ledger.py": "197b43567fce0a2ce74b01e2db3558ec297581b994eebf49f6d7e4560f0799cc",
+      "workflow/legacy_judge.py": "cbb8580a5381925ede44606f1fc86d4d6242b6fb1645b247b953c0a7b947e316",
+      "workflow/legacy_render.py": "e7f6c2df789fdca68f3545f02ca4a30b0f4260b424d3cd8d7c4e69b4e2cb3afb",
+      "workflow/preparation.py": "931ff384b9cd4d96259a5cfb0feb85ac61f21322bd06577ee420a98c645f5722",
+      "workflow/protocol.py": "adcc91bdd7239c643cbbf0ae4d47c7185b0bf70cfa893619afd3d0a5ac7419e7",
+      "workflow/referent.py": "5fa90762c7c1a8ffc0901e29edb142570c0fe8a40ffdef5887941bd924df6ff6",
+      "workflow/reporting.py": "4a99ec9f1fd4590c395ae4613589631bb4476293c828acb0c0f541928618f1a9",
+      "workflow/transport.py": "2a05ddad1d37de3675f085938c67e29a5749c5baa999da33279793317cf26210"
+    }
+  }
+}

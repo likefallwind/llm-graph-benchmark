@@ -1,0 +1,822 @@
+{
+  "sha256:646d3432fb9a668916a53372faec3cf908ece7567879963b81fdee0678a31934": {
+    "question": "In the slot-machine example illustrating an associative search task, what kind of information is provided to the learner about each bandit task, and what example policy is given?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The learner is given a distinctive clue about the identity of each bandit task, but not its action values.",
+          "core": true,
+          "source_ids": [
+            "S2:P000207"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "In the slot machine example, the machine changes the color of its display as it changes its action values, serving as the distinctive clue.",
+          "core": false,
+          "source_ids": [
+            "S2:P000207"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "The example policy given is: if red, select arm 1; if green, select arm 2.",
+          "core": true,
+          "source_ids": [
+            "S2:P000207"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:0910f8f5cc8f789c710f2e51c1651c2c6f408987022fbccf12e6fbfa9cebbf09": {
+    "question": "How does the book distinguish rewards from value functions in a reinforcement learning system?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The reward signal indicates what is good in an immediate sense and defines what are the good and bad events for the agent.",
+          "core": true,
+          "source_ids": [
+            "S2:P000030"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "A value function specifies what is good in the long run: the total amount of reward an agent can expect to accumulate over the future, taking into account the states that are likely to follow and the rewards available in those states.",
+          "core": true,
+          "source_ids": [
+            "S2:P000030",
+            "S2:P000031"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "Rewards are primary and are given directly by the environment, whereas values are secondary predictions of rewards that must be estimated and re-estimated from the sequences of observations an agent makes.",
+          "core": true,
+          "source_ids": [
+            "S2:P000031"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "Action choices are made based on value judgments (seeking states of highest value), not directly on reward, because values capture long-term reward accumulation.",
+          "core": false,
+          "source_ids": [
+            "S2:P000031"
+          ]
+        },
+        {
+          "id": "R5",
+          "text": "A state may yield a low immediate reward but still have a high value (because it is regularly followed by high-reward states), or vice versa.",
+          "core": false,
+          "source_ids": [
+            "S2:P000031"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:beeae2c780c5781174ca4e6c73691893be4ba972f020d39269d4948a400d0aae": {
+    "question": "In the simplest case, how is the return G_t defined in terms of the reward sequence, and what role does T play?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "In the simplest case, the return G_t is defined as the sum of the reward sequence.",
+          "core": true,
+          "source_ids": [
+            "S2:P000278"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "The formal expression is G_t = R_{t+1} + R_{t+2} + R_{t+3} + ... + R_T, summing the rewards received after time step t up through time step T.",
+          "core": true,
+          "source_ids": [
+            "S2:P000278"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "T denotes a final time step, and the fact that the sum terminates at T makes this formulation appropriate for episodic tasks in which there is a natural notion of a final time step.",
+          "core": true,
+          "source_ids": [
+            "S2:P000279"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:5d5f94b16f9be5e3b8b91b8c2e14dfdc2bbed6be5acb05a778166236acae6026": {
+    "question": "How can optimistic initial action-value estimates encourage exploration even when actions are selected greedily?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Optimistic initial action-value estimates are set higher than the true expected rewards, so the initial estimate for any action exceeds the rewards that action will actually yield.",
+          "core": true,
+          "source_ids": [
+            "S2:P000157"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "When the agent selects an action greedily based on the optimistic estimate, the actual reward received is lower than the current value estimate, so the learner is 'disappointed' with that action.",
+          "core": true,
+          "source_ids": [
+            "S2:P000158"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "Disappointment causes the estimated value of the chosen action to drop below the estimates of the other (still optimistic) actions, so the agent switches to trying other actions.",
+          "core": true,
+          "source_ids": [
+            "S2:P000158"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "Consequently, all actions are tried several times before the value estimates converge, producing exploration even though actions are selected greedily.",
+          "core": true,
+          "source_ids": [
+            "S2:P000158"
+          ]
+        },
+        {
+          "id": "R5",
+          "text": "Illustrative example: in the 10-armed testbed, setting Q1(a) = +5 while q*(a) ~ N(0,1) makes +5 a wildly optimistic initial estimate, and the resulting technique is called 'optimistic initial values'.",
+          "core": false,
+          "source_ids": [
+            "S2:P000157",
+            "S2:P000158"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:f329d44322b8e2496f7aa0c05f8f4fa05e9fd5bc9ec7d6825e3716936da88184": {
+    "question": "Do all of the reinforcement learning methods considered in the book estimate value functions, and what counter-examples does the book give?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The answer is no — not all of the reinforcement learning methods considered in the book estimate value functions.",
+          "core": true,
+          "source_ids": [
+            "S2:P000036"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Most of the methods considered in the book are structured around estimating value functions, but this is not strictly necessary to solve reinforcement learning problems.",
+          "core": true,
+          "source_ids": [
+            "S2:P000036"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "The book gives genetic algorithms, genetic programming, simulated annealing, and other optimization methods as counter-examples of solution methods that never estimate value functions.",
+          "core": true,
+          "source_ids": [
+            "S2:P000036"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:d246ce96d6640e80e65aec699361ccea2d82814f28f87e3e97e94f20037aaacc": {
+    "question": "In policy improvement, what rule governs the apportionment of probability among actions when multiple actions tie at the maximum in the stochastic case?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "In the stochastic case, when multiple actions tie at the maximum in a policy improvement step, the new greedy policy need not select a single action—any apportioning scheme is permitted.",
+          "core": true,
+          "source_ids": [
+            "S2:P000414"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Each maximizing action can be given a portion of the probability of being selected in the new greedy policy.",
+          "core": true,
+          "source_ids": [
+            "S2:P000414"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "All submaximal (non-maximizing) actions must be given zero probability.",
+          "core": true,
+          "source_ids": [
+            "S2:P000414"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:4465d8ac0138e0d13884d485af973fa2afb0d5c7ccb1995b50f7185a68966c52": {
+    "question": "Why does policy iteration on a finite Markov decision process converge to an optimal policy in a finite number of iterations, and what is the relationship between successive policies in the sequence?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Each policy in the iteration sequence is guaranteed to be a strict improvement over the previous policy (unless that previous policy is already optimal), so the policies form a monotonically improving sequence.",
+          "core": true,
+          "source_ids": [
+            "S2:P000418"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "A finite MDP has only a finite number of deterministic policies, so this strictly improving sequence cannot continue indefinitely and must reach an optimal policy in a finite number of iterations.",
+          "core": true,
+          "source_ids": [
+            "S2:P000418"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "The value functions produced alongside the policies are also monotonically improving, and the process converges to the optimal value function as well as the optimal policy.",
+          "core": false,
+          "source_ids": [
+            "S2:P000418"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:49bb7dce1734e993b99deae498deed0772f03e870958f46f39365b1f2473ca27": {
+    "question": "Why is explicitly solving the Bellman optimality equation rarely directly useful for finding an optimal policy in practice?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Explicitly solving the Bellman optimality equation is rarely directly useful because the approach relies on three assumptions that are rarely true in practice.",
+          "core": true,
+          "source_ids": [
+            "S2:P000351"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Assumption 1: the dynamics of the environment are accurately known.",
+          "core": true,
+          "source_ids": [
+            "S2:P000351"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "Assumption 2: computational resources are sufficient to complete the calculation.",
+          "core": true,
+          "source_ids": [
+            "S2:P000351"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "Assumption 3: the states have the Markov property.",
+          "core": true,
+          "source_ids": [
+            "S2:P000351"
+          ]
+        },
+        {
+          "id": "R5",
+          "text": "Illustrative example: backgammon has about 10^20 states, and solving the Bellman equation for v* would take thousands of years on today's fastest computers.",
+          "core": false,
+          "source_ids": [
+            "S2:P000352"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:fa5f5d648d01b6b77fabede4321c1899b4c170584045f50dde55120eb04436f9": {
+    "question": "In the 100-step importance-sampling example where the return is determined by the first reward alone, why do the importance-sampling factors after the first add variance without changing the expected update?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "在 γ=0 的 100 步示例中，return G0 仅由第一个奖励 R1 决定，因此第一步之后的 99 个重要性采样因子与已经确定的 return 相互独立。",
+          "core": true,
+          "source_ids": [
+            "S2:P000625",
+            "S2:P000626"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "这 99 个后续因子中每一个的期望值都等于 1，因此将它们纳入乘积不会改变更新方向的期望值。",
+          "core": true,
+          "source_ids": [
+            "S2:P000626"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "尽管这些因子保持期望不变（不影响期望更新），它们会给估计量带来巨大的方差，在某些情况下甚至使方差变为无穷大。",
+          "core": true,
+          "source_ids": [
+            "S2:P000626"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:350768309e83a20fcc28c6b1b42ddf06c576d62023026fae0914e9fd392becda": {
+    "question": "Does a consistent per-decision version of weighted importance sampling exist according to the authors?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "No, a consistent per-decision version of weighted importance sampling does not exist according to the authors.",
+          "core": true,
+          "source_ids": [
+            "S2:P000646"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "All per-decision weighted importance sampling estimators proposed so far are not consistent, meaning they do not converge to the true value even with infinite data.",
+          "core": true,
+          "source_ids": [
+            "S2:P000646"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:2c3fd58684f26b0296a7bcba66d524a37197a35c10c700d5b2a125da4bd8627c": {
+    "question": "In the bandit discussion of maximization bias, what problem arises when the same noisy samples are used both to select the maximizing action and to estimate its value?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Using the same samples both to select the maximizing action and to estimate its value produces a positive maximization bias.",
+          "core": true,
+          "source_ids": [
+            "S2:P000759"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "As a result, the maximum of the noisy action-value estimates overestimates the maximum of the true action values.",
+          "core": true,
+          "source_ids": [
+            "S2:P000759"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:c6c299caddd98b8aadf205976409ddb8acf42028f7dc4245b5d2f0cced6f1e47": {
+    "question": "How is Expected Sarsa related to Q-learning when the target policy and behavior policy differ?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "When the target policy π is the greedy policy and the behavior policy is more exploratory, Expected Sarsa is exactly Q-learning.",
+          "core": true,
+          "source_ids": [
+            "S2:P000751"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "In this sense, Expected Sarsa subsumes and generalizes Q-learning (since it can operate with target and behavior policies that differ, and reduces to Q-learning as a special case).",
+          "core": false,
+          "source_ids": [
+            "S2:P000751"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "Expected Sarsa reliably improves over Sarsa, and aside from a small additional computational cost, it may dominate both Sarsa and Q-learning.",
+          "core": false,
+          "source_ids": [
+            "S2:P000751"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:64e5cb7a88477717a4e06e9f4d6516a3b618267df9672d2ddac220f2bf7bfae7": {
+    "question": "According to Section 7.6, how does the per-step choice between sampling (as in Sarsa) and taking an expectation over actions (as in the tree-backup update) recover n-step Sarsa, the tree-backup algorithm, and Expected Sarsa?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The unification idea is to decide on a step-by-step basis at each transition whether to take the action as a sample (as in Sarsa) or to take the expectation over all actions (as in the tree-backup update).",
+          "core": true,
+          "source_ids": [
+            "S2:P000854"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "If one always chose to sample, the result recovers n-step Sarsa.",
+          "core": true,
+          "source_ids": [
+            "S2:P000854"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "If one never chose to sample, the result recovers the tree-backup algorithm.",
+          "core": true,
+          "source_ids": [
+            "S2:P000854"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "If one chose to sample for all steps except the last one, the result recovers Expected Sarsa.",
+          "core": true,
+          "source_ids": [
+            "S2:P000854"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:d97ba24b7ffee2d35eab02c17c5a171b7aacae24244e1bd6cedfd7cad86f2e67": {
+    "question": "According to the textbook's discussion of decision-time planning, how much computation time is typically permitted per move in chess playing programs, and how many moves ahead may strong programs plan within this time?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "In chess playing programs using decision-time planning, one may be permitted seconds or minutes of computation for each move.",
+          "core": true,
+          "source_ids": [
+            "S2:P000999"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Within this time, strong programs may plan dozens of moves ahead.",
+          "core": true,
+          "source_ids": [
+            "S2:P000999"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:d617c58fdbd6e1e6958ea2ec71b70157a1395468f90e6d5138f0b7d6b15e1b66": {
+    "question": "In the off-policy n-step state-value return with control variates (equation 7.13), what happens when the importance sampling ratio ρ_t is zero, and why does the control variate not change the expected update?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "When ρ_t = 0, the target in equation 7.13 reduces to V_{h-1}(S_t), which equals the current estimate, so applying the update causes no change.",
+          "core": true,
+          "source_ids": [
+            "S2:P000834",
+            "S2:P000835"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "An importance sampling ratio of zero means the sample should be ignored, so leaving the estimate unchanged is the appropriate behavior.",
+          "core": true,
+          "source_ids": [
+            "S2:P000835"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "If the return were simply weighted by ρ_t instead, a ratio of zero would make the n-step return zero and shrink the estimate, which can cause high variance; the control variate formulation avoids this.",
+          "core": false,
+          "source_ids": [
+            "S2:P000834"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "The control variate does not change the expected update because the importance sampling ratio ρ_t has expected value one and is uncorrelated with the estimate, so the expected value of the control variate term (1 − ρ_t)V_{h-1}(S_t) is zero.",
+          "core": true,
+          "source_ids": [
+            "S2:P000835"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:9b83f6fd0226524268447b39efe662c46f0bf6d6856e874ca4b4a4956c56c301": {
+    "question": "What is the name of the identity (9.22) used to maintain the inverse matrix A_t^{-1} in LSTD, and what order of per-step computation and memory does the book attribute to it?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The identity (9.22) is known as the Sherman-Morrison formula.",
+          "core": true,
+          "source_ids": [
+            "S2:P001267"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Although the formula looks complicated, it involves only vector-matrix and vector-vector multiplications.",
+          "core": true,
+          "source_ids": [
+            "S2:P001267"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "The per-step computation required to maintain the inverse matrix A_t^{-1} using (9.22) is O(d^2).",
+          "core": true,
+          "source_ids": [
+            "S2:P001267"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "The memory required to store and maintain A_t^{-1} is O(d^2), and it can then be used in (9.21) with the same O(d^2) memory and per-step computation.",
+          "core": true,
+          "source_ids": [
+            "S2:P001267"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:474cba66392c43ffce7fd21b5a3ade4a6eece114758c49f98ed4608be3858e98": {
+    "question": "What limitation does the chapter identify for local policy improvement guarantees in action-value methods once function approximation is introduced?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Once function approximation is introduced, local policy improvement is no longer guaranteed for action-value methods.",
+          "core": true,
+          "source_ids": [
+            "S2:P001423"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "The loss of a local policy improvement guarantee applies across all settings, including the total-episodic and average-reward settings.",
+          "core": true,
+          "source_ids": [
+            "S2:P001423"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "ε-greedification may sometimes result in an inferior policy, rather than guaranteeing improvement.",
+          "core": false,
+          "source_ids": [
+            "S2:P001423"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "Policies may chatter among good policies rather than converge.",
+          "core": false,
+          "source_ids": [
+            "S2:P001423"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:c80b4f20933749c66e4df99110d19bc9a3d4eddc8c19dff48924d2b927f75fae": {
+    "question": "What does the A-presplit example illustrate about minimizing the Bellman Error (BE) with the residual-gradient algorithm?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "In the A-presplit example (a variation on the A-split example with genuine function approximation), the residual-gradient algorithm finds the same poor solution as its naive version.",
+          "core": true,
+          "source_ids": [
+            "S2:P001544"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "This illustrates that minimizing the Bellman Error (BE) may not be a desirable goal, since minimizing BE leads to the wrong value functions.",
+          "core": true,
+          "source_ids": [
+            "S2:P001544"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "The problem shown by this example is a problem with the BE objective itself rather than with any particular algorithm for achieving it.",
+          "core": false,
+          "source_ids": [
+            "S2:P001544"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:ca64c7b48d55299061c1610e8c21e1e17516462b2677a1e2dd0b41189657f463": {
+    "question": "According to Chapter 12's conclusions, in what kind of application do eligibility trace methods typically not pay off computationally, and why?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Eligibility trace methods typically do not pay off computationally in off-line applications where data can be generated cheaply, such as from an inexpensive simulation.",
+          "core": true,
+          "source_ids": [
+            "S2:P001909"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "The reason is that in these off-line settings the objective is to process as much data as possible as quickly as possible, rather than to extract more learning from a limited amount of data; thus the per-datum speedup provided by traces is generally not worth their extra computational cost, and one-step methods are favored.",
+          "core": true,
+          "source_ids": [
+            "S2:P001909"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:73d63139e188e720efeba9f32f3fba7074409563c3852066488995ab90c30697": {
+    "question": "According to the textbook, what kind of return does REINFORCE use, and when are its parameter updates performed?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "REINFORCE uses the complete return from time t, which includes all future rewards up until the end of the episode.",
+          "core": true,
+          "source_ids": [
+            "S2:P001971"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "REINFORCE is a Monte Carlo algorithm and is well defined only for the episodic case.",
+          "core": true,
+          "source_ids": [
+            "S2:P001971"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "All parameter updates are made in retrospect after the episode is completed (i.e., only at the end of the episode, not during it).",
+          "core": true,
+          "source_ids": [
+            "S2:P001971"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:02d3e565574f61ca34daddaefa2307d0a5ef0bddecef32d2ff99198d61c3a6e1": {
+    "question": "Why, according to the chapter, is higher-order conditioning difficult to demonstrate above the second order, and under what circumstances can it still be shown?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Higher-order conditioning is difficult to demonstrate above the second order because a higher-order reinforcer loses its reinforcing value, since during higher-order conditioning trials it is not repeatedly followed by the original US.",
+          "core": true,
+          "source_ids": [
+            "S2:P002077"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Under the right conditions, higher-order conditioning beyond the second order can be demonstrated by intermixing first-order trials with higher-order trials.",
+          "core": true,
+          "source_ids": [
+            "S2:P002077"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "Higher-order conditioning beyond the second order can also be demonstrated by providing a general energizing stimulus.",
+          "core": true,
+          "source_ids": [
+            "S2:P002077"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:790a8e9298f8ef5e69522a0fa09c5eee09c05fddd6a66a5ece04782ba5db0a2c": {
+    "question": "In whose laboratory were the experiments that led to the reward prediction error hypothesis of dopamine neuron activity performed, and in what years were they carried out?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "The experiments were performed in the laboratory of neuroscientist Wolfram Schultz.",
+          "core": true,
+          "source_ids": [
+            "S2:P002247"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "The experiments were carried out in the 1980s and early 1990s.",
+          "core": true,
+          "source_ids": [
+            "S2:P002247"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:4a5f450fa1f3fa6c13eaeccb678d4dc95b26b87ae50ddda8b21f2d347e8a0135": {
+    "question": "In the personalized web services work of Li, Chu, Langford, and Schapire (2010), what was their objective and how much did their contextual bandit algorithm improve over a standard non-associative bandit algorithm?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "Their objective was to maximize the click-through rate (CTR) when personalizing the Yahoo! Front Page Today webpage, where CTR is defined as the ratio of the total number of clicks all users make on a webpage to the total number of visits to the page.",
+          "core": true,
+          "source_ids": [
+            "S2:P002596"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "Their contextual bandit algorithm improved over a standard non-associative bandit algorithm by 12.5%.",
+          "core": true,
+          "source_ids": [
+            "S2:P002596"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  },
+  "sha256:8fd4eefa10b851f28cd152f09283ddc6ca844f9747c6173b65962797802b570f": {
+    "question": "What difficulties are noted for the inverse reinforcement learning approach, and what claim do Abbeel and Ng (2004) make despite those difficulties?",
+    "rubric": {
+      "requirements": [
+        {
+          "id": "R1",
+          "text": "逆强化学习方法无法精确完成，因为一个策略可能相对于多个不同的奖励信号都是最优的",
+          "core": true,
+          "source_ids": [
+            "S2:P002698"
+          ]
+        },
+        {
+          "id": "R2",
+          "text": "例如，所有策略相对于一个常数奖励信号都是最优的（作为上述多解性的说明例子）",
+          "core": false,
+          "source_ids": [
+            "S2:P002698"
+          ]
+        },
+        {
+          "id": "R3",
+          "text": "寻找合理奖励信号候选需要强假设，包括需要知道环境的动力学以及奖励信号为线性的特征向量",
+          "core": true,
+          "source_ids": [
+            "S2:P002699"
+          ]
+        },
+        {
+          "id": "R4",
+          "text": "该方法还需要多次完全求解该问题（例如通过动态规划方法）",
+          "core": true,
+          "source_ids": [
+            "S2:P002699"
+          ]
+        },
+        {
+          "id": "R5",
+          "text": "尽管存在这些困难，Abbeel 和 Ng (2004) 仍然主张：在利用专家行为方面，逆强化学习方法有时比监督学习更有效",
+          "core": true,
+          "source_ids": [
+            "S2:P002699"
+          ]
+        }
+      ],
+      "source_caveat": ""
+    }
+  }
+}

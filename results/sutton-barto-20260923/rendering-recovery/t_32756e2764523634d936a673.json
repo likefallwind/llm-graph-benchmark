@@ -1,0 +1,117 @@
+{
+  "rule": "Restore only verbatim omitted boundary and; earliest valid response, no label-based selection",
+  "source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final/api/requests/b21c76a95d8f463ab7f37f3a8af4672c/attempt-1.json",
+  "source_sha256": "825dee89984bb5d57d95cf7b548fa81b599b523b55007a971f6a13fcab718cc8",
+  "original": {
+    "claims": [
+      {
+        "text": "Prediction error is a signal that measures discrepancies between expected and actual signals or sensations",
+        "label": "pass",
+        "reason": "Directly stated in the source.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "serving as a core learning signal in reinforcement learning",
+        "label": "pass",
+        "reason": "The passage discusses prediction errors (including TD errors) within the context of reinforcement learning algorithms, noting that the 'reinforcement signal' is the reward signal adjusted by 'value estimates in TD errors', and that value estimates guide agent learning. This supports the claim that prediction errors serve as a core learning signal in RL.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "Its most common form, the reward prediction error (RPE)",
+        "label": "pass",
+        "reason": "The passage devotes primary attention to RPEs as the specific instantiation of prediction error, and notes that when neuroscientists refer to RPEs they 'generally (though not always) mean' this form, supporting that RPE is the most commonly referenced form.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "is positive when the received reward exceeds expectation and negative otherwise",
+        "label": "pass",
+        "reason": "Directly stated in the source.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "temporal-difference (TD) errors are a special case of RPE",
+        "label": "pass",
+        "reason": "Directly stated: 'TD errors like (6.5) are special kinds of RPEs'.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "that signal discrepancies between current and earlier expectations of long-term reward",
+        "label": "pass",
+        "reason": "Directly stated: 'signal discrepancies between current and earlier expectations of reward over the long-term'.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      }
+    ]
+  },
+  "rendered": {
+    "claims": [
+      {
+        "text": "Prediction error is a signal that measures discrepancies between expected and actual signals or sensations",
+        "label": "pass",
+        "reason": "Directly stated in the source.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "serving as a core learning signal in reinforcement learning",
+        "label": "pass",
+        "reason": "The passage discusses prediction errors (including TD errors) within the context of reinforcement learning algorithms, noting that the 'reinforcement signal' is the reward signal adjusted by 'value estimates in TD errors', and that value estimates guide agent learning. This supports the claim that prediction errors serve as a core learning signal in RL.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "Its most common form, the reward prediction error (RPE)",
+        "label": "pass",
+        "reason": "The passage devotes primary attention to RPEs as the specific instantiation of prediction error, and notes that when neuroscientists refer to RPEs they 'generally (though not always) mean' this form, supporting that RPE is the most commonly referenced form.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "is positive when the received reward exceeds expectation and negative otherwise",
+        "label": "pass",
+        "reason": "Directly stated in the source.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "and temporal-difference (TD) errors are a special case of RPE",
+        "label": "pass",
+        "reason": "Directly stated: 'TD errors like (6.5) are special kinds of RPEs'.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      },
+      {
+        "text": "that signal discrepancies between current and earlier expectations of long-term reward",
+        "label": "pass",
+        "reason": "Directly stated: 'signal discrepancies between current and earlier expectations of reward over the long-term'.",
+        "evidence_ids": [
+          "S2:P002242"
+        ]
+      }
+    ]
+  },
+  "edits": [
+    {
+      "claim_index": 4,
+      "before": "temporal-difference (TD) errors are a special case of RPE",
+      "after": "and temporal-difference (TD) errors are a special case of RPE",
+      "source_gap": ", and "
+    }
+  ]
+}

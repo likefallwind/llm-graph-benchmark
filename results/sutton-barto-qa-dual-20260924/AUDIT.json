@@ -1,0 +1,168 @@
+{
+  "complete": true,
+  "issues": [],
+  "counts": {
+    "autoschemakg-m3-full-en-rl": {
+      "done": 24,
+      "core_pass": 11,
+      "complete_pass": 10,
+      "core_fail": 11,
+      "complete_fail": 14,
+      "core_uncertain": 2
+    },
+    "graphrag-m3-standard-en-rl": {
+      "done": 24,
+      "core_uncertain": 3,
+      "complete_uncertain": 3,
+      "core_fail": 12,
+      "complete_fail": 15,
+      "core_pass": 9,
+      "complete_pass": 6
+    },
+    "kggen-m3-lm-based-en-rl": {
+      "done": 24,
+      "core_fail": 22,
+      "complete_fail": 22,
+      "core_pass": 1,
+      "complete_pass": 1,
+      "core_uncertain": 1,
+      "complete_uncertain": 1
+    },
+    "ours-sutton-barto-incremental-m3": {
+      "done": 24,
+      "core_fail": 20,
+      "complete_fail": 22,
+      "core_pass": 4,
+      "complete_pass": 2
+    }
+  },
+  "questions": 24,
+  "same_rubric_for_all_methods": true,
+  "candidate_quotes_beyond_old_limit": [
+    {
+      "task_id": "t_0024cad0f1ed82e5d4255792",
+      "system": "autoschemakg-m3-full-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch05-1",
+      "metric": "book_qa",
+      "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+      "requirement_id": "R1",
+      "assertion_id": "C1",
+      "field": "text",
+      "quote": "The other 99 factors are irrelevant because after the first reward the return has already been determined. as a result These later factors are independent of the return and add enormously to the variance, and in some cases they could even make the variance infinite."
+    },
+    {
+      "task_id": "t_2ddf08b4760c8371c714834e",
+      "system": "graphrag-m3-standard-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch06-1",
+      "metric": "book_qa",
+      "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+      "requirement_id": "R1",
+      "assertion_id": "C2",
+      "field": "text",
+      "quote": "Expected Sarsa subsumes and generalizes Q-learning, as it reduces exactly to Q-learning when a greedy target policy is paired with exploratory behavior."
+    },
+    {
+      "task_id": "t_2ddf08b4760c8371c714834e",
+      "system": "graphrag-m3-standard-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch06-1",
+      "metric": "book_qa",
+      "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+      "requirement_id": "R2",
+      "assertion_id": "C2",
+      "field": "text",
+      "quote": "Expected Sarsa subsumes and generalizes Q-learning, as it reduces exactly to Q-learning when a greedy target policy is paired with exploratory behavior."
+    },
+    {
+      "task_id": "t_3a76e9c92e2d2fd6a30f3436",
+      "system": "graphrag-m3-standard-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch06-2",
+      "metric": "book_qa",
+      "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+      "requirement_id": "R1",
+      "assertion_id": "C5",
+      "field": "text",
+      "quote": "the maximization bias that arises from using the same estimate both to select an action and to evaluate it"
+    },
+    {
+      "task_id": "t_3a76e9c92e2d2fd6a30f3436",
+      "system": "graphrag-m3-standard-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch06-2",
+      "metric": "book_qa",
+      "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+      "requirement_id": "R2",
+      "assertion_id": "C3",
+      "field": "text",
+      "quote": "the maximum of uncertain estimates is higher than what the true values would dictate"
+    },
+    {
+      "task_id": "t_1d80e5c9cf9ea52beca73776",
+      "system": "ours-sutton-barto-incremental-m3",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch17-1",
+      "metric": "book_qa",
+      "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+      "requirement_id": "R4",
+      "assertion_id": "C1",
+      "field": "text",
+      "quote": "requires completely solving the problem (e.g., by dynamic programming methods) multiple times"
+    }
+  ],
+  "previous_problem_cases": [
+    {
+      "task_id": "t_d200225083462777d19c5058",
+      "system": "graphrag-m3-standard-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch05-1",
+      "metric": "book_qa",
+      "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+      "old_label": "pass",
+      "core_label": "fail",
+      "complete_label": "fail",
+      "unmet": [
+        {
+          "requirement_id": "R2",
+          "label": "fail",
+          "reason": "没有任何候选断言明确说明后续 99 个重要性采样因子中每一个的期望值等于 1，也没有候选说明将这些因子纳入乘积不会改变更新方向的期望值。C5 讨论的是 baseline（基线）保持期望不变，并非重要性采样因子本身的期望性质；C8 提到单步重要性采样比 ρ_t，但未说明其期望为 1。",
+          "assertion_evidence": []
+        }
+      ]
+    },
+    {
+      "task_id": "t_4d72b4e6e9c7f1932f7b33c8",
+      "system": "kggen-m3-lm-based-en-rl",
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "item_id": "rl-qa-ch09-1",
+      "metric": "book_qa",
+      "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+      "old_label": "pass",
+      "core_label": "fail",
+      "complete_label": "fail",
+      "unmet": [
+        {
+          "requirement_id": "R2",
+          "label": "fail",
+          "reason": "No candidate mentions that the formula involves only vector-matrix and vector-vector multiplications. None of the candidates discuss the nature of the multiplications involved in (9.22).",
+          "assertion_evidence": []
+        },
+        {
+          "requirement_id": "R4",
+          "label": "fail",
+          "reason": "No candidate mentions O(d²) memory for storing/maintaining A_t^{-1}, nor mentions that (9.21) can be used with the same O(d²) memory and per-step computation. C5 only states that LSTD stores the inverse matrix without specifying O(d²) memory.",
+          "assertion_evidence": [
+            {
+              "assertion_id": "C5",
+              "field": "text",
+              "quote": "LSTD (Least Squares Temporal Difference) stores inverse matrix"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "semantic_validation": "Source rubric overreach confirmed; see SOURCE_RUBRIC_REVIEW.md. Not independent human gold."
+}

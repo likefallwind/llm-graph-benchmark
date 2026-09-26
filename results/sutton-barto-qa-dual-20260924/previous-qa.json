@@ -1,0 +1,1634 @@
+[
+  {
+    "task_id": "t_dea6c942b64db3dea9edb85a",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_175356fc9317187a2d7639f3",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选断言未包含每步选择采样或期望如何分别恢复n-step Sarsa、tree-backup和Expected Sarsa的核心信息。"
+    },
+    "candidate_payload_hash": "sha256:611854c88939319cce5eef94debcb131b53c4a79c36e3a259e082ea199f1f634"
+  },
+  {
+    "task_id": "t_df365526a40f0e4d004e88b2",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_4e4bbdb898616b1aa5b0b6d0",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.8,
+      "reason": "候选1虽涉及严格改进与最优策略，但缺少'有限MDP只有有限个确定性策略故有限步收敛'这一关键论证，且限定于Jack租车问题而非一般性结论。"
+    },
+    "candidate_payload_hash": "sha256:9eee17ce1c838c715c2b3a28330a0e21772c66876f1b72cfa97b1cc16c182947"
+  },
+  {
+    "task_id": "t_c877b84db007bfad86656cb8",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_b19050b88310818f8e945d90",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.75,
+      "reason": "候选断言中没有任何一条明确说明ρ_t为零时目标变为V_{h-1}(S_t)且不改变估计，仅候选1部分覆盖了第二问。"
+    },
+    "candidate_payload_hash": "sha256:9099620951e58e5d2c334e390b198ec2b348b333693bf92d2eb9ccda1d38b928"
+  },
+  {
+    "task_id": "t_671c204d02f4a79d544c263f",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_6bec03fda477c4794b511b09",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1明确指出没有已知的加权对应形式，所有提议的per-decision版本都不一致，与证据和参考答案一致。"
+    },
+    "candidate_payload_hash": "sha256:4953359a25416dca14d6baff0d05d9d3b29bc599f74cd6f8d2ac50764153f6b0"
+  },
+  {
+    "task_id": "t_2b719429c87c60c17908effa",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_965c6f9d45893124002dc2da",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选图谱断言均涉及AlphaGo、Dyna-Q等，未包含棋类决策时间规划的秒/分钟计算及提前数十步的信息，无法回答该问题。"
+    },
+    "candidate_payload_hash": "sha256:044cdd3b35643b38e66161b1862cea12fd4be7b3a49bb73f98fb72488006c585"
+  },
+  {
+    "task_id": "t_684d823d8d949d9919cf322b",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_7eb3d62bee786fcc110706cf",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选均涉及A-split示例而非A-presplit示例，且未包含'最小化BE可能不是理想目标'这一核心结论。"
+    },
+    "candidate_payload_hash": "sha256:fb8b2a830dd453a0244c3a705beb4df5d91ef12fa7fd663dc622c873909df6b9"
+  },
+  {
+    "task_id": "t_9cf4fbd6854789e22ba47971",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_1582380e119cb26a3ed27506",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "uncertain",
+      "confidence": 0.6,
+      "reason": "候选1部分覆盖了回报由首步奖励决定，但未明确说明后续因子期望为1且独立这两个关键点。"
+    },
+    "candidate_payload_hash": "sha256:2cbf0f8d9ce20878eebab711bb3826643d642ed6e8440af503b1512a0fd5bbcc"
+  },
+  {
+    "task_id": "t_1d80e5c9cf9ea52beca73776",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_c462262706c853bdeeff5115",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.82,
+      "reason": "候选1和3覆盖了困难部分，但未包含Abbeel和Ng(2004)关于比监督学习更有效的论断，答案不完整。"
+    },
+    "candidate_payload_hash": "sha256:63258d4cbcccf5b3b262adcc73dd4351862554a21b9c4326e4a357722fe84a02"
+  },
+  {
+    "task_id": "t_608632bd9391870ea17a4afd",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_70a95fada9fc7c5a2d5fe295",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选8覆盖了策略改进保证丧失及各设定，但未包含ε-greedy可能产生更差策略及策略抖动不收敛的内容，信息不完整。"
+    },
+    "candidate_payload_hash": "sha256:10d1036490965b18833d0c56ad273360cc96139bc0268a1eeefcf9d0a5bac28a"
+  },
+  {
+    "task_id": "t_bfbed90c62e7558264808f4a",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_a8000b476f664f5d5fca0bf2",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.9,
+      "reason": "证据段落完整包含参考答案的所有要点：强化价值丧失的原因、插入一阶试验及提供一般激活刺激的条件，候选1也部分覆盖了这些信息。"
+    },
+    "candidate_payload_hash": "sha256:3daf2e6100223a679bd75f9d53a008952a2d1508173914b71ad0ffde30f8e226"
+  },
+  {
+    "task_id": "t_40d70dda0c3e6e54b556fa6c",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_2ce2add6ce23350f588ab3ca",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选断言未包含Wolfram Schultz的实验室及1980s至1990s初的实验时间信息，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:6c718201287f32ed1a3ae15e00ae89b7311b107ba53cb32602c5220068f70286"
+  },
+  {
+    "task_id": "t_eb435a0bcadeb91d035e90d3",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_f5e3cdcee9f2936b1c30457e",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选条目均为差分回报、n步回报、λ回报等复杂概念，未包含最简单情形G_t=∑R_{t+i}的定义及T作为终止时刻的解释。"
+    },
+    "candidate_payload_hash": "sha256:cba0d76bdfd44ec513efb823a1bae9fbc316e2d8bd92794800e22a8eca4d92d3"
+  },
+  {
+    "task_id": "t_9eb9e9b475c79b63ff5a09a9",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_b6dfd373d63abcb16a29daa1",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.97,
+      "reason": "候选1、2、9覆盖了参考答案全部要点：贪心目标+探索行为=Q学习，Expected Sarsa推广Q学习且优于Sarsa。"
+    },
+    "candidate_payload_hash": "sha256:ef104ada029d85e4e8f18f46e4aa2a3214e1e4ec5b15dd295ecc410f7d5fea1a"
+  },
+  {
+    "task_id": "t_7af750756a5cbcf57a259d40",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_7aa877180152a5f4b98d0c76",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选断言中没有包含关于线索（颜色变化）或示例策略（红选1绿选2）的信息，无法回答该问题。"
+    },
+    "candidate_payload_hash": "sha256:07fadd4324bc9289d8a677b864d5f5d666d961cca6af75742be99b866664f93c"
+  },
+  {
+    "task_id": "t_d9917d1d7a1c8d26302ccde7",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_d18d2e6de670f50ac6eba907",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选中没有任何一条提及Sherman-Morrison公式或恒等式(9.22)及其O(d²)计算与存储复杂度，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:15903bbd07654bc33e3ff81e5266abe63dae65c5a0adb967aa61418e1998b202"
+  },
+  {
+    "task_id": "t_f439edb25827712d871b5d6d",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_f370d1178279dd6528757137",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.88,
+      "reason": "候选图谱断言未直接描述同一批样本用于动作选择和价值估计导致的正最大化偏差问题，仅包含相关解决方案（如Double Learning）和其他无关内容。"
+    },
+    "candidate_payload_hash": "sha256:f4683cd108a262c8d6f0b361228471b67ee841dac8f173aafd28cf4cabf5fcb1"
+  },
+  {
+    "task_id": "t_b8b20ab52d20a63ccb38a870",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_e0b2add984dec7f7201d935c",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "候选图断言均讨论价值函数的技术细节，未包含区分奖励与价值函数所需的核心内容。"
+    },
+    "candidate_payload_hash": "sha256:00ea2b03d4c55f2b3cfd3f6efd62c01f93b4a52c075a8fc3fdac25faceebe86a"
+  },
+  {
+    "task_id": "t_8f47f3a5efa25c71a27834e7",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_486ff523a9f521c2b6c5cbcc",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选断言缺少12.5%改进幅度、CTR定义及Yahoo! Front Page等关键信息，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:242d6a4e105a5f93293ae8e5a6565454f64cd24dd937aa465bd96be578401c55"
+  },
+  {
+    "task_id": "t_5c9bed7413cf8f55aed61e9d",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_11e2205c84fefd0e7bbd3f8a",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选断言未包含三个核心假设（环境动力学已知、计算资源充足、马尔可夫性质）及双陆棋示例，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:60ec3f372b824c71b88fe32e004313cc6d50cd60f8ce626a3b7f7260d30ff8b1"
+  },
+  {
+    "task_id": "t_f26e623d90d45a7f65d4f8be",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_478153d648dd26b983049df8",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.78,
+      "reason": "候选1仅说明将初始值设为+5以鼓励探索，但未完整解释机制：实际奖励低于+5使学习者失望从而切换动作，这正是与贪心选择结合产生探索的关键。"
+    },
+    "candidate_payload_hash": "sha256:00fe2e78b198c6547e524558319f38650fd0cf22730c24f6e7b92a2920ffd16a"
+  },
+  {
+    "task_id": "t_d751cffe77740af3b4e8c310",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_165122f4a612136be0839cfa",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选1正确识别了离线应用场景和一步方法更优，但未充分解释原因：逐样本加速不值得计算成本、处理尽可能多数据的目标。"
+    },
+    "candidate_payload_hash": "sha256:c1a6b136d8c350435bf43df536a035747b5adb641ac51c7c1956d00e772fe11d"
+  },
+  {
+    "task_id": "t_4163cbfa0369fd76c04c8d21",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_5f83f4a0a265468c20ef9ce2",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1准确描述了随机情况下概率可在最大化动作间任意分配、子最优动作概率为零的规则，与证据和参考答案一致。"
+    },
+    "candidate_payload_hash": "sha256:294feaeb5a60f56fb1b42547fd24b2490feaeb1717a6bf0c0eba1619b8c0dcc6"
+  },
+  {
+    "task_id": "t_c375ac9a4a9b2b9c8d167dc7",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_5ce4f0b5476fe2f53f71a628",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选9仅说明'大多数'方法围绕值函数估计，但缺少遗传算法、遗传编程、模拟退火等反例，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:09abeaf4da7a16139967f1d719dcd0d6f9bc60acfd1243f061dacab4ec54781c"
+  },
+  {
+    "task_id": "t_e075f76032bc3d644d998731",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-c4-final",
+    "parent_task_id": "t_654bcbccd6607866134b07e8",
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "10条候选断言均未涉及REINFORCE，无法回答关于其完全回报及回合后更新机制的问题。"
+    },
+    "candidate_payload_hash": "sha256:bc786ddeda57d4b34ff69d6ba62c2aaf99767c9193e6bab74032eaded523e548"
+  },
+  {
+    "task_id": "t_d200225083462777d19c5058",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_97483ddf203e32b69a7a0334",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.65,
+      "reason": "候选3说明了后续因子不改变期望更新（因为返回已确定），候选1/2/4/7说明了后续因子会大幅增加方差，基本覆盖了问题的核心，但缺少'各因子独立且期望值为1'这一关键统计机制。"
+    },
+    "candidate_payload_hash": "sha256:95f68a3678d792aed7ffa770c6aa48936536b553bcf640a7abe0fa399f59af98"
+  },
+  {
+    "task_id": "t_4660b92cde74b71e61fd6fb7",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_39fac3c3916fc7e6e5790002",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.72,
+      "reason": "核心结论（无局部策略改进保证）被候选1/2/9清晰覆盖，但总片段式/平均奖励场景及策略抖动细节在候选描述中未完整体现。"
+    },
+    "candidate_payload_hash": "sha256:c5fe1f2d8437cd9995161d7505e1c8aa8a58d3440264521fb54a5101ef4a2298"
+  },
+  {
+    "task_id": "t_083e5798a4f296255bb7e6e7",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_20d40d38b5b7aa22da5a9a15",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.9,
+      "reason": "候选1、2明确给出Sherman-Morrison公式名称及(9.22)编号，候选2和7覆盖O(d²)计算和内存，核心信息完整可回答问题。"
+    },
+    "candidate_payload_hash": "sha256:17e4fed8190fe47e65d7ce2e28e7d16d2ca7cb89428d3432d8ef61f4fb939ca0"
+  },
+  {
+    "task_id": "t_37f4c1d44848ff6a5c4d6c41",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_fbe583dbabbfbbdfbe2f72e5",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.85,
+      "reason": "候选1、2说明失望机制，5、6、7说明贪婪选择下也能探索，共同覆盖了参考答案的核心信息。"
+    },
+    "candidate_payload_hash": "sha256:7d2cbfb7366d56e3d86f325cea2d2b63881e93711d476aec2582311590f439d3"
+  },
+  {
+    "task_id": "t_55ff93e0bada3af27393e898",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_3032c058569af72c95b0d3a8",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选中没有任何一条包含示例策略内容（红选臂1、绿选臂2），无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:ba133270455bad583bdedd8e33c992a9b4640c944f6ae048280bba9116b404ad"
+  },
+  {
+    "task_id": "t_adab56d219ae9e515c5db35c",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_ab9e713956a4fcea736196a8",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "候选图断言未包含奖励与价值函数的核心区分：即时vs长期、初级vs次级预测，证据充分但图谱未抽取。"
+    },
+    "candidate_payload_hash": "sha256:a7c82107cd235d0117002282de07078196a10fe1e4c3572be273fffd024672c6"
+  },
+  {
+    "task_id": "t_e457ed9b1ea589260dbb46c1",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_290c0378826caef67624dc31",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选图断言未充分覆盖关键信息：缺少'更新在episode结束后回顾性进行'这一核心要点。"
+    },
+    "candidate_payload_hash": "sha256:bd485fda12c9e0bd1d3da68cf336ccdef039cfb9b70c641747ebe5729c22a20b"
+  },
+  {
+    "task_id": "t_3a07b584b38e0df08d180302",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_0d8e565f7735c4240e11e54a",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选覆盖了环境动力学和马尔可夫性两个假设，但缺少计算资源假设和西洋双陆棋例子，且候选3将backgammon错写为chess"
+    },
+    "candidate_payload_hash": "sha256:0a63be7c297cc45b82d9c93369eaf9ca5b713d3eb2bab284c208e5befb32c51a"
+  },
+  {
+    "task_id": "t_9326632faeef17ea560c4800",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_09bfc65f00b10c97bae7b9b3",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选断言仅涉及技术细节如方程和习题，均未提及离线应用、数据廉价生成及计算代价权衡等结论信息。"
+    },
+    "candidate_payload_hash": "sha256:0e9ea945acf4692fd5e012c3f26c8799cdfdb593ffa947f4f74de34e5b70c3a6"
+  },
+  {
+    "task_id": "t_691aa00d227af781f5158c10",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_df44d6d1ec4bd7b00263e79c",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.62,
+      "reason": "候选1和3覆盖了最简单情形下return为奖励之和的定义，候选5通过episode和termination隐含说明了T为终止时刻，但完整公式及T的显式定义未被任一候选完整呈现。"
+    },
+    "candidate_payload_hash": "sha256:5187f0caff8eec2858b0ac675087deaf327b28a9f8a6670620d45a846ce4d49b"
+  },
+  {
+    "task_id": "t_55a40c3e695c670e08034a50",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_b469f07e12e815f9c73688d8",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.88,
+      "reason": "候选2和4共同覆盖了参考答案的核心内容，且与证据吻合：找到与naive版本相同的差解、说明最小化BE并非理想目标。"
+    },
+    "candidate_payload_hash": "sha256:578f9d5795abbdb8fd52aa0e4b9ecf6e5431bb274e1b95c6bb6b79b0c84448b2"
+  },
+  {
+    "task_id": "t_2ddf08b4760c8371c714834e",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_4579aa4359f6276c5dbed5d2",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.75,
+      "reason": "核心关系（贪心目标策略+探索行为策略=Q-learning，Expected Sarsa概括Q-learning）被候选5/6/7覆盖，但缺少对Sarsa的改进和计算成本代价的描述。"
+    },
+    "candidate_payload_hash": "sha256:45ff96aedf71ddd015fff3e6f1683a4c0cdd3136e0ae09004795824228312b8d"
+  },
+  {
+    "task_id": "t_2c1db8ea1bcabfe5916bcc03",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_cc8ed8d9b088df2fa2155806",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.8,
+      "reason": "候选断言未涵盖ρ_t为零时目标等于V_{h-1}(S_t)不改变估计的关键信息，且控制变基不改变期望更新的完整原因（与估计不相关、期望为零）也缺失。"
+    },
+    "candidate_payload_hash": "sha256:2526ff4e1e3959f61c35eaf3b78a17ba34f0bb65085f8448a3da786ed0cf9a69"
+  },
+  {
+    "task_id": "t_b95b261f30ef03050760645e",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_4297ffae59d5e6febcbbc006",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选图断言缺少关键难点：策略可能对应多种奖励信号导致无法精确求解，以及特征向量线性等强假设，未能完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:3b4034fd4b3529b4efe045894066c3182eda92e860460319891aac947003ced4"
+  },
+  {
+    "task_id": "t_e16dda3d62376865548a6180",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_0d612198bafa0af90654a1e3",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选1错误声称'所有'RL方法都估计价值函数；候选2仅提及进化方法，未列出具体反例（遗传算法、遗传编程、模拟退火等）"
+    },
+    "candidate_payload_hash": "sha256:5686070b0e4ef1d47f16ad227e5610c0e5305075d223cc8d74e6d93e208e9f35"
+  },
+  {
+    "task_id": "t_a1cef822320ad5a033f46d6a",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_04e816c9cf5f9ada5473a6e1",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.99,
+      "reason": "候选1明确指出实验在1980年代和1990年代初于Schultz实验室进行，完全回答了问题。"
+    },
+    "candidate_payload_hash": "sha256:3fe980915790c5c186cff6e33a434235ccb195642fb8d9093a000a692b3d0a25"
+  },
+  {
+    "task_id": "t_b9633bf148e6ea6849062345",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_af0b60430ba0784cd29c2b70",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.82,
+      "reason": "候选三元组覆盖了Sarsa和tree-backup情形，但未体现Expected Sarsa即'除最后一步外均采样'的关键细节。"
+    },
+    "candidate_payload_hash": "sha256:9fdf6fa0b7749aebbf53486c1f2764463e57d0d7b526bd3e122965e95250510f"
+  },
+  {
+    "task_id": "t_f91e5b3152d38e8ee3a23cdc",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_ea142300e5ea41290cca7204",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.78,
+      "reason": "候选图断言未完整覆盖核心要点：随机策略下无需选单一动作、任何分配方案均允许、亚最优动作概率为零。"
+    },
+    "candidate_payload_hash": "sha256:4e1d41fdbebf941f6401bd7be7aa5f0e70de4652b1df00e77b82d18e1f29b828"
+  },
+  {
+    "task_id": "t_ecd45884cb77120009f5d1b8",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_97d1dc99cd0a0cad190f9d19",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1和2共同表明不存在已知的per-decision加权重要性采样的一致性估计器，证据明确支持，可完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:7aae056c2c2596216f8bcc219af77058c0c2f642c070944962f67155b156ca04"
+  },
+  {
+    "task_id": "t_47b0af0d3fa10fb147c4a417",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_8b4d71246c2058f3338c1001",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "uncertain",
+      "confidence": 0.55,
+      "reason": "候选1提到逐步改进收敛到最优策略，但未明确阐述有限确定性策略数量导致有限步收敛这一关键论点。"
+    },
+    "candidate_payload_hash": "sha256:b57f8f90e9d989e301f533f1a87d580f8fa94347794a3857202bf8f62391ae91"
+  },
+  {
+    "task_id": "t_6c5e536c00b488eecd268e68",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_1b0b1f379d454efed7e0b414",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1、4、5分别覆盖了强化刺激、混合一级试验和强化价值丧失三个要点，证据段落完整支持，答案信息充分。"
+    },
+    "candidate_payload_hash": "sha256:dade9f7c17d3a776a202113ceceae97124dc50f27d384478dcc4579d44936111"
+  },
+  {
+    "task_id": "t_3a76e9c92e2d2fd6a30f3436",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_4eed3bcccdd252e263305b5c",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.9,
+      "reason": "候选3和7完整回答了问题：使用相同样本选择最大动作并估计其值会产生正最大化偏差，最大化噪声估计会高估真实最大值。"
+    },
+    "candidate_payload_hash": "sha256:c39781dadb4f2a333ef2dd0a8d41db100b1f5e601ed1cedd532552a362170275"
+  },
+  {
+    "task_id": "t_d22ec2f7fcff6f15b9b8be18",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_015102216e72bafcb680f91e",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.97,
+      "reason": "候选三元组覆盖了CTR目标、Yahoo! Front Page Today应用场景及12.5%提升幅度，足以完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:4f8549c4dd3c3596d9e879d06d0506e49707c4619ef93ef4d29dd9d410e0d4c1"
+  },
+  {
+    "task_id": "t_81ca3987b60c085f17f55ba9",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume",
+    "parent_task_id": "t_eb51866f98dcbbf62b66175c",
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1和2分别覆盖了'秒或分钟'和'几十步'两个要点，候选4也包含完整信息，足以完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:fa40c1c51fa99acbfdf6bdf6a45566258a28c25c4fb70ff3d14f759da17d18ab"
+  },
+  {
+    "task_id": "t_265152d1079f24208daecf1f",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_2b0dc7c77b50d3fda010b079",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选1、2覆盖了难以演示的原因（强化消退），但缺少关键的下半部分：可演示的条件（穿插一阶试验或提供激活刺激）。"
+    },
+    "candidate_payload_hash": "sha256:f9467ddc64b1744868f2bdb3d68e2e91ff048f8b0d27ffd8ad6cdb22b3cd478e"
+  },
+  {
+    "task_id": "t_212b8ddefd6777df1c863f45",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_96a1450af444a127fa34dde7",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1直接回答了问题：使用相同样本同时确定和估计最大动作会导致最大化偏差，与参考答案和证据一致。"
+    },
+    "candidate_payload_hash": "sha256:3756a9c74f65650a1420618ef031b7aba6ec61f0d1d7c3a161b1318164c42274"
+  },
+  {
+    "task_id": "t_57feae2386627adc0b6aef97",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_14d186862e9cae30f7e2738c",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选图断言未包含题目所需的关键信息：每秒/分钟计算时间和可前瞻数十步的具体内容。"
+    },
+    "candidate_payload_hash": "sha256:085a2098f4c7307ae213be8042d9c1c6b67c56374cee5e5eb6b4ea96e4d0a4f8"
+  },
+  {
+    "task_id": "t_61306fd5122773d595ed8bfa",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_ecaf593877ec718ac78f9cb1",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1直接回答了核心问题，且证据完整支持：当目标策略为贪婪而行为策略更具探索性时，Expected Sarsa即为Q-learning，并泛化Q-learning。"
+    },
+    "candidate_payload_hash": "sha256:8d4dfa84c3ffd58207f3bc49c9eca6908b53804077e6e477367c193f45cea262"
+  },
+  {
+    "task_id": "t_a556e989961efb36d9f1b35f",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_bab9794308b58c9f37a20c70",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1和7包含Sherman-Morrison名称及O(d²)计算和内存复杂度，与参考答案和证据一致。"
+    },
+    "candidate_payload_hash": "sha256:acc8d7732aa722dcab32843aef76cf17787f4b2eed9b124f86e8b9fe207324ee"
+  },
+  {
+    "task_id": "t_b0868d7d4c5a6af0dc0d9113",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_f1440ad9d1765e53b52ae402",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选断言未包含奖励（即时）与价值函数（长期）之间的核心区分，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:4a26e79b8f99514f89bd1abb8770b47a38e9cb22ccf4cabc595833cb6ae04faf"
+  },
+  {
+    "task_id": "t_1f0c1e79dd8caf23a871c3d0",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_ace3b3d7e35ea7f15078d60b",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.82,
+      "reason": "候选1和2合起来覆盖了完整答案：候选1说明stochastic情况下无需选单一动作且可分摊概率，候选2补充了非最大化动作概率为0的约束。"
+    },
+    "candidate_payload_hash": "sha256:2e79c96a8b04a1879a39c0eefd4ebedc3507623ec62b6a4c30a5403f1269fdeb"
+  },
+  {
+    "task_id": "t_51baafddcd004318b09a0711",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_e1283b92bff560cdb150c2f0",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.88,
+      "reason": "候选1直接回答了问题：所有已提出的per-decision加权重要性采样估计器都不一致，符合证据和参考答案。"
+    },
+    "candidate_payload_hash": "sha256:391b241f357a3eab79f095598b3affefd9394cc26cca50975bc7faec2068dc0d"
+  },
+  {
+    "task_id": "t_1babd2ea78d30e447982adfb",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_10ab86831723310be2f4c59b",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.97,
+      "reason": "候选1-4完整覆盖了答案（否）和反例（遗传算法、遗传编程、模拟退火等），与证据一致。"
+    },
+    "candidate_payload_hash": "sha256:dcad8c11648377d273084d1f2600d2c122f8b189cff6dcf327c44a3416f26065"
+  },
+  {
+    "task_id": "t_0fad674c075000decbbd1cb0",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_de5de409663778163982673e",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选1和8等明确包含参考答案核心信息：残差梯度算法找到与朴素版本相同的差解，说明最小化BE未必是理想目标，与证据一致。"
+    },
+    "candidate_payload_hash": "sha256:a4a3c6fa48dd1780d6a7870dd9ac88b77a331dcba4e92a681493ad5311a1dbdb"
+  },
+  {
+    "task_id": "t_e53b456d17b33d9fdd4c97c6",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_dfdc42d395c686d2ca752d6c",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.72,
+      "reason": "候选1和3覆盖了控制变量不改变期望更新的原因，证据虽截断但与参考答案一致；ρ_t为零时的行为也在证据和方程7.13中得到支持。"
+    },
+    "candidate_payload_hash": "sha256:e6868167dec197d511b97a2922d1e14dade5a419dc5270f85083f44f06cad652"
+  },
+  {
+    "task_id": "t_4b90e7b4c7677cb7101444f7",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_4545b87d67abf232781c3c07",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.72,
+      "reason": "候选3正确包含三个假设的核心原因，但候选4将backgammon误写为chess，缺少10^20状态的具体例子，信息有瑕疵但基本可回答。"
+    },
+    "candidate_payload_hash": "sha256:a1cedd3a999e96ed44ed1e1065c864a76880de336a0eda978a844b43b807dbf0"
+  },
+  {
+    "task_id": "t_23046d05d2d14f6f6a952994",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_d04fb39f6cdca9d93efa0329",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选2、3、6共同覆盖了所有要点：无法精确求解、多种奖励信号、需强假设（环境动力学和特征向量）、需多次完全求解问题，以及Abbeel和Ng的声明。"
+    },
+    "candidate_payload_hash": "sha256:03c947b8fafc9c7766189eba0b601913c98a827c5ba1acc8860b3e4aa78777f6"
+  },
+  {
+    "task_id": "t_660f59579fe79224cf83d3c2",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_fb0a8da908c536d7ce84a4f9",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.99,
+      "reason": "候选1完整覆盖了参考答案内容，且与证据文本完全一致，可完整回答该问题。"
+    },
+    "candidate_payload_hash": "sha256:67cb79b124a175c2d4ffd42cabedca258a0e9e094855739343cdb529df2a12af"
+  },
+  {
+    "task_id": "t_1e35dbfed2cbc816141085a8",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_752d6002b3e5b2cede3725ab",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.88,
+      "reason": "候选中仅第6条提到return与reward sequence有关，但未给出最简单情形下G_t=求和的定义，也未说明T是终止时间步，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:f074d516df6e207d35e67301ff94c57a43196c9b129ccd851d2ab205a7c2e94a"
+  },
+  {
+    "task_id": "t_35b796cce77dc8d5bf6e5f4f",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_fc6d74cdad00cc64887a969d",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.99,
+      "reason": "候选1完整回答了实验室归属（Wolfram Schultz）和实验时间（1980s和early 1990s），与参考答案一致。"
+    },
+    "candidate_payload_hash": "sha256:030efd492b4f98e89c5f0e7ab85218fb407e1a79983959838c7d6e3fdf857a6c"
+  },
+  {
+    "task_id": "t_5b42c1ee1b4f407d89f29b2b",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_fdaf8e500df73d1cb643f0f0",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.82,
+      "reason": "候选1、2、7、9覆盖了核心要点：无局部改进保证、ε-贪心可能产生劣策略、策略可能chatter、策略梯度方法有更强保证。"
+    },
+    "candidate_payload_hash": "sha256:ff8637e51b0a51b2cccfc766593863bf5ccfc591624e78ea995637deef8e55d5"
+  },
+  {
+    "task_id": "t_bb90862894d69e148493cc74",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_3dd3ce350ba1b7efae3aff1f",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选断言未包含CTR目标定义，仅候选1覆盖12.5%提升，缺少最大化点击率的具体目标信息。"
+    },
+    "candidate_payload_hash": "sha256:f255c23412fa16ff16dba1bf9cd9fe03bfb8c789022660bd47aa3c9793a9c600"
+  },
+  {
+    "task_id": "t_b8b50646c0f5641a28596207",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_b17ae9216835df9c9187674d",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.82,
+      "reason": "候选1说明了有限策略数导致有限步收敛，候选2说明了策略单调改进关系，基本覆盖了问题两部分核心内容。"
+    },
+    "candidate_payload_hash": "sha256:394936e8a2832783c51eaf1351121ae7ed7f1ea26a06f37f6ae36bbf3bd81a6d"
+  },
+  {
+    "task_id": "t_f3a9d1ff54ed3524d246822f",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_dee5d89b052b3be2daaeb628",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选2描述了三种算法的特征但缺少关键的条件回答：'总是采样→Sarsa、不采样→tree-backup、最后步不采样→Expected Sarsa'"
+    },
+    "candidate_payload_hash": "sha256:8960ee6ab4b558e264187eec964a3428c5a6c8c00ba303e08db9cc9d5dfb604a"
+  },
+  {
+    "task_id": "t_c348f14d8c7fb33cd64458ca",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_c0c1b56e1393724d341ce6a0",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.72,
+      "reason": "候选1、2、8、10共同覆盖了核心要点：乐观初始值鼓励探索、尝试多次后收敛、即使贪心选择也有探索，但缺少'低于估计的奖励令学习者失望从而切换动作'这一关键机制的显式表述。"
+    },
+    "candidate_payload_hash": "sha256:fb9fdcc565843ecfc9e508fc864bb3e536d86ab71a2044ad4a38426970cd5f5c"
+  },
+  {
+    "task_id": "t_ce307f4a07ac282689d7ac22",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_02a04e6b360b1d08a91ed1e2",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "候选断言中仅第9条提到REINFORCE是Monte Carlo方法，未包含完整回报及episode结束后更新的关键信息。"
+    },
+    "candidate_payload_hash": "sha256:7e2cb8f87c1e04a3c6d1fbb9ae592fde698afdef59e97224c972160a1b64a720"
+  },
+  {
+    "task_id": "t_89b8e2ebce6952767358d1b4",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_1cda8d1fe400dd19a46a1803",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.82,
+      "reason": "候选图断言缺少示例策略细节（红选臂1绿选臂2），仅覆盖了线索类型部分信息"
+    },
+    "candidate_payload_hash": "sha256:18eac0699211d015a971e97358133835c60dd2121561968e4e8e7be960a8af4f"
+  },
+  {
+    "task_id": "t_0024cad0f1ed82e5d4255792",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-official-c4-resume",
+    "parent_task_id": "t_75e86a1432c742a50556e4e6",
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.82,
+      "reason": "候选1、4、6、8共同覆盖了答案要点：后99个因子与回报独立、期望值为一、不改变期望但增加（甚至无穷大）方差，证据虽截断但支持独立性等关键声明。"
+    },
+    "candidate_payload_hash": "sha256:02304eb266cb525e48da1220a26872f09e79c5b3a9081e89dce5b74075aa438d"
+  },
+  {
+    "task_id": "t_401ada275e54ec5b7164cb0c",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_f367a1dfb20e5f5eec83a98e",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "证据明确支持参考答案，但候选断言中没有任何一条涉及离线应用或数据廉价生成的结论，无法回答该问题。"
+    },
+    "candidate_payload_hash": "sha256:11fa2779901a4abd5e01631b97ea277cd5450a121b6ca84096fe0b5553957f3e"
+  },
+  {
+    "task_id": "t_b8c78333489c011dd2b1c5d0",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_594407e726426eb6fa0efa75",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选三元组多为分类关系，未包含解释为何高阶条件反射难以演示的原因及具体例外条件，信息不足以完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:dec32dcbc7751a209d5250bc7879c440159b555e998d0a3fed361d3aee8c824d"
+  },
+  {
+    "task_id": "t_4d72b4e6e9c7f1932f7b33c8",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_7c64795a4b28ec6c6dee53c9",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.82,
+      "reason": "候选2明确给出名称Sherman-Morrison和O(d²)计算复杂度，证据也支持O(d²)内存，核心信息完整可回答问题。"
+    },
+    "candidate_payload_hash": "sha256:9b222a48540cff66d390269e343c35278843440d7785685ce9440f3dbd66dae4"
+  },
+  {
+    "task_id": "t_10c4f8b4de47d0b5c6dd100a",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_e89b2a3b7be7f2c3f0ba05dc",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "候选三元组均为概念间关系，未包含题目所需的线索内容（独特身份提示而非动作值）及示例策略（红选1绿选2）"
+    },
+    "candidate_payload_hash": "sha256:ef864ee29fe8e60ded3b27700cc2b3198a4819272fc4e52191845f0c062613c1"
+  },
+  {
+    "task_id": "t_66cd463d01937d3c2ce80c42",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_8d864da380fd055027075f70",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选断言仅描述Bellman最优方程的定义与作用，未包含三大约束假设和双陆棋算例等关键信息。"
+    },
+    "candidate_payload_hash": "sha256:f1718b5d589ae6101acddef6223a92fe220a83a6d5a467bfec0489d223da95bf"
+  },
+  {
+    "task_id": "t_840c029aa8dd1edc11cc6318",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_7c209f8a9bc89c332f634ee4",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.82,
+      "reason": "候选三元组仅重复乐观初始值鼓励探索，未包含关键机制：低于乐观估计的回报使学习者失望并转向其他动作"
+    },
+    "candidate_payload_hash": "sha256:7901374d5450f70b53c2a17c9c116343a40896f1590550c5cdf9621ad931a0a3"
+  },
+  {
+    "task_id": "t_b637ae7570c0f538db00bb15",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_c4054ee06c9bca5329ce9bad",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "候选断言未包含局部策略改进保证丧失、ε-贪心可能产生劣策略及策略chatter等关键信息，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:4eaa359aca25452979e76306300f4d48969023ecb55b987f077e67c9afe6eee9"
+  },
+  {
+    "task_id": "t_0af6a8ceabdca3197fcd069d",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_a62cbca02b107cbc7e3cf82f",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "uncertain",
+      "confidence": 0.62,
+      "reason": "候选图谱涉及方差增大和期望值为1，但未明确体现'与已确定回报独立'这一关键解释点。"
+    },
+    "candidate_payload_hash": "sha256:339ab98978d18cc589a19d7673cb2a66db6c8fd26620f7203adbf1212668b23d"
+  },
+  {
+    "task_id": "t_46def11ddefaab542c12ea29",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_a78e60c8629443d331c50411",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选断言均未体现奖励（即时/主要）与价值函数（长期/次要预测）的核心区分，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:0b20080a4042ce4b645fe2139d7c61898d183b9120c718d4b8e4274bd71786aa"
+  },
+  {
+    "task_id": "t_fa3c624419e4eb4ecab4a5f8",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_718441e0b45680e43b5009bf",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "候选8明确指出per-decision importance sampling estimator缺乏estimator consistency，与证据及参考答案一致。"
+    },
+    "candidate_payload_hash": "sha256:366c7400c1ca2c70a1b277bb4768bc20e761ee94f3653e05ce51e47a4621dad4"
+  },
+  {
+    "task_id": "t_abd530ad334fe356fd6adefc",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_88a836d8d626d744327c3aa5",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.85,
+      "reason": "证据段落完整包含参考答案所述规则，候选1虽措辞略偏但捕捉了核心关系。"
+    },
+    "candidate_payload_hash": "sha256:05a27afac85fa18e3b401a3ebe53be651f7a77be4fc69bdb4b99d17cbd37f1a5"
+  },
+  {
+    "task_id": "t_ae376e756a0148a4c834a4bf",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_a73d02ed915f49d55056ac2c",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.88,
+      "reason": "候选断言未包含核心信息：始终采样得Sarsa、从不采样得tree-backup、最后一步不采样得Expected Sarsa。"
+    },
+    "candidate_payload_hash": "sha256:866a03fd958f97ca15cf1baecc5fd4f68a9978ccdbd1b9893fabb0a3d1e381b8"
+  },
+  {
+    "task_id": "t_f61195c8b0acd6793898c567",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_83ce847d02f3a106f8c139c6",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选1仅涉及有限收敛，未包含策略序列单调严格改进及有限确定性策略数等关键信息，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:6b45539154d09bb81cd4d227ea0fd7e33e35a392b482154948db9c693788e794"
+  },
+  {
+    "task_id": "t_a709d84ee970260e549675f1",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_26f819e51ed9f23571ba1760",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "uncertain",
+      "confidence": 0.72,
+      "reason": "证据在关键处被截断，未完整展示ρ_t为零时的完整解释及控制变量不改变期望更新的原因。"
+    },
+    "candidate_payload_hash": "sha256:64754e61a5c1934110a2966f96212cb6768bc287a463418dd0729c05eb1d5676"
+  },
+  {
+    "task_id": "t_93a640398b6e8a80831d4456",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_0dc03802567845ea6b502b27",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.72,
+      "reason": "候选2指出优化方法不估计价值函数，候选3表明RL寻求估计价值函数，结合证据可回答'不是所有方法都估计'及反例。"
+    },
+    "candidate_payload_hash": "sha256:e7ec25e9f242478b53069933a62fad99f46ad1d83e381aadbc2de0996a495ce9"
+  },
+  {
+    "task_id": "t_d766ae67d8201abb7b4c6cd9",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_4ec6c3ee7603eb7807933916",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "检索到的断言大多无关，仅候选4部分提及REINFORCE更新参数θ，未包含完整回报、回合制及回顾更新等关键信息。"
+    },
+    "candidate_payload_hash": "sha256:07296ad718b1c53d5f6c96ae7341701f8b2218ab1eb9f0ada18a4161d3cbc516"
+  },
+  {
+    "task_id": "t_ab788a8ccf64e5e36575d78c",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_f902cc10ee7aee17f584d916",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.82,
+      "reason": "候选1和6分别对应参考答案的'相同差解'和'BE可能不是理想目标'两个要点，足以回答该问题。"
+    },
+    "candidate_payload_hash": "sha256:f938d88dada278c30789bdda615d4ad340c30769a986312c1ddf2aade78aced9"
+  },
+  {
+    "task_id": "t_c04cf6dc2f635286f233ec2f",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_ee8c74ce1c31497f001d2d8a",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.72,
+      "reason": "候选图断言缺少核心难点：策略可对应多个奖励信号导致无法精确求解，以及特征向量线性假设等关键信息，答案不完整。"
+    },
+    "candidate_payload_hash": "sha256:6c2855226c2c4941556b0d35d43af28080c364d5320bf48683094b7403d1607c"
+  },
+  {
+    "task_id": "t_3947cab0ffe6a7733343d2d2",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_4df21f24b9298855b9e7ca9b",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "候选三元组仅提及R_{t+1}和reward等片段，缺少G_t求和公式及T为最终时间步的关键信息，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:d166f7d1ab57eaf5acd8ffbb26a22d1136bdf824df5091244e12a690067b1c6a"
+  },
+  {
+    "task_id": "t_e7bf29a0e461923c2ccab8e9",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_2f733763ad55e9f193da8e8f",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "候选断言中没有包含'秒或分钟计算时间'和'数十步前瞻'等关键信息，无法回答问题。"
+    },
+    "candidate_payload_hash": "sha256:f73b654daf961c1e267dd2da9eac363d7ab7beb33d4a0df945a91c28c6bfc9f2"
+  },
+  {
+    "task_id": "t_7b6cbfb2bf45b3c7759af39a",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_58fcdde9dadc8d9789ba1b0f",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "候选断言未包含CTR最大化目标和12.5%改进幅度等关键定量信息，无法完整回答问题。"
+    },
+    "candidate_payload_hash": "sha256:7c2b9fec24a1c3b82b7563f16f301c17d5a227949e48ba1ede39be5a97446374"
+  },
+  {
+    "task_id": "t_b31c2bd9612d75e278581e5c",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_30e5f344451e136b6f916293",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "pass",
+      "confidence": 0.88,
+      "reason": "候选5、6、9、10结合证据覆盖了参考答案要点：贪心目标策略+探索行为策略时Expected Sarsa即为Q-learning，且subsumes and generalizes Q-learning。"
+    },
+    "candidate_payload_hash": "sha256:f5bf9abb9994ba3a0cec1691ac8f4fc64c17abc09fe354d535c523269a5b4cd6"
+  },
+  {
+    "task_id": "t_1002ee988dfe671262a11fea",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_73e820ebb57d0947db93cff1",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.82,
+      "reason": "候选三元组多为噪声或语义错配，无法完整回答同一样本用于选择和估计导致正最大化偏差的问题。"
+    },
+    "candidate_payload_hash": "sha256:7ff3f2f8ed96d440b7c1e2ab4f31aab7344d766d36a0adc02e0014578954be55"
+  },
+  {
+    "task_id": "t_186163075555ce8ef191ecad",
+    "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/evaluation-official-c4-resume",
+    "parent_task_id": "t_474400526bc7cd4aca056e83",
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "previous_status": "done",
+    "previous_value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "候选图谱断言均未提及Schultz实验室或1980年代/1990年代初，无法回答该问题。"
+    },
+    "candidate_payload_hash": "sha256:1ac8ba3b6e93d370ebada5faeed2273f635bf11d8aaac75f247aa1d0fa438d95"
+  }
+]

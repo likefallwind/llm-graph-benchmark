@@ -1,0 +1,11 @@
+{
+  "note": "输出格式核对：claims.text 必须按顺序完整摘录原描述，保留原有字符，包括末尾的引号或 > 等符号；evidence_ids 只能逐字选用本次输入 evidence 中的 id，不得改变数字或自行生成编号。评分标准仍按原任务，支持、不支持、不确定均可如实返回。",
+  "reason": "Original full-span and evidence-ID requirements; no semantic rubric changes",
+  "task_ids": [
+    "t_6c6695f28368325778b16399",
+    "t_69d7dd6b42c79942200edbfc",
+    "t_12873a45002ae06d637baac3"
+  ],
+  "model": "MiniMax-M3",
+  "concurrency": 4
+}

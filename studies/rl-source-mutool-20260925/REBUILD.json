@@ -1,0 +1,25 @@
+{
+  "units": 2920,
+  "methods": {
+    "heading_kept": 189,
+    "mutool_span": 1835,
+    "unchanged": 630,
+    "symbol_patch": 266
+  },
+  "changed_units": 1617,
+  "recovered_symbols": {
+    "−": 916,
+    "λ": 398,
+    "β": 30,
+    "γ": 436,
+    "≥": 46,
+    "∆": 10,
+    "δ": 178,
+    "σ": 28,
+    "θ": 3,
+    "φ": 4,
+    "∗": 1,
+    "π": 6
+  },
+  "document_content_hash": "sha256:9e328a96b9d0c8323f2fc31a11871985edfa3581122f52736d45a6dc07519f00"
+}

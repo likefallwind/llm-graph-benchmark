@@ -1,0 +1,26 @@
+{
+  "rule": "Preserve all successful results byte-for-byte. For failed cases select earliest historical response passing patched parser, regardless of semantic labels.",
+  "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-reviewed-v1-periodfix",
+  "copied_successful": 928,
+  "recovered": [
+    {
+      "task_id": "t_fc14d749803c6702ae205d82",
+      "attempt": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-reviewed-v1/api/requests/a3ada762b811471ab5ea1d74b8fd0c7d/attempt-1.json",
+      "sha256": "96f82da1c4abbb0e85556737508ea27d4c09921785d916aea0ffc1ccbc11e9e3"
+    },
+    {
+      "task_id": "t_2ddd9bdaa7a3e6f7d04b5e59",
+      "attempt": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-reviewed-v1/api/requests/d041806f59d1431ea9e7e611ce10ec7d/attempt-2.json",
+      "sha256": "e80cfa8cd4f7aa49ec71deb130e7b04c8ade111e3e1b6b103d3cc808534afd1c"
+    },
+    {
+      "task_id": "t_1c0a07ba75f4975b4356480a",
+      "attempt": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/evaluation-reviewed-v1/api/requests/172e978a05de4707951739d07cbf4709/attempt-1.json",
+      "sha256": "9256b84bfd8ee955ae975dae707b5f66084be3f0c3ccb0395582bf1b4ce5d0de"
+    }
+  ],
+  "pending": [
+    "t_32756e2764523634d936a673"
+  ],
+  "new_api_calls": 0
+}

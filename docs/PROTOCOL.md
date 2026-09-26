@@ -1,80 +1,70 @@
-# Evaluation protocol
+# 当前评测协议：selected-metrics-v5-identity-sources
 
-The [versioned quality protocol](QUALITY_PROTOCOL.md) specifies joint assertion quality,
-strict versus core fact recovery, transparent denominators and paired comparisons.
-Legacy study results keep their original semantics; new tasks require fresh judgments.
+这是新工作流唯一的默认指标集合。旧 quality / reliability 文档是历史记录。
+执行方式见 [WORKFLOW.md](WORKFLOW.md)，注册表与具体提示位于 src/llm_graph_benchmark/workflow/protocol.py。
 
-## Claims this benchmark supports
+## 质量指标、证据与分母
 
-The protocol is designed to support a bounded claim: one document-to-KG system produces a more
-grounded, complete, identity-consistent and useful graph than named comparison systems under frozen
-inputs and resources. It does not treat graph size or connectivity as quality by itself.
+|指标|评什么、证据范围|分母/聚合|
+|---|---|---|
+|完整断言正确率|端点、谓词、方向、描述全部实质内容、必要限定和否定；使用提交引用所在完整小节|固定断言样本；正确/错误/不确定分别占比|
+|关系表达粒度|完整原生断言含自然语言描述；不读原文、不判断真假|固定断言样本的 L1/L2/L3/不确定分布|
+|具体且正确覆盖|同条断言的 L3 与完整正确相交|全部断言；另报告正确 L3 / 全部 L3|
+|实体所指正确率|名称所指是否为上下文中的有效对象，不评价是否值得建模；引用及左右各一单元|全部抽样实体|
+|实体引用支持率|提交的真实原文是否支持名称所指；不补邻段|全部抽样实体|
+|类型标签兼容正确率|逐个原生标签与实体类别是否兼容；完整提交来源，兼容上位类别允许通过|每实体通过标签数/所有标签数，再对有字段实体宏平均|
+|正确类型粒度|只看通过标签，每实体取最具体正确类型 L1/L2/L3；无通过类型、缺字段单列|类别计数；正确且 L2/L3、正确且 L3 覆盖以全部抽样实体为分母|
+|整段描述支持率|完整原生描述与全部提交来源一起输入，整段判支持/不支持/不确定；不分段、不补全书、不评类型|支持数/有原生描述的实体样本数；同时报告不支持率与不确定率|
+|别名同一性|非平凡别名与实体是否同指；实体全部提交来源不截断，并可结合可靠通用知识|别名分配样本，最多每文档30项|
+|实体拆分|共享规范化表面形式的两个实体是否应分开；双方各自的全部提交来源不截断，并可结合可靠通用知识|碰撞候选对样本，最多每文档30对；不是全部实体拆分质量|
+|完整事实探针覆盖（参考）|固定候选是否共同支持目标事实全部实质内容及必要条件|benchmark 提供的全部探针；不是全书召回，不单独用于判断方法优劣|
 
-## Tracks
+宏平均中的 fail 与 uncertain 均不计通过，但 uncertain 仍在分母。技术失败没有语义标签，不算错误；只要还有技术未评，主表就显示“未完成”，JSON 保留已判子集统计并明确标记。
+缺原生字段不送裁判、不换样本，单独报告字段覆盖；没有可评字段/候选记 N/A 并给原因。
+各方法独立抽样，不能声称是同实体配对实验，不组合 F1 或综合总分。
 
-1. **Module-controlled track**: every system receives the same source units. Use this to compare
-   extraction and graph construction without confounding document parsing or chunking.
-2. **End-to-end track**: every system receives the same raw document and may parse or chunk it
-   independently. Report parsing failures and resource use as part of the system result.
+## 粒度
 
-Results from the two tracks must not be mixed in one ranking.
+关系 L1 只说明相关；L2 说明宽泛关系类别；L3 说明具体作用、角色、归属等可核验关系。
+依据谓词与描述共同判断。GraphRAG 的通用谓词可以由自然语言描述具体化，不能只按 related_to 字符串判 L1。
+错误的具体关系仍可为 L3，正确性单独评。
 
-## Evaluation directions
+类型 L1 为泛类，L2 为一般功能/领域类别，L3 为更能区分功能/性质的具体类别。
+上位类别兼容时不扣正确性分；精确程度通过粒度体现。没有通过的标签不能获得粒度信用。
 
-### Graph to source
+## 保留的结构与构图用量
 
-Blindly sample submitted objects and judge narrow questions against cited source evidence:
+完整图实体数、断言数、语义评测候选断言数、实体/断言引用存在率、孤立实体率、
+最大连通分量占全部节点比例、原生类型/描述/别名字段覆盖、别名条目数。
+多文档按各图的实体和边汇总，文档间不连接；最大连通分量取这些分量中的最大者。
 
-- `entity_admission`: stable, referable, substantive, and grounded;
-- `entity_typing`: every submitted type is compatible with the entity and context;
-- `entity_definition_grounding`: the definition adds no material unsupported content;
-- `assertion_grounding`: full directed claim is supported;
-- restrictive scope and polarity are preserved as part of assertion grounding.
+构图输入、输出、总 Token 除以1,000,000，单位 million。
+使用 submission.runtime 或显式构图用量文件；缺失为 N/A，不混入评测调用用量。
+完整图与语义子集可分开提交，必须标明范围，且子集实体/断言不得被改写。
 
-This estimates precision-like quality. The production pipeline's internal checker remains part of
-the evaluated system; it never substitutes for the common external judge.
+## 复用与版本
 
-### Source to graph
+完整断言沿用 ledger v2.5（原文核对 + 命题忠实性核对），关系粒度与实体所指沿用已有规则。
+描述使用 description-whole-v2：每条描述只返回一个标签、理由与引用 ID。支持要求所有实质内容获得来源支持；明确错误或缺乏支持判不支持，来源歧义等无法可靠判断时判不确定。不确定仍在分母。旧片段分数不转换为新标签，重评保留原样本、描述和证据。
+类型增加 type_id + type_text 绑定，避免仅按数组位置串项，版本独立记录为 type-boundary-v2-label-binding。
+不添加样本特例、不按预期排名重抽或修改提示。新工作流任务使用新版本和独立固定抽样，不自动导入旧标签。
 
-Fact probes are constructed independently from source units and checked against graph candidates
-retrieved with one frozen retriever. This detects omissions shared by all compared systems and gives
-a recall-like fact-recovery measure without requiring a complete gold graph.
+别名与拆分（alias-full-sources-knowledge-v2、split-full-sources-knowledge-v2）展示各实体提交的全部引用原文，按段落去重、不截断，仍用 pass/fail/uncertain 判定。两者都以原文为依据之一，同时可结合可靠通用知识（单复数、缩写、中英术语对应、标准含义），书中所指与通用含义不一致时以书为准；别名的原文未出现别名本身不构成失败。系统生成的类型和描述只用于理解对象，不能证明自身。旧版把别名原文截到1200字符（RL 样本中我们 25/30、KGGen 30/30 被截断），拆分没有原文，两者结果不与新版混用。
 
-Report retrieval failures separately when possible. A semantic retriever should be validated on a
-small human-labelled slice before it is used for headline results.
+完整事实探针覆盖是参考指标：固定事实探针在 BM25 Top10 候选中得到完整支持的比例。检索为固定 char-ngram BM25（k1=1.2、b=0.75），候选完整显示，不提供原文给候选补缺。它同时受图谱覆盖和检索召回影响，未通过不一定表示图谱缺少该知识。例如强化学习书探针为英文，本方法 78.6% 的断言含中文，而 BM25 检索出的候选中含中文的只占 49.2%，词面检索对中英混合图谱存在召回偏差。
+原文、模型、提示、代码、抽样、检索和提交哈希随运行冻结；同样的有效结果复用，不按语义好坏重试。
 
-### Identity, utility, stability and efficiency
+## 已移除
 
-- Judge sampled `alias_identity` assignments and collision-derived `identity_split` pairs;
-- report ambiguous normalized surface groups as diagnostics, not automatic errors;
-- use frozen `book_qa` questions to test whether retrieved graph assertions can answer the book;
-- compare repeated runs on exactly the same source-unit scope using Entity and Assertion overlap;
-- report elapsed time, tokens, cost and unit-output rates; missing historical telemetry is
-  `unavailable`, never zero.
+2026-09-24 决定移除 Book QA，包括旧单分数及核心信息/完整答案双指标。它混合图谱信息覆盖、检索召回和答案支持，当前不作为论文或默认评测指标。新工作流不检索QA候选、不生成答案要点、不调用QA裁判、不输出QA分数；输入中的旧QA文件仅为历史契约兼容保留。已完成试评及冻结代码保存在 results/sutton-barto-qa-dual-20260924，不覆盖原结果。
+完整事实探针覆盖不随QA移除，2026-09-24 确定保留为参考指标，检索器不变。
 
-Book QA and fact recovery may share source facts, so they must be reported separately and must not
-be added as statistically independent evidence.
+历史断言引用支持率、旧关系分项、三轴联合分数、宽口径核心事实覆盖不再进入新工作流。
+稳定性、谓词种类数、表面重复组数、每条产出效率、美元成本和裁判一致性不列入当前主指标集合。
+历史工具和记录保留，不影响当前固定报告。
 
-## Human calibration
+## 解释边界
 
-LLM judgments are not accepted as ground truth without calibration. Draw a stratified human sample
-containing both random tasks and cross-judge disagreements. Report agreement, false acceptance,
-false rejection, abstention and judge-family sensitivity. Human effort is used to validate the
-evaluator, not to annotate an entire book graph.
-
-## Fairness and reproducibility
-
-- Freeze document hashes, source-unit boundaries, rubric, fact probes, task seed and sample sizes.
-- Blind system identity in public tasks and randomize presentation order.
-- Use the same external judge and retriever for every submission.
-- Record extraction model, prompt/version fingerprint, elapsed time, tokens and cost.
-- Never evaluate a live mutable graph database; export a completed immutable submission snapshot.
-- Report bootstrap or Wilson confidence intervals and do not collapse dimensions into one total.
-
-## Recommended paper table
-
-| System | Entity admission | Typing | Definition | Assertion | Fact recovery | Identity | Book QA | Stability | Cost |
-|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-
-Structure metrics, error slices, checker ablations and judge calibration belong in separate tables
-or appendices so that high graph density cannot hide low semantic quality.
+模型评分不是人工金标准，程序测试也不是语义准确率验证。审阅 case-results.json 及原始响应；
+已有的类型评价越界、理由错位、描述理解歧义，不能仅靠格式校验彻底解决。
+单书独立抽样的细小差距不足以确定方法排名。

@@ -1,0 +1,674 @@
+{
+  "t_dea6c942b64db3dea9edb85a": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_df365526a40f0e4d004e88b2": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_c877b84db007bfad86656cb8": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_671c204d02f4a79d544c263f": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_2b719429c87c60c17908effa": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_684d823d8d949d9919cf322b": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_9cf4fbd6854789e22ba47971": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_1d80e5c9cf9ea52beca73776": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_608632bd9391870ea17a4afd": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_bfbed90c62e7558264808f4a": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_40d70dda0c3e6e54b556fa6c": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_eb435a0bcadeb91d035e90d3": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_9eb9e9b475c79b63ff5a09a9": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_7af750756a5cbcf57a259d40": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_d9917d1d7a1c8d26302ccde7": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_f439edb25827712d871b5d6d": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_b8b20ab52d20a63ccb38a870": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_8f47f3a5efa25c71a27834e7": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_5c9bed7413cf8f55aed61e9d": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_f26e623d90d45a7f65d4f8be": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_d751cffe77740af3b4e8c310": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_4163cbfa0369fd76c04c8d21": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_c375ac9a4a9b2b9c8d167dc7": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_e075f76032bc3d644d998731": {
+    "system": "ours-sutton-barto-incremental-m3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa"
+  },
+  "t_d200225083462777d19c5058": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_4660b92cde74b71e61fd6fb7": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_083e5798a4f296255bb7e6e7": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_37f4c1d44848ff6a5c4d6c41": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_55ff93e0bada3af27393e898": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_adab56d219ae9e515c5db35c": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_e457ed9b1ea589260dbb46c1": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_3a07b584b38e0df08d180302": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_9326632faeef17ea560c4800": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_691aa00d227af781f5158c10": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_55a40c3e695c670e08034a50": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_2ddf08b4760c8371c714834e": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_2c1db8ea1bcabfe5916bcc03": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_b95b261f30ef03050760645e": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_e16dda3d62376865548a6180": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_a1cef822320ad5a033f46d6a": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_b9633bf148e6ea6849062345": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_f91e5b3152d38e8ee3a23cdc": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_ecd45884cb77120009f5d1b8": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_47b0af0d3fa10fb147c4a417": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_6c5e536c00b488eecd268e68": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_3a76e9c92e2d2fd6a30f3436": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_d22ec2f7fcff6f15b9b8be18": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_81ca3987b60c085f17f55ba9": {
+    "system": "graphrag-m3-standard-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db"
+  },
+  "t_265152d1079f24208daecf1f": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_212b8ddefd6777df1c863f45": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_57feae2386627adc0b6aef97": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_61306fd5122773d595ed8bfa": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_a556e989961efb36d9f1b35f": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_b0868d7d4c5a6af0dc0d9113": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_1f0c1e79dd8caf23a871c3d0": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_51baafddcd004318b09a0711": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_1babd2ea78d30e447982adfb": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_0fad674c075000decbbd1cb0": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_e53b456d17b33d9fdd4c97c6": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_4b90e7b4c7677cb7101444f7": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_23046d05d2d14f6f6a952994": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_660f59579fe79224cf83d3c2": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_1e35dbfed2cbc816141085a8": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_35b796cce77dc8d5bf6e5f4f": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_5b42c1ee1b4f407d89f29b2b": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_bb90862894d69e148493cc74": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_b8b50646c0f5641a28596207": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_f3a9d1ff54ed3524d246822f": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_c348f14d8c7fb33cd64458ca": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_ce307f4a07ac282689d7ac22": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_89b8e2ebce6952767358d1b4": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_0024cad0f1ed82e5d4255792": {
+    "system": "autoschemakg-m3-full-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324"
+  },
+  "t_401ada275e54ec5b7164cb0c": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch12-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_b8c78333489c011dd2b1c5d0": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch14-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_4d72b4e6e9c7f1932f7b33c8": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch09-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_10c4f8b4de47d0b5c6dd100a": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_66cd463d01937d3c2ce80c42": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_840c029aa8dd1edc11cc6318": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch02-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_b637ae7570c0f538db00bb15": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch10-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_0af6a8ceabdca3197fcd069d": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_46def11ddefaab542c12ea29": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_fa3c624419e4eb4ecab4a5f8": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch05-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_abd530ad334fe356fd6adefc": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_ae376e756a0148a4c834a4bf": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_f61195c8b0acd6793898c567": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch04-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_a709d84ee970260e549675f1": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch07-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_93a640398b6e8a80831d4456": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch01-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_d766ae67d8201abb7b4c6cd9": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch13-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_ab788a8ccf64e5e36575d78c": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch11-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_c04cf6dc2f635286f233ec2f": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch17-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_3947cab0ffe6a7733343d2d2": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch03-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_e7bf29a0e461923c2ccab8e9": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch08-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_7b6cbfb2bf45b3c7759af39a": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch16-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_b31c2bd9612d75e278581e5c": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_1002ee988dfe671262a11fea": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch06-2",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  },
+  "t_186163075555ce8ef191ecad": {
+    "system": "kggen-m3-lm-based-en-rl",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "rl-qa-ch15-1",
+    "metric": "book_qa",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "labels": [
+    "pass",
+    "fail",
+    "uncertain"
+  ],
+  "dimensions": [
+    {
+      "id": "assertion_correctness",
+      "question": "完整断言正确率",
+      "version": "assertion-ledger-v2.5"
+    },
+    {
+      "id": "relation_granularity",
+      "question": "关系表达粒度",
+      "version": "relation-granularity-v1"
+    },
+    {
+      "id": "entity_correctness",
+      "question": "实体所指正确率",
+      "version": "referent-v1.1"
+    },
+    {
+      "id": "entity_evidence",
+      "question": "实体引用支持率",
+      "version": "referent-evidence-v1.1"
+    },
+    {
+      "id": "entity_typing",
+      "question": "类型标签兼容正确率",
+      "version": "type-boundary-v2-label-binding"
+    },
+    {
+      "id": "entity_description",
+      "question": "实体描述上下文支持率",
+      "version": "description-boundary-v1"
+    },
+    {
+      "id": "alias_identity",
+      "question": "别名同一性正确率",
+      "version": "legacy-rubric-v1"
+    },
+    {
+      "id": "identity_split",
+      "question": "实体拆分正确率",
+      "version": "legacy-rubric-v1"
+    },
+    {
+      "id": "book_qa",
+      "question": "Book QA 支持率",
+      "version": "legacy-rubric-v1"
+    },
+    {
+      "id": "fact_recovery",
+      "question": "完整事实探针覆盖",
+      "version": "complete-fact-v1"
+    }
+  ]
+}

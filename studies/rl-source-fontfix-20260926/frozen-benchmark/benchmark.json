@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "benchmark_id": "sutton-barto-2e-rl-book2-v1",
+  "title": "Reinforcement Learning: An Introduction, 2nd ed.",
+  "documents_file": "documents.jsonl",
+  "fact_probes_file": "fact_probes-reviewed.jsonl",
+  "qa_probes_file": "qa_probes-reviewed.jsonl",
+  "rubric_file": "rubric.json",
+  "metadata": {
+    "probe_version": "source-reviewed-v1",
+    "draft_retained": true,
+    "graph_judgments_seen": false,
+    "source_text": "fontfix-rebuild-20260926; unit IDs unchanged"
+  }
+}

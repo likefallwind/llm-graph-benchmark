@@ -1,0 +1,724 @@
+{
+  "latest_entity100": {
+    "ours": {
+      "entity_typing": {
+        "total": 97,
+        "sampled": 100,
+        "field_absent": 3,
+        "done": 97,
+        "macro_supported_rate": 0.8495254459171985,
+        "preserved30_rate": 0.9103174603174603,
+        "added70_rate": 0.8223051409618574,
+        "whole": {
+          "fail": 28,
+          "pass": 67,
+          "uncertain": 2
+        },
+        "atomic": {
+          "pass": 182,
+          "fail": 46,
+          "uncertain": 4
+        },
+        "finest_supported_type": {
+          "L3": 16,
+          "L2": 55,
+          "L1": 23,
+          "none": 3
+        },
+        "supported_label_levels": {
+          "L3": 20,
+          "L2": 105,
+          "L1": 57
+        }
+      },
+      "entity_definition_grounding": {
+        "total": 100,
+        "sampled": 100,
+        "field_absent": 0,
+        "done": 100,
+        "macro_supported_rate": 0.9525,
+        "preserved30_rate": 0.925,
+        "added70_rate": 0.9642857142857143,
+        "whole": {
+          "uncertain": 7,
+          "pass": 91,
+          "fail": 2
+        },
+        "atomic": {
+          "pass": 238,
+          "uncertain": 7,
+          "fail": 4
+        },
+        "finest_supported_type": {},
+        "supported_label_levels": {}
+      }
+    },
+    "graphrag": {
+      "entity_typing": {
+        "total": 100,
+        "sampled": 100,
+        "field_absent": 0,
+        "done": 100,
+        "macro_supported_rate": 0.8794444444444445,
+        "preserved30_rate": 0.95,
+        "added70_rate": 0.8492063492063492,
+        "whole": {
+          "pass": 85,
+          "uncertain": 7,
+          "fail": 8
+        },
+        "atomic": {
+          "pass": 116,
+          "uncertain": 7,
+          "fail": 9
+        },
+        "finest_supported_type": {
+          "L1": 62,
+          "L2": 24,
+          "none": 10,
+          "L3": 4
+        },
+        "supported_label_levels": {
+          "L1": 80,
+          "L2": 32,
+          "L3": 4
+        }
+      },
+      "entity_definition_grounding": {
+        "total": 100,
+        "sampled": 100,
+        "field_absent": 0,
+        "done": 100,
+        "macro_supported_rate": 0.9061904761904762,
+        "preserved30_rate": 0.8444444444444444,
+        "added70_rate": 0.9326530612244898,
+        "whole": {
+          "pass": 81,
+          "uncertain": 11,
+          "fail": 8
+        },
+        "atomic": {
+          "pass": 229,
+          "uncertain": 13,
+          "fail": 9
+        },
+        "finest_supported_type": {},
+        "supported_label_levels": {}
+      }
+    },
+    "autoschemakg": {
+      "entity_typing": {
+        "total": 100,
+        "sampled": 100,
+        "field_absent": 0,
+        "done": 100,
+        "macro_supported_rate": 0.8380357142857143,
+        "preserved30_rate": 0.7975793650793651,
+        "added70_rate": 0.8553741496598639,
+        "whole": {
+          "pass": 50,
+          "fail": 30,
+          "uncertain": 20
+        },
+        "atomic": {
+          "pass": 504,
+          "fail": 56,
+          "uncertain": 46
+        },
+        "finest_supported_type": {
+          "L3": 34,
+          "L2": 63,
+          "L1": 3
+        },
+        "supported_label_levels": {
+          "L2": 322,
+          "L3": 47,
+          "L1": 135
+        }
+      }
+    }
+  },
+  "latest_coverage": {
+    "ours": {
+      "total": 48,
+      "pass": 40,
+      "fail": 8
+    },
+    "graphrag": {
+      "total": 48,
+      "pass": 46,
+      "fail": 2
+    },
+    "autoschemakg": {
+      "total": 48,
+      "pass": 45,
+      "fail": 3
+    },
+    "kggen": {
+      "total": 48,
+      "pass": 28,
+      "fail": 19,
+      "uncertain": 1
+    }
+  },
+  "historical_entity": {
+    "autoschemakg": {
+      "selected": 100,
+      "correctness": {
+        "correct": 97,
+        "incorrect": 1,
+        "uncertain": 2,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 0.97,
+        "rate_decided": 0.9897959183673469,
+        "wilson_decided": [
+          0.9444451900865797,
+          0.9981964522432024
+        ]
+      },
+      "evidence": {
+        "supported": 96,
+        "not_supported": 4,
+        "uncertain": 0,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 0.96,
+        "rate_decided": 0.96,
+        "wilson_decided": [
+          0.9016292856411208,
+          0.9843366960084523
+        ]
+      },
+      "citation_length_descriptive_only": {
+        "supported_records": 95,
+        "median_characters": 1130,
+        "median_units": 9
+      },
+      "definition_available": 0,
+      "review_flags": []
+    },
+    "graphrag": {
+      "selected": 100,
+      "correctness": {
+        "correct": 93,
+        "incorrect": 5,
+        "uncertain": 2,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 0.93,
+        "rate_decided": 0.9489795918367347,
+        "wilson_decided": [
+          0.8860754835396585,
+          0.9780126885959752
+        ]
+      },
+      "evidence": {
+        "supported": 89,
+        "not_supported": 11,
+        "uncertain": 0,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 0.89,
+        "rate_decided": 0.89,
+        "wilson_decided": [
+          0.8136870349691969,
+          0.9374580364293543
+        ]
+      },
+      "citation_length_descriptive_only": {
+        "supported_records": 89,
+        "median_characters": 2004,
+        "median_units": 12
+      },
+      "definition_available": 100,
+      "review_flags": [
+        "q_34129ac50c340ba356a43be5108d"
+      ]
+    },
+    "kggen": {
+      "selected": 100,
+      "correctness": {
+        "correct": 92,
+        "incorrect": 0,
+        "uncertain": 8,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 0.92,
+        "rate_decided": 1.0,
+        "wilson_decided": [
+          0.9599186107143782,
+          1.0
+        ]
+      },
+      "evidence": {
+        "supported": 91,
+        "not_supported": 9,
+        "uncertain": 0,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 0.91,
+        "rate_decided": 0.91,
+        "wilson_decided": [
+          0.837737871472837,
+          0.9519274599974348
+        ]
+      },
+      "citation_length_descriptive_only": {
+        "supported_records": 91,
+        "median_characters": 2083,
+        "median_units": 15
+      },
+      "definition_available": 0,
+      "review_flags": []
+    },
+    "ours": {
+      "selected": 100,
+      "correctness": {
+        "correct": 100,
+        "incorrect": 0,
+        "uncertain": 0,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 1.0,
+        "rate_decided": 1.0,
+        "wilson_decided": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "evidence": {
+        "supported": 100,
+        "not_supported": 0,
+        "uncertain": 0,
+        "judged": 100,
+        "unassessed": 0,
+        "confirmed_rate_all": 1.0,
+        "rate_decided": 1.0,
+        "wilson_decided": [
+          0.9630065017930143,
+          1.0
+        ]
+      },
+      "citation_length_descriptive_only": {
+        "supported_records": 100,
+        "median_characters": 404.0,
+        "median_units": 2.0
+      },
+      "definition_available": 100,
+      "review_flags": []
+    }
+  },
+  "assertion": {
+    "autoschemakg": {
+      "selected": 200,
+      "incorrect": 11,
+      "requires_review": 17,
+      "has_not_established": 28,
+      "correct": 151,
+      "uncertain": 38
+    },
+    "ours": {
+      "selected": 200,
+      "correct": 184,
+      "requires_review": 5,
+      "has_not_established": 7,
+      "uncertain": 12,
+      "incorrect": 4
+    },
+    "kggen": {
+      "selected": 200,
+      "correct": 139,
+      "requires_review": 18,
+      "has_not_established": 21,
+      "incorrect": 35,
+      "uncertain": 26
+    },
+    "graphrag": {
+      "selected": 200,
+      "correct": 156,
+      "requires_review": 9,
+      "has_not_established": 40,
+      "uncertain": 42,
+      "incorrect": 2
+    }
+  },
+  "relation_granularity": {
+    "autoschemakg": {
+      "L3": 154,
+      "L1": 16,
+      "correct_L1": 11,
+      "correct_L3": 120,
+      "L2": 30,
+      "correct_L2": 20
+    },
+    "ours": {
+      "L3": 190,
+      "correct_L3": 175,
+      "L2": 6,
+      "correct_L2": 5,
+      "L1": 4,
+      "correct_L1": 4
+    },
+    "kggen": {
+      "L1": 9,
+      "correct_L1": 7,
+      "L3": 169,
+      "correct_L3": 117,
+      "L2": 22,
+      "correct_L2": 15
+    },
+    "graphrag": {
+      "L3": 186,
+      "correct_L3": 147,
+      "L1": 8,
+      "correct_L1": 5,
+      "L2": 6,
+      "correct_L2": 4
+    }
+  },
+  "identity_qa": {
+    "ours": {
+      "alias_identity": {
+        "pass": 29,
+        "total": 30,
+        "fail": 1
+      },
+      "identity_split": {
+        "pass": 27,
+        "total": 30,
+        "fail": 3
+      },
+      "book_qa": {
+        "pass": 13,
+        "total": 24,
+        "fail": 11
+      }
+    },
+    "graphrag": {
+      "identity_split": {
+        "total": 30,
+        "pass": 13,
+        "fail": 15,
+        "uncertain": 2
+      },
+      "book_qa": {
+        "total": 24,
+        "pass": 14,
+        "fail": 10
+      }
+    },
+    "autoschemakg": {
+      "identity_split": {
+        "total": 30,
+        "pass": 4,
+        "fail": 24,
+        "uncertain": 2
+      },
+      "book_qa": {
+        "total": 24,
+        "pass": 16,
+        "fail": 8
+      }
+    },
+    "kggen": {
+      "alias_identity": {
+        "total": 30,
+        "pass": 19,
+        "uncertain": 2,
+        "fail": 9
+      },
+      "identity_split": {
+        "total": 30,
+        "fail": 23,
+        "uncertain": 6,
+        "pass": 1
+      },
+      "book_qa": {
+        "total": 24,
+        "pass": 3,
+        "fail": 21
+      }
+    }
+  },
+  "structure": {
+    "ours": {
+      "documents": [
+        {
+          "assertion_count": 3309,
+          "assertion_evidence_coverage": 1.0,
+          "component_count": 762,
+          "document_id": "d2l-zh-official",
+          "entity_count": 2140,
+          "entity_evidence_coverage": 1.0,
+          "identity": {
+            "alias_count": 4542,
+            "ambiguous_surface_group_count": 75,
+            "ambiguous_surface_rate": 0.064019,
+            "entities_in_ambiguous_surface_groups": 137,
+            "entities_with_aliases": 2111,
+            "entity_count": 2140,
+            "nontrivial_alias_count": 2879
+          },
+          "isolated_entity_count": 700,
+          "largest_component_ratio": 0.601402,
+          "surface_duplicate_group_count": 0,
+          "unique_predicate_count": 919
+        }
+      ],
+      "schema_version": "1.0",
+      "submission_hash": "sha256:404257446aa6044008f2c6e6f5d4215cb2fe21a82252555b9c46ef1d2befbc9d",
+      "summary": {
+        "assertion_count": 3309,
+        "assertion_evidence_coverage": 1.0,
+        "assertions_per_second": null,
+        "cost_per_100_assertions_usd": null,
+        "cost_per_100_entities_usd": null,
+        "cost_usd": null,
+        "document_count": 1,
+        "elapsed_seconds": null,
+        "entities_per_second": null,
+        "entity_count": 2140,
+        "entity_evidence_coverage": 1.0,
+        "identity": {
+          "alias_count": 4542,
+          "ambiguous_surface_group_count": 75,
+          "ambiguous_surface_rate": 0.064019,
+          "entities_in_ambiguous_surface_groups": 137,
+          "entities_with_aliases": 2111,
+          "nontrivial_alias_count": 2879
+        },
+        "input_tokens": null,
+        "isolated_entity_rate": 0.327103,
+        "output_tokens": null,
+        "surface_duplicate_group_count": 0,
+        "tokens_per_assertion": null,
+        "tokens_per_entity": null,
+        "unique_predicate_count_sum": 919
+      },
+      "system_id": "llm-knowledge-graph-full1105-vnext"
+    },
+    "graphrag": {
+      "schema_version": "1.0",
+      "system_id": "graphrag-m3-standard-zh-corrected",
+      "submission_hash": "sha256:e3c0cd10b7c796b4e35ecca12db92d2025291c02917a11402c1d583d6c1126df",
+      "summary": {
+        "document_count": 1,
+        "entity_count": 11407,
+        "assertion_count": 31542,
+        "unique_predicate_count_sum": 1,
+        "entity_evidence_coverage": 1.0,
+        "assertion_evidence_coverage": 1.0,
+        "isolated_entity_rate": 0.01727,
+        "surface_duplicate_group_count": 80,
+        "identity": {
+          "alias_count": 0,
+          "nontrivial_alias_count": 0,
+          "entities_with_aliases": 0,
+          "ambiguous_surface_group_count": 94,
+          "entities_in_ambiguous_surface_groups": 199,
+          "ambiguous_surface_rate": 0.017445
+        },
+        "elapsed_seconds": null,
+        "cost_usd": null,
+        "input_tokens": 9045415,
+        "output_tokens": 5676162,
+        "entities_per_second": null,
+        "assertions_per_second": null,
+        "tokens_per_entity": 1290.573946,
+        "tokens_per_assertion": 466.729345,
+        "cost_per_100_entities_usd": null,
+        "cost_per_100_assertions_usd": null
+      },
+      "documents": [
+        {
+          "document_id": "d2l-zh-official",
+          "entity_count": 11407,
+          "assertion_count": 31542,
+          "unique_predicate_count": 1,
+          "entity_evidence_coverage": 1.0,
+          "assertion_evidence_coverage": 1.0,
+          "isolated_entity_count": 197,
+          "component_count": 254,
+          "largest_component_ratio": 0.966424,
+          "surface_duplicate_group_count": 80,
+          "identity": {
+            "entity_count": 11407,
+            "alias_count": 0,
+            "nontrivial_alias_count": 0,
+            "entities_with_aliases": 0,
+            "ambiguous_surface_group_count": 94,
+            "entities_in_ambiguous_surface_groups": 199,
+            "ambiguous_surface_rate": 0.017445
+          }
+        }
+      ]
+    },
+    "autoschemakg": {
+      "schema_version": "1.0",
+      "system_id": "autoschemakg-m3-full-zh-corrected",
+      "submission_hash": "file-sha256:25d69cdf481160cede2a675ecbd2be3acfaf0570731c21b5c5959a7e9f2415d5",
+      "summary": {
+        "document_count": 1,
+        "entity_count": 41960,
+        "assertion_count": 56149,
+        "unique_predicate_count_sum": 5338,
+        "entity_evidence_coverage": 1.0,
+        "assertion_evidence_coverage": 1.0,
+        "isolated_entity_rate": 2.4e-05,
+        "surface_duplicate_group_count": 1057,
+        "identity": {
+          "alias_count": 0,
+          "nontrivial_alias_count": 0,
+          "entities_with_aliases": 0,
+          "ambiguous_surface_group_count": 985,
+          "entities_in_ambiguous_surface_groups": 2071,
+          "ambiguous_surface_rate": 0.049357
+        },
+        "elapsed_seconds": null,
+        "cost_usd": null,
+        "input_tokens": 25232053,
+        "output_tokens": 14429683,
+        "entities_per_second": null,
+        "assertions_per_second": null,
+        "tokens_per_entity": 945.227264,
+        "tokens_per_assertion": 706.365848,
+        "cost_per_100_entities_usd": null,
+        "cost_per_100_assertions_usd": null
+      },
+      "documents": [
+        {
+          "document_id": "d2l-zh-official",
+          "entity_count": 41960,
+          "assertion_count": 56149,
+          "unique_predicate_count": 5338,
+          "entity_evidence_coverage": 1.0,
+          "assertion_evidence_coverage": 1.0,
+          "isolated_entity_count": 1,
+          "component_count": 6701,
+          "largest_component_ratio": 0.608389,
+          "surface_duplicate_group_count": 1057,
+          "identity": {
+            "entity_count": 41960,
+            "alias_count": 0,
+            "nontrivial_alias_count": 0,
+            "entities_with_aliases": 0,
+            "ambiguous_surface_group_count": 985,
+            "entities_in_ambiguous_surface_groups": 2071,
+            "ambiguous_surface_rate": 0.049357
+          }
+        }
+      ]
+    },
+    "kggen": {
+      "schema_version": "1.0",
+      "system_id": "kggen-m3-lm-based-zh-corrected",
+      "submission_hash": "sha256:2889d9728217c7b2cc23aeec33815e88dd5e09bed161d42e5551ec398364e54b",
+      "summary": {
+        "document_count": 1,
+        "entity_count": 12925,
+        "assertion_count": 34539,
+        "unique_predicate_count_sum": 5876,
+        "entity_evidence_coverage": 0.948008,
+        "assertion_evidence_coverage": 1.0,
+        "isolated_entity_rate": 0.088201,
+        "surface_duplicate_group_count": 889,
+        "identity": {
+          "alias_count": 1301,
+          "nontrivial_alias_count": 984,
+          "entities_with_aliases": 964,
+          "ambiguous_surface_group_count": 749,
+          "entities_in_ambiguous_surface_groups": 1541,
+          "ambiguous_surface_rate": 0.119226
+        },
+        "elapsed_seconds": null,
+        "cost_usd": null,
+        "input_tokens": 9359398,
+        "output_tokens": 7772879,
+        "entities_per_second": null,
+        "assertions_per_second": null,
+        "tokens_per_entity": 1325.514662,
+        "tokens_per_assertion": 496.027013,
+        "cost_per_100_entities_usd": null,
+        "cost_per_100_assertions_usd": null
+      },
+      "documents": [
+        {
+          "document_id": "d2l-zh-official",
+          "entity_count": 12925,
+          "assertion_count": 34539,
+          "unique_predicate_count": 5876,
+          "entity_evidence_coverage": 0.948008,
+          "assertion_evidence_coverage": 1.0,
+          "isolated_entity_count": 1140,
+          "component_count": 1389,
+          "largest_component_ratio": 0.861277,
+          "surface_duplicate_group_count": 889,
+          "identity": {
+            "entity_count": 12925,
+            "alias_count": 1301,
+            "nontrivial_alias_count": 984,
+            "entities_with_aliases": 964,
+            "ambiguous_surface_group_count": 749,
+            "entities_in_ambiguous_surface_groups": 1541,
+            "ambiguous_surface_rate": 0.119226
+          }
+        }
+      ]
+    }
+  },
+  "availability": {
+    "ours": {
+      "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-full1105-vnext-20260826/submission.json",
+      "sha256": "19f6bdac52e7acaf8b2ce6578806e4540eada233704e43913cd8a6ce7ffb3b8d",
+      "nodes": 2140,
+      "with_types": 2093,
+      "with_definition": 2140,
+      "with_aliases": 2111
+    },
+    "graphrag": {
+      "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-baseline-correction-m3-c6-20260909-172849/graphrag/submission.json",
+      "sha256": "040453f9cba0a285f85b5f9b7d045d031f7e2c5a5e178f6278bbbd8a4e33b4a2",
+      "nodes": 11407,
+      "with_types": 11407,
+      "with_definition": 11407,
+      "with_aliases": 0
+    },
+    "autoschemakg": {
+      "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-baseline-correction-m3-c6-20260909-172849/autoschemakg/evaluation/semantic-submission.json",
+      "sha256": "a86cf9d89cba623286f3b40ca365d28a879cc0694b8855c8edc92de986aeb886",
+      "nodes": 41960,
+      "with_types": 41959,
+      "with_definition": 0,
+      "with_aliases": 0
+    },
+    "kggen": {
+      "path": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-baseline-correction-m3-c6-20260909-172849/kggen/submission.json",
+      "sha256": "0bfa3aa108265effb577e8c7f9077f2b3f1b36f7dcbfe83099506675af258234",
+      "nodes": 12925,
+      "with_types": 0,
+      "with_definition": 0,
+      "with_aliases": 964
+    }
+  },
+  "construction_usage": {
+    "graphrag": {
+      "request_attempts": 7569,
+      "failed_attempts": 60,
+      "input_tokens": 9045415,
+      "output_tokens": 5676162,
+      "cost_usd": null
+    },
+    "autoschemakg": {
+      "request_attempts": 51105,
+      "failed_attempts": 472,
+      "input_tokens": 25232053,
+      "output_tokens": 14429683,
+      "cost_usd": null
+    },
+    "kggen": {
+      "input_tokens": 12645092,
+      "output_tokens": 14037502
+    }
+  }
+}

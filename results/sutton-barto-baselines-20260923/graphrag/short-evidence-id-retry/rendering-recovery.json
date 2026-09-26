@@ -1,0 +1,47 @@
+{
+  "rule": "Earliest full-content response, append only original trailing quotation mark; map display IDs back; labels/reasons untouched",
+  "source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/evaluation-official-c4-resume/short-evidence-id-retry/api/requests/441f95d192f14d389c06d5adba662f07/attempt-2.json",
+  "source_sha256": "d5e3cf7f77154517e3acec08368698100bb3c646d70a25cd980f696d99bc523a",
+  "before": {
+    "claims": [
+      {
+        "text": "Researcher who in 1965",
+        "label": "pass",
+        "reason": "E4 explicitly states \"Feldbaum (1965) called it the dual control problem\", identifying Feldbaum as a researcher in 1965.",
+        "evidence_ids": [
+          "E4"
+        ]
+      },
+      {
+        "text": "called the identification-control conflict the dual control problem",
+        "label": "pass",
+        "reason": "E4 says \"Feldbaum (1965) called it the dual control problem\" and E5 clarifies it refers to \"the two problems of identification and control simultaneously\", directly supporting that Feldbaum termed the identification-control conflict the dual control problem.",
+        "evidence_ids": [
+          "E4",
+          "E5"
+        ]
+      }
+    ]
+  },
+  "after": {
+    "claims": [
+      {
+        "text": "Researcher who in 1965",
+        "label": "pass",
+        "reason": "E4 explicitly states \"Feldbaum (1965) called it the dual control problem\", identifying Feldbaum as a researcher in 1965.",
+        "evidence_ids": [
+          "S2:P000220"
+        ]
+      },
+      {
+        "text": "called the identification-control conflict the dual control problem\"",
+        "label": "pass",
+        "reason": "E4 says \"Feldbaum (1965) called it the dual control problem\" and E5 clarifies it refers to \"the two problems of identification and control simultaneously\", directly supporting that Feldbaum termed the identification-control conflict the dual control problem.",
+        "evidence_ids": [
+          "S2:P000220",
+          "S2:P000221"
+        ]
+      }
+    ]
+  }
+}

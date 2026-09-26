@@ -1,0 +1,18 @@
+{
+  "book": "Dive into Deep Learning (Chinese)",
+  "status": "frozen historical results; not a fresh workflow rerun",
+  "files": {
+    "REPORT.md": {
+      "source": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-consolidated-results-20260923/REPORT.md",
+      "sha256": "fc9c9ac538d7ec643946dd61f1cfd0fed1a6c4d742d93737dc9971f0f817beb2"
+    },
+    "data.json": {
+      "source": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-consolidated-results-20260923/data.json",
+      "sha256": "6e3f8f797eae5765831bc5d077e909420fdffa789b0ffa9720ca232787785100"
+    },
+    "provenance.json": {
+      "source": "/home/likefallwind/code/llm-graph-benchmark/outputs/d2l-consolidated-results-20260923/provenance.json",
+      "sha256": "1994a519bf8d6a2a3f018d1f7704d9da21a39906351482d56a7d1c56edb35dee"
+    }
+  }
+}

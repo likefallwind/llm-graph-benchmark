@@ -1,0 +1,5 @@
+{
+  "input_tokens": 12645092,
+  "output_tokens": 14037502,
+  "source": "outputs/d2l-consolidated-results-20260923/data.json#construction_usage/kggen"
+}

@@ -1,0 +1,815 @@
+{
+  "autoschemakg-m3-full-en-rl": [
+    {
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "population_entities": 29219,
+      "population_assertions": 10288,
+      "entity_ids": [
+        "e_024f67d3bde9f4e7f46a",
+        "e_03d333ad95185313d3aa",
+        "e_03ecde4c8eab0994c2f1",
+        "e_0aacf0e7341acc02c0cd",
+        "e_1393995046a93b04257d",
+        "e_167d439b35cdd5e6ed7c",
+        "e_16ad893cf102b8bd67e9",
+        "e_1ad23d3909b64bbc25d2",
+        "e_1ae13ac05ebff0ec980a",
+        "e_1de892c4891701aae242",
+        "e_1fde226444e3cb16cc79",
+        "e_2ae539b1e61aa50f0fe2",
+        "e_2fde944466af0e4b45b8",
+        "e_3379d4069673495d4884",
+        "e_351a1b08a2f50b3d86f4",
+        "e_36877a414b75e584a078",
+        "e_378e32bf842cf4275a25",
+        "e_37eab18ae6149fc7958b",
+        "e_39287238ece41e41d54b",
+        "e_3d5f5bb24719ffc87882",
+        "e_3ffb22a9158ffce11474",
+        "e_47fa18984cd75609cb3d",
+        "e_493eaa5f27c6cd374fc9",
+        "e_4a432389eec7fb5a1bc3",
+        "e_533064e4ca32012a8a04",
+        "e_548662f5c382c0b6b7ef",
+        "e_57f8c6426897a5a60fa8",
+        "e_586bbdeea5ada448fd72",
+        "e_589cad8c63f072f2f26d",
+        "e_5ced430af3f82e142253",
+        "e_5d42f6049d992928bdf0",
+        "e_6148dc4deda5f027b40f",
+        "e_6919c800c0c799b19d31",
+        "e_698e9a88c75ea209346e",
+        "e_6afacbb9666acd3d63c3",
+        "e_6d4dbb8cbadbe7f565e8",
+        "e_6fca8ce2e8088a00bcac",
+        "e_75ef4b8ec320ab801404",
+        "e_772fc7d96f0094e7df3d",
+        "e_7947ef8b0de1d267fc83",
+        "e_7b73fa59970f76bdac4c",
+        "e_80b6e5808d75e87622c8",
+        "e_81dc26beea57288b8e03",
+        "e_82bf0d5b9254f589007c",
+        "e_852df494d1c41b96c06c",
+        "e_857b91f1111ec9746fdd",
+        "e_85afa8906011cabebde8",
+        "e_87995981b651d6fbbd70",
+        "e_8abeea55e8757640bf8e",
+        "e_8acb1800f83ee99b9260",
+        "e_8b4495449ec64d6f8d97",
+        "e_8d686d8543f5db3777f2",
+        "e_91a8975f28832b7148a7",
+        "e_9575af6de5ad92e8e6af",
+        "e_95d4cd68ef9bc25fe860",
+        "e_974fbe8615560673a99b",
+        "e_a2197ccce7aa068a231d",
+        "e_a5534a6a7bdbcb4e90cf",
+        "e_abcfd22914ab40f9d6b5",
+        "e_ad8549cbaa687eeb4b5b",
+        "e_ade7d1dc294049f1c06d",
+        "e_af0bb5476dae2a78db74",
+        "e_b03d9e1d50a026848490",
+        "e_b4d1638520f3460c8f06",
+        "e_b5358c498c2305864c96",
+        "e_b8cb9de14c43f0905065",
+        "e_be95a89857960d621114",
+        "e_c09a9221517ecc189992",
+        "e_c0c85313e225a3c8aa95",
+        "e_c15c4dcf89533143bceb",
+        "e_c198ef8e47ab21f41c6f",
+        "e_c827fff78ccf29850f3a",
+        "e_c984104b1a195b742ed3",
+        "e_cc4efee6aa9a6f4b867d",
+        "e_d4bc466abe6dcad65ce0",
+        "e_d5ee884529e370380a94",
+        "e_d6a2c2744296dd9a424a",
+        "e_d9a79057c03ae0fe24d7",
+        "e_dd3febb0c8f786c16ec6",
+        "e_dd5231f0d91656b83bb2",
+        "e_dfa037bad822c9e4b70b",
+        "e_e125a57415d76def4d14",
+        "e_e243204c5651feb5f23b",
+        "e_e2815895e1b1bc996f41",
+        "e_e28e9e2cab5ac53bccec",
+        "e_e5126e45c4692a38819d",
+        "e_e5b0321c2f79ec25c761",
+        "e_e5d4b1fa11640b63cd55",
+        "e_e70e95f0ef0893a682cc",
+        "e_ec710d5b5cd48e95acf1",
+        "e_ed87c4e69885fdb9c2b0",
+        "e_edba23052bbc42de8c55",
+        "e_f3a235b10bc88d9c5a7e",
+        "e_f4dac9a03e6bc879850e",
+        "e_f75b16a4e4ad2ea7159b",
+        "e_f92f32fa3f94bf8aee4d",
+        "e_f9c831f5ef96d473d25d",
+        "e_fb740483b86492c1d76f",
+        "e_fca5f29444ee35b3ad4e",
+        "e_fd80b838934fdaf0b17e"
+      ],
+      "assertion_ids": [
+        "a_005a41490d2ac66ee6af",
+        "a_045adddfc2de18d14a2e",
+        "a_048d1e2a476975287480",
+        "a_05dffb8b0c42b1c2bd70",
+        "a_0618b005784ffa85061b",
+        "a_062f769b650a95040b54",
+        "a_0904a69fd63eecdadd1b",
+        "a_09a302d9ffdbcf27d335",
+        "a_0ccbcdddee2bfdfc8555",
+        "a_0ef9da596b97ac5028e6",
+        "a_0f4ffb0e3335d9f63e18",
+        "a_0f9a217196bfccd1d119",
+        "a_0fc7f1c48a1560be4a2c",
+        "a_0fdf54f32b6c3a146392",
+        "a_10a77889b84561e57296",
+        "a_10bbcadaf9e8e9935488",
+        "a_12f5d31f850f24dbf2e1",
+        "a_1373270cdbebf8017716",
+        "a_1730848d4e9e2baf3ba6",
+        "a_18cefaada05e7f1750cc",
+        "a_1b4d88da62d726dd7671",
+        "a_1b8e316c5ab8c317ac4b",
+        "a_1ece0b4812d790169323",
+        "a_20542f621fb51c1cdbc3",
+        "a_21de57d123d9944a25a6",
+        "a_21ebbcd3f492726c440d",
+        "a_24252ab0651dc3dedda4",
+        "a_26b15c77bc7ffd4f334d",
+        "a_28867da979e547be5d38",
+        "a_2b801dda2bfedd7c1b6f",
+        "a_2d43135b86916f5c617f",
+        "a_3034706b52166339562f",
+        "a_312b2abf67096cf9e974",
+        "a_31c405ab8e531d2feb64",
+        "a_341b48b3d3a12ca2ab50",
+        "a_343e07c9525d3a3e5611",
+        "a_35989fe0aff53d54e1ef",
+        "a_35c3e2ccd0bbefc3e4ce",
+        "a_35f23694bf472e428b9f",
+        "a_36f932b338d5433f54f0",
+        "a_37555d93795b01860edb",
+        "a_3903a25b3a672eb434c6",
+        "a_393ce07fc62d36511328",
+        "a_3a803e41e86ce0bd427d",
+        "a_3e3210c5097e102ba10b",
+        "a_3f7765096cd932fcf155",
+        "a_403f4cdd368668075555",
+        "a_4146c5bb17e45c7875b2",
+        "a_4364cedf16a080e55307",
+        "a_440335953743089c477c",
+        "a_45a46758abd418d57b33",
+        "a_46f26f22cb1a091c114d",
+        "a_4963a624eee92a1deeec",
+        "a_4a9705fbe83377887cf0",
+        "a_4b44ad7edb665a8905b0",
+        "a_4e1adcbfce08052676d6",
+        "a_4ea5f0cd84fde066051f",
+        "a_4f64e24af645710f13ab",
+        "a_508302b0c8ba6281fd7a",
+        "a_525885f13e4b93e4c692",
+        "a_538ef97f6eb23e2591d4",
+        "a_544f7e1e06a6bc03c62b",
+        "a_545a0180c1aea8e49648",
+        "a_55618e841849035cbdbc",
+        "a_556a4d7374eddf1334a4",
+        "a_5592c62c9b09d7ba7e02",
+        "a_56df68c2b39fe057f83b",
+        "a_59c340e5ae27f3054f6c",
+        "a_5b1e7728103353f31355",
+        "a_5b369b6ddcd162385817",
+        "a_5c4a59609190231e3694",
+        "a_5d7ac1592c5f9a003e24",
+        "a_5ef733910d3b5d09eaf1",
+        "a_5efab01bcdbd051c3814",
+        "a_614eccc4b5bc426201f9",
+        "a_61a9935913e3f4a24bc9",
+        "a_637eef16b08877f27407",
+        "a_64848ea92c4da36ee8a9",
+        "a_65fd6562b136d0286cd3",
+        "a_66975929b05d15811836",
+        "a_66dbe4a203e32f23a7d6",
+        "a_6736bc76a5f44987af99",
+        "a_6803f0a9d30979bc7c3d",
+        "a_688e5ce8545fadfaa683",
+        "a_6d8e4f7541d789909519",
+        "a_6e1684871f125bba7b28",
+        "a_6f649904ac766c959195",
+        "a_70c054aa94a9741c9404",
+        "a_7154c19ce37442b099cc",
+        "a_73ae81bd844c1a40e854",
+        "a_74199e4d4a641cfa77a7",
+        "a_74f0db4dfc5015008334",
+        "a_7654931bf965fd5314e6",
+        "a_766c0b015e8f96c0a63b",
+        "a_76f9254d45c4af04ada8",
+        "a_78349a3b2fd9f5644f08",
+        "a_78c1c8d1086dfe6bc988",
+        "a_7be6490918b0bc2a6bd8",
+        "a_7c2fa9640a2c091fd327",
+        "a_7d0ae4fcdcb9c60f7a46",
+        "a_7dda168d411382bfd8c5",
+        "a_7e5d631dcd166fbd4a07",
+        "a_8071a6d9098402f49fb4",
+        "a_821337140d6334ab668a",
+        "a_827ebd70b518cb019e4b",
+        "a_82a13eb0e178c73181f3",
+        "a_83561d35cb9d7cf6366d",
+        "a_8530c28053308012632b",
+        "a_87b33cc5725f9a8436ff",
+        "a_88f5896169c42474360d",
+        "a_89b9fdb35b9b0b62c01e",
+        "a_8af6bc620310a4f9a98b",
+        "a_8d1e294d59aa46406fd6",
+        "a_8fcfa67e92bfc314b9ef",
+        "a_911f6337be73a5fdc8c0",
+        "a_919cc37f20336ea36cf3",
+        "a_91df3d19d06fea162275",
+        "a_9329724823d452b65c42",
+        "a_93bf64f524f57cc48fc0",
+        "a_958c83927315db5fbfe2",
+        "a_984295a4ddc670a9cfbc",
+        "a_986baa6e1cf6dc49dc3c",
+        "a_9901d95950873c7e9196",
+        "a_99d3df765d00b94c26f4",
+        "a_9ba603e060fde32276c3",
+        "a_9bc88b73e599b2756e32",
+        "a_9d434022d30ed0075c75",
+        "a_9d6b0999f6c3f22e0bbf",
+        "a_a4af995e3168686844aa",
+        "a_a53fab0718757e9aac74",
+        "a_a5628e16ccdc341ebbfe",
+        "a_a6068ec530e9358c0a43",
+        "a_a808672b99f7a703a092",
+        "a_a82580e63dc602c48a72",
+        "a_a9666f9c85a1ac1075db",
+        "a_a9c69f13e70b539a59f6",
+        "a_a9e704fa06932669c063",
+        "a_ab6c07de55d0a00cdd89",
+        "a_abf50b693a12de5d367c",
+        "a_ade36ef288d709d6d6cb",
+        "a_ae20c7f01340c476b941",
+        "a_ae23048c166b567bfd92",
+        "a_af6cfaebdee97fb3367c",
+        "a_b059ff8916505d4bf6b8",
+        "a_b3394b9d2f0855ac6501",
+        "a_b44d90eeb129afa0a8b9",
+        "a_b4a33d84cc0aee563547",
+        "a_b57febe5ddf56c73d3c5",
+        "a_b7025fadb8434a3dd129",
+        "a_b79cd3c5f69fa85dfa9b",
+        "a_b88a5df4fca45e60188e",
+        "a_b8a9ea2a96bc6342a320",
+        "a_bae0fb10e661915341b9",
+        "a_bcbe66d33245da7a2a4c",
+        "a_be40cdfde97627380eb0",
+        "a_c566efb6a31e1442fcad",
+        "a_c6042011f7366d8a3d12",
+        "a_c71fe5ffc2aeaff635ea",
+        "a_c887182ed3d71aa72765",
+        "a_c894296b63ddcb6a9718",
+        "a_ca374091824af6e51e44",
+        "a_cab30857ad8412ef512b",
+        "a_ce0d745700e24cf84c09",
+        "a_ce2211759b31182a67f4",
+        "a_d15869e1dc114d7f5c80",
+        "a_d1a11b18bc1c77ca949c",
+        "a_d1fe981fdc0c57f13e86",
+        "a_d2bd21e8ae73844223f0",
+        "a_d43ec3c368be5c3b3a94",
+        "a_d5f57b7161e23d169cd0",
+        "a_d73df891777b74474ff8",
+        "a_d935c6d24f2ba6b26f38",
+        "a_d998a2ebeecbbbd7d741",
+        "a_dbb926b261760c473fb5",
+        "a_dc2f3e8939cbb9815a12",
+        "a_dcc14953e26472948001",
+        "a_de9449eb56d38406eb03",
+        "a_e50a67b44f19687d2e03",
+        "a_e66fecab897375f7e3a8",
+        "a_e6739de82d94655b9981",
+        "a_e842bbcd38c8a3f04640",
+        "a_e8f45e314a1b0a16da3d",
+        "a_e96b497afa3b067944da",
+        "a_e9cc3881e879ae1117f7",
+        "a_eaf433e35f24847ca38e",
+        "a_eba16e8395a1ed308048",
+        "a_ec3267eab93621069e6b",
+        "a_ec676446c6c2e0b30d20",
+        "a_f2873c7dff9c5734ed70",
+        "a_f5630aea8c3a79acd059",
+        "a_f66ce3efdb17cdf83bee",
+        "a_f79104f11413469a518d",
+        "a_fb086be4c6c86731ef85",
+        "a_fc0aeddebe2cbe2813a0",
+        "a_fccd75c87d0300a02270",
+        "a_fd7617ab7d3df0229e5f",
+        "a_fde4160d0db946df53b6",
+        "a_fe7ff9ad38121780e678",
+        "a_fe97c7ba9ddffe186c7d",
+        "a_ff0f475f23b340c83856"
+      ],
+      "excluded_fields": [
+        {
+          "entity_id": "e_024f67d3bde9f4e7f46a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_03d333ad95185313d3aa",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_03ecde4c8eab0994c2f1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_0aacf0e7341acc02c0cd",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1393995046a93b04257d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_167d439b35cdd5e6ed7c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_16ad893cf102b8bd67e9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1ad23d3909b64bbc25d2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1ae13ac05ebff0ec980a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1de892c4891701aae242",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1fde226444e3cb16cc79",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_2ae539b1e61aa50f0fe2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_2fde944466af0e4b45b8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3379d4069673495d4884",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_351a1b08a2f50b3d86f4",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_36877a414b75e584a078",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_378e32bf842cf4275a25",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_37eab18ae6149fc7958b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_39287238ece41e41d54b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3d5f5bb24719ffc87882",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3ffb22a9158ffce11474",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_47fa18984cd75609cb3d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_493eaa5f27c6cd374fc9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4a432389eec7fb5a1bc3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_533064e4ca32012a8a04",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_548662f5c382c0b6b7ef",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_57f8c6426897a5a60fa8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_586bbdeea5ada448fd72",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_589cad8c63f072f2f26d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5ced430af3f82e142253",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5d42f6049d992928bdf0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6148dc4deda5f027b40f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6919c800c0c799b19d31",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_698e9a88c75ea209346e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6afacbb9666acd3d63c3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6d4dbb8cbadbe7f565e8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6fca8ce2e8088a00bcac",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_75ef4b8ec320ab801404",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_772fc7d96f0094e7df3d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7947ef8b0de1d267fc83",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7b73fa59970f76bdac4c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_80b6e5808d75e87622c8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_81dc26beea57288b8e03",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_82bf0d5b9254f589007c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_852df494d1c41b96c06c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_857b91f1111ec9746fdd",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_85afa8906011cabebde8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_87995981b651d6fbbd70",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8abeea55e8757640bf8e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8acb1800f83ee99b9260",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8b4495449ec64d6f8d97",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8d686d8543f5db3777f2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_91a8975f28832b7148a7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9575af6de5ad92e8e6af",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_95d4cd68ef9bc25fe860",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_974fbe8615560673a99b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a2197ccce7aa068a231d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a5534a6a7bdbcb4e90cf",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_abcfd22914ab40f9d6b5",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ad8549cbaa687eeb4b5b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ade7d1dc294049f1c06d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_af0bb5476dae2a78db74",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b03d9e1d50a026848490",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b4d1638520f3460c8f06",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b5358c498c2305864c96",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b8cb9de14c43f0905065",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_be95a89857960d621114",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c09a9221517ecc189992",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c0c85313e225a3c8aa95",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c15c4dcf89533143bceb",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c198ef8e47ab21f41c6f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c827fff78ccf29850f3a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c984104b1a195b742ed3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_cc4efee6aa9a6f4b867d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d4bc466abe6dcad65ce0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d5ee884529e370380a94",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d6a2c2744296dd9a424a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d9a79057c03ae0fe24d7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dd3febb0c8f786c16ec6",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dd5231f0d91656b83bb2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dfa037bad822c9e4b70b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e125a57415d76def4d14",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e243204c5651feb5f23b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e2815895e1b1bc996f41",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e28e9e2cab5ac53bccec",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e5126e45c4692a38819d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e5b0321c2f79ec25c761",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e5d4b1fa11640b63cd55",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e70e95f0ef0893a682cc",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ec710d5b5cd48e95acf1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ed87c4e69885fdb9c2b0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_edba23052bbc42de8c55",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f3a235b10bc88d9c5a7e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f4dac9a03e6bc879850e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f75b16a4e4ad2ea7159b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f92f32fa3f94bf8aee4d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f9c831f5ef96d473d25d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_fb740483b86492c1d76f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_fca5f29444ee35b3ad4e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_fd80b838934fdaf0b17e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        }
+      ]
+    }
+  ]
+}

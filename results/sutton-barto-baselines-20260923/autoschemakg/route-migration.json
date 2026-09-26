@@ -1,0 +1,7 @@
+{
+  "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/evaluation-gateway-c6",
+  "copied_successful": 802,
+  "backend": "minimax-official",
+  "workers": 4,
+  "at": 1790216432.0638444
+}

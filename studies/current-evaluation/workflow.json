@@ -1,0 +1,29 @@
+{
+  "benchmark": "../../outputs/d2l-full1105-vnext-20260826/benchmark.json",
+  "seed": 20260923,
+  "workers": 6,
+  "submissions": [
+    {
+      "path": "../../outputs/d2l-full1105-vnext-20260826/submission.json",
+      "name": "我们的方法",
+      "construction_usage": "construction/ours.json"
+    },
+    {
+      "path": "../../outputs/d2l-baseline-correction-m3-c6-20260909-172849/graphrag/submission.json",
+      "name": "GraphRAG",
+      "construction_usage": "construction/graphrag.json"
+    },
+    {
+      "path": "../../outputs/d2l-baseline-correction-m3-c6-20260909-172849/autoschemakg/evaluation/semantic-submission.json",
+      "structure_path": "../../outputs/d2l-baseline-correction-m3-c6-20260909-172849/autoschemakg/submission.json",
+      "scope_note": "质量：19,965条语义边子集；结构：完整图56,149条边，含事件节点",
+      "name": "AutoSchemaKG",
+      "construction_usage": "construction/autoschemakg.json"
+    },
+    {
+      "path": "../../outputs/d2l-baseline-correction-m3-c6-20260909-172849/kggen/submission.json",
+      "name": "KGGen",
+      "construction_usage": "construction/kggen.json"
+    }
+  ]
+}

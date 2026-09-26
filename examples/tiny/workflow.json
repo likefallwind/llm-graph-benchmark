@@ -1,0 +1,11 @@
+{
+  "benchmark": "benchmark.json",
+  "submissions": [
+    {
+      "path": "submissions/example.json",
+      "name": "Synthetic example"
+    }
+  ],
+  "seed": 20260923,
+  "workers": 6
+}
