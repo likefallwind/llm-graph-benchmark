@@ -15,7 +15,7 @@ from ..validation import validate_benchmark, validate_submission
 from . import ledger, protocol
 from .transport import write
 
-DEFAULT_SAMPLES = {"entities": 100, "assertions": 200, "aliases": 30, "splits": 30}
+DEFAULT_SAMPLES = {"entities": 100, "assertions": 200, "aliases": 30}
 MAX_INPUT_BYTES = 350_000
 
 
@@ -100,6 +100,9 @@ def _validate_config(config):
     if type(config.get("seed", 0)) is not int:
         raise ValueError("seed must be an integer")
     sampling = config.get("samples", {})
+    if isinstance(sampling, dict) and "splits" in sampling:
+        raise ValueError("samples.splits was retired with identity_split; "
+                         "semantic duplicates reuse the entity sample in a separate stage")
     if not isinstance(sampling, dict) or set(sampling) - set(DEFAULT_SAMPLES):
         raise ValueError("Unknown sampling settings")
     samples = {**DEFAULT_SAMPLES, **sampling}
@@ -269,10 +272,11 @@ def prepare(config_path, run):
             })
         # The historical identity task ID omits document_id. Build one document
         # at a time, then assign the workflow ID with explicit document scope.
+        # Surface-collision split pairs are retired; only aliases are built here.
         for doc in docs.values():
             scoped = FrozenSubmission(sub.path, {**sub.payload, "documents": [doc]})
             identity = create_identity_tasks(benchmark, [scoped], aliases_per_document=samples["aliases"],
-                                             collision_pairs_per_document=samples["splits"], seed=seed)
+                                             collision_pairs_per_document=0, seed=seed)
             ikeys = {k["task_id"]: k for k in identity.key}
             for task in identity.tasks:
                 k = ikeys[task["task_id"]]

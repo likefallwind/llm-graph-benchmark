@@ -1,0 +1,2717 @@
+{
+  "protocol": "selected-metrics-v6-semantic-duplicates",
+  "model": "MiniMax-M3",
+  "metric_versions": {
+    "assertion_correctness": "assertion-ledger-v2.5",
+    "relation_granularity": "relation-granularity-v1",
+    "entity_correctness": "referent-v1.1",
+    "entity_evidence": "referent-evidence-v1.1",
+    "entity_typing": "type-boundary-v2-label-binding",
+    "entity_description": "description-whole-v2",
+    "alias_identity": "alias-full-sources-knowledge-v2",
+    "fact_recovery": "complete-fact-v1",
+    "semantic_duplicate": "semantic-duplicate-v1"
+  },
+  "complete": false,
+  "total": 3494,
+  "done": 3491,
+  "evaluation_scope": "combined_parent_and_semantic_stage",
+  "groups": {
+    "ours-sutton-barto-incremental-m3": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "incorrect": 3,
+          "correct": 188,
+          "uncertain": 9
+        },
+        "numerator": 188,
+        "denominator": 200,
+        "rate": 0.94,
+        "partial_rate_judged_only": 0.94,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.94
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L3": 189,
+          "L2": 9,
+          "L1": 2
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 177,
+        "correct_l3_coverage": 0.885,
+        "correct_within_l3": 0.9365079365079365,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 100
+        },
+        "numerator": 100,
+        "denominator": 100,
+        "rate": 1.0,
+        "partial_rate_judged_only": 1.0,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 1.0
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 98,
+          "not_supported": 2
+        },
+        "numerator": 98,
+        "denominator": 100,
+        "rate": 0.98,
+        "partial_rate_judged_only": 0.98,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.98
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "pass": 55,
+          "fail": 33,
+          "uncertain": 12
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.8255346320346321,
+        "partial_rate_judged_only": 0.8255346320346321,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 263,
+          "fail": 50,
+          "uncertain": 24
+        },
+        "finest_supported_type": {
+          "L2": 47,
+          "L3": 35,
+          "L1": 15,
+          "none": 3
+        },
+        "whole_support_rate": 0.55
+      },
+      "entity_description": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 84,
+          "not_supported": 16
+        },
+        "numerator": 84,
+        "denominator": 100,
+        "rate": 0.84,
+        "partial_rate_judged_only": 0.84,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.84
+      },
+      "alias_identity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "pass": 29,
+          "fail": 1
+        },
+        "numerator": 29,
+        "denominator": 30,
+        "rate": 0.9666666666666667,
+        "partial_rate_judged_only": 0.9666666666666667,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.9666666666666667
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "fail": 19,
+          "uncertain": 4,
+          "pass": 25
+        },
+        "numerator": 25,
+        "denominator": 48,
+        "rate": 0.5208333333333334,
+        "partial_rate_judged_only": 0.5208333333333334,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.5208333333333334
+      },
+      "semantic_duplicate": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 16,
+        "done": 16,
+        "unassessed": 0,
+        "statuses": {
+          "done": 16
+        },
+        "labels": {
+          "duplicate": 5,
+          "none": 95
+        },
+        "unresolved_targets": 0,
+        "pair_labels": {
+          "pass": 5,
+          "fail": 11
+        },
+        "numerator": 5,
+        "denominator": 100,
+        "rate": 0.05,
+        "partial_rate_judged_only": 0.05,
+        "aggregation": "entity_duplicate",
+        "uncertain_rate": 0.0,
+        "ineligible_targets": 0,
+        "pool_excluded": 0,
+        "flagged_pairs": 16,
+        "duplicates": [
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e18",
+            "candidate_id": "e2885",
+            "reason": "在两本书的深度学习语境中，CNN均默认为深度网络，'人工'修饰无实质区别，'深度卷积人工神经网络'即卷积神经网络的完整称谓。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e2204",
+            "candidate_id": "e2657",
+            "reason": "书中LMS规则与LMS算法均为Widrow-Hoff最小均方误差梯度下降规则，实体B的RL场景中LMS规则仅是目标信号不同，核心更新公式相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e2656",
+            "candidate_id": "e283",
+            "reason": "两者均指强化学习中的时序差分（TD）学习/算法，'时序差分'与'时差'同为Temporal-Difference的中文译名，含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e3077",
+            "candidate_id": "e3043",
+            "reason": "同一书中页码完全重合（S2:P000254-255在47-58页，索引中interface也在47-58页），书中以interface为节标题、以boundary为同节核心概念，指代同一划分界限。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e56",
+            "candidate_id": "e3190",
+            "reason": "书中reinforcement learning与reinforcement learning theory在相同上下文中互换使用，核心含义一致；'理论'仅为修饰词，未改变本质。"
+          }
+        ],
+        "lower_is_better": true,
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      }
+    },
+    "graphrag-m3-standard-en-rl": {
+      "assertion_correctness": {
+        "status": "incomplete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 198,
+        "unassessed": 2,
+        "statuses": {
+          "done": 198,
+          "failed": 2
+        },
+        "labels": {
+          "correct": 175,
+          "uncertain": 18,
+          "incorrect": 5
+        },
+        "numerator": 175,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": 0.8838383838383839,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L3": 186,
+          "L2": 7,
+          "L1": 7
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 163,
+        "correct_l3_coverage": null,
+        "correct_within_l3": null,
+        "joint_complete": false
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 100
+        },
+        "numerator": 100,
+        "denominator": 100,
+        "rate": 1.0,
+        "partial_rate_judged_only": 1.0,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 1.0
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 97,
+          "not_supported": 1,
+          "uncertain": 2
+        },
+        "numerator": 97,
+        "denominator": 100,
+        "rate": 0.97,
+        "partial_rate_judged_only": 0.97,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.97
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "pass": 91,
+          "fail": 7,
+          "uncertain": 2
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.9383333333333335,
+        "partial_rate_judged_only": 0.9383333333333335,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 115,
+          "fail": 8,
+          "uncertain": 3
+        },
+        "finest_supported_type": {
+          "L1": 80,
+          "L2": 16,
+          "none": 4
+        },
+        "whole_support_rate": 0.91
+      },
+      "entity_description": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 91,
+          "not_supported": 9
+        },
+        "numerator": 91,
+        "denominator": 100,
+        "rate": 0.91,
+        "partial_rate_judged_only": 0.91,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.91
+      },
+      "alias_identity": {
+        "status": "not_applicable",
+        "na_reason": "No eligible nontrivial aliases",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "pass": 37,
+          "fail": 10,
+          "uncertain": 1
+        },
+        "numerator": 37,
+        "denominator": 48,
+        "rate": 0.7708333333333334,
+        "partial_rate_judged_only": 0.7708333333333334,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.7708333333333334
+      },
+      "semantic_duplicate": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 91,
+        "done": 91,
+        "unassessed": 0,
+        "statuses": {
+          "done": 91
+        },
+        "labels": {
+          "none": 63,
+          "duplicate": 37
+        },
+        "unresolved_targets": 0,
+        "pair_labels": {
+          "fail": 17,
+          "pass": 74
+        },
+        "numerator": 37,
+        "denominator": 100,
+        "rate": 0.37,
+        "partial_rate_judged_only": 0.37,
+        "aggregation": "entity_duplicate",
+        "uncertain_rate": 0.0,
+        "ineligible_targets": 0,
+        "pool_excluded": 20,
+        "flagged_pairs": 91,
+        "duplicates": [
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_04048387cee07ad8cbfa",
+            "candidate_id": "e_cf297bff0b863dad7216",
+            "reason": "两者均指Gt，即完整蒙特卡洛回报，entity_a的定义明确指出complete return即full Monte Carlo return Gt。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_04048387cee07ad8cbfa",
+            "candidate_id": "e_d1a6adf87e17f8a020eb",
+            "reason": "两者均指Monte Carlo完整回报G_t，entity_b原文明确定义为complete return即G_t。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_04048387cee07ad8cbfa",
+            "candidate_id": "e_95cc8f66460f6eab6f23",
+            "reason": "两者均指完整的蒙特卡洛回报Gt，是同一数学对象在第12章和第5章的不同叫法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_04048387cee07ad8cbfa",
+            "candidate_id": "e_183d7bc0506ae9e64f96",
+            "reason": "两者都指Gt（完整蒙特卡洛回报），Chapter7定义full return时即称'ordinary complete return'，Chapter12称'complete return'，同一概念的不同叫法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_10f2a46a9ab273edaacd",
+            "candidate_id": "e_41ac4efa1926c8f76513",
+            "reason": "书中图12.14明确标注CART AND POLE数据来自pole-balancing task (Example 3.4)，即同一倒立摆/车杆任务。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_10f2a46a9ab273edaacd",
+            "candidate_id": "e_097d3b148ba0e40e77f0",
+            "reason": "书中将pole-balancing task直接标注为Example 3.4，且两者都源自Michie and Chambers (1968)和Barto, Sutton, and Anderson (1983)，是同一对象的不同称谓。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_10f2a46a9ab273edaacd",
+            "candidate_id": "e_61615ba781b8f2cdd9f6",
+            "reason": "两者均指Michie和Chambers(1968)提出的平衡铰链于可移动小车上的杆的经典强化学习任务，是同一对象的两种叫法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_10f2a46a9ab273edaacd",
+            "candidate_id": "e_65879d42c6e3ea6d9a03",
+            "reason": "两者均指Michie and Chambers (1968)及Barto, Sutton, Anderson (1983)的经典倒立摆任务，example与problem仅是不同称谓。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_10f2a46a9ab273edaacd",
+            "candidate_id": "e_549f15c5259421584419",
+            "reason": "两者均指Michie and Chambers(1968)的经典强化学习倒立摆问题，仅命名方式不同，含义严格相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_10f2a46a9ab273edaacd",
+            "candidate_id": "e_70befc1f128758aa57c6",
+            "reason": "\"POLE-BALANCING EXAMPLE\"即书中作为示例介绍的pole-balancing任务，Example 3.4与POLE-BALANCING指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_14c0a18236c9cb9a48e2",
+            "candidate_id": "e_d6599da5d44e7fb5c005",
+            "reason": "\"GAME OF GO\"是\"GO\"的完整写法，均指代围棋这一棋盘游戏，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1a289daaa4587a5ef7fd",
+            "candidate_id": "e_3bdc35688f669b8ea533",
+            "reason": "两者均指强化学习中由函数近似（如tile coding、神经网络）产生的值函数估计v̂(s,w)，书中交替使用，含义一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1a289daaa4587a5ef7fd",
+            "candidate_id": "e_b03ce6b227d8316fc6b3",
+            "reason": "approximated value与approximate value在RL中指同一概念，即函数近似产生的值函数估计v̂(s,w)，仅为形容词与过去分词的形式差异"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d06d29e623f9e5a08fd",
+            "candidate_id": "e_4c22833023258fb473e8",
+            "reason": "两者均为ε-greedy探索的ε参数，定义和用途完全一致（控制随机动作概率的小正数），仅出现在不同算法中。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d06d29e623f9e5a08fd",
+            "candidate_id": "e_656e57054ffd085e16aa",
+            "reason": "两者都是ε-greedy策略中控制探索概率的小正数参数，含义完全相同，仅命名方式不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d06d29e623f9e5a08fd",
+            "candidate_id": "e_f0215f55dd401ac41c07",
+            "reason": "两者都是ε-greedy探索参数ε，仅用于不同算法（Sarsa(λ)与Dyna-Q），含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d06d29e623f9e5a08fd",
+            "candidate_id": "e_43bf2f2b23adb2d47aa1",
+            "reason": "两者均指ε-greedy探索中的ε参数，书中既称ε又称exploration parameter，是同一对象的不同叫法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d06d29e623f9e5a08fd",
+            "candidate_id": "e_b0c760e35672a14b6737",
+            "reason": "两者均指ε-greedy策略中控制随机探索概率的小正数参数，用法相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d06d29e623f9e5a08fd",
+            "candidate_id": "e_20c2b516ccae8ef4df16",
+            "reason": "两者都是强化学习ε-greedy策略中的探索参数ε>0，仅出现在不同算法中（Sarsa(λ)与differential semi-gradient Sarsa），概念相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d96176c485c99cf409a",
+            "candidate_id": "e_05500c83198f630b17ce",
+            "reason": "仅连字符差异，'CLIFF-WALKING'与'CLIFF WALKING'指同一悬崖行走任务"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d96176c485c99cf409a",
+            "candidate_id": "e_179719123aee304d5b11",
+            "reason": "两者都指Sutton & Barto教材中同一经典网格世界示例，agent从起点到终点避开悬崖，用于比较TD控制算法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1d96176c485c99cf409a",
+            "candidate_id": "e_a64c8f16b525672d8bae",
+            "reason": "两者均指Sutton & Barto中同一经典gridworld示例，'task'仅为名称修饰，书中'cliff walking'与'cliff-walking task'互通使用"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_21850dccfd78dd4e3f8c",
+            "candidate_id": "e_ecf914308111ce2562a2",
+            "reason": "两者指同一概念，仅单复数差异，都指使用恒定步长参数α的动作值方法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_2fd9111c25ad4ac73a60",
+            "candidate_id": "e_af6c9e67a3ceda66f515",
+            "reason": "原文明确说\"hierarchical lookup tables called signature tables\"，两者是同一对象的全称与别称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3705103407be8abab240",
+            "candidate_id": "e_295177d85421ff7b05e7",
+            "reason": "书中15.12节标题为'Addiction'，内容全部讨论药物成瘾，与DRUG ADDICTION所指一致，可互换使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4135e74f548258879aa3",
+            "candidate_id": "e_ea0493616bff6ff4c4bb",
+            "reason": "两者均指进化内置的、先天具有强化/奖赏作用的刺激（如食物、性），书中平行使用primary reinforcer和primary reward，均对应未学习的初级强化刺激。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_50d89aa687c0b1099b5d",
+            "candidate_id": "e_40e2710273d8d0085b8a",
+            "reason": "书中第14章上下文里psychologists专指研究动物学习的心理学家，与animal learning psychologists含义一致"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_5695b514d7e9bb195d8d",
+            "candidate_id": "e_c5045c9b05d30b6d05a3",
+            "reason": "两者均指神经科学家Karl Friston，FRISTON为姓氏引用，FRISTON, K.为带首字母的全称引用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_5695b514d7e9bb195d8d",
+            "candidate_id": "e_84d83f57920b6af84732",
+            "reason": "FRISTON即Karl J. Friston，实体a的Friston et al., 1994与实体b的Friston, K. J.为同一人，仅姓与姓名首字母写法不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_5d1a66bf0f90adbce957",
+            "candidate_id": "e_391c9314016b0f1ab640",
+            "reason": "两者均指Marco Wiering，前者是姓加名首字母，后者仅用姓氏，是同一人的不同书写形式。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_629e316c4a1a338e0966",
+            "candidate_id": "e_1c505a83945b27c8cc83",
+            "reason": "同一人名拼写变体，2012年误拼为Lechner，2013年纠正为Lenchner，均为Watson策略论文合著者。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_629e316c4a1a338e0966",
+            "candidate_id": "e_4798a24eb2f4b7e39435",
+            "reason": "两者均指Watson策略论文的同一合著者，仅差一个名缩写J.，为同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_6cda85916fb8fa80020f",
+            "candidate_id": "e_c9db6de30b5ca1fd89d8",
+            "reason": "两者均指1999年Contreras-Vidal与Schultz合著的论文作者，entity_b是entity_a的完整形式（带姓名首字母缩写）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_6d1fb7765d7c690a37d1",
+            "candidate_id": "e_f436b075b5ef123ed532",
+            "reason": "两者均指George Konidaris（G. D. Konidaris），只是名字缩写写法略不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_6e0799fc76a9c951ebfe",
+            "candidate_id": "e_187fa3202c65bc31577f",
+            "reason": "Tile coding本身就是一种函数近似方法，'tile-coding function approximation'只是更具体地指明其在函数近似中的角色，指同一方法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_70befc1f128758aa57c6",
+            "candidate_id": "e_61615ba781b8f2cdd9f6",
+            "reason": "cart-pole task是pole-balancing的另一名称，均指通过施加力使铰接在小车上的杆保持平衡的任务"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_70befc1f128758aa57c6",
+            "candidate_id": "e_10f2a46a9ab273edaacd",
+            "reason": "POLE-BALANCING EXAMPLE即书中Example 3.4所介绍的POLE-BALANCING任务，指代同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_70befc1f128758aa57c6",
+            "candidate_id": "e_549f15c5259421584419",
+            "reason": "仅差一个连字符，指代完全相同的强化学习经典任务——保持倒立摆平衡。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_70befc1f128758aa57c6",
+            "candidate_id": "e_41ac4efa1926c8f76513",
+            "reason": "CART AND POLE在图中被明确定义为pole-balancing任务（Example 3.4），是同一对象的不同名称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_70befc1f128758aa57c6",
+            "candidate_id": "e_097d3b148ba0e40e77f0",
+            "reason": "两者均指同一倒立摆控制任务，书中交替使用'pole-balancing'和'pole-balancing task'指代同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_70befc1f128758aa57c6",
+            "candidate_id": "e_65879d42c6e3ea6d9a03",
+            "reason": "两者均指Michie和Chambers提出的经典强化学习倒立摆任务，仅是名称多了PROBLEM一词，指代相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_74c75714327de12cb2f5",
+            "candidate_id": "e_2d71cdf4b20dea4ea910",
+            "reason": "两者均指Kumar (1985)关于随机自适应控制的综述，同一人同一文献。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_815eb2b8af2dc3178853",
+            "candidate_id": "e_82b4186d13b0362f5f08",
+            "reason": "两者均指John Rust，1996年发表数值动态规划综述，仅为姓名写法不同（仅姓 vs. 姓+首字母）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_84d1b2e2f108a18d3d00",
+            "candidate_id": "e_a711ca6618efc56e30f3",
+            "reason": "TABULAR TD是TABULAR TD METHODS的简略形式，均指第6章介绍的表格型时序差分方法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_906d04d87ade5bc5b766",
+            "candidate_id": "e_52dc2b4fed98d3fd071d",
+            "reason": "同一概念，'neurodynamic programming'与'neuro-dynamic programming'仅为有无连字符的拼写变体，指Bertsekas和Tsitsiklis(1996)提出的同一研究领域。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_93982fbcf7a362210d04",
+            "candidate_id": "e_b8a9d01e62193b4604e2",
+            "reason": "两者均指Sutton书中第288页的compound backup概念，仅写法略有不同（update/backup vs backups），含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_93982fbcf7a362210d04",
+            "candidate_id": "e_2cb394a651f8e10ce6bd",
+            "reason": "索引中'compound update/backup'是同一概念的不同叫法，'complex backups, see compound update'进一步确认二者同指。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_93982fbcf7a362210d04",
+            "candidate_id": "e_7c8b35541e779ed61ae9",
+            "reason": "两者均指同一概念，索引条目'compound update/backup'与小节标题'Compound updates'同指，第二版将第一版'complex backups'更名为compound updates/backup。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_afaff7e3e2706c276475",
+            "candidate_id": "e_433b19daab2efd4e52c8",
+            "reason": "\"CREDIT ASSIGNMENT PROBLEM\"与\"CREDIT ASSIGNMENT\"是同一概念的完整与简称形式，在RL文献中通用含义一致"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_afaff7e3e2706c276475",
+            "candidate_id": "e_750d7811993fa86784dd",
+            "reason": "仅存在连字符写法差异，书中均指Minsky提出的分配信用问题，含义完全相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b478feb7152f0d912894",
+            "candidate_id": "e_805cb3fe5cdcbc4b11d9",
+            "reason": "SOURCE即数据源(DATA SOURCE)，定义均指生成轨迹的底层MDP，是同一概念的简写与全称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b883bd1d49ec0931fac2",
+            "candidate_id": "e_fd8d89b3a6fdeace4a3b",
+            "reason": "S. M. MCCLURE是姓McClure、名前缩写为S.M.的研究者，两篇证据论文均有P.R. Montague合著，指同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b88e5174152f9c5d55c2",
+            "candidate_id": "e_1eb82bb35d656b202145",
+            "reason": "两者均指Sutton, Mahmood, Precup, van Hasselt四位研究者的2014年合作工作，证据中多处引用完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_bd31fb070b75611888b2",
+            "candidate_id": "e_c0e82638ca43c0408291",
+            "reason": "两者都是指基于神经网络的联结主义模型系统，文献中常互换使用，含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c247759dc07bd7888744",
+            "candidate_id": "e_723b6b871b1fbf0c0c70",
+            "reason": "\"UCB\"是\"UCB ACTION SELECTION\"的缩写，证据中多次互换使用，如\"UCB (Section 2.7) action-selection methods\"。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c247759dc07bd7888744",
+            "candidate_id": "e_ce7f06a74bc7aab3ce22",
+            "reason": "Chapter 8明确将UCB selection rule标注为引用Chapter 2，即UCB action selection，是同一公式和方法的不同上下文应用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c247759dc07bd7888744",
+            "candidate_id": "e_cf20b7bf535a8b71a442",
+            "reason": "书中仅介绍了一种UCB方法，总结中的UCB methods即指Section 2.7的UCB action selection，选择确定性、偏好采样少的动作。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c247759dc07bd7888744",
+            "candidate_id": "e_8d8a31d154d58f499005",
+            "reason": "UCB是Upper-Confidence-Bound的标准缩写，两者指同一方法即UCB动作选择。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_cb7b8d8ca6a785b5dc09",
+            "candidate_id": "e_b9cc6b667ec5d8fcee91",
+            "reason": "SYNAPSES是SYNAPSE的复数形式，书中明确将synapses定义为神经元间通信的结构。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ce0333b57efd8c4bc756",
+            "candidate_id": "e_279f42d14122900e0158",
+            "reason": "书中Ht(a)是梯度赌博机中的动作偏好，第13章将其推广为h(s,a,θ)，属于同一概念在不同上下文（赌博机vs完整RL）下的表述，书中明确将两者关联为同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ce0333b57efd8c4bc756",
+            "candidate_id": "e_ebcc0063a4bdfc64e1c8",
+            "reason": "两者均指梯度赌博机算法中动作a在时刻t的偏好Ht(a)，仅一个指单个动作、一个指整体集合，含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ce0333b57efd8c4bc756",
+            "candidate_id": "e_8bb474d47966ae6b79a4",
+            "reason": "两者均指梯度 bandit 算法中动作 a 在时刻 t 的数值偏好 Ht(a)，仅是名称与下标写法的变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_d1e98252db86fd0e06d5",
+            "candidate_id": "e_517b5dd24ac24204a24e",
+            "reason": "书中第十二章讨论资格迹时，'one-step methods'是'one-step TD methods'的简称，均指基于单步更新的TD方法"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_d1e98252db86fd0e06d5",
+            "candidate_id": "e_7042097bc5430600f0ec",
+            "reason": "两者指同一概念——基于单步时间步更新的强化学习方法，仅是单复数形式不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_d945c6f6abf7e48c5065",
+            "candidate_id": "e_5fc08f4fec595ed07724",
+            "reason": "两者均为η(s)，表示一个回合中在状态s平均花费的时间步数，是同一个on-policy分布的不同引用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e700d069465ac7d302f4",
+            "candidate_id": "e_4c26a2c0ad6e86e0a9f7",
+            "reason": "MONTAGUE, P.R.即P. Read Montague，与MONTAGUE同为一人，是同一作者姓名的不同引用形式。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e700d069465ac7d302f4",
+            "candidate_id": "e_17509e36e9f452ae3660",
+            "reason": "两者仅在缩写格式上有无空格的差异（'P.R.' vs 'P. R.'），均为P. R. Montague，证据中均指向同一作者。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e700d069465ac7d302f4",
+            "candidate_id": "e_965d9b2bcd28ad0ac5df",
+            "reason": "两者均为P.R. Montague，仅为姓氏-名字首字母的不同排列格式，文献领域一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e719beb93a664231f725",
+            "candidate_id": "e_64cd83bf595ab676d7f4",
+            "reason": "书中'Gradient-TD Methods'(第11.7节)与'Gradient-TD Algorithms'指同一类方法，'methods'与'algorithms'在此语境中为同义替换。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ea4a3d67da092eebaa30",
+            "candidate_id": "e_a744ad715a1c121a4761",
+            "reason": "两者均指Lin(1992)提出的同一机制，书中正文称replay memory，历史注记称replay buffer，指代相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ea4a3d67da092eebaa30",
+            "candidate_id": "e_5008b1d04cfdf2a2ffef",
+            "reason": "replay memory（DQN中存储经验的机制）与replay buffers（保留旧数据并重放的技术）含义相同，是同一概念的不同叫法"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_fafb52d424fe24af32c0",
+            "candidate_id": "e_7db8cb654402f37dfaff",
+            "reason": "DLS是dorsolateral striatum的标准缩写，书中明确给出'dorsolateral striatum (DLS)'。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_fafb52d424fe24af32c0",
+            "candidate_id": "e_47c67bc8b044f6ddc044",
+            "reason": "entity_a明确将DLS定义为dorsolateral striatum，entity_b的定义也是Dorsolateral Striatum，二者完全同指。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_fafb52d424fe24af32c0",
+            "candidate_id": "e_698a15bcfd600ce67504",
+            "reason": "两者均指背外侧纹状体，仅名称与缩写排列顺序不同，书中明确DLS即dorsolateral striatum。"
+          }
+        ],
+        "lower_is_better": true,
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      }
+    },
+    "autoschemakg-m3-full-en-rl": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "correct": 141,
+          "uncertain": 36,
+          "incorrect": 23
+        },
+        "numerator": 141,
+        "denominator": 200,
+        "rate": 0.705,
+        "partial_rate_judged_only": 0.705,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.705
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L2": 27,
+          "L3": 165,
+          "L1": 8
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 114,
+        "correct_l3_coverage": 0.57,
+        "correct_within_l3": 0.6909090909090909,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 98,
+          "uncertain": 1,
+          "incorrect": 1
+        },
+        "numerator": 98,
+        "denominator": 100,
+        "rate": 0.98,
+        "partial_rate_judged_only": 0.98,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.98
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 96,
+          "not_supported": 4
+        },
+        "numerator": 96,
+        "denominator": 100,
+        "rate": 0.96,
+        "partial_rate_judged_only": 0.96,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.96
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "fail": 45,
+          "uncertain": 21,
+          "pass": 34
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.8015674603174601,
+        "partial_rate_judged_only": 0.8015674603174601,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 558,
+          "fail": 89,
+          "uncertain": 51
+        },
+        "finest_supported_type": {
+          "L3": 55,
+          "L2": 40,
+          "L1": 2,
+          "none": 3
+        },
+        "whole_support_rate": 0.34
+      },
+      "entity_description": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "alias_identity": {
+        "status": "not_applicable",
+        "na_reason": "No eligible nontrivial aliases",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "pass": 39,
+          "fail": 9
+        },
+        "numerator": 39,
+        "denominator": 48,
+        "rate": 0.8125,
+        "partial_rate_judged_only": 0.8125,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.8125
+      },
+      "semantic_duplicate": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 108,
+        "done": 108,
+        "unassessed": 0,
+        "statuses": {
+          "done": 108
+        },
+        "labels": {
+          "none": 58,
+          "duplicate": 42
+        },
+        "unresolved_targets": 0,
+        "pair_labels": {
+          "fail": 22,
+          "pass": 85,
+          "uncertain": 1
+        },
+        "numerator": 42,
+        "denominator": 100,
+        "rate": 0.42,
+        "partial_rate_judged_only": 0.42,
+        "aggregation": "entity_duplicate",
+        "uncertain_rate": 0.0,
+        "ineligible_targets": 0,
+        "pool_excluded": 30,
+        "flagged_pairs": 108,
+        "duplicates": [
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_03d333ad95185313d3aa",
+            "candidate_id": "e_952d17c2d7df233508f3",
+            "reason": "两者均指策略π下的稳态分布µ/µπ，是同一概念在不同章节的表述。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_03d333ad95185313d3aa",
+            "candidate_id": "e_e97ea92873de251d8236",
+            "reason": "两者都指策略π下的稳态分布，即在该分布下按π选动作分布保持不变，entity_b的证据原文与entity_a引用含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_03ecde4c8eab0994c2f1",
+            "candidate_id": "e_9b5b10d94fec581b51c5",
+            "reason": "两实体名称仅冠词不同（This/The），引用原文完全相同，指代同一研究方向的扩展。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1393995046a93b04257d",
+            "candidate_id": "e_b5883ae588e2d0cc8051",
+            "reason": "wt在同书中是线性函数近似中的权重向量，Gradient-TD部分称其为参数向量，指代同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1393995046a93b04257d",
+            "candidate_id": "e_0acbfce9b0e18f3a005b",
+            "reason": "\"wt\"是\"parameter vector wt\"的简写形式，两者含义完全相同，可互换使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1393995046a93b04257d",
+            "candidate_id": "e_8fa9095b92d80873aedc",
+            "reason": "两处wt均指线性函数逼近中同一参数向量，仅出现在不同算法(GTD2/TDC与true online TD(λ))中，符号和含义一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1393995046a93b04257d",
+            "candidate_id": "e_cd94f2c7fb0db1381b4b",
+            "reason": "两者均指线性函数逼近中同一d维参数向量w_t，仅名称中是否含'vector'一词不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_167d439b35cdd5e6ed7c",
+            "candidate_id": "e_fe73f806b539b277f48a",
+            "reason": "实体A是实体B的精简改写，两者描述的是同一图表（Figure 12.11）中的同一比较内容。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_167d439b35cdd5e6ed7c",
+            "candidate_id": "e_da62f4bcf7039abd3f3f",
+            "reason": "两者都指同一图（Figure 12.11）所展示的Mountain Car任务上Sarsa(λ)各版本性能比较"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1ad23d3909b64bbc25d2",
+            "candidate_id": "e_6d67710e1d298001b6d4",
+            "reason": "两者核心含义相同：资格迹的起源假说。仅entity_a保留了原文'idea of'的表述，entity_b省略了，但所指一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1ae13ac05ebff0ec980a",
+            "candidate_id": "e_695932d056d062dca733",
+            "reason": "两者均指Figure 12.10，B是图的完整标题，A是正文中的简要提及，指代同一对象，但描述详略不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_2ae539b1e61aa50f0fe2",
+            "candidate_id": "e_edfe70bc80eec7df979f",
+            "reason": "仅首字母大小写不同，含义完全相同，指同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_2ae539b1e61aa50f0fe2",
+            "candidate_id": "e_195fe6778386ff0fee7f",
+            "reason": "原文同一段落中experiments与experimentation交替使用指同一对象，仅为名词单复数/形式变体"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_36877a414b75e584a078",
+            "candidate_id": "e_5c34f8bf966894dfb188",
+            "reason": "两者均指Q1(a)，书中交替使用，如'initial action-value estimates'与'initial action values'指同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_36877a414b75e584a078",
+            "candidate_id": "e_67ecf6ac3e1a18f8e74f",
+            "reason": "文中'initial estimates'即指Q1(a)，与'initial action-value estimates'是同一对象的省略说法，可互换使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3d5f5bb24719ffc87882",
+            "candidate_id": "e_ac93e58384e8388a6c69",
+            "reason": "仅首字母大小写不同，指同一概念，证据完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3d5f5bb24719ffc87882",
+            "candidate_id": "e_218d963da76d4c20bc4e",
+            "reason": "两者均指同策略控制（on-policy control）这一通用方法类别，区别仅在具体实例（蒙特卡洛 vs 函数逼近），概念相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_47fa18984cd75609cb3d",
+            "candidate_id": "e_387edf24b06e8f597bef",
+            "reason": "两者描述同一推导步骤：选Bt=R̄t并用Rt替代q*(At)，B仅多了E[Rt|At]=q*(At)的许可说明，核心含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4a432389eec7fb5a1bc3",
+            "candidate_id": "e_801666049ef2ef2bee8d",
+            "reason": "两条名称仅在\"gradient descent\"有无引号上存在写法差异，指同一句话。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_533064e4ca32012a8a04",
+            "candidate_id": "e_6c9bbb5f3701579328b6",
+            "reason": "CS_B和CSB是同一记号的不同写法，B均为下标，指书中经典条件作用实验中的第二个条件刺激。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_548662f5c382c0b6b7ef",
+            "candidate_id": "e_831eb9294d0a214138c9",
+            "reason": "两者都指书中对Q-learning的讲解，\"in detail\"仅是修饰语，不改变所指对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_57f8c6426897a5a60fa8",
+            "candidate_id": "e_7b4b46915c6c6529c856",
+            "reason": "\"simple methods\"在第2章总结中（S2:P000211、P000216）明确指代本章介绍的用于平衡探索与利用的简单方法，与\"simple balancing methods\"含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_698e9a88c75ea209346e",
+            "candidate_id": "e_7ba9b06557028c9a2b52",
+            "reason": "\"Goodfellow\"即Ian Goodfellow，同为《Deep Learning》第一作者，姓氏与全称指同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_698e9a88c75ea209346e",
+            "candidate_id": "e_4ee0ebf4acfcf3fb4c79",
+            "reason": "两者均指Ian Goodfellow，即《Deep Learning》一书的第一作者Goodfellow为姓氏简写，Goodfellow, I.为带首字母的全称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7947ef8b0de1d267fc83",
+            "candidate_id": "e_f279ba30f4717502d058",
+            "reason": "两者指同一对象，CSC即complete serial compound，加或不加a和representation含义相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7947ef8b0de1d267fc83",
+            "candidate_id": "e_eff9773712c2318fad22",
+            "reason": "仅多一个不定冠词\"a\"，指称完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7947ef8b0de1d267fc83",
+            "candidate_id": "e_028ceb4bd24c1574e098",
+            "reason": "CSC representation是complete serial compound (CSC) representation的缩写，书中两者指同一对象且可互换使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7947ef8b0de1d267fc83",
+            "candidate_id": "e_516b20e6023afdb58e3d",
+            "reason": "两者完全一致，仅entity_a多一个不定冠词'a'，都指CSC表示法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7947ef8b0de1d267fc83",
+            "candidate_id": "e_028dea92d0eee153a774",
+            "reason": "两者均指TD模型中使用的complete serial compound (CSC)刺激表示方法，仅单复数形式不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7b73fa59970f76bdac4c",
+            "candidate_id": "e_af1a8d4ca0a0619b2d27",
+            "reason": "两者均来自同一句原文，仅entity_b多了'in this case'，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_80b6e5808d75e87622c8",
+            "candidate_id": "e_8977ab673ea07777dacd",
+            "reason": "q_π是策略π下动作价值的数学记号，与全称action-value under policy π含义严格相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_80b6e5808d75e87622c8",
+            "candidate_id": "e_2e15aa16f24ce63dd1b2",
+            "reason": "qπ(s,a)被明确定义为策略π下的动作价值函数（action-value function for policy π），两者含义严格相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_80b6e5808d75e87622c8",
+            "candidate_id": "e_2cfe16bf5d57659fa3c6",
+            "reason": "entity_a的证据明确将qπ(s,a)定义为策略π下的动作值函数，与entity_b含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_80b6e5808d75e87622c8",
+            "candidate_id": "e_f4d7e56c07ddfd18c372",
+            "reason": "q_π(s,a)是策略π下动作价值函数的标准数学表示，与'action-value under policy π'含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_80b6e5808d75e87622c8",
+            "candidate_id": "e_a6405edde228dc2897c8",
+            "reason": "两者均指qπ(s,a)，即策略π下的动作价值函数，仅名称中省略了'function'一词。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_82bf0d5b9254f589007c",
+            "candidate_id": "e_602578d5d1bdefdb642c",
+            "reason": "文中\"true probabilities of winning\"与\"probabilities of winning\"均指各状态的实际获胜概率，后者为前者的简称"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_8b4495449ec64d6f8d97",
+            "candidate_id": "e_4654997f018a8edee385",
+            "reason": "两者指同一概念，'mechanisms'仅是对'synaptic eligibility'的描述性限定，证据中均讨论Klopf、Miller等人的资格迹假说，实质内容相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_a5534a6a7bdbcb4e90cf",
+            "candidate_id": "e_7f3cf6b95929291ded24",
+            "reason": "同一段落中交替使用，含义完全相同，仅在用词详略上有微小差异。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_abcfd22914ab40f9d6b5",
+            "candidate_id": "e_3da85a96ff7c1eb86fa1",
+            "reason": "两者在书中均指逐个处理/评估每一个状态，含义实质相同：single与individual在此语境下互为同义表达。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_abcfd22914ab40f9d6b5",
+            "candidate_id": "e_4a2bbdad24b656bff0bd",
+            "reason": "两者都指单独/逐个处理的状态，含义一致：单数个状态与复数形式'单个状态'指同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_76d1a2a6c4a7bb56c730",
+            "reason": "两者含义完全相同，仅多一个不定冠词\"a\"，指代同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_3a27cac65fa0deff59dc",
+            "reason": "仅单复数之差，均指多层人工神经网络这一类架构，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_29e916bc14cb553781d1",
+            "reason": "multi-layer与multilayer仅是连字符写法变体，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_88ac2de56023a39a1aeb",
+            "reason": "ANN是artificial neural network的标准缩写，multi-layer与multilayer是同一词的不同写法，含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_21bdc87d1a05cfd8ed89",
+            "reason": "\"ANN\"是artificial neural network的标准缩写，multilayer与multi-layer写法变体，含义严格相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_a22a4aa854abbeb5d7b1",
+            "reason": "ANN是Artificial Neural Network的标准缩写，multi-layer ANNs即多层人工神经网络的缩写形式，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_04a4cc1f71667c2ef877",
+            "reason": "ANN是Artificial Neural Network的标准缩写，两者含义完全相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ade7d1dc294049f1c06d",
+            "candidate_id": "e_11dca1502b73be171003",
+            "reason": "两者均指多层人工神经网络，multilayer network是多层人工神经网络的常见缩写形式，书中均用于描述由反向传播训练的多层网络。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b03d9e1d50a026848490",
+            "candidate_id": "e_5198139c38356154bf58",
+            "reason": "两句仅时态不同（had used vs used），含义完全相同，指同一陈述。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b8cb9de14c43f0905065",
+            "candidate_id": "e_c9a98f5af8e142ae28f4",
+            "reason": "两者都指GQ(λ)论文中变λ概念的提出，含义实质相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b8cb9de14c43f0905065",
+            "candidate_id": "e_80e969c231bdd0733472",
+            "reason": "两者均描述同一史实——GQ(λ)论文使某变量显式化并引入λ-returns递归形式，仅措辞略有差异。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_be95a89857960d621114",
+            "candidate_id": "e_4925dbd04b5561af92f1",
+            "reason": "章首简介提到的'n-step linear Sarsa'与第10.2节正式命名的'semi-gradient n-step Sarsa'指同一算法，均使用线性函数逼近(tile coding)结合半梯度更新。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_be95a89857960d621114",
+            "candidate_id": "e_d2289855643af15b71e6",
+            "reason": "两者仅是词语顺序不同，指数完全相同的算法：第10.2节的n步半梯度Sarsa。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_be95a89857960d621114",
+            "candidate_id": "e_d2b416ec12bd0c89079e",
+            "reason": "均为第10.2节的同一种算法，仅词序不同，entity_a的伪代码完整名称含Episodic，与entity_b完全对应。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c09a9221517ecc189992",
+            "candidate_id": "e_1355e9c1fe649989c25e",
+            "reason": "\"1000-state version\"是书中对\"1000-state random walk task\"的简略指代，指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c09a9221517ecc189992",
+            "candidate_id": "e_8e95b4cf86f7475679ac",
+            "reason": "\"1000-state version\"即文中\"1000-state version of the random walk task\"，与\"1000-state Random Walk\"指同一任务，为其简称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c09a9221517ecc189992",
+            "candidate_id": "e_80349e938b7becb66941",
+            "reason": "\"1000-state version\"即书中1000-state random walk task的简称，证据明确指出其为random walk的1000-state版本。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c0c85313e225a3c8aa95",
+            "candidate_id": "e_1a4e1a9dafd645412ae4",
+            "reason": "两者均指解决k臂赌博机问题的方法/算法，书中Chapter 2的bandit methods与bandit algorithm含义一致"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c0c85313e225a3c8aa95",
+            "candidate_id": "e_8e6f624c88c4fdf3b90e",
+            "reason": "在Sutton & Barto教材上下文中，'bandit methods'和'bandit algorithm'均指用于解决多臂老虎机问题的方法/算法，含义基本一致，可互换使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c0c85313e225a3c8aa95",
+            "candidate_id": "e_b6b14c71eb4fa0df2e50",
+            "reason": "仅首字母大小写不同，含义完全相同，指向同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c0c85313e225a3c8aa95",
+            "candidate_id": "e_96a4a86c260f7f71920a",
+            "reason": "书中Chapter 2介绍的内容同时被称为'bandit methods'和'bandit algorithms'，指代相同的ε-greedy、UCB、梯度bandit等方法集。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_d5ee884529e370380a94",
+            "candidate_id": "e_b6a3dd046223b59de546",
+            "reason": "两者是同一句话的不同表述，entity_b是原文引用，entity_a是其忠实改写，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_d9a79057c03ae0fe24d7",
+            "candidate_id": "e_415520534f18e0b0cf6c",
+            "reason": "两者均指Paul W. Glimcher，文中正文用姓引用，参考文献中用全名，属同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_dd3febb0c8f786c16ec6",
+            "candidate_id": "e_7e2efca71b2f119c0411",
+            "reason": "书中都用以指代不含情境关联的k臂赌博机场景，含义一致，可互换。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_dfa037bad822c9e4b70b",
+            "candidate_id": "e_6e46235e0ecbc38da92e",
+            "reason": "两者都指推导PBE关于w的梯度表达式，对应同一推导步骤（公式11.25-11.27）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e125a57415d76def4d14",
+            "candidate_id": "e_6fb0305c121eda0c601b",
+            "reason": "两者均为书中同一指令的表述，仅主动/被动语态不同，指代完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e243204c5651feb5f23b",
+            "candidate_id": "e_b69fd4441b526db75dd7",
+            "reason": "仅大小写差异，名称与引用完全一致，指同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e243204c5651feb5f23b",
+            "candidate_id": "e_051b5af858f6f2dad1ac",
+            "reason": "仅是连字符写法变体，均指选择估计值最大动作的贪心方法，entity_b证据明确回引第2章定义。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e2815895e1b1bc996f41",
+            "candidate_id": "e_083aa36d1e0e11f76775",
+            "reason": "两者均描述MCTS的核心思想，原文为同一句话前后两段，含义互补且不可分割，均指MCTS逐步聚焦高奖励轨迹的机制。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e5126e45c4692a38819d",
+            "candidate_id": "e_39d49251e28a4d6bc563",
+            "reason": "\"game of blackjack\"即\"blackjack\"这一赌场纸牌游戏，文中明确用\"the popular casino card game of blackjack\"等同两者。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e5d4b1fa11640b63cd55",
+            "candidate_id": "e_acdc3197d8152a1185a6",
+            "reason": "两者都指DQN学习的49个Atari 2600游戏，是同一集合的简写与全称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e5d4b1fa11640b63cd55",
+            "candidate_id": "e_d11e6bea0812f5b0b609",
+            "reason": "原文提到'49 different Atari 2600 video games'，'49 games'是其省略说法，指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ed87c4e69885fdb9c2b0",
+            "candidate_id": "e_6809eaa93690ad322b74",
+            "reason": "两者均指同一方法：将option model构建为GVF集合并用书中方法学习，仅是表述措辞不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_628c99b87c402ec35e59",
+            "reason": "两者均指强化学习中智能体用于规划和预测的环境模型，仅多了'agent's'限定，含义相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_15415059cb53dbef296c",
+            "reason": "\"environment model\"与\"model of the agent's environment\"是同一概念的语序变体，书中交替使用，均指智能体用于预测环境对动作响应的模型。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_ae612a66d9839db95dba",
+            "reason": "在RL中，环境模型(model of the environment)即环境动力学模型，捕捉状态转移和奖励，两者含义一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_88e95f1f599925305bb6",
+            "reason": "在RL上下文中，'model of the agent's environment'与'model of environment's dynamics'均指model-based方法所使用的环境模型（转移动力学），含义实质相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_2cf9459e3e63607fa7c6",
+            "reason": "两词在同一RL教材中指同一概念：代理用以预测环境行为的模型，仅多一个所有格'agent's'。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_16f92f2f8d30ec864c68",
+            "reason": "两者均指强化学习中智能体对环境的内部模型，用于基于模型的规划，含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_f0d52a19269c4185427c",
+            "reason": "两者均指强化学习中描述环境动态的模型，是同概念的完整与简略表述，书中可互换使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_edba23052bbc42de8c55",
+            "candidate_id": "e_2710c59e7391c80d30e9",
+            "reason": "两者均指强化学习中智能体用于规划的所处环境模型，'agent's'仅明确所有者，含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f3a235b10bc88d9c5a7e",
+            "candidate_id": "e_eb6b85adfc46e909586b",
+            "reason": "两者均来自同一段落，描述RTDP同一收敛性质，仅措辞略有不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f75b16a4e4ad2ea7159b",
+            "candidate_id": "e_c2efdb31c7218c0041cb",
+            "reason": "两者都指V̄t(s)=Σπ(a|s)Qt(s,a)，仅是单复数和是否带'of state'的表述差异，含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f75b16a4e4ad2ea7159b",
+            "candidate_id": "e_9b45592862fd8bd1abef",
+            "reason": "两者指同一概念V̄t(s)，仅单复数写法不同，证据完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f9c831f5ef96d473d25d",
+            "candidate_id": "e_21988159565b3651d7f6",
+            "reason": "两者均指Modayil, White, Sutton (2014)发表在Adaptive Behavior上的同一篇论文，仅表述方式不同。"
+          }
+        ],
+        "lower_is_better": true,
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      }
+    },
+    "kggen-m3-lm-based-en-rl": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "correct": 135,
+          "incorrect": 43,
+          "uncertain": 22
+        },
+        "numerator": 135,
+        "denominator": 200,
+        "rate": 0.675,
+        "partial_rate_judged_only": 0.675,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.675
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L2": 20,
+          "L3": 163,
+          "L1": 14,
+          "uncertain": 3
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 111,
+        "correct_l3_coverage": 0.555,
+        "correct_within_l3": 0.6809815950920245,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 89,
+          "uncertain": 11
+        },
+        "numerator": 89,
+        "denominator": 100,
+        "rate": 0.89,
+        "partial_rate_judged_only": 0.89,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.89
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 87,
+          "not_supported": 13
+        },
+        "numerator": 87,
+        "denominator": 100,
+        "rate": 0.87,
+        "partial_rate_judged_only": 0.87,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.87
+      },
+      "entity_typing": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": null,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "entity_description": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "alias_identity": {
+        "status": "incomplete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 29,
+        "unassessed": 1,
+        "statuses": {
+          "done": 29,
+          "unassessed_size": 1
+        },
+        "labels": {
+          "pass": 26,
+          "fail": 3
+        },
+        "numerator": 26,
+        "denominator": 30,
+        "rate": null,
+        "partial_rate_judged_only": 0.896551724137931,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "fail": 27,
+          "pass": 18,
+          "uncertain": 3
+        },
+        "numerator": 18,
+        "denominator": 48,
+        "rate": 0.375,
+        "partial_rate_judged_only": 0.375,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.375
+      },
+      "semantic_duplicate": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 127,
+        "done": 127,
+        "unassessed": 0,
+        "statuses": {
+          "done": 127
+        },
+        "labels": {
+          "duplicate": 54,
+          "none": 45
+        },
+        "unresolved_targets": 0,
+        "pair_labels": {
+          "fail": 23,
+          "pass": 103,
+          "uncertain": 1
+        },
+        "numerator": 54,
+        "denominator": 99,
+        "rate": 0.5454545454545454,
+        "partial_rate_judged_only": 0.5454545454545454,
+        "aggregation": "entity_duplicate",
+        "uncertain_rate": 0.0,
+        "ineligible_targets": 1,
+        "pool_excluded": 21,
+        "flagged_pairs": 127,
+        "duplicates": [
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_02cb2123d73d9e34c14a",
+            "candidate_id": "e_fdbafac8c1fd3cb82923",
+            "reason": "两者都指使期望回报最大化的动作，前者是REINFORCE中的描述性说法，后者是bandit中的正式术语，核心含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_04aa2a3c8a91b2c39c3a",
+            "candidate_id": "e_c7f907d6b9e3fdb9d2f9",
+            "reason": "两者均指Dropout论文合著者Krizhevsky，A.是首字母缩写，属同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_058234be3700ff318b6d",
+            "candidate_id": "e_1b1b36f792d3497cd820",
+            "reason": "两者均指Norbert Wiener 1964年的著作God and Golem, Inc.，是同一文献的正文引用与参考文献条目。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_08c60506d1582ead446d",
+            "candidate_id": "e_32b9ffd2d160ca1fe620",
+            "reason": "E. C. Tolman即Edward Chace Tolman，全名缩写形式，指同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_08c60506d1582ead446d",
+            "candidate_id": "e_d430c1123f6c5cc15551",
+            "reason": "Tolman, E. C.即Edward Chace Tolman，两处引用同一著作(1948)及潜学习实验。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_0f759581241369a72ff7",
+            "candidate_id": "e_bb7143c196ce6c194042",
+            "reason": "书中参考文献中Silver, D.的全称与正文中Silver et al.的简写指同一人（David Silver），是同一作者的完整与缩写形式。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_0f759581241369a72ff7",
+            "candidate_id": "e_921733a595730927885f",
+            "reason": "\"Silver, D.\"是David Silver的文献引用形式，其著作（如AlphaGo论文、PhD论文）与其完全对应。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_0f759581241369a72ff7",
+            "candidate_id": "e_39e58246db33ae501d7b",
+            "reason": "仅差引号，同一作者名'Silver, D.'的写法变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_16187ea820861aec79a0",
+            "candidate_id": "e_8652436b63c641441606",
+            "reason": "Dyna架构正是将TD学习与模型学习及规划方法结合的统一方案，entity_a是该方案的描述性全称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_188941b70e7de2e526e7",
+            "candidate_id": "e_5ed7427bd9ecc1a07190",
+            "reason": "仅大小写差异（Meta vs meta），是同一术语的拼写变体"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_188941b70e7de2e526e7",
+            "candidate_id": "e_388a7919db6a4a2b0339",
+            "reason": "仅引号有无之差，名称完全相同，指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_1904b98e318e9954d497",
+            "candidate_id": "e_d295a67de11456acd417",
+            "reason": "两者名称内容完全相同，仅entity_a多了引号，属于书写格式差异，含义严格相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_27f1fa719a603522d903",
+            "candidate_id": "e_b2718e77af24eaa00fe6",
+            "reason": "仅大小写差异，均指书中第9.8式（线性函数近似公式）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_290906ffff6f9cadde0c",
+            "candidate_id": "e_b7ad4a6d6d93468131fd",
+            "reason": "两者字符串内容完全相同，仅entity_b多了引号，指同一篇论文。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_32735e5d4f3983f97ee8",
+            "candidate_id": "e_14cff41048f9e9dacc01",
+            "reason": "书中明确将MS定义为microstimulus的缩写，两者指同一刺激表示方法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_32735e5d4f3983f97ee8",
+            "candidate_id": "e_88bc847d475b2bd40bc3",
+            "reason": "MS是microstimulus的缩写，两者均指图14.4右侧的同一种刺激表示方法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3974f233ee65e8631c66",
+            "candidate_id": "e_3c5bc8355ce34cd8f9f1",
+            "reason": "仅引号差异，含义完全相同，均指DQN第三卷积层的3136个单元。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_4dfa62714cb410c81a13",
+            "reason": "两者均指强化学习中的参数γ，discounting即通过discount factor γ实现，书中有时称γ为discount rate，是同一概念的两种表述。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_034e3ec72662501a1b39",
+            "reason": "两者仅差引号，实际名称完全相同，均指带参数γ的折扣概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_5c719fab8b48f7efaba6",
+            "reason": "两者均指强化学习中的折扣因子概念，entity_a括号中的γ正是entity_b中明确使用的折扣率符号，含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_0a8083ae6cd6517e207b",
+            "reason": "两者均指MDP中的折扣因子γ，entity_b明确称其为'overall discounting parameter γ'，与entity_a含义一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_cd4e4c3f66ffe28594fd",
+            "reason": "两者均指同一参数γ，即对未来奖励进行折扣的折扣因子，是同指关系。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_80e0cc53434ebb5fc819",
+            "reason": "两者均指强化学习中的折扣因子γ，discounting(γ)与γ(discount factor)是同一概念的不同表述。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_e6bacb1bca8973070f65",
+            "reason": "书中明确指出γ是discount rate，discounting即以γ为参数的过程，两者含义相同可互换。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3e012020ea2c0839c305",
+            "candidate_id": "e_03325bd6eab34cc4c3da",
+            "reason": "两者均指强化学习中的γ参数，entity_b明确称γ为discount-rate parameter，与entity_a的discounting (γ)同指。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3f27522df7edbd3ca321",
+            "candidate_id": "e_0178a3548cdfa0c4d754",
+            "reason": "\"psychologist\"与\"psychologists\"是单复数变体，在文中均泛指心理学从业者群体，含义实质相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3fa1017ba1ca10c92111",
+            "candidate_id": "e_b14091d8d3cbcf947645",
+            "reason": "两者字符串完全相同，指同一篇文献引用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_3ff709d4a90811f6b1a1",
+            "candidate_id": "e_a959546b752ee8b7c5ce",
+            "reason": "仅多了引号，术语字符串完全相同，指同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_423989c47e33cfab3ba4",
+            "candidate_id": "e_d6027c9912eccdf31e05",
+            "reason": "\"the data\"即\"data\"加定冠词，在强化学习语境中指相同概念，即学习算法所使用的数据"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4466ced0ef4b4eeb9a9b",
+            "candidate_id": "e_cd62b4b356e383f57e1f",
+            "reason": "同一赛车问题，文中Example 8.6开头称racetrack problem，后续同节中称racetrack example，指同一任务。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4466ced0ef4b4eeb9a9b",
+            "candidate_id": "e_23e1354fb3d5963bd267",
+            "reason": "两者指同一对象，'racetrack'是'Racetrack problem'在同一章节讨论中的简称，指代同一个赛车问题示例。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4466ced0ef4b4eeb9a9b",
+            "candidate_id": "e_7912726af9c24a1d2cd4",
+            "reason": "书中Example 8.6明确称'The racetrack problem of Exercise 5.12'，将二者等同，虽第8章版本取消了速度限制但属同一问题的变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4466ced0ef4b4eeb9a9b",
+            "candidate_id": "e_a8fa2bd7b87bf9302e39",
+            "reason": "两者均指Exercise 5.12中的赛车问题，描述完全相同，problem与task为同义变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_48d6fd6b732734b8a3d9",
+            "candidate_id": "e_891cef66351e7e5a6d3c",
+            "reason": "两者均指眶额叶皮层（OFC），仅名称是否加引号的写法差异，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_48d6fd6b732734b8a3d9",
+            "candidate_id": "e_c038441751c8af8af629",
+            "reason": "OFC是orbitofrontal cortex的标准缩写"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_48d6fd6b732734b8a3d9",
+            "candidate_id": "e_8c2dcb4442f27b6e1b68",
+            "reason": "OFC是orbitofrontal cortex的标准缩写，书中明确给出对应关系。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4d222bd3953083faa7a3",
+            "candidate_id": "e_32b5a66498dfb25adf4f",
+            "reason": "两者指同一对象，entity_a是带文献署名的usage technique，entity_b是其简称，指代相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4d222bd3953083faa7a3",
+            "candidate_id": "e_67bc5313b0e3bffefdac",
+            "reason": "两者均指Mahmood and Sutton (2015)提出的usage technique，仅作者名位置不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4d222bd3953083faa7a3",
+            "candidate_id": "e_917194cd5b2fc68116ad",
+            "reason": "两者指同一技术，仅entity_a多了作者引用，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4e23f715183fbc1c0d33",
+            "candidate_id": "e_b64ac0e3296c981311f4",
+            "reason": "两者均指书中Value Error (VE)，entity_a的'average performance measure'是对VE的描述性修饰，含义相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4e23f715183fbc1c0d33",
+            "candidate_id": "e_78097ca588ffac0cadba",
+            "reason": "VE即Value Error（值误差），书中作为性能度量使用，与VE (average performance measure)指同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4e23f715183fbc1c0d33",
+            "candidate_id": "e_385bccd89413ddb6dc5a",
+            "reason": "两者名称仅引号有无之差，含义完全相同，指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4e23f715183fbc1c0d33",
+            "candidate_id": "e_fe2a9d02db8900e7bc19",
+            "reason": "书中VE明确被定义为mean square value error（公式9.1），两者指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_4e23f715183fbc1c0d33",
+            "candidate_id": "e_bb953e173c3f21f01583",
+            "reason": "两者均指Sutton & Barto中同一VE（Value Error），但A的描述'average performance measure'不够准确，非书中标准名称"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_5867dd73db78672ce19a",
+            "candidate_id": "e_395be45112b501206db9",
+            "reason": "\"one-step Sarsa method\"和\"one-step Sarsa\"指同一算法，后者又称Sarsa(0)，前者只是加了\"method\"一词。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_5867dd73db78672ce19a",
+            "candidate_id": "e_7c36382ccc092338ce11",
+            "reason": "书中明确指出'one-step Sarsa'即'Sarsa(0)'，是完全相同的算法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_5a9dabad68c883bedc20",
+            "candidate_id": "e_0ab5191d8c5977031e44",
+            "reason": "两者名称完全相同，仅entity_a带有引号，属格式变体，指同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_64eef743938c3901d850",
+            "candidate_id": "e_7a3db3b6046b1f9723ec",
+            "reason": "两个实体名称完全相同，仅引号差异，指代同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_65ef928f538f30d46d68",
+            "candidate_id": "e_b94148677bcb0032439f",
+            "reason": "两者含义相同，均指状态与奖励交替出现的序列，仅连字符写法不同（– vs and）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_68166c9d18f309d55451",
+            "candidate_id": "e_c715a7f3522d8e081abb",
+            "reason": "两者均指同一位研究者Jaderberg M.，前者为完整引用格式，后者为正文中的姓氏简称。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_72a627cae68325d77e3a",
+            "candidate_id": "e_a3be18136904a9f3416d",
+            "reason": "两者名称完全相同，仅引号不同，属同一概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7318597cc998d28cba36",
+            "candidate_id": "e_d17d667c8d0a8d47f06d",
+            "reason": "\"model-free methods\"是\"model-free reinforcement learning methods\"的简写，书中两种表述指同一类无需环境模型的方法"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7318597cc998d28cba36",
+            "candidate_id": "e_ab8e60cb25b2b60fd4c6",
+            "reason": "书中'model-free learning'是'model-free reinforcement learning'的简称，指同一类无模型方法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7318597cc998d28cba36",
+            "candidate_id": "e_f664ab7d99ac45b9e534",
+            "reason": "书中model-free algorithms明确用于强化学习语境，与model-free reinforcement learning methods含义相同，仅省略reinforcement learning一词。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7318597cc998d28cba36",
+            "candidate_id": "e_3a0b124e5678edeebb05",
+            "reason": "entity_b的'model-free algorithm'在上下文中指model-free强化学习算法，与entity_a含义一致，为简称形式。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_739b28fa13d9bc4f3982",
+            "candidate_id": "e_63d5c3ea6e45e8040ad7",
+            "reason": "Graybiel (2000)引用与Graybiel, A. M. (2000)为同一篇文献，指同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7783b36fa1e115b79b52",
+            "candidate_id": "e_ee65b9d55c9eb8462978",
+            "reason": "仅大小写差异，'Van'与'van'是同一作者Hado van Hasselt姓名的不同写法变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7783b36fa1e115b79b52",
+            "candidate_id": "e_349ed5bbd748b449c6c5",
+            "reason": "Van Hasselt, H.即Hado van Hasselt，是同一作者不同书写形式，书中引用为同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_7b6e126de01032215a63",
+            "candidate_id": "e_5ec69519d697f41b4aa8",
+            "reason": "entity_b的证据中提到Geist and Scherrer (2014)，与entity_a中Geist, M. and Scherrer (2014)为同一篇文献，指同一人（Geist, M.）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_88d61bac621d089f84d2",
+            "candidate_id": "e_fc2a1a6fc99a20b69f1f",
+            "reason": "两者均指不使用环境模型的强化学习方法，'systems'与'process'仅为同概念的措辞变体，书中交替使用。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_97622dfdd986c96fe765",
+            "candidate_id": "e_3cee49b9e313b58cfe72",
+            "reason": "二者均指智能体与环境交互的经验（transition），单复数变体属明确允许的同指情形，书中experiences即experience的复数。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_988400d00f3d9a4da095",
+            "candidate_id": "e_5aaa6f7331d4df00b15a",
+            "reason": "书中9.5.2节标题为'Fourier Basis'，内容中'Fourier basis features'与'Fourier basis'含义相同，指同一组基函数。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_988400d00f3d9a4da095",
+            "candidate_id": "e_43a5a314fded1ee21453",
+            "reason": "原文明确将Fourier basis的functions与features视为同义，'Fourier basis functions'即'Fourier basis features'。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_988400d00f3d9a4da095",
+            "candidate_id": "e_bd48d9d01d41eb2704af",
+            "reason": "索引中Fourier features指代第9.5.2节Fourier Basis中的Fourier basis features，是同一对象的缩写形式。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_9af3548982e91b7b8a05",
+            "candidate_id": "e_fa278b28354f11f2943a",
+            "reason": "两者仅差引号，引号不影响含义，均指同一地点圣奥古斯丁，德国。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_9c9b09f91f86fd415db9",
+            "candidate_id": "e_49fac8c981867d7bab1f",
+            "reason": "书中'Cortex'在神经解剖上下文中指大脑皮层，与'Cerebral Cortex'为同一结构的简称/全称关系，证据显示二者均指皮层向纹状体发送信号的解剖结构。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_9c9b09f91f86fd415db9",
+            "candidate_id": "e_fc1114d6d9efe60229d3",
+            "reason": "两者仅大小写不同，均指大脑皮层这一脑结构，含义完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_9ead7db6cb23e78ce71b",
+            "candidate_id": "e_e7c28777e5ed594363e7",
+            "reason": "\"goal boxes\"是\"goal box\"的复数形式，含义完全相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_9ead7db6cb23e78ce71b",
+            "candidate_id": "e_c921f0bc07caedaa40f5",
+            "reason": "两者仅差一对引号，指代相同概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_a0753c1b69e23146d039",
+            "candidate_id": "e_621033f3b2bca84547f3",
+            "reason": "两者仅差引号，指同一概念——西洋双陆棋计算机程序，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_a3422a1c224cbcc23805",
+            "candidate_id": "e_52928ee5fad6a783c81a",
+            "reason": "仅多了一对引号，属于书写变体，均指书中第2.1节的同一幅图。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_a3c46987fa8e4a3e2160",
+            "candidate_id": "e_360f9ef43b567f365eac",
+            "reason": "\"Yale\"是\"Yale University\"的常见缩写，书中均指同一所大学。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ac6bea1fad3bf04538f4",
+            "candidate_id": "e_36b1a9670b7d03209b14",
+            "reason": "REINFORCE本质上就是蒙特卡洛策略梯度算法，两者通常指同一方法，但严格来说Monte-Carlo REINFORCE是REINFORCE的特指变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ac6bea1fad3bf04538f4",
+            "candidate_id": "e_c6872e4b1cb0988b5b18",
+            "reason": "仅差一对引号，属于书写格式变体，含义完全相同"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ac6bea1fad3bf04538f4",
+            "candidate_id": "e_65edb02fbef6ea718ada",
+            "reason": "书中13.3节标题为'REINFORCE: Monte Carlo Policy Gradient'，明确将REINFORCE算法称为蒙特卡洛策略梯度。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ac6bea1fad3bf04538f4",
+            "candidate_id": "e_313c518eb31443e4c179",
+            "reason": "\"Monte-Carlo REINFORCE\"是REINFORCE算法本身，\"Monte-Carlo\"仅是其属性描述（蒙特卡洛策略梯度方法），二者指同一算法。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ac6bea1fad3bf04538f4",
+            "candidate_id": "e_f3e3e65110f109d31513",
+            "reason": "章节标题为REINFORCE: Monte Carlo Policy Gradient，正文称其为经典REINFORCE算法，指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b66b34b90e072f7e33f1",
+            "candidate_id": "e_dcf87281624853a8edcb",
+            "reason": "两者均指博弈中的走子动作，move是moves的单数形式，含义相同可互换。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_b90e22c7bd105c746a20",
+            "candidate_id": "e_22baa809bfcb35455d9f",
+            "reason": "V. Pawlak与Pawlak指同一人，引用文献（Pawlak, Kerr 2008; Pawlak et al. 2010）完全对应。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_bf1ef106daac738c11e5",
+            "candidate_id": "e_24079f288465e89849a5",
+            "reason": "两者均指1986年Moore等人论文合著者Berthier，'N. E.'为其名缩写。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c5c13d0355c74e82cdfa",
+            "candidate_id": "e_246f65e187acb868eb1d",
+            "reason": "两者均指代同一作者，在Berns et al.(2001)论文中署名一致，S.M.为McClure全名的缩写。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c5c13d0355c74e82cdfa",
+            "candidate_id": "e_44ce44cb27310798b7fc",
+            "reason": "entity_a证据中McClure, Daw, and Montague (2003)与entity_b中McClure, S. M., Daw, N. D., Montague, P. R. (2003)为同一文献，指同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_c5c13d0355c74e82cdfa",
+            "candidate_id": "e_ca5da8d92e8bb7ec4786",
+            "reason": "书中McClure出现在McClure, Daw, and Montague(2003)等引用中，即Samuel M. McClure，与McClure, S. M.为同一人，仅缩写程度不同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_de7c3b00148d33e42016",
+            "candidate_id": "e_bd86b9012f2f7c3d16c0",
+            "reason": "SNARCs即Stochastic Neural-Analog Reinforcement Calculators，是该全称的复数缩写形式。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_de7c3b00148d33e42016",
+            "candidate_id": "e_63cc1565d2275f8da2fd",
+            "reason": "SNARC是Stochastic Neural-Analog Reinforcement Calculator的缩写，两者指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e48cb304f0a7021a84c8",
+            "candidate_id": "e_9f9a2aee4af73ae8a75a",
+            "reason": "Thorp与Thorp, E. O.指同一人，即Edward O. Thorp，1966年《Beat the Dealer》作者"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e80174fdca5348133593",
+            "candidate_id": "e_d43fa4bba309239cdf09",
+            "reason": "参考文献中明确记载He, Zhang, Ren, and Sun (2016)对应的论文即为'Deep residual learning for image recognition'，两者指同一篇论文。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_e9819c54b9637109d065",
+            "candidate_id": "e_335200c1bf9a50c6ef3a",
+            "reason": "\"states\"是\"state\"的复数形式，在MDP语境中指同一概念，仅单复数变体。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ea9e8f2d382d8f0ab7ba",
+            "candidate_id": "e_37cf09b1963db83d2735",
+            "reason": "D是drag力在图示和公式中的标准符号标注，两者指同一空气阻力概念。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ea9e8f2d382d8f0ab7ba",
+            "candidate_id": "e_88a1eeff300aefcddc5a",
+            "reason": "仅大小写不同，均指滑翔机空气动力学自由体图中的阻力D。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ecfd4851a5c7dec183a1",
+            "candidate_id": "e_ecba00998827ce5c2f03",
+            "reason": "\"D. Joel\"与\"Joel\"指同一作者，引文Niv, Joel, and Dayan (2006)即Y. Niv, D. Joel, and P. Dayan (2006)。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ecfd4851a5c7dec183a1",
+            "candidate_id": "e_fc308280949ee1682edf",
+            "reason": "\"Joel\"在引文中是Daphna Joel（神经科学家），与\"Joel, D.\"为同一人。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ecfd4851a5c7dec183a1",
+            "candidate_id": "e_ece234eb1656ad5d7332",
+            "reason": "两者为同一人，Joel是Joel, D.的姓氏，共同作者（Niv, Ruppin, Dayan等）和发表年份完全一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_187fb52b124f57df0031",
+            "reason": "BE objective即Bellman Error作为优化目标，与BE（Bellman error）是同一概念的不同表述。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_72c2dfa7efa4ac501fb3",
+            "reason": "文中明确'mean square Bellman error (BE)'，BE objective即最小化均方Bellman误差的目标。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_d79a4a793804f0090a59",
+            "reason": "BE objective即以Bellman error（均方Bellman误差BE(w)）作为优化目标，指同一量"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_507bbc1af9c69b3e7644",
+            "reason": "BE即Bellman Error（贝尔曼误差），entity_b证据明确给出'Bellman error (BE)'，entity_a的'BE objective'指同一目标函数。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_6b346ff9758b79849093",
+            "reason": "BE objective即Bellman error objective的缩写，entity_b明确给出全称Bellman error objective (BE)，两者指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_4616237f9158280f1f76",
+            "reason": "BE objective即Bellman Error作为优化目标，BEs是Bellman Error的复数形式，均指同一Bellman误差概念"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_3410c319b7b2436c3285",
+            "reason": "\"BE\"在上下文中明确是\"Bellman Error\"的缩写，BE objective即Bellman error objective，含义完全相同。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f459207e82f241210548",
+            "candidate_id": "e_f7947dcf7b81e333193e",
+            "reason": "BE即Bellman Error的缩写，\"BE objective\"即最小化Mean Square Bellman Error的目标，两者指同一对象。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_f4afa1482223c297d2ca",
+            "candidate_id": "e_73ed9829876496cdf3cc",
+            "reason": "仅引号有无的差异，两者指同一本书（Jordan编辑的《Learning in Graphical Models》）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e_ff58604914dbe7dc1c5d",
+            "candidate_id": "e_e014ed5056070f129cc3",
+            "reason": "Pineau, J.与Pineau指向同一作者，仅为是否带首字母的写法变体，指代同一篇Barreto, Precup, and Pineau (2011)文献。"
+          }
+        ],
+        "lower_is_better": true,
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      }
+    }
+  },
+  "structure": {
+    "ours-sutton-barto-incremental-m3": {
+      "entity_count": 1354,
+      "assertion_count": 2708,
+      "quality_assertion_count": 2708,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.208272,
+      "largest_component_ratio": 0.7304283604135894,
+      "alias_count": 3723,
+      "field_counts": {
+        "types": 1354,
+        "definition": 1354,
+        "aliases": 1339
+      },
+      "construction": {
+        "input_tokens_million": 465.142485,
+        "output_tokens_million": 45.316314,
+        "total_tokens_million": 510.458799
+      },
+      "construction_source": "/home/likefallwind/code/llm-knowledge-graph/tmp/rl-assessment-20260920/provenance.json",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 1354,
+          "assertion_count": 2708,
+          "largest_component_ratio": 0.730428,
+          "isolated_entity_count": 282
+        }
+      ]
+    },
+    "graphrag-m3-standard-en-rl": {
+      "entity_count": 8317,
+      "assertion_count": 19060,
+      "quality_assertion_count": 19060,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.036672,
+      "largest_component_ratio": 0.9212456414572562,
+      "alias_count": 0,
+      "field_counts": {
+        "types": 8317,
+        "definition": 8317,
+        "aliases": 0
+      },
+      "construction": {
+        "input_tokens_million": 5.482614,
+        "output_tokens_million": 4.19103,
+        "total_tokens_million": 9.673644
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 8317,
+          "assertion_count": 19060,
+          "largest_component_ratio": 0.921246,
+          "isolated_entity_count": 305
+        }
+      ]
+    },
+    "autoschemakg-m3-full-en-rl": {
+      "entity_count": 29219,
+      "assertion_count": 38783,
+      "quality_assertion_count": 10288,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.0,
+      "largest_component_ratio": 0.7053629487662137,
+      "alias_count": 0,
+      "field_counts": {
+        "types": 29219,
+        "definition": 0,
+        "aliases": 0
+      },
+      "construction": {
+        "input_tokens_million": 17.736773,
+        "output_tokens_million": 9.539398,
+        "total_tokens_million": 27.276171
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 29219,
+          "assertion_count": 38783,
+          "largest_component_ratio": 0.705363,
+          "isolated_entity_count": 0
+        }
+      ]
+    },
+    "kggen-m3-lm-based-en-rl": {
+      "entity_count": 12339,
+      "assertion_count": 22703,
+      "quality_assertion_count": 22703,
+      "entity_citation_presence": 0.892698,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.136316,
+      "largest_component_ratio": 0.8022530188832159,
+      "alias_count": 1351,
+      "field_counts": {
+        "types": 0,
+        "definition": 0,
+        "aliases": 942
+      },
+      "construction": {
+        "input_tokens_million": 12.348319,
+        "output_tokens_million": 13.113802,
+        "total_tokens_million": 25.462121
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 12339,
+          "assertion_count": 22703,
+          "largest_component_ratio": 0.802253,
+          "isolated_entity_count": 1682
+        }
+      ]
+    }
+  },
+  "updated_at": 1790581052.339382,
+  "composed_from": {
+    "parent": {
+      "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3",
+      "protocol": "selected-metrics-v5-identity-sources",
+      "summary_sha256": "ccf91ba785e5cc0c4ebf297baaccf2d8e932443ef3dadf76f606711c468659ef",
+      "dropped_retired_metrics": [
+        "identity_split"
+      ]
+    },
+    "stage": {
+      "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-semantic-duplicate-20260928",
+      "protocol": "selected-metrics-v6-semantic-duplicates",
+      "summary_sha256": "74bfb8940c62951e1ec01235e40bd317c22bf94745aad68aac671730f5604319"
+    }
+  }
+}

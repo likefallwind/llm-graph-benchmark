@@ -11,5 +11,5 @@ llm-graph-benchmark workflow prepare \
 
 这条命令只准备，不调用 API。只有明确执行 workflow run 或 launch 才会开始新评测。
 此配置用于未来统一重跑或替换图谱输入，不继承本次历史混合来源的分数。
-默认实体100、断言200、别名30、拆分30，事实探针沿用48条；Book QA已从当前评测移除。
+默认实体100、断言200、别名30，事实探针沿用48条；Book QA与实体拆分已从当前评测移除，语义重复作为单独阶段运行。
 目前已有结果仍见 outputs/d2l-consolidated-results-20260923/REPORT.md。

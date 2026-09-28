@@ -6,12 +6,14 @@ from pathlib import Path
 import time
 
 from ..bundle import canonical_hash
-from . import protocol
-from .preparation import read
+from . import protocol, semantic_duplicate
+from .preparation import read, sha
 from .transport import write, usage_summary
 
 PASS = {"assertion_correctness": "correct", "entity_correctness": "correct",
         "entity_evidence": "supported", "entity_description": "supported"}
+SCOPE_ROWS = {"entity_description_only": ("整段描述", "抽样实体无描述字段数"),
+              "semantic_duplicate_only": ("语义重复",)}
 
 
 def result_for(run, task):
@@ -30,6 +32,15 @@ def _ratio(n, d):
     return n / d if d else None
 
 
+def _stage_not_run():
+    return {"status": "not_applicable", "na_reason": "Evaluated in the separate semantic-duplicate stage",
+            "expected": 0, "done": 0, "unassessed": 0, "statuses": {}, "labels": {},
+            "numerator": None, "denominator": 0, "rate": None, "partial_rate_judged_only": None,
+            "aggregation": "entity_duplicate", "uncertain_rate": None, "pool_excluded": 0,
+            "sampled_entities": None, "field_absent": 0, "atomic": {}, "finest_supported_type": {},
+            "whole_support_rate": None}
+
+
 def report(run):
     from .engine import slots_path
     run = Path(run).resolve()
@@ -38,12 +49,21 @@ def report(run):
     sampling, manifest = read(run / "sampling.json"), read(run / "manifest.json")
     if any(t["metric"] not in protocol.METRICS for t in tasks):
         raise ValueError("Retired metrics require their archived workflow version")
+    selected_metrics = manifest.get("selected_metrics", protocol.METRICS)
     results = {t["id"]: result_for(run, t) for t in tasks}
     details, grouped = [], {}
     for sid in systems:
         groups = grouped[sid] = {}
         for metric in protocol.METRICS:
             selected = [t for t in tasks if keys[t["id"]]["system"] == sid and t["metric"] == metric]
+            if metric == "semantic_duplicate":
+                for task in selected:
+                    r = results[task["id"]]
+                    details.append({"task_id": task["id"], **keys[task["id"]], **r})
+                groups[metric] = (semantic_duplicate.aggregate(sampling[sid], selected, keys, results)
+                                  if manifest.get("evaluation_scope") == "semantic_duplicate_only"
+                                  else _stage_not_run())
+                continue
             counts, labels, atoms, levels = Counter(), Counter(), Counter(), Counter()
             rates = []
             for task in selected:
@@ -61,18 +81,16 @@ def report(run):
                     atoms.update(atomic)
                     rates.append(atomic["pass"] / len(values))
                     row["score"] = rates[-1]
-                    if metric == "entity_typing":
-                        levels[max((x["level"] for x in values if x["label"] == "pass"), default="none")] += 1
+                    levels[max((x["level"] for x in values if x["label"] == "pass"), default="none")] += 1
                 details.append(row)
             expected, done = len(selected), counts["done"]
-            sampled = sum(len(d["entity_ids"]) for d in sampling[sid])
-            missing_fields = sum(x["metric"] == metric for d in sampling[sid] for x in d["excluded_fields"])
+            sampled = sum(len(d.get("entity_ids", [])) for d in sampling[sid])
+            missing_fields = sum(x["metric"] == metric for d in sampling[sid] for x in d.get("excluded_fields", []))
             success = labels[PASS.get(metric, "pass")]
             partial = sum(rates) / len(rates) if rates else _ratio(success, done)
             status = "not_applicable" if not expected else "complete" if done == expected else "incomplete"
             na_reason = (
                 "No native field in the frozen entity sample" if metric in {"entity_typing", "entity_description"}
-                else "No eligible collision pairs" if metric == "identity_split"
                 else "No eligible nontrivial aliases" if metric == "alias_identity"
                 else "No source-side fact probes" if metric == "fact_recovery"
                 else "No eligible objects"
@@ -111,7 +129,7 @@ def report(run):
         "model": manifest["model"], "complete": counts["done"] == len(tasks),
         "total": len(tasks), "done": counts["done"], "statuses": dict(counts),
         "evaluation_scope": manifest.get("evaluation_scope", "all_selected_metrics"),
-        "groups": {sid: {m: g for m, g in groups.items() if m in manifest.get("selected_metrics", protocol.METRICS)}
+        "groups": {sid: {m: g for m, g in groups.items() if m in selected_metrics}
                    for sid, groups in grouped.items()},
         "structure": structures, "updated_at": time.time(),
         "evaluation_usage": usage_summary(run / "api", slots_path()),
@@ -121,6 +139,59 @@ def report(run):
     }
     write(run / "summary.json", out)
     write(run / "case-results.json", details)
+    header = f"协议：{manifest['protocol']}；模型：{manifest['model']}；有效任务 {out['done']}/{out['total']}。"
+    _render(run, header, systems, grouped, structures, manifest.get("evaluation_scope"), selected_metrics)
+    return out
+
+
+def combine(parent, stage, out):
+    """One table: the parent's other metrics plus its semantic-duplicate stage.
+
+    Retired metrics in the parent (surface-collision splits) are dropped; no
+    label is copied between metrics, and both sources stay hash-referenced.
+    """
+    parent, stage, out = Path(parent).resolve(), Path(stage).resolve(), Path(out).resolve()
+    if out.exists():
+        raise ValueError("Use a new combined output directory")
+    pm, sm = read(parent / "manifest.json"), read(stage / "manifest.json")
+    ps, ss = read(parent / "summary.json"), read(stage / "summary.json")
+    if sm.get("evaluation_scope") != "semantic_duplicate_only":
+        raise ValueError("Stage must be a semantic-duplicate run")
+    if read(stage / "config.json")["parent"] != str(parent) or pm["benchmark_hash"] != sm["benchmark_hash"]:
+        raise ValueError("Stage was not derived from this parent run")
+    systems = read(parent / "systems.json")
+    if set(systems) != set(ss["groups"]) or set(systems) != set(ps["groups"]):
+        raise ValueError("Parent and stage systems differ")
+    grouped = {}
+    for sid in systems:
+        grouped[sid] = {m: ps["groups"][sid][m] for m in protocol.METRICS if m in ps["groups"][sid]}
+        grouped[sid]["semantic_duplicate"] = ss["groups"][sid]["semantic_duplicate"]
+    done = sum(g["done"] for groups in grouped.values() for g in groups.values())
+    total = sum(g["expected"] for groups in grouped.values() for g in groups.values())
+    summary = {
+        "protocol": protocol.VERSION, "model": pm["model"],
+        "metric_versions": {**{m: v for m, v in pm["metric_versions"].items() if m in protocol.METRICS},
+                            **sm["metric_versions"]},
+        "complete": all(g["status"] != "incomplete" for groups in grouped.values() for g in groups.values()),
+        "total": total, "done": done, "evaluation_scope": "combined_parent_and_semantic_stage",
+        "groups": grouped, "structure": ps["structure"], "updated_at": time.time(),
+        "composed_from": {
+            "parent": {"run": str(parent), "protocol": pm["protocol"],
+                       "summary_sha256": sha(parent / "summary.json"),
+                       "dropped_retired_metrics": sorted(set(ps["groups"][next(iter(systems))]) - set(protocol.METRICS))},
+            "stage": {"run": str(stage), "protocol": sm["protocol"], "summary_sha256": sha(stage / "summary.json")},
+        },
+    }
+    out.mkdir(parents=True)
+    write(out / "summary.json", summary)
+    header = (f"协议：{protocol.VERSION}；模型：{pm['model']}；有效任务 {done}/{total}。"
+              f"语义重复来自单独阶段（{sm['metric_versions']['semantic_duplicate']}），"
+              f"其余指标来自父运行（{pm['protocol']}，已退役的实体拆分不列入）。")
+    _render(out, header, systems, grouped, ps["structure"], None, protocol.METRICS)
+    return summary
+
+
+def _render(target, header, systems, grouped, structures, scope, selected):
     rows = []
 
     def pct(value):
@@ -148,6 +219,7 @@ def report(run):
         add(name, lambda s, label=label: label_fraction(s, "assertion_correctness", label))
     for level in ("L1", "L2", "L3", "uncertain"):
         add("关系粒度 " + level, lambda s, level=level: label_fraction(s, "relation_granularity", level))
+
     def joint_cell(sid, field):
         g = grouped[sid]["relation_granularity"]
         if not g["expected"]:
@@ -171,8 +243,13 @@ def report(run):
     add(protocol.METRICS["entity_description"], lambda s: group_cell(s, "entity_description"))
     for label, title in (("not_supported", "整段描述不支持率"), ("uncertain", "整段描述不确定率")):
         add(title, lambda s, label=label: label_fraction(s, "entity_description", label))
-    for metric in ("alias_identity", "identity_split", "fact_recovery"):
-        add(protocol.METRICS[metric], lambda s, m=metric: group_cell(s, m))
+    add(protocol.METRICS["alias_identity"], lambda s: group_cell(s, "alias_identity"))
+    add("语义重复率（越低越好）", lambda s: group_cell(s, "semantic_duplicate"))
+    add("语义重复不确定率", lambda s: pct(grouped[s]["semantic_duplicate"]["uncertain_rate"])
+        if grouped[s]["semantic_duplicate"]["status"] == "complete" else group_cell(s, "semantic_duplicate"))
+    add("语义重复排除的超大实体数", lambda s: str(grouped[s]["semantic_duplicate"]["pool_excluded"])
+        if grouped[s]["semantic_duplicate"]["status"] != "not_applicable" else "N/A")
+    add(protocol.METRICS["fact_recovery"], lambda s: group_cell(s, "fact_recovery"))
     for field, title in (("entity_count", "图实体数"), ("assertion_count", "图断言数"),
                          ("quality_assertion_count", "语义评测候选断言数"), ("alias_count", "别名条目数")):
         add(title, lambda s, f=field: str(structures[s][f]))
@@ -189,13 +266,11 @@ def report(run):
         add(title, lambda s, f=field: "N/A" if structures[s]["construction"][f] is None
             else f"{structures[s]['construction'][f]:.6f}")
     headers = ["指标"] + [systems[s]["name"] for s in systems]
-    description_only = manifest.get("evaluation_scope") == "entity_description_only"
-    if description_only:
-        rows = [r for r in rows if r[0].startswith("整段描述") or r[0] == "抽样实体无描述字段数"]
+    if scope in SCOPE_ROWS:
+        rows = [r for r in rows if r[0].startswith(SCOPE_ROWS[scope])]
     escape = lambda x: str(x).replace("|", r"\|").replace("\n", " ")
     lines = [
-        "# 图谱评测结果", "",
-        f"协议：{manifest['protocol']}；模型：{manifest['model']}；有效任务 {out['done']}/{out['total']}。",
+        "# 图谱评测结果", "", header,
         "任务未完成时不发布最终得分。N/A 的具体原因、各项分母、语义不确定与技术状态见 summary.json。",
         "", "|" + "|".join(map(escape, headers)) + "|",
         "|" + "|".join(["---"] + ["---:"] * len(systems)) + "|",
@@ -208,7 +283,7 @@ def report(run):
     ]
     for sid, groups in grouped.items():
         for metric, g in groups.items():
-            if metric not in manifest.get("selected_metrics", protocol.METRICS):
+            if metric not in selected:
                 continue
             lines.append("|" + "|".join(map(escape, [systems[sid]["name"], protocol.METRICS[metric],
                 f"{g['done']}/{g['expected']}", g["labels"].get("uncertain", 0),
@@ -220,8 +295,8 @@ def report(run):
         "- 关系粒度读取完整原生断言（含自然语言描述），与正确性独立。",
         "- 实体正确性使用提交引用及左右各一段；实体引用、类型与描述只使用完整提交来源；断言使用引用所在完整小节。",
         "- 完整事实覆盖为参考指标：只读 BM25 Top10 图候选，不能用目标事实或原文为图补信息；同时受图谱覆盖与检索召回影响，未通过不一定表示图谱缺少该知识，不是全书召回率，不单独用于判断方法优劣。",
-        "- 别名与拆分展示各实体提交的全部引用原文，不截断；原文是依据之一，可结合可靠通用知识，书中所指优先。",
-        "- 实体拆分仅针对共享规范化表面形式的候选对；没有候选不代表100%正确。",
+        "- 别名展示实体提交的全部引用原文，不截断；原文是依据之一，可结合可靠通用知识，书中所指优先。",
+        "- 语义重复沿用实体样本：评测方写等价叫法，在全图实体名与别名中检索前30个候选并宽松初筛，冻结后由裁判逐对从严判定（含义严格相同才算同指），裁判看双方原样引用原文。检索可能漏掉重复，结果是下限，越低越好；引用原文超过170KB的超大实体不进入样本和候选池，会低估这些实体涉及的重复。已判/可评按初筛留下的实体对计，语义不确定按实体计。",
         "- 构图 Token 与本次评测调用用量分开；无构图记录记 N/A。",
         "- 各图独立抽样，不是同实体配对实验；模型判断未经独立人工金标准校准，不据细小差距断言排名。",
         "- 类型标签绑定属于新接口版本，其他迁移规则见 metric_versions；不同版本的历史结果不自动混合。",
@@ -229,12 +304,14 @@ def report(run):
     ]
     for sid in systems:
         lines.append(f"- {escape(systems[sid]['name'])}：{escape(systems[sid]['scope_note'])}")
-    if description_only:
+    if scope == "entity_description_only":
         lines.append("\n本轮只重评整段描述支持，其余指标不更新；未复用历史分段判定作为新标签。")
-    (run / "REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    if scope == "semantic_duplicate_only":
+        lines.append("\n本轮只评语义重复，沿用父运行的实体样本，其余指标不更新。")
+    target = Path(target)
+    (target / "REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     buffer = io.StringIO(newline="")
     writer = csv.writer(buffer)
     writer.writerow(headers)
     writer.writerows(rows)
-    (run / "comparison.csv").write_text(buffer.getvalue(), encoding="utf-8-sig")
-    return out
+    (target / "comparison.csv").write_text(buffer.getvalue(), encoding="utf-8-sig")

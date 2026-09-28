@@ -14,7 +14,7 @@
     {"path": "/path/to/submission.json", "name": "方法A"}
   ],
   "seed": 20260923,
-  "samples": {"entities": 100, "assertions": 200, "aliases": 30, "splits": 30},
+  "samples": {"entities": 100, "assertions": 200, "aliases": 30},
   "workers": 6
 }
 ```
@@ -25,7 +25,8 @@
 submissions 也可直接列字符串路径。system.id 必须唯一；所有图谱使用同一 benchmark。
 samples 是每文档上限，总体不足时取全部，禁止按得分或字段有无补换样本。workers 只能为1至6。
 实体正确性、引用支持、类型与描述复用本轮同一实体样本；关系正确性与粒度复用同一断言样本。
-别名从非平凡别名分配中抽样，拆分从表面碰撞候选对抽样。事实探针不额外抽样。Book QA已移除，不生成相关任务或发出相关API调用。
+别名从非平凡别名分配中抽样。事实探针不额外抽样。Book QA已移除，不生成相关任务或发出相关API调用。
+实体拆分已退役，旧配置里的 samples.splits 会被拒绝；语义重复在主运行完成后作为单独阶段评测，见下文。
 
 可选 submission 参数：
 
@@ -71,6 +72,27 @@ provider 认证/余额错误停止派发；修复环境后显式 --retry-failed 
 
 退出码：0成功，2配置/校验错误，3存在未评，4供应商错误。
 launch 只等待启动确认；后台的最终结果以 status 为准，不把“已启动”当作“已完成”。
+
+## 语义重复阶段
+
+主运行完成后，从它派生语义重复阶段，沿用主运行的实体样本。叫法与初筛由评测方离线写成 JSON 并冻结，只有终判调用裁判。
+
+```bash
+# 1. 导出盲化目标表（无方法、文档、实体 ID），本地运行
+llm-graph-benchmark workflow semantic-targets --parent outputs/run-001 --out targets-sheet.json
+# 2. 评测方写 expansions.json：{目标key: [等价叫法, ...]}，每个目标都要有，可为空列表
+# 3. 在实体名和别名中检索前30个候选，输出盲化初筛表
+llm-graph-benchmark workflow semantic-candidates --parent outputs/run-001 --expansions expansions.json --out screening-sheet.json
+# 4. 评测方写 screening.json：{目标key: [候选key, ...]}，宽松保留可能同指的候选
+# 5. 冻结逐对终判任务，随后与主运行一样 run/launch/status/report
+llm-graph-benchmark workflow semantic-prepare --parent outputs/run-001 --expansions expansions.json --screening screening.json --run outputs/run-001-semantic
+llm-graph-benchmark workflow launch --run outputs/run-001-semantic
+# 6. 合成一张总表：主运行其余指标 + 语义重复（退役指标不列入）
+llm-graph-benchmark workflow combine --parent outputs/run-001 --stage outputs/run-001-semantic --out outputs/run-001-combined
+```
+
+semantic-prepare 会用 expansions.json 重算候选，校验初筛只包含对应目标的候选，并核对主运行的配置、benchmark、提交和冻结文件哈希。
+引用原文超过170KB的实体不进入样本和候选池，报告列出排除数。
 
 ## 并发与恢复
 

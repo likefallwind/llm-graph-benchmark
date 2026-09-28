@@ -1,5 +1,7 @@
 # 第二本书：强化学习统一重评（最终结果）
 
+2026-09-28 实体拆分退役，由语义重复率取代；当前 RL 总表见 [sutton-barto-semantic-duplicate-20260928](../sutton-barto-semantic-duplicate-20260928/README.md)。本目录其余指标不变，下表中的实体拆分行为历史口径。
+
 四个方法在同一次运行里按 selected-metrics-v5-identity-sources 评测，使用重抽原文；拆分为 split-legacy-full-sources-knowledge-v3。
 来源运行目录 `outputs/rl-rerun-fontfix-20260926-r3`（不入库），配置与过程说明见 [studies/rl-rerun-20260926](../../studies/rl-rerun-20260926/README.md)。
 

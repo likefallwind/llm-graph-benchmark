@@ -4,7 +4,7 @@ import re
 
 from . import alignment, granularity, identity_judge, ledger, legacy_judge, referent
 
-VERSION = "selected-metrics-v5-identity-sources"
+VERSION = "selected-metrics-v6-semantic-duplicates"
 METRICS = {
     "assertion_correctness": "完整断言正确率",
     "relation_granularity": "关系表达粒度",
@@ -13,7 +13,7 @@ METRICS = {
     "entity_typing": "类型标签兼容正确率",
     "entity_description": "整段描述支持率",
     "alias_identity": "别名同一性正确率",
-    "identity_split": "实体拆分正确率",
+    "semantic_duplicate": "语义重复率",
     "fact_recovery": "完整事实探针覆盖（参考）",
 }
 VERSIONS = {
@@ -24,7 +24,7 @@ VERSIONS = {
     "entity_typing": "type-boundary-v2-label-binding",
     "entity_description": "description-whole-v2",
     "alias_identity": "alias-full-sources-knowledge-v2",
-    "identity_split": "split-legacy-full-sources-knowledge-v3",
+    "semantic_duplicate": "semantic-duplicate-v1",
     "fact_recovery": "complete-fact-v1",
 }
 SHARED = (
@@ -80,8 +80,10 @@ def messages(task):
     if metric in {"entity_correctness", "entity_evidence"}:
         dimension = "correctness" if metric == "entity_correctness" else "evidence"
         return referent.messages(task, dimension, referent.PROMPTS)
-    if metric in {"alias_identity", "identity_split"}:
+    if metric == "alias_identity":
         return identity_judge.messages(payload)
+    if metric == "semantic_duplicate":
+        return identity_judge.duplicate_messages(payload)
     prompt = {
         "relation_granularity": granularity.PROMPT,
         "entity_typing": SHARED + TYPES,
@@ -119,7 +121,7 @@ def parse(response, task):
         return granularity.parse(response)
     if metric in {"entity_correctness", "entity_evidence"}:
         return referent.parse(response, "correctness" if metric == "entity_correctness" else "evidence")
-    if metric in {"alias_identity", "identity_split"}:
+    if metric in {"alias_identity", "semantic_duplicate"}:
         value = legacy_judge.parse_verdict(response["choices"][0]["message"]["content"])
         if not value["reason"]:
             raise ValueError("Missing reason")

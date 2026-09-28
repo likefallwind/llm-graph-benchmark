@@ -101,7 +101,7 @@ def config_path(benchmark_dir, submission_payload):
     submission_payload["runtime"] = {"input_tokens": 2_000_000, "output_tokens": 500_000}
     write(benchmark_dir / "submission.json", submission_payload)
     config = {"benchmark": "benchmark.json", "submissions": ["submission.json"],
-              "samples": {"entities": 100, "assertions": 200, "aliases": 30, "splits": 30},
+              "samples": {"entities": 100, "assertions": 200, "aliases": 30},
               "seed": 31, "workers": 6}
     path = benchmark_dir / "workflow.json"
     write(path, config)
@@ -121,7 +121,8 @@ def test_prepare_is_offline_deterministic_and_only_selected_metrics(config_path,
     prepare(config_path, other)
     tasks = read(run / "tasks.json")
     assert tasks == read(other / "tasks.json")
-    assert set(t["metric"] for t in tasks) == set(protocol.METRICS)
+    # Semantic duplicates are judged in a separate stage from the frozen entity sample.
+    assert set(t["metric"] for t in tasks) == set(protocol.METRICS) - {"semantic_duplicate"}
     assert not (run / "api").exists()
     assert verify(run)["planned_calls_without_retries"] == len(tasks) + 1
     for task in tasks:
@@ -285,8 +286,8 @@ def test_multidocument_shared_local_ids_remain_distinct(config_path):
     run = prepared(config_path)
     keys = read(run / "private-key.json")
     aliases = [v for v in keys.values() if v["metric"] == "alias_identity"]
-    splits = [v for v in keys.values() if v["metric"] == "identity_split"]
-    assert len(aliases) == 4 and len(splits) == 2
+    assert len(aliases) == 4
+    assert not any(v["metric"] == "identity_split" for v in keys.values())
     assert {v["document_id"] for v in aliases} == {"doc-1", "doc-2"}
 
 
@@ -355,26 +356,18 @@ def test_identity_judges_see_every_submitted_source_untruncated(config_path):
     write(path, sub)
     tasks = read(prepared(config_path) / "tasks.json")
     alias = next(t for t in tasks if t["metric"] == "alias_identity" and t["payload"]["content"]["name"] == "Alpha")
-    split = next(t for t in tasks if t["metric"] == "identity_split")
     assert alias["messages"][0]["content"] == identity_judge.ALIAS_PROMPT
-    assert split["messages"][0]["content"] == identity_judge.SPLIT_PROMPT
     shown = json.loads(alias["messages"][1]["content"])
     assert shown["alias"] == "shared name"
     assert shown["evidence"] == [{"id": "u1", "text": long_text}]
-    pair = split["payload"]
-    shown = split["messages"][1]["content"]
-    assert shown.startswith(legacy_judge.build_prompt(pair) + "\n")
-    evidence = dict(line.split("=", 1) for line in shown.splitlines()[-2:])
-    assert {pair["content"][side]["name"]: evidence[side + "_evidence"] for side in ("left", "right")} == {
-        "Alpha": long_text, "Beta": "Beta appears here."}
 
 
-def test_split_judge_is_legacy_judge_with_only_the_evidence_rule_changed():
-    legacy = legacy_judge.SYSTEM_PROMPT.splitlines()
-    split = identity_judge.SPLIT_PROMPT.splitlines()
-    assert [(a, b) for a, b in zip(legacy, split) if a != b] == [
-        (identity_judge.LEGACY_EVIDENCE_RULE, identity_judge.SPLIT_EVIDENCE_RULE)]
-    assert len(legacy) == len(split)
+def test_retired_split_setting_is_rejected(config_path):
+    config = read(config_path)
+    config["samples"]["splits"] = 30
+    write(config_path, config)
+    with pytest.raises(ValueError, match="retired"):
+        prepared(config_path)
 
 
 def test_granularity_parser_accepts_markdown_fence_without_changing_label():

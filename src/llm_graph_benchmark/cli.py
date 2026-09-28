@@ -45,6 +45,23 @@ def _parser() -> argparse.ArgumentParser:
         if action in ("run", "launch"):
             command.add_argument("--retry-failed", action="store_true",
                                  help="Retry technical failures only, preserving successful labels")
+    targets = actions.add_parser("semantic-targets", help="Blinded sheet of sampled entities for equivalent names; no API calls")
+    targets.add_argument("--parent", required=True)
+    targets.add_argument("--out", required=True)
+    candidates = actions.add_parser("semantic-candidates", help="Search entity names for candidates; blinded screening sheet")
+    candidates.add_argument("--parent", required=True)
+    candidates.add_argument("--expansions", required=True)
+    candidates.add_argument("--out", required=True)
+    semantic = actions.add_parser("semantic-prepare", help="Freeze screened pairs as a semantic-duplicate run")
+    semantic.add_argument("--parent", required=True)
+    semantic.add_argument("--expansions", required=True)
+    semantic.add_argument("--screening", required=True)
+    semantic.add_argument("--run", required=True)
+    semantic.add_argument("--workers", type=int, default=6)
+    combine = actions.add_parser("combine", help="One report from a parent run and its semantic-duplicate stage")
+    combine.add_argument("--parent", required=True)
+    combine.add_argument("--stage", required=True)
+    combine.add_argument("--out", required=True)
     check_benchmark = commands.add_parser("validate-benchmark")
     check_benchmark.add_argument("benchmark")
     check_submission = commands.add_parser("validate-submission")
@@ -187,10 +204,26 @@ def main(argv: list[str] | None = None) -> int:
         if args.command == "workflow":
             from .workflow.preparation import prepare, verify
             from .workflow.engine import execute, launch, status
-            from .workflow.reporting import report as workflow_report
+            from .workflow.reporting import combine as workflow_combine, report as workflow_report
             action = args.workflow_action
             if action == "prepare":
                 _print(prepare(args.config, args.run))
+            elif action in {"semantic-targets", "semantic-candidates", "semantic-prepare"}:
+                from .workflow import semantic_duplicate as sd
+                from .workflow.transport import write
+                if action == "semantic-prepare":
+                    _print(sd.prepare(args.parent, args.expansions, args.screening, args.run,
+                                      workers=args.workers))
+                else:
+                    state = sd.load_parent(args.parent)
+                    sheet = (sd.target_sheet(state) if action == "semantic-targets"
+                             else sd.screening_sheet(state, json.loads(Path(args.expansions).read_text(encoding="utf-8"))))
+                    write(args.out, sheet)
+                    _print({"out": str(Path(args.out).resolve()), "rows": len(sheet)})
+            elif action == "combine":
+                result = workflow_combine(args.parent, args.stage, args.out)
+                _print({"out": str(Path(args.out).resolve()), "complete": result["complete"],
+                        "done": result["done"], "total": result["total"]})
             elif action == "run":
                 code = execute(args.run, retry_failed=args.retry_failed)
                 _print(status(args.run))

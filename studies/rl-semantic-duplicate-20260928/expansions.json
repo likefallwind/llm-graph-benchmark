@@ -1,0 +1,2331 @@
+{
+ "q0254d35e8d0a": [
+  "one-step method",
+  "one step methods",
+  "single-step methods",
+  "单步方法",
+  "一步方法"
+ ],
+ "q03214dda08f7": [
+  "action preference",
+  "action preferences",
+  "H_t(a)",
+  "Ht(a)",
+  "动作偏好",
+  "preference for action"
+ ],
+ "q04121f72d7ed": [
+  "high-level objective",
+  "upper-level objective function",
+  "高层目标函数",
+  "上层目标函数"
+ ],
+ "q052dc000de44": [
+  "regularization",
+  "regularisation",
+  "regularization technique",
+  "正则化方法"
+ ],
+ "q068c32a5dbf5": [
+  "RTDP",
+  "real-time dynamic programming",
+  "实时动态规划",
+  "asynchronous value iteration"
+ ],
+ "q06cba8c97fb3": [
+  "McClure",
+  "McClure, S. M.",
+  "S. M. McClure",
+  "Samuel M. McClure"
+ ],
+ "q07556e9309c9": [
+  "prediction error",
+  "prediction errors",
+  "预测误差",
+  "预测错误"
+ ],
+ "q07ccf768ed26": [
+  "policy iteration",
+  "policy-iteration",
+  "策略迭代算法",
+  "PI"
+ ],
+ "q084e3b147c41": [
+  "associative search network",
+  "ASN",
+  "关联搜索网络",
+  "联想搜索网络"
+ ],
+ "q0868dda19905": [
+  "value function methods",
+  "value-function methods",
+  "value-based methods",
+  "值函数方法",
+  "价值函数方法"
+ ],
+ "q08cffa1d0b6a": [
+  "equation (9.8)",
+  "eq. 9.8",
+  "Equation 9.8",
+  "式9.8",
+  "公式9.8"
+ ],
+ "q0907b693a88e": [
+  "model of the environment",
+  "environment model",
+  "model of environment",
+  "环境模型"
+ ],
+ "q091fb352cb3b": [
+  "linear quadratic regulation",
+  "linear quadratic regulator",
+  "LQR",
+  "线性二次调节",
+  "线性二次调节器"
+ ],
+ "q09e4c98dfb0a": [
+  "cellular telephone system",
+  "cellular phone systems",
+  "cellular telephone",
+  "蜂窝电话系统",
+  "蜂窝移动电话"
+ ],
+ "q09f3a247673a": [
+  "Rohlfshagen, P.",
+  "P. Rohlfshagen",
+  "Philipp Rohlfshagen"
+ ],
+ "q09ff3e70c470": [
+  "CSB",
+  "CS B",
+  "conditioned stimulus B",
+  "条件刺激B"
+ ],
+ "q0aa64da9605f": [
+  "response-contingent reinforcement",
+  "response contingent reinforcement",
+  "contingent reinforcement",
+  "反应依赖性强化",
+  "反应依随强化"
+ ],
+ "q0b639f446936": [
+  "Cross (1973)",
+  "Cross",
+  "Cross, J. G.",
+  "J. G. Cross"
+ ],
+ "q0b7414a96816": [
+  "observable data distribution",
+  "data distribution",
+  "可观测数据分布",
+  "数据分布"
+ ],
+ "q0b79f8e91cf6": [
+  "KGS Go Server",
+  "KGS",
+  "KGS server",
+  "KGS围棋服务器"
+ ],
+ "q0c591dfe2558": [
+  "Weaver",
+  "Weaver, L.",
+  "L. Weaver",
+  "Lex Weaver"
+ ],
+ "q0c99c478e995": [
+  "psychologists",
+  "心理学家"
+ ],
+ "q0ccb7e09cfcf": [
+  "simple balancing method",
+  "balancing methods",
+  "简单平衡方法"
+ ],
+ "q0d2c8565eda0": [
+  "discounted Markov decision problem",
+  "discounted Markov decision process",
+  "discounted MDP",
+  "折扣马尔可夫决策问题",
+  "折扣MDP"
+ ],
+ "q0db1dacebced": [
+  "Samuel's checkers player",
+  "Samuel's checkers program",
+  "checkers-playing program",
+  "萨缪尔跳棋程序",
+  "Samuel跳棋程序"
+ ],
+ "q0e2f06926dd7": [
+  "discriminative stimulus",
+  "discriminative stimuli",
+  "辨别性刺激",
+  "判别刺激"
+ ],
+ "q0edb57a3dc90": [
+  "reward information",
+  "reward signal",
+  "奖励信息"
+ ],
+ "q0fc90f3e48b7": [
+  "Computational Models of Learning",
+  "计算学习模型"
+ ],
+ "q102935c47354": [
+  "Figure 15.1",
+  "Fig. 15.1",
+  "图15.1"
+ ],
+ "q11db86f58e8d": [
+  "LTV metric",
+  "lifetime value metric",
+  "LTV",
+  "CTR metric",
+  "click-through rate"
+ ],
+ "q11f0fd4a89ad": [
+  "zero interest",
+  "interest rate of 0",
+  "0 interest",
+  "零利率"
+ ],
+ "q137450ec2651": [
+  "Adams, Huys, and Roiser",
+  "Adams, Huys, Roiser (2015)",
+  "Adams et al. (2015)",
+  "Adams, R. A."
+ ],
+ "q14083215c4e1": [
+  "ventral striatum",
+  "腹侧纹状体",
+  "ventral part of the striatum"
+ ],
+ "q1458de1df572": [
+  "Gradient-TD methods",
+  "gradient TD methods",
+  "gradient-TD method",
+  "GTD",
+  "梯度TD方法",
+  "梯度时序差分方法"
+ ],
+ "q146a672f9774": [
+  "area covered by the surface",
+  "surface area",
+  "覆盖面积"
+ ],
+ "q147d11cb3116": [
+  "contingent eligibility traces",
+  "contingent eligibility trace",
+  "activation-time eligibility traces",
+  "依随资格迹"
+ ],
+ "q14c7a6ccc037": [
+  "HTD(lambda)",
+  "HTD",
+  "hybrid TD(λ)",
+  "混合TD(λ)"
+ ],
+ "q160815e65448": [
+  "expected return",
+  "expected returns",
+  "期望回报",
+  "期望收益"
+ ],
+ "q181b07e00137": [
+  "serial compound",
+  "serial compound stimulus",
+  "序列复合刺激",
+  "串行复合刺激"
+ ],
+ "q182db193bbb1": [
+  "trace interval",
+  "trace intervals",
+  "痕迹间隔",
+  "迹间隔"
+ ],
+ "q191325ea4a1f": [
+  "asymptotic associative strength",
+  "asymptotic level",
+  "联结强度渐近水平",
+  "渐近联结强度"
+ ],
+ "q19df68511db7": [
+  "Riedmiller",
+  "Riedmiller, M.",
+  "M. Riedmiller",
+  "Martin Riedmiller"
+ ],
+ "q1a2cd82c7a03": [
+  "Contreras-Vidal and Schultz",
+  "Contreras-Vidal & Schultz (1999)",
+  "Contreras-Vidal, J. L.",
+  "Contreras-Vidal"
+ ],
+ "q1b40792a0511": [
+  "learning algorithm",
+  "learning algorithms",
+  "学习算法"
+ ],
+ "q1cfee9312d37": [
+  "Monte-Carlo REINFORCE",
+  "Monte Carlo REINFORCE",
+  "REINFORCE",
+  "蒙特卡洛REINFORCE",
+  "Monte Carlo policy gradient"
+ ],
+ "q1e0136b38ad5": [
+  "Montague",
+  "Montague, P. R.",
+  "P. R. Montague",
+  "Read Montague",
+  "P. Read Montague"
+ ],
+ "q1f11d4a2b9ff": [
+  "synchronous method",
+  "synchronous methods",
+  "synchronous DP",
+  "同步方法",
+  "同步动态规划"
+ ],
+ "q1f2b45970894": [
+  "Chapters 3, 4 and 8",
+  "Chapter 3",
+  "Chapter 4",
+  "Chapter 8",
+  "第3、4、8章"
+ ],
+ "q1fa715154a0e": [
+  "intrinsically motivated learning",
+  "intrinsic motivation",
+  "内在动机学习",
+  "内部动机学习"
+ ],
+ "q229b6374a216": [
+  "stamping in",
+  "stamping-in",
+  "stamped in",
+  "印入"
+ ],
+ "q2308548facee": [
+  "pattern recognition",
+  "模式识别"
+ ],
+ "q233f28b1b476": [
+  "Google DeepMind",
+  "DeepMind",
+  "DeepMind team",
+  "谷歌DeepMind"
+ ],
+ "q2364f7785d84": [
+  "exploration bonus",
+  "Dyna-Q+ exploration bonus",
+  "bonus reward",
+  "κ√τ",
+  "探索奖励"
+ ],
+ "q237603f19ced": [
+  "REINFORCE update rule",
+  "REINFORCE update",
+  "equation 13.8",
+  "REINFORCE更新规则"
+ ],
+ "q24355d20f6dc": [
+  "actual experience",
+  "real experience",
+  "真实经验",
+  "实际经验"
+ ],
+ "q251be47b8272": [
+  "Figure 12.10",
+  "Sarsa(λ) on Mountain Car",
+  "Mountain Car task",
+  "图12.10"
+ ],
+ "q25fa5d23f5bc": [
+  "Sutton, Mahmood, Precup and van Hasselt (2014)",
+  "Sutton et al. (2014)",
+  "Sutton, Mahmood, Precup, van Hasselt"
+ ],
+ "q26c518f20c5c": [
+  "hippocampal forward sweep",
+  "forward sweep",
+  "forward sweeps",
+  "海马前向扫描"
+ ],
+ "q272bf0d08755": [
+  "reward of -1 per step",
+  "-1 reward per step",
+  "reward −1 per step",
+  "每步奖励-1"
+ ],
+ "q2736bfec34e3": [
+  "source",
+  "data source",
+  "数据源"
+ ],
+ "q27d9ff4e8aed": [
+  "Jeopardy!",
+  "Jeopardy",
+  "Jeopardy game",
+  "危险边缘"
+ ],
+ "q28081bcb4741": [
+  "variety of methods",
+  "following chapters"
+ ],
+ "q2927c19ff20a": [
+  "v_2",
+  "v 2",
+  "v2"
+ ],
+ "q294346334042": [
+  "primary reinforcer",
+  "primary reinforcers",
+  "primary reinforcement",
+  "初级强化物",
+  "初级强化刺激"
+ ],
+ "q2948a505aba2": [
+  "discrete velocity",
+  "velocity",
+  "grid cells moved",
+  "离散速度"
+ ],
+ "q2a7d0b9e8d81": [
+  "hierarchical lookup tables",
+  "hierarchical lookup table",
+  "signature tables",
+  "分层查找表"
+ ],
+ "q2aa4267ad2e6": [
+  "experience",
+  "experiences",
+  "经验"
+ ],
+ "q2ad9daca0757": [
+  "episodes A,0,B,0",
+  "episode (A,0,B,0)",
+  "B,1 episode"
+ ],
+ "q2b0b01c3a9b4": [
+  "Figure 3.4",
+  "Fig. 3.4",
+  "图3.4"
+ ],
+ "q2b6949ff9b11": [
+  "counterfactual",
+  "counterfactuals",
+  "反事实"
+ ],
+ "q2bf14feaaeca": [
+  "postsynaptic receptor",
+  "postsynaptic receptors",
+  "receptors",
+  "突触后受体",
+  "受体"
+ ],
+ "q2c0e6f723dbf": [
+  "racetrack problem",
+  "racetrack",
+  "racetrack task",
+  "赛道问题"
+ ],
+ "q2c2026ac9573": [
+  "off-policy methods",
+  "off-policy method",
+  "off-policy learning",
+  "off policy",
+  "离策略方法",
+  "异策略方法"
+ ],
+ "q2c3a3dcfc347": [
+  "model-free system",
+  "model free systems",
+  "无模型系统"
+ ],
+ "q2d593f9aab94": [
+  "Q-learning",
+  "Q learning",
+  "Q学习"
+ ],
+ "q2e3f8b437acc": [
+  "core tests",
+  "core test",
+  "PSR core tests",
+  "核心测试"
+ ],
+ "q2e59b52635af": [
+  "neurodynamic programming",
+  "neuro-dynamic programming",
+  "NDP",
+  "神经动态规划"
+ ],
+ "q2f764b0c943d": [
+  "Modayil, White, Sutton (2014)",
+  "multi-timescale nexting",
+  "nexting",
+  "Modayil, J."
+ ],
+ "q2fa80f3c7069": [
+  "Romo and Schultz (1990)",
+  "Romo and Schultz",
+  "Romo, R."
+ ],
+ "q2fe51524b98c": [
+  "averagers",
+  "averager",
+  "averaging methods",
+  "平均器"
+ ],
+ "q302d16fb7ce0": [
+  "perceptron",
+  "perceptrons",
+  "感知机",
+  "感知器"
+ ],
+ "q34124f646281": [
+  "TD methods",
+  "temporal-difference methods",
+  "learn from each transition"
+ ],
+ "q3428d90641bf": [
+  "query state",
+  "query states",
+  "查询状态"
+ ],
+ "q3448bb9c721f": [
+  "reinforcement learning framework",
+  "RL framework",
+  "强化学习框架"
+ ],
+ "q355f53362741": [
+  "Sankt Augustin",
+  "St. Augustin",
+  "Sankt Augustin Germany"
+ ],
+ "q35a89fb89eff": [
+  "GQ(λ) paper",
+  "GQ(λ)",
+  "variable λ",
+  "GQ(lambda)"
+ ],
+ "q3675675d4897": [
+  "move",
+  "moves",
+  "移动",
+  "走法"
+ ],
+ "q36e5c0ab0bf0": [
+  "proximal reinforcement learning",
+  "proximal RL",
+  "近端强化学习"
+ ],
+ "q37bf0a0d23b9": [
+  "van Hasselt",
+  "Van Hasselt, H.",
+  "H. van Hasselt",
+  "Hado van Hasselt"
+ ],
+ "q387524e1f4d5": [
+  "branch-and-bound",
+  "branch and bound",
+  "分支定界",
+  "分支限界"
+ ],
+ "q391514015adc": [
+  "temperature parameter",
+  "temperature",
+  "τ",
+  "温度参数"
+ ],
+ "q3af140cf2aab": [
+  "BE objective",
+  "Bellman error objective",
+  "mean squared Bellman error",
+  "贝尔曼误差目标"
+ ],
+ "q3d18f65b601b": [
+  "target policy",
+  "target policies",
+  "estimation policy",
+  "目标策略"
+ ],
+ "q3d8198d61861": [
+  "secondary reinforcer",
+  "secondary reinforcers",
+  "conditioned reinforcer",
+  "二级强化物",
+  "次级强化物",
+  "条件强化物"
+ ],
+ "q3e2495145803": [
+  "personalized ad recommendation",
+  "personalized advertising",
+  "ad recommendation",
+  "个性化广告推荐"
+ ],
+ "q3eab7a5f087e": [
+  "Berthier",
+  "Berthier, N. E.",
+  "N. E. Berthier"
+ ],
+ "q3fffc0fc78e4": [
+  "Learning in Graphical Models",
+  "graphical models",
+  "图模型中的学习"
+ ],
+ "q4017da69ded0": [
+  "puzzle boxes",
+  "puzzle box",
+  "Thorndike's puzzle box",
+  "迷箱",
+  "问题箱"
+ ],
+ "q402f63b7d86c": [
+  "capital of 50",
+  "capital $50",
+  "资本50"
+ ],
+ "q4042b58103e6": [
+  "true probabilities of winning",
+  "true winning probabilities",
+  "probability of winning",
+  "真实获胜概率"
+ ],
+ "q40ab5160eeb7": [
+  "Journal of Neurophysiology",
+  "J. Neurophysiol.",
+  "J Neurophysiol",
+  "神经生理学杂志"
+ ],
+ "q4219975b7bc1": [
+  "equation 12.28",
+  "equation (12.28)",
+  "eq. 12.28",
+  "式12.28",
+  "expected action-based TD error"
+ ],
+ "q43b6351ee01e": [
+  "Connectionist Models",
+  "Connectionist Models Summer School",
+  "Proceedings of the 1990 Connectionist Models Summer School",
+  "联结主义模型"
+ ],
+ "q43fbb9d128be": [
+  "GQ(λ) control",
+  "GQ(λ)",
+  "target policy biased toward greedy policy",
+  "GQ(lambda)"
+ ],
+ "q447fe5141211": [
+  "sparse reward",
+  "sparse rewards",
+  "sparse reward problem",
+  "稀疏奖励",
+  "稀疏奖励问题"
+ ],
+ "q452dfaf27d89": [
+  "Rozonoer",
+  "Rozonoer, L. I.",
+  "L. I. Rozonoer"
+ ],
+ "q461c2308d51c": [
+  "Konidaris",
+  "Konidaris, G.",
+  "G. Konidaris",
+  "George Konidaris"
+ ],
+ "q463454b9b795": [
+  "classical DP algorithms",
+  "classical DP",
+  "classical dynamic programming",
+  "经典动态规划算法"
+ ],
+ "q46392d6e9ddd": [
+  "usage technique",
+  "Mahmood and Sutton (2015)",
+  "usage-based technique"
+ ],
+ "q46d84ed82504": [
+  "non-TD implementation",
+  "non TD implementation",
+  "非TD实现"
+ ],
+ "q4723a9378a30": [
+  "memory-based function approximation",
+  "memory-based methods",
+  "memory-based method",
+  "lazy learning",
+  "基于记忆的方法",
+  "惰性学习"
+ ],
+ "q47ae97d8a7de": [
+  "sample updates",
+  "sample update",
+  "sample backups",
+  "样本更新",
+  "采样更新"
+ ],
+ "q4941721518c5": [
+  "Asteroids",
+  "Atari Asteroids",
+  "Asteroids game",
+  "小行星"
+ ],
+ "q499bc039c2ae": [
+  "kernelized value function approximation",
+  "kernel-based value function approximation",
+  "kernel methods",
+  "核化值函数逼近"
+ ],
+ "q49e830f6582b": [
+  "absorbing Markov chain",
+  "absorbing Markov chains",
+  "吸收马尔可夫链",
+  "吸收马氏链"
+ ],
+ "q49fa6a73f535": [
+  "drag",
+  "drag force",
+  "drag D",
+  "阻力"
+ ],
+ "q4a30e05ceba2": [
+  "higher-order reward",
+  "higher order reward",
+  "高阶奖励"
+ ],
+ "q4b069a804e11": [
+  "drug addiction",
+  "addiction",
+  "药物成瘾",
+  "成瘾"
+ ],
+ "q4c86f3c052a6": [
+  "Baird's counterexample",
+  "Baird counterexample",
+  "Baird's counter-example",
+  "Baird反例"
+ ],
+ "q4d5438bc8603": [
+  "Pineau",
+  "Pineau, J.",
+  "J. Pineau",
+  "Joelle Pineau"
+ ],
+ "q4e005051327b": [
+  "state-reward sequence",
+  "state reward sequence",
+  "state–reward sequences",
+  "状态-奖励序列"
+ ],
+ "q4e33e446f1ac": [
+  "Rust",
+  "Rust, J.",
+  "J. Rust",
+  "John Rust",
+  "Rust (1996)"
+ ],
+ "q4e81675f1bef": [
+  "expected approximate values",
+  "expected approximate value",
+  "期望近似值"
+ ],
+ "q50412faeb62d": [
+  "goal",
+  "goals",
+  "目标",
+  "purpose"
+ ],
+ "q511e69163450": [
+  "greedy action selection",
+  "greedy action",
+  "greedy selection",
+  "贪心动作选择"
+ ],
+ "q5190e12fd8e0": [
+  "temporal-difference algorithm",
+  "TD algorithm",
+  "TD algorithms",
+  "temporal difference algorithm",
+  "时序差分算法",
+  "TD算法"
+ ],
+ "q51d37bbfd2f3": [
+  "search tree",
+  "search trees",
+  "搜索树"
+ ],
+ "q54b6b32d2c7d": [
+  "memory transaction queue",
+  "transaction queue",
+  "内存事务队列",
+  "事务队列"
+ ],
+ "q55381c266bfd": [
+  "state-space planning methods",
+  "state-space planning",
+  "state space planning",
+  "状态空间规划",
+  "状态空间规划方法"
+ ],
+ "q561d41bb4374": [
+  "discounting",
+  "infinite returns",
+  "continuing tasks",
+  "折扣"
+ ],
+ "q568d00f131f7": [
+  "agent designers",
+  "agent designer",
+  "designers",
+  "智能体设计者"
+ ],
+ "q58473ad11fb6": [
+  "charge levels",
+  "charge level",
+  "battery charge level",
+  "high and low charge",
+  "电量水平"
+ ],
+ "q586e900ce074": [
+  "1000-state version",
+  "1000-state random walk",
+  "1000 states",
+  "1000状态"
+ ],
+ "q58b51d61af95": [
+  "reinforcement learning in game theory",
+  "game theory",
+  "博弈论"
+ ],
+ "q59d77d4544cd": [
+  "O(log n) regret",
+  "logarithmic regret",
+  "log n regret",
+  "对数遗憾"
+ ],
+ "q5a2239055244": [
+  "Synthesis Lectures on Artificial Intelligence and Machine Learning",
+  "Synthesis Lectures",
+  "Synthesis Lectures on AI and ML"
+ ],
+ "q5b83ba23f059": [
+  "Krizhevsky",
+  "Krizhevsky, A.",
+  "A. Krizhevsky",
+  "Alex Krizhevsky"
+ ],
+ "q5bc8638fed8c": [
+  "optimal actions",
+  "optimal action",
+  "最优动作"
+ ],
+ "q5c9220e22089": [
+  "unit weight",
+  "unit importance weight",
+  "weight of one",
+  "单位权重"
+ ],
+ "q5d4fb4f67c39": [
+  "tabular TD",
+  "tabular TD methods",
+  "tabular TD(0)",
+  "表格型TD",
+  "表格TD方法"
+ ],
+ "q5dad98abc9ad": [
+  "episodic case",
+  "episodic setting",
+  "episodic tasks",
+  "回合制情形",
+  "分幕式情形"
+ ],
+ "q5e6af7176d9c": [
+  "Monte Carlo methods",
+  "Monte Carlo method",
+  "MC methods",
+  "Monte-Carlo methods",
+  "蒙特卡洛方法",
+  "蒙特卡罗方法"
+ ],
+ "q5ef66996face": [
+  "total-episodic setting",
+  "total episodic setting",
+  "total-episodic",
+  "总回合设定"
+ ],
+ "q5f2cb42f5eed": [
+  "replay memory",
+  "experience replay memory",
+  "replay buffer",
+  "experience replay",
+  "经验回放",
+  "回放记忆"
+ ],
+ "q5fa9a730d23d": [
+  "reinforcement learning system",
+  "RL system",
+  "强化学习系统"
+ ],
+ "q60b38b05f2d6": [
+  "49 games",
+  "49 Atari games",
+  "Atari 2600 games",
+  "49个游戏"
+ ],
+ "q621149ee4a44": [
+  "Yale",
+  "Yale University",
+  "耶鲁",
+  "耶鲁大学"
+ ],
+ "q6268367c32b9": [
+  "generalization pattern",
+  "eight subfigures",
+  "generalization from a trained state"
+ ],
+ "q62d7b03294f9": [
+  "rat hippocampus",
+  "rat's hippocampus",
+  "hippocampus",
+  "大鼠海马"
+ ],
+ "q63e882777ea4": [
+  "control system",
+  "control systems",
+  "控制系统"
+ ],
+ "q6404dd5144d5": [
+  "Yu, Mahmood, and Sutton",
+  "generalized Bellman equations",
+  "Yu, H."
+ ],
+ "q64a3723c71e0": [
+  "global crisis warning",
+  "global crisis",
+  "全球危机预警"
+ ],
+ "q64e62bb0a1d9": [
+  "state-action-next-state triples",
+  "state action next state triple",
+  "(s, a, s') triples",
+  "状态-动作-下一状态三元组"
+ ],
+ "q683c9ff734f4": [
+  "individual behavioral interactions",
+  "individual interactions",
+  "个体行为交互"
+ ],
+ "q68f2b1bba88b": [
+  "Williams (1992)",
+  "Williams, R. J.",
+  "REINFORCE learning rules"
+ ],
+ "q6a1b8c2b9a4b": [
+  "partial observability",
+  "partially observable",
+  "partially observable problems",
+  "部分可观测性",
+  "部分可观测"
+ ],
+ "q6a1ec9578b6d": [
+  "chemicals",
+  "chemical",
+  "化学物质"
+ ],
+ "q6add5f89bc90": [
+  "model-based methods",
+  "model-based method",
+  "model-based reinforcement learning",
+  "model-based RL",
+  "基于模型的方法",
+  "基于模型的强化学习"
+ ],
+ "q6b2e48286a59": [
+  "bandit methods",
+  "bandit method",
+  "bandit algorithms",
+  "赌博机方法",
+  "多臂赌博机方法"
+ ],
+ "q6c39e85508de": [
+  "model-free reinforcement learning methods",
+  "model-free methods",
+  "model-free RL",
+  "model-free reinforcement learning",
+  "无模型强化学习方法",
+  "免模型方法"
+ ],
+ "q6c5b329f21b4": [
+  "multi-layer artificial neural network",
+  "multilayer neural network",
+  "multi-layer ANN",
+  "multilayer perceptron",
+  "多层人工神经网络",
+  "多层神经网络"
+ ],
+ "q6ca7dce9f7e4": [
+  "synaptic tag",
+  "synaptic tagging",
+  "Frey and Morris (1997)",
+  "突触标记"
+ ],
+ "q6d04a1651a54": [
+  "single states",
+  "single state",
+  "individual states",
+  "单个状态"
+ ],
+ "q6d2718c95898": [
+  "η(s)",
+  "eta(s)",
+  "eta",
+  "η"
+ ],
+ "q6d502d97d8cc": [
+  "error reduction property",
+  "error-reduction property",
+  "误差缩减性质",
+  "误差减小性质"
+ ],
+ "q6df7881dfa7a": [
+  "exact solutions",
+  "tabular case",
+  "精确解"
+ ],
+ "q6f7926e07ed8": [
+  "Hypothesis 2",
+  "hypothesis two",
+  "假设2"
+ ],
+ "q6fbc56bb871e": [
+  "undiscounted MDP",
+  "undiscounted MDPs",
+  "undiscounted Markov decision process",
+  "无折扣MDP",
+  "无折扣马尔可夫决策过程"
+ ],
+ "q71131e27ed56": [
+  "Monte Carlo update",
+  "Monte Carlo updates",
+  "MC update",
+  "Monte Carlo backup",
+  "蒙特卡洛更新"
+ ],
+ "q71c4af30bfa7": [
+  "semi-gradient n-step Sarsa",
+  "episodic semi-gradient n-step Sarsa",
+  "n-step semi-gradient Sarsa",
+  "半梯度n步Sarsa"
+ ],
+ "q72905bef7bc9": [
+  "greedy or ε-greedy",
+  "ε-greedy",
+  "epsilon-greedy",
+  "greedy",
+  "ε-贪心"
+ ],
+ "q72d9c29fef6f": [
+  "nonbatch TD(0)",
+  "non-batch TD(0)",
+  "online TD(0)",
+  "非批量TD(0)"
+ ],
+ "q72dd557bc752": [
+  "complete serial compound",
+  "CSC representation",
+  "CSC",
+  "complete serial compound representation",
+  "完全序列复合表示"
+ ],
+ "q738fa31169f2": [
+  "deterministic environment",
+  "deterministic environments",
+  "确定性环境"
+ ],
+ "q746ecc470fc8": [
+  "velocity reset to zero",
+  "velocity reset",
+  "速度重置为零"
+ ],
+ "q74a337c67d34": [
+  "Toward Memory-Based Reasoning",
+  "memory-based reasoning",
+  "Stanfill and Waltz (1986)"
+ ],
+ "q74e09b5515d1": [
+  "z",
+  "z vector",
+  "eligibility trace vector z"
+ ],
+ "q755324e16905": [
+  "sparse coarse coding",
+  "sparse coarse-coding",
+  "稀疏粗编码"
+ ],
+ "q75c6c0655bf9": [
+  "multi-layer connectionist systems",
+  "multilayer connectionist systems",
+  "connectionist systems",
+  "多层连接主义系统"
+ ],
+ "q776a5ac84a37": [
+  "attractant",
+  "attractants",
+  "引诱物",
+  "引诱剂"
+ ],
+ "q7881951f7afa": [
+  "Graybiel",
+  "Graybiel, A. M.",
+  "A. M. Graybiel",
+  "Ann Graybiel"
+ ],
+ "q788712eb2f84": [
+  "error-correcting feature of TD learning",
+  "error correction in TD learning",
+  "TD error correction",
+  "TD学习的纠错特性"
+ ],
+ "q788ea41ac623": [
+  "synaptic eligibility mechanisms",
+  "synaptic eligibility",
+  "synaptic eligibility traces",
+  "突触资格机制"
+ ],
+ "q78eb4df879dc": [
+  "psychologists",
+  "psychologist",
+  "心理学家"
+ ],
+ "q794c83614a12": [
+  "G^s_t",
+  "G_t^s",
+  "Gst"
+ ],
+ "q79ca01ca26d9": [
+  "Section 9.3",
+  "section 9.3",
+  "第9.3节"
+ ],
+ "q7ae69e02ba20": [
+  "states",
+  "state",
+  "状态"
+ ],
+ "q7e63467317e4": [
+  "afterstate",
+  "afterstates",
+  "after-state",
+  "post-decision state",
+  "后继状态",
+  "后决策状态"
+ ],
+ "q800562481911": [
+  "linear gradient-descent methods",
+  "linear gradient descent methods",
+  "linear SGD methods",
+  "linear gradient-descent function approximation",
+  "线性梯度下降方法"
+ ],
+ "q80c9c005dfe6": [
+  "Blocking Maze",
+  "blocking maze",
+  "Example 8.2",
+  "blocking task",
+  "阻塞迷宫"
+ ],
+ "q80df73e937a6": [
+  "non-contingent eligibility trace",
+  "noncontingent eligibility trace",
+  "non-contingent eligibility traces",
+  "非依随资格迹"
+ ],
+ "q81a6e0cd2107": [
+  "action-value methods",
+  "stochastic optimal policies",
+  "policy approximation"
+ ],
+ "q81e71984a17e": [
+  "cliff-walking task",
+  "cliff walking",
+  "Cliff Walking",
+  "cliff-walking",
+  "悬崖行走"
+ ],
+ "q8322b627a5fc": [
+  "Oudeyer, Kaplan, and Hafner",
+  "Oudeyer, Kaplan, Hafner (2007)",
+  "Oudeyer, P.-Y.",
+  "Oudeyer"
+ ],
+ "q843db20f1e9e": [
+  "Neural Networks for Pattern Recognition",
+  "Bishop (1995)",
+  "用于模式识别的神经网络"
+ ],
+ "q8461fac8ae56": [
+  "Hubert",
+  "Hubert, T.",
+  "T. Hubert",
+  "Thomas Hubert"
+ ],
+ "q8530ad0b808f": [
+  "conditioned reinforcement",
+  "conditioned reinforcer",
+  "条件强化"
+ ],
+ "q8545aee3ad83": [
+  "nervous system",
+  "nervous systems",
+  "神经系统"
+ ],
+ "q860094ce73aa": [
+  "one-step Sarsa",
+  "one-step Sarsa method",
+  "Sarsa(0)",
+  "单步Sarsa"
+ ],
+ "q861342a761cb": [
+  "Conway Lloyd Morgan",
+  "Lloyd Morgan",
+  "C. Lloyd Morgan",
+  "Morgan"
+ ],
+ "q86eebeba37bf": [
+  "backup diagram",
+  "backup diagrams",
+  "备份图",
+  "回溯图"
+ ],
+ "q870d8c70e4b2": [
+  "3136 units",
+  "3,136 hidden units",
+  "3136个单元"
+ ],
+ "q8748abe64464": [
+  "A Behavior System",
+  "Hull (1952)",
+  "behavior system",
+  "行为系统"
+ ],
+ "q87c9b14b5c8e": [
+  "search tree",
+  "search trees",
+  "搜索树"
+ ],
+ "q88f3b7afaa94": [
+  "Goodfellow",
+  "Goodfellow, I.",
+  "I. Goodfellow",
+  "Ian Goodfellow"
+ ],
+ "q89cef2d5faa8": [
+  "A Behavior System",
+  "Hull (1952)",
+  "behavior system",
+  "行为系统"
+ ],
+ "q8b65a7cf0589": [
+  "Fourier basis features",
+  "Fourier basis",
+  "Fourier features",
+  "傅里叶基特征",
+  "傅里叶基"
+ ],
+ "q8d90514a2937": [
+  "interpolation",
+  "插值",
+  "内插法",
+  "插值法"
+ ],
+ "q8e5a80909db4": [
+  "optimization algorithm",
+  "optimization algorithms",
+  "优化算法"
+ ],
+ "q8e921927a8ab": [
+  "easier problem",
+  "easier problems",
+  "simpler problem",
+  "更简单的问题"
+ ],
+ "q909946a68784": [
+  "gradient of PBE",
+  "gradient of the projected Bellman error",
+  "PBE gradient"
+ ],
+ "q918d77015a33": [
+  "target depends on current parameters",
+  "instability",
+  "moving target"
+ ],
+ "q91d5d430b944": [
+  "initial part of the environment's dynamics",
+  "environment dynamics",
+  "partial model"
+ ],
+ "q9583e58f24ee": [
+  "certainty-equivalence estimate",
+  "certainty equivalence estimate",
+  "certainty equivalence",
+  "确定性等价估计",
+  "确定性等价"
+ ],
+ "q976cf42ee69c": [
+  "Theseus",
+  "Shannon's maze-solving mouse",
+  "Theseus mouse",
+  "忒修斯",
+  "香农迷宫鼠"
+ ],
+ "q97b142faa190": [
+  "matrix P",
+  "transition matrix P",
+  "P matrix",
+  "state transition probability matrix",
+  "转移概率矩阵"
+ ],
+ "q987626f78b31": [
+  "w_h",
+  "whh",
+  "last weight vector"
+ ],
+ "q988dc8a21e63": [
+  "Figure 2.1",
+  "Fig. 2.1",
+  "图2.1"
+ ],
+ "q98f8a0ea35e7": [
+  "Karampatziakis and Langford (2010)",
+  "Karampatziakis and Langford",
+  "Karampatziakis, N."
+ ],
+ "q99afb452edc6": [
+  "On the asymptotic equivalence between differential Hebbian and temporal difference learning",
+  "differential Hebbian learning",
+  "Kolodziejski, Porr, Wörgötter (2009)"
+ ],
+ "q99b7c8d46d16": [
+  "American Control Conference",
+  "ACC",
+  "美国控制会议"
+ ],
+ "q9b86be478303": [
+  "differential semi-gradient Q-learning",
+  "differential Q-learning",
+  "semi-gradient Q-learning",
+  "差分半梯度Q学习"
+ ],
+ "q9bd6ace68a3a": [
+  "Cerebral Cortex",
+  "Cereb. Cortex",
+  "大脑皮层"
+ ],
+ "q9cd6d024fbc1": [
+  "AUAI Press",
+  "AUAI Press, Corvallis",
+  "Corvallis"
+ ],
+ "q9d4bf2eb78ff": [
+  "rabbit nictitating membrane preparation",
+  "nictitating membrane",
+  "rabbit eyeblink conditioning",
+  "兔瞬膜"
+ ],
+ "q9de001ad2e3a": [
+  "tile coding",
+  "tile-coding",
+  "tiling",
+  "瓦片编码",
+  "瓦砖编码"
+ ],
+ "q9e35f58047c2": [
+  "McClure",
+  "McClure, S. M.",
+  "S. M. McClure",
+  "Samuel M. McClure"
+ ],
+ "q9f2627c94e40": [
+  "Wiering",
+  "Wiering, M.",
+  "M. Wiering",
+  "Marco Wiering"
+ ],
+ "qa239b8a83389": [
+  "univariate Fourier basis function",
+  "Fourier basis function k=1",
+  "one-dimensional Fourier basis"
+ ],
+ "qa2518a869359": [
+  "Exercise 9.1",
+  "exercise 9.1",
+  "练习9.1"
+ ],
+ "qa2801d74b4e9": [
+  "differential n-step return",
+  "differential return",
+  "n-step differential return",
+  "差分n步回报"
+ ],
+ "qa356161d83c7": [
+  "Second Darwinian Revolution",
+  "Second Darvinian Revolution",
+  "第二次达尔文革命"
+ ],
+ "qa3ea72ce05ae": [
+  "simpler algorithm (7.1)",
+  "equation (7.1)",
+  "equation (7.9)",
+  "n-step TD simpler algorithm"
+ ],
+ "qa446de24d1e7": [
+  "stochastic optimal control",
+  "optimal control",
+  "随机最优控制"
+ ],
+ "qa476f907f74a": [
+  "Jaderberg",
+  "Jaderberg, M.",
+  "M. Jaderberg",
+  "Max Jaderberg"
+ ],
+ "qa4cc109bcac2": [
+  "POMDP-like examples",
+  "POMDP-like example",
+  "POMDP"
+ ],
+ "qa4edb520f0ae": [
+  "Oh, Guo, Lee, Lewis, and Singh (2015)",
+  "action-conditional video prediction",
+  "Oh, J."
+ ],
+ "qa4f78df8fd4c": [
+  "actions that yield highest return",
+  "best actions",
+  "optimal actions",
+  "最优动作"
+ ],
+ "qa5b4d179ce4c": [
+  "model-based decision strategy",
+  "model-based strategy",
+  "model-based decision making",
+  "基于模型的决策策略"
+ ],
+ "qa5ebd7e5d60f": [
+  "sampling degree",
+  "σ_t",
+  "σ",
+  "degree of sampling",
+  "采样程度"
+ ],
+ "qa7687de30157": [
+  "Buhusi",
+  "Buhusi, C. V.",
+  "C. V. Buhusi"
+ ],
+ "qa99553f24918": [
+  "second weight vector",
+  "v_t",
+  "auxiliary weight vector",
+  "second set of weights",
+  "第二权重向量"
+ ],
+ "qaa5500d798f4": [
+  "expected approximate value",
+  "n-step return redefined",
+  "expected approximate value of the state"
+ ],
+ "qaa66e5b4001c": [
+  "constant step-size method",
+  "constant step-size",
+  "constant step size α = 0.1",
+  "常数步长方法"
+ ],
+ "qab0e44d35928": [
+  "Figure 13.1",
+  "Fig. 13.1",
+  "图13.1"
+ ],
+ "qab372aaf15ea": [
+  "model validation",
+  "validation of models",
+  "模型验证"
+ ],
+ "qac7724ebdd95": [
+  "initial action-value estimates",
+  "initial action values",
+  "initial estimates",
+  "Q_1(a)",
+  "初始动作价值估计"
+ ],
+ "qadf6d499304b": [
+  "Friston",
+  "Friston, K. J.",
+  "K. J. Friston",
+  "Karl Friston"
+ ],
+ "qae36ea67d46e": [
+  "simulated annealing",
+  "模拟退火"
+ ],
+ "qae53134719f8": [
+  "these two computations",
+  "two computations"
+ ],
+ "qaede6ee56841": [
+  "biologically significant stimuli",
+  "biologically significant stimulus",
+  "生物学意义刺激"
+ ],
+ "qb0bfcf706e66": [
+  "He, Zhang, Ren, and Sun (2016)",
+  "He et al. (2016)",
+  "ResNet",
+  "deep residual learning"
+ ],
+ "qb175871f2233": [
+  "equation (7.1)",
+  "equation 7.1",
+  "eq. 7.1",
+  "式7.1"
+ ],
+ "qb2213e7019de": [
+  "average reward rate",
+  "average reward",
+  "r(π)",
+  "average-reward rate",
+  "平均奖励率",
+  "平均奖励"
+ ],
+ "qb29c24ae67c9": [
+  "SGD methods",
+  "stochastic gradient descent",
+  "gradient descent methods"
+ ],
+ "qb31e1f2ede4d": [
+  "eligibility trace",
+  "eligibility traces originated from synapses",
+  "资格迹"
+ ],
+ "qb3419060b7e4": [
+  "Pawlak",
+  "Pawlak, V.",
+  "V. Pawlak",
+  "Verena Pawlak"
+ ],
+ "qb3a2911e0b56": [
+  "action-value under policy π",
+  "action-value function for policy π",
+  "q_π",
+  "qπ(s,a)",
+  "策略π下的动作价值"
+ ],
+ "qb401eb246223": [
+  "on-policy control methods",
+  "on-policy control",
+  "on-policy methods",
+  "在策略控制方法",
+  "同策略控制"
+ ],
+ "qb46bb6db4248": [
+  "tabular case",
+  "tabular setting",
+  "tabular",
+  "表格型情形",
+  "表格情形"
+ ],
+ "qb48600fe64bb": [
+  "sparse reward problem",
+  "sparse rewards",
+  "sparse reward",
+  "稀疏奖励问题"
+ ],
+ "qb495dfc89292": [
+  "Annals of Operations Research",
+  "Ann. Oper. Res.",
+  "运筹学年鉴"
+ ],
+ "qb4a073752fa9": [
+  "Pandora",
+  "潘多拉"
+ ],
+ "qb56c1bb28e67": [
+  "REINFORCE",
+  "REINFORCE algorithm",
+  "Monte Carlo policy gradient",
+  "Monte-Carlo policy-gradient",
+  "蒙特卡洛策略梯度"
+ ],
+ "qb7131ad5a975": [
+  "Sarsa(λ) on Mountain Car",
+  "versions of Sarsa(λ)",
+  "Mountain Car"
+ ],
+ "qb8234d36d533": [
+  "policy π_right",
+  "π_right",
+  "right policy",
+  "pi right"
+ ],
+ "qb892d84e8b65": [
+  "Exercise 4.10",
+  "exercise 4.10",
+  "练习4.10"
+ ],
+ "qb94b5fd0fca4": [
+  "ε-greedy policy",
+  "epsilon-greedy policy",
+  "nongreedy actions",
+  "ε-贪心策略"
+ ],
+ "qb956b97cbfed": [
+  "transition probability matrix P^π",
+  "P^π",
+  "stochastic matrix P",
+  "policy transition matrix",
+  "状态转移概率矩阵"
+ ],
+ "qb9819ae46cae": [
+  "Random Walk",
+  "random walk",
+  "Example 6.2",
+  "5-state random walk",
+  "随机游走"
+ ],
+ "qba33b6988708": [
+  "LMS algorithm",
+  "least-mean-square",
+  "LMS",
+  "Widrow-Hoff rule",
+  "Widrow–Hoff",
+  "最小均方算法"
+ ],
+ "qbaa196b2fc9c": [
+  "dorsolateral striatum",
+  "DLS",
+  "背外侧纹状体"
+ ],
+ "qbaa301dce191": [
+  "backup diagrams for v* and q*",
+  "v* backup diagram",
+  "q* backup diagram",
+  "optimal backup diagrams",
+  "备份图"
+ ],
+ "qbb43756ff099": [
+  "reinforcement schemes",
+  "reinforcement scheme",
+  "强化方案"
+ ],
+ "qbb72264324e3": [
+  "real neuron",
+  "real neurons",
+  "biological neuron",
+  "真实神经元"
+ ],
+ "qbbb94ca5c587": [
+  "cost-to-go function",
+  "cost-to-go",
+  "cost to go",
+  "代价函数"
+ ],
+ "qbdf1adf0d08d": [
+  "presynaptic neuron",
+  "presynaptic neurons",
+  "突触前神经元"
+ ],
+ "qbea2a856206e": [
+  "distribution-free methods",
+  "distribution free methods",
+  "无分布方法"
+ ],
+ "qbfd97f8480a0": [
+  "emphatic TD Bellman operator",
+  "emphatic Bellman operator",
+  "强调TD贝尔曼算子"
+ ],
+ "qc0e4d54000f8": [
+  "statistics",
+  "统计学"
+ ],
+ "qc1948e24e97c": [
+  "feature j",
+  "j-th feature",
+  "x_j",
+  "特征j"
+ ],
+ "qc2c710f7ec68": [
+  "belief state",
+  "belief states",
+  "belief-state",
+  "信念状态"
+ ],
+ "qc2cf9a77150d": [
+  "Section 14.4",
+  "section 14.4",
+  "第14.4节"
+ ],
+ "qc2d1abb53a8c": [
+  "Glider soaring via reinforcement learning",
+  "Reddy et al. (2018)",
+  "Nature 2018",
+  "glider soaring"
+ ],
+ "qc3608f9121a1": [
+  "large discrete action sets",
+  "large action spaces",
+  "actions from large discrete sets"
+ ],
+ "qc39266b3f660": [
+  "Purposive Behavior in Animals and Men",
+  "Tolman (1932)",
+  "purposive behavior"
+ ],
+ "qc497e41c6caa": [
+  "planned policy",
+  "planning policy",
+  "计划策略"
+ ],
+ "qc4bc4ceedc1e": [
+  "reward of +5",
+  "state B'",
+  "B'"
+ ],
+ "qc59a0fd8d087": [
+  "π(At+1|St+1)",
+  "product of policy probabilities",
+  "importance sampling"
+ ],
+ "qc5be2667d80e": [
+  "sweep",
+  "sweeps",
+  "sweep of the state set",
+  "扫描",
+  "遍历"
+ ],
+ "qc645805fbcc9": [
+  "Dyna",
+  "TD learning with model learning and planning",
+  "integrated planning and learning"
+ ],
+ "qc6b1ced61e22": [
+  "activation function",
+  "activation functions",
+  "nonlinearity",
+  "激活函数",
+  "非线性激活函数"
+ ],
+ "qc6ebdd63745a": [
+  "convolutional neural network",
+  "convolutional neural networks",
+  "CNN",
+  "ConvNet",
+  "卷积神经网络",
+  "卷积网络"
+ ],
+ "qc7629392863b": [
+  "backpropagation through time",
+  "back-propagation through time",
+  "BPTT",
+  "时间反向传播",
+  "随时间反向传播"
+ ],
+ "qc7ce58909819": [
+  "backgammon knowledge",
+  "backgammon programs",
+  "high-performance computer programs"
+ ],
+ "qc8c3fa904f7a": [
+  "equation (3.10)",
+  "equation 3.10",
+  "eq. 3.10",
+  "式3.10"
+ ],
+ "qc8f8ece8d52b": [
+  "residual-gradient algorithm",
+  "residual gradient algorithm",
+  "residual-gradient method",
+  "残差梯度算法"
+ ],
+ "qc9941bc0cdde": [
+  "backgammon computer programs",
+  "backgammon programs",
+  "computer backgammon",
+  "双陆棋程序"
+ ],
+ "qc9d3fa0cd4bb": [
+  "connectionist systems",
+  "connectionist system",
+  "connectionist networks",
+  "连接主义系统"
+ ],
+ "qca0561e09777": [
+  "Glee",
+  "GLEE"
+ ],
+ "qcae254a11621": [
+  "N-player sequential stochastic game",
+  "sequential stochastic game",
+  "stochastic game",
+  "随机博弈"
+ ],
+ "qcbd61b2a4925": [
+  "credit assignment problem",
+  "credit-assignment problem",
+  "credit assignment",
+  "信用分配问题",
+  "信用分配"
+ ],
+ "qcec84e40eed9": [
+  "Watkins's Q(λ)",
+  "Watkins Q(λ)",
+  "Watkins (1989)",
+  "Q(λ)"
+ ],
+ "qcf1a3c63f12c": [
+  "DP methods",
+  "dynamic programming methods",
+  "efficiency of DP"
+ ],
+ "qcf7e19f1a002": [
+  "Silver",
+  "Silver, D.",
+  "D. Silver",
+  "David Silver"
+ ],
+ "qcfcbbb703cbd": [
+  "Veeriah",
+  "Veeriah, V.",
+  "V. Veeriah",
+  "Vivek Veeriah"
+ ],
+ "qd11b432667e7": [
+  "stationary distribution",
+  "on-policy distribution",
+  "steady-state distribution",
+  "平稳分布"
+ ],
+ "qd16639fb1ac0": [
+  "PTD(λ)",
+  "provisional TD(λ)",
+  "PTD(lambda)",
+  "PTD"
+ ],
+ "qd170cd788c91": [
+  "optimization, MDPs, and dynamic programming",
+  "MDPs",
+  "dynamic programming"
+ ],
+ "qd173676d6c05": [
+  "raw experience",
+  "raw data",
+  "原始经验"
+ ],
+ "qd1eb29be0e06": [
+  "optimization methods",
+  "optimization method",
+  "optimization techniques",
+  "优化方法"
+ ],
+ "qd3a045bd4e21": [
+  "B.",
+  "B"
+ ],
+ "qd4484d5e5bf2": [
+  "Kumar",
+  "Kumar, P. R.",
+  "P. R. Kumar",
+  "Kumar (1985)"
+ ],
+ "qd48301b64564": [
+  "exact approximation",
+  "tabular DP",
+  "linearly independent feature vectors"
+ ],
+ "qd4da7365aaf9": [
+  "psychology",
+  "心理学"
+ ],
+ "qd50a35e2e11c": [
+  "Go",
+  "game of Go",
+  "围棋",
+  "baduk"
+ ],
+ "qd56b09cd287a": [
+  "neutral stimulus",
+  "neutral stimuli",
+  "中性刺激"
+ ],
+ "qd65a3fb4b39b": [
+  "asynchronous truncated policy iteration",
+  "truncated policy iteration",
+  "asynchronous policy iteration",
+  "异步截断策略迭代"
+ ],
+ "qd82f35eae426": [
+  "Stochastic Neural-Analog Reinforcement Calculator",
+  "SNARC",
+  "SNARCs",
+  "随机神经模拟强化计算器"
+ ],
+ "qd875e1634c8a": [
+  "blackjack",
+  "game of blackjack",
+  "21点",
+  "二十一点"
+ ],
+ "qd8afb8ac775b": [
+  "Wiener (1964)",
+  "Wiener",
+  "Norbert Wiener",
+  "Wiener, N."
+ ],
+ "qd99cfc75cdfa": [
+  "mean of +4",
+  "mean +4",
+  "mean 4"
+ ],
+ "qd9f9e77cdb60": [
+  "Stochastic Meta-descent",
+  "stochastic meta-descent",
+  "SMD",
+  "随机元下降"
+ ],
+ "qdabcc698cc5a": [
+  "continuing task",
+  "continuing tasks",
+  "continuing problems",
+  "continuing case",
+  "持续任务",
+  "持续性任务"
+ ],
+ "qdad37dc4c91f": [
+  "Lechner",
+  "Lechner, J.",
+  "J. Lechner",
+  "Jon Lechner"
+ ],
+ "qdb475ead936f": [
+  "Average Contestant model",
+  "average contestant",
+  "opponent model",
+  "平均选手模型"
+ ],
+ "qdbb33aad344c": [
+  "monkey midbrain",
+  "midbrain",
+  "猴子中脑",
+  "中脑"
+ ],
+ "qdc50795f5722": [
+  "order n³ computation",
+  "n^3 computational steps",
+  "O(n³)",
+  "cubic complexity"
+ ],
+ "qdcd089f3fa96": [
+  "conditioned response",
+  "conditioned responses",
+  "CR",
+  "条件反应",
+  "条件反射"
+ ],
+ "qddc93d51ae0c": [
+  "UCB action selection",
+  "upper confidence bound",
+  "UCB",
+  "upper-confidence-bound action selection",
+  "上置信界"
+ ],
+ "qdde35bcda456": [
+  "nonassociative tasks",
+  "nonassociative task",
+  "non-associative tasks",
+  "非关联任务"
+ ],
+ "qde3d65038904": [
+  "optimistic controller",
+  "optimistic control",
+  "乐观控制器"
+ ],
+ "qdeac51203041": [
+  "data",
+  "数据"
+ ],
+ "qded18f315b90": [
+  "gradient ascent",
+  "stochastic gradient ascent",
+  "梯度上升",
+  "随机梯度上升"
+ ],
+ "qdefb72888b70": [
+  "VE",
+  "mean squared value error",
+  "average performance measure",
+  "value error"
+ ],
+ "qdfc20b4b1567": [
+  "exemplary moves",
+  "expert moves",
+  "exemplary move",
+  "示范走法"
+ ],
+ "qdfe4055dcbf8": [
+  "Yu's counterexample",
+  "Yu counterexample",
+  "Yu's counter-example",
+  "Yu反例"
+ ],
+ "qe0e8fdf92259": [
+  "Peters and Büchel",
+  "Peters and Buchel",
+  "Peters, J.",
+  "Büchel, C."
+ ],
+ "qe1013ed227e2": [
+  "pole-balancing",
+  "pole balancing",
+  "cart-pole",
+  "cartpole",
+  "倒立摆",
+  "杆平衡"
+ ],
+ "qe12991d8f787": [
+  "Egger-Miller effect",
+  "Egger–Miller effect",
+  "Egger and Miller",
+  "埃格-米勒效应"
+ ],
+ "qe1544f45ff7c": [
+  "pole-balancing example",
+  "pole balancing example",
+  "cart-pole example",
+  "倒立摆示例"
+ ],
+ "qe208cc1c1c25": [
+  "Feldbaum",
+  "Feldbaum, A. A.",
+  "A. A. Feldbaum"
+ ],
+ "qe395a924e6dc": [
+  "complete return",
+  "full return",
+  "Monte Carlo return",
+  "完整回报"
+ ],
+ "qe3a6adc87a23": [
+  "discounting",
+  "discount rate γ",
+  "discount factor",
+  "γ",
+  "折扣",
+  "折扣因子"
+ ],
+ "qe3ab9f379290": [
+  "spontaneously emitted behavior",
+  "spontaneously-emitted behavior",
+  "emitted behavior",
+  "自发行为"
+ ],
+ "qe427d6a3c51f": [
+  "certainty",
+  "确定性"
+ ],
+ "qe43c922d1df6": [
+  "recycling robot",
+  "can-collecting robot",
+  "Jonathan Connell",
+  "回收机器人"
+ ],
+ "qe462880dc36e": [
+  "projected path",
+  "car location",
+  "racetrack boundary check"
+ ],
+ "qe4c80f0286ce": [
+  "SIMD parallel computers",
+  "SIMD",
+  "single-instruction multiple-data",
+  "SIMD并行计算机"
+ ],
+ "qe4e3c233e56b": [
+  "machine learning methods",
+  "machine learning",
+  "机器学习方法"
+ ],
+ "qe5d8cecb638d": [
+  "MS representation",
+  "microstimulus representation",
+  "microstimuli",
+  "微刺激表示"
+ ],
+ "qe65fc6b27d39": [
+  "problem-specific features",
+  "problem specific features",
+  "特定问题特征"
+ ],
+ "qe6ec1ddb3680": [
+  "converge to an optimal policy",
+  "finite number of iterations",
+  "policy iteration convergence"
+ ],
+ "qe7857d7aee6d": [
+  "Differential dopamine release dynamics in the nucleus accumbens core and shell",
+  "nucleus accumbens",
+  "dopamine release"
+ ],
+ "qe7e0f3184e5e": [
+  "DP algorithms",
+  "dynamic programming algorithms",
+  "DP算法"
+ ],
+ "qe92ebac8a276": [
+  "SNARC",
+  "SNARCs",
+  "Stochastic Neural-Analog Reinforcement Calculator",
+  "随机神经模拟强化计算器"
+ ],
+ "qe94e3d92d46f": [
+  "goal boxes",
+  "goal box",
+  "目标箱"
+ ],
+ "qe96a87076e1f": [
+  "baseline",
+  "baseline B_t",
+  "average reward baseline",
+  "R̄t"
+ ],
+ "qe99471e9b298": [
+  "maximize immediate reward",
+  "maximize R_t+1",
+  "immediate reward"
+ ],
+ "qe9ae834eb2a3": [
+  "third-order conditioning",
+  "third order conditioning",
+  "三阶条件作用"
+ ],
+ "qea680472a974": [
+  "unsupervised learning",
+  "无监督学习",
+  "非监督学习"
+ ],
+ "qeb02654f3f5e": [
+  "model inaccuracies",
+  "model inaccuracy",
+  "model errors",
+  "模型不准确"
+ ],
+ "qeb25af1c40f7": [
+  "curiosity",
+  "好奇心"
+ ],
+ "qeb9e5fb8cbf1": [
+  "Knowlton",
+  "Knowlton, B. J.",
+  "B. J. Knowlton",
+  "Barbara Knowlton"
+ ],
+ "qed4b91442d49": [
+  "bet greater than five dollars",
+  "wager",
+  "Daily-Double bet"
+ ],
+ "qed5e2c1da8a4": [
+  "local approximation",
+  "local approximations",
+  "局部近似"
+ ],
+ "qedd71ba39edb": [
+  "generalization",
+  "generalisation",
+  "泛化",
+  "泛化能力"
+ ],
+ "qee011fec0aa4": [
+  "Joel",
+  "Joel, D.",
+  "D. Joel",
+  "Daphna Joel"
+ ],
+ "qee180d6daf3a": [
+  "compound update",
+  "compound backup",
+  "compound update/backup",
+  "复合更新",
+  "复合备份"
+ ],
+ "qee49007a13df": [
+  "option model",
+  "option models",
+  "GVFs",
+  "general value functions"
+ ],
+ "qee8629183b15": [
+  "Geist",
+  "Geist, M.",
+  "M. Geist",
+  "Matthieu Geist"
+ ],
+ "qee9c989192c4": [
+  "orbitofrontal cortex",
+  "OFC",
+  "眶额皮层",
+  "眶额叶皮质"
+ ],
+ "qef67cf6be8bd": [
+  "Markov states",
+  "Markov property",
+  "states of real agents"
+ ],
+ "qef9808126634": [
+  "MCTS",
+  "Monte Carlo tree search",
+  "蒙特卡洛树搜索"
+ ],
+ "qefb2b392fa5d": [
+  "reinforcement learning",
+  "RL",
+  "强化学习"
+ ],
+ "qf1ce1b70fd41": [
+  "action A0",
+  "A_0",
+  "initial action"
+ ],
+ "qf1f49273b965": [
+  "potential-based shaping",
+  "potential-based reward shaping",
+  "potential based shaping",
+  "基于势函数的奖励塑形",
+  "势函数塑形"
+ ],
+ "qf221acf35bfc": [
+  "expected time of rewarding event",
+  "expected time of reward",
+  "expected reward time",
+  "奖励预期时间"
+ ],
+ "qf31ccc1d4326": [
+  "synapses",
+  "synapse",
+  "突触"
+ ],
+ "qf48bebdc2d3f": [
+  "parameter vector w_t",
+  "weight vector w_t",
+  "wt",
+  "parameter vector",
+  "参数向量"
+ ],
+ "qf50849ccf8b3": [
+  "animal learning experiments",
+  "animal learning experiment",
+  "animal experiments",
+  "动物学习实验"
+ ],
+ "qf58c81aec90f": [
+  "approximated value",
+  "approximate value",
+  "approximate value function",
+  "近似值"
+ ],
+ "qf635d79b7172": [
+  "one time step",
+  "single time step",
+  "one step",
+  "一个时间步"
+ ],
+ "qf74bce939d60": [
+  "Hallak, Tamar, and Mannor (2015)",
+  "Hallak et al. (2015)",
+  "Hallak, A."
+ ],
+ "qf771ad3caea8": [
+  "Glimcher",
+  "Glimcher, P. W.",
+  "P. W. Glimcher",
+  "Paul Glimcher"
+ ],
+ "qf916c6804b9d": [
+  "Escherichia coli",
+  "E. coli",
+  "大肠杆菌"
+ ],
+ "qf92106b0abfd": [
+  "Thorp",
+  "Thorp, E. O.",
+  "E. O. Thorp",
+  "Edward Thorp"
+ ],
+ "qf9ddcd8b380a": [
+  "policy gradient theorem",
+  "policy-gradient theorem",
+  "策略梯度定理"
+ ],
+ "qfaabe4698a9b": [
+  "previous episode",
+  "prior episode",
+  "上一回合"
+ ],
+ "qfafce07d03cb": [
+  "epsilon",
+  "ε",
+  "epsilon ε",
+  "exploration parameter ε"
+ ],
+ "qfaff22c8d29f": [
+  "agent-environment boundary",
+  "agent–environment boundary",
+  "智能体-环境边界",
+  "智能体与环境的边界"
+ ],
+ "qfbe797c31b39": [
+  "varieties",
+  "variety",
+  "种类"
+ ],
+ "qfc47ae1c7943": [
+  "dorsal striatum",
+  "背侧纹状体"
+ ],
+ "qfda0076059a4": [
+  "basal ganglia",
+  "基底神经节"
+ ],
+ "qfe1290619ad0": [
+  "planning in stochastic domains",
+  "stochastic domains",
+  "随机领域中的规划"
+ ],
+ "qff271f89ad85": [
+  "on-policy distribution",
+  "on-policy state distribution",
+  "on-policy distributions",
+  "同策分布",
+  "在策略分布"
+ ],
+ "qff7c4c35da1b": [
+  "deep Q-network",
+  "DQN",
+  "Q-network",
+  "deep Q-networks",
+  "深度Q网络",
+  "Q网络"
+ ],
+ "qffae4b1fc350": [
+  "Tolman",
+  "Tolman, E. C.",
+  "E. C. Tolman",
+  "Edward Tolman"
+ ],
+ "qffec35845cfe": [
+  "off-policy Monte Carlo control",
+  "off-policy MC control",
+  "离策略蒙特卡洛控制",
+  "异策略蒙特卡洛控制"
+ ]
+}
