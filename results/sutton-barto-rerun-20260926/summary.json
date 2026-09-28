@@ -1,0 +1,1119 @@
+{
+  "protocol": "selected-metrics-v5-identity-sources",
+  "metric_versions": {
+    "assertion_correctness": "assertion-ledger-v2.5",
+    "relation_granularity": "relation-granularity-v1",
+    "entity_correctness": "referent-v1.1",
+    "entity_evidence": "referent-evidence-v1.1",
+    "entity_typing": "type-boundary-v2-label-binding",
+    "entity_description": "description-whole-v2",
+    "alias_identity": "alias-full-sources-knowledge-v2",
+    "identity_split": "split-legacy-full-sources-knowledge-v3",
+    "fact_recovery": "complete-fact-v1"
+  },
+  "model": "MiniMax-M3",
+  "complete": false,
+  "total": 3272,
+  "done": 3269,
+  "statuses": {
+    "done": 3269,
+    "failed": 2,
+    "unassessed_size": 1
+  },
+  "evaluation_scope": "all_selected_metrics",
+  "groups": {
+    "ours-sutton-barto-incremental-m3": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "incorrect": 3,
+          "correct": 188,
+          "uncertain": 9
+        },
+        "numerator": 188,
+        "denominator": 200,
+        "rate": 0.94,
+        "partial_rate_judged_only": 0.94,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.94
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L3": 189,
+          "L2": 9,
+          "L1": 2
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 177,
+        "correct_l3_coverage": 0.885,
+        "correct_within_l3": 0.9365079365079365,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 100
+        },
+        "numerator": 100,
+        "denominator": 100,
+        "rate": 1.0,
+        "partial_rate_judged_only": 1.0,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 1.0
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 98,
+          "not_supported": 2
+        },
+        "numerator": 98,
+        "denominator": 100,
+        "rate": 0.98,
+        "partial_rate_judged_only": 0.98,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.98
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "pass": 55,
+          "fail": 33,
+          "uncertain": 12
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.8255346320346321,
+        "partial_rate_judged_only": 0.8255346320346321,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 263,
+          "fail": 50,
+          "uncertain": 24
+        },
+        "finest_supported_type": {
+          "L2": 47,
+          "L3": 35,
+          "L1": 15,
+          "none": 3
+        },
+        "whole_support_rate": 0.55
+      },
+      "entity_description": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 84,
+          "not_supported": 16
+        },
+        "numerator": 84,
+        "denominator": 100,
+        "rate": 0.84,
+        "partial_rate_judged_only": 0.84,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.84
+      },
+      "alias_identity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "pass": 29,
+          "fail": 1
+        },
+        "numerator": 29,
+        "denominator": 30,
+        "rate": 0.9666666666666667,
+        "partial_rate_judged_only": 0.9666666666666667,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.9666666666666667
+      },
+      "identity_split": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "pass": 24,
+          "fail": 6
+        },
+        "numerator": 24,
+        "denominator": 30,
+        "rate": 0.8,
+        "partial_rate_judged_only": 0.8,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.8
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "fail": 19,
+          "uncertain": 4,
+          "pass": 25
+        },
+        "numerator": 25,
+        "denominator": 48,
+        "rate": 0.5208333333333334,
+        "partial_rate_judged_only": 0.5208333333333334,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.5208333333333334
+      }
+    },
+    "graphrag-m3-standard-en-rl": {
+      "assertion_correctness": {
+        "status": "incomplete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 198,
+        "unassessed": 2,
+        "statuses": {
+          "done": 198,
+          "failed": 2
+        },
+        "labels": {
+          "correct": 175,
+          "uncertain": 18,
+          "incorrect": 5
+        },
+        "numerator": 175,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": 0.8838383838383839,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L3": 186,
+          "L2": 7,
+          "L1": 7
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 163,
+        "correct_l3_coverage": null,
+        "correct_within_l3": null,
+        "joint_complete": false
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 100
+        },
+        "numerator": 100,
+        "denominator": 100,
+        "rate": 1.0,
+        "partial_rate_judged_only": 1.0,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 1.0
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 97,
+          "not_supported": 1,
+          "uncertain": 2
+        },
+        "numerator": 97,
+        "denominator": 100,
+        "rate": 0.97,
+        "partial_rate_judged_only": 0.97,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.97
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "pass": 91,
+          "fail": 7,
+          "uncertain": 2
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.9383333333333335,
+        "partial_rate_judged_only": 0.9383333333333335,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 115,
+          "fail": 8,
+          "uncertain": 3
+        },
+        "finest_supported_type": {
+          "L1": 80,
+          "L2": 16,
+          "none": 4
+        },
+        "whole_support_rate": 0.91
+      },
+      "entity_description": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 91,
+          "not_supported": 9
+        },
+        "numerator": 91,
+        "denominator": 100,
+        "rate": 0.91,
+        "partial_rate_judged_only": 0.91,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.91
+      },
+      "alias_identity": {
+        "status": "not_applicable",
+        "na_reason": "No eligible nontrivial aliases",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "identity_split": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "fail": 22,
+          "pass": 7,
+          "uncertain": 1
+        },
+        "numerator": 7,
+        "denominator": 30,
+        "rate": 0.23333333333333334,
+        "partial_rate_judged_only": 0.23333333333333334,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.23333333333333334
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "pass": 37,
+          "fail": 10,
+          "uncertain": 1
+        },
+        "numerator": 37,
+        "denominator": 48,
+        "rate": 0.7708333333333334,
+        "partial_rate_judged_only": 0.7708333333333334,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.7708333333333334
+      }
+    },
+    "autoschemakg-m3-full-en-rl": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "correct": 141,
+          "uncertain": 36,
+          "incorrect": 23
+        },
+        "numerator": 141,
+        "denominator": 200,
+        "rate": 0.705,
+        "partial_rate_judged_only": 0.705,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.705
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L2": 27,
+          "L3": 165,
+          "L1": 8
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 114,
+        "correct_l3_coverage": 0.57,
+        "correct_within_l3": 0.6909090909090909,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 98,
+          "uncertain": 1,
+          "incorrect": 1
+        },
+        "numerator": 98,
+        "denominator": 100,
+        "rate": 0.98,
+        "partial_rate_judged_only": 0.98,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.98
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 96,
+          "not_supported": 4
+        },
+        "numerator": 96,
+        "denominator": 100,
+        "rate": 0.96,
+        "partial_rate_judged_only": 0.96,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.96
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "fail": 45,
+          "uncertain": 21,
+          "pass": 34
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.8015674603174601,
+        "partial_rate_judged_only": 0.8015674603174601,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 558,
+          "fail": 89,
+          "uncertain": 51
+        },
+        "finest_supported_type": {
+          "L3": 55,
+          "L2": 40,
+          "L1": 2,
+          "none": 3
+        },
+        "whole_support_rate": 0.34
+      },
+      "entity_description": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "alias_identity": {
+        "status": "not_applicable",
+        "na_reason": "No eligible nontrivial aliases",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "identity_split": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "fail": 25,
+          "pass": 5
+        },
+        "numerator": 5,
+        "denominator": 30,
+        "rate": 0.16666666666666666,
+        "partial_rate_judged_only": 0.16666666666666666,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.16666666666666666
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "pass": 39,
+          "fail": 9
+        },
+        "numerator": 39,
+        "denominator": 48,
+        "rate": 0.8125,
+        "partial_rate_judged_only": 0.8125,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.8125
+      }
+    },
+    "kggen-m3-lm-based-en-rl": {
+      "assertion_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "correct": 135,
+          "incorrect": 43,
+          "uncertain": 22
+        },
+        "numerator": 135,
+        "denominator": 200,
+        "rate": 0.675,
+        "partial_rate_judged_only": 0.675,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.675
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L2": 20,
+          "L3": 163,
+          "L1": 14,
+          "uncertain": 3
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 111,
+        "correct_l3_coverage": 0.555,
+        "correct_within_l3": 0.6809815950920245,
+        "joint_complete": true
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 89,
+          "uncertain": 11
+        },
+        "numerator": 89,
+        "denominator": 100,
+        "rate": 0.89,
+        "partial_rate_judged_only": 0.89,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.89
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 87,
+          "not_supported": 13
+        },
+        "numerator": 87,
+        "denominator": 100,
+        "rate": 0.87,
+        "partial_rate_judged_only": 0.87,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.87
+      },
+      "entity_typing": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": null,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "entity_description": {
+        "status": "not_applicable",
+        "na_reason": "No native field in the frozen entity sample",
+        "expected": 0,
+        "done": 0,
+        "unassessed": 0,
+        "statuses": {},
+        "labels": {},
+        "numerator": 0,
+        "denominator": 0,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 100,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "alias_identity": {
+        "status": "incomplete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 29,
+        "unassessed": 1,
+        "statuses": {
+          "done": 29,
+          "unassessed_size": 1
+        },
+        "labels": {
+          "pass": 26,
+          "fail": 3
+        },
+        "numerator": 26,
+        "denominator": 30,
+        "rate": null,
+        "partial_rate_judged_only": 0.896551724137931,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "identity_split": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "fail": 28,
+          "pass": 1,
+          "uncertain": 1
+        },
+        "numerator": 1,
+        "denominator": 30,
+        "rate": 0.03333333333333333,
+        "partial_rate_judged_only": 0.03333333333333333,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.03333333333333333
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "fail": 27,
+          "pass": 18,
+          "uncertain": 3
+        },
+        "numerator": 18,
+        "denominator": 48,
+        "rate": 0.375,
+        "partial_rate_judged_only": 0.375,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.375
+      }
+    }
+  },
+  "structure": {
+    "ours-sutton-barto-incremental-m3": {
+      "entity_count": 1354,
+      "assertion_count": 2708,
+      "quality_assertion_count": 2708,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.208272,
+      "largest_component_ratio": 0.7304283604135894,
+      "alias_count": 3723,
+      "field_counts": {
+        "types": 1354,
+        "definition": 1354,
+        "aliases": 1339
+      },
+      "construction": {
+        "input_tokens_million": 465.142485,
+        "output_tokens_million": 45.316314,
+        "total_tokens_million": 510.458799
+      },
+      "construction_source": "/home/likefallwind/code/llm-knowledge-graph/tmp/rl-assessment-20260920/provenance.json",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 1354,
+          "assertion_count": 2708,
+          "largest_component_ratio": 0.730428,
+          "isolated_entity_count": 282
+        }
+      ]
+    },
+    "graphrag-m3-standard-en-rl": {
+      "entity_count": 8317,
+      "assertion_count": 19060,
+      "quality_assertion_count": 19060,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.036672,
+      "largest_component_ratio": 0.9212456414572562,
+      "alias_count": 0,
+      "field_counts": {
+        "types": 8317,
+        "definition": 8317,
+        "aliases": 0
+      },
+      "construction": {
+        "input_tokens_million": 5.482614,
+        "output_tokens_million": 4.19103,
+        "total_tokens_million": 9.673644
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 8317,
+          "assertion_count": 19060,
+          "largest_component_ratio": 0.921246,
+          "isolated_entity_count": 305
+        }
+      ]
+    },
+    "autoschemakg-m3-full-en-rl": {
+      "entity_count": 29219,
+      "assertion_count": 38783,
+      "quality_assertion_count": 10288,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.0,
+      "largest_component_ratio": 0.7053629487662137,
+      "alias_count": 0,
+      "field_counts": {
+        "types": 29219,
+        "definition": 0,
+        "aliases": 0
+      },
+      "construction": {
+        "input_tokens_million": 17.736773,
+        "output_tokens_million": 9.539398,
+        "total_tokens_million": 27.276171
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 29219,
+          "assertion_count": 38783,
+          "largest_component_ratio": 0.705363,
+          "isolated_entity_count": 0
+        }
+      ]
+    },
+    "kggen-m3-lm-based-en-rl": {
+      "entity_count": 12339,
+      "assertion_count": 22703,
+      "quality_assertion_count": 22703,
+      "entity_citation_presence": 0.892698,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.136316,
+      "largest_component_ratio": 0.8022530188832159,
+      "alias_count": 1351,
+      "field_counts": {
+        "types": 0,
+        "definition": 0,
+        "aliases": 942
+      },
+      "construction": {
+        "input_tokens_million": 12.348319,
+        "output_tokens_million": 13.113802,
+        "total_tokens_million": 25.462121
+      },
+      "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/requests",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 12339,
+          "assertion_count": 22703,
+          "largest_component_ratio": 0.802253,
+          "isolated_entity_count": 1682
+        }
+      ]
+    }
+  },
+  "updated_at": 1790558450.8358812,
+  "evaluation_usage": {
+    "request_attempts": 141,
+    "recorded_attempts": 141,
+    "failed_attempts": 19,
+    "skipped_attempts": 0,
+    "input_tokens": 864620,
+    "output_tokens": 208462,
+    "total_tokens": 1073082,
+    "http_elapsed_seconds": 1790.3424707273953,
+    "peak_http": 6,
+    "active_http": 0,
+    "http_attempts_shared": 9477,
+    "abandoned_attempts": 0,
+    "cost_usd": null
+  },
+  "provenance": {
+    "input_hashes": {
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-rerun-20260926/workflow.json": "b9382ce59af971152df295d1ccc4f20946b504f55df26829aa97fd70de860468",
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-source-fontfix-20260926/frozen-benchmark/benchmark.json": "3f75271aa3f2879dc071051592eabef2cd9c7d21c6fa8ca6ae28bb01bd4d4bbc",
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-source-fontfix-20260926/frozen-benchmark/documents.jsonl": "9d878515b4d5b8c66d31f79f0596b2eac4b5c8e6183adc6ad4b76ff758611b1a",
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-source-fontfix-20260926/frozen-benchmark/fact_probes-reviewed.jsonl": "f50bab516ee55f74b183c147300f8694694e8aa121adb1931ecadb3d658800e4",
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-source-fontfix-20260926/frozen-benchmark/qa_probes-reviewed.jsonl": "5ff794eaa062440b15ef432420847c09b423c619d82dcd9ee0d0e5debbe015ab",
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-source-fontfix-20260926/frozen-benchmark/rubric.json": "f8400875711a7549b99fcf0e5ea717a571b18148b576ae6036c98b9467a7dbc2",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/submission.json": "15638916a4b538c0f099d145d80293907af3ee44950462970f09f95dce29f11b",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-book2-20260923/construction-usage.json": "6676f41a601a4c3f8409de97e15348f1451747981938ff89ecef631c2a833507",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/workflow-quality-submission.json": "4aac23a537dd923574dafdbd19d3c4cff28f72e35268bf4d3d88c7e8cb2d1eaa",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/workflow-full-submission.json": "4aac23a537dd923574dafdbd19d3c4cff28f72e35268bf4d3d88c7e8cb2d1eaa",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/construction-usage.json": "ea84c03d56c83b8ca724a8d723ec496120cba2ebe7bb6716c3523b9df5c96196",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/workflow-quality-submission.json": "8435d37162277e4710e27eb0d7d95fff75272a34075c9135a3191200abbe72d6",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/workflow-full-submission.json": "2d6a7c2a5956709e3ad009b5b578edbf315d35e7287e04259ac0ab97a17d4d71",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/construction-usage.json": "a89ff9290a6c8d6fc4c1e9d99b237d51e235558f0a12c3e0681df0116910e0a1",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/workflow-quality-submission.json": "14d53dc3d8b47e5d4d029002b3d20f1b2f39c3307cf2ad1d6054c2f71c4449f7",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/workflow-full-submission.json": "14d53dc3d8b47e5d4d029002b3d20f1b2f39c3307cf2ad1d6054c2f71c4449f7",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/construction-usage.json": "b7f0ae2f67524bbf399da2829630fc703a254c884ce6845ba66aa724b591de73"
+    },
+    "benchmark_hash": "sha256:83ad4f0d99f1d78d7b951b127c6877da7789d47e773e0f0308e1e08616987ddb",
+    "code_hashes": {
+      "bundle.py": "3ef185a031e838c3b8167a9a8325580c54e06c9d1e723ef178078b32bdf99983",
+      "io.py": "b86bbd1b85fbeb5b06015a5ee2a771c5c48bee96df81fd00452c733232c8a64d",
+      "identity.py": "21d44e261efa1fd1f2aac34f6109bd41907144eb4375ec72684d1be6c75bd226",
+      "metrics.py": "14cbb7c639ef572a4f68992616acf5c0a71b002112112af52738c7ee85279bc2",
+      "qa.py": "1ead76073e8ea4d36667883b7851d443eaf6ff69d934d81ddd611af11369faa7",
+      "retrieval.py": "6244e98d43f9e24d93ced83389079f4c42d65eb377b59107367b810df698eed1",
+      "validation.py": "8c03990ba73375d1bcdd1e80828d22b111de4b06449874c7f46282463561e62c",
+      "workflow/__init__.py": "91b5604e4e50a3a3c963c0672c552d79d436ff09b8da79c5b50affe0acf07a02",
+      "workflow/alignment.py": "8da12de9fb974cc42279dd3f5b4059ea434a0fd608d47af75f7868b4c2406541",
+      "workflow/description_reassessment.py": "b5065fdf1693d948e493a81c369488152d855f8a1c611808863c2c2de2e61a62",
+      "workflow/engine.py": "73baa6cf86967ce0869e73442d33d39e60a8e7535593f38ce2c63736d95857c8",
+      "workflow/granularity.py": "858b371c66102c9f5721460956350dff43ef1ef2cbe087c5575d0e83de11c737",
+      "workflow/identity_judge.py": "62d74a208bfb12d225395e3139281d1fcd7d6a27ab5186cd6425b995191ef1a5",
+      "workflow/ledger.py": "197b43567fce0a2ce74b01e2db3558ec297581b994eebf49f6d7e4560f0799cc",
+      "workflow/legacy_judge.py": "cbb8580a5381925ede44606f1fc86d4d6242b6fb1645b247b953c0a7b947e316",
+      "workflow/legacy_render.py": "e7f6c2df789fdca68f3545f02ca4a30b0f4260b424d3cd8d7c4e69b4e2cb3afb",
+      "workflow/preparation.py": "76250390397e0b7430960b653f4375b3fea49ad49219954863bfc3f06c991579",
+      "workflow/protocol.py": "02569bf121f7b86eb89df82f34e1eb65e1b03364c4b1ce35171bcc987c2d89b9",
+      "workflow/qa_reassessment.py": "264946cedb38afe24fd44af9493267d3c0d2c4b05fe5ec8de3326b26ee47cdb2",
+      "workflow/qa_support.py": "075fa121b90796922975cb286465aa50e6218a9b0dc5c97487c4ef8c4efaa400",
+      "workflow/referent.py": "5fa90762c7c1a8ffc0901e29edb142570c0fe8a40ffdef5887941bd924df6ff6",
+      "workflow/reporting.py": "bc0a988d7097520fc63d184846bb6e55d513185ec53fb243f7f2f2c6e93bea1a",
+      "workflow/transport.py": "2a05ddad1d37de3675f085938c67e29a5749c5baa999da33279793317cf26210"
+    }
+  }
+}

@@ -1,0 +1,41 @@
+2026-09-28 09:05:58 watcher started
+2026-09-28 09:11:14 phase=incomplete done=3269 pending=0 failed=2 terminal=0
+2026-09-28 09:11:14 technical failures remain; pause 60s then retry (round 1)
+{
+  "active": true,
+  "complete": false,
+  "done": 3269,
+  "phase": "running",
+  "pid": 3939860,
+  "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3",
+  "statuses": {
+    "done": 3269,
+    "pending": 2,
+    "unassessed_size": 1
+  },
+  "total": 3272
+}
+2026-09-28 09:16:00 phase=incomplete done=3269 pending=0 failed=2 terminal=0
+2026-09-28 09:16:00 technical failures remain; pause 60s then retry (round 2)
+{
+  "active": true,
+  "complete": false,
+  "done": 3269,
+  "phase": "running",
+  "pid": 3940983,
+  "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3",
+  "statuses": {
+    "done": 3269,
+    "pending": 2,
+    "unassessed_size": 1
+  },
+  "total": 3272
+}
+2026-09-28 09:20:49 phase=incomplete done=3269 pending=0 failed=2 terminal=0
+{
+  "complete": false,
+  "done": 3269,
+  "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3",
+  "total": 3272
+}
+2026-09-28 09:20:51 finished: phase=incomplete done=3269 failed=2

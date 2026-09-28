@@ -1,0 +1,4262 @@
+{
+  "ours-sutton-barto-incremental-m3": {
+    "name": "我们的方法（强化学习）",
+    "scope_note": "Sutton–Barto source_id=2子图；1354实体、2708完整断言；来自D2L种子库的跨书增量构图，保留全部原生跨书引用",
+    "submission_hash": "sha256:029cc59da948582e0e6aba89f216671adb0eabd250b39d11aea435892474f9fa",
+    "retrieval": {
+      "facts": [
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch01-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5566",
+            "a3371",
+            "a5578",
+            "a4434",
+            "a5780",
+            "a5634",
+            "a4890",
+            "a5505",
+            "a4118",
+            "a4119"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch01-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3706",
+            "a5786",
+            "a5703",
+            "a5700",
+            "a5304",
+            "a5079",
+            "a3506",
+            "a5514",
+            "a4784",
+            "a5921"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch01-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3363",
+            "a3356",
+            "a5052",
+            "a3354",
+            "a5111",
+            "a5110",
+            "a5057",
+            "a3535",
+            "a5615",
+            "a5507"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch02-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5153",
+            "a5152",
+            "a3496",
+            "a5799",
+            "a5149",
+            "a3497",
+            "a3499",
+            "a4032",
+            "a3498",
+            "a3921"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch02-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3494",
+            "a4084",
+            "a4032",
+            "a5172",
+            "a3926",
+            "a4128",
+            "a4930",
+            "a4762",
+            "a4678",
+            "a3495"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch02-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3710",
+            "a3477",
+            "a3709",
+            "a5915",
+            "a6006",
+            "a3483",
+            "a3485",
+            "a3482",
+            "a3481",
+            "a3463"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch03-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5212",
+            "a4021",
+            "a3508",
+            "a4616",
+            "a4164",
+            "a4165",
+            "a5248",
+            "a4387",
+            "a4624",
+            "a4014"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch03-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3545",
+            "a5051",
+            "a4429",
+            "a3902",
+            "a4462",
+            "a4888",
+            "a4032",
+            "a5697",
+            "a4467",
+            "a3550"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch03-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3553",
+            "a5803",
+            "a4014",
+            "a5574",
+            "a5786",
+            "a4762",
+            "a5794",
+            "a4032",
+            "a5068",
+            "a4763"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch04-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3617",
+            "a4032",
+            "a3616",
+            "a5221",
+            "a3494",
+            "a4555",
+            "a3635",
+            "a5513",
+            "a4734",
+            "a4672"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch04-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3689",
+            "a3633",
+            "a3688",
+            "a3758",
+            "a3632",
+            "a3655",
+            "a3757",
+            "a3759",
+            "a5339",
+            "a5054"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch04-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3599",
+            "a3596",
+            "a5577",
+            "a3758",
+            "a4581",
+            "a3759",
+            "a4672",
+            "a4031",
+            "a5242",
+            "a4673"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch05-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3833",
+            "a5220",
+            "a4014",
+            "a5228",
+            "a5805",
+            "a3837",
+            "a5231",
+            "a3787",
+            "a3827",
+            "a5250"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch05-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3827",
+            "a3825",
+            "a3707",
+            "a3822",
+            "a3826",
+            "a3706",
+            "a3494",
+            "a4087",
+            "a5051",
+            "a5212"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch05-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3844",
+            "a3845",
+            "a3838",
+            "a3840",
+            "a3833",
+            "a3858",
+            "a4631",
+            "a4625",
+            "a3800",
+            "a4629"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch06-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3937",
+            "a3936",
+            "a3938",
+            "a4032",
+            "a3939",
+            "a3926",
+            "a5265",
+            "a4557",
+            "a3596",
+            "a3919"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch06-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3953",
+            "a3950",
+            "a3949",
+            "a5226",
+            "a4678",
+            "a5502",
+            "a3734",
+            "a4685",
+            "a5149",
+            "a4073"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch06-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3898",
+            "a4572",
+            "a4176",
+            "a3906",
+            "a3907",
+            "a4628",
+            "a5545",
+            "a4175",
+            "a4637",
+            "a4220"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch07-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5247",
+            "a5246",
+            "a5226",
+            "a5244",
+            "a5245",
+            "a4637",
+            "a5237",
+            "a5260",
+            "a5242",
+            "a4631"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch07-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3981",
+            "a4538",
+            "a5252",
+            "a3975",
+            "a3983",
+            "a3973",
+            "a3998",
+            "a4116",
+            "a5260",
+            "a4546"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch07-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5228",
+            "a5231",
+            "a5227",
+            "a5232",
+            "a5224",
+            "a4625",
+            "a5229",
+            "a4631",
+            "a5226",
+            "a5225"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch08-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4012",
+            "a4014",
+            "a4031",
+            "a3833",
+            "a4029",
+            "a4038",
+            "a4347",
+            "a3508",
+            "a5792",
+            "a4032"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch08-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4053",
+            "a4989",
+            "a5697",
+            "a4057",
+            "a5792",
+            "a4322",
+            "a4056",
+            "a4032",
+            "a4052",
+            "a4091"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch08-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5794",
+            "a5791",
+            "a5792",
+            "a5795",
+            "a5798",
+            "a5263",
+            "a5803",
+            "a5821",
+            "a4014",
+            "a4928"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch09-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4312",
+            "a4572",
+            "a3898",
+            "a3906",
+            "a4220",
+            "a4417",
+            "a4580",
+            "a4176",
+            "a5228",
+            "a5234"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch09-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5596",
+            "a5295",
+            "a5294",
+            "a5265",
+            "a4996",
+            "a3737",
+            "a5595",
+            "a5598",
+            "a3902",
+            "a5604"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch09-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4508",
+            "a4032",
+            "a5613",
+            "a5265",
+            "a4112",
+            "a4323",
+            "a4121",
+            "a4556",
+            "a4347",
+            "a4152"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch10-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a3917",
+            "a4199",
+            "a4612",
+            "a4637",
+            "a5546",
+            "a4871",
+            "a4007",
+            "a4605",
+            "a5545",
+            "a4382"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch10-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5296",
+            "a4199",
+            "a4352",
+            "a4220",
+            "a5298",
+            "a5342",
+            "a5333",
+            "a3907",
+            "a4980",
+            "a5314"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch10-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5322",
+            "a5324",
+            "a5327",
+            "a5061",
+            "a5328",
+            "a5338",
+            "a3613",
+            "a5304",
+            "a3508",
+            "a5307"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch11-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4462",
+            "a4463",
+            "a4469",
+            "a4467",
+            "a4032",
+            "a4460",
+            "a4464",
+            "a4468",
+            "a3902",
+            "a4220"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch11-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5250",
+            "a5231",
+            "a5228",
+            "a5234",
+            "a4381",
+            "a3780",
+            "a5780",
+            "a4572",
+            "a5219",
+            "a4634"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch11-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4374",
+            "a5224",
+            "a5228",
+            "a4712",
+            "a4381",
+            "a5231",
+            "a4635",
+            "a4628",
+            "a3842",
+            "a4147"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch12-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4560",
+            "a5853",
+            "a4673",
+            "a4552",
+            "a4561",
+            "a4644",
+            "a5503",
+            "a5502",
+            "a3998",
+            "a3861"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch12-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4635",
+            "a4634",
+            "a4552",
+            "a4581",
+            "a3997",
+            "a5226",
+            "a4637",
+            "a4631",
+            "a3907",
+            "a4199"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch12-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4579",
+            "a4577",
+            "a4581",
+            "a5356",
+            "a5357",
+            "a4555",
+            "a5231",
+            "a4580",
+            "a4628",
+            "a4604"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch13-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4689",
+            "a4692",
+            "a4690",
+            "a4696",
+            "a5160",
+            "a5546",
+            "a4688",
+            "a4084",
+            "a3926",
+            "a4686"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch13-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4349",
+            "a3704",
+            "a4555",
+            "a4581",
+            "a4707",
+            "a4701",
+            "a5809",
+            "a4087",
+            "a4703",
+            "a3707"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch13-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4723",
+            "a4724",
+            "a4754",
+            "a5697",
+            "a5356",
+            "a3876",
+            "a5223",
+            "a4725",
+            "a3985",
+            "a4722"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch14-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5377",
+            "a5877",
+            "a5378",
+            "a5875",
+            "a5369",
+            "a5863",
+            "a5722",
+            "a5368",
+            "a5878",
+            "a5370"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch14-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a4893",
+            "a5364",
+            "a5098",
+            "a5870",
+            "a5850",
+            "a5886",
+            "a5665",
+            "a4865",
+            "a5393",
+            "a5888"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch14-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5686",
+            "a5685",
+            "a5691",
+            "a5524",
+            "a5087",
+            "a5690",
+            "a5919",
+            "a5062",
+            "a5698",
+            "a4220"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch15-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5756",
+            "a4880",
+            "a4876",
+            "a4877",
+            "a5725",
+            "a5724",
+            "a4878",
+            "a4840",
+            "a5115",
+            "a4841"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch15-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5465",
+            "a5464",
+            "a5476",
+            "a5479",
+            "a5467",
+            "a5472",
+            "a4674",
+            "a5463",
+            "a5673",
+            "a5453"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch16-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5303",
+            "a4357",
+            "a4199",
+            "a5342",
+            "a4220",
+            "a4239",
+            "a4226",
+            "a4427",
+            "a4440",
+            "a4637"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch16-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a6016",
+            "a6017",
+            "a5915",
+            "a6006",
+            "a5235",
+            "a4517",
+            "a5052",
+            "a6007",
+            "a5056",
+            "a5054"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch17-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5056",
+            "a5057",
+            "a5052",
+            "a5055",
+            "a5054",
+            "a5053",
+            "a5498",
+            "a5110",
+            "a5111",
+            "a5094"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "ours-sutton-barto-incremental-m3",
+          "probe_id": "rl-fact-ch17-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a5111",
+            "a5110",
+            "a5692",
+            "a5057",
+            "a5052",
+            "a5054",
+            "a5698",
+            "a5741",
+            "a5612",
+            "a3905"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        }
+      ]
+    }
+  },
+  "graphrag-m3-standard-en-rl": {
+    "name": "GraphRAG",
+    "scope_note": "Pinned original construction, English RL source only; native output semantics retained.",
+    "submission_hash": "sha256:b8fba8b40f0657b0185ea087005f9c63327bc4ae4dfb53d5cbf89d08117602db",
+    "retrieval": {
+      "facts": [
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch01-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_f5e9eb9925ccf8b03136",
+            "a_04b6d2bc98b4151d3c0f",
+            "a_b95a7215e912d5035dcd",
+            "a_b54efd57db55daa8ccd3",
+            "a_ceac337f7e8a68962cfd",
+            "a_720726ff4f5f8cb7d169",
+            "a_a75b7a1f6c37ddefd48c",
+            "a_201dd7350ae63cb71eec",
+            "a_7d3c211dc8c1dd99eab3",
+            "a_9955f5714bf18eebd295"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch01-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_a91a60658680ed34630d",
+            "a_9b77f3f7ac5672c332bd",
+            "a_43ac895bdee80857aac3",
+            "a_b59f0329e14b7161a402",
+            "a_af8dfc6f2e91998b333e",
+            "a_c2af7737e85951be5ed1",
+            "a_718f686219e586291ccc",
+            "a_4da35cbc2f79da83cf7c",
+            "a_517fb13a62977d19be61",
+            "a_616be35910b58d3885c1"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch01-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d7c458d982aa1c2de681",
+            "a_c2d7ab8df2772c6d6e1a",
+            "a_2da43932aa81539c1775",
+            "a_094c4ca1d7bbc5375410",
+            "a_0a24af6be8af50e4e2e6",
+            "a_6eed64bba55d7aca4b92",
+            "a_413bb73a793ead3932f1",
+            "a_d966b14377fbb319b6ad",
+            "a_80a7b828594753888f57",
+            "a_fee7de704270ff740a52"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch02-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_6b23b0a53868cbe2b3f4",
+            "a_3c5cc12a0746bb75ecca",
+            "a_63aefcc10f325d48b7e9",
+            "a_8419fd96dbaab4901858",
+            "a_d5c87bd4a9a08109579b",
+            "a_6ba2e3386da0ff17f344",
+            "a_e1cab145b3c44ddcbcaa",
+            "a_ba9f8df79f8b8bb712d0",
+            "a_5e0602447e85591161a7",
+            "a_8d68f72223d9191cfcc4"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch02-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_7e276d021161c4eb33e9",
+            "a_6e4e4100570db346811c",
+            "a_2236775009ceeb05c048",
+            "a_533567d7d70f5bebe17b",
+            "a_be5132a1f4d9ea552bf2",
+            "a_33a810e05f8eee2a7889",
+            "a_b281ded2a0c08b1d1626",
+            "a_c10ae0cc18ef85d42622",
+            "a_163e1164393678787ca7",
+            "a_649466e0a2fcea92c0cf"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch02-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_79dca075e2d7a9e97f3b",
+            "a_d06fcf3e958d27196949",
+            "a_45ccbff3d36440718300",
+            "a_b5ee3d68987dbab8ec0b",
+            "a_270755c090ef7d3fcb6b",
+            "a_43062d6677f4bf19f128",
+            "a_0f3cf5758475b15c2426",
+            "a_979dc8ae207d0bef47c2",
+            "a_f128dd10b1f7d8d0b6f3",
+            "a_a63e254398d8f54fd8d4"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch03-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_006d298455743527956f",
+            "a_83f817e8812c64305845",
+            "a_838dd65bbda31a85402a",
+            "a_cd5565434a70199fa239",
+            "a_b557021093de3724e1b6",
+            "a_93586e20c3e216333a59",
+            "a_9cb00363253087267875",
+            "a_95957a06f05e7456ec31",
+            "a_f667fe14d4f246a4fc18",
+            "a_0a3fa3526b533b64c40b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch03-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_ff7e793bca30f49e31d5",
+            "a_c0c3641ffc151125059d",
+            "a_90dc76b208f3c74a4a47",
+            "a_a3522cbd60540a4c052c",
+            "a_82d14f8387316f02658a",
+            "a_81510c851a936ec05769",
+            "a_898fe570b9d8cefdbefa",
+            "a_ca23f36c40ee2c438b98",
+            "a_19efb5d371dcfbdc3cc9",
+            "a_3da0f6c2459f54bfb6ab"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch03-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_cdda3f0194807f816c0a",
+            "a_abcc47f50faf903a01cd",
+            "a_718f3de0245ae833db04",
+            "a_9c363e33e0a4e3147a0a",
+            "a_054b86105c761e48449a",
+            "a_7b7ecef2ecd24b8c31d4",
+            "a_ad9c9067c9ca53eef8f1",
+            "a_1c2885c7bde1f16f73a4",
+            "a_982a80c48cefea305f68",
+            "a_6ebfed1a488fa90d8212"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch04-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d11e11b56ea24d522ac1",
+            "a_27932f76fdc9be56fd3d",
+            "a_5a2f404926e093ceec4f",
+            "a_886aedcc919716c6a651",
+            "a_2544a0686289a81f9d7e",
+            "a_4d2b9d807fdd16ba5bbb",
+            "a_372a3ab33da189443d0f",
+            "a_731c99e5acf51611469e",
+            "a_66da7bbde1143674273c",
+            "a_caea1bc97da67482c4fc"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch04-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_2ec4fa4f45e18670bce6",
+            "a_579a90b6087c7454614b",
+            "a_87a4e203555d99691750",
+            "a_cc097600d6914211786b",
+            "a_a6d7f4cc0804f2bf6a3b",
+            "a_65b95767cf3b0796db2f",
+            "a_c56a0467097d38732ab8",
+            "a_815081596407ea0cbfe2",
+            "a_caea1bc97da67482c4fc",
+            "a_1b71d2bf01679bfc3e4a"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch04-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b4f838d7daae26e3fcf7",
+            "a_31ab60c1298ad8ef261d",
+            "a_c530cfea4d439d699b2e",
+            "a_de46f18a63bf6e0390b2",
+            "a_13e51fe5e1f0bb69b397",
+            "a_e840a9c17946f1c80ba8",
+            "a_87a4e203555d99691750",
+            "a_f910ff35b410a11db7a7",
+            "a_7cc5299ffabf75957c57",
+            "a_c0261e1392839759db14"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch05-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b5568281fe0e1cccda6a",
+            "a_ea217ba9b8f20471e411",
+            "a_fea182a71d6d30531765",
+            "a_aa5f93f378e054c4d290",
+            "a_2a0a407b1767ec5a2ae4",
+            "a_be9dd543c9d0c2e1f0f1",
+            "a_b52e9daf8d2fe6c73dbd",
+            "a_404a5f71b5095c802c91",
+            "a_4c534a9029868467a81c",
+            "a_e8414c52f7c08ae0e07e"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch05-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_ea30574e2c7550cfc8a4",
+            "a_bd5db926a85ac356e2d5",
+            "a_d428fc7231dd81639273",
+            "a_5eb45dabe0c31f9ad815",
+            "a_9b030ce6d8c73fc76220",
+            "a_21e2c8a8f836b9faa310",
+            "a_5b4d72dcb5f02565488a",
+            "a_01c3cb1b5c2f50a636b7",
+            "a_535ca68875203bd4c589",
+            "a_4d0433826f064573538b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch05-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_c557cf4f5fc3e76fc183",
+            "a_ff8050ee342f50666f32",
+            "a_4de309bf1dfb4648a8a5",
+            "a_592f664cee1863ff90bb",
+            "a_5dd660be3234477054e2",
+            "a_24c59cb0d91f3ae5c040",
+            "a_ed1252593999a014d102",
+            "a_e23d15e3d4f90e78d9ef",
+            "a_6658b0ac0f0e148189ee",
+            "a_4389aa63b29ad96f8c54"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch06-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e032f113001ba623ef62",
+            "a_d6d520e76627f7c991ea",
+            "a_1c3beb837014a30a9aad",
+            "a_2ea03f4a46973a8ec9a6",
+            "a_16acc655826a0b62758f",
+            "a_2b6277155234ea06e7e6",
+            "a_fb66e47d9205e7ada12d",
+            "a_523000d8af0ff571df09",
+            "a_0f940a4e9cd7c9766cc2",
+            "a_e69fad4953c33892dc1a"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch06-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_90f13be4a5d8c4a3d862",
+            "a_2c261703337f79ede865",
+            "a_430e24aa9938e26e9ce5",
+            "a_fa580526d33ff4a4aada",
+            "a_73f10bb3491cf759a622",
+            "a_45f481a57a5a37cb165b",
+            "a_abba74e268ab181d788c",
+            "a_c695f22480711a90379e",
+            "a_bbb6cc99455e85b665ca",
+            "a_40dbb6f907b6c118cac4"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch06-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_1fa02b51a5998f0ff737",
+            "a_010b9087db7c9b219bde",
+            "a_eb650d05c9cfd3269cb8",
+            "a_1a0d5e7b7b306f44cbb3",
+            "a_68b6649329ade94dc12d",
+            "a_63d4cb9ceaf56a1e9ec8",
+            "a_95b2d07c13636ff65120",
+            "a_578eebec3b55a459208a",
+            "a_9d93ff1a0136566de73b",
+            "a_ec550b09349a0366fb7b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch07-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e075c75ba9fa10cd9b16",
+            "a_5b9c825556f32ba94d79",
+            "a_1d91d5f1477d315ecc90",
+            "a_771af52e293b4db974ab",
+            "a_53e2d0ffed297e12abb6",
+            "a_0c421c9d69253067408d",
+            "a_f769e1db0eb985fdf94b",
+            "a_9c7dea2c306deca375c1",
+            "a_4f2e218e82f48642d1be",
+            "a_0efeccb02adfbcba34d9"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch07-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b37e78569b644a061758",
+            "a_edf8f92efd0882ad5c71",
+            "a_237d940b4afdda5c7b9c",
+            "a_df1c83e35095f116eb2c",
+            "a_f1f8cc97ac66910e9084",
+            "a_3657488235392df4e83a",
+            "a_2af29ef30717cb8d704e",
+            "a_1b3d1216f73ce3bbe5d8",
+            "a_273c512cd953bd32216c",
+            "a_c25a91cc1ce05d053779"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch07-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_a40607da10c75ecfc4b3",
+            "a_5441feee07622d9bb3f6",
+            "a_ca91eab0c31e2fca8e2f",
+            "a_bffe3dfe3f92a7913756",
+            "a_620e1aa1c9a56621a411",
+            "a_eb71991c03f8f2134b02",
+            "a_9eb0ee0921268527ca9c",
+            "a_0b88716712c8de5816db",
+            "a_6978f1f3809598ab492a",
+            "a_e9cadfb5c8681fe13d6b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch08-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_356a8a97b3977bfc4b45",
+            "a_c634a5852c818b07354f",
+            "a_a601397d603b964bcc16",
+            "a_0462a8ae0674fa80cb9a",
+            "a_700e73ad32df076a3cb3",
+            "a_b5568281fe0e1cccda6a",
+            "a_012b51793bb8fb3e9445",
+            "a_2aacac79793b0fa1c1ed",
+            "a_fea182a71d6d30531765",
+            "a_79cd7eee3e31fedc1a2e"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch08-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_02e1c3012d041c382373",
+            "a_4d4d48475497aea78c4f",
+            "a_84c4e85a338b94b64afd",
+            "a_09956198652eb4458b3e",
+            "a_50fb5936262d25d6aa39",
+            "a_4089c98cc8e6d6926337",
+            "a_2eeb18c85277dbd5f5f2",
+            "a_fea5bccd9854823ae3e2",
+            "a_30ebe99642bd50db158f",
+            "a_656733b45efb752f7351"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch08-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_0b2dbd544759b21c0c56",
+            "a_8c514c994aa0e4188682",
+            "a_03ff0d5327b45bcfe0ce",
+            "a_296a1f4a2f206063c4e7",
+            "a_33a2aba8cdf9652980f0",
+            "a_899f30f4ae577868fa6d",
+            "a_0e7d6173a3a3f9911eea",
+            "a_7fd5a89e3decd612922d",
+            "a_f3e97cd105767edc37bd",
+            "a_0c5b13d464d42ec380c8"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch09-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_6f71409260ebe476bba4",
+            "a_9db3dca5eb546b9a0e79",
+            "a_b63db80bca29c3899636",
+            "a_12cc8344fc274106944d",
+            "a_dbd7bd1df2f352257f83",
+            "a_b378b0cd295c560b3b0e",
+            "a_16b977fe9bed33011b3b",
+            "a_031920eb1d802e88e5fe",
+            "a_f4cf01434b7121868e76",
+            "a_652fab3c72c8e848979f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch09-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_3cc4605eb16916574357",
+            "a_59e928a74c5abe37cf9d",
+            "a_c737b721a6adff2aa181",
+            "a_f411f394a8f51ef65629",
+            "a_15f310529c5620782d34",
+            "a_e80ed5982e4180507200",
+            "a_002335e3aeba39ecedf2",
+            "a_3c7de9c303f4da6c2db7",
+            "a_0eebd599348370596b2f",
+            "a_7b1e09f915108f828425"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch09-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_f973571b2a9b8f507e13",
+            "a_ff8a36bbc6f74c7c48f8",
+            "a_4b9f0f3118961922d778",
+            "a_3fe393edccb86aaa6b06",
+            "a_7bb6c21829e8559fd044",
+            "a_43adfa1ac72d0f737141",
+            "a_5c4619e7d98c721c8a23",
+            "a_70a0510d918e3391789d",
+            "a_889b61d5c11d5cf9684f",
+            "a_5ebdafc61378d40832dd"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch10-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_cc187681fec2149f2ae0",
+            "a_f2fe2d1cd6645bb4a4d8",
+            "a_33c9bc2123b7be5494d9",
+            "a_9e067e4a2323d75f3afe",
+            "a_4964bf00ae05f74bfd94",
+            "a_bbfdd84be8cf3928d7ca",
+            "a_23a369959de70e87bfe9",
+            "a_d04148f48e714da8b370",
+            "a_c3727386a89c0e3e6211",
+            "a_ee9a006cb4fd1a59e072"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch10-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_7e377c65505a21eebd32",
+            "a_798d8e2493cf65ae2331",
+            "a_5217fcb6e7ace7262e71",
+            "a_5958a5f64820b0aec117",
+            "a_f7c68e77717945053dc7",
+            "a_6b0894828bc0f1f18128",
+            "a_fd3dba2a8e7f986c68db",
+            "a_863a67e242161ce3b616",
+            "a_9e067e4a2323d75f3afe",
+            "a_068fb00ddf65da5b3209"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch10-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_a77799f5daecef201d04",
+            "a_3abbd79216524d3b231f",
+            "a_59ad582f2f707f043c4c",
+            "a_138d9e78fa17b3372557",
+            "a_612f0aa1e0e091ee1bbb",
+            "a_e663089b0be182da5801",
+            "a_2614bea82c30724c19db",
+            "a_fab1002c8de9c9967de1",
+            "a_33c3c3ba6ad5f19c9c50",
+            "a_32e3558cc2223a55be69"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch11-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_81b3c790490ff0eaffdd",
+            "a_ea15eb251ac90e549680",
+            "a_7588608a97f0c32c2ee1",
+            "a_78e5128fb5d7b71c9f6e",
+            "a_9c5af85066decbb15da7",
+            "a_a147c23c8915fe4403b9",
+            "a_f4d9995a956e1deb15c1",
+            "a_54a711b157e7e2f40aaa",
+            "a_8a7197f14434be9a416b",
+            "a_11edc123b461ede1650c"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch11-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d9128ea81f6275911bfd",
+            "a_6248be64062d1390697a",
+            "a_fd3a888c2fc269d79bf5",
+            "a_11f626c77739181ae7b3",
+            "a_e82c618d7373cb76124a",
+            "a_af27765a5eda61a049f9",
+            "a_fbc6e7cd338795849886",
+            "a_1b5260b7c1dfefb64874",
+            "a_6b9fa36c09e1f4d2bb3f",
+            "a_86143365b18f31910132"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch11-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_1d15acfd92f126226884",
+            "a_1225eac952dc3ff01676",
+            "a_bc806a23e11505faf1e0",
+            "a_de27c455b453342910aa",
+            "a_16928a6fdcb2b80664da",
+            "a_638446a1c35828ab1b52",
+            "a_4aed092a55e898a0da68",
+            "a_620e1aa1c9a56621a411",
+            "a_25b3063971cddc8881cc",
+            "a_5ffc665f7d4333b4ffea"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch12-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_612a4343da4878132786",
+            "a_3d595e1d2d543ca3daa8",
+            "a_aad096c25bde1c040d84",
+            "a_5f346a3e4185ae9db01a",
+            "a_68c9c4335247374d45c8",
+            "a_c75ed084ef46be299934",
+            "a_c87ba6f1e3ac665de277",
+            "a_0a59ee3682acdb7048fd",
+            "a_6bc485437e5401b119ec",
+            "a_d275b0703c92f9a66213"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch12-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_ecc478a76abbabf4bd5c",
+            "a_dc32f71271c93fcd7346",
+            "a_6b3332790576f8b08d62",
+            "a_68ad1175b09d551f455d",
+            "a_c2d0376e002f7eacfc52",
+            "a_c85b1eb3a6064da9a290",
+            "a_930045a1a2456b1964ac",
+            "a_fa1e458f75225db02193",
+            "a_c05a8033b672d695cfb6",
+            "a_7b401a1ebef4d94f0d57"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch12-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_17053ae27185366764b2",
+            "a_353df121fb27d607bee4",
+            "a_cf465ffa366cd4e57a38",
+            "a_7355f61127c26e6d7a11",
+            "a_37cd9389a8bd2a8d8793",
+            "a_568a1e285186fa1473e2",
+            "a_4b651e0cf9b4ecd907fe",
+            "a_cb44604b51560f7ca9b7",
+            "a_345c611d0e60fecf2880",
+            "a_8f28d08fad02e6659ff1"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch13-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_400b832b7864f6cace03",
+            "a_4f3520d61cd54d7ef768",
+            "a_1ec5c0f73b33bf2a56f3",
+            "a_3cad245eb06674c64eac",
+            "a_a96eb786b90187ff72d1",
+            "a_da773104325e8b3d989d",
+            "a_1cb54099d7de09d428ac",
+            "a_06b1472a605ab8069b51",
+            "a_806711aa4a7f066a6984",
+            "a_be5132a1f4d9ea552bf2"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch13-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e7c39e0e76aed06d8790",
+            "a_9513c144c786100c03f5",
+            "a_1d16e08b184cc98cd69a",
+            "a_2df9bc5fa1feb54fbe85",
+            "a_c3266e7861fbb6727403",
+            "a_2c213274a61c37eb96c8",
+            "a_df0b33648ed6cedb008f",
+            "a_424736904c95b67cf651",
+            "a_712bd79d9b1541bd051e",
+            "a_8ed3e9bebe3e5bd3529b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch13-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_757e361c19c938e31d74",
+            "a_baa30835c100d6eef14d",
+            "a_64db4701cc10dd2a45fa",
+            "a_cafb92eec34d10a52959",
+            "a_13b4074727307b6edc7c",
+            "a_9ccedda16cb584fc9a98",
+            "a_d4a61acd6248ee86cda3",
+            "a_618ad541bb8c53aea193",
+            "a_ff5e794e4c7d29607132",
+            "a_9be8cf6df0e34133f830"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch14-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_9e9e8ca436beda53aca9",
+            "a_c244e49f7c8f769cb5d2",
+            "a_093d08bf12c9403a6c37",
+            "a_0b9507df9d9677ebf296",
+            "a_678b13765e0d76b97a43",
+            "a_69310ee8498b975ce721",
+            "a_55b3a652107733011f5e",
+            "a_2e4bba1ca901a5a18f84",
+            "a_76801528b2be044f5c6e",
+            "a_a32353fbeffbc1aa81e9"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch14-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_9d7c052452c83760b165",
+            "a_01f4698364fd2774073c",
+            "a_0303b72791b4e5c66b8d",
+            "a_b1da789d906ef6260690",
+            "a_429461c8d842c6a55fad",
+            "a_0bfdfb7ff3798894cea1",
+            "a_e41cb6b8af0833f29589",
+            "a_996e896b6b56b9978441",
+            "a_fe471fc317d50c61a032",
+            "a_44b9e33ad84256c1112a"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch14-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_5cbba24c4ce7f16011ff",
+            "a_e44261dad0530bacff00",
+            "a_a74df86a280e9c60ecad",
+            "a_99332a31c16844f6b1f3",
+            "a_c5c5610670d0e0242318",
+            "a_6faa6d4776e9afec3a62",
+            "a_981322eb0cdd78e981b1",
+            "a_4181e22ae231c4dc1c2c",
+            "a_d076f9ce8c6e5730923d",
+            "a_891e305db4e2ebf42b58"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch15-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_a8a742d5ca9ec172eade",
+            "a_993c72439373b3981583",
+            "a_b66391f94fce48edfae4",
+            "a_0e1797b95b0afcdd64ba",
+            "a_64aaf2276631f198a085",
+            "a_3e4d47336034a03f9866",
+            "a_64b50a6c917ebc40a118",
+            "a_742eb1e5266a74d8aa25",
+            "a_f7dd489cca4be5d7523d",
+            "a_ea8a21b50532e6855237"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch15-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_23e53b3bfcacd2fd6d2f",
+            "a_f9e9b243f046d79e24bc",
+            "a_96fb4b3e687372500338",
+            "a_bc421b4c493865ff103e",
+            "a_e8625bc3960c8bee9cf4",
+            "a_82ddea9d0f97e7aadb42",
+            "a_040f3d89d503e4802df3",
+            "a_84b0298e26fec867a6f0",
+            "a_e66a27f0937b1aa10530",
+            "a_d66ed7c10433ac622582"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch16-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_fd6caa15b51f0975d743",
+            "a_f6e256cae41ec0eda7ef",
+            "a_2b4397f1394e832f0d4a",
+            "a_269386cec2d276a7c4f0",
+            "a_8b4439192ae743d9a690",
+            "a_d2082bc2e7e2ffe2ad16",
+            "a_00d1cf316031c8e2d913",
+            "a_9fc61707323b3b97d762",
+            "a_ce9e50b32a30dc560d2e",
+            "a_804687a07da8aa439839"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch16-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_367c2e561b627641025e",
+            "a_9c86cd7ce378cef12b56",
+            "a_fc587d1c01d433338757",
+            "a_b6554345b0d96a5b7b82",
+            "a_b334d4354c73d1d55f92",
+            "a_6b7ba885f4796bca4b4b",
+            "a_7ed67a04b52771df1f2d",
+            "a_133f306e8306a39865ae",
+            "a_65bdac5d87655b4e3f67",
+            "a_8cbe3dd840a761b20c92"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch17-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_22d2481ac189ed934566",
+            "a_f11247f0c50fdfa7d28a",
+            "a_257d36855159e203490c",
+            "a_8f893753a25c60aec66e",
+            "a_a9b4edef701388a6e267",
+            "a_1564962d57bb601bc75b",
+            "a_95932112e53494e88384",
+            "a_1cb74ac577d75395d6b3",
+            "a_dd7d8597633216570432",
+            "a_96b302303b37bf7316f3"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "graphrag-m3-standard-en-rl",
+          "probe_id": "rl-fact-ch17-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_c761792841c7fc68342e",
+            "a_01bd93ff09af1d2db52e",
+            "a_4603959ba911bd1b83e5",
+            "a_62fb9b3839234496b261",
+            "a_d59ac749eba9fdcdbb9a",
+            "a_6573a7e2b3ad7ada5853",
+            "a_07356aad23ff39c4e0ad",
+            "a_4d01486d281d9ac270d8",
+            "a_615098144ef6dae6cdb8",
+            "a_ed7630850732248ac26c"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        }
+      ]
+    }
+  },
+  "autoschemakg-m3-full-en-rl": {
+    "name": "AutoSchemaKG",
+    "scope_note": "Semantic quality excludes native event-participation edges; structure retains full extracted graph; induced schema stored separately.",
+    "submission_hash": "sha256:15de6ea210e2fbeb3208150fa0c777d02234219d217b89fce76050c343fa8324",
+    "retrieval": {
+      "facts": [
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch01-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_ffac8cb3f4e1e0c238fa",
+            "a_1f6c28ce75717494ae44",
+            "a_c06e1a3b15b763e08fa6",
+            "a_ba940283d92fb053c738",
+            "a_018e7074d9effdb6314c",
+            "a_8a635699ee115015641b",
+            "a_6f1bef595e8295fe71da",
+            "a_a6c1540ed1300bed41a1",
+            "a_bd0b8c0c004baa090887",
+            "a_e3953566f1af96cd8d99"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch01-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_68ff52232c0281a54fc8",
+            "a_fce543ea79cb849af40f",
+            "a_d41c3e85beddfd0eedb2",
+            "a_f3dc4ccb8819d35b5128",
+            "a_b78d4b57cab4d6180960",
+            "a_5d091225f4ae9ded802d",
+            "a_1a3cc3580dbab8fce672",
+            "a_99580f5e3ac69dea5c76",
+            "a_4382c0736b934afb8c1a",
+            "a_e46d0662038a1f485cf0"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch01-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_2e899d95964529d421a4",
+            "a_d60e60d756d24ef6c87b",
+            "a_2de49214668b95d99253",
+            "a_edc93c35572c7a44e89e",
+            "a_5f75c395c48bbe504445",
+            "a_0b7ccb21901aac309c15",
+            "a_657f8e17a20de5debfe8",
+            "a_64b37978e4c971a78005",
+            "a_287989b6569e36744682",
+            "a_91eb48ebbe24841dbf4d"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch02-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_adb6d8d60599ac82a1de",
+            "a_c1ff38e7ee78e1a2b3c5",
+            "a_3fd0dbb605dbfa60b649",
+            "a_e992394ab2deb737cf0e",
+            "a_082613fe5a2e570ec8e2",
+            "a_98ada9ba214ff44fae5b",
+            "a_a5e88462a0ff771c5b41",
+            "a_8f6f1d9493a1c5242aa7",
+            "a_bbea2530aa826ff8d23c",
+            "a_18cefaada05e7f1750cc"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch02-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_8fcfa67e92bfc314b9ef",
+            "a_082613fe5a2e570ec8e2",
+            "a_66d82d03e16b5ad2fc64",
+            "a_bec7b583f52caf01b0ce",
+            "a_b36b8c124c274c7be15d",
+            "a_dcae2e38285814b306ce",
+            "a_41030f81a1567fd94776",
+            "a_84b4aa95055916fe67ae",
+            "a_d3fa12dd0839fd1ed927",
+            "a_4228fdd417850a94dea8"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch02-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_5d5b9cc39b6dd868f936",
+            "a_1ad5642dee27b4b60262",
+            "a_986baa6e1cf6dc49dc3c",
+            "a_6f69a6f0fbb0cb89504d",
+            "a_029051f11868f86cb8d8",
+            "a_78e1b2b32f3ea19752f5",
+            "a_154b675ec2ed2d21adbd",
+            "a_2cbd85521539f479eb4c",
+            "a_61e4b718a8e23f910630",
+            "a_acc24e19268c9923d051"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch03-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_0ebb5b954f1e7310f964",
+            "a_9abc7211fa78fcb11107",
+            "a_e4609183b9947507d7b7",
+            "a_247a6bff3407dd851b6b",
+            "a_79819a441f980af2be23",
+            "a_2b49897da01d14e4f652",
+            "a_ae57e3f4a30cb3458189",
+            "a_e38ec94bd36ba210961b",
+            "a_27f1a0ffe31b943c9576",
+            "a_e1f45c2c46b71b0a2c1d"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch03-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_df6c1ad31dab34d93600",
+            "a_96db4a594bf7def7b0c6",
+            "a_722fcae520da81341a34",
+            "a_023fcca3107cf38541dd",
+            "a_6ed1b2ef1b89951f820b",
+            "a_c4cf04524d7666645048",
+            "a_14f496ac10e642829d8f",
+            "a_321d96b3e8ad51c38dac",
+            "a_694560eb28205a045c06",
+            "a_d5e7105b25820160a8b2"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch03-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_acfe48e384cc7cff673f",
+            "a_967f11fcde181bcd034c",
+            "a_4cfd4e75634d15108b5c",
+            "a_ffe2553971d2573e2b53",
+            "a_69761e9f9ba4e96fb6c0",
+            "a_25350207481b8fc0f81e",
+            "a_87c4cc1ec949a8befa41",
+            "a_287356d59bafd09c5509",
+            "a_1afacba162a42b829f17",
+            "a_7eb82462ad4c1848b115"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch04-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b9df10f216eec1eedc19",
+            "a_a4bbbe4ae8fabaab944d",
+            "a_b14649346036c63efcaa",
+            "a_0ddec80380ecd5560ffb",
+            "a_cfb63278299d22e629e1",
+            "a_af1bf79619a6f5e7439c",
+            "a_36f6b50d35f6aabffb37",
+            "a_b8824dfda375caf5fa1a",
+            "a_44800adfefe7dbf95620",
+            "a_145faaebdb520eab7329"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch04-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_52b3640c437e78070ed6",
+            "a_ecff59ad05f0c4c32af2",
+            "a_eac609432df3c019c857",
+            "a_21260fd87e9921fff08f",
+            "a_6e6347aac667ce76751b",
+            "a_b0f2d333ba57c0d582a9",
+            "a_f873049e648b1b292777",
+            "a_c199f6bfb81bee40806a",
+            "a_927feb5b50260b881912",
+            "a_960bb982bf88359bfd0e"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch04-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_c8e4d373727d2fee55b5",
+            "a_bae145b1e29a8968db64",
+            "a_6667abb1751b3bb487a6",
+            "a_291800756642c01d0e12",
+            "a_b576687de353ab8fe235",
+            "a_4dc80d2501b9ec5b669d",
+            "a_87c4cc1ec949a8befa41",
+            "a_52645e332cdefe623d98",
+            "a_d2d7dcd5852d009c4d39",
+            "a_0d770b0d451341928463"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch05-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_1456ffa28a71929154e8",
+            "a_22d7f13e8daab5c1335d",
+            "a_423bd6a963b92f8ada2e",
+            "a_1903f3aecb6da4130776",
+            "a_dc4bcc6f877466b42ab4",
+            "a_7654931bf965fd5314e6",
+            "a_cab30857ad8412ef512b",
+            "a_3233142ee4fe29fef2e7",
+            "a_be2a2d124a51cc2501e8",
+            "a_d58c0f98b3471994f06f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch05-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_c9f0321dd3ac4ebb2af5",
+            "a_0593cea8e1a389a98615",
+            "a_db677ebf6a4f6c72a81e",
+            "a_005a41490d2ac66ee6af",
+            "a_a39c8a5521967770708b",
+            "a_fa06e1d9261f1200ff6d",
+            "a_85aa19add44a133ad4b4",
+            "a_d7c5ab5ce683fc5b797e",
+            "a_46c8262840fda162af4e",
+            "a_43ac8d7061229e80d7c0"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch05-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_9ba2148b4848cc971638",
+            "a_f4d2a5a244c1f2274964",
+            "a_41074a53330160c6e3f0",
+            "a_1d5305b6d1794dbf1147",
+            "a_8c3f3d108111e4f58bf7",
+            "a_dc4bcc6f877466b42ab4",
+            "a_8eef2c0e436511ad4152",
+            "a_bb15278e3a70f6654bdd",
+            "a_b4a6a643b398181181f4",
+            "a_67b45edf413571f670be"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch06-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_4ada962a3f8456e9c2ec",
+            "a_287989b6569e36744682",
+            "a_46c8262840fda162af4e",
+            "a_d15ed480a03dae2a9cea",
+            "a_0ab7366f285b2d55b94f",
+            "a_064d8a37451fea18a4c1",
+            "a_4ded92288e65ccbbe95f",
+            "a_38b891d4ecd5507acc5b",
+            "a_6910777d48dec267b035",
+            "a_15fe8bb2bb7712534a9f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch06-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_576d217d356fdb3ec522",
+            "a_a5d964622eaffd9e3cb5",
+            "a_b80a3af094d4c338519b",
+            "a_b1fa64077b514bce12cf",
+            "a_b9a2d35a8a2c4fe54576",
+            "a_b1b1af612e80a54b2da6",
+            "a_e8547ac14e02cdad8f81",
+            "a_3cccfef6b2926d79506f",
+            "a_0ae94d66a9e384c3e313",
+            "a_469e93938b118c6fb518"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch06-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_4963b46a66ebfd834678",
+            "a_b1375ddec6dbb8c3ac70",
+            "a_30b8af0f9dd02826d20f",
+            "a_fd91e4f6aa90fdcc8e7f",
+            "a_6db0d9d93a53e7cca7f9",
+            "a_1f957046d4bbe46065cf",
+            "a_15bfefff2d7e2143ec33",
+            "a_30fef47408bbf454c2fd",
+            "a_d971c07db8b882b3d4b5",
+            "a_4fb6f9472a01df012905"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch07-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_4ded92288e65ccbbe95f",
+            "a_82becb49500f6a30583c",
+            "a_1c7f20a10c12ef8ea750",
+            "a_269f2f3e33e2bc7f1540",
+            "a_f3208f4b815393989647",
+            "a_2db4a7e8e47e86e9477d",
+            "a_3b55f1de61298cfdf013",
+            "a_29adcaef7ef258768ea8",
+            "a_65f89cd84722f30918f8",
+            "a_275a51354e9172ca5ef2"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch07-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_7503f6d265e4af462057",
+            "a_376831ef64acbe8db3b7",
+            "a_be09427a18cc5b91510c",
+            "a_5c06abf81bf681d1f682",
+            "a_78c87844340c5ddd66d7",
+            "a_d548ebe1becfc5b083de",
+            "a_1053c10d5da11f477167",
+            "a_0817af4833cc55ae33a3",
+            "a_dc8a911b3a3c73e88458",
+            "a_2d0d5eac823d894aedfb"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch07-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e61bd635d727bce4ff4d",
+            "a_e2f5f742c1df097c897d",
+            "a_330c93285c2b8aa8463c",
+            "a_3bbe64534495622b4008",
+            "a_af221fc5a69f82562270",
+            "a_275a51354e9172ca5ef2",
+            "a_627187b57ab51c7b5b5d",
+            "a_9e834b77c6522280950a",
+            "a_29adcaef7ef258768ea8",
+            "a_b7fe2d2451f28c7f64d5"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch08-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_1c14ba3f61260ab3bcb1",
+            "a_dd3c8e27c68896fbd2de",
+            "a_88387e6dc081815eb31f",
+            "a_84467618b08ff85ff458",
+            "a_5d2a380cd1b8852ca505",
+            "a_97ab6825651554f04774",
+            "a_712de35cd3622e8f6f4f",
+            "a_98748060535c359d75ab",
+            "a_655a3126860b2fbbf46c",
+            "a_b68a55db93a4d9834fd5"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch08-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_34a6c74e5f6717ebd665",
+            "a_2a5ebe436a59a48ba8cd",
+            "a_8d4b629a90f7e52293f8",
+            "a_648bbba4bbdb8ac6d316",
+            "a_77e2a7398b5ebed4fbbc",
+            "a_414b9f19abb9a5f0e142",
+            "a_344928af045641de4e52",
+            "a_ccb935389042a14c2f01",
+            "a_8e83a8bcba21f0cc60ba",
+            "a_5a7e41a891d6af0ffb7e"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch08-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_fd1ca07577b6d5d2a235",
+            "a_28256c600f06b5c20eb3",
+            "a_ee217c43721f67ca35e9",
+            "a_2130eecf804a2bddfeb4",
+            "a_4077c8bd321570a3a2b7",
+            "a_73a99676df8f5940f83c",
+            "a_e7d6ba7af4e4b9a8ddad",
+            "a_00ca62e8d6b5c28b0cc4",
+            "a_21c27dd0d877b30c28a9",
+            "a_79d9f318e5d0edf4e136"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch09-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b2a2b086340e58d7ce51",
+            "a_88211356224bc9e4ed7b",
+            "a_6ad283db35b3292734a0",
+            "a_89640232af14d3e53625",
+            "a_005a41490d2ac66ee6af",
+            "a_dc00585a7f9c19e9a14f",
+            "a_730aca70410948489c46",
+            "a_1c1df70c2a47c981d35f",
+            "a_0356695121288d8b1871",
+            "a_ee2ec8d29dc8b42b2f72"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch09-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b3bb05db2373e1408623",
+            "a_dcb9adc05e45a9ad269c",
+            "a_dcbc4698751a95ab7d23",
+            "a_b2e97f4c579b144fbb0d",
+            "a_63c58defe47ca66eadb5",
+            "a_c7d94fdace6abb67eb15",
+            "a_1cb99e594f9bcfce0c19",
+            "a_7dc5dec2d4d1f3fe528a",
+            "a_0248eba396499ddadedc",
+            "a_6c1a3bade1b3e99febc7"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch09-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_93374ad37703746fe358",
+            "a_34ce072f0651a61b9250",
+            "a_659802c9f8ff0e52749b",
+            "a_f79534b3009c9b8ef9b5",
+            "a_89238625fae5b5ba500e",
+            "a_5015329c082ce99f7908",
+            "a_618ebf75d54159e7cc40",
+            "a_bba56a382ae9aaafe1e2",
+            "a_2d71b06e4d20a63a6e2e",
+            "a_ec239bd0c38b0d45db2a"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch10-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_2255ed8769729e770cf7",
+            "a_021d7c892b4abb61fdb4",
+            "a_e757267ab0a0125cf80b",
+            "a_ffb0610d98250442dcef",
+            "a_8ff08250fae8ea47ec8f",
+            "a_6248d86939b754aed8fe",
+            "a_ee1bd44108e17f75d76e",
+            "a_fb4f2585a7370d411a0f",
+            "a_7a0a872ad08ddb4740dc",
+            "a_4e20d688a9ff2aaf1c66"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch10-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_be1cec699ac16b563843",
+            "a_7a0a872ad08ddb4740dc",
+            "a_e2876656eb1a9f8b2ee5",
+            "a_d2cc23817db27e9f1e8c",
+            "a_7c4ab8e1ef82cc382de0",
+            "a_722816ed29c0ea14a3a1",
+            "a_efb98ec1d9b371994a7c",
+            "a_7acbbdee361b8787a606",
+            "a_b71cd4c80ef069191149",
+            "a_7548618d0b67d488f425"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch10-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_0c51ee9cc033fa56efb9",
+            "a_9962803d111b52daf54c",
+            "a_7d581a9124e2eefcbf5e",
+            "a_131877acabd7ff80d3ef",
+            "a_2ec4bc6f1cc6b8c6ed3a",
+            "a_0cb5d9b74bb35dab9f14",
+            "a_3dd9100bdd812e4a7c02",
+            "a_60582af7d64bb7eb4939",
+            "a_47c6f5a11a25e6ee3ecb",
+            "a_0ddec80380ecd5560ffb"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch11-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_9459059b603a06f25413",
+            "a_07c66136ac306f87bfc7",
+            "a_5452075342d75a036418",
+            "a_e3b6ff61ba23dcad110a",
+            "a_718eb6fde8604c0f5f44",
+            "a_8dde623540653c2cce42",
+            "a_264d622bc70daf7229fe",
+            "a_8494bce99cd905f2ba89",
+            "a_4af9e3225b43742008bb",
+            "a_c1fbae1d7502125a598f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch11-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_2a4c4555fe10695b151c",
+            "a_e2c40e4ed3748ed0870a",
+            "a_6f8241e4675e746f283b",
+            "a_c21cccbec8ec6358d224",
+            "a_076610f9f1a30928e700",
+            "a_424c72c24e1c70943d98",
+            "a_655b53f342f626150fc8",
+            "a_3b36eee65d6b8e723f23",
+            "a_29adcaef7ef258768ea8",
+            "a_202078c2fec264749953"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch11-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_2b682cbf2e885d6096bb",
+            "a_905cfac7cfaddac1f3c4",
+            "a_bd11208b5f624aea4e55",
+            "a_6b5315da86249bb2529e",
+            "a_57a9cdd8ac02753656b6",
+            "a_4de204358a1a60df6490",
+            "a_0190d15c8f807da7d115",
+            "a_737650e79799dd9796e5",
+            "a_aeb49ce6bc0fd0f1e19f",
+            "a_418572519972e0648808"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch12-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_2ce61d5a620dde3eefdf",
+            "a_465d2f582d74c76330f1",
+            "a_ab29700e5bc6864e50a9",
+            "a_f789648ec54aec72d004",
+            "a_926f8f7a9bb230d8b50c",
+            "a_fb8baebf262e9c968a3f",
+            "a_d548ebe1becfc5b083de",
+            "a_5f64151915510b9d0e95",
+            "a_1052435947c962f525ae",
+            "a_cae76f8879f035b725bd"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch12-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_a606938371f2ab6695b0",
+            "a_8252bc5bd60796b800cd",
+            "a_99e486638a55d9c6680d",
+            "a_77711c1b3445377702a0",
+            "a_c0b5b84afab09ad4b3c6",
+            "a_5237e1d7073e3be88c7d",
+            "a_751b981946fb6fe97e31",
+            "a_439dded9bbb5bc124469",
+            "a_4ded92288e65ccbbe95f",
+            "a_fd66f6d4ab217ae47a36"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch12-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_917956977b02e01eddd1",
+            "a_a27511990f18f1565f6f",
+            "a_2a3e4aad9715992f5a59",
+            "a_023db867896f4c885029",
+            "a_dd2921f6e423abe0db63",
+            "a_bacde825bea1858d3052",
+            "a_e04e2be2dc0851824e62",
+            "a_1080408e129b6837bff3",
+            "a_084872679faaadb462e0",
+            "a_bc6eee19aa9d2f350aff"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch13-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_6977faee8825cb67a1bf",
+            "a_4ad1917e9e8dcb2e6b4f",
+            "a_bde765fbbf3eb7e61c58",
+            "a_b28fc2872ef1442ca299",
+            "a_c0f2695493305b0c5b52",
+            "a_fd7875b8503beac8835e",
+            "a_49c97b47e1a6074d5994",
+            "a_8860d2f804216dc02570",
+            "a_bbea2530aa826ff8d23c",
+            "a_36f932b338d5433f54f0"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch13-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_5a798698d1b584f39330",
+            "a_b5b53d9b5c82aeba533f",
+            "a_84f0a54ab6f4e2463067",
+            "a_3d1e8a95af78d83e0c11",
+            "a_1ef68aab072e294e3675",
+            "a_2124fa92f09a0f66a6be",
+            "a_9c31d9e512033048576d",
+            "a_fc3e93d5306d56b392fe",
+            "a_edbd0beba7d88b19d444",
+            "a_4af48c356acdd9302c5a"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch13-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_68b868e6aaabe6dc9b2f",
+            "a_d935c6d24f2ba6b26f38",
+            "a_b5fab71c45b3b668a9bd",
+            "a_c0b956550bd035cb0510",
+            "a_fb91b1a683fe6f5f3d9d",
+            "a_a6c1540ed1300bed41a1",
+            "a_133f5c2fba418b972a2d",
+            "a_0fe432d1b110ecf8cea7",
+            "a_30faf45c376ab37d4d9f",
+            "a_d73f32dd872bfef450d7"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch14-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_f4c0f2b5cd4865827fec",
+            "a_d06932706e6a9d32bae2",
+            "a_0d88f10b82725f4789f7",
+            "a_47a799274073b4ec71ae",
+            "a_403697667475e36da493",
+            "a_61f7e64cc59ab6c90297",
+            "a_c906eef78bdfe2675488",
+            "a_f96bc95867ed3b271362",
+            "a_2602d295590c0d232818",
+            "a_dac29c11d4791962f2dc"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch14-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_688415318a6200d1ae1e",
+            "a_b7fd1d1ceffdfcb0345a",
+            "a_3c59a67f0b3b0894c12e",
+            "a_31bd2f6e06abb008b4b5",
+            "a_6215cac353e65e6bb60d",
+            "a_cd90c88ff2928dea505c",
+            "a_ec32d2badb53fe9961d1",
+            "a_f3c6ab2d928e539e0be9",
+            "a_5ccf0579dd94697abb50",
+            "a_5d2a83814f725da6ba8c"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch14-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_0cde70c8160b44bae78f",
+            "a_9d434022d30ed0075c75",
+            "a_a12d5c30e3b250beb321",
+            "a_de36ad8896bb4eb3f718",
+            "a_96d45129a40a3aae8af7",
+            "a_b84cecb517e0d7a4aed4",
+            "a_5a647965d917b0978fb8",
+            "a_83997d13a5ddaf5c5971",
+            "a_be75e3217a0096e94420",
+            "a_cd906ef1eebf371b92d4"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch15-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e92a045f07268f1e5cb6",
+            "a_0c06e51262f2a786e9bf",
+            "a_f52cc9fc524412eb1f54",
+            "a_f1e2aa5890ec526a23f0",
+            "a_889cd330174f61ec8711",
+            "a_2e9c15be2ed51beeaba6",
+            "a_28dda186c40b030018b2",
+            "a_3d2190fe0064d317b04c",
+            "a_10b50be9386b5dbd9dea",
+            "a_45090fe7c8cbc23c8ae1"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch15-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_906037deac901b9ec6fe",
+            "a_6cad450314606d963d4d",
+            "a_bd917880da2aa546c8d5",
+            "a_6d8cfe7a9fc6919fdbdc",
+            "a_993be39b2bdf32952174",
+            "a_77e80f41238289051236",
+            "a_8394a2c2d9401fdc6edb",
+            "a_eee9849051a8203a31a1",
+            "a_2d0a81964a8820a38254",
+            "a_40b6b9882872f6ba85a7"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch16-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_0d31e99ad76572604aab",
+            "a_b035fd629958f707ad6e",
+            "a_da1caa84ceff05c3cbb8",
+            "a_1407be4f7c2f55e00390",
+            "a_ed4d214acd6152c5ef76",
+            "a_8eb29f1190f349c483cb",
+            "a_9c3948c250e5e76fb374",
+            "a_e50789474893a53e50f8",
+            "a_2f755e6dfbd4081266bc",
+            "a_49627c52bd1ecd5d33bb"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch16-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_3a33bdb8de65bde369fd",
+            "a_bb364f8f7c52556c4b16",
+            "a_7e182921a4d303cd138d",
+            "a_548c2364476e4c1ffcd9",
+            "a_fd6426ba40a36df6f2bb",
+            "a_c8be5f3cf6499e6406b2",
+            "a_0b7b23a9ffee19bf91de",
+            "a_b44125c91ddccebd4ac7",
+            "a_e699ed889d059ccd03fc",
+            "a_6da12d40c38ccb5f26b3"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch17-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_657f8e17a20de5debfe8",
+            "a_e35c4a775973cd559064",
+            "a_dbe7ee60819240173798",
+            "a_cb7e89b306f71b1a16e2",
+            "a_93e2f38352fe129b0fde",
+            "a_067e88f23d9e22abcd0c",
+            "a_b4bda4339d6e17fa0759",
+            "a_64b37978e4c971a78005",
+            "a_92c1319d0fbf56d0d444",
+            "a_ca0b4376b0f30ec7d579"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "autoschemakg-m3-full-en-rl",
+          "probe_id": "rl-fact-ch17-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_7b9d0b2c511a9097a871",
+            "a_f32b1243dc157c197125",
+            "a_f9cda5d9696f0aba8b02",
+            "a_32e82d7dbdf6b40c27d7",
+            "a_fba9901ac418b56a8524",
+            "a_cd906ef1eebf371b92d4",
+            "a_101401f6b3ccc335269f",
+            "a_1090d3727508356e310b",
+            "a_64bea6171d2df2b271e7",
+            "a_7dac982dfdd731beac5b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        }
+      ]
+    }
+  },
+  "kggen-m3-lm-based-en-rl": {
+    "name": "KGGen",
+    "scope_note": "Pinned original construction, English RL source only; native output semantics retained.",
+    "submission_hash": "sha256:0d60643e538baa014b3651a481500e60ebc4cc6e403d4eb2ab721fc2db5f3bc5",
+    "retrieval": {
+      "facts": [
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch01-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_1967703a3b4d924139e1",
+            "a_1b01a4aff2d69a560148",
+            "a_6786ae43c2e23550823f",
+            "a_09ef00a6faf13bee90c7",
+            "a_17551924d654c3ce31fa",
+            "a_d11ccf1c68dfa0af7169",
+            "a_cba5ce34d860049e67ae",
+            "a_2310f573e1298a650b31",
+            "a_783fd455fc156430b3d6",
+            "a_0122f1fe137bbac00ef9"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch01-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_52fe6520af6c5ef8f346",
+            "a_df692b3f3d68578a0ab2",
+            "a_0ee7ddcaa8c3cce1193b",
+            "a_3cc46c9312e555246eda",
+            "a_e08b0ddf6084c0b6be94",
+            "a_2c5bfbe6f86f4dcd5a77",
+            "a_10ef0a7155c2ab6b14f4",
+            "a_938c86ef08642d524e5e",
+            "a_388903e34a2519e0cea3",
+            "a_f839b8f9cdc7870f872c"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch01-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_f24c4a5caa9d939d2974",
+            "a_569283567d9c2e87da62",
+            "a_77357d7f8d653fe63a7d",
+            "a_dbe03dcfd13f4b074784",
+            "a_13c2b0633554c2623fba",
+            "a_46b91bf4c6ee6733a2bf",
+            "a_f400d1e528be3656c213",
+            "a_8c0b19f3b53e97aaa4e3",
+            "a_709737f045eaf14025b7",
+            "a_70094ee3448a103eb40b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch02-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b01f0e2dddd2dd213e2a",
+            "a_0199c3240776ef2e41ae",
+            "a_17d4d1f0837c23c03992",
+            "a_018136f42957f8346dd7",
+            "a_a2085116c56b76958082",
+            "a_db71896f3d7c1d4cba52",
+            "a_d02dd770f37c030185a2",
+            "a_607de33555c580b49b1d",
+            "a_8f32715a3b2a2465b150",
+            "a_5023268a30cc30c7fa8c"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch02-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_c1f76f4736a36b2d106a",
+            "a_c51fd4a20ee8404e70ca",
+            "a_3d2f4037ffc0f8d89615",
+            "a_e115c413d0e8be0dae6b",
+            "a_a1066cfd4d3d4b656385",
+            "a_395628ddef26277156f8",
+            "a_4787620f9abb8eae3fbf",
+            "a_3cab8d063f934cbaab75",
+            "a_a5394daa845fe7c76ad5",
+            "a_fac5b75f2a7da16ed79f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch02-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e21adf54a02f7d677cbf",
+            "a_a99e4476389442612048",
+            "a_afcb901a9fffd972ae0f",
+            "a_2309b77d43a8bf81201c",
+            "a_f2718a3565d3b4816b71",
+            "a_770b37091b39719221e4",
+            "a_409255b2d29a54bac6d6",
+            "a_ec513acdf972f71de3a3",
+            "a_afb12bfe1c0a9627ef8c",
+            "a_888f2eea6b294f1cad53"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch03-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_07cbdb0ffe657c53eccc",
+            "a_bf9192764285bc8a5353",
+            "a_a480d7e327c77ae149fd",
+            "a_2742a0292d705ae8fd98",
+            "a_3e17547d7de7daf5b64e",
+            "a_19682aadf337773713c0",
+            "a_57ef15f69d42e9c412ad",
+            "a_6aaeb274748053002d31",
+            "a_0275f1736cf78a6dfc15",
+            "a_4709697a8d726fa05f60"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch03-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_9b389a7bca06a7f7db47",
+            "a_eba55a9b6aa0c6ea426e",
+            "a_41932e1dee5a2bc291f0",
+            "a_773da53cc0bf2a3070e6",
+            "a_755845a3e8cb6e703c2d",
+            "a_51694a538f737ce464fa",
+            "a_554cb3f3eac7835c12f6",
+            "a_4d092b63c7415d3f2574",
+            "a_0306bf65ed4deefc214e",
+            "a_139b41c8e568d75e8214"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch03-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_7c779b9a06e5e1f85582",
+            "a_fc1e798125b7e5534590",
+            "a_baae14c66e03664d9b8e",
+            "a_ab829be23e9589a1e67b",
+            "a_a7d47704c830d488ad86",
+            "a_203b9d45192fd62513cc",
+            "a_b74445af166d43c28e3c",
+            "a_76737403d7eefae0b087",
+            "a_d497417528a2e4e40feb",
+            "a_29e0c56b6e332295a68b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch04-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_30e8a73cbe37c8f96c1f",
+            "a_e28b8858657d1ffb5aff",
+            "a_35bc3e288e2719ac2231",
+            "a_e8db98c808607884f106",
+            "a_fad07468b5176e25584c",
+            "a_6f232c1beb65e4dff19b",
+            "a_05f043efd08e23121aeb",
+            "a_64a5be6426effb5d08f7",
+            "a_f82033cbab7824d53d44",
+            "a_db09d3c331d232689fd3"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch04-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_aae49c8e96816df42f7e",
+            "a_44fcabaf27eaf7d581df",
+            "a_5d32bb6ddb2bc8ce789c",
+            "a_cf49e0f9ed197d13afb2",
+            "a_6de43a9989feb4d84597",
+            "a_388340664a68be163564",
+            "a_032f16c07aa921ee5dd8",
+            "a_9c387c52d4e4e02402c3",
+            "a_37ef69a49d2c110a3938",
+            "a_91ffcfbb5d937aa0ef65"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch04-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_bae145b1e29a8968db64",
+            "a_782147ec45c0702751e3",
+            "a_2fb0c08b3ecb3fdc60af",
+            "a_5721746f8e4fa2fae529",
+            "a_62f0bdda5438ef996c49",
+            "a_1bab726ad2f9bb5a9052",
+            "a_863da3afcf66c138c718",
+            "a_5aab59dcbded072a49e6",
+            "a_ac520a606542099c3be0",
+            "a_ff932934021c1f06fdf7"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch05-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_64d376d01ba9676a1140",
+            "a_30c236a1a968d1a491b1",
+            "a_c7ba5c9255a552cd3b93",
+            "a_720e924debb06e66a240",
+            "a_196d0c7d3b8c2511dfe1",
+            "a_f365e3ca1eef71323134",
+            "a_bc4efd6c773a2323a88e",
+            "a_a2ac214857942896e0a2",
+            "a_38db7eee1adec44f7d44",
+            "a_61385aef54cfd6cb14f7"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch05-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_05f043efd08e23121aeb",
+            "a_6f232c1beb65e4dff19b",
+            "a_be9fad30074c6c9cc3b7",
+            "a_c3a87ee71d69c068afeb",
+            "a_1e3349894235eaf21e9e",
+            "a_5e06b80624c6e5d60513",
+            "a_b49c1c9df5da3844513e",
+            "a_c3776214e4e0540f729a",
+            "a_22d364a71573b64280f3",
+            "a_29c906c2520141b3e523"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch05-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_8226416e9298cbe554b6",
+            "a_61385aef54cfd6cb14f7",
+            "a_c30a4ac4ebabcf46e764",
+            "a_9cc26351d9ec7d71972c",
+            "a_1996d7d1c2deda4c47a7",
+            "a_e6d2a6d4dcc81fe76865",
+            "a_b60ea905b92b81b6b280",
+            "a_4a8ec9c20b9fc228b41c",
+            "a_4617c5b5319d1b5cfd01",
+            "a_b3b0c3a1362625f446ca"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch06-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_bcb192fa1aaff9a56141",
+            "a_bb276fec0a83e4fc1372",
+            "a_0e76f82b013c9538c2f4",
+            "a_8c0b19f3b53e97aaa4e3",
+            "a_f2f5bd0c423b8ac74127",
+            "a_e0de07ea26b9f85f4fc6",
+            "a_84fa28ed3a57a4c69cab",
+            "a_5f3c29cb046b3370bc66",
+            "a_29a85e5bc138084991a9",
+            "a_dbb3572aaefc8963efde"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch06-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_a4f03dc029e477bfcf14",
+            "a_e6c5e5b1ff90395b476e",
+            "a_b8e5772c3499cfe33e32",
+            "a_ccaa30fb827024b7dcb9",
+            "a_03c354956646aca21d2f",
+            "a_305bd429292d0c70c68c",
+            "a_b23dc12359d45bfcb2cb",
+            "a_aa56f0dd7c1d8399db15",
+            "a_dbcf20ce3d12706b89ff",
+            "a_4a79f0b8ef6f1227f144"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch06-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d2ce3edee4ac07862743",
+            "a_fd36e9ba69be863ef96b",
+            "a_b1a8fa1df7b550636d8b",
+            "a_3ea15e05d73b304178c7",
+            "a_71a10ca1dbc8553fad24",
+            "a_222b7dfb52088f49d2fa",
+            "a_7835ceec44bf25b87e03",
+            "a_9a0c019df3cfc68f5fca",
+            "a_fce2e4b24878902db120",
+            "a_5c10e1de345317ee1757"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch07-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d2dd7515d3910e3638b7",
+            "a_b2ef3b49c9e2387fd305",
+            "a_f3f67cc6bac9a2efa3ec",
+            "a_939f32fadb8adbcb18c6",
+            "a_795db8d7d8b28ee62180",
+            "a_ca2dea37d80aeb8c53ce",
+            "a_064d2e52c9b90748ff71",
+            "a_26dc2bdc4dd9c252ac58",
+            "a_f083e9f28005d13667f7",
+            "a_958adfb033e84080567f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch07-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_448a7b1329957f5df1f6",
+            "a_aa7a66fdb1eee30dd20a",
+            "a_4b82fe98a54be6240f1e",
+            "a_028bfcc3ed5fe4619e2c",
+            "a_b6ef6c2f052786433034",
+            "a_fddb56483bcfb481b2ea",
+            "a_c8eb9257069b9b91e8d9",
+            "a_d80076862f5f66b4f1d5",
+            "a_d700040c9715d8b54337",
+            "a_b52f1fc18998c6d83935"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch07-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_84621a99ab9af8183448",
+            "a_085e43280c032f1bf54d",
+            "a_8737a94455d2cef5f180",
+            "a_313208acccb048265c09",
+            "a_249c689790cd0b27b5ea",
+            "a_e85dd27821987ea35057",
+            "a_c56f582bae52c99aac34",
+            "a_2833efd8daea8b9faaa4",
+            "a_af009ea8a2b8563d0bf9",
+            "a_9295f3169ad3a8e9273d"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch08-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_8f1605e094c1d6e0fd43",
+            "a_c4b2ed3d2f061e1e1266",
+            "a_a96acebe12779407cc6d",
+            "a_bf4480ea85f16871c45e",
+            "a_3226fba2d509e0e5c0f0",
+            "a_99f5b87586912165df6e",
+            "a_489ac5389292bc067521",
+            "a_fae93e91489bc00bdabd",
+            "a_40b0e9a1b76086ccd8e7",
+            "a_fa3b23e0444860c6301e"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch08-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_48c453ed3c4e4229c8f9",
+            "a_e661619180d6076b09d6",
+            "a_a7aa4dca452b78f04c63",
+            "a_8a6a3da33828ace4cc6c",
+            "a_7d95a82cdba7fb4fab0c",
+            "a_8e3c37e2663f0c4b922b",
+            "a_7c0d3c8e3700d118e550",
+            "a_ad76de82a47cb8613339",
+            "a_b60d01508375d057b7cc",
+            "a_de12a719bafe72293d46"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch08-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_5f0a51903e8d3f81ea60",
+            "a_9e68ae8ebb5df9ecd76c",
+            "a_691cf2789dbfa6acfa96",
+            "a_ada93d09d2338dcc13ed",
+            "a_c441bdbbcd2b35ed473b",
+            "a_4080d3a461a7d45baf5b",
+            "a_8a8e5ed8871f3cb08ac4",
+            "a_4b587d5ae9b5dd4f40db",
+            "a_0be51bf726bfb89bed00",
+            "a_2867a814f11297754059"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch09-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_5fb8ea21804b5665a948",
+            "a_80d7d2e529fc195dc103",
+            "a_83e87e086a137f7cba5b",
+            "a_9611481ea84bc53a3a5f",
+            "a_9ffcfe45d607dff47f9c",
+            "a_76da460585a87cc97696",
+            "a_424901173e1125d630cf",
+            "a_277f888eb05c0f694492",
+            "a_b07e72158aba146ae6c6",
+            "a_916f06da3aaf101eb70b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch09-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d05428025cff40639fb7",
+            "a_cba5ce34d860049e67ae",
+            "a_b803e2f1b2ab37eba3a5",
+            "a_55dc71b8efd171b8d889",
+            "a_6f52dbc8cd7479cfdcbe",
+            "a_3f8f69265a65d863cfe6",
+            "a_01206ca0a0cd35621e10",
+            "a_71994ae8a301a6e1ecd6",
+            "a_61eb99a8a8868947a163",
+            "a_2badf1f205345d94b3ae"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch09-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_eedb1bc5a431d9136859",
+            "a_a998d542198389d4d2e2",
+            "a_9a7869a0fb9b3e8c1099",
+            "a_7c779b9a06e5e1f85582",
+            "a_f577036102be677030ab",
+            "a_9c76ab38d0abe9be0c9c",
+            "a_9abd2c1956c24a253dd5",
+            "a_7e398557a936a8e0fb0a",
+            "a_adc8b34341cb3b22929d",
+            "a_4a3185fde3bfae560c23"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch10-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_31290a41b3e06fd04413",
+            "a_650359270e11ff9bbeb9",
+            "a_77ca257c9d751d230c96",
+            "a_7131b34d76e0ed858297",
+            "a_f1b82a253bb9b7d25d32",
+            "a_29adf85c33f19187a6cb",
+            "a_44c5187dc24ecf58f3a5",
+            "a_bb3220ff02a362cbcbd0",
+            "a_aee57f1a54a0bc449d4c",
+            "a_97a14b968a2de14033a8"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch10-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_e6c8d91dcd83d3119008",
+            "a_f8ff09c5edb9e8fb86b9",
+            "a_e6c0e5a450aea53ca2c6",
+            "a_cf915afc4b146c2bdd07",
+            "a_d381349444882160ee8a",
+            "a_05edb588d23de4d0f042",
+            "a_86ae7b9ee09c1699b439",
+            "a_ee54a73d6ccb7caf4c6b",
+            "a_99448e659a12ce7595f5",
+            "a_dfa65cc43cb52bd9a3d0"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch10-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_660c361629eaa5d705cd",
+            "a_014e95f6de47f4906714",
+            "a_e11f48dfc94798efc272",
+            "a_cd3c9985700bfb1576ca",
+            "a_4c7ca4cc19466007e6cc",
+            "a_9ef6cfa9b08d32c65aa2",
+            "a_e809667540a0fbc3e761",
+            "a_27b51c80e3f03a5fbd84",
+            "a_229585b636658e1cfa9f",
+            "a_601b40d6b96832eac2df"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch11-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_6fd4aae704b606178c84",
+            "a_ead28d10153b2eb7e0d9",
+            "a_7b1ce99fe263cef379d1",
+            "a_18e44ba054bb292ebc7e",
+            "a_37f0baef0eed51ffd359",
+            "a_1f2bd955e32b1f3a1527",
+            "a_fe1051035ddff5a4f218",
+            "a_38c25c2283dc6e37d637",
+            "a_19b578a4e8e260c767cd",
+            "a_139b41c8e568d75e8214"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch11-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_00dcbb6b431992c9fbcb",
+            "a_f3b0f502afd657b98814",
+            "a_fc3b563a1f17e936691a",
+            "a_9fdaf0d3212ddd8d06b4",
+            "a_30c236a1a968d1a491b1",
+            "a_4ec2e65c8ab9c4668c3d",
+            "a_45efa2cee4c115897141",
+            "a_3a70bd7cfffc04e085a1",
+            "a_3ad73562462effdf96b4",
+            "a_196d0c7d3b8c2511dfe1"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch11-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_444b6dd2687a7ee059ad",
+            "a_ad6f74cf10f81e7abd76",
+            "a_8081b534ecb34bee0f62",
+            "a_550355ce2f4f935199c3",
+            "a_53474e0467969fbbba53",
+            "a_e6fa0c1bc30897b227b8",
+            "a_bcb8e8423a539efd4024",
+            "a_40a9d1e51d03a9fdc487",
+            "a_4fd6b1008a7cae672ef3",
+            "a_96182c279d566d2aa051"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch12-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_3e98c0379f379c5af086",
+            "a_9ef1a9f6cd8109390220",
+            "a_1b49ff2f473f47b3875e",
+            "a_92e2754af498f495d73a",
+            "a_d6fb777e26e17459fe90",
+            "a_43345c77b20926d2d01e",
+            "a_07c2b8f0d70ba56c5e3b",
+            "a_252f73f294bb35dd9a46",
+            "a_751c54fb4b9a6d6f535d",
+            "a_6bb42306cb2f7b84ff5f"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch12-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b2ef3b49c9e2387fd305",
+            "a_751c54fb4b9a6d6f535d",
+            "a_d2dd7515d3910e3638b7",
+            "a_baea7117e78feab664be",
+            "a_0275f1736cf78a6dfc15",
+            "a_43345c77b20926d2d01e",
+            "a_0d4e6895109178db07fe",
+            "a_b111629338fa6d539071",
+            "a_7d81f54cc33ed151eb57",
+            "a_680f33be6918e8c0bfb3"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch12-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_37fc7d89e614db273e28",
+            "a_98f49cebe654e6706c28",
+            "a_d931fb4334a5caf0d994",
+            "a_f929636f448a20788ca1",
+            "a_aa6474987f651e467a80",
+            "a_af64712cf2d4ce51bfdf",
+            "a_b76b8923e8d455827ce1",
+            "a_c1a5585ec038c82b8d14",
+            "a_b7752542f17d7d85aa99",
+            "a_72929c1a85bc53378903"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch13-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_c51fd4a20ee8404e70ca",
+            "a_2c87467fd31d3c31483d",
+            "a_12642de3c184f55b4478",
+            "a_ab9bef82c4cf1ae0cf0a",
+            "a_efca5993c5dabfe1d891",
+            "a_3d2f4037ffc0f8d89615",
+            "a_33827f867da4eceb6613",
+            "a_4a0b3e5913f2f455ebfb",
+            "a_dd9883375c19f0d5aea0",
+            "a_7826682b0e880f808dc4"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch13-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_443f30003e403025c9b9",
+            "a_86128610bc53f8a4d768",
+            "a_878d1eec8e3591f90a06",
+            "a_37039b8d4b28da88dc6f",
+            "a_ced1a0139681985a3a87",
+            "a_6aaeb274748053002d31",
+            "a_df232829f6ee16643402",
+            "a_67f0490ffa2989fef34d",
+            "a_7fc6f0400180f6ec640b",
+            "a_3fa86faa1b678269b933"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch13-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_0fe432d1b110ecf8cea7",
+            "a_a4427f16a357b51f7be2",
+            "a_aeceacc63b92560f0d74",
+            "a_058f171a7fc6e6ba2f6b",
+            "a_305920c79549d3c18b15",
+            "a_769d746511ae40da5642",
+            "a_917a616e0806d498e9ec",
+            "a_59b7a0b633b64ffb8487",
+            "a_5a5975b506236926cf39",
+            "a_64a8fc873d2d9d22ca31"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch14-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_542c58bbc1bcf2bfa695",
+            "a_17cc527b1960b5656110",
+            "a_82d2de71f92a8436a44b",
+            "a_bf018195f267acd38cfa",
+            "a_341f71f510bedea44498",
+            "a_3874dc251ae724222cb0",
+            "a_b4f6079f41525a4c2c49",
+            "a_72d29011e311d9a2bf2c",
+            "a_1fe583dc0698e0d75d1e",
+            "a_b2d66da7146bbbee4fdf"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch14-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_9f0f162d5a3c08d69cad",
+            "a_e18012606718344b303b",
+            "a_6cf3bdfd4dfe06d74b89",
+            "a_7c463b2220fb84086ec7",
+            "a_1cba9eb8035aae293b8f",
+            "a_f7279d98ea71236fe5b3",
+            "a_acb2fcae6f9d931eb10d",
+            "a_c98cfd7949523b38118f",
+            "a_378eae4a6e6ed8166c26",
+            "a_fb1080c9d691e8eb2cf5"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch14-3",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_3b5188997badb079e24b",
+            "a_8a6e31140b19fb4d353c",
+            "a_28e81ff25b9191737c9d",
+            "a_4ff39a1057af80e44301",
+            "a_1e09e9fe7c4106cce5d0",
+            "a_02d8ff7698ea15786a70",
+            "a_5680874a57f2a64eaa9a",
+            "a_ae72996e23d3264702d7",
+            "a_cfa99095ba220436595d",
+            "a_6777c26125d0b61fa719"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch15-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_b1622e90b7829ae02b8b",
+            "a_08a462997deaa5558456",
+            "a_5d633bc180a9892e04c2",
+            "a_17e18ce316f57705fd9f",
+            "a_e8bfb2c1e04ebf1fed25",
+            "a_37aaaad3fd66e5243b9b",
+            "a_853a5f6d72b53e54df29",
+            "a_b394c4e8e2d57b04228b",
+            "a_865792101e4df3a6c15a",
+            "a_87b2e1b6fbea9137ec5b"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch15-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d348e1010b0352e0140a",
+            "a_49b82c24de66484a30f5",
+            "a_d224a15072c8beefa841",
+            "a_8a20ea66a17a9292feab",
+            "a_a374a64dd57031e5e789",
+            "a_d7b547f64efbed6ad939",
+            "a_2daacf7acc9e1dd6b8d9",
+            "a_af5e0fcc632be5250378",
+            "a_d1f1614c4b2af645e330",
+            "a_961061f5e992a818b539"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch16-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_f84acf2b01d1b85e427a",
+            "a_18616b9e203102fe42f0",
+            "a_d34afdc0543ca8de5c09",
+            "a_8124309d7043f0de8c92",
+            "a_fce2e4b24878902db120",
+            "a_f6aec1f5cc76a2f05384",
+            "a_7d04a6bd8750978c76e8",
+            "a_fac5b75f2a7da16ed79f",
+            "a_38ed7922d99d53ee6a79",
+            "a_3ee1ff93209f1e95bfe6"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch16-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_bf5fbacc644e35f9ebff",
+            "a_86a18881b66617e21f8e",
+            "a_fb3e7617b88dab6b5173",
+            "a_f74a13dbcde56c46b6d4",
+            "a_87ee7d1171ec252c09c6",
+            "a_bf762603955b6df8e98c",
+            "a_d94c533db159de38c7c0",
+            "a_86d1864c4feecb487aac",
+            "a_3b44b214abddb4736501",
+            "a_76fdbb71bdb8adeb9449"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch17-1",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_d7f15ebe0744ce46d6b4",
+            "a_eeb7fa11d249b5423119",
+            "a_7bbcebea253eab4c6977",
+            "a_4e72d840e473efa71406",
+            "a_fcbc3d2ea4b270302795",
+            "a_28e1a29ecc7b5e416c28",
+            "a_b9c71b13bf788f10c127",
+            "a_80c86b1897a19250158f",
+            "a_0c00310fc40358a14d78",
+            "a_9446366961964d0630a9"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        },
+        {
+          "system_id": "kggen-m3-lm-based-en-rl",
+          "probe_id": "rl-fact-ch17-2",
+          "retriever": "char-ngram-bm25-v1",
+          "assertion_ids": [
+            "a_21f7d5b3c97e00c89ec8",
+            "a_b8bb37f1a4c48f212284",
+            "a_caf5acef7af05048dcf4",
+            "a_80c86b1897a19250158f",
+            "a_d2fbec4d53731cf0b056",
+            "a_4d6c31bdea80a76f1be2",
+            "a_1d864f72853b6c297d2d",
+            "a_f09167f51e871c11acdb",
+            "a_343e6d212049422169cf",
+            "a_9b9680e0b24272779a3c"
+          ],
+          "retriever_params": {
+            "top_k": 10,
+            "k1": 1.2,
+            "b": 0.75
+          }
+        }
+      ]
+    }
+  }
+}

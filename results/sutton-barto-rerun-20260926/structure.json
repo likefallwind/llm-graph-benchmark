@@ -1,0 +1,122 @@
+{
+  "ours-sutton-barto-incremental-m3": {
+    "entity_count": 1354,
+    "assertion_count": 2708,
+    "quality_assertion_count": 2708,
+    "entity_citation_presence": 1.0,
+    "assertion_citation_presence": 1.0,
+    "isolated_entity_rate": 0.208272,
+    "largest_component_ratio": 0.7304283604135894,
+    "alias_count": 3723,
+    "field_counts": {
+      "types": 1354,
+      "definition": 1354,
+      "aliases": 1339
+    },
+    "construction": {
+      "input_tokens_million": 465.142485,
+      "output_tokens_million": 45.316314,
+      "total_tokens_million": 510.458799
+    },
+    "construction_source": "/home/likefallwind/code/llm-knowledge-graph/tmp/rl-assessment-20260920/provenance.json",
+    "documents": [
+      {
+        "document_id": "sutton-barto-2e-en-full-structured-v1",
+        "entity_count": 1354,
+        "assertion_count": 2708,
+        "largest_component_ratio": 0.730428,
+        "isolated_entity_count": 282
+      }
+    ]
+  },
+  "graphrag-m3-standard-en-rl": {
+    "entity_count": 8317,
+    "assertion_count": 19060,
+    "quality_assertion_count": 19060,
+    "entity_citation_presence": 1.0,
+    "assertion_citation_presence": 1.0,
+    "isolated_entity_rate": 0.036672,
+    "largest_component_ratio": 0.9212456414572562,
+    "alias_count": 0,
+    "field_counts": {
+      "types": 8317,
+      "definition": 8317,
+      "aliases": 0
+    },
+    "construction": {
+      "input_tokens_million": 5.482614,
+      "output_tokens_million": 4.19103,
+      "total_tokens_million": 9.673644
+    },
+    "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/graphrag/requests",
+    "documents": [
+      {
+        "document_id": "sutton-barto-2e-en-full-structured-v1",
+        "entity_count": 8317,
+        "assertion_count": 19060,
+        "largest_component_ratio": 0.921246,
+        "isolated_entity_count": 305
+      }
+    ]
+  },
+  "autoschemakg-m3-full-en-rl": {
+    "entity_count": 29219,
+    "assertion_count": 38783,
+    "quality_assertion_count": 10288,
+    "entity_citation_presence": 1.0,
+    "assertion_citation_presence": 1.0,
+    "isolated_entity_rate": 0.0,
+    "largest_component_ratio": 0.7053629487662137,
+    "alias_count": 0,
+    "field_counts": {
+      "types": 29219,
+      "definition": 0,
+      "aliases": 0
+    },
+    "construction": {
+      "input_tokens_million": 17.736773,
+      "output_tokens_million": 9.539398,
+      "total_tokens_million": 27.276171
+    },
+    "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/autoschemakg/requests",
+    "documents": [
+      {
+        "document_id": "sutton-barto-2e-en-full-structured-v1",
+        "entity_count": 29219,
+        "assertion_count": 38783,
+        "largest_component_ratio": 0.705363,
+        "isolated_entity_count": 0
+      }
+    ]
+  },
+  "kggen-m3-lm-based-en-rl": {
+    "entity_count": 12339,
+    "assertion_count": 22703,
+    "quality_assertion_count": 22703,
+    "entity_citation_presence": 0.892698,
+    "assertion_citation_presence": 1.0,
+    "isolated_entity_rate": 0.136316,
+    "largest_component_ratio": 0.8022530188832159,
+    "alias_count": 1351,
+    "field_counts": {
+      "types": 0,
+      "definition": 0,
+      "aliases": 942
+    },
+    "construction": {
+      "input_tokens_million": 12.348319,
+      "output_tokens_million": 13.113802,
+      "total_tokens_million": 25.462121
+    },
+    "construction_source": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-baselines-20260923/kggen/requests",
+    "documents": [
+      {
+        "document_id": "sutton-barto-2e-en-full-structured-v1",
+        "entity_count": 12339,
+        "assertion_count": 22703,
+        "largest_component_ratio": 0.802253,
+        "isolated_entity_count": 1682
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "benchmark": "../rl-source-fontfix-20260926/frozen-benchmark/benchmark.json",
+  "seed": 20260923,
+  "workers": 6,
+  "submissions": [
+    {
+      "path": "../../outputs/rl-book2-20260923/submission.json",
+      "name": "我们的方法（强化学习）",
+      "scope_note": "Sutton–Barto source_id=2子图；1354实体、2708完整断言；来自D2L种子库的跨书增量构图，保留全部原生跨书引用",
+      "construction_usage": "../../outputs/rl-book2-20260923/construction-usage.json"
+    },
+    {
+      "path": "../../outputs/rl-baselines-20260923/graphrag/workflow-quality-submission.json",
+      "structure_path": "../../outputs/rl-baselines-20260923/graphrag/workflow-full-submission.json",
+      "name": "GraphRAG",
+      "construction_usage": "../../outputs/rl-baselines-20260923/graphrag/construction-usage.json",
+      "scope_note": "Pinned original construction, English RL source only; native output semantics retained."
+    },
+    {
+      "path": "../../outputs/rl-baselines-20260923/autoschemakg/workflow-quality-submission.json",
+      "structure_path": "../../outputs/rl-baselines-20260923/autoschemakg/workflow-full-submission.json",
+      "name": "AutoSchemaKG",
+      "construction_usage": "../../outputs/rl-baselines-20260923/autoschemakg/construction-usage.json",
+      "scope_note": "Semantic quality excludes native event-participation edges; structure retains full extracted graph; induced schema stored separately."
+    },
+    {
+      "path": "../../outputs/rl-baselines-20260923/kggen/workflow-quality-submission.json",
+      "structure_path": "../../outputs/rl-baselines-20260923/kggen/workflow-full-submission.json",
+      "name": "KGGen",
+      "construction_usage": "../../outputs/rl-baselines-20260923/kggen/construction-usage.json",
+      "scope_note": "Pinned original construction, English RL source only; native output semantics retained."
+    }
+  ],
+  "samples": {
+    "entities": 100,
+    "assertions": 200,
+    "aliases": 30,
+    "splits": 30
+  }
+}
