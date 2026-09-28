@@ -7,7 +7,7 @@
 |---|---|
 |原文修复：负号、希腊字母、∑∇∈′⊤ 等 4,327 个错误字形，剩 36 个|读原文的指标：断言正确性、实体所指、实体引用、类型、描述、别名、拆分|
 |别名：全部引用原文不截断（原为 1,200 字），可结合通用知识|别名同一性|
-|拆分：加入双方各自的全部引用原文，可结合通用知识|实体拆分|
+|拆分：旧裁判加入双方各自的全部引用原文，可结合常识（split-legacy-full-sources-knowledge-v3）|实体拆分|
 |3 条事实探针修正错字形；事实探针标为参考指标，检索器不变|完整事实探针覆盖|
 
 描述口径不变：只看实体自己的引用段，整段判支持 / 不支持 / 不确定。Book QA 已移除。
@@ -20,10 +20,15 @@ KGGen 的 "Reward → reward r" 别名任务引用 573 段、约 386KB，超过 
 ## 运行
 
 ```bash
-llm-graph-benchmark workflow prepare --config studies/rl-rerun-20260926/workflow.json --run outputs/rl-rerun-fontfix-20260926
-llm-graph-benchmark workflow launch --run outputs/rl-rerun-fontfix-20260926
-llm-graph-benchmark workflow status --run outputs/rl-rerun-fontfix-20260926
-llm-graph-benchmark workflow report --run outputs/rl-rerun-fontfix-20260926
+llm-graph-benchmark workflow prepare --config studies/rl-rerun-20260926/workflow.json --run outputs/rl-rerun-fontfix-20260926-r3
+llm-graph-benchmark workflow launch --run outputs/rl-rerun-fontfix-20260926-r3
+llm-graph-benchmark workflow status --run outputs/rl-rerun-fontfix-20260926-r3
+llm-graph-benchmark workflow report --run outputs/rl-rerun-fontfix-20260926-r3
 ```
+
+2026-09-26 22:07 中断首次运行（outputs/rl-rerun-fontfix-20260926），修复关系粒度解析器：模型偶尔用 ```json 代码块包裹输出，其他 JSON 裁判本来会去掉，粒度没有，导致 19 条内容正确却解析失败。修复不改变任何标签。
+随后在 -r2 目录重新 prepare，任务 ID 与内容哈希逐条一致，原样搬入已完成的 1,392 条结果，从断点继续；30 条技术失败重新请求。
+
+2026-09-28 拆分裁判由 v2 改为 v3：v2 重写了整段提示词并禁止用系统描述证明两者不同，导致相关但不同的概念被判为应合并（我们 4 对、GraphRAG 3 对、AutoSchemaKG 3 对由通过变为不通过）。v3 回到旧裁判，只保留补原文和结合常识两处改动。只升级拆分的版本，其余任务 ID 与内容哈希不变；在 -r3 目录重新 prepare，原样搬入 -r2 的 3,149 条结果，重判 120 对拆分，另重请求 -r2 中 3 条技术失败的断言。
 
 prepare 已完成（不调用 API）。launch 需要 MINIMAX_API_KEY，会调用 MiniMax-M3 付费接口。

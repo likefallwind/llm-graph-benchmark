@@ -9,7 +9,7 @@ import pytest
 
 from llm_graph_benchmark.bundle import canonical_hash
 from llm_graph_benchmark.cli import main
-from llm_graph_benchmark.workflow import alignment, engine, granularity, identity_judge, ledger, protocol, referent, qa_support
+from llm_graph_benchmark.workflow import alignment, engine, granularity, identity_judge, ledger, legacy_judge, protocol, referent, qa_support
 from llm_graph_benchmark.workflow.preparation import prepare, read, verify
 from llm_graph_benchmark.workflow.reporting import report
 from llm_graph_benchmark.workflow.transport import write
@@ -361,7 +361,24 @@ def test_identity_judges_see_every_submitted_source_untruncated(config_path):
     shown = json.loads(alias["messages"][1]["content"])
     assert shown["alias"] == "shared name"
     assert shown["evidence"] == [{"id": "u1", "text": long_text}]
-    pair = json.loads(split["messages"][1]["content"])
-    assert pair["shared_surfaces"] == ["sharedname"]
-    assert {pair["left"]["name"]: pair["left"]["evidence"], pair["right"]["name"]: pair["right"]["evidence"]} == {
-        "Alpha": [{"id": "u1", "text": long_text}], "Beta": [{"id": "u2", "text": "Beta appears here."}]}
+    pair = split["payload"]
+    shown = split["messages"][1]["content"]
+    assert shown.startswith(legacy_judge.build_prompt(pair) + "\n")
+    evidence = dict(line.split("=", 1) for line in shown.splitlines()[-2:])
+    assert {pair["content"][side]["name"]: evidence[side + "_evidence"] for side in ("left", "right")} == {
+        "Alpha": long_text, "Beta": "Beta appears here."}
+
+
+def test_split_judge_is_legacy_judge_with_only_the_evidence_rule_changed():
+    legacy = legacy_judge.SYSTEM_PROMPT.splitlines()
+    split = identity_judge.SPLIT_PROMPT.splitlines()
+    assert [(a, b) for a, b in zip(legacy, split) if a != b] == [
+        (identity_judge.LEGACY_EVIDENCE_RULE, identity_judge.SPLIT_EVIDENCE_RULE)]
+    assert len(legacy) == len(split)
+
+
+def test_granularity_parser_accepts_markdown_fence_without_changing_label():
+    fenced = "```json\n" + json.dumps({"label": "L2", "reason": "synthetic fixture"}) + "\n```"
+    assert granularity.parse(wire(fenced)) == {"label": "L2", "reason": "synthetic fixture"}
+    with pytest.raises(ValueError):
+        granularity.parse(wire("```json\n" + json.dumps({"label": "L4", "reason": "x"}) + "\n```"))

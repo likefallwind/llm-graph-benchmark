@@ -24,7 +24,7 @@ VERSIONS = {
     "entity_typing": "type-boundary-v2-label-binding",
     "entity_description": "description-whole-v2",
     "alias_identity": "alias-full-sources-knowledge-v2",
-    "identity_split": "split-full-sources-knowledge-v2",
+    "identity_split": "split-legacy-full-sources-knowledge-v3",
     "fact_recovery": "complete-fact-v1",
 }
 SHARED = (

@@ -1,5 +1,6 @@
 """Frozen judging logic migrated from studies/d2l-granularity-20260922/evaluate.py."""
 import json
+import re
 
 LEVELS = ('L1','L2','L3','uncertain')
 
@@ -18,7 +19,10 @@ uncertain：输出无法解释，或完整阅读后仍确实无法区分相邻�
 严格只返回JSON对象，两个字段：{"label":"L1|L2|L3|uncertain","reason":"简短中文理由，指出决定层次的关系表达"}。'''
 
 def parse(response):
-    v=json.loads(response['choices'][0]['message']['content'].strip())
+    raw=response['choices'][0]['message']['content'].strip()
+    # Same markdown-fence tolerance as the other JSON judges; labels are never altered.
+    raw=re.sub(r'^'+chr(96)*3+r'(?:json)?\s*|\s*'+chr(96)*3+'$','',raw)
+    v=json.loads(raw)
     if (not isinstance(v,dict) or set(v)!={'label','reason'} or v['label'] not in LEVELS
         or not isinstance(v['reason'],str) or not v['reason'].strip()):
         raise ValueError('Invalid granularity response')
