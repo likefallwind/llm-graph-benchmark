@@ -1,0 +1,658 @@
+{
+ "q00beca475049": [
+  "curiosity",
+  "artificial curiosity",
+  "curiosity-driven exploration",
+  "好奇心",
+  "人工好奇心"
+ ],
+ "q01228a754e1c": [
+  "constant-alpha MC",
+  "constant-α Monte Carlo",
+  "constant step-size MC",
+  "every-visit constant-α MC",
+  "常数α蒙特卡洛",
+  "常数步长MC"
+ ],
+ "q0498d64a5b97": [
+  "action node",
+  "action nodes",
+  "action vertex",
+  "state-action node",
+  "动作节点"
+ ],
+ "q056e0aa603ee": [
+  "probability density function",
+  "PDF",
+  "density function",
+  "density",
+  "概率密度函数",
+  "密度函数"
+ ],
+ "q06588725ddf8": [
+  "global optimum",
+  "global optima",
+  "global maximum",
+  "global minimum",
+  "全局最优",
+  "全局最优解"
+ ],
+ "q066e38f5b422": [
+  "conditioned penalty",
+  "conditioned punishment",
+  "secondary punisher",
+  "条件惩罚"
+ ],
+ "q07103c687aa8": [
+  "search depth",
+  "depth of search",
+  "lookahead depth",
+  "搜索深度"
+ ],
+ "q07cf8a92e589": [
+  "provisional weights",
+  "provisional weight",
+  "provisional weight vector",
+  "临时权重"
+ ],
+ "q10ef52addc4e": [
+  "emphatic n-step learning rule",
+  "n-step emphatic TD",
+  "emphatic TD",
+  "general n-step learning rule",
+  "equation 9.25",
+  "强调n步学习规则"
+ ],
+ "q15d2ee20f3e4": [
+  "update distribution",
+  "distribution of updates",
+  "on-policy distribution",
+  "更新分布"
+ ],
+ "q18ec7571be43": [
+  "off-policy prediction",
+  "off-policy evaluation",
+  "off-policy policy evaluation",
+  "离策略预测",
+  "异策略预测"
+ ],
+ "q1a83c72ed91c": [
+  "Escherichia coli",
+  "E. coli",
+  "E.coli",
+  "bacterium",
+  "大肠杆菌"
+ ],
+ "q1fe2624420b3": [
+  "actor-critic",
+  "actor–critic",
+  "actor-critic method",
+  "actor-critic architecture",
+  "A2C",
+  "advantage actor-critic",
+  "AC",
+  "演员-评论家",
+  "执行者-评价者"
+ ],
+ "q2033b653c2e2": [
+  "agent-environment interaction",
+  "agent–environment interaction",
+  "agent-environment interface",
+  "interaction between agent and environment",
+  "智能体-环境交互"
+ ],
+ "q229c572022c5": [
+  "delay conditioning",
+  "delayed conditioning",
+  "延迟条件反射",
+  "延迟条件作用"
+ ],
+ "q22d4a5182fa7": [
+  "optimal control",
+  "optimal control theory",
+  "最优控制",
+  "最优控制理论"
+ ],
+ "q2330c2a33211": [
+  "value iteration with options",
+  "options value iteration",
+  "SMDP value iteration",
+  "带选项的值迭代"
+ ],
+ "q2b694babfa34": [
+  "asynchronous DP",
+  "asynchronous dynamic programming",
+  "asynchronous methods",
+  "asynchronous value iteration",
+  "distributed DP",
+  "异步动态规划",
+  "异步DP"
+ ],
+ "q2c503b54e615": [
+  "complete knowledge",
+  "perfect model",
+  "known model",
+  "full knowledge of the environment",
+  "完全知识",
+  "完备知识"
+ ],
+ "q2f7a2b085060": [
+  "artificial intelligence",
+  "AI",
+  "人工智能"
+ ],
+ "q30efa112bf44": [
+  "indefinite-horizon task",
+  "indefinite horizon task",
+  "indefinite-horizon problem",
+  "不定期任务",
+  "不定时域任务"
+ ],
+ "q33139ec9c0be": [
+  "exact gradient ascent",
+  "true gradient ascent",
+  "gradient ascent",
+  "精确梯度上升"
+ ],
+ "q359292a197d7": [
+  "uniform offset",
+  "uniformly offset tilings",
+  "uniform offsets",
+  "uniform tiling offset",
+  "均匀偏移"
+ ],
+ "q3abd15f86e44": [
+  "TD model",
+  "TD model of classical conditioning",
+  "temporal-difference model",
+  "TD conditioning model",
+  "时序差分模型",
+  "TD模型"
+ ],
+ "q3bb28b6f9d31": [
+  "eligibility-like mechanism",
+  "Hull's eligibility mechanism",
+  "stimulus trace",
+  "molar stimulus trace",
+  "类资格迹机制"
+ ],
+ "q3d890583c65c": [
+  "differential value function",
+  "differential values",
+  "relative value function",
+  "bias function",
+  "差分价值函数",
+  "差分值函数"
+ ],
+ "q3dd43989f3dc": [
+  "linear programming",
+  "LP",
+  "linear program",
+  "线性规划"
+ ],
+ "q42bc3f356513": [
+  "normal distribution",
+  "Gaussian distribution",
+  "Gaussian",
+  "normal",
+  "正态分布",
+  "高斯分布"
+ ],
+ "q4576b67817b6": [
+  "planning",
+  "planning methods",
+  "planning method",
+  "model-based planning",
+  "规划",
+  "规划方法"
+ ],
+ "q462fbb1a3d7c": [
+  "acuity",
+  "resolution",
+  "discrimination",
+  "精细度",
+  "分辨率"
+ ],
+ "q4a7de67a56ef": [
+  "TD-Gammon 2.1",
+  "TD-Gammon version 2.1",
+  "TD-Gammon"
+ ],
+ "q4c2f573e03d5": [
+  "average reward",
+  "average-reward setting",
+  "average reward formulation",
+  "undiscounted continuing setting",
+  "平均奖励",
+  "平均回报设定"
+ ],
+ "q51f0b140f6ee": [
+  "reinforcement",
+  "reinforcer",
+  "reinforcement (psychology)",
+  "强化"
+ ],
+ "q53197d60c279": [
+  "game theory",
+  "game-theoretic",
+  "博弈论"
+ ],
+ "q565ac5f52dee": [
+  "reward variance",
+  "variance of rewards",
+  "reward noise",
+  "奖励方差"
+ ],
+ "q59bd3f4d1a1c": [
+  "third-order conditioning",
+  "higher-order conditioning",
+  "三阶条件反射",
+  "三级条件作用"
+ ],
+ "q5b34bc361910": [
+  "reinforcement signal",
+  "reward signal",
+  "global reinforcement signal",
+  "强化信号",
+  "奖励信号"
+ ],
+ "q5cb1c55880b4": [
+  "Chris Watkins",
+  "Watkins",
+  "C. J. C. H. Watkins",
+  "Christopher Watkins",
+  "沃特金斯"
+ ],
+ "q5d9d51ff2ea6": [
+  "Wolfram Schultz",
+  "Schultz",
+  "W. Schultz",
+  "舒尔茨"
+ ],
+ "q60f00f1d1a88": [
+  "DP target",
+  "dynamic programming target",
+  "expected update target",
+  "DP目标"
+ ],
+ "q68700f95e917": [
+  "1000-state random walk",
+  "1000-state Random Walk",
+  "random walk",
+  "Example 9.2",
+  "1000状态随机游走"
+ ],
+ "q692729c95165": [
+  "presynaptic activity",
+  "presynaptic signal",
+  "presynaptic input",
+  "突触前活动"
+ ],
+ "q69712eb91f32": [
+  "initial value function",
+  "initial value function approximation",
+  "initial guess",
+  "v0",
+  "初始价值函数"
+ ],
+ "q7197d0780f93": [
+  "background activity",
+  "baseline activity",
+  "tonic activity",
+  "背景活动",
+  "基线活动"
+ ],
+ "q7382a5cdd30f": [
+  "empowerment",
+  "empowerment function",
+  "赋能"
+ ],
+ "q74c7895b7a2b": [
+  "learning automata",
+  "learning automaton",
+  "stochastic learning automata",
+  "学习自动机"
+ ],
+ "q754205c2d7ad": [
+  "PTD(λ)",
+  "PTD(lambda)",
+  "per-decision TD(λ)"
+ ],
+ "q78384a900cba": [
+  "deadly triad",
+  "the deadly triad",
+  "致命三元组",
+  "致命三要素"
+ ],
+ "q78f6de3ce0d8": [
+  "semi-linear unit",
+  "semilinear unit",
+  "semi-linear units",
+  "半线性单元"
+ ],
+ "q7c6839fd44b5": [
+  "appetitive system",
+  "appetitive",
+  "食欲系统",
+  "趋近系统"
+ ],
+ "q7cffff7a96fe": [
+  "kernel-based function approximation",
+  "kernel regression",
+  "kernel methods",
+  "kernel function approximation",
+  "核函数逼近",
+  "核回归"
+ ],
+ "q82e140e6febf": [
+  "policy iteration",
+  "PI",
+  "policy-iteration algorithm",
+  "策略迭代"
+ ],
+ "q8342216a0916": [
+  "feedforward neural network",
+  "feedforward ANN",
+  "feedforward network",
+  "multilayer perceptron",
+  "前馈神经网络",
+  "前馈网络"
+ ],
+ "q85408cc705a4": [
+  "perceptron",
+  "perceptrons",
+  "感知机",
+  "感知器"
+ ],
+ "q87095f3fd446": [
+  "Delta-Bar-Delta",
+  "delta-bar-delta",
+  "IDBD",
+  "incremental delta-bar-delta"
+ ],
+ "q873577bb4495": [
+  "one-step update",
+  "one-step updates",
+  "one-step backup",
+  "单步更新",
+  "一步更新"
+ ],
+ "q87e36465de95": [
+  "row buffer hit",
+  "row hit",
+  "DRAM row hit",
+  "行缓冲命中"
+ ],
+ "q8c43ba31a402": [
+  "four primary value functions",
+  "value functions",
+  "vπ, qπ, v*, q*",
+  "四个基本价值函数"
+ ],
+ "q904a8d5c88f5": [
+  "first-visit MC",
+  "first-visit Monte Carlo",
+  "first-visit MC prediction",
+  "first-visit method",
+  "首次访问蒙特卡洛",
+  "首次访问MC"
+ ],
+ "q924bbbe60714": [
+  "ringing",
+  "Gibbs phenomenon",
+  "ringing artifact",
+  "振铃",
+  "振铃效应"
+ ],
+ "q92f9d5de57f2": [
+  "risk-sensitive policy",
+  "risk-sensitive policies",
+  "risk-averse policy",
+  "风险敏感策略"
+ ],
+ "q9532db909275": [
+  "stochastic gradient ascent",
+  "SGA",
+  "stochastic gradient-ascent",
+  "随机梯度上升"
+ ],
+ "q96e4e2080511": [
+  "state-transition probability matrix",
+  "transition matrix P",
+  "matrix P",
+  "P",
+  "状态转移概率矩阵",
+  "转移矩阵"
+ ],
+ "q980f983fa5be": [
+  "regression",
+  "regression analysis",
+  "回归"
+ ],
+ "q9c29205c99bb": [
+  "click-through rate",
+  "CTR",
+  "click through rate",
+  "点击率"
+ ],
+ "q9cd6295cbb53": [
+  "Bernoulli-logistic unit",
+  "Bernoulli-logistic neuron",
+  "stochastic logistic unit",
+  "伯努利-逻辑单元"
+ ],
+ "q9f6e9dfb0690": [
+  "periodic function",
+  "periodic functions",
+  "周期函数"
+ ],
+ "q9fd22c05ef5c": [
+  "proximal methods",
+  "proximal gradient methods",
+  "proximal method",
+  "近端方法",
+  "近端梯度方法"
+ ],
+ "qa061c737f49f": [
+  "response-generation mechanism",
+  "response generation mechanism",
+  "response mechanism",
+  "反应生成机制"
+ ],
+ "qa15a21df9706": [
+  "value iteration",
+  "VI",
+  "value-iteration algorithm",
+  "值迭代",
+  "价值迭代"
+ ],
+ "qa667faca057b": [
+  "diagonal artifacts",
+  "diagonal artifact",
+  "对角线伪影"
+ ],
+ "qaccd571aa808": [
+  "policy-stable",
+  "policy-stable flag",
+  "policy stable",
+  "策略稳定标志"
+ ],
+ "qaf30d391bdea": [
+  "fixed opponent",
+  "stationary opponent",
+  "固定对手"
+ ],
+ "qaf52ccf3f7f7": [
+  "tree backup",
+  "n-step tree backup",
+  "tree-backup algorithm",
+  "TB(λ)",
+  "树回溯",
+  "树备份算法"
+ ],
+ "qb6791850e077": [
+  "TD-Gammon",
+  "Tesauro's TD-Gammon",
+  "Tesauro's backgammon program",
+  "TD-Gammon program"
+ ],
+ "qb6b95232459e": [
+  "Fourier basis",
+  "Fourier basis functions",
+  "Fourier features",
+  "傅里叶基",
+  "傅里叶基函数"
+ ],
+ "qba9e11f17e08": [
+  "redoing updates",
+  "best-match learning",
+  "redo updates",
+  "重做更新"
+ ],
+ "qbc330fff5742": [
+  "backward focusing",
+  "backward focusing of planning computations",
+  "prioritized sweeping",
+  "后向聚焦"
+ ],
+ "qbc6a6605132a": [
+  "tasks",
+  "task",
+  "reinforcement learning task",
+  "任务"
+ ],
+ "qbcf2490dd387": [
+  "policy parameterization",
+  "parameterized policy",
+  "policy parametrization",
+  "策略参数化"
+ ],
+ "qbe90282c68ce": [
+  "drug craving",
+  "craving",
+  "药物渴求",
+  "渴求"
+ ],
+ "qc11e3167fc1d": [
+  "error reduction property",
+  "error reduction",
+  "误差缩减性质",
+  "误差减小性质"
+ ],
+ "qc33d42e34a64": [
+  "backup diagram",
+  "backup diagrams",
+  "back-up diagram",
+  "update diagram",
+  "备份图",
+  "回溯图"
+ ],
+ "qc57b313ee6f9": [
+  "representation issues",
+  "representation",
+  "state representation",
+  "表示问题"
+ ],
+ "qc6fe631f072c": [
+  "reinforcement contingency",
+  "reinforcement contingencies",
+  "contingency",
+  "强化相倚",
+  "强化条件"
+ ],
+ "qc83ee6a06e32": [
+  "what-not-how",
+  "what not how principle",
+  "reward design principle",
+  "奖励设计原则"
+ ],
+ "qc9b24c629c03": [
+  "associative strength",
+  "associative strengths",
+  "V",
+  "联结强度",
+  "关联强度"
+ ],
+ "qcbb07738f1bb": [
+  "activation function",
+  "activation",
+  "nonlinearity",
+  "激活函数"
+ ],
+ "qceb8f19865d2": [
+  "policy improvement theorem",
+  "policy improvement",
+  "策略改进定理"
+ ],
+ "qd2ab7e275029": [
+  "semi-gradient",
+  "semi-gradient methods",
+  "semi-gradient TD",
+  "semi-gradient descent",
+  "半梯度方法",
+  "半梯度"
+ ],
+ "qdb6490e4d674": [
+  "Mukundan and Martínez",
+  "Mukundan and Martinez",
+  "Mukundan & Martínez 2012",
+  "Mukundan"
+ ],
+ "qe86e04f3cc22": [
+  "Monte Carlo prediction",
+  "MC prediction",
+  "Monte Carlo policy evaluation",
+  "蒙特卡洛预测",
+  "蒙特卡洛策略评估"
+ ],
+ "qe941e4c708d8": [
+  "instruction cue",
+  "instruction stimulus",
+  "cue",
+  "指令线索"
+ ],
+ "qec937ed0e5aa": [
+  "invariant updates",
+  "importance weight aware updates",
+  "不变更新"
+ ],
+ "qf72cb2b78766": [
+  "Fourier transform",
+  "FT",
+  "傅里叶变换"
+ ],
+ "qf8dbfa2bf013": [
+  "search probabilities",
+  "MCTS search probabilities",
+  "move probabilities",
+  "π_i",
+  "搜索概率"
+ ],
+ "qfbd1cdd7a933": [
+  "optimal action",
+  "best action",
+  "greedy action",
+  "最优动作"
+ ],
+ "qfc08b57c4315": [
+  "q̂",
+  "approximate action-value function",
+  "action-value function approximation",
+  "q hat",
+  "近似动作价值函数"
+ ],
+ "qfd2e2610022c": [
+  "ε-soft policy",
+  "epsilon-soft policy",
+  "ε-soft",
+  "soft policy",
+  "ε-软策略"
+ ],
+ "qff79d7d5e64d": [
+  "offline λ-return algorithm",
+  "off-line λ-return algorithm",
+  "λ-return algorithm",
+  "offline lambda-return",
+  "离线λ回报算法"
+ ]
+}

@@ -1,0 +1,1408 @@
+[
+  {
+    "key": "q00beca475049",
+    "name": "Curiosity (reinforcement learning)",
+    "aliases": [
+      "Curiosity"
+    ],
+    "types": [
+      "intrinsic motivation concept"
+    ],
+    "definition": "An intrinsic motivation concept in reinforcement learning, proposed by Schmidhuber (1991a, b), in which curiosity-like behavior is induced by making reward signals a function of how quickly an agent's environment model is improving. It is one specific scheme for generating intrinsic reward, rather than a synonym for all of intrinsic-motivation reinforcement learning."
+  },
+  {
+    "key": "q01228a754e1c",
+    "name": "Constant-α MC (reinforcement learning)",
+    "aliases": [
+      "Constant-α MC",
+      "constant-α MC methods",
+      "Constant-α MC method"
+    ],
+    "types": [
+      "Monte Carlo method",
+      "learning algorithm",
+      "时序差分学习"
+    ],
+    "definition": "Constant-α MC is an every-visit Monte Carlo prediction method in reinforcement learning that updates the value estimate as V(St) ← V(St) + α[Gt − V(St)], using a constant step-size parameter α and the actual return Gt following time t as the target. Unlike TD methods, it must wait until the end of an episode before forming the update, and is especially suited to nonstationary environments; under batch updating with sufficiently small α it converges deterministically to sample averages of observed returns."
+  },
+  {
+    "key": "q0498d64a5b97",
+    "name": "action node (MDP transition graph)",
+    "aliases": [
+      "action node",
+      "action nodes"
+    ],
+    "types": [
+      "action node",
+      "backup diagram element",
+      "transition graph component"
+    ],
+    "definition": "An action node is a graphical element in reinforcement learning diagrams that denotes a state–action pair (s, a), typically drawn as a small solid (filled) circle labeled with the action's name. In the finite-MDP transition graph it is connected by a line to its state node and has outgoing arrows to possible next states, each labeled with transition probability p(s′|s,a) and expected reward r(s,a,s′) that sum to 1; the same notational symbol is also reused as the root or leaf node in backup diagrams for algorithms such as Q-learning."
+  },
+  {
+    "key": "q056e0aa603ee",
+    "name": "Probability density function",
+    "aliases": [
+      "Probability density function",
+      "density function",
+      "pdf"
+    ],
+    "types": [
+      "mathematical concept",
+      "probability density function"
+    ],
+    "definition": "A probability density function (PDF) is a function p(x) that describes the relative likelihood of a continuous random variable taking on a value near x, where the probability of x falling within any range is obtained by integrating p(x) over that range and the total area under p(x) must equal 1. Unlike a probability, the density value p(x) itself can exceed 1; it is the integrated area, not the pointwise value, that is bounded between 0 and 1."
+  },
+  {
+    "key": "q06588725ddf8",
+    "name": "Global optimum",
+    "aliases": [
+      "Global optimum"
+    ],
+    "types": [
+      "optimization concept"
+    ],
+    "definition": "A global optimum is a solution that attains the best possible value of an objective function over the entire feasible domain—in the specific context of value-error (VE) minimization, the weight vector w* for which VE(w*) ≤ VE(w) for all possible w. Reaching this ideal is sometimes possible for simple function approximators such as linear ones, but is rarely possible for complex approximators like artificial neural networks and decision trees, which more typically settle for a local optimum."
+  },
+  {
+    "key": "q066e38f5b422",
+    "name": "Conditioned penalty (behavioral psychology)",
+    "aliases": [
+      "Conditioned penalty"
+    ],
+    "types": [
+      "reinforcement concept"
+    ],
+    "definition": "Conditioned penalty is the penalizing form of conditioned reinforcement, delivered when a previously neutral stimulus that consistently predicts a primary punisher becomes a conditioned (higher-order) reinforcer. It functions like primary punishment by decreasing the likelihood of behaviors that produce it, and is the counterpart of conditioned reward."
+  },
+  {
+    "key": "q07103c687aa8",
+    "name": "search depth (heuristic search)",
+    "aliases": [
+      "search depth",
+      "搜索深度"
+    ],
+    "types": [
+      "search parameter"
+    ],
+    "definition": "在启发式搜索中，搜索树从当前状态向前延伸的步数；其权衡在于：若拥有完美模型而不完美的动作价值函数，更深的搜索通常能产生更好的策略，但会显著增加计算量与响应时间。"
+  },
+  {
+    "key": "q07cf8a92e589",
+    "name": "Provisional weights",
+    "aliases": [
+      "Provisional weights"
+    ],
+    "types": [
+      "learning mechanism",
+      "provisional weight"
+    ],
+    "definition": "Provisional weights are an additional weight vector used in the off-policy eligibility-trace algorithms PTD(λ) (state version) and PQ(λ) (state–action version) to record updates that have already been applied but may later need to be retracted or emphasized once the subsequent actions taken are known. They were introduced (Sutton, Mahmood, Precup and van Hasselt, 2014) specifically to repair the irrevocable-update problem of earlier off-policy trace methods and thereby make these algorithms exactly equivalent to Monte Carlo methods."
+  },
+  {
+    "key": "q10ef52addc4e",
+    "name": "Emphatic n-step learning rule (Sutton & Barto, equation 9.25)",
+    "aliases": [
+      "n-step learning rule",
+      "general n-step learning rule",
+      "(9.25)"
+    ],
+    "types": [
+      "estimation method",
+      "multi-step bootstrapping method"
+    ],
+    "definition": "The emphatic n-step learning rule is the general n-step semi-gradient update for approximate value estimation in on-policy prediction (equation 9.25 in Sutton & Barto), which augments the standard n-step TD update by multiplying the learning step with the emphasis factor M_t. It replaces the earlier equation (9.15) and subsumes the Monte Carlo case (n = T − t, M_t = I_t), where M_t is a non-negative scalar random variable that emphasizes or de-emphasizes each update in a potentially trajectory-dependent way."
+  },
+  {
+    "key": "q15d2ee20f3e4",
+    "name": "Update distribution (reinforcement learning)",
+    "aliases": [
+      "Update distribution",
+      "distribution of updates"
+    ],
+    "types": [
+      "probability distribution"
+    ],
+    "definition": "It is the distribution that determines how updates are allocated across states or state–action pairs during planning in reinforcement learning, specifying which parts of the state space receive computational effort. Common realizations include the uniform distribution (as in exhaustive sweeps or Dyna-Q) and the on-policy distribution, which concentrates updates on states or state–action pairs actually visited by the current policy."
+  },
+  {
+    "key": "q18ec7571be43",
+    "name": "Off-policy prediction",
+    "aliases": [
+      "Off-policy prediction",
+      "off-policy"
+    ],
+    "types": [
+      "bandit problem",
+      "learning mechanism",
+      "problem class"
+    ],
+    "definition": "Off-policy prediction 是强化学习中在行为策略（behavior policy）与目标策略（target policy）不同时，基于前者产生的数据估计后者价值函数（v_π 或 q_π）的预测任务；该类方法通常借助重要性采样（importance sampling）来纠正两策略之间的分布差异。"
+  },
+  {
+    "key": "q1a83c72ed91c",
+    "name": "Escherichia coli",
+    "aliases": [
+      "Escherichia coli",
+      "E. coli"
+    ],
+    "types": [
+      "biological learning system",
+      "biological organism"
+    ],
+    "definition": "大肠杆菌（Escherichia coli）是一种被充分研究的细菌（单细胞生物），能通过化学趋向性在液体环境中游向所需分子浓度更高的方向，并避开有害分子。"
+  },
+  {
+    "key": "q1fe2624420b3",
+    "name": "Actor-critic methods",
+    "aliases": [
+      "Actor-critic methods",
+      "actor–critic",
+      "执行者—评价者方法",
+      "actor–critic methods",
+      "actor–critic method",
+      "actor-critic method",
+      "advantage actor–critic",
+      "advantage actor-critic",
+      "A2C",
+      "actor-critic"
+    ],
+    "types": [
+      "action-value method",
+      "actor-critic method",
+      "historical AI method classification",
+      "learning algorithm",
+      "optimization method",
+      "problem class",
+      "reinforcement learning method family",
+      "时序差分学习"
+    ],
+    "definition": "Actor-critic methods are a class of reinforcement learning methods that simultaneously learn a parameterized policy (the 'actor') and a value function (the 'critic'), where the critic uses a temporal-difference estimate to assess the actor's chosen actions. This architecture reduces the variance of policy-gradient updates at the cost of bias introduced by bootstrapping, and historically represents one of the earliest ways TD methods were extended to control."
+  },
+  {
+    "key": "q2033b653c2e2",
+    "name": "Agent-environment interaction",
+    "aliases": [
+      "Agent-environment interaction"
+    ],
+    "types": [
+      "agent-environment interaction",
+      "concept"
+    ],
+    "definition": "Agent-environment interaction is the mutual process between an active decision-making agent and its environment, in which the agent's actions affect the environment's future state and the environment in turn determines the actions and opportunities available to the agent at later times. It is a foundational framing in reinforcement learning, characterized by goal-directed behavior under uncertainty, the need to account for indirect and delayed consequences of actions, and the agent's ability to use its experience to improve performance over time."
+  },
+  {
+    "key": "q229c572022c5",
+    "name": "Delay conditioning (classical conditioning paradigm)",
+    "aliases": [
+      "Delay Conditioning"
+    ],
+    "types": [
+      "learning paradigm"
+    ],
+    "definition": "经典条件作用（classical conditioning）的一种范式，条件刺激（CS）从其出现开始持续贯穿整个刺激间间隔（ISI），并与无条件刺激（US）重叠呈现（常见版本中CS在US结束时才终止）。它与痕迹条件作用（trace conditioning）形成对比——后者在US出现之前CS就已结束。"
+  },
+  {
+    "key": "q22d4a5182fa7",
+    "name": "Optimal control",
+    "aliases": [
+      "Optimal control",
+      "最优控制",
+      "Optimal control theory",
+      "最优控制理论"
+    ],
+    "types": [
+      "concept",
+      "engineering discipline",
+      "learning paradigm",
+      "mathematical discipline",
+      "problem class"
+    ],
+    "definition": "控制理论中关于设计控制器以最小化或最大化动态系统随时间行为度量的问题，1950年代由 Bellman 等人通过拓展 19 世纪 Hamilton–Jacobi 状态函数理论而发展，使用值函数与动态规划（Bellman 方程）作为核心求解手段，并构成强化学习早期历史中与试错学习并行的第二条主要线索。"
+  },
+  {
+    "key": "q2330c2a33211",
+    "name": "Value iteration with options",
+    "aliases": [
+      "value iteration with options",
+      "value iteration algorithm with options",
+      "value iteration (with options)"
+    ],
+    "types": [
+      "learning algorithm",
+      "planning method"
+    ],
+    "definition": "Value iteration with options is a dynamic-programming planning algorithm that extends value iteration to the options framework in reinforcement learning by maximizing over options ω ∈ Ω(s) in its Bellman-style update. When Ω(s) contains all low-level actions, it reduces to the conventional value iteration algorithm, while restricting Ω(s) to a subset of options can yield substantially faster convergence at the cost of a possibly sub-optimal hierarchical policy."
+  },
+  {
+    "key": "q2b694babfa34",
+    "name": "Asynchronous methods (dynamic programming)",
+    "aliases": [
+      "Asynchronous methods",
+      "异步方法",
+      "Asynchronous Dynamic Programming",
+      "Asynchronous DP",
+      "asynchronous algorithm",
+      "sweepless DP algorithm",
+      "Asynchronous DP Methods",
+      "asynchronous DP algorithms",
+      "Distributed DP Algorithm",
+      "distributed DP algorithms",
+      "distributed dynamic programming",
+      "asynchronous value-iteration algorithm"
+    ],
+    "types": [
+      "approximate solution method",
+      "asynchronous dynamic programming",
+      "dynamic programming method",
+      "historical AI method classification",
+      "learning algorithm",
+      "optimization method",
+      "planning method",
+      "动态规划算法",
+      "时序差分学习"
+    ],
+    "definition": "异步动态规划方法（Asynchronous DP methods）是一类就地迭代的动态规划算法，不按系统性扫描方式遍历状态集，而是以任意顺序更新各状态值，并可使用其他状态当前可用的（含可能过时的）值；只要保证每个状态在更新序列中被无穷次访问即可保证收敛，在大状态空间问题中通常比同步扫描方法更灵活高效，由 Bertsekas（1982, 1983）提出，亦称 distributed DP algorithms。"
+  },
+  {
+    "key": "q2c503b54e615",
+    "name": "Complete knowledge (reinforcement learning problem setting)",
+    "aliases": [
+      "complete knowledge",
+      "problems of complete knowledge"
+    ],
+    "types": [
+      "bandit problem",
+      "problem class"
+    ],
+    "definition": "Complete knowledge is a problem setting in reinforcement learning in which the agent is assumed to initially possess a complete and accurate model of the environment's dynamics, as opposed to problems of incomplete knowledge where such a model is unavailable. For finite Markov decision processes this model corresponds to the full four-argument dynamics function p, though even under complete knowledge the agent may still be limited by memory and computation in practice."
+  },
+  {
+    "key": "q2f7a2b085060",
+    "name": "Artificial intelligence",
+    "aliases": [
+      "Artificial intelligence"
+    ],
+    "types": [
+      "learning paradigm",
+      "scientific discipline"
+    ],
+    "definition": "Artificial intelligence is a research field in computer science devoted to creating systems that exhibit intelligent behavior, encompassing subfields such as machine learning and reinforcement learning along with the study of general principles of learning, search, and decision making. The field has historically swung from a reliance on vast collections of specialized heuristics back toward simpler general principles, and although its real-world applications now affect millions of people, the gap between current AI and the general intelligence of humans and other animals remains substantial."
+  },
+  {
+    "key": "q30efa112bf44",
+    "name": "Indefinite-horizon task (MDP literature)",
+    "aliases": [
+      "Indefinite-horizon tasks"
+    ],
+    "types": [
+      "problem class"
+    ],
+    "definition": "Indefinite-horizon task is a task category used in the classical MDP literature in which the agent–environment interaction can continue for an arbitrary (unbounded) number of time steps but is guaranteed to eventually terminate. It sits between finite-horizon tasks (interaction terminates after a fixed number of steps) and infinite-horizon tasks (interaction never terminates), and is closely related to — but taxonomically distinct from — the textbook's episodic/continuing distinction, which is organized around the nature of interaction rather than the objective function."
+  },
+  {
+    "key": "q33139ec9c0be",
+    "name": "Exact gradient ascent (reinforcement learning preference update)",
+    "aliases": [
+      "Exact gradient ascent"
+    ],
+    "types": [
+      "optimization method"
+    ],
+    "definition": "A theoretical optimization procedure in reinforcement learning in which each action preference Ht(a) is updated in proportion to the partial derivative of expected performance, Ht+1(a) = Ht(a) + α ∂E[Rt]/∂Ht(a). Because the true action values q*(x) are unknown, it cannot be implemented directly, but the gradient bandit algorithm's updates equal it in expected value, making the algorithm a stochastic approximation to exact gradient ascent."
+  },
+  {
+    "key": "q359292a197d7",
+    "name": "Uniform Offset (tile coding)",
+    "aliases": [
+      "Uniform Offset",
+      "uniformly offset tilings",
+      "uniform offsets",
+      "均匀偏移瓦片层"
+    ],
+    "types": [
+      "tiling configuration",
+      "tiling offset strategy"
+    ],
+    "definition": "Uniform Offset is a tile coding offsetting strategy in which each successive tiling is shifted by the same amount along every dimension (in 2D, by the fundamental unit distance w/n, i.e., displacement vector (1, 1)). Unlike asymmetrically offset tilings, uniform offsets tend to induce diagonal artifacts and cause different states to generalize in qualitatively different ways."
+  },
+  {
+    "key": "q3abd15f86e44",
+    "name": "TD model of classical conditioning",
+    "aliases": [
+      "TD model of classical conditioning",
+      "TD model",
+      "TD模型"
+    ],
+    "types": [
+      "formal model",
+      "learning mechanism",
+      "learning rule"
+    ],
+    "definition": "TD model of classical conditioning is a real-time computational model of Pavlovian conditioning that applies the temporal-difference bootstrapping idea to extend the trial-level Rescorla–Wagner rule, thereby handling within-trial timing, blocking, the anticipatory nature of conditioned responses, and higher-order conditioning. In its standard formulation it is essentially the semi-gradient TD(λ) algorithm with linear function approximation, and it has also become influential in neuroscience through its correspondence with dopamine reward-prediction-error signals."
+  },
+  {
+    "key": "q3bb28b6f9d31",
+    "name": "Eligibility-like mechanisms (Clark Hull's learning theory)",
+    "aliases": [
+      "Eligibility-like mechanisms"
+    ],
+    "types": [
+      "learning law",
+      "learning mechanism"
+    ],
+    "definition": "Eligibility-like mechanisms are theoretical constructs drawn from Clark Hull's theory of learning, proposed to account for how learning can occur when a significant time interval separates an action from its consequent reinforcing stimulus. They are described as working together with secondary reinforcement within Hull's framework, and the 'eligibility-like' label highlights their conceptual similarity to later eligibility-trace ideas in modern reinforcement learning."
+  },
+  {
+    "key": "q3d890583c65c",
+    "name": "Differential value functions (reinforcement learning)",
+    "aliases": [
+      "Differential value functions",
+      "differential value function",
+      "differential values",
+      "differential value"
+    ],
+    "types": [
+      "concept",
+      "value function"
+    ],
+    "definition": "Differential value functions are the value functions v_π(s), q_π(s,a) (and their optimal counterparts v*, q*) used in the average-reward formulation of continuing reinforcement learning tasks, defined in terms of the differential return rather than the discounted return. They replace discounted value functions in the continuing case under function approximation, and their Bellman equations drop the discount factor γ while replacing each reward with the difference between the reward and the true average reward r(π)."
+  },
+  {
+    "key": "q3dd43989f3dc",
+    "name": "Linear programming",
+    "aliases": [
+      "Linear programming",
+      "linear programming methods"
+    ],
+    "types": [
+      "historical AI method classification",
+      "optimization method"
+    ],
+    "definition": "Linear programming (LP) is a mathematical optimization method that can be used to solve Markov Decision Processes (MDPs) in reinforcement learning. Compared to dynamic programming (DP), its worst-case convergence guarantees are in some cases superior, but it becomes impractical at a much smaller number of states than DP—roughly by a factor of 100—so DP remains the only feasible approach for the largest problems."
+  },
+  {
+    "key": "q42bc3f356513",
+    "name": "Normal (Gaussian) distribution",
+    "aliases": [
+      "Normal (Gaussian) distribution",
+      "Gaussian distribution",
+      "normal distribution"
+    ],
+    "types": [
+      "probability distribution"
+    ],
+    "definition": "It is a continuous, symmetric, bell-shaped probability distribution over the real numbers, parameterized by a mean μ and standard deviation σ with probability density p(x) = (1/(σ√(2π))) exp(−(x−μ)²/(2σ²)). In this text it is applied both to sample true action values and rewards in the 10-armed testbed and to parameterize policies over continuous, real-valued actions."
+  },
+  {
+    "key": "q4576b67817b6",
+    "name": "Planning methods (reinforcement learning)",
+    "aliases": [
+      "Planning methods",
+      "planning"
+    ],
+    "types": [
+      "approximate solution method",
+      "planning method",
+      "problem class"
+    ],
+    "definition": "Planning methods are a class of reinforcement learning computational methods, exemplified by dynamic programming, that operate on a complete and known model of the environment. They can be combined with temporal-difference learning and model learning to form a unified approach to the tabular reinforcement learning problem."
+  },
+  {
+    "key": "q462fbb1a3d7c",
+    "name": "Acuity (function approximation, coarse coding)",
+    "aliases": [
+      "Acuity"
+    ],
+    "types": [
+      "function approximation property"
+    ],
+    "definition": "Acuity is the finest discrimination ultimately achievable by a function approximator; in coarse coding it is governed primarily by the total number of features rather than by the width of individual receptive fields."
+  },
+  {
+    "key": "q4a7de67a56ef",
+    "name": "TD-Gammon 2.1",
+    "aliases": [
+      "TD-Gammon 2.1"
+    ],
+    "types": [
+      "historical learning system"
+    ],
+    "definition": "TD-Gammon 2.1 is a later version of the TD-Gammon backgammon program that uses a neural network with 80 hidden units and is augmented with a selective two-ply search procedure for selecting moves (looking ahead to the opponent's likely responses), while leaving the underlying learning process unchanged from earlier TD-Gammon versions."
+  },
+  {
+    "key": "q4c2f573e03d5",
+    "name": "Average-reward formulation (reinforcement learning)",
+    "aliases": [
+      "Average reward formulation",
+      "average-reward formulation",
+      "average reward setting",
+      "average-reward setting",
+      "undiscounted (average reward) objective",
+      "average-reward case"
+    ],
+    "types": [
+      "bandit problem",
+      "formal model",
+      "objective formulation",
+      "problem class",
+      "task property"
+    ],
+    "definition": "The average-reward formulation is a reinforcement learning problem framework for continuing (non-episodic) Markov decision processes in which the quality of a policy π is measured by the long-run average reward per time step r(π) rather than by a discounted return. It is introduced as the classical alternative to the discounted setting—one of the three standard MDP settings alongside the episodic and discounted ones—and becomes necessary when function approximation is used, where the discounted criterion is no longer well-defined for ranking policies."
+  },
+  {
+    "key": "q51f0b140f6ee",
+    "name": "Reinforcement (psychology)",
+    "aliases": [
+      "reinforcement",
+      "reinforcement (psychology)"
+    ],
+    "types": [
+      "behavioral concept",
+      "learning mechanism"
+    ],
+    "definition": "Reinforcement in psychology is a behavioral learning concept denoting the strengthening of a pattern of behavior when an animal receives a stimulus (a reinforcer) in an appropriate temporal relationship with another stimulus or with a response. The term originated in Pavlov's study of conditioned reflexes and is applied in both classical and instrumental conditioning, though some psychologists extend it to also cover the weakening of behavior."
+  },
+  {
+    "key": "q53197d60c279",
+    "name": "Game theory",
+    "aliases": [
+      "Game theory"
+    ],
+    "types": [
+      "formal model",
+      "mathematical discipline",
+      "problem class"
+    ],
+    "definition": "Game theory is a mathematical framework for analyzing strategic interactions among rational decision-makers, in which each participant's outcome depends on the choices of all others. It supplies solution concepts such as the classical minimax approach for two-player games and distinguishes between cooperative and competitive settings, and it is frequently invoked alongside multi-agent reinforcement learning when modeling interactive decision problems."
+  },
+  {
+    "key": "q565ac5f52dee",
+    "name": "Reward variance (reinforcement learning)",
+    "aliases": [
+      "Reward variance",
+      "reward variances"
+    ],
+    "types": [
+      "task property"
+    ],
+    "definition": "In reinforcement learning, it is a property of a task's reward generation process, defined as the variance of the probability distribution from which the actual reward is drawn on each step. Higher reward variance makes exploration more valuable—so ε-greedy action selection tends to outperform purely greedy selection—whereas zero reward variance lets the greedy method determine each action's true value after a single trial."
+  },
+  {
+    "key": "q59bd3f4d1a1c",
+    "name": "Third-order conditioning (classical conditioning phenomenon)",
+    "aliases": [
+      "Third-order conditioning"
+    ],
+    "types": [
+      "behavioral concept"
+    ],
+    "definition": "A form of higher-order classical conditioning in which a second-order conditioned stimulus serves as a US to establish a conditioned response to a new, initially neutral CS, representing one step further removed from the original US in the conditioning chain. It is more difficult to demonstrate than second-order conditioning because higher-order reinforcers progressively lose reinforcing value when not repeatedly paired with the original US."
+  },
+  {
+    "key": "q5b34bc361910",
+    "name": "Reinforcement signal (reinforcement learning)",
+    "aliases": [
+      "Reinforcement signal",
+      "reinforcement",
+      "reinforcement signals",
+      "global reinforcement signal",
+      "globally-broadcast reinforcement signal"
+    ],
+    "types": [
+      "concept",
+      "estimation error",
+      "functional equation",
+      "neural signal",
+      "problem",
+      "reinforcement signal",
+      "reward signal"
+    ],
+    "definition": "在强化学习中，reinforcement signal（强化信号）是一个可正、可负或为零的标量，它是驱动学习算法对智能体策略、价值估计或环境模型进行参数更新的主要乘数项；在大多数算法（如 TD 学习、Q-learning、Sarsa、actor–critic）中它具体表现为 TD 误差 δ_t，由奖励信号与价值估计等附加项共同构成，因此与仅定义问题本身的 reward signal 有着本质区别。"
+  },
+  {
+    "key": "q5cb1c55880b4",
+    "name": "Chris Watkins",
+    "aliases": [
+      "Watkins, Chris"
+    ],
+    "types": [
+      "person",
+      "researcher"
+    ],
+    "definition": "Chris Watkins is a computer science researcher best known for developing Q-learning and its eligibility-trace extension Q(λ), foundational algorithms in reinforcement learning. He is frequently cited in the reinforcement learning literature, including the index and historical discussions of temporal-difference learning in Sutton and Barto's textbook."
+  },
+  {
+    "key": "q5d9d51ff2ea6",
+    "name": "Wolfram Schultz",
+    "aliases": [
+      "Wolfram Schultz"
+    ],
+    "types": [
+      "neuroscientist",
+      "researcher"
+    ],
+    "definition": "Wolfram Schultz is a neuroscientist known for studying the neural mechanisms of reward learning, particularly the activity of dopamine neurons during classical conditioning. Experiments conducted in his laboratory in the 1980s and early 1990s provided the empirical evidence that supports the reward prediction error hypothesis."
+  },
+  {
+    "key": "q60f00f1d1a88",
+    "name": "DP target (reinforcement learning)",
+    "aliases": [
+      "DP target",
+      "DP 目标"
+    ],
+    "types": [
+      "target"
+    ],
+    "definition": "DP target 是强化学习中一种用于近似值函数更新的 bootstrapping（自举）目标，它由策略 π 与模型 p 给出的一步期望备份 Σ_{a,s',r} π(a|St)p(s',r|St,a)[r + v̂(s',w_t)] 构成，名称来源于其与经典动态规划（Dynamic Programming）备份形式的对应；由于该目标依赖于当前权重向量 w_t，使用它的方法并非真正的梯度下降方法，而属于 semi-gradient 方法。"
+  },
+  {
+    "key": "q68700f95e917",
+    "name": "1000-state Random Walk (Example 9.2, Sutton & Barto)",
+    "aliases": [
+      "1000-state Random Walk",
+      "1000-state random walk example"
+    ],
+    "types": [
+      "benchmark",
+      "task",
+      "test problem"
+    ],
+    "definition": "A continuing random-walk task with 1000 states, introduced as Example 9.2 in Sutton and Barto's 'Reinforcement Learning: An Introduction' and reused throughout Chapter 9 as a benchmark for approximate value-prediction methods, with transitions that can move up to 100 states left or right. Across the chapter it serves to illustrate semi-gradient TD(0) and n-step semi-gradient TD under state aggregation, to compare Fourier and polynomial bases under gradient Monte Carlo, and to contrast state aggregation with tile coding."
+  },
+  {
+    "key": "q692729c95165",
+    "name": "Presynaptic activity",
+    "aliases": [
+      "Presynaptic activity",
+      "presynaptic signal"
+    ],
+    "types": [
+      "neural activity"
+    ],
+    "definition": "Presynaptic activity is the neural signal arriving at a synapse from its input (presynaptic) side; in the linear actor–critic model it is represented by the component of the feature vector x(Sₜ) reaching that synapse and drives the accumulation of the synapse's non-contingent eligibility trace."
+  },
+  {
+    "key": "q69712eb91f32",
+    "name": "Initial value function approximation (reinforcement learning)",
+    "aliases": [
+      "initial value function approximation",
+      "initial guess v0"
+    ],
+    "types": [
+      "exploration technique",
+      "initialization method"
+    ],
+    "definition": "Initial value function approximation is a reinforcement learning technique that augments the learned value function with a designer-supplied prior guess of what the value function should ultimately be (e.g., an initial guess v0 at the optimal value function v*), rather than augmenting the reward signal with supplemental subgoal rewards. It is typically realized by adding the fixed function v0(s) to the approximator's output—for linear function approximation with features x, v̂(s,w) = wᵀx(s) + v0(s)—and can be extended to arbitrary nonlinear approximators, though it is not guaranteed to always accelerate learning."
+  },
+  {
+    "key": "q7197d0780f93",
+    "name": "Background activity (neuroscience)",
+    "aliases": [
+      "Background activity"
+    ],
+    "types": [
+      "concept",
+      "scientific discipline"
+    ],
+    "definition": "Background activity in neuroscience is a neuron's baseline level of activity—usually measured as its firing rate—when it is not being driven by synaptic input related to the experimenter's task of interest (e.g., when the neuron's firing is not correlated with an experimental stimulus). It is distinguished from phasic activity (task-driven bursts) and may be irregular due to wider network input, neuronal/synaptic noise, or intrinsic dynamic processes."
+  },
+  {
+    "key": "q7382a5cdd30f",
+    "name": "Empowerment (information-theoretic measure for agent-environment control)",
+    "aliases": [
+      "Empowerment function",
+      "empowerment"
+    ],
+    "types": [
+      "information-theoretic measure",
+      "learning mechanism",
+      "measure"
+    ],
+    "definition": "Empowerment is an information-theoretic measure of an agent's ability to control its environment, proposed by Klyubin, Polani, and Nehaniv (2005) as a universal, agent-centric measure of control. It can function as an intrinsic reward signal in reinforcement learning, providing a way to quantify how much influence an agent's actions exert over its environment."
+  },
+  {
+    "key": "q74c7895b7a2b",
+    "name": "Learning automata",
+    "aliases": [
+      "Learning automata"
+    ],
+    "types": [
+      "agent",
+      "formal model",
+      "historical AI method classification",
+      "learning algorithm",
+      "learning mechanism"
+    ],
+    "definition": "Learning automata are simple, low-memory adaptive machines that improve the probability of reward in nonassociative, purely selectional learning problems such as the k-armed bandit. The concept originated with M. L. Tsetlin's 1960s work and was subsequently developed within engineering as stochastic learning automata (e.g., Narendra and Thathachar, 1974, 1989) that update action probabilities from reward signals, with early studies mostly restricted to non-associative (non-contextual) settings and later extended to team and game problems."
+  },
+  {
+    "key": "q754205c2d7ad",
+    "name": "PTD(λ)",
+    "aliases": [
+      "PTD(λ)"
+    ],
+    "types": [
+      "estimation method",
+      "off-policy method"
+    ],
+    "definition": "PTD(λ) is the state-version of an off-policy prediction method using eligibility traces, proposed by Sutton, Mahmood, Precup, and van Hasselt (2014), which achieves an exact equivalence to Monte Carlo methods in episodic, off-line updating by maintaining an additional vector of provisional weights that keep track of updates which may need to be retracted or emphasized; the 'P' stands for Provisional."
+  },
+  {
+    "key": "q78384a900cba",
+    "name": "Deadly triad (reinforcement learning)",
+    "aliases": [
+      "Deadly Triad"
+    ],
+    "types": [
+      "functional equation",
+      "problem",
+      "稳定性条件"
+    ],
+    "definition": "In reinforcement learning, the deadly triad is the dangerous combination of three elements—function approximation, bootstrapping, and off-policy training—that can cause value estimates to become unstable or diverge. The concept was first identified by Sutton (1995b) and thoroughly analyzed by Tsitsiklis and Van Roy (1997); the name \"deadly triad\" itself was introduced by Sutton (2015a)."
+  },
+  {
+    "key": "q78f6de3ce0d8",
+    "name": "Semi-linear unit",
+    "aliases": [
+      "Semi-linear unit",
+      "semi-linear units"
+    ],
+    "types": [
+      "neural network component"
+    ],
+    "definition": "A semi-linear unit is a computational unit in an artificial neural network that computes a weighted sum of its input signals and then passes the result through a nonlinear activation function to produce its output. The term 'semi-linear' reflects that the unit is linear in its connection weights but nonlinear in its inputs, typically using sigmoid-shaped functions such as the logistic function or the rectifier (ReLU) nonlinearity."
+  },
+  {
+    "key": "q7c6839fd44b5",
+    "name": "Appetitive system",
+    "aliases": [
+      "Appetitive system"
+    ],
+    "types": [
+      "biological learning system"
+    ],
+    "definition": "The appetitive system is a subsystem of the animal nervous system that mediates responses to appetitive, reward-related stimuli. It has qualitatively different properties and relies on different brain mechanisms than the aversive (punishment-related) system, reflecting a biological distinction that a single signed reward signal cannot fully capture."
+  },
+  {
+    "key": "q7cffff7a96fe",
+    "name": "Kernel-based function approximation (reinforcement learning)",
+    "aliases": [
+      "Kernel-based function approximation"
+    ],
+    "types": [
+      "function approximation method",
+      "function approximator",
+      "historical AI method classification"
+    ],
+    "definition": "Kernel-based function approximation is a non-parametric approach to function approximation in reinforcement learning that uses kernel functions to weight stored training examples. It exploits the 'kernel trick' to operate effectively in high-dimensional feature spaces without explicitly computing feature vectors, and for suitable kernels can yield the same approximation as an equivalent linear parametric method while being less complex to evaluate."
+  },
+  {
+    "key": "q82e140e6febf",
+    "name": "Policy iteration",
+    "aliases": [
+      "Policy iteration",
+      "策略迭代",
+      "classical policy iteration",
+      "conventional sweep-based policy iteration",
+      "sweep-based policy iteration",
+      "policy-iteration algorithm"
+    ],
+    "types": [
+      "dynamic programming algorithm",
+      "dynamic programming method",
+      "historical AI method classification",
+      "learning algorithm",
+      "mathematical theorem",
+      "optimization method",
+      "planning method",
+      "时序差分学习"
+    ],
+    "definition": "Policy iteration（策略迭代）是由 Ronald Howard 于 1960 年提出的、用于求解有限马尔可夫决策过程（MDP）的经典动态规划方法，通过在策略评估（计算当前策略的价值函数）与策略改进（使策略对当前价值函数贪婪）之间交替迭代直至收敛到最优策略与最优价值函数；它是广义策略迭代（GPI）的一个标准特例，即两个过程均完整完成后再切换，常与价值迭代并列为最常用的两种 DP 方法。"
+  },
+  {
+    "key": "q8342216a0916",
+    "name": "Feedforward artificial neural network",
+    "aliases": [
+      "Feedforward ANN",
+      "feedforward"
+    ],
+    "types": [
+      "function approximator"
+    ],
+    "definition": "A feedforward artificial neural network is an artificial neural network architecture in which the connections between units form no cycles, so that signals propagate strictly from input to output without any path by which a unit's output can influence its own input. It is typically organized into layers (input, one or more hidden layers, and output) of semi-linear units that compute a weighted sum of their inputs and apply a nonlinear activation function, and is distinguished from a recurrent neural network precisely by this absence of feedback loops."
+  },
+  {
+    "key": "q85408cc705a4",
+    "name": "Perceptron",
+    "aliases": [
+      "Perceptron"
+    ],
+    "types": [
+      "neural network model"
+    ],
+    "definition": "A single-layer artificial neural network model introduced by Rosenblatt (1962), historically used as an early algorithm for binary linear classification. It is commonly grouped with ADALINE as a representative example of the first generation of trainable single-layer ANN learning methods."
+  },
+  {
+    "key": "q87095f3fd446",
+    "name": "Delta-Bar-Delta",
+    "aliases": [
+      "Delta-Bar-Delta"
+    ],
+    "types": [
+      "learning algorithm",
+      "step-size adaptation method"
+    ],
+    "definition": "Delta-Bar-Delta is an adaptive step-size method introduced by Jacobs (1988) that automatically adjusts the learning rate during iterative training. It is a stochastic meta-descent approach and is commonly grouped with other adaptive step-size algorithms such as RMSprop and Adam, with later incremental and nonlinear generalizations."
+  },
+  {
+    "key": "q873577bb4495",
+    "name": "One-step updates (reinforcement learning)",
+    "aliases": [
+      "One-step updates",
+      "one-step update",
+      "一步更新"
+    ],
+    "types": [
+      "learning mechanism"
+    ],
+    "definition": "一步更新（one-step update）是强化学习中以单步状态转移为信息源、仅依据即时奖励和下一状态（或下一状态-动作对）的估计值来更新某一个状态值或动作值的基础值函数备份操作；不同的一步更新可在三个二元维度上加以区分——更新对象是状态值还是动作值、目标是最优策略还是某个给定的策略、更新方式是期望更新（如动态规划）还是采样更新（如一步时序差分），而更复杂的多步规划、深度搜索或启发式搜索都可被理解为大量一步更新按特定顺序组合而成。"
+  },
+  {
+    "key": "q87e36465de95",
+    "name": "DRAM row buffer hit",
+    "aliases": [
+      "Row buffer hit"
+    ],
+    "types": [
+      "DRAM event"
+    ],
+    "definition": "A row buffer hit is a DRAM access event in which a memory request targets data already present in the currently open row buffer, allowing the access to be served without a row-activation precharge cycle. Because it avoids the cost of opening a new row, it is a key factor in DRAM latency modeling and is exploited by memory-controller scheduling policies to reduce memory access time."
+  },
+  {
+    "key": "q8c43ba31a402",
+    "name": "Four primary value functions (reinforcement learning)",
+    "aliases": [
+      "Four Primary Value Functions"
+    ],
+    "types": [
+      "value function",
+      "value function group"
+    ],
+    "definition": "The four principal value functions in reinforcement learning — the on-policy state-value function vπ, the on-policy action-value function qπ, and their optimal counterparts v* and q* — each capture the expected return from a state (or state–action pair) under a given or optimal policy. As stated in the DP chapter of Sutton & Barto, they are paired one-to-one with their own Bellman equations and expected updates, and they underlie nearly all reinforcement learning methods, not only dynamic programming."
+  },
+  {
+    "key": "q904a8d5c88f5",
+    "name": "First-visit MC method (reinforcement learning)",
+    "aliases": [
+      "First-visit MC method",
+      "first-visit MC",
+      "First-visit MC prediction",
+      "first-visit MC methods",
+      "first-visit method",
+      "first-visit version"
+    ],
+    "types": [
+      "Monte Carlo method",
+      "estimation method",
+      "learning algorithm",
+      "optimization method"
+    ],
+    "definition": "First-visit MC method is a Monte Carlo reinforcement learning algorithm that estimates the value of a state, or of a state–action pair, by averaging the returns observed after only the first visit to that state (and the corresponding action) within each episode. It converges to the true value as the number of first visits grows, with error standard deviation falling as 1/√n, and is distinguished from the every-visit MC method, which instead averages returns after every visit."
+  },
+  {
+    "key": "q924bbbe60714",
+    "name": "Ringing (approximation artifact in Fourier basis approximation)",
+    "aliases": [
+      "Ringing"
+    ],
+    "types": [
+      "problem"
+    ],
+    "definition": "Ringing is an approximation artifact that manifests as oscillatory overshoot/undershoot around points of discontinuity when a target function is approximated using a truncated Fourier basis; it is difficult to suppress unless the basis includes sufficiently high-frequency components."
+  },
+  {
+    "key": "q92f9d5de57f2",
+    "name": "Risk-sensitive policies (reinforcement learning)",
+    "aliases": [
+      "Risk-sensitive policies"
+    ],
+    "types": [
+      "policy class",
+      "risk-sensitive policy"
+    ],
+    "definition": "In reinforcement learning, risk-sensitive policies are policies obtained by restricting the optimization criterion to a risk-sensitive one that accounts for the variability or tail behavior of the return distribution rather than only its expectation. They are one of several approaches—alongside robust policies and multi-objective optimization—that have been adapted to RL to mitigate the risks of optimization."
+  },
+  {
+    "key": "q9532db909275",
+    "name": "Stochastic gradient ascent",
+    "aliases": [
+      "Stochastic gradient ascent",
+      "stochastic gradient-ascent algorithm",
+      "随机梯度上升"
+    ],
+    "types": [
+      "behavioral concept",
+      "learning algorithm",
+      "learning mechanism",
+      "learning rule",
+      "optimization method"
+    ],
+    "definition": "Stochastic gradient ascent is an optimization method that updates parameters in the direction of a sampled gradient whose expectation equals or is proportional to the true gradient of the objective. In reinforcement learning it underlies the gradient bandit algorithm and policy-gradient methods such as REINFORCE, and is also used as the standard training procedure for large neural networks (e.g., AlphaGo's SL policy network)."
+  },
+  {
+    "key": "q96e4e2080511",
+    "name": "Policy-induced state-transition probability matrix (linear TD(0))",
+    "aliases": [
+      "Matrix P",
+      "P"
+    ],
+    "types": [
+      "matrix"
+    ],
+    "definition": "In the linear TD(0) setting, P_π is the |S|×|S| stochastic matrix whose (s, s') entry is the probability of transitioning from state s to state s' under policy π, obtained by marginalizing the environment dynamics p(s'|s,a) over the actions prescribed by π (and over rewards). Because each row of P_π sums to 1, the row sums of D(I − P_π) are positive when γ < 1, which is the property exploited in the positive-definiteness argument for the TD(0) update matrix."
+  },
+  {
+    "key": "q980f983fa5be",
+    "name": "Regression",
+    "aliases": [
+      "Regression"
+    ],
+    "types": [
+      "historical AI method classification",
+      "task"
+    ],
+    "definition": "Regression is a standard task in statistics and machine learning, closely related to function approximation, in which a continuous output is predicted from input features. Its commonly used feature families (such as polynomials) and automated feature selection methods can also be applied or adapted for function approximation in reinforcement learning."
+  },
+  {
+    "key": "q9c29205c99bb",
+    "name": "Click-Through Rate",
+    "aliases": [
+      "Click-Through Rate",
+      "CTR",
+      "click through rate"
+    ],
+    "types": [
+      "criterion",
+      "performance metric"
+    ],
+    "definition": "Click-Through Rate (CTR) is a web performance metric defined as the ratio of the total number of clicks a webpage receives to the total number of visits to the page. It aggregates engagement across all visitors without distinguishing between individual users, and is commonly used to evaluate and optimize content selection in personalization and recommendation systems."
+  },
+  {
+    "key": "q9cd6295cbb53",
+    "name": "Bernoulli-logistic unit",
+    "aliases": [
+      "Bernoulli-logistic unit",
+      "Bernoulli-logistic neuron",
+      "stochastic neuron-like unit",
+      "Bernoulli-logistic REINFORCE units",
+      "Bernoulli-logistic units"
+    ],
+    "types": [
+      "computational unit",
+      "function approximator",
+      "neural network unit",
+      "stochastic computation unit"
+    ],
+    "definition": "A stochastic neuron-like unit used in artificial neural networks whose output A_t is a Bernoulli random variable taking value 0 or 1, with the firing probability determined by the logistic function of a weighted sum θᵀx(s) of its input feature vector. It is a standard building block in reinforcement learning (actor–critic and REINFORCE-style policy gradient methods), where its inherent randomness provides persistent exploration of the action space."
+  },
+  {
+    "key": "q9f6e9dfb0690",
+    "name": "Periodic function",
+    "aliases": [
+      "Periodic Function"
+    ],
+    "types": [
+      "function property",
+      "mathematical concept"
+    ],
+    "definition": "A function that repeats its values at regular intervals, formally defined as a function f satisfying f(x) = f(x + τ) for all x and some period τ. Periodic functions form the class that can be expressed via Fourier series as weighted sums of sine and cosine basis functions of different frequencies."
+  },
+  {
+    "key": "q9fd22c05ef5c",
+    "name": "Proximal methods",
+    "aliases": [
+      "Proximal methods"
+    ],
+    "types": [
+      "concept",
+      "optimization method"
+    ],
+    "definition": "Proximal methods are a class of optimization algorithms that use the proximal operator to handle non-differentiable or constrained objective functions. In reinforcement learning, their core ideas have been combined with Gradient-TD methods to produce more efficient off-policy learning algorithms (Mahadevan et al., 2014; Du et al., 2017)."
+  },
+  {
+    "key": "qa061c737f49f",
+    "name": "Response-generation mechanism (Rescorla–Wagner model)",
+    "aliases": [
+      "Response-generation mechanism",
+      "Response-generation mechanisms"
+    ],
+    "types": [
+      "environment model",
+      "modeling concept",
+      "response-generation mechanism"
+    ],
+    "definition": "The component of the Rescorla–Wagner model that translates learned associative-strength values (V) into observable conditioned responses (CRs); Rescorla and Wagner did not specify an exact mapping but assumed that larger V yields stronger or more likely CRs and that negative V implies no CR occurs."
+  },
+  {
+    "key": "qa15a21df9706",
+    "name": "Value Iteration",
+    "aliases": [
+      "Value Iteration",
+      "value-iteration algorithm",
+      "DP value iteration",
+      "conventional DP value iteration",
+      "sweep-based value iteration"
+    ],
+    "types": [
+      "dynamic programming method",
+      "historical AI method classification",
+      "learning algorithm",
+      "mathematical theorem",
+      "optimization method",
+      "planning method",
+      "时序差分学习"
+    ],
+    "definition": "Value iteration is a dynamic programming algorithm for computing the optimal state-value function v* of a finite Markov decision process, whose update rule is v_{k+1}(s) = max_a Σ_{s',r} p(s',r|s,a)[r + v_k(s')]. It is obtained by combining a truncated (one-sweep) policy evaluation with policy improvement—so it is a special case of generalized policy iteration and of truncated/modified policy iteration—and in practice it terminates when the value function changes by only a small amount within a sweep."
+  },
+  {
+    "key": "qa667faca057b",
+    "name": "Diagonal artifacts (tile coding)",
+    "aliases": [
+      "Diagonal Artifacts",
+      "对角线伪影"
+    ],
+    "types": [
+      "problem",
+      "tiling artifact"
+    ],
+    "definition": "Diagonal artifacts are an undesirable generalization pattern in tile coding that arises when the multiple tilings are offset uniformly in each dimension, producing a strong, directionally biased effect along the diagonal (i.e., substantial, non-spherical variation in how nearby states share tiles with a trained state); they can be avoided by using asymmetric offsets, such as displacement vectors composed of the first odd integers, which yield more spherical and homogeneous generalization."
+  },
+  {
+    "key": "qaccd571aa808",
+    "name": "policy-stable flag (policy iteration)",
+    "aliases": [
+      "policy-stable",
+      "policy stable"
+    ],
+    "types": [
+      "mathematical theorem",
+      "termination condition"
+    ],
+    "definition": "它是策略迭代算法中用于策略改进步骤的布尔条件标志，表示当前策略在所有状态上是否已停止更新；当该标志为真时，策略已收敛到最优，算法终止。"
+  },
+  {
+    "key": "qaf30d391bdea",
+    "name": "Fixed opponent (reinforcement learning)",
+    "aliases": [
+      "Fixed opponent"
+    ],
+    "types": [
+      "agent"
+    ],
+    "definition": "固定对手（Fixed opponent）是强化学习博弈设定中一类行为策略不随时间变化的对手；在适当随时间减小步长参数的条件下，时序差分学习方法可对任意固定对手收敛到各状态的真实获胜概率。"
+  },
+  {
+    "key": "qaf52ccf3f7f7",
+    "name": "n-step Tree Backup Algorithm",
+    "aliases": [
+      "n-step Tree Backup Algorithm",
+      "tree-backup algorithm",
+      "n-step tree-backup",
+      "Tree backup",
+      "tree-backup updates",
+      "n-step tree-backup algorithm",
+      "Tree Backup algorithm",
+      "n-step Tree Backup"
+    ],
+    "types": [
+      "learning algorithm",
+      "multi-step bootstrapping method",
+      "n-step tree-backup update",
+      "off-policy method",
+      "optimization method",
+      "tree-backup update",
+      "update operation",
+      "时序差分学习"
+    ],
+    "definition": "一种不需要重要性采样的离策略 n 步动作值学习算法，可视为 Q-learning 和 Expected Sarsa 在多步情形下的推广，由 Precup, Sutton 与 Singh (2000) 提出；它沿一条采样路径（spine）使用实际的状态、奖励与所选动作，而在每个状态处对未被选中的动作按目标策略 π 的概率以其估计值进行自举，从而形成树状的备份图。"
+  },
+  {
+    "key": "qb6791850e077",
+    "name": "TD-Gammon",
+    "aliases": [
+      "TD-Gammon",
+      "Tesauro's backgammon player",
+      "Tesauro's program",
+      "Tesauro's TD-Gammon"
+    ],
+    "types": [
+      "agent",
+      "environment model",
+      "historical learning system",
+      "task"
+    ],
+    "definition": "TD-Gammon is a backgammon-playing program developed by Gerald (Gerry) Tesauro beginning in 1992, whose learning algorithm combined the temporal-difference TD(λ) method with a multi-layer artificial neural network whose gradients were computed by backpropagating TD errors, trained primarily by self-play. It became a landmark demonstration of reinforcement learning—reaching near world grandmaster level—and is regarded as a direct precursor to later self-play systems such as AlphaGo and AlphaGo Zero."
+  },
+  {
+    "key": "qb6b95232459e",
+    "name": "Fourier basis (reinforcement learning, linear function approximation)",
+    "aliases": [
+      "Fourier Basis",
+      "Fourier basis functions"
+    ],
+    "types": [
+      "function approximator",
+      "historical AI method classification"
+    ],
+    "definition": "In reinforcement learning, the Fourier basis is a feature construction method for linear function approximation that represents the value function as a weighted sum of sine and cosine basis functions of different frequencies, following the Fourier series. It is valued in RL for being easy to use and empirically competitive, and was adapted by Konidaris, Osentoski, and Thomas (2011) into a form applicable to multi-dimensional continuous state spaces and non-periodic functions."
+  },
+  {
+    "key": "qba9e11f17e08",
+    "name": "Redoing updates (best-match learning, van Seijen)",
+    "aliases": [
+      "Redoing updates",
+      "best-match learning"
+    ],
+    "types": [
+      "learning algorithm"
+    ],
+    "definition": "Redoing updates is a reinforcement learning approach extensively developed by Harm van Seijen, originally introduced under the name 'best-match learning' in his 2011 work and subsequent collaborations."
+  },
+  {
+    "key": "qbc330fff5742",
+    "name": "Backward focusing of planning computations",
+    "aliases": [
+      "backward focusing",
+      "backward focusing of planning computations"
+    ],
+    "types": [
+      "backward focusing",
+      "planning computation allocation strategy",
+      "planning strategy"
+    ],
+    "definition": "一种在基于模型的状态空间规划中分配计算的反向聚焦策略：从任何值已发生变化的（状态）出发，沿前驱方向反向传播，对直接通向该变化状态的状态-动作对执行有意义的一步更新，或在该方向上终止传播；目标状态只是其直觉上的激励特例。它是与正向聚焦（forward focusing）相对的更新排序策略之一。"
+  },
+  {
+    "key": "qbc6a6605132a",
+    "name": "Tasks (reinforcement learning)",
+    "aliases": [
+      "Tasks"
+    ],
+    "types": [
+      "task",
+      "value function"
+    ],
+    "definition": "In reinforcement learning, tasks are units of learning (e.g., prediction or control problems such as those posed by GVFs, options, or auxiliary tasks) that should be treated as first-class, explicitly representable objects capable of being automatically designed, set, changed, monitored, filtered, and searched, and built hierarchically upon one another—analogous to how features are organized in an artificial neural network."
+  },
+  {
+    "key": "qbcf2490dd387",
+    "name": "Policy parameterization",
+    "aliases": [
+      "Policy parameterization",
+      "continuous policy parameterization"
+    ],
+    "types": [
+      "historical AI method classification",
+      "policy"
+    ],
+    "definition": "Policy parameterization is a way of representing a policy in which the action probabilities change smoothly and continuously as a function of the learned parameters. This smooth dependence, which contrasts with ε-greedy action selection where an arbitrarily small change in action values can cause probabilities to jump abruptly, provides stronger convergence guarantees and is precisely what enables policy-gradient methods to approximate gradient ascent."
+  },
+  {
+    "key": "qbe90282c68ce",
+    "name": "Drug craving",
+    "aliases": [
+      "Drug craving"
+    ],
+    "types": [
+      "motivational phenomenon"
+    ],
+    "definition": "Drug craving is a motivational state in which the urge to seek and consume an addictive substance is driven by the same learning and reward mechanisms that normally guide pursuit of natural biological rewards. The passage frames it as arising when addictive substances co-opt dopamine-mediated learning and decision-making circuits, producing drug-seeking behavior that extends beyond ordinary goal-directed behavior."
+  },
+  {
+    "key": "qc11e3167fc1d",
+    "name": "Error reduction property of n-step returns",
+    "aliases": [
+      "error reduction property",
+      "error reduction"
+    ],
+    "types": [
+      "convergence property",
+      "mathematical theorem",
+      "task property"
+    ],
+    "definition": "Error reduction property of n-step returns is a theoretical property in reinforcement learning stating that, for all n ≥ 1, the worst-case error of the expected n-step return is bounded by γ^n times the worst-case error of the bootstrapping value estimate V_{t+n−1}, i.e., max_s |E_π[G_{t:t+n} | S_t = s] − v_π(s)| ≤ γ^n max_s |V_{t+n−1}(s) − v_π(s)|. Because of this bound, all n-step TD methods can be shown to converge to the correct value predictions under appropriate technical conditions."
+  },
+  {
+    "key": "qc33d42e34a64",
+    "name": "backup diagram (reinforcement learning)",
+    "aliases": [
+      "backup diagram",
+      "backup diagrams",
+      "back-up diagram",
+      "备份图",
+      "compound backup diagram"
+    ],
+    "types": [
+      "backup diagram",
+      "concept",
+      "diagram",
+      "diagrammatic method",
+      "diagrammatic representation",
+      "diagrammatic tool",
+      "functional equation",
+      "pedagogical tool",
+      "policy",
+      "visualization",
+      "visualization tool"
+    ],
+    "definition": "A backup diagram is a standard reinforcement learning diagrammatic tool that visualizes a value update (backup) operation, placing the node to be updated—a state or state–action pair—at the top and showing below the transitions, rewards, and successor estimates that contribute to it. In the notation introduced by Sutton and Barto, open circles denote states and solid circles denote state–action pairs, while arcs across the agent's choice points indicate whether a maximum (Bellman optimality equation) or an expectation under policy π (Bellman equation) is taken; the same diagrammatic form is used across DP, Monte Carlo, n-step, TD(λ), and other RL methods."
+  },
+  {
+    "key": "qc57b313ee6f9",
+    "name": "Representation issues (reinforcement learning)",
+    "aliases": [
+      "representation issues"
+    ],
+    "types": [
+      "representation issue"
+    ],
+    "definition": "Representation issues in reinforcement learning refer to design considerations about how a problem is formulated and encoded for an RL agent. They are regarded as frequently critical to the success of practical RL applications, as illustrated in case studies where the choice of representation can determine whether the learning system works well."
+  },
+  {
+    "key": "qc6fe631f072c",
+    "name": "Reinforcement contingency (behavioral psychology)",
+    "aliases": [
+      "Reinforcement contingencies"
+    ],
+    "types": [
+      "behavioral concept"
+    ],
+    "definition": "It is a behavioral-psychology concept denoting the dependency relationship between a behavior and the conditions under which reinforcement is delivered; in shaping, these contingencies are adjusted interactively in response to the organism's behavior, a process Skinner compared to a sculptor shaping clay into a desired form."
+  },
+  {
+    "key": "qc83ee6a06e32",
+    "name": "What-not-how reward design principle",
+    "aliases": [
+      "what-not-how reward principle"
+    ],
+    "types": [
+      "design principle",
+      "reward design principle"
+    ],
+    "definition": "它是强化学习中关于奖励信号构造的一条设计原则，主张奖励应仅向智能体传达期望达成的目标（what），而不应规定实现该目标的具体方式（how）；否则智能体可能为满足被奖励的子目标而牺牲真实目标，例如在象棋中以输掉比赛为代价换取吃子。"
+  },
+  {
+    "key": "qc9b24c629c03",
+    "name": "Associative strength (Rescorla–Wagner model)",
+    "aliases": [
+      "Associative strength",
+      "V"
+    ],
+    "types": [
+      "associative strength",
+      "model parameter"
+    ],
+    "definition": "It is a scalar variable in the Rescorla–Wagner model of classical conditioning that represents how strongly or reliably a component stimulus predicts an unconditioned stimulus (US). During learning, this value is updated for each component stimulus of a compound CS based on prediction error, the discrepancy between the aggregate associative strength of the compound and the actual US outcome."
+  },
+  {
+    "key": "qcbb07738f1bb",
+    "name": "Activation function (neural network)",
+    "aliases": [
+      "Activation function",
+      "activation"
+    ],
+    "types": [
+      "activation function",
+      "neural network component"
+    ],
+    "definition": "It is a nonlinear function applied within an artificial neural network unit to the weighted sum of its input signals in order to produce the unit's output (activation). Common choices are S-shaped (sigmoid) functions such as the logistic function, though the rectifier nonlinearity is also frequently used."
+  },
+  {
+    "key": "qceb8f19865d2",
+    "name": "Policy improvement theorem (reinforcement learning)",
+    "aliases": [
+      "Policy improvement theorem"
+    ],
+    "types": [
+      "mathematical theorem"
+    ],
+    "definition": "The policy improvement theorem is a foundational result in reinforcement learning, due to Bellman (1957a) and Howard (1960), which guarantees that a new policy obtained by acting greedily with respect to the value or action-value function of an existing policy is at least as good as the old policy. The theorem extends from deterministic to stochastic policies and underlies the convergence guarantees of policy iteration, Monte Carlo control, and rollout algorithms, but its local improvement guarantee is lost once function approximation is introduced."
+  },
+  {
+    "key": "qd2ab7e275029",
+    "name": "Semi-gradient methods",
+    "aliases": [
+      "Semi-gradient methods",
+      "半梯度方法",
+      "Semi-gradient TD methods",
+      "Semi-gradient descent",
+      "semi-gradient",
+      "semi-gradient algorithms",
+      "semi-gradient method",
+      "semi-gradient way",
+      "semi-descent method",
+      "Semi-gradient TD",
+      "semi-gradient form"
+    ],
+    "types": [
+      "action-value method",
+      "approximate solution method",
+      "historical AI method classification",
+      "learning algorithm",
+      "learning mechanism",
+      "learning paradigm",
+      "optimization method",
+      "reinforcement learning method family",
+      "时序差分学习"
+    ],
+    "definition": "它通常指强化学习中一类使用 bootstrapping 目标（如 n-step 返回或 DP 目标）的参数化学习方法；由于这些目标依赖于当前权重向量，更新时仅对其中的部分依赖求梯度，因此不构成真正的梯度下降方法，但在线性函数近似等重要情形下仍能可靠收敛。"
+  },
+  {
+    "key": "qdb6490e4d674",
+    "name": "Mukundan and Martínez (2012) RL memory controller extension",
+    "aliases": [
+      "Mukundan and Martínez (2012)"
+    ],
+    "types": [
+      "research work"
+    ],
+    "definition": "Mukundan and Martínez (2012) is a follow-up research work that extended İpek et al.'s reinforcement-learning memory controller by investigating learning controllers with additional actions, incorporating other performance criteria including energy efficiency, and employing more complex reward functions derived via genetic algorithms, with reported results surpassing the 2012 state-of-the-art across the criteria considered."
+  },
+  {
+    "key": "qe86e04f3cc22",
+    "name": "Monte Carlo prediction (reinforcement learning)",
+    "aliases": [
+      "Monte Carlo prediction",
+      "MC prediction",
+      "Monte Carlo policy evaluation",
+      "MC策略评估"
+    ],
+    "types": [
+      "estimation method",
+      "historical AI method classification",
+      "时序差分学习"
+    ],
+    "definition": "Monte Carlo prediction in reinforcement learning is a model-free method for policy evaluation that estimates a policy's value function—such as the state-value function vπ(s)—by averaging the returns observed from episodes sampled under that policy. Unlike dynamic-programming-based policy evaluation, it requires no model of the environment and can be implemented incrementally on an episode-by-episode basis (e.g., first-visit or every-visit averaging)."
+  },
+  {
+    "key": "qe941e4c708d8",
+    "name": "Instruction cue (behavioral neuroscience)",
+    "aliases": [
+      "Instruction cue"
+    ],
+    "types": [
+      "behavioral concept",
+      "experimental stimulus"
+    ],
+    "definition": "An instruction cue is a sensory stimulus presented in a behavioral neuroscience task that signals which of several available actions will be rewarded, typically appearing before a separate trigger cue. With training, dopamine neurons transfer their reward-prediction responses from later stimuli to these earlier instructional cues, a pattern recognized as a hallmark of temporal-difference learning."
+  },
+  {
+    "key": "qec937ed0e5aa",
+    "name": "Invariant updates (reinforcement learning, off-policy learning)",
+    "aliases": [
+      "invariant updates"
+    ],
+    "types": [
+      "learning algorithm",
+      "update method"
+    ],
+    "definition": "Invariant updates are a family of parameter update approaches in reinforcement learning, originally introduced by Karampatziakis and Langford (2010) and later extended to temporal-difference (TD) learning by Tian. In the off-policy setting, they are proposed as a promising alternative to importance-sampling-based learning for mitigating the high-variance updates that force small step sizes and slow convergence."
+  },
+  {
+    "key": "qf72cb2b78766",
+    "name": "Fourier transform",
+    "aliases": [
+      "Fourier Transform"
+    ],
+    "types": [
+      "function approximation method",
+      "function approximator"
+    ],
+    "definition": "The Fourier transform is a mathematical tool that generalizes the Fourier series to decompose functions—including non-periodic ones—into sums or integrals of sinusoidal basis components of different frequencies. It is widely used in applied sciences because, when the function to be approximated is known, its basis function weights can be obtained by simple formulae, and with enough basis functions essentially any function can be approximated as accurately as desired."
+  },
+  {
+    "key": "qf8dbfa2bf013",
+    "name": "MCTS search probabilities π_i (AlphaGo Zero)",
+    "aliases": [
+      "Search probabilities π_i",
+      "policies π_i",
+      "new move probabilities"
+    ],
+    "types": [
+      "policy"
+    ],
+    "definition": "In AlphaGo Zero, the MCTS search probabilities π_i are the move distribution that Monte Carlo tree search returns at each decision point after running its many simulations. They serve as the actual self-play policy, refining the neural network's raw move-probability output p by exploiting the search statistics accumulated during each MCTS execution."
+  },
+  {
+    "key": "qfbd1cdd7a933",
+    "name": "Optimal action (k-armed bandit problem)",
+    "aliases": [
+      "Optimal action",
+      "best action"
+    ],
+    "types": [
+      "concept"
+    ],
+    "definition": "In a k-armed bandit problem, the optimal action is the single action whose true (expected) value q*(a) is the highest among all available actions, also referred to as the 'best action.' The learner's objective is to identify this action and select it as often as possible, a goal typically quantified in benchmarks such as the 10-armed testbed by the percentage of steps on which the optimal action is chosen."
+  },
+  {
+    "key": "qfc08b57c4315",
+    "name": "approximate action-value function q̂(s,a,w)",
+    "aliases": [
+      "q̂(s,a,w)",
+      "q̂",
+      "Approximate Action-Value Function",
+      "approximate action-value function q̂ ≈ qπ",
+      "q̂(s, a, w)",
+      "Action-value function approximation",
+      "q hat",
+      "action-value approximation"
+    ],
+    "types": [
+      "action value",
+      "action value estimate",
+      "action-value function",
+      "action-value function approximation",
+      "approximate action-value function",
+      "concept",
+      "function approximation",
+      "function approximator"
+    ],
+    "definition": "An approximate action-value function q̂(s, a, w) is a differentiable parametric function approximator that maps state–action pairs to real-valued estimates, with a finite-dimensional weight vector w ∈ R^d as its tunable parameters. It is used to approximate the true action-value function qπ (or the optimal action-value function q*) in reinforcement learning algorithms such as semi-gradient Sarsa, including in on-policy control and differential (average-reward) settings with function approximation."
+  },
+  {
+    "key": "qfd2e2610022c",
+    "name": "ε-soft policy (reinforcement learning)",
+    "aliases": [
+      "ε-soft policy",
+      "ε-soft policies",
+      "epsilon-soft policy",
+      "ε-soft",
+      "epsilon-soft",
+      "epsilon-soft policies"
+    ],
+    "types": [
+      "policy",
+      "policy class",
+      "policy property",
+      "ε-soft policy"
+    ],
+    "definition": "在强化学习中，ε-soft policy 是对所有状态 s 和动作 a 都满足 π(a|s) ≥ ε/|A(s)|（对某个 ε > 0）的策略类，保证任意状态下每个动作都拥有非零的最小选择概率。ε-greedy 是其典型特例；该类策略常用于 on-policy 控制算法（如 Sarsa）以及消除 exploring starts 假设的策略迭代和 off-learning 中作为行为策略。"
+  },
+  {
+    "key": "qff79d7d5e64d",
+    "name": "offline λ-return algorithm",
+    "aliases": [
+      "offline λ-return algorithm",
+      "off-line λ-return algorithm",
+      "offline -return algorithm"
+    ],
+    "types": [
+      "learning algorithm",
+      "optimization method",
+      "时序差分学习"
+    ],
+    "definition": "它是一种基于 λ-return 的离线强化学习算法，在一个回合（episode）进行期间不修改权重向量，仅在回合结束时按半梯度规则以 λ-return 为目标对整条轨迹执行批量更新；由于 λ-return 需等到回合结束后才能确定，该算法常被视为理论上的理想前向视图，被 TD(λ) 等可在线更新的方法所逼近。"
+  }
+]

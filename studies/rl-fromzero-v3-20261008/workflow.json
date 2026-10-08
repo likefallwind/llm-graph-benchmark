@@ -1,0 +1,18 @@
+{
+  "benchmark": "../rl-source-fontfix-20260926/frozen-benchmark/benchmark.json",
+  "seed": 20260923,
+  "workers": 6,
+  "submissions": [
+    {
+      "path": "../../outputs/rl-fromzero-v3-20261008/submission.json",
+      "name": "我们的方法（强化学习，从零构图）",
+      "scope_note": "llm-knowledge-graph pipeline-v3 从零构图，只读强化学习书；1268实体、2707完整断言；构图Token未记录",
+      "construction_usage": "../../outputs/rl-fromzero-v3-20261008/construction-usage.json"
+    }
+  ],
+  "samples": {
+    "entities": 100,
+    "assertions": 200,
+    "aliases": 30
+  }
+}
