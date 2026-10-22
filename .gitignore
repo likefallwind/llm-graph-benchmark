@@ -7,7 +7,6 @@ __pycache__/
 htmlcov/
 build/
 dist/
-outputs/
 studies/d2l-open-baselines-20260820/runs/*/.exit
 studies/d2l-open-baselines-20260820/runs/*/.finished
 studies/d2l-open-baselines-20260820/runs/*/.started
@@ -20,3 +19,6 @@ studies/d2l-open-baselines-20260820/runs/*/gateway-usage-live.json
 studies/d2l-open-baselines-20260820/runs/*/gateway.log
 studies/d2l-open-baselines-20260820/runs/*/run.log
 studies/d2l-open-baselines-20260820/runs/sequential-queue.log
+
+outputs/
+outputs.zip
