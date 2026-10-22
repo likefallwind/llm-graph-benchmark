@@ -1,0 +1,77 @@
+{
+  "protocol": "selected-metrics-v6-semantic-duplicates",
+  "metric_versions": {
+    "semantic_duplicate": "semantic-duplicate-v1"
+  },
+  "model": "MiniMax-M3",
+  "workers": 6,
+  "temperature": 0,
+  "evaluation_scope": "semantic_duplicate_only",
+  "selected_metrics": [
+    "semantic_duplicate"
+  ],
+  "created_at": 1791433233.9039094,
+  "input_hashes": {
+    "/home/likefallwind/code/llm-graph-benchmark/studies/rl-fromzero-v3-20261008/expansions.json": "b3420c7c17c4ffa930070df79fdcbf0ac1f58e81bb7f8e01064005d229af3629",
+    "/home/likefallwind/code/llm-graph-benchmark/studies/rl-fromzero-v3-20261008/screening.json": "f00be79bdc784407712f056a0c43f74d974d76958d48f72734bb9bef852556ee",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/manifest.json": "0d15c56d6e62b5a99a7a199d3d872d82488e6a121ff36586aabd97d6d9071ad4",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/sampling.json": "6722d6730cdab40af6887f916cec31ff6850457271e9774c9a40a2a466a33a4e",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/systems.json": "a215c1ec98cab2f89724b04761bbf7298088aaa2484cab67341322a9ed254849",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/structure.json": "e9af05b0e0e0448802c7506cbe402fc55a747ae2ae3b19587027c05d19a7588f",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/config.json": "e484782c2f20d68ced8f37cacf3b587be9d4f1ff303b5ef919b9df4dfe8b8227"
+  },
+  "code_hashes": {
+    "bundle.py": "3ef185a031e838c3b8167a9a8325580c54e06c9d1e723ef178078b32bdf99983",
+    "io.py": "b86bbd1b85fbeb5b06015a5ee2a771c5c48bee96df81fd00452c733232c8a64d",
+    "identity.py": "21d44e261efa1fd1f2aac34f6109bd41907144eb4375ec72684d1be6c75bd226",
+    "metrics.py": "14cbb7c639ef572a4f68992616acf5c0a71b002112112af52738c7ee85279bc2",
+    "qa.py": "1ead76073e8ea4d36667883b7851d443eaf6ff69d934d81ddd611af11369faa7",
+    "retrieval.py": "6244e98d43f9e24d93ced83389079f4c42d65eb377b59107367b810df698eed1",
+    "validation.py": "8c03990ba73375d1bcdd1e80828d22b111de4b06449874c7f46282463561e62c",
+    "workflow/__init__.py": "91b5604e4e50a3a3c963c0672c552d79d436ff09b8da79c5b50affe0acf07a02",
+    "workflow/alignment.py": "8da12de9fb974cc42279dd3f5b4059ea434a0fd608d47af75f7868b4c2406541",
+    "workflow/description_reassessment.py": "b5065fdf1693d948e493a81c369488152d855f8a1c611808863c2c2de2e61a62",
+    "workflow/engine.py": "73baa6cf86967ce0869e73442d33d39e60a8e7535593f38ce2c63736d95857c8",
+    "workflow/granularity.py": "858b371c66102c9f5721460956350dff43ef1ef2cbe087c5575d0e83de11c737",
+    "workflow/identity_judge.py": "621be003d0279e112334aea12dfd06a2f2f3c4c5fb63f83a847662a7c51cc9bc",
+    "workflow/ledger.py": "197b43567fce0a2ce74b01e2db3558ec297581b994eebf49f6d7e4560f0799cc",
+    "workflow/legacy_judge.py": "cbb8580a5381925ede44606f1fc86d4d6242b6fb1645b247b953c0a7b947e316",
+    "workflow/legacy_render.py": "e7f6c2df789fdca68f3545f02ca4a30b0f4260b424d3cd8d7c4e69b4e2cb3afb",
+    "workflow/preparation.py": "4c595c294f83320de5d366325aeb4aafd9ce7d6586f4831c06ef900a2427acaf",
+    "workflow/protocol.py": "0a92d1a9aa7531353ae833bde2249066965ccb6df43b8176d46973a2018c7ffb",
+    "workflow/qa_reassessment.py": "264946cedb38afe24fd44af9493267d3c0d2c4b05fe5ec8de3326b26ee47cdb2",
+    "workflow/qa_support.py": "075fa121b90796922975cb286465aa50e6218a9b0dc5c97487c4ef8c4efaa400",
+    "workflow/referent.py": "5fa90762c7c1a8ffc0901e29edb142570c0fe8a40ffdef5887941bd924df6ff6",
+    "workflow/reporting.py": "7fe9253bb298e1910a0daf669636e8242d309fc0ea4743a3db3397b84151086f",
+    "workflow/semantic_duplicate.py": "641fff133e76c26c84b5c7a1ec41473a20181af9eed2acba5c283d22c3f93825",
+    "workflow/transport.py": "2a05ddad1d37de3675f085938c67e29a5749c5baa999da33279793317cf26210"
+  },
+  "benchmark_hash": "sha256:83ad4f0d99f1d78d7b951b127c6877da7789d47e773e0f0308e1e08616987ddb",
+  "parent_protocol": "selected-metrics-v6-semantic-duplicates",
+  "frozen_files": {
+    "screening.json": "7754717b249f87e278005b1c20b7c72bdaa3c5ec0dcad72834af844124701b0d",
+    "private-key.json": "9aeea9b5ed79986443441eeeb28b50c38d37d9b5d3cca8ae3999562a03a5d017",
+    "sampling.json": "08aa3330a699bbb08d2553ad580728907f1b975139fa8569985e23b722407228",
+    "systems.json": "a215c1ec98cab2f89724b04761bbf7298088aaa2484cab67341322a9ed254849",
+    "config.json": "47de61014cb44e599d86628aa7a607a4f2a9005a6b0052a39ad8811e8a71078a",
+    "tasks.json": "59c6d8722dbeb28cfe22c69c7286088d898678095f5c8a55e224ef4625f88d2f",
+    "prompts.json": "5af8339c1de01798b562c91817284064d94970adac8dfde74fb55304f01197e2",
+    "structure.json": "e9af05b0e0e0448802c7506cbe402fc55a747ae2ae3b19587027c05d19a7588f",
+    "expansions.json": "5d0c4c9b32dad614040d4a31d4c87e6cc2424c17bbe2466f8841fc97884d7014"
+  },
+  "counts": {
+    "semantic_duplicate": 24
+  },
+  "total_tasks": 24,
+  "planned_calls_without_retries": 24,
+  "max_attempts_per_request": 3,
+  "oversized": 0,
+  "max_input_bytes": 350000,
+  "retriever": {
+    "id": "entity-name-bm25-round-robin-v1",
+    "fields": "name+aliases",
+    "top_k": 30,
+    "k1": 1.2,
+    "b": 0.75
+  }
+}

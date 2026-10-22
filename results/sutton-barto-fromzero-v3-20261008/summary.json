@@ -1,0 +1,345 @@
+{
+  "protocol": "selected-metrics-v7-two-level-types",
+  "model": "MiniMax-M3",
+  "metric_versions": {
+    "assertion_correctness": "assertion-ledger-v2.5",
+    "relation_granularity": "relation-granularity-v1",
+    "entity_correctness": "referent-v1.1",
+    "entity_evidence": "referent-evidence-v1.1",
+    "entity_typing": "type-boundary-v3-two-level",
+    "entity_description": "description-whole-v2",
+    "alias_identity": "alias-full-sources-knowledge-v2",
+    "semantic_duplicate": "semantic-duplicate-v1",
+    "fact_recovery": "complete-fact-v1"
+  },
+  "complete": false,
+  "total": 902,
+  "done": 900,
+  "evaluation_scope": "combined_parent_and_stages",
+  "groups": {
+    "ours-sutton-barto-fromzero-m3-v3": {
+      "assertion_correctness": {
+        "status": "incomplete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 198,
+        "unassessed": 2,
+        "statuses": {
+          "done": 198,
+          "failed": 2
+        },
+        "labels": {
+          "correct": 187,
+          "uncertain": 8,
+          "incorrect": 3
+        },
+        "numerator": 187,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": 0.9444444444444444,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "relation_granularity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 200,
+        "done": 200,
+        "unassessed": 0,
+        "statuses": {
+          "done": 200
+        },
+        "labels": {
+          "L3": 186,
+          "L2": 12,
+          "L1": 2
+        },
+        "numerator": 0,
+        "denominator": 200,
+        "rate": null,
+        "partial_rate_judged_only": null,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.0,
+        "correct_l3_count": 173,
+        "correct_l3_coverage": null,
+        "correct_within_l3": null,
+        "joint_complete": false
+      },
+      "entity_correctness": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "correct": 100
+        },
+        "numerator": 100,
+        "denominator": 100,
+        "rate": 1.0,
+        "partial_rate_judged_only": 1.0,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 1.0
+      },
+      "entity_evidence": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 99,
+          "uncertain": 1
+        },
+        "numerator": 99,
+        "denominator": 100,
+        "rate": 0.99,
+        "partial_rate_judged_only": 0.99,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.99
+      },
+      "entity_typing": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "fail": 34,
+          "pass": 61,
+          "uncertain": 5
+        },
+        "numerator": null,
+        "denominator": 100,
+        "rate": 0.8368207070707071,
+        "partial_rate_judged_only": 0.8368207070707071,
+        "aggregation": "entity_macro",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {
+          "pass": 199,
+          "fail": 46,
+          "uncertain": 15
+        },
+        "finest_supported_type": {
+          "L2": 60,
+          "L1": 40
+        },
+        "whole_support_rate": 0.61
+      },
+      "entity_description": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 100,
+        "done": 100,
+        "unassessed": 0,
+        "statuses": {
+          "done": 100
+        },
+        "labels": {
+          "supported": 81,
+          "not_supported": 19
+        },
+        "numerator": 81,
+        "denominator": 100,
+        "rate": 0.81,
+        "partial_rate_judged_only": 0.81,
+        "aggregation": "sample_fraction",
+        "sampled_entities": 100,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.81
+      },
+      "alias_identity": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 30,
+        "done": 30,
+        "unassessed": 0,
+        "statuses": {
+          "done": 30
+        },
+        "labels": {
+          "pass": 29,
+          "fail": 1
+        },
+        "numerator": 29,
+        "denominator": 30,
+        "rate": 0.9666666666666667,
+        "partial_rate_judged_only": 0.9666666666666667,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.9666666666666667
+      },
+      "semantic_duplicate": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 24,
+        "done": 24,
+        "unassessed": 0,
+        "statuses": {
+          "done": 24
+        },
+        "labels": {
+          "none": 96,
+          "duplicate": 4
+        },
+        "unresolved_targets": 0,
+        "pair_labels": {
+          "pass": 4,
+          "fail": 20
+        },
+        "numerator": 4,
+        "denominator": 100,
+        "rate": 0.04,
+        "partial_rate_judged_only": 0.04,
+        "aggregation": "entity_duplicate",
+        "uncertain_rate": 0.0,
+        "ineligible_targets": 0,
+        "pool_excluded": 0,
+        "flagged_pairs": 24,
+        "duplicates": [
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e109",
+            "candidate_id": "e362",
+            "reason": "书中'planning methods'与'planning'本质同指：规划方法即执行规划过程的算法类别，文中常互换使用，如将DP和Dyna同时称为planning methods和planning的典型。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e1101",
+            "candidate_id": "e1247",
+            "reason": "两者都指Mukundan和Martínez 2012年发表的同一项研究工作，Entity A的描述性特征（多目标、遗传算法奖励函数、能量效率）与MORSE一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e331",
+            "candidate_id": "e100",
+            "reason": "书中将\"actor–critic architecture\"与\"actor–critic methods/algorithms\"交替使用，指同一对象（actor+critic结构的方法族）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e353",
+            "candidate_id": "e704",
+            "reason": "两者均引自Karampatziakis和Langford(2010)同一论文，'invariant updates'是'importance weight aware updates'的简称，指同一方法。"
+          }
+        ],
+        "lower_is_better": true,
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      },
+      "fact_recovery": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 48,
+        "done": 48,
+        "unassessed": 0,
+        "statuses": {
+          "done": 48
+        },
+        "labels": {
+          "pass": 28,
+          "fail": 19,
+          "uncertain": 1
+        },
+        "numerator": 28,
+        "denominator": 48,
+        "rate": 0.5833333333333334,
+        "partial_rate_judged_only": 0.5833333333333334,
+        "aggregation": "sample_fraction",
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": 0.5833333333333334
+      }
+    }
+  },
+  "structure": {
+    "ours-sutton-barto-fromzero-m3-v3": {
+      "entity_count": 1268,
+      "assertion_count": 2707,
+      "quality_assertion_count": 2707,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.179022,
+      "largest_component_ratio": 0.7705047318611987,
+      "alias_count": 3212,
+      "field_counts": {
+        "types": 1268,
+        "definition": 1268,
+        "aliases": 1258
+      },
+      "construction": {
+        "input_tokens_million": null,
+        "output_tokens_million": null,
+        "total_tokens_million": null
+      },
+      "construction_source": "/home/likefallwind/code/llm-knowledge-graph/outputs/rl-from-zero-m3-c6-20261004-pipeline-v3/runs/20261004T150935-0f11945e",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 1268,
+          "assertion_count": 2707,
+          "largest_component_ratio": 0.770505,
+          "isolated_entity_count": 227
+        }
+      ]
+    }
+  },
+  "updated_at": 1791461367.5904143,
+  "composed_from": {
+    "parent": {
+      "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval",
+      "protocol": "selected-metrics-v6-semantic-duplicates",
+      "summary_sha256": "a10daeba885260fcde2e4481a52c6e804837d7170331e91ff7bf8141e424cd9d",
+      "dropped_retired_metrics": []
+    },
+    "stages": [
+      {
+        "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-semantic",
+        "metric": "semantic_duplicate",
+        "protocol": "selected-metrics-v6-semantic-duplicates",
+        "summary_sha256": "891ced6f25a4fb72871ed5f10e36011cf0e940eccfdb566cf6c8cf7cae472303"
+      },
+      {
+        "run": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-types",
+        "metric": "entity_typing",
+        "protocol": "selected-metrics-v7-two-level-types",
+        "summary_sha256": "633b981852958a8a5b746ab62eefccad15f0eb8b39b533cf65a92cfbbaf59703"
+      }
+    ]
+  }
+}

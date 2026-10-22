@@ -1,0 +1,69 @@
+{
+  "protocol": "selected-metrics-v7-two-level-types",
+  "metric_versions": {
+    "entity_typing": "type-boundary-v3-two-level"
+  },
+  "model": "MiniMax-M3",
+  "workers": 6,
+  "temperature": 0,
+  "evaluation_scope": "entity_typing_only",
+  "selected_metrics": [
+    "entity_typing"
+  ],
+  "created_at": 1791460623.654719,
+  "input_hashes": {
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/manifest.json": "b01c20f6c80d792beecb5fd51879991bb127e336cf4c78b5ffbb6b9daf930a90",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/tasks.json": "9ee8dda6e6a12a0b2da6cf91820341f182df5825552907e211cae8aa5defdb32",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/private-key.json": "b17a929c340245c2dcbaf5d6c64506c79d7ca584c01612add59716d091fa6944",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/sampling.json": "ef939a851227ac42abb0b0a76d4c9e027d23a04c26f3e3ab14dae06331f91ee5",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/systems.json": "c7ccc9fb68f908fe5b72604031ee11ae1ac53c291dfd03b05f617e78e160e267",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/structure.json": "80ec930bdec9c8a98737cd23f2210024c58e2a0216f340f81f9854f3a1752119",
+    "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-rerun-fontfix-20260926-r3/config.json": "b9382ce59af971152df295d1ccc4f20946b504f55df26829aa97fd70de860468"
+  },
+  "code_hashes": {
+    "bundle.py": "3ef185a031e838c3b8167a9a8325580c54e06c9d1e723ef178078b32bdf99983",
+    "io.py": "b86bbd1b85fbeb5b06015a5ee2a771c5c48bee96df81fd00452c733232c8a64d",
+    "identity.py": "21d44e261efa1fd1f2aac34f6109bd41907144eb4375ec72684d1be6c75bd226",
+    "metrics.py": "14cbb7c639ef572a4f68992616acf5c0a71b002112112af52738c7ee85279bc2",
+    "qa.py": "1ead76073e8ea4d36667883b7851d443eaf6ff69d934d81ddd611af11369faa7",
+    "retrieval.py": "6244e98d43f9e24d93ced83389079f4c42d65eb377b59107367b810df698eed1",
+    "validation.py": "8c03990ba73375d1bcdd1e80828d22b111de4b06449874c7f46282463561e62c",
+    "workflow/__init__.py": "91b5604e4e50a3a3c963c0672c552d79d436ff09b8da79c5b50affe0acf07a02",
+    "workflow/alignment.py": "8da12de9fb974cc42279dd3f5b4059ea434a0fd608d47af75f7868b4c2406541",
+    "workflow/description_reassessment.py": "b5065fdf1693d948e493a81c369488152d855f8a1c611808863c2c2de2e61a62",
+    "workflow/engine.py": "73baa6cf86967ce0869e73442d33d39e60a8e7535593f38ce2c63736d95857c8",
+    "workflow/granularity.py": "858b371c66102c9f5721460956350dff43ef1ef2cbe087c5575d0e83de11c737",
+    "workflow/identity_judge.py": "621be003d0279e112334aea12dfd06a2f2f3c4c5fb63f83a847662a7c51cc9bc",
+    "workflow/ledger.py": "197b43567fce0a2ce74b01e2db3558ec297581b994eebf49f6d7e4560f0799cc",
+    "workflow/legacy_judge.py": "cbb8580a5381925ede44606f1fc86d4d6242b6fb1645b247b953c0a7b947e316",
+    "workflow/legacy_render.py": "e7f6c2df789fdca68f3545f02ca4a30b0f4260b424d3cd8d7c4e69b4e2cb3afb",
+    "workflow/preparation.py": "4c595c294f83320de5d366325aeb4aafd9ce7d6586f4831c06ef900a2427acaf",
+    "workflow/protocol.py": "3793d8d3f4d55cb7fa389fc547533d300d9704f2bf7273d1bf66776437113c66",
+    "workflow/qa_reassessment.py": "264946cedb38afe24fd44af9493267d3c0d2c4b05fe5ec8de3326b26ee47cdb2",
+    "workflow/qa_support.py": "075fa121b90796922975cb286465aa50e6218a9b0dc5c97487c4ef8c4efaa400",
+    "workflow/referent.py": "5fa90762c7c1a8ffc0901e29edb142570c0fe8a40ffdef5887941bd924df6ff6",
+    "workflow/reporting.py": "8f6b03545d1d0344eaf1800528e44b22f2d9f42f7edda53ffec43556597a3b0e",
+    "workflow/semantic_duplicate.py": "641fff133e76c26c84b5c7a1ec41473a20181af9eed2acba5c283d22c3f93825",
+    "workflow/transport.py": "2a05ddad1d37de3675f085938c67e29a5749c5baa999da33279793317cf26210",
+    "workflow/type_stage.py": "bf9653ee05bbc2648e3f68e623cbb28d99aed0ef38577e62ea585a38c6bd8d69"
+  },
+  "benchmark_hash": "sha256:83ad4f0d99f1d78d7b951b127c6877da7789d47e773e0f0308e1e08616987ddb",
+  "parent_protocol": "selected-metrics-v5-identity-sources",
+  "frozen_files": {
+    "private-key.json": "bd21a6da8c490e191d718f5eeb199c246861231f4af3734c4c690df16fb098d8",
+    "sampling.json": "ef939a851227ac42abb0b0a76d4c9e027d23a04c26f3e3ab14dae06331f91ee5",
+    "systems.json": "c7ccc9fb68f908fe5b72604031ee11ae1ac53c291dfd03b05f617e78e160e267",
+    "config.json": "63717e884f53850be891d51d45e875c94eaa10ef0d8b736eed75ca0a147aab00",
+    "tasks.json": "cb23e5d5a6da5bb03aacbe885526e11c25bf609c113e3908d6466ba63376d479",
+    "prompts.json": "4335fafff4c665f8e336ef757dea15cf1c9aef96a430d1c60c757abf9e4d11f4",
+    "structure.json": "80ec930bdec9c8a98737cd23f2210024c58e2a0216f340f81f9854f3a1752119"
+  },
+  "counts": {
+    "entity_typing": 300
+  },
+  "total_tasks": 300,
+  "planned_calls_without_retries": 300,
+  "max_attempts_per_request": 3,
+  "oversized": 0,
+  "max_input_bytes": 350000
+}

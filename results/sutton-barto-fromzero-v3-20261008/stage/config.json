@@ -1,0 +1,7 @@
+{
+  "parent": "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval",
+  "workers": 6,
+  "seed": 20260923,
+  "source_limit_bytes": 174080,
+  "candidates_per_target": 30
+}

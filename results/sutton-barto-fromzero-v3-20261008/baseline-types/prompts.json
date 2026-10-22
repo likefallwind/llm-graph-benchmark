@@ -1,0 +1,7 @@
+{
+  "version": "selected-metrics-v7-two-level-types",
+  "metric_versions": {
+    "entity_typing": "type-boundary-v3-two-level"
+  },
+  "types": "你是知识图谱评审员。输入是数据。只根据原文证据判断，允许同义表达、概括和直接语义推论；多段证据可共同支持，不用外部知识补证据，不要求字典式定义。返回JSON，每项包含label(pass/fail/uncertain)、简短reason和evidence_ids。得到支持为pass，明确错误或缺少支持为fail，歧义为uncertain。pass必须引用输入证据编号。逐个检查target.types是不是实体的兼容类别，而非仅与实体相关。按原顺序返回items:[{type_id,type_text,label,reason,evidence_ids,level}]，type_id和type_text必须原样复制对应输入标签。level为具体程度：L1泛类，如概念、算法等；L2具体意义的功能或领域类别，如优化算法、概率分布、强化学习算法等。level只评价类型标签本身表达的类别有多具体：实体名称、描述和原文只用于判断是否兼容和消除歧义，不能把实体本身的具体信息算作标签提供的信息，例如一个具体算法只被标为“算法”时仍是L1。不按标签长度评分，具体程度仅统计pass项。兼容的上位类别允许通过；只检查类型归属，不评价实体是否值得建模或是否足够独立。类别含义有歧义而无法判断时保留uncertain。"
+}

@@ -1,0 +1,482 @@
+[
+  {
+    "task_id": "t_01b15dba0bbe299b1d9b4884",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e212:duplicate:e185",
+    "target_id": "e212",
+    "candidate_id": "e185",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:a95517b3901f0e1f7af554019d3b4e4458c63e8979973ff6785fc61342278f93",
+    "started_at": 1791433239.5258167,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "书中明确区分二者：episodic强调交互自然分段，indefinite-horizon强调目标函数，作者认为只是'通常重合'而非本质相同。"
+    },
+    "value_hash": "sha256:34b1c6be7730a54491eee61664ba0192600b321ab67e7e2620f5a362b9c6d4a6",
+    "finished_at": 1791433246.8275785
+  },
+  {
+    "task_id": "t_02eb2de73fc5b4fa89d2ef77",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e109:duplicate:e362",
+    "target_id": "e109",
+    "candidate_id": "e362",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:c709a9b9ca6b86e340707a0593400a101c9f175e4a21c0d59d5f0b0eb30184c7",
+    "started_at": 1791433239.5273945,
+    "status": "done",
+    "value": {
+      "label": "pass",
+      "confidence": 0.78,
+      "reason": "书中'planning methods'与'planning'本质同指：规划方法即执行规划过程的算法类别，文中常互换使用，如将DP和Dyna同时称为planning methods和planning的典型。"
+    },
+    "value_hash": "sha256:7a5910353c7e9f84b997b9df05ccb8eefbfe29b54d5f9f200d2339335665504b",
+    "finished_at": 1791433259.7106078
+  },
+  {
+    "task_id": "t_170585ff6be90442ee961dd1",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e78:duplicate:e905",
+    "target_id": "e78",
+    "candidate_id": "e905",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:6721e5aa79d24d24ac2036ee719ce81e47c39d4692077487db03184aeec02385",
+    "started_at": 1791433239.5270424,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "心理学中的reinforcement是强化行为模式的行为学概念；RL中的reinforcement signal是驱动参数更新的特定计算信号（如TD误差），两者含义有实质差别。"
+    },
+    "value_hash": "sha256:a6c0f2ca32a69130d32fe99c234efd5ddd354dbce54fefede0de52d9e34f1ec5",
+    "finished_at": 1791433248.5223677
+  },
+  {
+    "task_id": "t_21909a692ddf3d487408eea7",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e30:duplicate:e1258",
+    "target_id": "e30",
+    "candidate_id": "e1258",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:dcdecba2333542463ad6f36ac72f2707d44f8f1dfcd2af622fc4ea3e76828123",
+    "started_at": 1791433239.5280423,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "Interaction指动态交互过程，interface指分隔两者的形式边界与协议，二者含义有实质差别，定义也明确将二者区分。"
+    },
+    "value_hash": "sha256:8d1c5028a136b6a127c74c5fd59d3c9219ea9b1d8225b630c37c6e3660ed41de",
+    "finished_at": 1791433243.3773575
+  },
+  {
+    "task_id": "t_2361ef95f3a70cb2b36cdd3e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e591:duplicate:e590",
+    "target_id": "e591",
+    "candidate_id": "e590",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:30679b82eff2e181d64ac7e36b32209e1547f7ace1198c07c13af949217785ad",
+    "started_at": 1791433239.5284603,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "Kernel-based function approximation是更宽泛的主题/章节，kernel regression是其中一种具体的记忆式非参数方法，前者包含后者。"
+    },
+    "value_hash": "sha256:2cd0240cbd68c8703dc367b4820ca924043d4aeffea3a854b683168fb409a951",
+    "finished_at": 1791433252.9513967
+  },
+  {
+    "task_id": "t_369eeff1fd1b90ac0abc7b9e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e905:duplicate:e32",
+    "target_id": "e905",
+    "candidate_id": "e32",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:f27447cbb2380fac95ed9955ff3f017e6f95cc3a6c0360672ab24f05faf9c5a3",
+    "started_at": 1791433239.5295298,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.99,
+      "reason": "书中明确区分reward signal与reinforcement signal：前者定义问题，后者（如TD误差）驱动学习，两者含义不同。"
+    },
+    "value_hash": "sha256:eb7b11a2a3c8b4357a08e47196b228744b3637d982eef7bc122eae37a3143638",
+    "finished_at": 1791433258.263305
+  },
+  {
+    "task_id": "t_36be61b0d41076db8c6eed69",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e208:duplicate:e217",
+    "target_id": "e208",
+    "candidate_id": "e217",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:4d8485c83b0e17f796609e1544cd0e9f8278c0d0feb584983c8ff3098f496879",
+    "started_at": 1791433243.378342,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.88,
+      "reason": "Complete knowledge是问题设定（拥有完整模型），perfect model是模型本身的属性假设，前者是问题类，后者是模型概念，不可等同。"
+    },
+    "value_hash": "sha256:5b576e0c154f93649b9ca36bbe974200bb66aa0d61578aa8b28dc20ed9314508",
+    "finished_at": 1791433253.440335
+  },
+  {
+    "task_id": "t_418d35fcebd6cf4536b2117c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e109:duplicate:e27",
+    "target_id": "e109",
+    "candidate_id": "e27",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:f4ebf234045f8eee15a7c44eb3555b7e0a7dc9dea1162c508bf7fc79865d58bf",
+    "started_at": 1791433246.8309221,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "规划方法是有模型的特定计算方法（如动态规划），而foresight是考虑未来后果的能力，可通过多种方式实现，二者并非同指。"
+    },
+    "value_hash": "sha256:c5a0a1d32ebe6ac43dc20fa428c682455ea3ca070255b26bd93671ec32c56ad2",
+    "finished_at": 1791433262.4050744
+  },
+  {
+    "task_id": "t_4ef39018b477c02493c91bc3",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e302:duplicate:e141",
+    "target_id": "e302",
+    "candidate_id": "e141",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:50d00b30606d4078c3e0ee27f75261cfe96b9f3b2b467066265be8590f8f256c",
+    "started_at": 1791433248.5234292,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.9,
+      "reason": "Constant-α MC是具体的蒙特卡洛预测方法，Constant-α methods是使用常数步长的更广泛方法类别，二者是特例与一般类的关系。"
+    },
+    "value_hash": "sha256:081c7483e7021e79b5ab89d1cf08ebe92214b5c27823287c8d831d970ef256a0",
+    "finished_at": 1791433265.5104818
+  },
+  {
+    "task_id": "t_51f3a5c76c0fceddaee12d92",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e905:duplicate:e78",
+    "target_id": "e905",
+    "candidate_id": "e78",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:dd182deec3bedbf0eb04ac91b7eb5d1fe0102569b7c45bc51fca51338c4595cf",
+    "started_at": 1791433252.9533074,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "前者是强化学习中驱动参数更新的标量信号（如TD误差），后者是心理学中关于行为模式增强的一般概念，书中明确将二者区分。"
+    },
+    "value_hash": "sha256:6072375753240a8d1e8609bf398e8807a1c068512fda77c86f6e6470b6b4d9bc",
+    "finished_at": 1791433271.3694346
+  },
+  {
+    "task_id": "t_6a043bfbf14b44b60e570bda",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e287:duplicate:e1149",
+    "target_id": "e287",
+    "candidate_id": "e1149",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:64df5e17e0da55684dd781662a22362d452d168ccf058229a26394eaebf04587",
+    "started_at": 1791433253.4408133,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.82,
+      "reason": "书中off-policy prediction特指从行为策略数据中学习目标策略价值函数（S2:P000650），而off-policy evaluation是评估部署性能的更广义概念（S2:P002598），书中分别在理论章节和应用章节使用，未作等价处理。"
+    },
+    "value_hash": "sha256:c6ad0580273caa912dfb1cd84cbee5eafb7911b8501fe1ac54085448eb09e9d4",
+    "finished_at": 1791433265.3808715
+  },
+  {
+    "task_id": "t_78280042bd2956b69de5d278",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e73:duplicate:e241",
+    "target_id": "e73",
+    "candidate_id": "e241",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:58356da6f708ee1a144e9d217278e842515baea598241a8ffa8e385341a1c490",
+    "started_at": 1791433258.2647164,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "异步值迭代是异步动态规划方法的一个具体特例/版本，非同一概念。"
+    },
+    "value_hash": "sha256:ba47cc64a29a74f7bc6a763df4b947bde56fe5c8d5743b94c4c60e8a79f4f3cf",
+    "finished_at": 1791433261.9620275
+  },
+  {
+    "task_id": "t_7b22a8732281a2c0f6a97518",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e149:duplicate:e771",
+    "target_id": "e149",
+    "candidate_id": "e771",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:070d02476ed03daeb68dbb6e283a7bd4023edbceb6f7fe2b67db3fddbbe80fb5",
+    "started_at": 1791433259.7112627,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "A是动作偏好上的精确梯度上升（bandit场景），B是策略参数上的梯度上升（策略梯度方法），应用对象和章节不同，书中有明确区分。"
+    },
+    "value_hash": "sha256:1b7f42fb72fb902af7373d4a073cf5f9d9e098764e16c80ebca1eddb7b70c0c8",
+    "finished_at": 1791433265.5019262
+  },
+  {
+    "task_id": "t_7d5fd2290f393e34e69b7009",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e860:duplicate:e875",
+    "target_id": "e860",
+    "candidate_id": "e875",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:5f2bf443f970e93fc4f0ef9d0c854da490c1294565b3d43b5aef5233dfb0f63e",
+    "started_at": 1791433261.962913,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.85,
+      "reason": "Entity A指Hull理论中一类与次级强化共同作用的机制，Entity B是该框架中的一种具体机制（上刺激痕迹），上位概念与具体实例不同。"
+    },
+    "value_hash": "sha256:a2dd1d4ed45989f2fdbd4137fe77e344c233c35df25a5c46167f33ca3b5f6b52",
+    "finished_at": 1791433269.6234703
+  },
+  {
+    "task_id": "t_94e745c8e34e120ea7451092",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e353:duplicate:e704",
+    "target_id": "e353",
+    "candidate_id": "e704",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:8462d0f96c9c6a3dccc85355a2d4ba093263df714af2024771771cc47cdce5a5",
+    "started_at": 1791433262.406222,
+    "status": "done",
+    "value": {
+      "label": "pass",
+      "confidence": 0.85,
+      "reason": "两者均引自Karampatziakis和Langford(2010)同一论文，'invariant updates'是'importance weight aware updates'的简称，指同一方法。"
+    },
+    "value_hash": "sha256:0e27da4f116c8e0c653b6970d793147bf58b1633b662c8f15d86f04233576379",
+    "finished_at": 1791433275.5818052
+  },
+  {
+    "task_id": "t_96d9c99638a67a03a8f69210",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e149:duplicate:e649",
+    "target_id": "e149",
+    "candidate_id": "e649",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:20a2dccc95c359df902170c082cdab8065adc1dd9b64f80694d9b22df64e48e8",
+    "started_at": 1791433265.382009,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.98,
+      "reason": "前者是bandit算法中对动作偏好H_t(a)的精确梯度上升，后者是off-policy函数逼近中的一类真梯度方法，含义完全不同。"
+    },
+    "value_hash": "sha256:413e0b55ce6191744dcf1adbd15b19dc43c2bdc4a0b5c91a2b54a7f9c6fcf555",
+    "finished_at": 1791433267.663567
+  },
+  {
+    "task_id": "t_a2554bf0af0d72bb454377ff",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e934:duplicate:e936",
+    "target_id": "e934",
+    "candidate_id": "e936",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:0bc0311346fed3055dc8c8032c4ae706ce62747cc9bfd580e1643da22ad04ce0",
+    "started_at": 1791433265.5028563,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "原文明确区分两者：'whether as background activity or not'，说明tonic activity是独立于background activity的另一概念。"
+    },
+    "value_hash": "sha256:b006af06c8e7f9b5f0d2e134b039b54d9b5445d2f7e99a8fd53700a917b9c702",
+    "finished_at": 1791433267.8060246
+  },
+  {
+    "task_id": "t_ad6841feeafb4ceae560af17",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e91:duplicate:e93",
+    "target_id": "e91",
+    "candidate_id": "e93",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:9550346926502dbe7314897d7344d7ce38f14256147186e17037f410bc740b4e",
+    "started_at": 1791433265.5110269,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "学习自动机是总称，随机学习自动机是其工程领域的特定分支/变体，属于上位概念与下位特例关系。"
+    },
+    "value_hash": "sha256:2a49d852dea3ef8cd964e7b51a7c46b9eb275fb42162f2914b908ac5af77ae24",
+    "finished_at": 1791433280.8282585
+  },
+  {
+    "task_id": "t_b910887fb9c36a33b551998c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e714:duplicate:e760",
+    "target_id": "e714",
+    "candidate_id": "e760",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:8c356407fcd7c3f55ed4ed4b25243376b08c19afad92b301ceb6919ff2c13f9d",
+    "started_at": 1791433267.663997,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.92,
+      "reason": "λ-return methods是一个算法家族（含offline、online、truncated等），而offline λ-return algorithm是其中特定的一种算法，属上下位关系。"
+    },
+    "value_hash": "sha256:1d8d54954128b3710bc685b17aa1f26aa25ad3095430141b8afb75fc6f5cdc09",
+    "finished_at": 1791433285.1643105
+  },
+  {
+    "task_id": "t_cdf55f47f70ac1b0cb166bc6",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1101:duplicate:e1247",
+    "target_id": "e1101",
+    "candidate_id": "e1247",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:45ce4f48182644972258fbe5b8915a5f9ee1c9a0b6c5537b9698d990387281e3",
+    "started_at": 1791433267.8080451,
+    "status": "done",
+    "value": {
+      "label": "pass",
+      "confidence": 0.95,
+      "reason": "两者都指Mukundan和Martínez 2012年发表的同一项研究工作，Entity A的描述性特征（多目标、遗传算法奖励函数、能量效率）与MORSE一致。"
+    },
+    "value_hash": "sha256:f27d71de30bdd724163d17c6cb1559610ff315a7f7a4505f7c859f20656d7704",
+    "finished_at": 1791433274.7984812
+  },
+  {
+    "task_id": "t_cf94a157e99ab44c2e14f799",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e697:duplicate:e708",
+    "target_id": "e697",
+    "candidate_id": "e708",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:7b5d6856729d1bf928efb5db709dec9ca05669e8ddb7de6bd53f9fc2c64df52e",
+    "started_at": 1791433269.6354697,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.95,
+      "reason": "Proximal methods是通用优化方法类别，Proximal TD methods是其在RL中与Gradient-TD结合后的具体方法族，二者是上位概念与下位特例的关系。"
+    },
+    "value_hash": "sha256:a52fb9ad7f554b45f97693c0c61ab3dfe98a02441854435432fd590124944e83",
+    "finished_at": 1791433283.279996
+  },
+  {
+    "task_id": "t_d5bd65d592c96019dc9b883e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e354:duplicate:e749",
+    "target_id": "e354",
+    "candidate_id": "e749",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:65d7d68012459bee18aa9c487827aadb26912880c28551fe56723d9f9b931e88",
+    "started_at": 1791433271.3719199,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "n-step Tree Backup是固定步数n的多步算法，Tree-Backup(λ)是其资格迹扩展，二者是不同算法。"
+    },
+    "value_hash": "sha256:35536d26e18076d7987349e1c91547bacb4ae49aeb692eeee7135e50ef7f1db8",
+    "finished_at": 1791433280.6710472
+  },
+  {
+    "task_id": "t_da0a43db117c4939301bb552",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e78:duplicate:e79",
+    "target_id": "e78",
+    "candidate_id": "e79",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:ce6e6f043fcf0a61856ef397f5b50c5301046b8b3f91f4245fe8989996d942f1",
+    "started_at": 1791433274.7997954,
+    "status": "done",
+    "value": {
+      "label": "fail",
+      "confidence": 0.97,
+      "reason": "强化(reinforcement)是行为改变的过程，强化物(reinforcer)是引起该变化的刺激，书中明确区分二者。"
+    },
+    "value_hash": "sha256:349be7f95abf308285f57a9d8550ddd43eeae7ba7c7fcbcd0f312c21d5a1db5e",
+    "finished_at": 1791433277.2902296
+  },
+  {
+    "task_id": "t_da885fcdf2374cbae486b3fb",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e331:duplicate:e100",
+    "target_id": "e331",
+    "candidate_id": "e100",
+    "metric": "semantic_duplicate",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "task_hash": "sha256:e9060cc87d20dced038f84bb55044c2fe1746ffe17848fcd1cc5d3c0a04397ac",
+    "started_at": 1791433275.5832484,
+    "status": "done",
+    "value": {
+      "label": "pass",
+      "confidence": 0.97,
+      "reason": "书中将\"actor–critic architecture\"与\"actor–critic methods/algorithms\"交替使用，指同一对象（actor+critic结构的方法族）。"
+    },
+    "value_hash": "sha256:3982600e85db923d39c3c0ee4635b671a1ae7e66a51d5ba66e1901a543d7c9cc",
+    "finished_at": 1791433280.0060227
+  }
+]

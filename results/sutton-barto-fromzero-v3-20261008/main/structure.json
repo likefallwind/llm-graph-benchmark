@@ -1,0 +1,32 @@
+{
+  "ours-sutton-barto-fromzero-m3-v3": {
+    "entity_count": 1268,
+    "assertion_count": 2707,
+    "quality_assertion_count": 2707,
+    "entity_citation_presence": 1.0,
+    "assertion_citation_presence": 1.0,
+    "isolated_entity_rate": 0.179022,
+    "largest_component_ratio": 0.7705047318611987,
+    "alias_count": 3212,
+    "field_counts": {
+      "types": 1268,
+      "definition": 1268,
+      "aliases": 1258
+    },
+    "construction": {
+      "input_tokens_million": null,
+      "output_tokens_million": null,
+      "total_tokens_million": null
+    },
+    "construction_source": "/home/likefallwind/code/llm-knowledge-graph/outputs/rl-from-zero-m3-c6-20261004-pipeline-v3/runs/20261004T150935-0f11945e",
+    "documents": [
+      {
+        "document_id": "sutton-barto-2e-en-full-structured-v1",
+        "entity_count": 1268,
+        "assertion_count": 2707,
+        "largest_component_ratio": 0.770505,
+        "isolated_entity_count": 227
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "protocol": "selected-metrics-v6-semantic-duplicates",
+  "metric_versions": {
+    "semantic_duplicate": "semantic-duplicate-v1"
+  },
+  "model": "MiniMax-M3",
+  "complete": true,
+  "total": 24,
+  "done": 24,
+  "statuses": {
+    "done": 24
+  },
+  "evaluation_scope": "semantic_duplicate_only",
+  "groups": {
+    "ours-sutton-barto-fromzero-m3-v3": {
+      "semantic_duplicate": {
+        "status": "complete",
+        "na_reason": null,
+        "expected": 24,
+        "done": 24,
+        "unassessed": 0,
+        "statuses": {
+          "done": 24
+        },
+        "labels": {
+          "none": 96,
+          "duplicate": 4
+        },
+        "unresolved_targets": 0,
+        "pair_labels": {
+          "pass": 4,
+          "fail": 20
+        },
+        "numerator": 4,
+        "denominator": 100,
+        "rate": 0.04,
+        "partial_rate_judged_only": 0.04,
+        "aggregation": "entity_duplicate",
+        "uncertain_rate": 0.0,
+        "ineligible_targets": 0,
+        "pool_excluded": 0,
+        "flagged_pairs": 24,
+        "duplicates": [
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e109",
+            "candidate_id": "e362",
+            "reason": "书中'planning methods'与'planning'本质同指：规划方法即执行规划过程的算法类别，文中常互换使用，如将DP和Dyna同时称为planning methods和planning的典型。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e1101",
+            "candidate_id": "e1247",
+            "reason": "两者都指Mukundan和Martínez 2012年发表的同一项研究工作，Entity A的描述性特征（多目标、遗传算法奖励函数、能量效率）与MORSE一致。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e331",
+            "candidate_id": "e100",
+            "reason": "书中将\"actor–critic architecture\"与\"actor–critic methods/algorithms\"交替使用，指同一对象（actor+critic结构的方法族）。"
+          },
+          {
+            "document_id": "sutton-barto-2e-en-full-structured-v1",
+            "target_id": "e353",
+            "candidate_id": "e704",
+            "reason": "两者均引自Karampatziakis和Langford(2010)同一论文，'invariant updates'是'importance weight aware updates'的简称，指同一方法。"
+          }
+        ],
+        "lower_is_better": true,
+        "sampled_entities": null,
+        "field_absent": 0,
+        "atomic": {},
+        "finest_supported_type": {},
+        "whole_support_rate": null
+      }
+    }
+  },
+  "structure": {
+    "ours-sutton-barto-fromzero-m3-v3": {
+      "entity_count": 1268,
+      "assertion_count": 2707,
+      "quality_assertion_count": 2707,
+      "entity_citation_presence": 1.0,
+      "assertion_citation_presence": 1.0,
+      "isolated_entity_rate": 0.179022,
+      "largest_component_ratio": 0.7705047318611987,
+      "alias_count": 3212,
+      "field_counts": {
+        "types": 1268,
+        "definition": 1268,
+        "aliases": 1258
+      },
+      "construction": {
+        "input_tokens_million": null,
+        "output_tokens_million": null,
+        "total_tokens_million": null
+      },
+      "construction_source": "/home/likefallwind/code/llm-knowledge-graph/outputs/rl-from-zero-m3-c6-20261004-pipeline-v3/runs/20261004T150935-0f11945e",
+      "documents": [
+        {
+          "document_id": "sutton-barto-2e-en-full-structured-v1",
+          "entity_count": 1268,
+          "assertion_count": 2707,
+          "largest_component_ratio": 0.770505,
+          "isolated_entity_count": 227
+        }
+      ]
+    }
+  },
+  "updated_at": 1791433285.1749544,
+  "evaluation_usage": {
+    "request_attempts": 24,
+    "recorded_attempts": 24,
+    "failed_attempts": 0,
+    "skipped_attempts": 0,
+    "input_tokens": 81865,
+    "output_tokens": 12890,
+    "total_tokens": 94755,
+    "http_elapsed_seconds": 110.36934513296,
+    "peak_http": 6,
+    "active_http": 5,
+    "http_attempts_shared": 10099,
+    "abandoned_attempts": 0,
+    "cost_usd": null
+  },
+  "provenance": {
+    "input_hashes": {
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-fromzero-v3-20261008/expansions.json": "b3420c7c17c4ffa930070df79fdcbf0ac1f58e81bb7f8e01064005d229af3629",
+      "/home/likefallwind/code/llm-graph-benchmark/studies/rl-fromzero-v3-20261008/screening.json": "f00be79bdc784407712f056a0c43f74d974d76958d48f72734bb9bef852556ee",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/manifest.json": "0d15c56d6e62b5a99a7a199d3d872d82488e6a121ff36586aabd97d6d9071ad4",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/sampling.json": "6722d6730cdab40af6887f916cec31ff6850457271e9774c9a40a2a466a33a4e",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/systems.json": "a215c1ec98cab2f89724b04761bbf7298088aaa2484cab67341322a9ed254849",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/structure.json": "e9af05b0e0e0448802c7506cbe402fc55a747ae2ae3b19587027c05d19a7588f",
+      "/home/likefallwind/code/llm-graph-benchmark/outputs/rl-fromzero-v3-20261008-eval/config.json": "e484782c2f20d68ced8f37cacf3b587be9d4f1ff303b5ef919b9df4dfe8b8227"
+    },
+    "benchmark_hash": "sha256:83ad4f0d99f1d78d7b951b127c6877da7789d47e773e0f0308e1e08616987ddb",
+    "code_hashes": {
+      "bundle.py": "3ef185a031e838c3b8167a9a8325580c54e06c9d1e723ef178078b32bdf99983",
+      "io.py": "b86bbd1b85fbeb5b06015a5ee2a771c5c48bee96df81fd00452c733232c8a64d",
+      "identity.py": "21d44e261efa1fd1f2aac34f6109bd41907144eb4375ec72684d1be6c75bd226",
+      "metrics.py": "14cbb7c639ef572a4f68992616acf5c0a71b002112112af52738c7ee85279bc2",
+      "qa.py": "1ead76073e8ea4d36667883b7851d443eaf6ff69d934d81ddd611af11369faa7",
+      "retrieval.py": "6244e98d43f9e24d93ced83389079f4c42d65eb377b59107367b810df698eed1",
+      "validation.py": "8c03990ba73375d1bcdd1e80828d22b111de4b06449874c7f46282463561e62c",
+      "workflow/__init__.py": "91b5604e4e50a3a3c963c0672c552d79d436ff09b8da79c5b50affe0acf07a02",
+      "workflow/alignment.py": "8da12de9fb974cc42279dd3f5b4059ea434a0fd608d47af75f7868b4c2406541",
+      "workflow/description_reassessment.py": "b5065fdf1693d948e493a81c369488152d855f8a1c611808863c2c2de2e61a62",
+      "workflow/engine.py": "73baa6cf86967ce0869e73442d33d39e60a8e7535593f38ce2c63736d95857c8",
+      "workflow/granularity.py": "858b371c66102c9f5721460956350dff43ef1ef2cbe087c5575d0e83de11c737",
+      "workflow/identity_judge.py": "621be003d0279e112334aea12dfd06a2f2f3c4c5fb63f83a847662a7c51cc9bc",
+      "workflow/ledger.py": "197b43567fce0a2ce74b01e2db3558ec297581b994eebf49f6d7e4560f0799cc",
+      "workflow/legacy_judge.py": "cbb8580a5381925ede44606f1fc86d4d6242b6fb1645b247b953c0a7b947e316",
+      "workflow/legacy_render.py": "e7f6c2df789fdca68f3545f02ca4a30b0f4260b424d3cd8d7c4e69b4e2cb3afb",
+      "workflow/preparation.py": "4c595c294f83320de5d366325aeb4aafd9ce7d6586f4831c06ef900a2427acaf",
+      "workflow/protocol.py": "0a92d1a9aa7531353ae833bde2249066965ccb6df43b8176d46973a2018c7ffb",
+      "workflow/qa_reassessment.py": "264946cedb38afe24fd44af9493267d3c0d2c4b05fe5ec8de3326b26ee47cdb2",
+      "workflow/qa_support.py": "075fa121b90796922975cb286465aa50e6218a9b0dc5c97487c4ef8c4efaa400",
+      "workflow/referent.py": "5fa90762c7c1a8ffc0901e29edb142570c0fe8a40ffdef5887941bd924df6ff6",
+      "workflow/reporting.py": "7fe9253bb298e1910a0daf669636e8242d309fc0ea4743a3db3397b84151086f",
+      "workflow/semantic_duplicate.py": "641fff133e76c26c84b5c7a1ec41473a20181af9eed2acba5c283d22c3f93825",
+      "workflow/transport.py": "2a05ddad1d37de3675f085938c67e29a5749c5baa999da33279793317cf26210"
+    }
+  }
+}

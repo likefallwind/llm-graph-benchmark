@@ -89,10 +89,23 @@ llm-graph-benchmark workflow semantic-prepare --parent outputs/run-001 --expansi
 llm-graph-benchmark workflow launch --run outputs/run-001-semantic
 # 6. 合成一张总表：主运行其余指标 + 语义重复（退役指标不列入）
 llm-graph-benchmark workflow combine --parent outputs/run-001 --stage outputs/run-001-semantic --out outputs/run-001-combined
+# 可重复 --stage，例如再叠加下文的类型重判阶段
 ```
 
 semantic-prepare 会用 expansions.json 重算候选，校验初筛只包含对应目标的候选，并核对主运行的配置、benchmark、提交和冻结文件哈希。
 引用原文超过170KB的实体不进入样本和候选池，报告列出排除数。
+
+## 类型重判阶段
+
+类型版本升级后（当前为两级粒度 type-boundary-v3-two-level），已完成的运行不必整轮重跑，只重判类型：
+
+```bash
+llm-graph-benchmark workflow type-prepare --parent outputs/run-001 --run outputs/run-001-types
+llm-graph-benchmark workflow launch --run outputs/run-001-types
+llm-graph-benchmark workflow combine --parent outputs/run-001 --stage outputs/run-001-semantic --stage outputs/run-001-types --out outputs/run-001-combined
+```
+
+type-prepare 沿用父运行的实体样本，从冻结的提交重建类型任务输入，必须与父运行的类型任务逐条一致，否则拒绝。每个 combine 阶段只替换自己那一项指标；报告拒绝把三级旧类型结果与两级结果放进同一张表。
 
 ## 并发与恢复
 

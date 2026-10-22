@@ -1,0 +1,2752 @@
+{
+  "ours-sutton-barto-incremental-m3": [
+    {
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "population_entities": 1354,
+      "population_assertions": 2708,
+      "entity_ids": [
+        "e18",
+        "e205",
+        "e2147",
+        "e2153",
+        "e216",
+        "e2166",
+        "e2171",
+        "e2177",
+        "e2183",
+        "e2196",
+        "e2197",
+        "e2204",
+        "e2212",
+        "e2217",
+        "e2223",
+        "e224",
+        "e2249",
+        "e2253",
+        "e2264",
+        "e2269",
+        "e2275",
+        "e2292",
+        "e2318",
+        "e2328",
+        "e2350",
+        "e2353",
+        "e2369",
+        "e2385",
+        "e2390",
+        "e2394",
+        "e2411",
+        "e2421",
+        "e2430",
+        "e2449",
+        "e2464",
+        "e2481",
+        "e2489",
+        "e2499",
+        "e2558",
+        "e2587",
+        "e2605",
+        "e2609",
+        "e2637",
+        "e2656",
+        "e2684",
+        "e2690",
+        "e2692",
+        "e2694",
+        "e2704",
+        "e2705",
+        "e2713",
+        "e2715",
+        "e2716",
+        "e2726",
+        "e2781",
+        "e2796",
+        "e2803",
+        "e2807",
+        "e2816",
+        "e2843",
+        "e2863",
+        "e2874",
+        "e2892",
+        "e2896",
+        "e2915",
+        "e2938",
+        "e2954",
+        "e2955",
+        "e2958",
+        "e2978",
+        "e2988",
+        "e3022",
+        "e3072",
+        "e3077",
+        "e3096",
+        "e3109",
+        "e3115",
+        "e3120",
+        "e3129",
+        "e3134",
+        "e3137",
+        "e3158",
+        "e3168",
+        "e3169",
+        "e3174",
+        "e3186",
+        "e3215",
+        "e3217",
+        "e3222",
+        "e3282",
+        "e3284",
+        "e3308",
+        "e3317",
+        "e3335",
+        "e348",
+        "e402",
+        "e510",
+        "e56",
+        "e79",
+        "e89"
+      ],
+      "assertion_ids": [
+        "a3326",
+        "a3331",
+        "a3350",
+        "a3367",
+        "a3370",
+        "a3375",
+        "a3381",
+        "a3396",
+        "a3423",
+        "a3431",
+        "a3447",
+        "a3484",
+        "a3493",
+        "a3498",
+        "a3520",
+        "a3524",
+        "a3545",
+        "a3565",
+        "a3580",
+        "a3586",
+        "a3631",
+        "a3638",
+        "a3640",
+        "a3642",
+        "a3647",
+        "a3655",
+        "a3677",
+        "a3700",
+        "a3710",
+        "a3711",
+        "a3713",
+        "a3746",
+        "a3795",
+        "a3825",
+        "a3836",
+        "a3839",
+        "a3857",
+        "a3896",
+        "a3899",
+        "a3909",
+        "a3913",
+        "a3937",
+        "a3939",
+        "a3940",
+        "a3951",
+        "a3954",
+        "a3961",
+        "a3967",
+        "a3971",
+        "a3974",
+        "a3998",
+        "a4014",
+        "a4017",
+        "a4046",
+        "a4067",
+        "a4079",
+        "a4086",
+        "a4088",
+        "a4105",
+        "a4117",
+        "a4118",
+        "a4121",
+        "a4128",
+        "a4133",
+        "a4153",
+        "a4157",
+        "a4184",
+        "a4204",
+        "a4210",
+        "a4219",
+        "a4233",
+        "a4237",
+        "a4240",
+        "a4258",
+        "a4264",
+        "a4270",
+        "a4280",
+        "a4290",
+        "a4296",
+        "a4352",
+        "a4370",
+        "a4377",
+        "a4405",
+        "a4421",
+        "a4426",
+        "a4435",
+        "a4443",
+        "a4459",
+        "a4474",
+        "a4478",
+        "a4484",
+        "a4496",
+        "a4498",
+        "a4500",
+        "a4501",
+        "a4506",
+        "a4518",
+        "a4527",
+        "a4538",
+        "a4554",
+        "a4555",
+        "a4562",
+        "a4583",
+        "a4584",
+        "a4590",
+        "a4594",
+        "a4599",
+        "a4601",
+        "a4612",
+        "a4616",
+        "a4634",
+        "a4635",
+        "a4669",
+        "a4674",
+        "a4675",
+        "a4686",
+        "a4720",
+        "a4730",
+        "a4749",
+        "a4760",
+        "a4761",
+        "a4765",
+        "a4771",
+        "a4795",
+        "a4806",
+        "a4831",
+        "a4849",
+        "a4852",
+        "a4862",
+        "a4863",
+        "a4880",
+        "a4901",
+        "a4908",
+        "a4933",
+        "a4946",
+        "a4947",
+        "a4961",
+        "a4967",
+        "a4986",
+        "a5025",
+        "a5030",
+        "a5032",
+        "a5037",
+        "a5052",
+        "a5057",
+        "a5061",
+        "a5079",
+        "a5140",
+        "a5156",
+        "a5219",
+        "a5241",
+        "a5254",
+        "a5266",
+        "a5268",
+        "a5300",
+        "a5364",
+        "a5373",
+        "a5387",
+        "a5397",
+        "a5398",
+        "a5410",
+        "a5422",
+        "a5438",
+        "a5441",
+        "a5465",
+        "a5472",
+        "a5477",
+        "a5484",
+        "a5556",
+        "a5558",
+        "a5559",
+        "a5563",
+        "a5575",
+        "a5576",
+        "a5621",
+        "a5651",
+        "a5670",
+        "a5685",
+        "a5706",
+        "a5726",
+        "a5733",
+        "a5746",
+        "a5757",
+        "a5760",
+        "a5761",
+        "a5762",
+        "a5789",
+        "a5792",
+        "a5794",
+        "a5798",
+        "a5845",
+        "a5874",
+        "a5886",
+        "a5906",
+        "a5921",
+        "a5939",
+        "a5944",
+        "a5947",
+        "a5955",
+        "a5995"
+      ],
+      "excluded_fields": []
+    }
+  ],
+  "graphrag-m3-standard-en-rl": [
+    {
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "population_entities": 8317,
+      "population_assertions": 19060,
+      "entity_ids": [
+        "e_006d4ac6aa52fd975486",
+        "e_04048387cee07ad8cbfa",
+        "e_093547e763b03a1eceb7",
+        "e_0e0985febaf8b1efd23a",
+        "e_10f2a46a9ab273edaacd",
+        "e_12c87942f680dbed12ae",
+        "e_12c8ebe2f6338bbca774",
+        "e_14c0a18236c9cb9a48e2",
+        "e_171d3155064978ce097f",
+        "e_1a289daaa4587a5ef7fd",
+        "e_1a2c10ca505fa789b10a",
+        "e_1d06d29e623f9e5a08fd",
+        "e_1d96176c485c99cf409a",
+        "e_21850dccfd78dd4e3f8c",
+        "e_28533fffc16d9dc1b169",
+        "e_2fc3e60dccfcf85a75fe",
+        "e_2fd9111c25ad4ac73a60",
+        "e_31d46952622d4ef51ba5",
+        "e_35d4bed71c4e4c61c0d5",
+        "e_3607c3300287f121e2a7",
+        "e_3705103407be8abab240",
+        "e_3a2914349a21301a486e",
+        "e_3f3b186eb379bef25545",
+        "e_3ffa5d3ea89474e5df01",
+        "e_4135e74f548258879aa3",
+        "e_49b1cedd383494160376",
+        "e_50d89aa687c0b1099b5d",
+        "e_5637dc9fb28b08ed8117",
+        "e_5695b514d7e9bb195d8d",
+        "e_57a2da35cec3f350c306",
+        "e_5bde41e37bef0dfc2c78",
+        "e_5d1a66bf0f90adbce957",
+        "e_5d2d47b330f94ec329ae",
+        "e_5e85b76fd48037aa24b0",
+        "e_5edcfc957af1987716c9",
+        "e_629e316c4a1a338e0966",
+        "e_669472779dcfb0d165f3",
+        "e_67173af7d84fb6eac518",
+        "e_6cda85916fb8fa80020f",
+        "e_6cf90c6164632aa4bba7",
+        "e_6d1fb7765d7c690a37d1",
+        "e_6dc21fd7dfe810af2780",
+        "e_6e0799fc76a9c951ebfe",
+        "e_70befc1f128758aa57c6",
+        "e_711b390173b83d01144c",
+        "e_713ecef20eb3ff6539ff",
+        "e_7321737e52255e5fd115",
+        "e_74c75714327de12cb2f5",
+        "e_80ed8ebf0420f0eee9ff",
+        "e_815eb2b8af2dc3178853",
+        "e_84d1b2e2f108a18d3d00",
+        "e_8f43a557ef4a4c723eb2",
+        "e_906d04d87ade5bc5b766",
+        "e_90b74816effe736a8f26",
+        "e_93982fbcf7a362210d04",
+        "e_93a634e40c44e132a41c",
+        "e_95f0482c7c80bbb5af46",
+        "e_97a7a6013a188c04f00a",
+        "e_97c0013aca219370744b",
+        "e_9b70441dde0a208c008c",
+        "e_9e36c2a9fa5c3a7a02e9",
+        "e_9f0db8f3e0ff2896fb22",
+        "e_a04e40ee4a0adc63184e",
+        "e_a277c6299e48a12d2ef5",
+        "e_a5b4923e128dc33367b5",
+        "e_ac5390938173160b777b",
+        "e_afaff7e3e2706c276475",
+        "e_b10ad52b76705001ef42",
+        "e_b478feb7152f0d912894",
+        "e_b479501839586daed121",
+        "e_b66134ac39eb8bed6c0b",
+        "e_b883bd1d49ec0931fac2",
+        "e_b88e5174152f9c5d55c2",
+        "e_bd31fb070b75611888b2",
+        "e_c247759dc07bd7888744",
+        "e_c2546ed6f72eae0d8d30",
+        "e_c4d95cd07b9bcd6edb05",
+        "e_cb00fdee08e8cf321566",
+        "e_cb6e28b0508b9fdf2bfd",
+        "e_cb7b8d8ca6a785b5dc09",
+        "e_ce0333b57efd8c4bc756",
+        "e_cf16cd5fbcd6581f33ee",
+        "e_cff9f5cb079618c3da81",
+        "e_d1e98252db86fd0e06d5",
+        "e_d2bd4b814e902a3de09f",
+        "e_d34c401da072e596b179",
+        "e_d8febe76e89299a3fba6",
+        "e_d945c6f6abf7e48c5065",
+        "e_e32aff0f157685d0a84d",
+        "e_e57ce7d74a92de0344f8",
+        "e_e700d069465ac7d302f4",
+        "e_e719beb93a664231f725",
+        "e_e9e24dd79a44d394d7e4",
+        "e_ea4a3d67da092eebaa30",
+        "e_ea94b96c07fd75822d2c",
+        "e_ed1ef47bdb8d08450113",
+        "e_f0350e3af19dba214dd7",
+        "e_f052cd17f7c435bde15c",
+        "e_f8e582d26fbf79afce15",
+        "e_fafb52d424fe24af32c0"
+      ],
+      "assertion_ids": [
+        "a_00d425d655bad278bb40",
+        "a_05ab19f75ef66757c576",
+        "a_069e0adc344dba984aac",
+        "a_078b477712c5d8ccd02e",
+        "a_0abe730a87c4444c052b",
+        "a_0bbc7c0eb6e648a9fdee",
+        "a_0d6bbc671d281c451b5d",
+        "a_1203d6ccf7493f04479f",
+        "a_120d62577fc73ee958bf",
+        "a_143df6f59cb8b5ec213c",
+        "a_15072bc29f0c5dbd9840",
+        "a_188ebc93a95214e36bf5",
+        "a_18a7f6b493476100e3aa",
+        "a_1902a08cc1676eb59eb6",
+        "a_197ec2817c3b64726638",
+        "a_19ef9d35f0370e6e722b",
+        "a_1b0c36ead9700c45f514",
+        "a_1c0ec509be5843eb705e",
+        "a_1cde24c41a7e2fc6e298",
+        "a_1d60fce96db4fa475cd6",
+        "a_1db17c2782b0824a0528",
+        "a_1eefd0661ca01bb33849",
+        "a_1f219f7c2706eb743e24",
+        "a_212e013651d45f76309b",
+        "a_228f770ad55dd54bb3a5",
+        "a_23a0611b4a51a8ff5e9a",
+        "a_2504caf5aa3a6dd8a4be",
+        "a_2682413e8d0462236879",
+        "a_26ee5a2c25cc5d20c964",
+        "a_28c0155f23bf2b15eceb",
+        "a_2b400c20a2c3fae6857f",
+        "a_2b575d7dfc8efb73e6b2",
+        "a_2b7addf30efa4b7f2f97",
+        "a_2e866c2eeaadf4d35738",
+        "a_317fd67d578fa51decb9",
+        "a_31a6ba8416da924f1f6f",
+        "a_32549c2f9cd606fb1a52",
+        "a_32722cd930ef6fc4694b",
+        "a_33afefc1ac7ddc6c0706",
+        "a_341ec05d252589ac4d2b",
+        "a_3606de43a18abc994cea",
+        "a_36cfa4241c79de3f959b",
+        "a_3732bf0f35e75536d806",
+        "a_37fe7c3d17ea1536d1cd",
+        "a_38b5d267b90c6c6fc78d",
+        "a_3a40d551ff750c17b4cf",
+        "a_3ae90c544f8606365025",
+        "a_3bf08196982ae71f1dc8",
+        "a_3e9c37019a42e3a4f055",
+        "a_3ec80df716a5b21ca2bf",
+        "a_4057c315b40eb963c300",
+        "a_4317251102801587fab2",
+        "a_45412e66bbb911d5ffcb",
+        "a_46c9202d7dae40d458f0",
+        "a_4720da4c2cd8220116c3",
+        "a_49b2aa301c94e9f08d39",
+        "a_49c2e381c0f9b94792e4",
+        "a_4a39825b9f7445c07f9a",
+        "a_4c1012384b83e1783ede",
+        "a_4c534a9029868467a81c",
+        "a_4d684a4a1f788b046b02",
+        "a_512a83d5a52b0bb0d354",
+        "a_5187cccd1baa4d4d9cfd",
+        "a_52ceb0043ed95640a4b0",
+        "a_5326b9752e02c122efcd",
+        "a_53418a834990e381e563",
+        "a_56207b2e0add7d4496be",
+        "a_565c730cb64bd78892aa",
+        "a_5695142eeab567765bfa",
+        "a_596ef341b38f273764b5",
+        "a_5a43c7ce169aacfa22a3",
+        "a_5a755c44e111403c4f1a",
+        "a_5b9c825556f32ba94d79",
+        "a_5c5f2112acb26f2015dd",
+        "a_5c96aaabf3ad8913a16e",
+        "a_5ca77f0f336ba27ce622",
+        "a_5d661b11dd11db29bc70",
+        "a_5f989b86c827b6cc9770",
+        "a_60505f1336862536b10a",
+        "a_60bb12db1ae521473b95",
+        "a_60eae159a16357b109e8",
+        "a_643408394547679c8360",
+        "a_69c512d38f9cfe77ad28",
+        "a_6c47dcca83631f1962d3",
+        "a_6ccd8d0c083c1cc10fd9",
+        "a_6f382540bfb3bac3d8fe",
+        "a_6faeff812a5c68881433",
+        "a_7033c41b266911a93896",
+        "a_71b7fea542d18e5b97d6",
+        "a_71eb1b226dd3a8b66372",
+        "a_732a47699b01a25ac4b0",
+        "a_73a5f2721e018a9b4d57",
+        "a_74b67e9edfe6e20ee23d",
+        "a_751e599352e616beed0e",
+        "a_7916749d1f56cb8dfcc3",
+        "a_7a394801b5dcb88d329d",
+        "a_7a404f8125b46460c6b8",
+        "a_7c0e50e77bd28b722501",
+        "a_7ca0e959d394433248b0",
+        "a_7dd7be12493951d1de19",
+        "a_7decf49a4c6fb166e7b9",
+        "a_7e32207ae95203845c85",
+        "a_7e570c500c2fd96bd494",
+        "a_8000cf8d7e64c57e949f",
+        "a_8051fdb0285ee0de34f3",
+        "a_81f5aaca141e011cc3f1",
+        "a_830c01a4bf3c93060f03",
+        "a_8527f7d42fcc86cea094",
+        "a_864db7ed386f669d0fd4",
+        "a_88a3fff56395e3a92932",
+        "a_89978aae986d6f971ae5",
+        "a_8a0db0ce357f86fcdf20",
+        "a_8a524b1f2be298a07234",
+        "a_8c4ad97648b201dc5fdd",
+        "a_8e447a41dc08a57061c7",
+        "a_91045e22929f879b2e9a",
+        "a_9345c5de8eb1dcc9c727",
+        "a_93dd8d75d1f8486dfd20",
+        "a_948256642499ce413470",
+        "a_94a3f315c41bd74e56f2",
+        "a_97dc9397f79d2894e34e",
+        "a_984dce675e829c5601ab",
+        "a_98b0f24e4bfc8fb18089",
+        "a_99332a31c16844f6b1f3",
+        "a_9ac61c189d064659927c",
+        "a_9b77f3f7ac5672c332bd",
+        "a_9bb1eb28bf3f219246ba",
+        "a_9bea7524688f316e8f95",
+        "a_9e890d9ffafe12766023",
+        "a_9f92a3cd927f356cab57",
+        "a_a0d1a018c5ddcd1765a7",
+        "a_a205d3c2eae17b7a848b",
+        "a_a20cc3b7fdae965e1703",
+        "a_a372aec85cfc93a18b27",
+        "a_a6fd7204047c84c2fc6c",
+        "a_a7e5701fa093d15cc3a6",
+        "a_aab9440b5d2cefdad434",
+        "a_ab353787a4c623e84555",
+        "a_ab8f5a83458eae8053d0",
+        "a_af57c45d1b6ab89b1969",
+        "a_af688fa57c9d2fcb9546",
+        "a_b03443dfb856b3d2d708",
+        "a_b2ddcee26ec3e8ff9c7f",
+        "a_b60930ec235075737088",
+        "a_b840e8791c8d4e721d7b",
+        "a_b8b23bb671022c0c055a",
+        "a_bb13c6e420021944787f",
+        "a_bc5b9bd598acfa96be2d",
+        "a_bc7d1d88d77319e7e7c1",
+        "a_be07808161920331fe15",
+        "a_c0e4c60c005a20661e92",
+        "a_c0fc570f2fd746f0274c",
+        "a_c1aca1b749058a85a571",
+        "a_c1de65a0f9dfdde5fb00",
+        "a_c43f3f6d01606f3330c4",
+        "a_c4bc229714f222525897",
+        "a_c6e442aba2192dafe2da",
+        "a_c7533126ad124edd2775",
+        "a_c84ce16a889ba0e5585f",
+        "a_c8aabccfa4f7b94ae8a4",
+        "a_c9e3efc0ba10670f397f",
+        "a_cbdd42698c2aebab7fd6",
+        "a_d0cb1c74d3eff6b0164a",
+        "a_d209a0afb7cb3db5ceb4",
+        "a_d37fc7db39ea0340acbc",
+        "a_d418ed94d680e5e704b6",
+        "a_d56e064038430719cbee",
+        "a_d5f912bdc6c29b947b68",
+        "a_d61a6ca1baea720a7026",
+        "a_d9df5e8a4b226dd10611",
+        "a_da043ea0218af7b4a643",
+        "a_da3ef4f6f2585cfcc2c3",
+        "a_dbb349d747ca72c9dbe0",
+        "a_dcae7c7f0c8a16cc283e",
+        "a_dea18024a08787c10def",
+        "a_dee4fb497285330234e8",
+        "a_e003f74b99122069e3cf",
+        "a_e1d73ffbb2f1fa028f1a",
+        "a_e51fe44fde777973c3e7",
+        "a_e5b1bd53bd03e4500600",
+        "a_e5bb778077a2afc5c63f",
+        "a_e6522e8abfb83841485b",
+        "a_e67f49e9606b2889b44b",
+        "a_e7da934abd3706c0b32e",
+        "a_e82ba4b4e0e5d0f0c8db",
+        "a_e8414c52f7c08ae0e07e",
+        "a_e8a07b93080678688992",
+        "a_e8fe9329be33c4311f07",
+        "a_e9e39e988a1077103692",
+        "a_ebae30979d52766754b2",
+        "a_ec8dfcd9670d46bae0e1",
+        "a_eceebb3d803278f33f41",
+        "a_efd40109f2127011ed1f",
+        "a_f8aeeadcbaa56785b327",
+        "a_f942b5eb08008efa3b38",
+        "a_f9608c9c1d5e43ec7601",
+        "a_fbbf4ed7578dc5bcd3cb",
+        "a_fdb85c396ecd102544c8",
+        "a_fe8022145916fd5de45c",
+        "a_ff33503b7864ce754997"
+      ],
+      "excluded_fields": []
+    }
+  ],
+  "autoschemakg-m3-full-en-rl": [
+    {
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "population_entities": 29219,
+      "population_assertions": 10288,
+      "entity_ids": [
+        "e_024f67d3bde9f4e7f46a",
+        "e_03d333ad95185313d3aa",
+        "e_03ecde4c8eab0994c2f1",
+        "e_0aacf0e7341acc02c0cd",
+        "e_1393995046a93b04257d",
+        "e_167d439b35cdd5e6ed7c",
+        "e_16ad893cf102b8bd67e9",
+        "e_1ad23d3909b64bbc25d2",
+        "e_1ae13ac05ebff0ec980a",
+        "e_1de892c4891701aae242",
+        "e_1fde226444e3cb16cc79",
+        "e_2ae539b1e61aa50f0fe2",
+        "e_2fde944466af0e4b45b8",
+        "e_3379d4069673495d4884",
+        "e_351a1b08a2f50b3d86f4",
+        "e_36877a414b75e584a078",
+        "e_378e32bf842cf4275a25",
+        "e_37eab18ae6149fc7958b",
+        "e_39287238ece41e41d54b",
+        "e_3d5f5bb24719ffc87882",
+        "e_3ffb22a9158ffce11474",
+        "e_47fa18984cd75609cb3d",
+        "e_493eaa5f27c6cd374fc9",
+        "e_4a432389eec7fb5a1bc3",
+        "e_533064e4ca32012a8a04",
+        "e_548662f5c382c0b6b7ef",
+        "e_57f8c6426897a5a60fa8",
+        "e_586bbdeea5ada448fd72",
+        "e_589cad8c63f072f2f26d",
+        "e_5ced430af3f82e142253",
+        "e_5d42f6049d992928bdf0",
+        "e_6148dc4deda5f027b40f",
+        "e_6919c800c0c799b19d31",
+        "e_698e9a88c75ea209346e",
+        "e_6afacbb9666acd3d63c3",
+        "e_6d4dbb8cbadbe7f565e8",
+        "e_6fca8ce2e8088a00bcac",
+        "e_75ef4b8ec320ab801404",
+        "e_772fc7d96f0094e7df3d",
+        "e_7947ef8b0de1d267fc83",
+        "e_7b73fa59970f76bdac4c",
+        "e_80b6e5808d75e87622c8",
+        "e_81dc26beea57288b8e03",
+        "e_82bf0d5b9254f589007c",
+        "e_852df494d1c41b96c06c",
+        "e_857b91f1111ec9746fdd",
+        "e_85afa8906011cabebde8",
+        "e_87995981b651d6fbbd70",
+        "e_8abeea55e8757640bf8e",
+        "e_8acb1800f83ee99b9260",
+        "e_8b4495449ec64d6f8d97",
+        "e_8d686d8543f5db3777f2",
+        "e_91a8975f28832b7148a7",
+        "e_9575af6de5ad92e8e6af",
+        "e_95d4cd68ef9bc25fe860",
+        "e_974fbe8615560673a99b",
+        "e_a2197ccce7aa068a231d",
+        "e_a5534a6a7bdbcb4e90cf",
+        "e_abcfd22914ab40f9d6b5",
+        "e_ad8549cbaa687eeb4b5b",
+        "e_ade7d1dc294049f1c06d",
+        "e_af0bb5476dae2a78db74",
+        "e_b03d9e1d50a026848490",
+        "e_b4d1638520f3460c8f06",
+        "e_b5358c498c2305864c96",
+        "e_b8cb9de14c43f0905065",
+        "e_be95a89857960d621114",
+        "e_c09a9221517ecc189992",
+        "e_c0c85313e225a3c8aa95",
+        "e_c15c4dcf89533143bceb",
+        "e_c198ef8e47ab21f41c6f",
+        "e_c827fff78ccf29850f3a",
+        "e_c984104b1a195b742ed3",
+        "e_cc4efee6aa9a6f4b867d",
+        "e_d4bc466abe6dcad65ce0",
+        "e_d5ee884529e370380a94",
+        "e_d6a2c2744296dd9a424a",
+        "e_d9a79057c03ae0fe24d7",
+        "e_dd3febb0c8f786c16ec6",
+        "e_dd5231f0d91656b83bb2",
+        "e_dfa037bad822c9e4b70b",
+        "e_e125a57415d76def4d14",
+        "e_e243204c5651feb5f23b",
+        "e_e2815895e1b1bc996f41",
+        "e_e28e9e2cab5ac53bccec",
+        "e_e5126e45c4692a38819d",
+        "e_e5b0321c2f79ec25c761",
+        "e_e5d4b1fa11640b63cd55",
+        "e_e70e95f0ef0893a682cc",
+        "e_ec710d5b5cd48e95acf1",
+        "e_ed87c4e69885fdb9c2b0",
+        "e_edba23052bbc42de8c55",
+        "e_f3a235b10bc88d9c5a7e",
+        "e_f4dac9a03e6bc879850e",
+        "e_f75b16a4e4ad2ea7159b",
+        "e_f92f32fa3f94bf8aee4d",
+        "e_f9c831f5ef96d473d25d",
+        "e_fb740483b86492c1d76f",
+        "e_fca5f29444ee35b3ad4e",
+        "e_fd80b838934fdaf0b17e"
+      ],
+      "assertion_ids": [
+        "a_005a41490d2ac66ee6af",
+        "a_045adddfc2de18d14a2e",
+        "a_048d1e2a476975287480",
+        "a_05dffb8b0c42b1c2bd70",
+        "a_0618b005784ffa85061b",
+        "a_062f769b650a95040b54",
+        "a_0904a69fd63eecdadd1b",
+        "a_09a302d9ffdbcf27d335",
+        "a_0ccbcdddee2bfdfc8555",
+        "a_0ef9da596b97ac5028e6",
+        "a_0f4ffb0e3335d9f63e18",
+        "a_0f9a217196bfccd1d119",
+        "a_0fc7f1c48a1560be4a2c",
+        "a_0fdf54f32b6c3a146392",
+        "a_10a77889b84561e57296",
+        "a_10bbcadaf9e8e9935488",
+        "a_12f5d31f850f24dbf2e1",
+        "a_1373270cdbebf8017716",
+        "a_1730848d4e9e2baf3ba6",
+        "a_18cefaada05e7f1750cc",
+        "a_1b4d88da62d726dd7671",
+        "a_1b8e316c5ab8c317ac4b",
+        "a_1ece0b4812d790169323",
+        "a_20542f621fb51c1cdbc3",
+        "a_21de57d123d9944a25a6",
+        "a_21ebbcd3f492726c440d",
+        "a_24252ab0651dc3dedda4",
+        "a_26b15c77bc7ffd4f334d",
+        "a_28867da979e547be5d38",
+        "a_2b801dda2bfedd7c1b6f",
+        "a_2d43135b86916f5c617f",
+        "a_3034706b52166339562f",
+        "a_312b2abf67096cf9e974",
+        "a_31c405ab8e531d2feb64",
+        "a_341b48b3d3a12ca2ab50",
+        "a_343e07c9525d3a3e5611",
+        "a_35989fe0aff53d54e1ef",
+        "a_35c3e2ccd0bbefc3e4ce",
+        "a_35f23694bf472e428b9f",
+        "a_36f932b338d5433f54f0",
+        "a_37555d93795b01860edb",
+        "a_3903a25b3a672eb434c6",
+        "a_393ce07fc62d36511328",
+        "a_3a803e41e86ce0bd427d",
+        "a_3e3210c5097e102ba10b",
+        "a_3f7765096cd932fcf155",
+        "a_403f4cdd368668075555",
+        "a_4146c5bb17e45c7875b2",
+        "a_4364cedf16a080e55307",
+        "a_440335953743089c477c",
+        "a_45a46758abd418d57b33",
+        "a_46f26f22cb1a091c114d",
+        "a_4963a624eee92a1deeec",
+        "a_4a9705fbe83377887cf0",
+        "a_4b44ad7edb665a8905b0",
+        "a_4e1adcbfce08052676d6",
+        "a_4ea5f0cd84fde066051f",
+        "a_4f64e24af645710f13ab",
+        "a_508302b0c8ba6281fd7a",
+        "a_525885f13e4b93e4c692",
+        "a_538ef97f6eb23e2591d4",
+        "a_544f7e1e06a6bc03c62b",
+        "a_545a0180c1aea8e49648",
+        "a_55618e841849035cbdbc",
+        "a_556a4d7374eddf1334a4",
+        "a_5592c62c9b09d7ba7e02",
+        "a_56df68c2b39fe057f83b",
+        "a_59c340e5ae27f3054f6c",
+        "a_5b1e7728103353f31355",
+        "a_5b369b6ddcd162385817",
+        "a_5c4a59609190231e3694",
+        "a_5d7ac1592c5f9a003e24",
+        "a_5ef733910d3b5d09eaf1",
+        "a_5efab01bcdbd051c3814",
+        "a_614eccc4b5bc426201f9",
+        "a_61a9935913e3f4a24bc9",
+        "a_637eef16b08877f27407",
+        "a_64848ea92c4da36ee8a9",
+        "a_65fd6562b136d0286cd3",
+        "a_66975929b05d15811836",
+        "a_66dbe4a203e32f23a7d6",
+        "a_6736bc76a5f44987af99",
+        "a_6803f0a9d30979bc7c3d",
+        "a_688e5ce8545fadfaa683",
+        "a_6d8e4f7541d789909519",
+        "a_6e1684871f125bba7b28",
+        "a_6f649904ac766c959195",
+        "a_70c054aa94a9741c9404",
+        "a_7154c19ce37442b099cc",
+        "a_73ae81bd844c1a40e854",
+        "a_74199e4d4a641cfa77a7",
+        "a_74f0db4dfc5015008334",
+        "a_7654931bf965fd5314e6",
+        "a_766c0b015e8f96c0a63b",
+        "a_76f9254d45c4af04ada8",
+        "a_78349a3b2fd9f5644f08",
+        "a_78c1c8d1086dfe6bc988",
+        "a_7be6490918b0bc2a6bd8",
+        "a_7c2fa9640a2c091fd327",
+        "a_7d0ae4fcdcb9c60f7a46",
+        "a_7dda168d411382bfd8c5",
+        "a_7e5d631dcd166fbd4a07",
+        "a_8071a6d9098402f49fb4",
+        "a_821337140d6334ab668a",
+        "a_827ebd70b518cb019e4b",
+        "a_82a13eb0e178c73181f3",
+        "a_83561d35cb9d7cf6366d",
+        "a_8530c28053308012632b",
+        "a_87b33cc5725f9a8436ff",
+        "a_88f5896169c42474360d",
+        "a_89b9fdb35b9b0b62c01e",
+        "a_8af6bc620310a4f9a98b",
+        "a_8d1e294d59aa46406fd6",
+        "a_8fcfa67e92bfc314b9ef",
+        "a_911f6337be73a5fdc8c0",
+        "a_919cc37f20336ea36cf3",
+        "a_91df3d19d06fea162275",
+        "a_9329724823d452b65c42",
+        "a_93bf64f524f57cc48fc0",
+        "a_958c83927315db5fbfe2",
+        "a_984295a4ddc670a9cfbc",
+        "a_986baa6e1cf6dc49dc3c",
+        "a_9901d95950873c7e9196",
+        "a_99d3df765d00b94c26f4",
+        "a_9ba603e060fde32276c3",
+        "a_9bc88b73e599b2756e32",
+        "a_9d434022d30ed0075c75",
+        "a_9d6b0999f6c3f22e0bbf",
+        "a_a4af995e3168686844aa",
+        "a_a53fab0718757e9aac74",
+        "a_a5628e16ccdc341ebbfe",
+        "a_a6068ec530e9358c0a43",
+        "a_a808672b99f7a703a092",
+        "a_a82580e63dc602c48a72",
+        "a_a9666f9c85a1ac1075db",
+        "a_a9c69f13e70b539a59f6",
+        "a_a9e704fa06932669c063",
+        "a_ab6c07de55d0a00cdd89",
+        "a_abf50b693a12de5d367c",
+        "a_ade36ef288d709d6d6cb",
+        "a_ae20c7f01340c476b941",
+        "a_ae23048c166b567bfd92",
+        "a_af6cfaebdee97fb3367c",
+        "a_b059ff8916505d4bf6b8",
+        "a_b3394b9d2f0855ac6501",
+        "a_b44d90eeb129afa0a8b9",
+        "a_b4a33d84cc0aee563547",
+        "a_b57febe5ddf56c73d3c5",
+        "a_b7025fadb8434a3dd129",
+        "a_b79cd3c5f69fa85dfa9b",
+        "a_b88a5df4fca45e60188e",
+        "a_b8a9ea2a96bc6342a320",
+        "a_bae0fb10e661915341b9",
+        "a_bcbe66d33245da7a2a4c",
+        "a_be40cdfde97627380eb0",
+        "a_c566efb6a31e1442fcad",
+        "a_c6042011f7366d8a3d12",
+        "a_c71fe5ffc2aeaff635ea",
+        "a_c887182ed3d71aa72765",
+        "a_c894296b63ddcb6a9718",
+        "a_ca374091824af6e51e44",
+        "a_cab30857ad8412ef512b",
+        "a_ce0d745700e24cf84c09",
+        "a_ce2211759b31182a67f4",
+        "a_d15869e1dc114d7f5c80",
+        "a_d1a11b18bc1c77ca949c",
+        "a_d1fe981fdc0c57f13e86",
+        "a_d2bd21e8ae73844223f0",
+        "a_d43ec3c368be5c3b3a94",
+        "a_d5f57b7161e23d169cd0",
+        "a_d73df891777b74474ff8",
+        "a_d935c6d24f2ba6b26f38",
+        "a_d998a2ebeecbbbd7d741",
+        "a_dbb926b261760c473fb5",
+        "a_dc2f3e8939cbb9815a12",
+        "a_dcc14953e26472948001",
+        "a_de9449eb56d38406eb03",
+        "a_e50a67b44f19687d2e03",
+        "a_e66fecab897375f7e3a8",
+        "a_e6739de82d94655b9981",
+        "a_e842bbcd38c8a3f04640",
+        "a_e8f45e314a1b0a16da3d",
+        "a_e96b497afa3b067944da",
+        "a_e9cc3881e879ae1117f7",
+        "a_eaf433e35f24847ca38e",
+        "a_eba16e8395a1ed308048",
+        "a_ec3267eab93621069e6b",
+        "a_ec676446c6c2e0b30d20",
+        "a_f2873c7dff9c5734ed70",
+        "a_f5630aea8c3a79acd059",
+        "a_f66ce3efdb17cdf83bee",
+        "a_f79104f11413469a518d",
+        "a_fb086be4c6c86731ef85",
+        "a_fc0aeddebe2cbe2813a0",
+        "a_fccd75c87d0300a02270",
+        "a_fd7617ab7d3df0229e5f",
+        "a_fde4160d0db946df53b6",
+        "a_fe7ff9ad38121780e678",
+        "a_fe97c7ba9ddffe186c7d",
+        "a_ff0f475f23b340c83856"
+      ],
+      "excluded_fields": [
+        {
+          "entity_id": "e_024f67d3bde9f4e7f46a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_03d333ad95185313d3aa",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_03ecde4c8eab0994c2f1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_0aacf0e7341acc02c0cd",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1393995046a93b04257d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_167d439b35cdd5e6ed7c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_16ad893cf102b8bd67e9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1ad23d3909b64bbc25d2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1ae13ac05ebff0ec980a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1de892c4891701aae242",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1fde226444e3cb16cc79",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_2ae539b1e61aa50f0fe2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_2fde944466af0e4b45b8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3379d4069673495d4884",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_351a1b08a2f50b3d86f4",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_36877a414b75e584a078",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_378e32bf842cf4275a25",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_37eab18ae6149fc7958b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_39287238ece41e41d54b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3d5f5bb24719ffc87882",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3ffb22a9158ffce11474",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_47fa18984cd75609cb3d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_493eaa5f27c6cd374fc9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4a432389eec7fb5a1bc3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_533064e4ca32012a8a04",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_548662f5c382c0b6b7ef",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_57f8c6426897a5a60fa8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_586bbdeea5ada448fd72",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_589cad8c63f072f2f26d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5ced430af3f82e142253",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5d42f6049d992928bdf0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6148dc4deda5f027b40f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6919c800c0c799b19d31",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_698e9a88c75ea209346e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6afacbb9666acd3d63c3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6d4dbb8cbadbe7f565e8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6fca8ce2e8088a00bcac",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_75ef4b8ec320ab801404",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_772fc7d96f0094e7df3d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7947ef8b0de1d267fc83",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7b73fa59970f76bdac4c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_80b6e5808d75e87622c8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_81dc26beea57288b8e03",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_82bf0d5b9254f589007c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_852df494d1c41b96c06c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_857b91f1111ec9746fdd",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_85afa8906011cabebde8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_87995981b651d6fbbd70",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8abeea55e8757640bf8e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8acb1800f83ee99b9260",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8b4495449ec64d6f8d97",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8d686d8543f5db3777f2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_91a8975f28832b7148a7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9575af6de5ad92e8e6af",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_95d4cd68ef9bc25fe860",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_974fbe8615560673a99b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a2197ccce7aa068a231d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a5534a6a7bdbcb4e90cf",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_abcfd22914ab40f9d6b5",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ad8549cbaa687eeb4b5b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ade7d1dc294049f1c06d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_af0bb5476dae2a78db74",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b03d9e1d50a026848490",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b4d1638520f3460c8f06",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b5358c498c2305864c96",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b8cb9de14c43f0905065",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_be95a89857960d621114",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c09a9221517ecc189992",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c0c85313e225a3c8aa95",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c15c4dcf89533143bceb",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c198ef8e47ab21f41c6f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c827fff78ccf29850f3a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c984104b1a195b742ed3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_cc4efee6aa9a6f4b867d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d4bc466abe6dcad65ce0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d5ee884529e370380a94",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d6a2c2744296dd9a424a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_d9a79057c03ae0fe24d7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dd3febb0c8f786c16ec6",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dd5231f0d91656b83bb2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dfa037bad822c9e4b70b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e125a57415d76def4d14",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e243204c5651feb5f23b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e2815895e1b1bc996f41",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e28e9e2cab5ac53bccec",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e5126e45c4692a38819d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e5b0321c2f79ec25c761",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e5d4b1fa11640b63cd55",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e70e95f0ef0893a682cc",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ec710d5b5cd48e95acf1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ed87c4e69885fdb9c2b0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_edba23052bbc42de8c55",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f3a235b10bc88d9c5a7e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f4dac9a03e6bc879850e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f75b16a4e4ad2ea7159b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f92f32fa3f94bf8aee4d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f9c831f5ef96d473d25d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_fb740483b86492c1d76f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_fca5f29444ee35b3ad4e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_fd80b838934fdaf0b17e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        }
+      ]
+    }
+  ],
+  "kggen-m3-lm-based-en-rl": [
+    {
+      "document_id": "sutton-barto-2e-en-full-structured-v1",
+      "population_entities": 12339,
+      "population_assertions": 22703,
+      "entity_ids": [
+        "e_02cb2123d73d9e34c14a",
+        "e_04aa2a3c8a91b2c39c3a",
+        "e_058234be3700ff318b6d",
+        "e_07a07aa528d82791ef4f",
+        "e_07e05c1c9e281d2ef3e7",
+        "e_08c60506d1582ead446d",
+        "e_08e207acb10d0d4711ae",
+        "e_0b0c71a9e868c0e07368",
+        "e_0f759581241369a72ff7",
+        "e_1075322602c14b1d932a",
+        "e_11750f830c3809f1725c",
+        "e_1387631f50ad67204bba",
+        "e_16187ea820861aec79a0",
+        "e_188941b70e7de2e526e7",
+        "e_1904b98e318e9954d497",
+        "e_1b48bbfd048638833b0e",
+        "e_1fdbe9e9fb8113464068",
+        "e_25f6f57a5e72aab63762",
+        "e_27f1fa719a603522d903",
+        "e_28e0e6a9daa0b8b82183",
+        "e_290906ffff6f9cadde0c",
+        "e_30c6f28ea60bf36669c2",
+        "e_30f8ab40155fafcd233c",
+        "e_32735e5d4f3983f97ee8",
+        "e_328ccab2d963c0840359",
+        "e_36f6439e7508cc92b1de",
+        "e_379cf7b3634dcb489855",
+        "e_3974f233ee65e8631c66",
+        "e_3e012020ea2c0839c305",
+        "e_3f27522df7edbd3ca321",
+        "e_3fa1017ba1ca10c92111",
+        "e_3ff709d4a90811f6b1a1",
+        "e_41ce4c82855f405884ee",
+        "e_423989c47e33cfab3ba4",
+        "e_4466ced0ef4b4eeb9a9b",
+        "e_4574d33364b7fe433e3c",
+        "e_488cdf12b0adf281093f",
+        "e_48d6fd6b732734b8a3d9",
+        "e_4adbb373941fc433b66a",
+        "e_4d222bd3953083faa7a3",
+        "e_4e23f715183fbc1c0d33",
+        "e_5867dd73db78672ce19a",
+        "e_5a9dabad68c883bedc20",
+        "e_606f1372aab2baddfc6b",
+        "e_60ba6a8d09cfe19a0551",
+        "e_61b999503908216e4107",
+        "e_63fbbea056403d2c57b6",
+        "e_64eef743938c3901d850",
+        "e_65ef928f538f30d46d68",
+        "e_6644a402bf1c351509a9",
+        "e_68166c9d18f309d55451",
+        "e_72a627cae68325d77e3a",
+        "e_7318597cc998d28cba36",
+        "e_739b28fa13d9bc4f3982",
+        "e_76299b4d0d9b7157142d",
+        "e_7783b36fa1e115b79b52",
+        "e_789e1c32ad7e0fee1ccd",
+        "e_7b6e126de01032215a63",
+        "e_7bee4cde4d05046993b5",
+        "e_7e72c798f96c68296fec",
+        "e_82f07f2991fe5c7f8bc1",
+        "e_8632e2f2e077e28dc7f6",
+        "e_88d61bac621d089f84d2",
+        "e_8e2c3cc55f4d0bba8bd8",
+        "e_97622dfdd986c96fe765",
+        "e_988400d00f3d9a4da095",
+        "e_9af3548982e91b7b8a05",
+        "e_9c9b09f91f86fd415db9",
+        "e_9da48e664eea965f2e06",
+        "e_9ead7db6cb23e78ce71b",
+        "e_9f810304576b4583bbe3",
+        "e_a0753c1b69e23146d039",
+        "e_a17b1262a0366b90dc73",
+        "e_a3422a1c224cbcc23805",
+        "e_a3c46987fa8e4a3e2160",
+        "e_a580f1b9e7f50616def3",
+        "e_a5d2aa2725e163f17a5f",
+        "e_ac6bea1fad3bf04538f4",
+        "e_b32f35877ae5b5e4f9c8",
+        "e_b657f75114978b4ec0b2",
+        "e_b66b34b90e072f7e33f1",
+        "e_b6f63d3dee843af61dc0",
+        "e_b90e22c7bd105c746a20",
+        "e_bd7761ee50c1065436d3",
+        "e_beef78e92a27201e74de",
+        "e_bf1ef106daac738c11e5",
+        "e_c5c13d0355c74e82cdfa",
+        "e_c8e54e114d01015e849d",
+        "e_cd3f55c719034f0fc5ba",
+        "e_dba94484d65d63c4cae8",
+        "e_de7c3b00148d33e42016",
+        "e_e48cb304f0a7021a84c8",
+        "e_e80174fdca5348133593",
+        "e_e9819c54b9637109d065",
+        "e_ea9e8f2d382d8f0ab7ba",
+        "e_ecfd4851a5c7dec183a1",
+        "e_ed85c57585b9b94e7e8a",
+        "e_f459207e82f241210548",
+        "e_f4afa1482223c297d2ca",
+        "e_ff58604914dbe7dc1c5d"
+      ],
+      "assertion_ids": [
+        "a_0041ac5e2baab7e9eabd",
+        "a_009b8d754126d31d35fc",
+        "a_00bdaae7208120f7ec26",
+        "a_00f176b5e68ee06fc5de",
+        "a_06c06c3a871eca4303aa",
+        "a_084042d7baef801830c4",
+        "a_09008c2a1ae83ffff38d",
+        "a_0a99aca19a29e66d2516",
+        "a_0d3bb445fb8fabf49365",
+        "a_0d4d2ca9f98f73a391c7",
+        "a_0eff7a0c53ac743fd65a",
+        "a_0f5a77932e71632522e0",
+        "a_1368096b7412f61eb055",
+        "a_160b50e64bd1a0eb7871",
+        "a_162a5076ab828bbb8586",
+        "a_1879d1a8d5275b1bc440",
+        "a_19e12c240c2ce54d7ac4",
+        "a_19fa57ae245e9afdadaa",
+        "a_1b4e6a4ef3cc353f9ced",
+        "a_1bd5e356154e8b43ddf4",
+        "a_1d181074aaba10745d04",
+        "a_1d3c0b96e0a44a04d4db",
+        "a_1e33eab8c9acef1ae835",
+        "a_219833255e12bfbb0cd2",
+        "a_221ad4c55b2af3652398",
+        "a_22991898ee120ef0ed27",
+        "a_22a0f22aaf316a11a562",
+        "a_2365caf8452afffac104",
+        "a_264852d3dd953dba78b2",
+        "a_296b9530b1f360870d42",
+        "a_29c906c2520141b3e523",
+        "a_29e6e4787267965d8af7",
+        "a_29fc65bfe907b4fe300c",
+        "a_2a22dc63f22cec2fcc97",
+        "a_2a49a6d83ec82410eee3",
+        "a_2b321ab5d518ef8d256c",
+        "a_2e0d96fc7627cace9a9b",
+        "a_2eae10d871f66f2416f9",
+        "a_3169922c93c8e8c14fe9",
+        "a_3514ad94eac509eeb209",
+        "a_363c12b685fa632318f8",
+        "a_3783fde58233345fc152",
+        "a_37fa31b02366ca9ced72",
+        "a_3824e5d979749bf78f49",
+        "a_387fa306946cb6b82437",
+        "a_39100c658e23b1dd1aef",
+        "a_3962065c143c7e8ae251",
+        "a_3adde81490c0f8559b8b",
+        "a_3be9a34b6dc6bb8ac771",
+        "a_3bfb10e8310f35490588",
+        "a_3e0b726842b7e539e066",
+        "a_3f304790c736ea47701b",
+        "a_3ff555dff9144ffb0155",
+        "a_40ecac960051e29e5a27",
+        "a_433eeb291af979f7a084",
+        "a_44c7315c50921f06da8e",
+        "a_44fcabaf27eaf7d581df",
+        "a_4940f60683eb04fc789d",
+        "a_4aeb1b3ee39a88a978f5",
+        "a_4c86379d34f491615157",
+        "a_4d0388579d9d1d33d4a0",
+        "a_4d23b3335a0028c4c42c",
+        "a_4d77c2f7b2141fc74b46",
+        "a_4e3250ad72d9efd2bbc1",
+        "a_4e37b596133565284146",
+        "a_4e442ae9f74b5a0f1895",
+        "a_4f69d93fd2b8b890d9ae",
+        "a_4f89a031ab775b5cc8b3",
+        "a_50ec1d5b71fb8bbdbae9",
+        "a_50f1c3cc8fd306b58e4a",
+        "a_51ff282331323930d959",
+        "a_54f8fe480d99da2c0fde",
+        "a_560134b0d1f6a22045f7",
+        "a_564b34fabd29f2cd6dc8",
+        "a_573e11e2b6e1971b1b27",
+        "a_5b24c0dcc3edf290a63b",
+        "a_5ba61264712764f18596",
+        "a_5cdb296bb987424c983c",
+        "a_60f9fa2e527e4b963758",
+        "a_617e7adaa79054e61bcd",
+        "a_620f048734e09503f74d",
+        "a_62117b20b6896e08cf4e",
+        "a_6230a5824ece7ac9ecba",
+        "a_633d2f52aec5fd0ef88b",
+        "a_63e67b2d5a7e03a9da8a",
+        "a_644b414f2e83c6b73f93",
+        "a_67f4d21e8b5caa822701",
+        "a_683900f26916455d96fd",
+        "a_689e3261b7ada04c15ab",
+        "a_69215a331a3afa97c053",
+        "a_69eecdd5b4969fad7901",
+        "a_6a0ce179ba17cf2a5e0a",
+        "a_6a52949cb425d13a801f",
+        "a_6e12aa1af3cc310517f3",
+        "a_6f1f25619f060612ea17",
+        "a_70052383fab956539ea1",
+        "a_70b7ceb8b9e23ef075b0",
+        "a_72e32f54e4808ecfcb29",
+        "a_73332fb6f0008cd1890c",
+        "a_734c332123ae815763bb",
+        "a_749712e2b549c4fb11d1",
+        "a_751360df1fa5c35a0c5d",
+        "a_76136b49a9bcbd99ed42",
+        "a_777081ed00f01e7dacf2",
+        "a_77ede8ae32db7b2f61df",
+        "a_78332e9fcc32455a27f2",
+        "a_789eb81f07e5f6ae23d9",
+        "a_78ec9ea8a0f58349e8ba",
+        "a_790cbd8bda7e6228645f",
+        "a_79a76f2685195031f974",
+        "a_7bcd37b3dda982094f15",
+        "a_7bd7c8e334529d15064e",
+        "a_7d09940a6c6d08125e0d",
+        "a_7e370a762c5bfe35cb06",
+        "a_7e6a0e83139231549d62",
+        "a_7f213a638314ad7a0ff8",
+        "a_7fde93bfb3ae6a80974f",
+        "a_8143602b21c0fce12bf5",
+        "a_83869096869ce559baa9",
+        "a_85751c119f24b4377cb0",
+        "a_88f1ba50f03fb59e478a",
+        "a_890512384c721c9f7b89",
+        "a_899dcbdbbdd024361643",
+        "a_8a04742e7c34f3c36745",
+        "a_8c62c3c7b9a115b4427f",
+        "a_8e980c4c3986e5bd1f60",
+        "a_8fea94ec294b3ced054d",
+        "a_9172cf025195d6c8da80",
+        "a_931a1fc47f001a641c4d",
+        "a_93d8726d01bd9049add0",
+        "a_93f1bb83ff7e246c753e",
+        "a_9439f4bbd833401bc81d",
+        "a_945378d8461afda53cef",
+        "a_9475a615e5399c0c2eb4",
+        "a_948ba19716dfefff2910",
+        "a_9aab1fc1cd031465f52a",
+        "a_9d2eed43181eb39b6399",
+        "a_9d6d959071d9485e6373",
+        "a_9fa0b41e113ca078f9be",
+        "a_a134f2d4c61d532501c7",
+        "a_a1675e13d456969338af",
+        "a_a1771af7cbcbe1a71ec9",
+        "a_a42ba856cccefd553520",
+        "a_a4634e281b0a7cfa3996",
+        "a_a48a921a4b7c8d5a98f0",
+        "a_a68f7b3c05b9e2d62e35",
+        "a_a6e428b740d94857dbb8",
+        "a_a8161e7ff3d906ea0a2c",
+        "a_a9a11b1a52a11d6f58e9",
+        "a_abba174dab9d72d2b8b1",
+        "a_abbb8d52b821a8bb6a99",
+        "a_abf3644cbce7e74bfde8",
+        "a_ad39282c98de172831e3",
+        "a_b08381436d86b3ca41f9",
+        "a_b1c90bef9e66e43fc975",
+        "a_b215906ff66dc75c2ebd",
+        "a_b3272c18adebeb3ff91c",
+        "a_b5a6199c7c539e892888",
+        "a_b7e545caa5a5511cdae3",
+        "a_b9ce9496e46ad8aa057d",
+        "a_b9e0ef66ce51d1b95113",
+        "a_bf1474563883ebe8bf82",
+        "a_c2612eb0102f92af7f78",
+        "a_c4a19df62dcc1e9be446",
+        "a_c6ce50e77c925e10d5f5",
+        "a_c8af8f74b72341d99af0",
+        "a_c907181b4f062736d5db",
+        "a_c9cc0cd973e2018fe9d5",
+        "a_ca16015a56248f1947e1",
+        "a_cca5901426ef56ff104c",
+        "a_cd337fea1066c1da2568",
+        "a_cf8cbe1efb2375fe0ba7",
+        "a_d45042be9e7d0acfd72c",
+        "a_d64995486e6d4f2a58ab",
+        "a_d76ecc382dd17145f006",
+        "a_dbd331d358445ea7c31e",
+        "a_dbe1b72034fe2f6c7f90",
+        "a_dc64d97ba157068d9564",
+        "a_dd096663813451052bb8",
+        "a_ddaaf7161d925dd927ba",
+        "a_de6caeb03492f6956580",
+        "a_e0846b76c2cd8ef10d7e",
+        "a_e6029e2d5b53ed947841",
+        "a_e692db28bbe4dc3ba9e1",
+        "a_e93582ffe0d9aaec7dae",
+        "a_ec48bdcda167e04f439a",
+        "a_ed173101c1bb0c4e97ef",
+        "a_f028effdd4feb86fd5a9",
+        "a_f108f1398a5ec6e9e7dc",
+        "a_f62c107b8f7803248a95",
+        "a_f6ef66e7b918842d7821",
+        "a_f9a3d5e640df812f9bbf",
+        "a_fa6261ca9068dba54caf",
+        "a_fb42e402e480c1640a54",
+        "a_fcb9e883a090916085fa",
+        "a_fcce5a5f76bff9973feb",
+        "a_fd08b56da3007d9db2ea",
+        "a_fdb3f31f367cc25be5a5",
+        "a_fe70ae0f95c874c1cb59",
+        "a_feb1dd98c5c673bdd4fd"
+      ],
+      "excluded_fields": [
+        {
+          "entity_id": "e_02cb2123d73d9e34c14a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_02cb2123d73d9e34c14a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_04aa2a3c8a91b2c39c3a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_04aa2a3c8a91b2c39c3a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_058234be3700ff318b6d",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_058234be3700ff318b6d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_07a07aa528d82791ef4f",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_07a07aa528d82791ef4f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_07e05c1c9e281d2ef3e7",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_07e05c1c9e281d2ef3e7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_08c60506d1582ead446d",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_08c60506d1582ead446d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_08e207acb10d0d4711ae",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_08e207acb10d0d4711ae",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_0b0c71a9e868c0e07368",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_0b0c71a9e868c0e07368",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_0f759581241369a72ff7",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_0f759581241369a72ff7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1075322602c14b1d932a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1075322602c14b1d932a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_11750f830c3809f1725c",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_11750f830c3809f1725c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1387631f50ad67204bba",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1387631f50ad67204bba",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_16187ea820861aec79a0",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_16187ea820861aec79a0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_188941b70e7de2e526e7",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_188941b70e7de2e526e7",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1904b98e318e9954d497",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1904b98e318e9954d497",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1b48bbfd048638833b0e",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1b48bbfd048638833b0e",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1fdbe9e9fb8113464068",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_1fdbe9e9fb8113464068",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_25f6f57a5e72aab63762",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_25f6f57a5e72aab63762",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_27f1fa719a603522d903",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_27f1fa719a603522d903",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_28e0e6a9daa0b8b82183",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_28e0e6a9daa0b8b82183",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_290906ffff6f9cadde0c",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_290906ffff6f9cadde0c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_30c6f28ea60bf36669c2",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_30c6f28ea60bf36669c2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_30f8ab40155fafcd233c",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_30f8ab40155fafcd233c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_32735e5d4f3983f97ee8",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_32735e5d4f3983f97ee8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_328ccab2d963c0840359",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_328ccab2d963c0840359",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_36f6439e7508cc92b1de",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_36f6439e7508cc92b1de",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_379cf7b3634dcb489855",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_379cf7b3634dcb489855",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3974f233ee65e8631c66",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3974f233ee65e8631c66",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3e012020ea2c0839c305",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3e012020ea2c0839c305",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3f27522df7edbd3ca321",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3f27522df7edbd3ca321",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3fa1017ba1ca10c92111",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3fa1017ba1ca10c92111",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3ff709d4a90811f6b1a1",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_3ff709d4a90811f6b1a1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_41ce4c82855f405884ee",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_41ce4c82855f405884ee",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_423989c47e33cfab3ba4",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_423989c47e33cfab3ba4",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4466ced0ef4b4eeb9a9b",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4466ced0ef4b4eeb9a9b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4574d33364b7fe433e3c",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4574d33364b7fe433e3c",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_488cdf12b0adf281093f",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_488cdf12b0adf281093f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_48d6fd6b732734b8a3d9",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_48d6fd6b732734b8a3d9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4adbb373941fc433b66a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4adbb373941fc433b66a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4d222bd3953083faa7a3",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4d222bd3953083faa7a3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4e23f715183fbc1c0d33",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_4e23f715183fbc1c0d33",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5867dd73db78672ce19a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5867dd73db78672ce19a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5a9dabad68c883bedc20",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_5a9dabad68c883bedc20",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_606f1372aab2baddfc6b",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_606f1372aab2baddfc6b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_60ba6a8d09cfe19a0551",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_60ba6a8d09cfe19a0551",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_61b999503908216e4107",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_61b999503908216e4107",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_63fbbea056403d2c57b6",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_63fbbea056403d2c57b6",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_64eef743938c3901d850",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_64eef743938c3901d850",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_65ef928f538f30d46d68",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_65ef928f538f30d46d68",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6644a402bf1c351509a9",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_6644a402bf1c351509a9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_68166c9d18f309d55451",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_68166c9d18f309d55451",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_72a627cae68325d77e3a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_72a627cae68325d77e3a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7318597cc998d28cba36",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7318597cc998d28cba36",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_739b28fa13d9bc4f3982",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_739b28fa13d9bc4f3982",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_76299b4d0d9b7157142d",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_76299b4d0d9b7157142d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7783b36fa1e115b79b52",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7783b36fa1e115b79b52",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_789e1c32ad7e0fee1ccd",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_789e1c32ad7e0fee1ccd",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7b6e126de01032215a63",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7b6e126de01032215a63",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7bee4cde4d05046993b5",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7bee4cde4d05046993b5",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7e72c798f96c68296fec",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_7e72c798f96c68296fec",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_82f07f2991fe5c7f8bc1",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_82f07f2991fe5c7f8bc1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8632e2f2e077e28dc7f6",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8632e2f2e077e28dc7f6",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_88d61bac621d089f84d2",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_88d61bac621d089f84d2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8e2c3cc55f4d0bba8bd8",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_8e2c3cc55f4d0bba8bd8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_97622dfdd986c96fe765",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_97622dfdd986c96fe765",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_988400d00f3d9a4da095",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_988400d00f3d9a4da095",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9af3548982e91b7b8a05",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9af3548982e91b7b8a05",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9c9b09f91f86fd415db9",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9c9b09f91f86fd415db9",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9da48e664eea965f2e06",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9da48e664eea965f2e06",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9ead7db6cb23e78ce71b",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9ead7db6cb23e78ce71b",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9f810304576b4583bbe3",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_9f810304576b4583bbe3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a0753c1b69e23146d039",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a0753c1b69e23146d039",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a17b1262a0366b90dc73",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a17b1262a0366b90dc73",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a3422a1c224cbcc23805",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a3422a1c224cbcc23805",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a3c46987fa8e4a3e2160",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a3c46987fa8e4a3e2160",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a580f1b9e7f50616def3",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a580f1b9e7f50616def3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a5d2aa2725e163f17a5f",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_a5d2aa2725e163f17a5f",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ac6bea1fad3bf04538f4",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ac6bea1fad3bf04538f4",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b32f35877ae5b5e4f9c8",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b32f35877ae5b5e4f9c8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b657f75114978b4ec0b2",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b657f75114978b4ec0b2",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b66b34b90e072f7e33f1",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b66b34b90e072f7e33f1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b6f63d3dee843af61dc0",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b6f63d3dee843af61dc0",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b90e22c7bd105c746a20",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_b90e22c7bd105c746a20",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_bd7761ee50c1065436d3",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_bd7761ee50c1065436d3",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_beef78e92a27201e74de",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_beef78e92a27201e74de",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_bf1ef106daac738c11e5",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_bf1ef106daac738c11e5",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c5c13d0355c74e82cdfa",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c5c13d0355c74e82cdfa",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c8e54e114d01015e849d",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_c8e54e114d01015e849d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_cd3f55c719034f0fc5ba",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_cd3f55c719034f0fc5ba",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dba94484d65d63c4cae8",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_dba94484d65d63c4cae8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_de7c3b00148d33e42016",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_de7c3b00148d33e42016",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e48cb304f0a7021a84c8",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e48cb304f0a7021a84c8",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e80174fdca5348133593",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e80174fdca5348133593",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e9819c54b9637109d065",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_e9819c54b9637109d065",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ea9e8f2d382d8f0ab7ba",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ea9e8f2d382d8f0ab7ba",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ecfd4851a5c7dec183a1",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ecfd4851a5c7dec183a1",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ed85c57585b9b94e7e8a",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ed85c57585b9b94e7e8a",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f459207e82f241210548",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f459207e82f241210548",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f4afa1482223c297d2ca",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_f4afa1482223c297d2ca",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ff58604914dbe7dc1c5d",
+          "metric": "entity_typing",
+          "reason": "native field absent"
+        },
+        {
+          "entity_id": "e_ff58604914dbe7dc1c5d",
+          "metric": "entity_description",
+          "reason": "native field absent"
+        }
+      ]
+    }
+  ]
+}

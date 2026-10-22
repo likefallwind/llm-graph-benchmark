@@ -13,7 +13,9 @@ from .transport import write, usage_summary
 PASS = {"assertion_correctness": "correct", "entity_correctness": "correct",
         "entity_evidence": "supported", "entity_description": "supported"}
 SCOPE_ROWS = {"entity_description_only": ("整段描述", "抽样实体无描述字段数"),
-              "semantic_duplicate_only": ("语义重复",)}
+              "semantic_duplicate_only": ("语义重复",),
+              "entity_typing_only": ("类型标签兼容", "最具体正确类型", "正确且 L2 类型", "抽样实体无类型字段数")}
+STAGE_SCOPES = {"semantic_duplicate_only": "semantic_duplicate", "entity_typing_only": "entity_typing"}
 
 
 def result_for(run, task):
@@ -144,54 +146,78 @@ def report(run):
     return out
 
 
-def combine(parent, stage, out):
-    """One table: the parent's other metrics plus its semantic-duplicate stage.
+def combine(parent, stages, out):
+    """One table: the parent's other metrics plus the metrics re-judged in its stages.
 
-    Retired metrics in the parent (surface-collision splits) are dropped; no
-    label is copied between metrics, and both sources stay hash-referenced.
+    Each stage (semantic duplicates, two-level types) replaces exactly its own
+    metric. Retired metrics in the parent (surface-collision splits) are dropped;
+    no label is copied between metrics, and every source stays hash-referenced.
     """
-    parent, stage, out = Path(parent).resolve(), Path(stage).resolve(), Path(out).resolve()
+    if isinstance(stages, (str, Path)):
+        stages = [stages]
+    parent, out = Path(parent).resolve(), Path(out).resolve()
+    stages = [Path(s).resolve() for s in stages]
     if out.exists():
         raise ValueError("Use a new combined output directory")
-    pm, sm = read(parent / "manifest.json"), read(stage / "manifest.json")
-    ps, ss = read(parent / "summary.json"), read(stage / "summary.json")
-    if sm.get("evaluation_scope") != "semantic_duplicate_only":
-        raise ValueError("Stage must be a semantic-duplicate run")
-    if read(stage / "config.json")["parent"] != str(parent) or pm["benchmark_hash"] != sm["benchmark_hash"]:
-        raise ValueError("Stage was not derived from this parent run")
+    pm, ps = read(parent / "manifest.json"), read(parent / "summary.json")
     systems = read(parent / "systems.json")
-    if set(systems) != set(ss["groups"]) or set(systems) != set(ps["groups"]):
-        raise ValueError("Parent and stage systems differ")
-    grouped = {}
-    for sid in systems:
-        grouped[sid] = {m: ps["groups"][sid][m] for m in protocol.METRICS if m in ps["groups"][sid]}
-        grouped[sid]["semantic_duplicate"] = ss["groups"][sid]["semantic_duplicate"]
+    if set(systems) != set(ps["groups"]):
+        raise ValueError("Parent systems differ from its summary")
+    grouped = {sid: {m: ps["groups"][sid][m] for m in protocol.METRICS if m in ps["groups"][sid]}
+               for sid in systems}
+    versions = {m: v for m, v in pm["metric_versions"].items() if m in protocol.METRICS}
+    sources, replaced = [], set()
+    for stage in stages:
+        sm, ss = read(stage / "manifest.json"), read(stage / "summary.json")
+        metric = STAGE_SCOPES.get(sm.get("evaluation_scope"))
+        if metric is None:
+            raise ValueError("Unknown stage scope: " + str(stage))
+        if metric in replaced:
+            raise ValueError("Two stages re-judge the same metric: " + metric)
+        if read(stage / "config.json")["parent"] != str(parent) or pm["benchmark_hash"] != sm["benchmark_hash"]:
+            raise ValueError("Stage was not derived from this parent run")
+        if set(systems) != set(ss["groups"]):
+            raise ValueError("Parent and stage systems differ")
+        for sid in systems:
+            grouped[sid][metric] = ss["groups"][sid][metric]
+        versions[metric] = sm["metric_versions"][metric]
+        replaced.add(metric)
+        sources.append({"run": str(stage), "metric": metric, "protocol": sm["protocol"],
+                        "summary_sha256": sha(stage / "summary.json")})
     done = sum(g["done"] for groups in grouped.values() for g in groups.values())
     total = sum(g["expected"] for groups in grouped.values() for g in groups.values())
     summary = {
-        "protocol": protocol.VERSION, "model": pm["model"],
-        "metric_versions": {**{m: v for m, v in pm["metric_versions"].items() if m in protocol.METRICS},
-                            **sm["metric_versions"]},
+        "protocol": protocol.VERSION, "model": pm["model"], "metric_versions": versions,
         "complete": all(g["status"] != "incomplete" for groups in grouped.values() for g in groups.values()),
-        "total": total, "done": done, "evaluation_scope": "combined_parent_and_semantic_stage",
+        "total": total, "done": done, "evaluation_scope": "combined_parent_and_stages",
         "groups": grouped, "structure": ps["structure"], "updated_at": time.time(),
         "composed_from": {
             "parent": {"run": str(parent), "protocol": pm["protocol"],
                        "summary_sha256": sha(parent / "summary.json"),
                        "dropped_retired_metrics": sorted(set(ps["groups"][next(iter(systems))]) - set(protocol.METRICS))},
-            "stage": {"run": str(stage), "protocol": sm["protocol"], "summary_sha256": sha(stage / "summary.json")},
+            "stages": sources,
         },
     }
+    staged = "、".join(f"{protocol.METRICS[s['metric']]}（{versions[s['metric']]}）" for s in sources)
+    header = (f"协议：{protocol.VERSION}；模型：{pm['model']}；有效任务 {done}/{total}。"
+              f"单独阶段重评：{staged}；其余指标来自父运行（{pm['protocol']}，已退役的实体拆分不列入）。")
+    _check_type_levels(grouped)
     out.mkdir(parents=True)
     write(out / "summary.json", summary)
-    header = (f"协议：{protocol.VERSION}；模型：{pm['model']}；有效任务 {done}/{total}。"
-              f"语义重复来自单独阶段（{sm['metric_versions']['semantic_duplicate']}），"
-              f"其余指标来自父运行（{pm['protocol']}，已退役的实体拆分不列入）。")
     _render(out, header, systems, grouped, ps["structure"], None, protocol.METRICS)
     return summary
 
 
+def _check_type_levels(grouped):
+    # Three-level (L3) type granularity from earlier versions cannot share a table with two-level results.
+    for groups in grouped.values():
+        levels = set(groups.get("entity_typing", {}).get("finest_supported_type", {}))
+        if levels - set(protocol.TYPE_LEVELS) - {"none"}:
+            raise ValueError("Type granularity from an older version; re-judge types before reporting")
+
+
 def _render(target, header, systems, grouped, structures, scope, selected):
+    _check_type_levels(grouped)
     rows = []
 
     def pct(value):
@@ -229,15 +255,14 @@ def _render(target, header, systems, grouped, structures, scope, selected):
     add("L3 内完整断言正确率", lambda s: joint_cell(s, "correct_within_l3"))
     for metric in ("entity_correctness", "entity_evidence", "entity_typing"):
         add(protocol.METRICS[metric], lambda s, m=metric: group_cell(s, m))
-    for level in ("L1", "L2", "L3", "none"):
+    for level in protocol.TYPE_LEVELS + ("none",):
         add("最具体正确类型 " + level, lambda s, level=level:
             str(grouped[s]["entity_typing"]["finest_supported_type"].get(level, 0))
             if grouped[s]["entity_typing"]["status"] == "complete" else group_cell(s, "entity_typing"))
-    for levels, name in ((("L2", "L3"), "正确且 L2/L3 类型覆盖"), (("L3",), "正确且 L3 类型覆盖")):
-        add(name, lambda s, levels=levels: pct(_ratio(
-            sum(grouped[s]["entity_typing"]["finest_supported_type"].get(l, 0) for l in levels),
-            grouped[s]["entity_typing"]["sampled_entities"]))
-            if grouped[s]["entity_typing"]["status"] == "complete" else group_cell(s, "entity_typing"))
+    add("正确且 L2 类型覆盖", lambda s: pct(_ratio(
+        grouped[s]["entity_typing"]["finest_supported_type"].get("L2", 0),
+        grouped[s]["entity_typing"]["sampled_entities"]))
+        if grouped[s]["entity_typing"]["status"] == "complete" else group_cell(s, "entity_typing"))
     add("抽样实体无类型字段数", lambda s: str(grouped[s]["entity_typing"]["field_absent"]))
     add("抽样实体无描述字段数", lambda s: str(grouped[s]["entity_description"]["field_absent"]))
     add(protocol.METRICS["entity_description"], lambda s: group_cell(s, "entity_description"))
@@ -291,7 +316,7 @@ def _render(target, header, systems, grouped, structures, scope, selected):
     lines += [
         "", "## 口径", "",
         "- 类型为实体内部通过标签比例的宏平均；描述对整段判支持/不支持/不确定，分别占全部可评描述样本的比例。不确定保留在分母。缺原生字段不补造，单列字段覆盖。",
-        "- 类型粒度只统计正确标签，每实体取最具体正确类型；覆盖分母是全部抽样实体。无正确类型与无类型字段分开。",
+        "- 类型粒度分两级：L1 泛类（如概念、算法），L2 具体类别（如优化算法、概率分布）；只评价标签本身，不把实体自身的具体信息算作标签信息。只统计正确标签，每实体取最具体正确类型；覆盖分母是全部抽样实体。无正确类型与无类型字段分开。",
         "- 关系粒度读取完整原生断言（含自然语言描述），与正确性独立。",
         "- 实体正确性使用提交引用及左右各一段；实体引用、类型与描述只使用完整提交来源；断言使用引用所在完整小节。",
         "- 完整事实覆盖为参考指标：只读 BM25 Top10 图候选，不能用目标事实或原文为图补信息；同时受图谱覆盖与检索召回影响，未通过不一定表示图谱缺少该知识，不是全书召回率，不单独用于判断方法优劣。",
@@ -308,6 +333,8 @@ def _render(target, header, systems, grouped, structures, scope, selected):
         lines.append("\n本轮只重评整段描述支持，其余指标不更新；未复用历史分段判定作为新标签。")
     if scope == "semantic_duplicate_only":
         lines.append("\n本轮只评语义重复，沿用父运行的实体样本，其余指标不更新。")
+    if scope == "entity_typing_only":
+        lines.append("\n本轮只按两级粒度重评类型，沿用父运行的实体样本、类型标签与引用原文，其余指标不更新。")
     target = Path(target)
     (target / "REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
     buffer = io.StringIO(newline="")

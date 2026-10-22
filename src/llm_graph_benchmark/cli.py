@@ -58,9 +58,14 @@ def _parser() -> argparse.ArgumentParser:
     semantic.add_argument("--screening", required=True)
     semantic.add_argument("--run", required=True)
     semantic.add_argument("--workers", type=int, default=6)
-    combine = actions.add_parser("combine", help="One report from a parent run and its semantic-duplicate stage")
+    types = actions.add_parser("type-prepare", help="Freeze the parent's type tasks under the current type version")
+    types.add_argument("--parent", required=True)
+    types.add_argument("--run", required=True)
+    types.add_argument("--workers", type=int, default=6)
+    combine = actions.add_parser("combine", help="One report from a parent run and its stages")
     combine.add_argument("--parent", required=True)
-    combine.add_argument("--stage", required=True)
+    combine.add_argument("--stage", required=True, action="append",
+                         help="Semantic-duplicate or type stage; repeat for several")
     combine.add_argument("--out", required=True)
     check_benchmark = commands.add_parser("validate-benchmark")
     check_benchmark.add_argument("benchmark")
@@ -220,6 +225,9 @@ def main(argv: list[str] | None = None) -> int:
                              else sd.screening_sheet(state, json.loads(Path(args.expansions).read_text(encoding="utf-8"))))
                     write(args.out, sheet)
                     _print({"out": str(Path(args.out).resolve()), "rows": len(sheet)})
+            elif action == "type-prepare":
+                from .workflow import type_stage
+                _print(type_stage.prepare(args.parent, args.run, workers=args.workers))
             elif action == "combine":
                 result = workflow_combine(args.parent, args.stage, args.out)
                 _print({"out": str(Path(args.out).resolve()), "complete": result["complete"],

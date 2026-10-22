@@ -1,16 +1,16 @@
-"""Put the from-zero graph's combined results beside the frozen RL comparison table.
+"""Put the from-zero graph's combined results beside the RL baseline comparison table.
 
-Reads only finished report files; no API calls. Baseline columns come unchanged from
-results/sutton-barto-semantic-duplicate-20260928 (same benchmark, seed, prompts).
+Reads only finished report files; no API calls. Both sides are combined parent runs
+with their semantic-duplicate and two-level type stages (same benchmark, seed, prompts).
 """
 import csv
 from pathlib import Path
 import sys
 
 ROOT = Path(__file__).resolve().parents[2]
-NEW = ROOT / "outputs/rl-fromzero-v3-20261008-combined/comparison.csv"
-OLD = ROOT / "results/sutton-barto-semantic-duplicate-20260928/comparison.csv"
-OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "outputs/rl-fromzero-v3-20261008-combined/four-way.csv"
+NEW = ROOT / "outputs/rl-fromzero-v3-20261008-combined-v7/comparison.csv"
+OLD = ROOT / "outputs/rl-rerun-r3-combined-v7/comparison.csv"
+OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "outputs/rl-fromzero-v3-20261008-combined-v7/five-way.csv"
 OLD_OURS = "我们的方法（强化学习）"
 
 

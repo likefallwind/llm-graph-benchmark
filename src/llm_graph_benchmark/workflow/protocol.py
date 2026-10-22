@@ -4,7 +4,8 @@ import re
 
 from . import alignment, granularity, identity_judge, ledger, legacy_judge, referent
 
-VERSION = "selected-metrics-v6-semantic-duplicates"
+VERSION = "selected-metrics-v7-two-level-types"
+TYPE_LEVELS = ("L1", "L2")
 METRICS = {
     "assertion_correctness": "完整断言正确率",
     "relation_granularity": "关系表达粒度",
@@ -21,7 +22,7 @@ VERSIONS = {
     "relation_granularity": "relation-granularity-v1",
     "entity_correctness": "referent-v1.1",
     "entity_evidence": "referent-evidence-v1.1",
-    "entity_typing": "type-boundary-v2-label-binding",
+    "entity_typing": "type-boundary-v3-two-level",
     "entity_description": "description-whole-v2",
     "alias_identity": "alias-full-sources-knowledge-v2",
     "semantic_duplicate": "semantic-duplicate-v1",
@@ -36,8 +37,10 @@ SHARED = (
 TYPES = (
     "逐个检查target.types是不是实体的兼容类别，而非仅与实体相关。"
     "按原顺序返回items:[{type_id,type_text,label,reason,evidence_ids,level}]，"
-    "type_id和type_text必须原样复制对应输入标签。level为具体程度：L1泛类，"
-    "L2有意义的一般功能或领域类别，L3进一步区分功能或性质的具体类别。"
+    "type_id和type_text必须原样复制对应输入标签。level为具体程度：L1泛类，如概念、算法等；"
+    "L2具体意义的功能或领域类别，如优化算法、概率分布、强化学习算法等。"
+    "level只评价类型标签本身表达的类别有多具体：实体名称、描述和原文只用于判断是否兼容和消除歧义，"
+    "不能把实体本身的具体信息算作标签提供的信息，例如一个具体算法只被标为“算法”时仍是L1。"
     "不按标签长度评分，具体程度仅统计pass项。兼容的上位类别允许通过；"
     "只检查类型归属，不评价实体是否值得建模或是否足够独立。类别含义有歧义而无法判断时保留uncertain。"
 )
@@ -145,7 +148,7 @@ def parse(response, task):
     expected = [(x["type_id"], x["type_text"]) for x in payload["target"]["types"]]
     if [(x.get("type_id"), x.get("type_text")) for x in rows] != expected:
         raise ValueError("Type ID/text binding mismatch")
-    if any(x["label"] == "pass" and x.get("level") not in {"L1", "L2", "L3"} for x in rows):
+    if any(x["label"] == "pass" and x.get("level") not in TYPE_LEVELS for x in rows):
         raise ValueError("Missing supported type specificity")
     labels = [x["label"] for x in rows]
     value = {"items": rows} if isinstance(value, list) else value

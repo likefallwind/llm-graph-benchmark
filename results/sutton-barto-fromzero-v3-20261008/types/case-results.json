@@ -1,0 +1,4368 @@
+[
+  {
+    "task_id": "t_042f0989b1cd62c70cf866dd",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e197",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "backup diagram",
+          "label": "pass",
+          "reason": "Exact self-type; entity is a backup diagram in the RL context.",
+          "evidence_ids": [
+            "S2:P000307",
+            "S2:P000510"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "A backup diagram is a recognized concept in reinforcement learning, introduced and referenced as such throughout the chapter.",
+          "evidence_ids": [
+            "S2:P000307",
+            "S2:P000777"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "diagram",
+          "label": "pass",
+          "reason": "It is literally a diagram: 'diagrams like that above backup diagrams'.",
+          "evidence_ids": [
+            "S2:P000307",
+            "S2:P000305"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "diagrammatic method",
+          "label": "pass",
+          "reason": "It is a diagrammatic method for conveying update/backup operations in RL.",
+          "evidence_ids": [
+            "S2:P000307",
+            "S2:P000383"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "diagrammatic representation",
+          "label": "pass",
+          "reason": "It diagrammatically represents the relationships underlying Bellman/update equations.",
+          "evidence_ids": [
+            "S2:P000307",
+            "S2:P000337"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "diagrammatic tool",
+          "label": "pass",
+          "reason": "It functions as a tool used to express and understand RL update operations.",
+          "evidence_ids": [
+            "S2:P000383",
+            "S2:P000477"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "functional equation",
+          "label": "fail",
+          "reason": "A backup diagram is a graphical representation, not itself a functional equation; the text explicitly contrasts the two: 'express the nature of an update... in an equation, as above, or in a backup diagram.'",
+          "evidence_ids": [
+            "S2:P000383"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "pedagogical tool",
+          "label": "pass",
+          "reason": "It serves pedagogical purposes, e.g., exercises ask students to 'guess the diagram' and it provides 'intuitive view' of DP updates.",
+          "evidence_ids": [
+            "S2:P000477",
+            "S2:P000732",
+            "S2:P000322"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-8",
+          "type_text": "policy",
+          "label": "fail",
+          "reason": "A backup diagram is not a policy; it is a diagram that may depict the evaluation or structure of updates under a policy, but it is not itself a policy.",
+          "evidence_ids": [
+            "S2:P000305",
+            "S2:P000307"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-9",
+          "type_text": "visualization",
+          "label": "pass",
+          "reason": "It is a graphical/visual depiction of update relationships in RL.",
+          "evidence_ids": [
+            "S2:P000337",
+            "S2:P000305"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-10",
+          "type_text": "visualization tool",
+          "label": "pass",
+          "reason": "It functions as a visualization tool for understanding RL algorithms and their update operations.",
+          "evidence_ids": [
+            "S2:P000477",
+            "S2:P000510"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.8181818181818182
+  },
+  {
+    "task_id": "t_049b24be91308fcdbeda47ac",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e934",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "Background activity is a defined concept in neuroscience — the evidence provides a direct definition of it as a neuron's level of activity (usually firing rate) when not driven by task-related synaptic input.",
+          "evidence_ids": [
+            "S2:P002234"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "scientific discipline",
+          "label": "fail",
+          "reason": "Background activity is a phenomenon/property of neurons, not a scientific discipline. It is a concept studied within neuroscience, not a field of study itself.",
+          "evidence_ids": [
+            "S2:P002234"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_089e2494c483b5cbb660977b",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1267",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "person",
+          "label": "pass",
+          "reason": "Chris Watkins以\"W Watkins, Chris\"的形式出现在技术著作的索引中，并标注页码，这是对真实人物的典型引用方式，可直接语义推论其为一个人。",
+          "evidence_ids": [
+            "S2:P002892"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "researcher",
+          "label": "pass",
+          "reason": "该书为强化学习研究领域教材，Chris Watkins与其他已知研究者（Werbos, Paul; Witten, Ian）一同出现在索引中，且涉及TD学习、Q-learning等研究内容（页码21、89、320等），可直接语义推论其为该领域的研究者。",
+          "evidence_ids": [
+            "S2:P002892"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_08f8c30d00a57b812b699148",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e183",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "design principle",
+          "label": "pass",
+          "reason": "实体描述的是在设计奖励信号时应遵循的指导原则，属于设计原则的范畴。",
+          "evidence_ids": [
+            "S2:P000276"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "reward design principle",
+          "label": "pass",
+          "reason": "原文明确讨论了奖励信号设计的原则（'The reward signal is your way of communicating to the agent what you want achieved, not how you want it achieved'），与该类型完全匹配。",
+          "evidence_ids": [
+            "S2:P000276"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_09a72ef32cb194c37e460350",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e526",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "tiling configuration",
+          "label": "pass",
+          "reason": "Uniform Offset is a specific way of configuring/arranging tilings—how they are offset from each other. Evidence describes it as a particular configuration choice (e.g., 'offset uniformly in each dimension', 'Uniformly offset tilings are offset from each other by exactly this unit distance') that is chosen as part of the overall tiling setup.",
+          "evidence_ids": [
+            "S2:P001213",
+            "S2:P001217",
+            "S2:P001218"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "tiling offset strategy",
+          "label": "pass",
+          "reason": "The text explicitly discusses offset strategies for tilings, and 'In choosing a tiling strategy' directly frames offset selection as a strategy. Uniform Offset is described as one such strategy (offsetting by a displacement vector such as (1,1)), contrasted with asymmetric offset, making it clearly a tiling offset strategy.",
+          "evidence_ids": [
+            "S2:P001213",
+            "S2:P001216",
+            "S2:P001217",
+            "S2:P001218"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_0a645572ba5d29b9eeec04df",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e353",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "证据中讨论了多种用于离策略学习的方法（如Autostep、control variates等），invariant updates被作为改进离策略学习的'promising approach'提及，属于学习算法的兼容上位类别。",
+          "evidence_ids": [
+            "S2:P000838"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "update method",
+          "label": "pass",
+          "reason": "证据多次提及'updates'（如'high variance updates'），且实体本身命名为'invariant updates'，明确属于更新方法的兼容类别。",
+          "evidence_ids": [
+            "S2:P000838"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_0bd581c9e2610f85544939ad",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e591",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "function approximation method",
+          "label": "pass",
+          "reason": "Kernel-based function approximation is presented as a method for approximating functions, directly compatible with the category of a function approximation method.",
+          "evidence_ids": [
+            "S2:P001280",
+            "S2:P001286",
+            "S2:P002878"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "function approximator",
+          "label": "pass",
+          "reason": "The evidence describes how kernel regression produces function approximations, making kernel-based function approximation a compatible type of function approximator.",
+          "evidence_ids": [
+            "S2:P001286",
+            "S2:P002878"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "historical AI method classification",
+          "label": "fail",
+          "reason": "The evidence presents kernel-based function approximation as a current, active approach in a modern RL textbook (Section 9.10), with no indication that it is a historical method or a classification belonging to historical AI methods.",
+          "evidence_ids": [
+            "S2:P001280",
+            "S2:P001286"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_0ca716bb75a3e2a639f5ac9e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e181",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "action node",
+          "label": "pass",
+          "reason": "Evidence directly defines the entity as an 'action node' — a specific kind of node in the MDP transition graph (small solid circle for each state–action pair).",
+          "evidence_ids": [
+            "S2:P000269"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "backup diagram element",
+          "label": "pass",
+          "reason": "Evidence discusses the same small filled action node serving as the top node (root of the update) in Q-learning's backup diagram, confirming the action node functions as an element of backup diagrams.",
+          "evidence_ids": [
+            "S2:P000732"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "transition graph component",
+          "label": "pass",
+          "reason": "Evidence explicitly describes the action node as one of the two kinds of nodes that compose the transition graph summarizing MDP dynamics.",
+          "evidence_ids": [
+            "S2:P000269"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_1534bcb529768e47fad667f1",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e697",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "Proximal methods can be regarded as a general concept in optimization theory; the evidence situates them as a recognizable idea combined with other techniques (Gradient-TD, control variates), which is consistent with being a concept.",
+          "evidence_ids": [
+            "S2:P001670"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "The evidence describes proximal methods as being combined with Gradient-TD and control variates to produce 'more efficient methods,' directly placing them in the optimization/learning methods context. This is a compatible, more specific functional category.",
+          "evidence_ids": [
+            "S2:P001670"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_16f4e3caf4da58b0f7ea3050",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e424",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "search parameter",
+          "label": "pass",
+          "reason": "The entity 'search depth (heuristic search)' refers to the depth parameter used in heuristic search. Evidence explicitly discusses search depth as a variable/parameter ('If the search is of sufficient depth k', 'the deeper the search, the more computation is required', 'the deeper the heuristic search, the better the moves'), which is a configurable search parameter.",
+          "evidence_ids": [
+            "S2:P001003",
+            "S2:P001002",
+            "S2:P001004"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_193bb793df7428dacd98ff53",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e623",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "bandit problem",
+          "label": "fail",
+          "reason": "The evidence explicitly defines the average-reward formulation as a setting for Markov decision problems (MDPs) and control problems, not for bandit problems. No evidence links it to the bandit problem class.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001396"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "formal model",
+          "label": "pass",
+          "reason": "The evidence presents the average-reward formulation as a formal/mathematical framework with explicit equations (e.g., Eq. 10.6 for r(π)), differential value functions, and Bellman equations, qualifying it as a formal model.",
+          "evidence_ids": [
+            "S2:P001396",
+            "S2:P001398",
+            "S2:P001432"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "objective formulation",
+          "label": "pass",
+          "reason": "The evidence explicitly describes it as a 'new problem formulation based on maximizing the average reward setting per time step' and 'a setting for formulating the goal in Markov decision problems,' directly matching the label 'objective formulation.'",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001396",
+            "S2:P001432"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "problem class",
+          "label": "pass",
+          "reason": "The evidence describes the average-reward setting as 'a third classical setting—alongside the episodic and discounted settings—for formulating the goal in Markov decision problems,' clearly classifying it as a problem class.",
+          "evidence_ids": [
+            "S2:P001396"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "task property",
+          "label": "fail",
+          "reason": "The average-reward formulation is described as a problem formulation/setting, not as a property of a task. The evidence frames it as a way to formulate problems, not as an attribute or property that tasks possess.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001396",
+            "S2:P001432"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6
+  },
+  {
+    "task_id": "t_1c1581b16fb27687e743f0cf",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e228",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "mathematical theorem",
+          "label": "pass",
+          "reason": "The entity is repeatedly and explicitly referred to as a \"theorem\" (e.g., 'the policy improvement theorem carries through', 'The policy improvement theorem...are due to Bellman (1957a) and Howard (1960)', 'a theoretical guarantee called the policy improvement theorem') that provides a formal guarantee in the mathematical theory of reinforcement learning. 'Mathematical theorem' is a compatible category.",
+          "evidence_ids": [
+            "S2:P000414",
+            "S2:P000482",
+            "S2:P000526",
+            "S2:P000560",
+            "S2:P001419"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_22fc71e512b7ad9c8db30116",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e543",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "function approximator",
+          "label": "pass",
+          "reason": "The evidence directly states that ANNs (including feedforward ANNs) are used for 'nonlinear function approximation' and describes the network as approximating functions based on its inputs and connection weights.",
+          "evidence_ids": [
+            "S2:P001240",
+            "S2:P001242"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_23f8e29061fe5595a59720e0",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e387",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "backward focusing",
+          "label": "pass",
+          "reason": "The evidence explicitly names the concept: \"This general idea might be termed backward focusing of planning computations.\" The type 'backward focusing' is a direct, synonymous label for the entity.",
+          "evidence_ids": [
+            "S2:P000940"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "planning computation allocation strategy",
+          "label": "pass",
+          "reason": "The evidence describes backward focusing as a method for focusing/planning computations: \"one can work backward from arbitrary states that have changed in value, either performing useful updates or terminating the propagation.\" This constitutes a strategy for allocating planning computation.",
+          "evidence_ids": [
+            "S2:P000940",
+            "S2:P000950"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "planning strategy",
+          "label": "pass",
+          "reason": "The evidence explicitly refers to it as a strategy within state-space planning: \"In this section we have emphasized backward focusing, but this is just one strategy.\" This is a valid parent category for the entity.",
+          "evidence_ids": [
+            "S2:P000950"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_244cfb5a23c56591875a6da4",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e504",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "function property",
+          "label": "fail",
+          "reason": "A periodic function is a type/kind of function, not itself a function property. The property is 'periodicity'; 'periodic function' is the class of functions possessing that property. The type 'function property' does not correctly categorize this entity.",
+          "evidence_ids": [
+            "S2:P001159"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "mathematical concept",
+          "label": "pass",
+          "reason": "The evidence explicitly defines periodicity mathematically (f(x) = f(x + τ)) and discusses periodic functions as a mathematical object within the context of Fourier series, clearly establishing it as a mathematical concept.",
+          "evidence_ids": [
+            "S2:P001159"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_2c8a1cf4c0dfdaad7ac62a73",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e827",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "associative strength",
+          "label": "pass",
+          "reason": "The entity is explicitly named and described as an 'associative strength' in the Rescorla–Wagner model, directly matching the type label.",
+          "evidence_ids": [
+            "S2:P002083"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "model parameter",
+          "label": "pass",
+          "reason": "The evidence describes associative strength as 'a number' that is adjusted during conditioning trials, clearly functioning as a parameter of the Rescorla–Wagner model.",
+          "evidence_ids": [
+            "S2:P002083"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_39b67099f6f749892f4c9fd1",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e339",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "convergence property",
+          "label": "pass",
+          "reason": "The evidence explicitly states the error reduction property is what allows n-step TD methods to 'converge to the correct predictions under appropriate technical conditions', making it a convergence property.",
+          "evidence_ids": [
+            "S2:P000801"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "mathematical theorem",
+          "label": "pass",
+          "reason": "The property is stated as a formal mathematical inequality (equation 7.3) with a universally quantified bound, which is the form of a mathematical theorem.",
+          "evidence_ids": [
+            "S2:P000800",
+            "S2:P000801"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "task property",
+          "label": "fail",
+          "reason": "The error reduction property is a property of n-step returns (an algorithmic/estimation concept), not a property of a task. The evidence discusses it in the context of return estimation and algorithm convergence, not as a characteristic of any task.",
+          "evidence_ids": [
+            "S2:P000800",
+            "S2:P000801",
+            "S2:P001714"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_3ce3e20e12cdfedf47d5c7ed",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e21",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning paradigm",
+          "label": "fail",
+          "reason": "Artificial intelligence is not a learning paradigm; it is a broad field that encompasses learning, search, and decision making. The evidence explicitly states AI 'now includes much research looking for general principles of learning, search, and decision making,' showing it is broader than any single learning paradigm.",
+          "evidence_ids": [
+            "S2:P000017"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "scientific discipline",
+          "label": "pass",
+          "reason": "The evidence consistently treats artificial intelligence as a research field and discipline, referring to 'artificial intelligence researchers,' 'research looking for general principles,' and its progress and societal impact.",
+          "evidence_ids": [
+            "S2:P000016",
+            "S2:P000017",
+            "S2:P002718"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_3de00200c2d1a07a43e1bf99",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e276",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "policy",
+          "label": "pass",
+          "reason": "The evidence explicitly defines ε-soft policies as a kind of policy: 'defined as policies for which π(a|s) ≥ ε/|A(s)|' (S2:P000556).",
+          "evidence_ids": [
+            "S2:P000556"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "policy class",
+          "label": "pass",
+          "reason": "Evidence treats ε-soft policies as a collection/class of policies: 'The ε-greedy policies are examples of ε-soft policies' (S2:P000556) and 'the best policy among the ε-soft policies' (S2:P000567).",
+          "evidence_ids": [
+            "S2:P000556",
+            "S2:P000567"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "policy property",
+          "label": "uncertain",
+          "reason": "The definition in S2:P000556 specifies a condition (π(a|s) ≥ ε/|A(s)|) that policies must satisfy, which could be read as a property. However, throughout the evidence the entity is consistently used as a class of policies (e.g., 'among the ε-soft policies', 'choosing b to be ε-soft'), not as a property itself. The typing is ambiguous.",
+          "evidence_ids": [
+            "S2:P000556",
+            "S2:P000567",
+            "S2:P000615"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "ε-soft policy",
+          "label": "pass",
+          "reason": "The entity name matches the type label exactly, and the evidence directly discusses ε-soft policies in reinforcement learning across multiple passages, confirming full compatibility.",
+          "evidence_ids": [
+            "S2:P000556",
+            "S2:P000566",
+            "S2:P000567",
+            "S2:P000615",
+            "S2:P000719"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "uncertain"
+    },
+    "score": 0.75
+  },
+  {
+    "task_id": "t_42919ee7d4444aa44f884f8c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1240",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "intrinsic motivation concept",
+          "label": "pass",
+          "reason": "Evidence directly links curiosity in RL to intrinsic reward mechanisms: Schmidhuber proposed curiosity as a function of how quickly an agent's environment model improves (i.e., an intrinsic signal), and the passage explicitly discusses 'intrinsic reward signal' and 'intrinsic' motivation in the same context as curiosity.",
+          "evidence_ids": [
+            "S2:P002738"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_4702ed253d87bd6c7bb7d25c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e212",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "problem class",
+          "label": "pass",
+          "reason": "原文将 indefinite-horizon task 明确列为 MDP 文献中任务的一种类型（与 finite-horizon、infinite-horizon 并列），即一类问题，'problem class' 是其兼容的上位类别。",
+          "evidence_ids": [
+            "S2:P000370"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_47b005a3e5257f7e9c278775",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e78",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "behavioral concept",
+          "label": "pass",
+          "reason": "Multiple evidence passages explicitly define reinforcement as the strengthening or weakening of a pattern of behavior, confirming it is a behavioral concept in psychology.",
+          "evidence_ids": [
+            "S2:P000073",
+            "S2:P002066",
+            "S2:P002067",
+            "S2:P002211"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "Evidence consistently frames reinforcement as a core mechanism of learning (e.g., the basis of learning theories, synonymous with learning in animal learning), directly supporting it as a learning mechanism.",
+          "evidence_ids": [
+            "S2:P000073",
+            "S2:P002066",
+            "S2:P002211"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_49715e36b45ff20da27b5cce",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e905",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "A reinforcement signal is an abstract concept in reinforcement learning theory, defined and discussed in abstract/functional terms throughout the evidence.",
+          "evidence_ids": [
+            "S2:P002216",
+            "S2:P002240"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "estimation error",
+          "label": "pass",
+          "reason": "Many reinforcement signals are estimation/prediction errors; the TD error δt = Rt+1 + γV(St+1) − V(St) is explicitly described as a reinforcement signal, and reward prediction errors (RPEs) are discussed in the same context.",
+          "evidence_ids": [
+            "S2:P002217",
+            "S2:P002242",
+            "S2:P002256"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "functional equation",
+          "label": "fail",
+          "reason": "A reinforcement signal is explicitly defined as 'a positive or negative number, or zero' (a scalar), not an equation. It participates in parameter-update equations but is not itself an equation.",
+          "evidence_ids": [
+            "S2:P002216",
+            "S2:P002217"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "neural signal",
+          "label": "pass",
+          "reason": "Multiple passages explicitly describe reinforcement signals in neural terms: phasic dopamine neuron activity, octopamine in honeybees, and 'neural signals generated by many systems in the brain' are all discussed as reinforcement signals.",
+          "evidence_ids": [
+            "S2:P002240",
+            "S2:P002301",
+            "S2:P002324",
+            "S2:P002385",
+            "S2:P002400"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "problem",
+          "label": "fail",
+          "reason": "The evidence states that 'the reward signal (along with an agent's environment) defines the problem,' not the reinforcement signal. A reinforcement signal is a scalar quantity, not a problem to be solved.",
+          "evidence_ids": [
+            "S2:P002240"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "reinforcement signal",
+          "label": "pass",
+          "reason": "This is the exact entity name; the evidence extensively defines and characterizes the reinforcement signal concept.",
+          "evidence_ids": [
+            "S2:P002216",
+            "S2:P002217",
+            "S2:P002240"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "reward signal",
+          "label": "uncertain",
+          "reason": "The evidence explicitly and repeatedly states that 'The distinction between reward signals and reinforcement signals is a crucial point,' treating them as distinct concepts. However, for some algorithms 'the reinforcement signal is the same as the reward signal.' They are closely related sibling concepts that can coincide, making the type assignment ambiguous.",
+          "evidence_ids": [
+            "S2:P002216",
+            "S2:P002217",
+            "S2:P002240",
+            "S2:P002242"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5714285714285714
+  },
+  {
+    "task_id": "t_4c31dc9535ed731e7c15ddb5",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e974",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "neural activity",
+          "label": "pass",
+          "reason": "Presynaptic activity is explicitly described as a form of neural activity—the 'level of activity arriving at that synapse' in a neural circuit. The broader category 'neural activity' is a compatible supertype for this specific form of synaptic-level neural activity.",
+          "evidence_ids": [
+            "S2:P002335",
+            "S2:P002336"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_4e75b681087dcdab282c7f25",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e489",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "benchmark",
+          "label": "pass",
+          "reason": "The 1000-state Random Walk is repeatedly used as a standard problem to compare and evaluate different RL methods (state aggregation, Fourier basis, polynomial basis, tile coding, n-step TD, etc.), functioning as a benchmark.",
+          "evidence_ids": [
+            "S2:P001135",
+            "S2:P001140",
+            "S2:P001184",
+            "S2:P001187",
+            "S2:P001211"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "task",
+          "label": "pass",
+          "reason": "Evidence explicitly refers to it as 'the 1000-state random walk task', confirming it is categorized as a task in the RL context.",
+          "evidence_ids": [
+            "S2:P001140"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "test problem",
+          "label": "pass",
+          "reason": "The 1000-state Random Walk is used as a test problem to evaluate and illustrate the behavior of various algorithms (semi-gradient TD, gradient Monte Carlo, state aggregation, tile coding, etc.), consistent with a 'test problem' classification.",
+          "evidence_ids": [
+            "S2:P001135",
+            "S2:P001140",
+            "S2:P001184",
+            "S2:P001187",
+            "S2:P001211"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_4f32657b10fcb1821ea61119",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e816",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "behavioral concept",
+          "label": "pass",
+          "reason": "Third-order conditioning is described in the evidence as a classical conditioning phenomenon involving learned behavioral responses (e.g., salivation CRs), making \"behavioral concept\" a compatible upper-level category.",
+          "evidence_ids": [
+            "S2:P002077"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_52e6403419ea75776cfcfa6a",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e963",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "behavioral concept",
+          "label": "uncertain",
+          "reason": "证据主要描述 instruction cue 是一种实验中的光刺激及其功能（指示按哪个杠杆），而非一个描述行为或心理过程的抽象行为概念。'behavioral concept' 通常指学习、强化、条件作用等行为学抽象概念，而本实体在证据中体现为一种具体的实验刺激角色，类别归属存在歧义。",
+          "evidence_ids": [
+            "S2:P002272",
+            "S2:P002274"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "experimental stimulus",
+          "label": "pass",
+          "reason": "证据明确指出 instruction cue 是实验中照亮灯光的刺激（'Illuminating one of these lights was an instruction cue'），用于指示哪个杠杆会产生果汁奖励，完全符合 experimental stimulus 的定义。",
+          "evidence_ids": [
+            "S2:P002272",
+            "S2:P002274"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "uncertain"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_581a06c1bb10439270f81d1c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1145",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "criterion",
+          "label": "pass",
+          "reason": "CTR is described as the optimization objective to be maximized, functioning as a criterion/standard in the contextual bandit problem.",
+          "evidence_ids": [
+            "S2:P002596"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "performance metric",
+          "label": "pass",
+          "reason": "CTR is explicitly used 'to measure the performance of the policies' and is directly called 'the CTR metric' in the evidence.",
+          "evidence_ids": [
+            "S2:P002603"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_5af4bf33a5a06a95457c4f70",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e547",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "neural network component",
+          "label": "pass",
+          "reason": "证据明确指出 semi-linear unit 是 feedforward ANN 中的单元（unit），计算加权和并应用非线性激活函数，是神经网络的组成部分。",
+          "evidence_ids": [
+            "S2:P001242"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_5bc85e437b7dbf65a599cd31",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e109",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "approximate solution method",
+          "label": "uncertain",
+          "reason": "Evidence shows planning methods like dynamic programming are used as solution methods for RL problems, and S2:P001478 discusses them in a function-approximation context. However, the evidence does not directly characterize planning methods as 'approximate' (S2:P000103 even refers to the 'tabular' setting, where exact solutions are possible), so the 'approximate' qualifier is not clearly supported.",
+          "evidence_ids": [
+            "S2:P000103",
+            "S2:P001478"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "planning method",
+          "label": "pass",
+          "reason": "Both evidence pieces directly refer to 'planning methods' (e.g., 'planning methods (such as dynamic programming)' and 'planning methods, such as dynamic programming'), which matches the type exactly.",
+          "evidence_ids": [
+            "S2:P000103",
+            "S2:P001478"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "problem class",
+          "label": "fail",
+          "reason": "The evidence consistently treats planning methods as solution/computational methods (alongside Monte Carlo and temporal-difference methods), not as problem classes. There is no support for categorizing planning methods as a problem class.",
+          "evidence_ids": [
+            "S2:P000103",
+            "S2:P001478"
+          ],
+          "level": null
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.3333333333333333
+  },
+  {
+    "task_id": "t_5d2465c7716b23886df972a7",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e595",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "estimation method",
+          "label": "pass",
+          "reason": "The equation 9.25 updates parameters w to better estimate the value function v̂(S_t, w), which is an estimation/learning update rule. The surrounding text describes it as a 'general n-step learning rule' for valuing states, confirming it is an estimation method.",
+          "evidence_ids": [
+            "S2:P001290",
+            "S2:P001291"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "multi-step bootstrapping method",
+          "label": "pass",
+          "reason": "The rule is an n-step learning rule that replaces the n-step semi-gradient TD update (eq. 9.15), using the n-step return G_{t:t+n} which bootstraps from future value estimates when n < T−t. This is a multi-step bootstrapping method in the standard TD sense.",
+          "evidence_ids": [
+            "S2:P001290",
+            "S2:P001291",
+            "S2:P001294"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_60caa80acf5244dd9a59c532",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e777",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "historical AI method classification",
+          "label": "fail",
+          "reason": "Policy parameterization is a concept/technique, not a method. The evidence discusses it as a representational approach with theoretical properties (continuity, convergence), not as a discrete historical method. 'Historical AI method classification' does not describe what policy parameterization is or what category it belongs to; it reads as a meta-level metadata tag rather than a compatible entity type.",
+          "evidence_ids": [],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "policy",
+          "label": "pass",
+          "reason": "Policy parameterization is a direct aspect/representation of a policy. The evidence describes it in the context of defining the policy (e.g., 'continuity of the policy dependence on the parameters') and is a compatible superordinate category for the entity.",
+          "evidence_ids": [
+            "S2:P001954"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_65b5688ba6b00f324fb3911e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1101",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "research work",
+          "label": "pass",
+          "reason": "Mukundan and Martínez (2012) is described as taking a project forward by investigating learning controllers with additional actions, performance criteria, and reward functions, which is clearly a research work/study.",
+          "evidence_ids": [
+            "S2:P002510",
+            "S2:P002511"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_6a18527979ae15bc332e04d6",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e354",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "Entity is explicitly called an algorithm in the section title and text. It is a learning method for value functions in RL.",
+          "evidence_ids": [
+            "S2:P000840",
+            "S2:P000841",
+            "S2:P000842"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "multi-step bootstrapping method",
+          "label": "pass",
+          "reason": "The evidence describes it as an n-step method that bootstraps from estimated values of unselected actions over multiple time steps.",
+          "evidence_ids": [
+            "S2:P000840",
+            "S2:P000841",
+            "S2:P000842",
+            "S2:P000871"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "n-step tree-backup update",
+          "label": "pass",
+          "reason": "The entity name itself is 'n-step Tree Backup Algorithm,' and evidence directly refers to n-step tree-backup updates as the core mechanism.",
+          "evidence_ids": [
+            "S2:P000840",
+            "S2:P000842",
+            "S2:P000854",
+            "S2:P000871"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "off-policy method",
+          "label": "pass",
+          "reason": "Section 7.5 is titled 'Off-policy Learning Without Importance Sampling: The n-step Tree Backup Algorithm,' directly classifying it as an off-policy method.",
+          "evidence_ids": [
+            "S2:P000840",
+            "S2:P000841",
+            "S2:P000871",
+            "S2:P001448"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "optimization method",
+          "label": "uncertain",
+          "reason": "The algorithm uses gradient-based updates (S2:P001448), which involve optimization, but the evidence does not characterize it primarily as an 'optimization method'; its primary identity is as an RL learning algorithm.",
+          "evidence_ids": [
+            "S2:P001448"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "tree-backup update",
+          "label": "pass",
+          "reason": "The algorithm is directly described as being based on tree-backup updates, with extensive discussion of the tree-backup update mechanism in the evidence.",
+          "evidence_ids": [
+            "S2:P000842",
+            "S2:P000854",
+            "S2:P000871",
+            "S2:P002890"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "update operation",
+          "label": "pass",
+          "reason": "The evidence extensively describes the algorithm in terms of performing updates (backup updates, value updates), and 'update operation' is a compatible parent category.",
+          "evidence_ids": [
+            "S2:P000842",
+            "S2:P000854",
+            "S2:P001448"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "时序差分学习",
+          "label": "pass",
+          "reason": "The n-step tree backup algorithm is a form of temporal-difference learning, using backup diagrams and bootstrapping from temporally adjacent estimates; it is discussed alongside n-step TD methods and related to TD learning in the index.",
+          "evidence_ids": [
+            "S2:P000842",
+            "S2:P000860",
+            "S2:P001692",
+            "S2:P002890",
+            "S2:P002892"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "uncertain"
+    },
+    "score": 0.875
+  },
+  {
+    "task_id": "t_6bcd41e7ce8665d79a948b34",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e513",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "problem",
+          "label": "pass",
+          "reason": "Ringing is described in the evidence as a difficulty/issue ('have trouble with discontinuities', 'difficult to avoid') in Fourier basis approximation, making 'problem' a compatible (though broad) category for this artifact.",
+          "evidence_ids": [
+            "S2:P001183"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_6bfeaef2b1d38f6c025f8a24",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e466",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "optimization concept",
+          "label": "pass",
+          "reason": "Global optimum is a fundamental concept in optimization, describing the best achievable solution (e.g., the weight vector w* that minimizes VE over all possible w), which is exactly what the evidence illustrates.",
+          "evidence_ids": [
+            "S2:P001087"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_6ed04e86c3d29925b4d7c9a9",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e501",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "function approximator",
+          "label": "pass",
+          "reason": "The evidence explicitly describes the Fourier basis as a 'linear function approximation method' (S2:P001159) and discusses its role in function approximation for reinforcement learning (S2:P001303, S2:P002878). 'Function approximator' is a compatible (slightly broader) category for this entity.",
+          "evidence_ids": [
+            "S2:P001159",
+            "S2:P001303",
+            "S2:P002878"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "historical AI method classification",
+          "label": "fail",
+          "reason": "No evidence frames the Fourier basis (in RL) as a 'historical AI method classification.' While the underlying Fourier series is 'time-honored' (S2:P001159) and it was introduced for RL by Konidaris et al. (2011) (S2:P001312), the provided text treats it as an active, practical method for function approximation, not as a historical classification or category of AI methods.",
+          "evidence_ids": [
+            "S2:P001159",
+            "S2:P001312"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_6f61a29abf553131b11d4391",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e742",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "estimation method",
+          "label": "pass",
+          "reason": "PTD(λ) is described as a method that makes value estimate updates using provisional weights; it is a method for value estimation in reinforcement learning, compatible with the broad category 'estimation method'.",
+          "evidence_ids": [
+            "S2:P001869"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "off-policy method",
+          "label": "pass",
+          "reason": "The evidence explicitly groups PTD(λ) among 'new off-policy methods' and notes they involve importance sampling, which is characteristic of off-policy methods.",
+          "evidence_ids": [
+            "S2:P001869"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_796f45e3791fe3b58673a006",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e808",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning paradigm",
+          "label": "pass",
+          "reason": "Delay conditioning is explicitly described as one of the 'common types of classical conditioning experiments,' and classical conditioning is a learning paradigm. The label is a compatible upper-level category.",
+          "evidence_ids": [
+            "S2:P002071",
+            "S2:P002072"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_7aa7bf35410b69e471173dd0",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e331",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "action-value method",
+          "label": "fail",
+          "reason": "Evidence S2:P002044 explicitly contrasts policy-gradient methods (which include actor-critic) with action-value methods, stating they have 'a significantly different set of strengths and weaknesses.' S2:P000774 presents actor-critic as a separate 'third way' from action-value TD control methods. They are not action-value methods.",
+          "evidence_ids": [
+            "S2:P002044",
+            "S2:P000774"
+          ],
+          "level": null
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "actor-critic method",
+          "label": "pass",
+          "reason": "This is trivially compatible as it matches the entity's own name. Multiple passages (S2:P002001, S2:P002002, S2:P002044) describe actor-critic methods directly.",
+          "evidence_ids": [
+            "S2:P002001",
+            "S2:P002002",
+            "S2:P002044"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "historical AI method classification",
+          "label": "pass",
+          "reason": "S2:P002052 states actor-critic methods 'were among the earliest to be investigated in reinforcement learning' and provides historical references (Witten, 1977; Barto et al., 1983; Sutton, 1984). S2:P001918 also discusses their historical roots. Reinforcement learning falls under AI, and the entity is clearly treated as a historically significant method classification.",
+          "evidence_ids": [
+            "S2:P002052",
+            "S2:P001918"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "S2:P002044 describes actor-critic methods as learning approximations to both policy and value functions. S2:P002081 describes the critic learning to evaluate the actor's policy. S2:P002002 describes the method learning and assessing actions. These are learning algorithms.",
+          "evidence_ids": [
+            "S2:P002044",
+            "S2:P002081",
+            "S2:P002002"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "S2:P002044 states policy gradient methods (including actor-critic) optimize performance via the policy gradient theorem, and S2:P001936 defines actor-critic methods under the policy gradient framework for optimizing parameterized policies with respect to performance measures.",
+          "evidence_ids": [
+            "S2:P002044",
+            "S2:P001936"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "problem class",
+          "label": "fail",
+          "reason": "Actor-critic methods are presented throughout the evidence as solution methods/algorithms, not as a class of problems. They are a method family, not a problem to be solved.",
+          "evidence_ids": [
+            "S2:P002044",
+            "S2:P001936",
+            "S2:P000774"
+          ],
+          "level": null
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "reinforcement learning method family",
+          "label": "pass",
+          "reason": "S2:P000774 introduces actor-critic methods as a way to extend TD methods to control in reinforcement learning. S2:P002052 explicitly states 'Actor–critic methods were among the earliest to be investigated in reinforcement learning.' They are clearly a reinforcement learning method family.",
+          "evidence_ids": [
+            "S2:P000774",
+            "S2:P002052"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "时序差分学习",
+          "label": "fail",
+          "reason": "S2:P000774 presents actor-critic as a 'third way' to extend TD methods, distinct from the TD control methods discussed. S2:P002044 and S2:P001936 classify actor-critic as a policy gradient method, not a TD learning method. S2:P002081 states the critic 'uses a TD method' as a component, meaning actor-critic employs TD learning but is not itself a temporal difference learning method.",
+          "evidence_ids": [
+            "S2:P000774",
+            "S2:P002044",
+            "S2:P001936",
+            "S2:P002081"
+          ],
+          "level": null
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.625
+  },
+  {
+    "task_id": "t_7abbafdd5fb1201a3a3580a2",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e830",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "environment model",
+          "label": "fail",
+          "reason": "The response-generation mechanism is a component that maps internal associative-strength values to conditioned responses (S2:P002087), not a model of the environment. The Rescorla–Wagner model itself is an associative learning model, and the response-generation mechanism specifically concerns translating model-internal values into behavioral outputs, not modeling environmental dynamics.",
+          "evidence_ids": [
+            "S2:P002087"
+          ],
+          "level": null
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "modeling concept",
+          "label": "pass",
+          "reason": "The evidence describes the response-generation mechanism as a theoretical/functional construct—'a way of mapping values of V s to CRs' (S2:P002087)—which is a modeling concept used within the associative learning framework.",
+          "evidence_ids": [
+            "S2:P002087",
+            "S2:P002137"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "response-generation mechanism",
+          "label": "pass",
+          "reason": "The evidence directly uses this exact term: 'the model needs a response-generation mechanism' (S2:P002087) and 'different response-generation mechanisms that translate US predictions into CR profiles' (S2:P002137). The label matches the entity's name and the concept described in the text.",
+          "evidence_ids": [
+            "S2:P002087",
+            "S2:P002137"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_7ae9539fa4d96f260be2befe",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e942",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "neuroscientist",
+          "label": "pass",
+          "reason": "Evidence S2:P002247 explicitly calls Wolfram Schultz a \"neuroscientist\" (\"in the laboratory of neuroscientist Wolfram Schultz\"), and S2:P002251 describes his experimental work on dopamine neuron activity, consistent with this label.",
+          "evidence_ids": [
+            "S2:P002247",
+            "S2:P002251"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "researcher",
+          "label": "pass",
+          "reason": "\"Researcher\" is a compatible broader category for \"neuroscientist\"; S2:P002251 describes \"experiments\" by \"Schultz and colleagues\" studying dopamine neuron activity, supporting his role as an active researcher.",
+          "evidence_ids": [
+            "S2:P002251",
+            "S2:P002247"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_7f1b2e70db549ae4aaa1941e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e818",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "formal model",
+          "label": "pass",
+          "reason": "The entity is consistently described as a 'model' that formally extends the Rescorla–Wagner model, makes predictions, and accounts for conditioning phenomena.",
+          "evidence_ids": [
+            "S2:P002088",
+            "S2:P002101",
+            "S2:P002138",
+            "S2:P002191"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "The text explicitly contrasts models with and without 'a mechanism' for phenomena like higher-order conditioning, and the TD model provides such a learning mechanism through bootstrapping, prediction error, and eligibility traces.",
+          "evidence_ids": [
+            "S2:P002101",
+            "S2:P002126",
+            "S2:P002336"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "learning rule",
+          "label": "pass",
+          "reason": "Multiple passages directly equate or describe the TD model as a 'learning rule' (e.g., 'using a learning rule like the TD model of classical conditioning'; 'the critic unit's learning rule is essentially the TD model of classical conditioning'), and it is identified as the semi-gradient-descent TD(λ) algorithm.",
+          "evidence_ids": [
+            "S2:P002125",
+            "S2:P002132",
+            "S2:P002247",
+            "S2:P002330",
+            "S2:P002336"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_7f4908dd8b3aa7c3745f2d4c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e125",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "probability distribution",
+          "label": "pass",
+          "reason": "The evidence explicitly identifies the Normal (Gaussian) distribution as a probability distribution, discussing its probability density function and its use for generating values/rewards/actions. This is a direct, compatible category.",
+          "evidence_ids": [
+            "S2:P000127",
+            "S2:P000128",
+            "S2:P002027",
+            "S2:P002032"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_81b163cc93d8fcaf05eefa61",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e525",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "problem",
+          "label": "pass",
+          "reason": "The evidence describes diagonal artifacts as undesirable effects ('These artifacts can be avoided') that cause 'substantial variations in the generalization,' characterizing them as issues to be mitigated in tile coding design.",
+          "evidence_ids": [
+            "S2:P001213",
+            "S2:P001216"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "tiling artifact",
+          "label": "pass",
+          "reason": "The evidence directly and repeatedly describes 'diagonal artifacts' as artifacts arising from the tiling process in tile coding, specifically when tilings are uniformly offset.",
+          "evidence_ids": [
+            "S2:P001213",
+            "S2:P001216",
+            "S2:P001218"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_82af8891dfd416610faca14b",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e744",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "证据描述provisional weights是off-policy学习方法(PTD(λ), PQ(λ))中用于追踪和可能撤回更新的机制，是学习过程中的功能性组件，与'learning mechanism'这一功能类别兼容。",
+          "evidence_ids": [
+            "S2:P001869"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "provisional weight",
+          "label": "pass",
+          "reason": "证据直接提到'provisional weights'作为一概念，与目标实体名称完全一致，明确兼容。",
+          "evidence_ids": [
+            "S2:P001869"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_88afd033f8ff3d7266efec65",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e147",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "behavioral concept",
+          "label": "fail",
+          "reason": "Stochastic gradient ascent is a mathematical optimization technique, not a behavioral concept (a term used in behavioral/psychological sciences). The evidence frames it purely in terms of gradients, performance measures, and parameter updates, with no connection to behavior or behavioral science.",
+          "evidence_ids": [],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "Evidence directly describes it as a 'learning algorithm' basis: 'a natural learning algorithm for soft-max action preferences based on the idea of stochastic gradient ascent' and 'We are now ready to derive our first policy-gradient learning algorithm' using 'our overall strategy of stochastic gradient ascent.'",
+          "evidence_ids": [
+            "S2:P000179",
+            "S2:P001965"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "Stochastic gradient ascent functions as the underlying mechanism that enables learning in the gradient bandit algorithm and policy gradient methods. The evidence shows it is the mechanism by which action preferences and policy parameters are updated to maximize performance.",
+          "evidence_ids": [
+            "S2:P000191",
+            "S2:P000204",
+            "S2:P001965"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "learning rule",
+          "label": "pass",
+          "reason": "The evidence describes stochastic gradient ascent as a rule for updating parameters: the update equations (2.12) are shown to be 'equal to (2.13) in expected value, making the algorithm an instance of stochastic gradient ascent,' directly establishing it as a learning/update rule.",
+          "evidence_ids": [
+            "S2:P000179",
+            "S2:P000191",
+            "S2:P000196"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "Stochastic gradient ascent is explicitly an optimization method. The evidence repeatedly frames it in terms of gradient ascent: 'it is not possible to implement gradient ascent exactly,' 'expected update of the gradient bandit algorithm is equal to the gradient of expected reward,' and 'strategy of stochastic gradient ascent.'",
+          "evidence_ids": [
+            "S2:P000191",
+            "S2:P000196",
+            "S2:P000204",
+            "S2:P001965"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.8
+  },
+  {
+    "task_id": "t_8c3c43e039ede9c42cd75381",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e235",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "dynamic programming method",
+          "label": "pass",
+          "reason": "Multiple evidence pieces explicitly classify Value Iteration as a dynamic programming method. S2:P000473 states 'Both policy iteration and value iteration are widely used' in the context of DP, and S2:P000476 calls policy iteration and value iteration 'the two most popular DP methods.' S2:P000451 discusses it within the class of DP algorithms.",
+          "evidence_ids": [
+            "S2:P000473",
+            "S2:P000476",
+            "S2:P000451"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "historical AI method classification",
+          "label": "fail",
+          "reason": "The evidence discusses the historical origins of value iteration (e.g., Bellman 1957a, Howard 1960 in S2:P000482) but does not classify Value Iteration itself as a 'historical AI method classification.' Having a history is not the same as being a meta-classification about AI methods.",
+          "evidence_ids": [],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "learning algorithm",
+          "label": "fail",
+          "reason": "The evidence consistently distinguishes value iteration as a DP/planning method rather than a learning algorithm. S2:P000953 explicitly contrasts DP expected updates with 'one-step TD' sample updates, placing value iteration in the planning/DP camp, not the learning camp.",
+          "evidence_ids": [
+            "S2:P000953"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "mathematical theorem",
+          "label": "fail",
+          "reason": "Value Iteration is described throughout the evidence as an 'algorithm' or 'method' (e.g., S2:P000447 'complete algorithm', S2:P000476 'algorithms of dynamic programming'), not as a mathematical theorem.",
+          "evidence_ids": [
+            "S2:P000447",
+            "S2:P000476"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "The evidence supports this compatible category: value iteration is used to 'compute optimal policies and value functions' (S2:P000476), converges to the optimal value function v* (S2:P000447), and is used to 'solve MDPs' (S2:P000473). It is a method for solving an optimization problem.",
+          "evidence_ids": [
+            "S2:P000476",
+            "S2:P000447",
+            "S2:P000473"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "planning method",
+          "label": "pass",
+          "reason": "S2:P001041 explicitly identifies 'value iteration' within the context of planning methods, and S2:P000953 frames the DP/value-iteration side as a contrast to learning, consistent with the planning/learning dichotomy used throughout the book (Chapter 8 is about planning and learning).",
+          "evidence_ids": [
+            "S2:P001041",
+            "S2:P000953"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "时序差分学习",
+          "label": "fail",
+          "reason": "Temporal-difference (TD) learning is a distinct category from value iteration in this text. S2:P000953 explicitly contrasts 'Expected updates (DP)' (value iteration) with 'Sample updates (one-step TD)', showing they are different method families. Value iteration is a DP method, not TD learning.",
+          "evidence_ids": [
+            "S2:P000953"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.42857142857142855
+  },
+  {
+    "task_id": "t_8c60b3bc520edf5a93846e66",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e915",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "biological learning system",
+          "label": "pass",
+          "reason": "The evidence explicitly discusses 'appetitive systems' in the context of reinforcement learning, notes they are found in 'animals' and 'involve different brain mechanisms,' establishing it as a biological system related to learning processes.",
+          "evidence_ids": [
+            "S2:P002219"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_91fe064d34cd1a61adf21cb0",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e766",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "证据明确将 Redoing updates (best-match learning) 描述为由 van Seijen 提出的学习方法，属于学习算法的兼容上位类别。",
+          "evidence_ids": [
+            "S2:P001922"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_92e8c6dadd66cc95c53a9d10",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1208",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "exploration technique",
+          "label": "fail",
+          "reason": "原文将initial value function approximation描述为通过提供初始猜测来augment value-function approximation的引导方法，并明确将其与reward shaping、shaping technique区分。全文未使用'exploration'一词，该方法侧重于初始化价值函数而非探索状态空间，不属于exploration technique。",
+          "evidence_ids": [
+            "S2:P002695",
+            "S2:P002696"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "initialization method",
+          "label": "pass",
+          "reason": "原文明确将initial value function approximation定义为一种initialization方法：定义v̂(s,w)=w⊤x(s)+v0(s)作为初始猜测，提及'This initialization can also be done for arbitrary nonlinear approximators'，并说明'if the initial weight vector is 0, then the initial value function will be v0'。",
+          "evidence_ids": [
+            "S2:P002695",
+            "S2:P002696"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_93a627f665f2c53de2183157",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e404",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "probability distribution",
+          "label": "pass",
+          "reason": "Update distribution in RL is a distribution over state–action pairs determining how updates are allocated, which is a specific kind of probability distribution. Evidence describes it as distributing updates 'according to some distribution' and specifically 'according to the on-policy distribution, that is, according to the distribution observed when following the current policy,' confirming it is a probability distribution.",
+          "evidence_ids": [
+            "S2:P000969",
+            "S2:P000973"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_9846d79a60edffbdb43cbfe1",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e256",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "Monte Carlo method",
+          "label": "pass",
+          "reason": "The evidence explicitly identifies first-visit MC as a Monte Carlo method, stating 'These two Monte Carlo (MC) methods are very similar' and discussing it within Monte Carlo methods for learning the state-value function.",
+          "evidence_ids": [
+            "S2:P000493",
+            "S2:P000494",
+            "S2:P000519"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "estimation method",
+          "label": "pass",
+          "reason": "The first-visit MC method is described as a way to 'estimate' vπ(s) by averaging the returns following first visits to s. It is fundamentally an estimation procedure for state-value functions.",
+          "evidence_ids": [
+            "S2:P000493",
+            "S2:P000519",
+            "S2:P000497"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "The text describes it within the context of 'Monte Carlo methods for learning the state-value function' and it is used as a component in on-policy Monte Carlo control (a learning algorithm). The entity's own name situates it within reinforcement learning.",
+          "evidence_ids": [
+            "S2:P000493",
+            "S2:P000557",
+            "S2:P000519"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "optimization method",
+          "label": "fail",
+          "reason": "The first-visit MC method is described as an estimation procedure (averaging returns to estimate vπ(s)), not as an optimization method. The evidence consistently frames it in terms of estimation and averaging, not optimization of any objective.",
+          "evidence_ids": [
+            "S2:P000493",
+            "S2:P000497",
+            "S2:P000519"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.75
+  },
+  {
+    "task_id": "t_990e9aa11fb65777995681d6",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e657",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "functional equation",
+          "label": "fail",
+          "reason": "Deadly triad 是强化学习中导致不稳定性的三个要素的组合概念，并非函数方程。证据将其描述为一组要素/条件，而非数学等式。",
+          "evidence_ids": [
+            "S2:P001474",
+            "S2:P001477",
+            "S2:P001478"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "problem",
+          "label": "pass",
+          "reason": "证据明确将 deadly triad 描述为强化学习中的\"danger\"、\"challenge\"和\"problem\"，即不稳定与发散的问题。",
+          "evidence_ids": [
+            "S2:P001474",
+            "S2:P001478",
+            "S2:P001694"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "稳定性条件",
+          "label": "pass",
+          "reason": "证据描述 deadly triad 为引发不稳定性（instability and divergence）的条件组合，并指出缺少任一要素则可避免不稳定，属于与稳定性直接相关的条件类别。",
+          "evidence_ids": [
+            "S2:P001474",
+            "S2:P001478",
+            "S2:P001870"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_99ce3536b0a0f6f3c26d6906",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e248",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "value function",
+          "label": "pass",
+          "reason": "The entity 'Four primary value functions' is a group composed of value functions; 'value function' is the compatible upper-level category of the constituent members and the broader concept.",
+          "evidence_ids": [
+            "S2:P000477"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "value function group",
+          "label": "pass",
+          "reason": "The entity is explicitly a group of four primary value functions (vπ, v∗, qπ, q∗), and 'value function group' directly matches this categorization.",
+          "evidence_ids": [
+            "S2:P000477"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_a40d61e5748e9ed2648820de",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e607",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "neural network model",
+          "label": "pass",
+          "reason": "The evidence places the Perceptron squarely within the history of ANNs (Artificial Neural Networks), describing it as a single-layer ANN learning method, which is fully compatible with the type 'neural network model'.",
+          "evidence_ids": [
+            "S2:P001317"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_a62019f57e2935210a776dff",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1043",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "historical learning system",
+          "label": "pass",
+          "reason": "Evidence S2:P002463 describes TD-Gammon 2.1 as a program that uses hidden units in a neural network and explicitly mentions 'the learning process proceeded exactly as before,' confirming it is a learning system. It is also a historically notable system in the development of learning-based game playing. The type 'historical learning system' is a compatible (if broad) category.",
+          "evidence_ids": [
+            "S2:P002463"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_a7374b73e1d657b8aa0e3429",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e497",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "historical AI method classification",
+          "label": "pass",
+          "reason": "The evidence discusses regression as a 'familiar' method used in AI (specifically reinforcement learning function approximation), and mentions 'polynomial regression' as a method with automated selection methods adapted for RL. This supports regression being a well-established (historical) method applied in AI contexts.",
+          "evidence_ids": [
+            "S2:P001152",
+            "S2:P001157"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "task",
+          "label": "pass",
+          "reason": "S2:P001152 explicitly refers to regression as one of 'the familiar tasks of interpolation and regression,' directly supporting it as a task.",
+          "evidence_ids": [
+            "S2:P001152"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_a75991d3e3ddf38f80d4dd30",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e471",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "action-value method",
+          "label": "fail",
+          "reason": "Semi-gradient methods are a broader family that includes both state-value and action-value forms. Evidence shows action-value forms are only one variant (\"the action-value forms were introduced by Precup, Sutton, and Singh (2000)\"), not the defining type of the entity.",
+          "evidence_ids": [
+            "S2:P001696",
+            "S2:P001863"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "approximate solution method",
+          "label": "pass",
+          "reason": "Semi-gradient methods are used with function approximation to produce approximate value estimates (\"approximate value function (v̂ or q̂)\", \"function approximation\"). They are methods for finding approximate solutions.",
+          "evidence_ids": [
+            "S2:P001439",
+            "S2:P001443",
+            "S2:P001524"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "historical AI method classification",
+          "label": "uncertain",
+          "reason": "The entity is a method, not clearly a 'classification.' The label is ambiguous — it could mean a historical category of AI methods (which is loosely compatible) or a system of classification (which does not match). Evidence only provides historical context, not that the entity itself is a classification.",
+          "evidence_ids": [
+            "S2:P001696"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "Semi-gradient methods are clearly learning algorithms. Evidence references specific algorithms such as \"semi-gradient TD(0)\", \"n-step semi-gradient TD\", and \"semi-gradient TD(λ)\".",
+          "evidence_ids": [
+            "S2:P001303",
+            "S2:P001443",
+            "S2:P001696"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "Semi-gradient methods describe a mechanism for learning — using bootstrapping targets with function approximation. This is a compatible upper-level category.",
+          "evidence_ids": [
+            "S2:P001102",
+            "S2:P001303"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "learning paradigm",
+          "label": "pass",
+          "reason": "Semi-gradient methods represent a broad approach/paradigm that encompasses multiple specific algorithms (e.g., \"gradient Monte Carlo and semi-gradient TD(0) algorithms as the special cases\").",
+          "evidence_ids": [
+            "S2:P001303",
+            "S2:P001102"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "Semi-gradient methods are optimization methods based on gradient-descent ideas, even though they are not true gradient descent. Evidence discusses \"true gradient-descent method\" vs semi-gradient, and \"gradient Monte Carlo.\"",
+          "evidence_ids": [
+            "S2:P001102",
+            "S2:P001303",
+            "S2:P001524"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "reinforcement learning method family",
+          "label": "pass",
+          "reason": "Semi-gradient methods are clearly a family of RL methods. Evidence consistently places them in the RL context, discussing on-policy/off-policy cases, function approximation, and bootstrapping within RL.",
+          "evidence_ids": [
+            "S2:P001102",
+            "S2:P001303",
+            "S2:P001439",
+            "S2:P001441"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-8",
+          "type_text": "时序差分学习",
+          "label": "pass",
+          "reason": "Temporal difference learning is a compatible (partial) category — most semi-gradient methods discussed are TD-based (\"semi-gradient TD methods\", \"semi-gradient TD(0)\", \"linear TD(λ)\"). TD learning serves as the primary framework in which semi-gradient methods are deployed.",
+          "evidence_ids": [
+            "S2:P001102",
+            "S2:P001300",
+            "S2:P001303",
+            "S2:P001696"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.7777777777777778
+  },
+  {
+    "task_id": "t_a992e26c3b7c1536685b4f46",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e472",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "target",
+          "label": "pass",
+          "reason": "证据明确指出 DP target 是一种 bootstrapping target（用于价值估计的目标值），属于\"target\"这一上位类别，兼容。",
+          "evidence_ids": [
+            "S2:P001102"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_aa984f75bf93c7eb84217f65",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e231",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "mathematical theorem",
+          "label": "fail",
+          "reason": "policy-stable flag is a boolean control variable in an algorithm, not a mathematical theorem. No evidence supports this classification.",
+          "evidence_ids": [
+            "S2:P000422"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "termination condition",
+          "label": "pass",
+          "reason": "The evidence directly shows the policy-stable flag controls algorithm termination: 'If policy-stable, then stop and return V ≈ v∗ and π ≈ π∗.' It is a boolean used to decide when to halt the iteration loop.",
+          "evidence_ids": [
+            "S2:P000422"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_ab2732f83b2c4a5f7433cc4c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e393",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "原文将one-step updates描述为value-function updates的一种，是强化学习中用于更新值函数（v*、q*、vπ、qπ）的具体方法/操作机制，属于学习机制的上位类别范畴。",
+          "evidence_ids": [
+            "S2:P000953",
+            "S2:P001007"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_ab8e47b7ba0839fa02ccef4a",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e482",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "matrix",
+          "label": "pass",
+          "reason": "The entity is explicitly named a \"state-transition probability matrix,\" and the evidence directly states that P is a |S| × |S| matrix of transition probabilities, confirming the matrix type is fully compatible.",
+          "evidence_ids": [
+            "S2:P001127"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_ab98f3866dc152bcdcf320e0",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e68",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "Optimal control is discussed as a broad conceptual entity in the evidence (a 'problem,' 'field,' 'thread,' and 'theory'), making 'concept' a compatible general category.",
+          "evidence_ids": [
+            "S2:P000064",
+            "S2:P000065",
+            "S2:P000371"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "engineering discipline",
+          "label": "uncertain",
+          "reason": "The evidence shows optimal control involves designing controllers and has roots in control theory, but it is described as a 'field,' 'theory,' or 'problem' rather than explicitly as an engineering discipline.",
+          "evidence_ids": [
+            "S2:P000065",
+            "S2:P000371"
+          ]
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "learning paradigm",
+          "label": "fail",
+          "reason": "The evidence explicitly states that the optimal control thread 'did not involve learning,' directly contradicting its classification as a learning paradigm.",
+          "evidence_ids": [
+            "S2:P000064",
+            "S2:P000094"
+          ]
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "mathematical discipline",
+          "label": "uncertain",
+          "reason": "The evidence describes strong mathematical foundations (Bellman equation, dynamic programming, Hamilton-Jacobi theory), but optimal control is typically framed as an applied/theoretical field rather than a mathematical discipline per se.",
+          "evidence_ids": [
+            "S2:P000065",
+            "S2:P000371"
+          ]
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "problem class",
+          "label": "pass",
+          "reason": "The evidence explicitly refers to 'the problem of optimal control' and 'classes of methods for solving optimal control problems,' directly supporting it as a problem class.",
+          "evidence_ids": [
+            "S2:P000065",
+            "S2:P000371",
+            "S2:P000365"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.4
+  },
+  {
+    "task_id": "t_aba2ecd6d7308ce9a912bd46",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e149",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "原文明确将 exact gradient ascent 描述为通过梯度上升（gradient ascent）按性能指标对动作偏好 Ht(a) 进行更新，是典型的优化方法。",
+          "evidence_ids": [
+            "S2:P000188",
+            "S2:P000189",
+            "S2:P000191"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_adb8096d8541f8097db931f6",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e127",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "task property",
+          "label": "pass",
+          "reason": "The evidence discusses reward variance as a property/parameter of the bandit or RL task, showing how varying it (e.g., 'if the reward variances were zero' or 'suppose the reward variance had been larger, say 10 instead of 1') changes task behavior and optimal learning strategy. This makes 'task property' a compatible category.",
+          "evidence_ids": [
+            "S2:P000137",
+            "S2:P000138"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_b1270b42a386ae4dbf89c36e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1033",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "representation issue",
+          "label": "pass",
+          "reason": "The entity 'Representation issues (reinforcement learning)' is directly described in the evidence as 'representation issues' in the context of reinforcement learning applications, making 'representation issue' a fully compatible category.",
+          "evidence_ids": [
+            "S2:P002429"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_b1f4e8807e9f37b46b10e11e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1239",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "information-theoretic measure",
+          "label": "pass",
+          "reason": "The evidence directly states empowerment is 'an information-theoretic measure of an agent's ability to control its environment.'",
+          "evidence_ids": [
+            "S2:P002738"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning mechanism",
+          "label": "fail",
+          "reason": "The evidence describes empowerment as an intrinsic reward signal, not as a learning mechanism. There is no support for classifying it as a learning mechanism.",
+          "evidence_ids": [
+            "S2:P002738"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "measure",
+          "label": "pass",
+          "reason": "The evidence explicitly calls empowerment 'an information-theoretic measure,' making it a compatible instance of the broader 'measure' category.",
+          "evidence_ids": [
+            "S2:P002738"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_b27d7d6a191a109708c905fd",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e48",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "formal model",
+          "label": "uncertain",
+          "reason": "证据表明 game theory 包含 formal/optimization 方法（如 minimax solution、sequential decision methods），可视为提供 formal models 的框架，但未直接将 game theory 本身归类为 a formal model。",
+          "evidence_ids": [
+            "S2:P000041"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "mathematical discipline",
+          "label": "pass",
+          "reason": "证据将 game theory 与 classical optimization methods、dynamic programming 并列讨论，并涉及 cooperative game、team problem 等数学化分析，确认其为数学学科。",
+          "evidence_ids": [
+            "S2:P000041",
+            "S2:P002360",
+            "S2:P002361"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "problem class",
+          "label": "fail",
+          "reason": "证据中 cooperative game/team problem/competitive game 是 game theory 内部的问题类别，game theory 本身是研究这些 problem classes 的学科，而非 problem class 本身。",
+          "evidence_ids": [
+            "S2:P002360",
+            "S2:P002361"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.3333333333333333
+  },
+  {
+    "task_id": "t_b8d735dafa7a8e0f0883d9eb",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e714",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "原文明确将 offline λ-return algorithm 称为 \"our first learning algorithm based on the λ-return\"，直接支持该归类。",
+          "evidence_ids": [
+            "S2:P001730"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "算法通过 semi-gradient rule 对权重向量进行更新（式 12.4），本质上是一种基于梯度的优化过程，优化值函数近似误差，属于兼容的上位类别。",
+          "evidence_ids": [
+            "S2:P001730"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "时序差分学习",
+          "label": "pass",
+          "reason": "λ-return 被描述为在 Monte Carlo 和 one-step TD methods 之间平滑过渡的方法（S2:P001731），TD(λ) 被明确描述为对 off-line λ-return algorithm 的近似（S2:P001741），该算法属于时序差分学习方法族（使用 bootstrapping 的 forward view）。",
+          "evidence_ids": [
+            "S2:P001731",
+            "S2:P001741"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_bab530dda3a07b7b5026a7e4",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e55",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "agent",
+          "label": "pass",
+          "reason": "In reinforcement learning, a 'fixed opponent' is modeled as an agent with a fixed policy that takes actions in the environment. The text describes it as having a determinate way of playing against which the learning player develops an optimal policy, consistent with agent-like behavior in an RL game setting.",
+          "evidence_ids": [
+            "S2:P000050"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_bae9d640372ec9e3b2ff0418",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e624",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "The evidence clearly establishes differential value functions as a theoretical concept in reinforcement learning, introduced as 'new \"differential\" value functions' in the average-reward formulation.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001400",
+            "S2:P001432"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "value function",
+          "label": "pass",
+          "reason": "The evidence directly states that 'the corresponding value functions are known as differential value functions' and refers to 'differential versions of value functions,' making this a specific subtype of value function.",
+          "evidence_ids": [
+            "S2:P001400",
+            "S2:P001432"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_bf8e4479a652a4f9d74adc5c",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e823",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "reinforcement concept",
+          "label": "pass",
+          "reason": "The evidence explicitly defines conditioned penalty as a form of conditioned reinforcement ('Conditioned reinforcement: conditioned reward or conditioned penalty'), directly placing it within the framework of reinforcement concepts.",
+          "evidence_ids": [
+            "S2:P002080"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_c31e98a12a0a3a7d6c9770cf",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e868",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "behavioral concept",
+          "label": "pass",
+          "reason": "Evidence explicitly discusses 'reinforcement contingencies' within the framework of behavioral psychology (Skinner, shaping, instrumental conditioning), confirming it is a concept in behavioral science.",
+          "evidence_ids": [
+            "S2:P002151"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_c372f96bd0b1ca84f33070da",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e788",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "computational unit",
+          "label": "pass",
+          "reason": "The evidence consistently describes it as a 'unit' that takes input vectors, has weights, and produces outputs, functioning as a computational element.",
+          "evidence_ids": [
+            "S2:P002037",
+            "S2:P002337"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "function approximator",
+          "label": "fail",
+          "reason": "No evidence describes the Bernoulli-logistic unit as a function approximator. It is a single neuron-like computational unit within a network, not described as approximating any target function. Function approximation in this context is typically attributed to the network as a whole.",
+          "evidence_ids": [],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "neural network unit",
+          "label": "pass",
+          "reason": "Directly supported: described as 'a stochastic neuron-like unit used in some ANNs' and 'an ANN of Bernoulli-logistic units'.",
+          "evidence_ids": [
+            "S2:P002037",
+            "S2:P002408"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "stochastic computation unit",
+          "label": "pass",
+          "reason": "Directly supported: described as 'a stochastic neuron-like unit' with 'output...is a random variable' exhibiting 'persistent variability' in its output.",
+          "evidence_ids": [
+            "S2:P002037",
+            "S2:P002337",
+            "S2:P002366"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.75
+  },
+  {
+    "task_id": "t_c62902b3e5f7c7567aa53b63",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1136",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "policy",
+          "label": "pass",
+          "reason": "The evidence explicitly identifies the MCTS search probabilities π_i as 'policies πi', i.e., move probability distributions produced by MCTS in AlphaGo Zero. 'Policy' is a directly compatible category for such a probability distribution over actions.",
+          "evidence_ids": [
+            "S2:P002581"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_d02e15754f8a044483dc8c68",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e91",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "agent",
+          "label": "pass",
+          "reason": "Evidence describes learning automata as 'simple, low-memory machines' that act in an environment to improve reward probability, and the surrounding text discusses 'reinforcement learning agents' in relation to learning automata research, making 'agent' a compatible category.",
+          "evidence_ids": [
+            "S2:P000083",
+            "S2:P002420"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "formal model",
+          "label": "pass",
+          "reason": "Learning automata are described as formal mathematical objects—originating with mathematician Tsetlin, formulated as 'machines' for the k-armed bandit problem, with formal variants like 'stochastic learning automata'—fitting 'formal model' as a compatible category.",
+          "evidence_ids": [
+            "S2:P000083",
+            "S2:P002420"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "historical AI method classification",
+          "label": "uncertain",
+          "reason": "The evidence clearly supports that learning automata is a historical AI method (originated in the 1960s, influenced modern RL). However, the 'classification' part of the label is ambiguous—learning automata is itself a method, not a classification or category of methods, and the evidence does not support treating it as a classification scheme.",
+          "evidence_ids": [
+            "S2:P000083",
+            "S2:P002420"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "Evidence explicitly describes learning automata as 'methods for solving a nonassociative, purely selectional learning problem' and 'stochastic methods for updating action probabilities on the basis of reward signals,' directly supporting it as a learning algorithm.",
+          "evidence_ids": [
+            "S2:P000083"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "Learning automata are described as 'machines for improving the probability of reward' and 'methods for updating action probabilities on the basis of reward signals,' which constitutes a learning mechanism.",
+          "evidence_ids": [
+            "S2:P000083"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "uncertain"
+    },
+    "score": 0.8
+  },
+  {
+    "task_id": "t_d14e3bea084a49654f4e2f56",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e503",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "function approximation method",
+          "label": "pass",
+          "reason": "原文明确将 Fourier transform 归入\"linear function approximation method\"的范畴，并说明它用于将函数表示为正弦/余弦基函数的加权和以实现函数逼近。",
+          "evidence_ids": [
+            "S2:P001159"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "function approximator",
+          "label": "pass",
+          "reason": "原文描述 Fourier transform 作为可执行函数逼近的工具/手段（'essentially any function can be approximated as accurately as desired'），与'function approximator'的语义兼容；'function approximator'与'function approximation method'在RL语境中常可互换使用。",
+          "evidence_ids": [
+            "S2:P001159"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_d2a9216dededc79d33d8f7a2",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1011",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "motivational phenomenon",
+          "label": "pass",
+          "reason": "Evidence explicitly states that drug craving is the result of motivation and learning processes, directly supporting its classification as a motivational phenomenon.",
+          "evidence_ids": [
+            "S2:P002379"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_d2f5535885a00968401319ec",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e860",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning law",
+          "label": "fail",
+          "reason": "证据将 eligibility-like mechanisms 描述为 Hull 理论中所包含的\"mechanisms（机制）\"，而非\"law（定律/规律）\"。机制与定律是不同的范畴：定律是形式化的陈述/原理，机制是实现过程的组成成分。该实体被明确归类为机制，不属于 learning law 的兼容类别。",
+          "evidence_ids": [
+            "S2:P002148"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "证据原文明确指出 Hull 理论中包含\"eligibility-like mechanisms\"，实体名称本身就包含\"mechanisms\"，与类型\"learning mechanism\"完全兼容。",
+          "evidence_ids": [
+            "S2:P002148"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_d5c271b7ac5150518835c77d",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e302",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "Monte Carlo method",
+          "label": "pass",
+          "reason": "原文多处明确将 constant-α MC 称为 Monte Carlo 方法。S2:P000667 写道 \"Let us call this method constant-α MC\"，紧接着在 Monte Carlo methods 的语境下介绍；S2:P000694、S2:P000705、S2:P000707 多次将其与 TD 对比时称为 MC 方法或 Monte Carlo method。",
+          "evidence_ids": [
+            "S2:P000666",
+            "S2:P000667",
+            "S2:P000694",
+            "S2:P000705",
+            "S2:P000707"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "constant-α MC 具有明确的学习更新规则（式 6.1），S2:P000705 将其归入 incremental learning methods 之列，属于学习算法。",
+          "evidence_ids": [
+            "S2:P000666",
+            "S2:P000705"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "时序差分学习",
+          "label": "fail",
+          "reason": "原文明确将 constant-α MC 与 TD 方法对立而非归入时序差分学习。S2:P000667 指出 \"Monte Carlo methods must wait until the end of the episode... TD methods need to wait only until the next time step\"，将两者作为不同方法对比；S2:P000694 说 \"TD methods have usually been found to converge faster than constant-α MC methods\"，表明 constant-α MC 不是 TD 方法。",
+          "evidence_ids": [
+            "S2:P000667",
+            "S2:P000694"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_d5e9480222dd32566fda9653",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e208",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "bandit problem",
+          "label": "fail",
+          "reason": "The evidence does not mention bandit problems at all. 'Complete knowledge' in the evidence refers specifically to having a complete and accurate model of the environment's dynamics (e.g., an MDP's dynamics function), which is a different problem setting from bandit problems. There is no support for classifying 'complete knowledge' as a bandit problem.",
+          "evidence_ids": [],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "problem class",
+          "label": "pass",
+          "reason": "The evidence explicitly frames 'complete knowledge' as one category of reinforcement learning problems alongside 'incomplete knowledge,' stating that 'a reinforcement learning problem can be posed in a variety of different ways.' This clearly supports classifying 'complete knowledge' as a problem class.",
+          "evidence_ids": [
+            "S2:P000363"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_d7b3e1f1941bb2778330f069",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e73",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "approximate solution method",
+          "label": "fail",
+          "reason": "Evidence explicitly lists 'approximation methods' and 'asynchronous methods' as separate parallel developments of DP, indicating they are distinct categories rather than asynchronous methods being a form of approximation method.",
+          "evidence_ids": [
+            "S2:P000066"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "asynchronous dynamic programming",
+          "label": "pass",
+          "reason": "The evidence directly and repeatedly refers to the entity as 'asynchronous DP methods' or 'asynchronous dynamic programming.'",
+          "evidence_ids": [
+            "S2:P000459",
+            "S2:P000466",
+            "S2:P000474",
+            "S2:P000478",
+            "S2:P000484",
+            "S2:P000981",
+            "S2:P002872"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "dynamic programming method",
+          "label": "pass",
+          "reason": "The entity is explicitly described as a variant of DP methods ('Asynchronous DP methods are in-place iterative DP algorithms').",
+          "evidence_ids": [
+            "S2:P000459",
+            "S2:P000466",
+            "S2:P000478",
+            "S2:P000484"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "historical AI method classification",
+          "label": "uncertain",
+          "reason": "While the evidence attributes the method to historical work (Bertsekas 1982, 1983) and the field's development, it is not framed as a 'historical AI method classification'—it is a current computational technique with a historical origin.",
+          "evidence_ids": [
+            "S2:P000066",
+            "S2:P000484"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "learning algorithm",
+          "label": "uncertain",
+          "reason": "The evidence places DP methods (including asynchronous ones) as foundations of reinforcement learning, and one cited paper is titled 'Real-time learning and control using asynchronous dynamic programming.' However, the entity itself is characterized as a DP/planning method, not primarily a learning algorithm.",
+          "evidence_ids": [
+            "S2:P000066",
+            "S2:P002749"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "Evidence describes DP as the method for solving 'general stochastic optimal control problems' and asynchronous DP as a means to compute optimal value functions and policies, making it an optimization method.",
+          "evidence_ids": [
+            "S2:P000066",
+            "S2:P000460",
+            "S2:P000466",
+            "S2:P000474"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "planning method",
+          "label": "uncertain",
+          "reason": "The evidence describes the method as computing optimal policies given a model, which is consistent with planning in RL, but the term 'planning method' is not explicitly used in the provided evidence.",
+          "evidence_ids": [
+            "S2:P000466",
+            "S2:P000474"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "动态规划算法",
+          "label": "pass",
+          "reason": "The evidence directly describes asynchronous methods as a type of DP algorithm (e.g., 'asynchronous DP algorithms are in-place iterative DP algorithms').",
+          "evidence_ids": [
+            "S2:P000459",
+            "S2:P000478",
+            "S2:P000484",
+            "S2:P000981"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-8",
+          "type_text": "时序差分学习",
+          "label": "fail",
+          "reason": "The evidence discusses value iteration and policy iteration updates for asynchronous DP, not temporal-difference (TD) learning. TD learning is not mentioned in connection with this entity.",
+          "evidence_ids": [
+            "S2:P000459",
+            "S2:P000460",
+            "S2:P000466",
+            "S2:P000981"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.4444444444444444
+  },
+  {
+    "task_id": "t_db50953adfd6bcd696ae6280",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e30",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "agent-environment interaction",
+          "label": "pass",
+          "reason": "原文多处直接描述agent与environment之间的interaction（'interaction between an active decision-making agent and its environment'），该类型与实体名称及原文内容完全吻合。",
+          "evidence_ids": [
+            "S2:P000025",
+            "S2:P000027"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "原文将agent-environment interaction作为一类examples共享的基本特征（'These examples share features that are so basic…'）进行阐述，属于概念性范畴。",
+          "evidence_ids": [
+            "S2:P000025"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_e32d0cde843e09b1552bc1c8",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e620",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "action value",
+          "label": "pass",
+          "reason": "The entity q̂(s,a,w) is an approximation of the action value q∗(s,a) as shown in the evidence, so it is a form of action value.",
+          "evidence_ids": [
+            "S2:P001335"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "action value estimate",
+          "label": "pass",
+          "reason": "q̂(s,a,w) is explicitly described as an approximate/estimated action-value function (q̂ ≈ qπ, q̂ ≈ q∗) used as an estimate.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001338",
+            "S2:P001428"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "action-value function",
+          "label": "pass",
+          "reason": "The entity is literally an (approximate) action-value function, repeatedly identified as such in the evidence.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001338",
+            "S2:P001368"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "action-value function approximation",
+          "label": "pass",
+          "reason": "The evidence explicitly discusses extending function approximation to action values, producing the approximate action-value function q̂(s,a,w).",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001338"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "approximate action-value function",
+          "label": "pass",
+          "reason": "The evidence explicitly names q̂ as 'the approximate action-value function, q̂ ≈ qπ'.",
+          "evidence_ids": [
+            "S2:P001338"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "The approximate action-value function is a well-defined concept in reinforcement learning, a valid (if very general) supercategory.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001338"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "function approximation",
+          "label": "pass",
+          "reason": "q̂(s,a,w) is itself a function approximation (a parameterized functional form approximating qπ or q∗), as evidenced by its definition and construction.",
+          "evidence_ids": [
+            "S2:P001335",
+            "S2:P001338",
+            "S2:P001368"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "function approximator",
+          "label": "pass",
+          "reason": "q̂ : S × A × Rd → R is a differentiable parameterized function approximator, explicitly called a 'function parameterization' in the algorithm input.",
+          "evidence_ids": [
+            "S2:P001368",
+            "S2:P001381",
+            "S2:P001429"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_e3a40e38b4370affd86b2e50",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e548",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "activation function",
+          "label": "pass",
+          "reason": "证据明确将实体称为\"the activation function\"，并描述其在神经网络单元中计算输出的作用，类型完全兼容。",
+          "evidence_ids": [
+            "S2:P001242"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "neural network component",
+          "label": "pass",
+          "reason": "证据描述激活函数是神经网络单元中用于产生输出的非线性函数，属于神经网络的组成部分，类型兼容。",
+          "evidence_ids": [
+            "S2:P001242"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_e3cb782674ba97ef47fb26cd",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e255",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "estimation method",
+          "label": "pass",
+          "reason": "Evidence explicitly describes Monte Carlo prediction as a way to estimate the state-value function by averaging returns observed from experience.",
+          "evidence_ids": [
+            "S2:P000493"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "historical AI method classification",
+          "label": "uncertain",
+          "reason": "The label is ambiguous: it could mean Monte Carlo prediction is a historically rooted AI method, or that it serves as a classification category in a historical AI taxonomy. Evidence shows historical roots ('dating back'), but treats it as a method rather than a classification system. Cannot clearly determine compatibility.",
+          "evidence_ids": [
+            "S2:P000493"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "时序差分学习",
+          "label": "fail",
+          "reason": "Monte Carlo prediction and Temporal Difference (TD) learning are two distinct families of RL methods. The evidence describes MC prediction as averaging observed returns after episodes, which is explicitly contrasted with incremental/other approaches; it is not TD learning.",
+          "evidence_ids": [
+            "S2:P000493",
+            "S2:P000606"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.3333333333333333
+  },
+  {
+    "task_id": "t_e3f57e549e24e15314c7faf6",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e70",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "dynamic programming algorithm",
+          "label": "pass",
+          "reason": "Policy iteration is explicitly described as a DP algorithm: S2:P000476 calls policy iteration and value iteration 'the two most popular DP methods'; S2:P000482 refers to it as a 'DP algorithm'; S2:P000066 places it squarely within the dynamic programming context.",
+          "evidence_ids": [
+            "S2:P000476",
+            "S2:P000482",
+            "S2:P000066"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "dynamic programming method",
+          "label": "pass",
+          "reason": "Policy iteration is repeatedly described as a dynamic programming method: S2:P000476 says 'the two most popular DP methods' are policy iteration and value iteration; S2:P000473 classifies both as 'DP methods'.",
+          "evidence_ids": [
+            "S2:P000476",
+            "S2:P000473"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "historical AI method classification",
+          "label": "pass",
+          "reason": "Policy iteration has clear historical significance in AI/RL: S2:P000066 attributes it to Howard (1960) as part of the foundational development; S2:P000482 traces it to Bellman (1957a) and Howard (1960) in the historical context of AI/RL methods.",
+          "evidence_ids": [
+            "S2:P000066",
+            "S2:P000482"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "learning algorithm",
+          "label": "fail",
+          "reason": "Policy iteration is a DP/planning algorithm that assumes complete knowledge of the MDP, not a learning algorithm. S2:P000066 describes it as an element 'underlying' reinforcement learning, not as a learning method itself. S2:P000476 and S2:P000473 consistently classify it as a DP method, not a learning method.",
+          "evidence_ids": [
+            "S2:P000066",
+            "S2:P000476",
+            "S2:P000473"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-4",
+          "type_text": "mathematical theorem",
+          "label": "fail",
+          "reason": "Policy iteration is an algorithm, not a theorem. The evidence describes it as a computational method (algorithm, method, process). The 'policy improvement theorem' (S2:P000441) is a separate theoretical result, not policy iteration itself.",
+          "evidence_ids": [
+            "S2:P000441",
+            "S2:P000418",
+            "S2:P000482"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-5",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "Policy iteration is a method for finding optimal policies: S2:P000418 shows it converges to 'an optimal policy and the optimal value function'; S2:P000066 frames it within the context of solving 'optimal control problems.'",
+          "evidence_ids": [
+            "S2:P000418",
+            "S2:P000066"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-6",
+          "type_text": "planning method",
+          "label": "pass",
+          "reason": "Policy iteration is discussed in the context of planning: S2:P001041 references 'conventional sweep-based policy iteration' among planning methods; S2:P000981 describes RTDP as 'closely related to conventional sweep-based policy iteration' in a planning context; S2:P001016 places it within planning discussions.",
+          "evidence_ids": [
+            "S2:P001041",
+            "S2:P000981",
+            "S2:P001016"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-7",
+          "type_text": "时序差分学习",
+          "label": "fail",
+          "reason": "Policy iteration is not temporal-difference (TD) learning. TD learning is a distinct model-free method. Policy iteration uses full policy evaluation sweeps (expected updates over all successor states), not temporal-difference updates. The evidence never associates policy iteration with TD learning.",
+          "evidence_ids": [
+            "S2:P000476",
+            "S2:P000466",
+            "S2:P000418"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.625
+  },
+  {
+    "task_id": "t_e73f0d1392fd03855ca83606",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e520",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "function approximation property",
+          "label": "pass",
+          "reason": "The evidence discusses acuity as a characteristic/attribute of function approximation with coarse coding — specifically the finest discrimination ultimately possible, which is a property determined by the total number of features.",
+          "evidence_ids": [
+            "S2:P001194"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_e82ff17894e6eb85abaee984",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1226",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "policy class",
+          "label": "pass",
+          "reason": "Evidence discusses risk-sensitive policies as a distinct category/grouping of policies in reinforcement learning, which is compatible with being a 'policy class'.",
+          "evidence_ids": [
+            "S2:P002727"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "risk-sensitive policy",
+          "label": "pass",
+          "reason": "The entity is explicitly a risk-sensitive policy in the RL context, directly matching the evidence which identifies 'risk-sensitive policies' as a recognized category of RL approaches.",
+          "evidence_ids": [
+            "S2:P002727"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_ecb631361c69668347cdde82",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e602",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning algorithm",
+          "label": "pass",
+          "reason": "Delta-Bar-Delta is described as a stochastic meta-descent method used in the context of adapting step-sizes during learning, which is a component/instance of a learning algorithm. This is a compatible broader category.",
+          "evidence_ids": [
+            "S2:P001316"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "step-size adaptation method",
+          "label": "pass",
+          "reason": "The evidence directly states that Delta-Bar-Delta is among the 'Automatic methods for adapting the step-size parameter', making this an exact and direct match.",
+          "evidence_ids": [
+            "S2:P001316"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_ed90ff20de8e175d4db78cb8",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e988",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "biological learning system",
+          "label": "uncertain",
+          "reason": "证据描述E. coli具有\"chemical memory and computation\"并能根据环境刺激调整行为（flagellar reversal频率），这些是学习系统的特征。但文本将E. coli作为支持Klopf学习假说的'well-studied example'，而非明确将其归类为学习系统；且所述趋化行为是基础细胞刺激-反应机制，是否构成完整意义上的'学习系统'存在歧义。",
+          "evidence_ids": [
+            "S2:P002353"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "biological organism",
+          "label": "pass",
+          "reason": "证据明确称E. coli为\"bacterium\"和\"single-cell organism\"，直接支持其属于生物有机体类别。",
+          "evidence_ids": [
+            "S2:P002353"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "uncertain"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_ef5866e35df1cc7f372885c0",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e287",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "bandit problem",
+          "label": "fail",
+          "reason": "Off-policy prediction is a general RL problem concerning learning value functions of a target policy from data of a behavior policy, applicable to full MDPs with multiple states. The evidence discusses multi-step MDPs and value functions, not single-state bandit settings. A bandit problem is a special (one-state) MDP case, but off-policy prediction is not itself a bandit problem.",
+          "evidence_ids": [
+            "S2:P000594",
+            "S2:P000650"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "learning mechanism",
+          "label": "pass",
+          "reason": "The evidence explicitly describes off-policy prediction as a 'learning method' based on importance sampling for learning a value function. It is a mechanism for learning from off-policy data.",
+          "evidence_ids": [
+            "S2:P000650"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "problem class",
+          "label": "pass",
+          "reason": "The evidence frames off-policy prediction as a distinct class of prediction problem (learning the value function of a target policy from a different behavior policy), contrasted with on-policy methods as an alternative problem class in RL.",
+          "evidence_ids": [
+            "S2:P000650"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.6666666666666666
+  },
+  {
+    "task_id": "t_ef6c5de8eb653ef25097cfd1",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1185",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "learning algorithm",
+          "label": "fail",
+          "reason": "原文将 value iteration with options 明确归为 planning algorithm（规划算法），而非学习算法。S2:P002661 中提到的\"learn\"指的是学习 option model，不是 value iteration 算法本身。",
+          "evidence_ids": [
+            "S2:P002660",
+            "S2:P002661"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "planning method",
+          "label": "pass",
+          "reason": "原文明确将 value iteration with options 归为 planning algorithm，并多次讨论\"plan with options\"的应用和优势。",
+          "evidence_ids": [
+            "S2:P002660",
+            "S2:P002661"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_f3d79d9889c64fa9cf248102",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e128",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "concept",
+          "label": "pass",
+          "reason": "\"Optimal action\" is discussed as an abstract notion within the k-armed bandit problem framework, clearly qualifying as a concept. The evidence consistently refers to it as something to be found, recognized, and selected, which is characteristic of a conceptual entity rather than a concrete object or named entity.",
+          "evidence_ids": [
+            "S2:P000137"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_f871b9025dabbf05ae7b4e27",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1217",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "task",
+          "label": "pass",
+          "reason": "实体名称为\"Tasks (reinforcement learning)\"，类型\"task\"直接对应其类别，证据明确讨论了强化学习中任务的定义、层次构建和选择等概念。",
+          "evidence_ids": [
+            "S2:P002714",
+            "S2:P002715"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "value function",
+          "label": "fail",
+          "reason": "证据将任务（tasks）与GVF（General Value Function）作为相关但不同的概念列出（\"by defining auxiliary tasks, GVFs, or options\"），GVFs是定义任务的工具，任务本身不等同于价值函数。",
+          "evidence_ids": [
+            "S2:P002715"
+          ]
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_fc2359fb1f9bb594061dedda",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e1104",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "DRAM event",
+          "label": "pass",
+          "reason": "\"DRAM row buffer hit\" is a specific type of event that occurs during DRAM access (when a requested row is already open in the row buffer). \"DRAM event\" is a compatible broader category encompassing such phenomena. The evidence explicitly discusses modeling DRAM latency in terms of row buffer hits, confirming that row buffer hits are treated as a DRAM-level event/phenomenon.",
+          "evidence_ids": [
+            "S2:P002508"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_fc8238ddd4949ff9dfd74c5e",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e103",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "agent",
+          "label": "pass",
+          "reason": "TD-Gammon is a program that selects moves, plays both sides against itself, and learns through interaction — all defining characteristics of a reinforcement learning agent.",
+          "evidence_ids": [
+            "S2:P000095",
+            "S2:P000357",
+            "S2:P001003",
+            "S2:P002460",
+            "S2:P002461"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "environment model",
+          "label": "fail",
+          "reason": "The evidence states TD-Gammon *used* an environment model ('As a model, TD-Gammon used a priori knowledge of the probabilities of dice rolls...'), but TD-Gammon itself is the agent/learning program, not the environment model.",
+          "evidence_ids": [
+            "S2:P001003"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-2",
+          "type_text": "historical learning system",
+          "label": "pass",
+          "reason": "TD-Gammon is described as a historically significant learning system: it is a precursor to later systems, is discussed in the context of Samuel's checkers player, and is presented as an influential demonstration of TD(λ) with ANN function approximation.",
+          "evidence_ids": [
+            "S2:P000095",
+            "S2:P001321",
+            "S2:P002431",
+            "S2:P002470",
+            "S2:P002473"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-3",
+          "type_text": "task",
+          "label": "fail",
+          "reason": "TD-Gammon is a program/agent that performs the task of playing backgammon; it is not itself a task. Backgammon is the task; TD-Gammon is the learning system that addresses it.",
+          "evidence_ids": [
+            "S2:P000095",
+            "S2:P002431"
+          ],
+          "level": "L1"
+        }
+      ],
+      "label": "fail"
+    },
+    "score": 0.5
+  },
+  {
+    "task_id": "t_fdd1bdc2d997bff0ed7fe3d1",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e245",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "historical AI method classification",
+          "label": "pass",
+          "reason": "证据显示线性规划是用于解决AI/RL中MDP问题的方法（属于AI领域方法），且S2:P000485提及'Foundational work'表明其具有历史/基础性意义，S2:P000472将其与DP方法对比并暗示其在大规模问题上不如DP可行，暗示其为较早的方法路径。",
+          "evidence_ids": [
+            "S2:P000472",
+            "S2:P000485"
+          ],
+          "level": "L2"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "optimization method",
+          "label": "pass",
+          "reason": "线性规划本身就是一种优化方法。证据S2:P000472明确讨论其用于求解MDP（一个优化问题），S2:P000485讨论其作为强化学习（涉及优化）的方法路径。",
+          "evidence_ids": [
+            "S2:P000472",
+            "S2:P000485"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  },
+  {
+    "task_id": "t_ffd9b2c2a50a690177efd340",
+    "system": "ours-sutton-barto-fromzero-m3-v3",
+    "document_id": "sutton-barto-2e-en-full-structured-v1",
+    "item_id": "e786",
+    "metric": "entity_typing",
+    "submission_hash": "sha256:81bde08f304332361e9f8eb0d5eeb116afe511977670ef152b37dedf2c292639",
+    "status": "done",
+    "value": {
+      "items": [
+        {
+          "type_id": "type-0",
+          "type_text": "mathematical concept",
+          "label": "pass",
+          "reason": "A probability density function is clearly a mathematical concept, as evidenced by its formal definition and formula in the source material.",
+          "evidence_ids": [
+            "S2:P002027",
+            "S2:P002032"
+          ],
+          "level": "L1"
+        },
+        {
+          "type_id": "type-1",
+          "type_text": "probability density function",
+          "label": "pass",
+          "reason": "The evidence directly defines and discusses the probability density function, including its formula, properties (density vs. probability, area under curve), and application in policy parameterization.",
+          "evidence_ids": [
+            "S2:P002027",
+            "S2:P002032"
+          ],
+          "level": "L2"
+        }
+      ],
+      "label": "pass"
+    },
+    "score": 1.0
+  }
+]
